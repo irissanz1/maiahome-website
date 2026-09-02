@@ -48,7 +48,7 @@ const QUERY = `*[_type=="property" && defined(slug.current) && defined(nombre)]{
   pais,
   "zona": zona->slug.current,
   "zonaNombre": zona->nombre,
-  tipo, recamaras, banos, m2, capacidad, capacidadCamas, precioMesBase, segmentos,
+  tipo, recamaras, banos, m2, lat, lng, capacidad, capacidadCamas, precioMesBase, segmentos,
   amenidades,
   headlineEs, headlineEn, descripcionEs, descripcionEn, prioridad,
   "images": galeria[].asset->url
@@ -85,6 +85,8 @@ function build(d: any, room: any, sanityReviews?: Review[]): Property {
     recamaras: d.recamaras,
     banos: d.banos,
     m2: typeof d.m2 === "number" ? d.m2 : undefined,
+    lat: typeof d.lat === "number" ? d.lat : undefined,
+    lng: typeof d.lng === "number" ? d.lng : undefined,
     capacidad: d.capacidad,
     capacidadCamas: d.capacidadCamas,
     amenidades: Array.isArray(d.amenidades) ? d.amenidades : [],

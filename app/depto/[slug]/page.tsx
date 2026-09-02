@@ -5,6 +5,9 @@ import Placeholder from "@/components/Placeholder";
 import Gallery from "@/components/Gallery";
 import ReserveButton from "@/components/ReserveButton";
 import StayDateForm from "@/components/StayDateForm";
+import LocationMap from "@/components/LocationMap";
+import AvailabilityCalendar from "@/components/AvailabilityCalendar";
+import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
@@ -54,6 +57,9 @@ export default async function StayDetail({
   const r = (await evaluateLive(p, search)) ?? evaluate(p, search);
   const canReserve = r.status === "disponible" || r.status === "sin-fechas";
   const gallery = p.images.slice(0, 5);
+  const zonaDesc = ZONAS[p.zona]?.descripcion.es;
+  const availDays: Record<string, boolean> = {};
+  for (const [date, entry] of Object.entries(p.calendar)) availDays[date] = !!(entry as any).available;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -162,6 +168,29 @@ export default async function StayDetail({
                   </li>
                 ))}
               </ul>
+            </section>
+          )}
+
+          {/* Disponibilidad */}
+          <section className="mt-10">
+            <h2 className="font-serif text-2xl text-neutral-900">Disponibilidad</h2>
+            <div className="mt-4">
+              <AvailabilityCalendar days={availDays} />
+            </div>
+          </section>
+
+          {/* Ubicación */}
+          {p.lat != null && p.lng != null && (
+            <section className="mt-10">
+              <h2 className="font-serif text-2xl text-neutral-900">Ubicación</h2>
+              <p className="mt-1 text-sm text-neutral-500">
+                {p.zonaNombre}
+                {p.pais === "MX" ? ", Ciudad de México" : ", Houston, TX"} · zona aproximada
+              </p>
+              {zonaDesc && <p className="mt-3 leading-relaxed text-neutral-600">{zonaDesc}</p>}
+              <div className="mt-4">
+                <LocationMap lat={p.lat} lng={p.lng} label={p.zonaNombre} />
+              </div>
             </section>
           )}
 
