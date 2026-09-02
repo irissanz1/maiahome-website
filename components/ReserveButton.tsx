@@ -7,14 +7,23 @@ export default function ReserveButton({
   className,
   roomId,
   nombre,
+  disabled = false,
   children,
 }: {
   href: string;
   className?: string;
   roomId: string;
   nombre: string;
+  disabled?: boolean;
   children: React.ReactNode;
 }) {
+  if (disabled) {
+    return (
+      <span className={className} aria-disabled="true">
+        {children}
+      </span>
+    );
+  }
   return (
     <a
       href={href}

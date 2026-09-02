@@ -7,6 +7,7 @@ import ReserveButton from "@/components/ReserveButton";
 import StayDateForm from "@/components/StayDateForm";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
+import { evaluateLive } from "@/lib/beds24-live";
 import { formatMoney, img } from "@/lib/format";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -48,7 +49,10 @@ export default async function StayDetail({
     checkout: str(sp.checkout),
     guests: str(sp.guests) ? Number(str(sp.guests)) : undefined,
   };
-  const r = evaluate(p, search);
+  // Verificación EN VIVO al momento de reservar: si hay fechas, consulta Beds24
+  // fresco (refleja reservas de hace minutos). Si falla, cae a la caché.
+  const r = (await evaluateLive(p, search)) ?? evaluate(p, search);
+  const canReserve = r.status === "disponible" || r.status === "sin-fechas";
   const gallery = p.images.slice(0, 5);
 
   const jsonLd = {
@@ -211,13 +215,14 @@ export default async function StayDetail({
             href={beds24Url}
             roomId={p.beds24RoomId}
             nombre={p.nombre}
+            disabled={!canReserve}
             className={`mt-4 block rounded-xl px-4 py-3 text-center text-sm font-semibold transition ${
-              r.status === "disponible" || r.status === "sin-fechas"
+              canReserve
                 ? "bg-maia-yellow text-black hover:bg-maia-strong"
                 : "cursor-not-allowed bg-neutral-200 text-neutral-500"
             }`}
           >
-            Reservar
+            {canReserve ? "Reservar" : "No disponible"}
           </ReserveButton>
           <p className="mt-2 text-center text-xs text-neutral-400">El cobro se procesa en Beds24 (checkout seguro)</p>
         </aside>
@@ -244,9 +249,12 @@ export default async function StayDetail({
           href={beds24Url}
           roomId={p.beds24RoomId}
           nombre={p.nombre}
-          className="shrink-0 rounded-xl bg-maia-yellow px-6 py-3 text-sm font-semibold text-black"
+          disabled={!canReserve}
+          className={`shrink-0 rounded-xl px-6 py-3 text-sm font-semibold ${
+            canReserve ? "bg-maia-yellow text-black" : "cursor-not-allowed bg-neutral-200 text-neutral-500"
+          }`}
         >
-          Reservar
+          {canReserve ? "Reservar" : "No disponible"}
         </ReserveButton>
       </div>
     </div>
