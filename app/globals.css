@@ -24,6 +24,37 @@ h1, h2, h3 {
   line-height: 1.12;
 }
 
+/* Páginas legales: jerarquía y espaciado de lectura */
+.legal-prose h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111111;
+}
+.legal-prose h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #242323;
+}
+.legal-prose p {
+  margin-bottom: 0.9rem;
+}
+.legal-prose ul {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.legal-prose li {
+  margin-bottom: 0.35rem;
+}
+.legal-prose a {
+  color: var(--maia-dark);
+  text-decoration: underline;
+}
+
 /* Placeholder de foto: degradado suave por-propiedad (sin imágenes reales aún) */
 .photo-ph {
   position: relative;

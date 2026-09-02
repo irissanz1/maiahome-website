@@ -19,6 +19,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: path === "" ? 1 : 0.8,
   }));
 
+  const legalPages = [
+    "/aviso-privacidad",
+    "/terminos-y-condiciones",
+    "/terminos-uso",
+    "/stay-agreement",
+  ].map((path) => ({
+    url: `${BASE}${path}`,
+    changeFrequency: "yearly" as const,
+    priority: 0.2,
+  }));
+
   const zonas = Object.keys(ZONAS).map((slug) => ({
     url: `${BASE}/${slug}`,
     changeFrequency: "weekly" as const,
@@ -31,5 +42,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...zonas, ...deptos];
+  return [...staticPages, ...legalPages, ...zonas, ...deptos];
 }
