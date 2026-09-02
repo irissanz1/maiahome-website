@@ -23,12 +23,14 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      // Rutas viejas de base44 → nuevas
+      // Rutas viejas de base44 → nuevas.
+      // OJO: Vercel matchea sin distinguir mayúsculas, así que NO se agregan
+      // redirects cuya única diferencia sea el case (p.ej. /Nosotros→/nosotros,
+      // /Facturacion→/facturacion) porque crean un loop de redirección infinito;
+      // esas rutas ya resuelven solas por el match case-insensitive.
       { source: "/Stays", destination: "/departamentos", permanent: true },
       { source: "/Home", destination: "/", permanent: true },
       { source: "/CorporateHousing", destination: "/corporativo", permanent: true },
-      { source: "/Nosotros", destination: "/nosotros", permanent: true },
-      { source: "/Facturacion", destination: "/facturacion", permanent: true },
       // Fichas de propiedad viejas → nuevas (por slug)
       ...loadPropertyRedirects(),
     ];
