@@ -22,6 +22,7 @@ export default function Footer() {
                 <li><Link href="/polanco" className="hover:text-maia-yellow">Polanco</Link></li>
                 <li><Link href="/condesa" className="hover:text-maia-yellow">Condesa</Link></li>
                 <li><Link href="/houston" className="hover:text-maia-yellow">Houston</Link></li>
+                <li><Link href="/recorridos-departamentos" className="hover:text-maia-yellow">Tours virtuales</Link></li>
               </ul>
             </div>
             <div>
@@ -29,6 +30,7 @@ export default function Footer() {
               <ul className="space-y-2 text-neutral-400">
                 <li><Link href="/mensuales" className="hover:text-maia-yellow">Estancias mensuales</Link></li>
                 <li><Link href="/corporativo" className="hover:text-maia-yellow">Vivienda corporativa</Link></li>
+                <li><Link href="/administramos-tu-depto" className="hover:text-maia-yellow">Administra tu depto</Link></li>
                 <li><Link href="/nosotros" className="hover:text-maia-yellow">Nosotros</Link></li>
                 <li><Link href="/facturacion" className="hover:text-maia-yellow">Facturación</Link></li>
               </ul>

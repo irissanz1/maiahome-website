@@ -7,10 +7,8 @@ import MarketSelector from "./MarketSelector";
 
 const NAV = [
   { href: "/departamentos", label: "Por noche" },
-  { href: "/mensuales", label: "Mensual" },
-  { href: "/corporativo", label: "Corporativo" },
-  { href: "/recorridos-departamentos", label: "Tours virtuales" },
-  { href: "/administramos-tu-depto", label: "Para dueños" },
+  { href: "/mensuales", label: "Estancias mensuales" },
+  { href: "/corporativo", label: "Vivienda corporativa" },
   { href: "/nosotros", label: "Nosotros" },
 ];
 
