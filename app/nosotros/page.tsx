@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { WHATSAPP_DISPLAY, PHONE_DISPLAY, SUPPORT_EMAIL, whatsappUrl } from "@/lib/contact";
+import { WHATSAPP_DISPLAY, SUPPORT_EMAIL, whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Nosotros",
@@ -206,7 +206,7 @@ export default function Nosotros() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-neutral-400">
-              {WHATSAPP_DISPLAY} · {PHONE_DISPLAY} ·{" "}
+              {WHATSAPP_DISPLAY} ·{" "}
               <a href={`mailto:${SUPPORT_EMAIL}`} className="underline hover:text-white">{SUPPORT_EMAIL}</a>
             </p>
           </div>
