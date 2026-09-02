@@ -72,6 +72,34 @@ export default async function Home({
       </section>
 
       <FeaturedReviews />
+
+      {/* Propósito — banda compacta (impacto social) */}
+      <section className="mt-4 bg-[#FBF7EC]">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-5 py-12 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-maia-yellow text-black">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.24C.9 10.02 1.6 6.5 4.6 5.4c1.9-.7 3.9.1 5 1.7l.9 1.3.9-1.3c1.1-1.6 3.1-2.4 5-1.7 3 1.1 3.7 4.62 1.93 7.36C18.7 16.65 12 21 12 21z" /></svg>
+              </span>
+              Propósito
+            </p>
+            <h2 className="mt-3 font-serif text-2xl font-bold text-neutral-900 md:text-3xl">
+              Hospedarte con nosotros también apoya a la comunidad
+            </h2>
+            <p className="mt-2 text-neutral-600">
+              Una parte de cada estancia se destina a Fundación Altía, en favor de niñas, niños y
+              comunidades de la Ciudad de México. Más de <strong>75 iniciativas locales</strong>{" "}
+              apoyadas.
+            </p>
+          </div>
+          <Link
+            href="/nosotros"
+            className="shrink-0 rounded-full bg-maia-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
+          >
+            Conoce nuestro propósito →
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
