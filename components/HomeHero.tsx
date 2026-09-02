@@ -43,12 +43,12 @@ export default function HomeHero() {
       {/* Tarjeta de búsqueda (móvil: debajo de la imagen, traslapada) */}
       <div className="relative z-10 order-2 -mt-6 rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl md:order-1 md:mt-0 md:-mr-10">
         <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-maia-strong">
-          Polanco · Condesa · CDMX · Houston
+          CDMX · Houston
         </p>
         <h1 className="mt-2 font-sans text-2xl font-bold leading-[1.1] text-neutral-900 md:text-[2rem]">
-          Departamentos amueblados en <span className="font-serif font-semibold italic text-neutral-600">Ciudad de México</span>
+          Departamentos amueblados para vivir <span className="italic text-neutral-600">extraordinario</span>
         </h1>
-        <p className="mt-2 text-sm text-neutral-600">Estancias de lujo desde una noche hasta un año. Reserva directo, sin comisiones.</p>
+        <p className="mt-2 text-sm text-neutral-600">Estancias premium en Polanco, Condesa y Houston. Reserva directo con Maia Home.</p>
 
         <div className="mt-5 space-y-2.5">
           <label className="block">
