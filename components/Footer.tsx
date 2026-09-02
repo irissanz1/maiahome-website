@@ -1,0 +1,44 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="mt-20 bg-maia-dark text-white">
+      <div className="mx-auto max-w-6xl px-5 py-12">
+        <div className="flex flex-col justify-between gap-8 md:flex-row">
+          <div className="max-w-sm">
+            <span className="font-serif text-2xl">
+              Maia<span className="text-maia-yellow">.</span> Home
+            </span>
+            <p className="mt-3 text-sm text-neutral-400">
+              Departamentos amueblados en CDMX (Polanco, Condesa) y Houston. Reserva directo,
+              sin intermediarios.
+            </p>
+          </div>
+          <div className="flex gap-12 text-sm">
+            <div>
+              <h3 className="mb-3 font-semibold text-maia-yellow">Explorar</h3>
+              <ul className="space-y-2 text-neutral-400">
+                <li><Link href="/departamentos" className="hover:text-maia-yellow">Departamentos</Link></li>
+                <li><Link href="/polanco" className="hover:text-maia-yellow">Polanco</Link></li>
+                <li><Link href="/condesa" className="hover:text-maia-yellow">Condesa</Link></li>
+                <li><Link href="/houston" className="hover:text-maia-yellow">Houston</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-3 font-semibold text-maia-yellow">Maia Home</h3>
+              <ul className="space-y-2 text-neutral-400">
+                <li><Link href="/mensuales" className="hover:text-maia-yellow">Estancias mensuales</Link></li>
+                <li><Link href="/corporativo" className="hover:text-maia-yellow">Vivienda corporativa</Link></li>
+                <li><Link href="/nosotros" className="hover:text-maia-yellow">Nosotros</Link></li>
+                <li><Link href="/facturacion" className="hover:text-maia-yellow">Facturación</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 border-t border-neutral-700 pt-6 text-xs text-neutral-500">
+          <p>© 2026 Maia Home · POC de arquitectura (Next.js + Sanity + Beds24)</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

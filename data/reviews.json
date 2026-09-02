@@ -1,0 +1,2178 @@
+{
+  "generatedAt": "2026-09-02T04:03:37.594Z",
+  "byRoom": {
+    "395621": {
+      "rating": 4.7,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Fernanda",
+          "text": "We had a great one-week stay here with 3 adults and 3 children. The location is excellent—very convenient, in a safe, accessible neighborhood, with everything we needed nearby.\n\nThe building has 24/7 security, which gave us peace of mind. Our flight arrived in the middle of the night, and the security staff were very welcoming and helpful.\n\nThe host was very responsive, accommodating, and easy to communicate with throughout our stay.\n\nAs it has already been mentioned, the apartment is on the 5th floor and there is no elevator. It can be challenging at first, especially with luggage or young children, but we got used to it after a few days.\n\nI would definitely book this place again.",
+          "rating": 5,
+          "date": "2026-08-05",
+          "avatar": null
+        },
+        {
+          "name": "Andrés",
+          "text": "I think it was such a cute place and my family enjoyed it.",
+          "rating": 5,
+          "date": "2026-07-17",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "We had a great stay. I do have to mention that the place is on the 5th story but we just took it as exercise! The place was nice, clean and peaceful. There is no AC but there was plenty of fans to choose from in each room that made a difference. We felt safe to walk around even late at night. There are many cute coffee shops and restaurants all around. We have an issue with shower and they came the same day and fixed it. We would definitely stay here again.",
+          "rating": 5,
+          "date": "2026-07-11",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "Muy bonito el lugar, limpio y muy bien ubicado",
+          "rating": 5,
+          "date": "2026-07-02",
+          "avatar": null
+        },
+        {
+          "name": "Emilio",
+          "text": "Mühsam im Check-In und früheres Check-In kostet extra ansonsten ok gewesen. Etwas weit weg bis in Zentrum. Wohnung geräumig",
+          "rating": 4,
+          "date": "2026-06-23",
+          "avatar": null
+        },
+        {
+          "name": "Regina",
+          "text": "One of the nicest AirBnB's my family has stayed in! The area is very friendly and safe with a very convenient pharmacy infront, a convenience store and down the street some restaurants and a park. The apartment was very neat and the beds very comfortable. Clean towels, clean restrooms, fans in the closet for the heat if needed. They did a courtesy cleaning which I thought would only be sweeping or mopping but they actually went above and beyond to clean it while we were there. I appreciate how responsive the hosts are. And helpful. Everything is perfect. I would recommend it because its very comfortable with two bathrooms, and the area outside is wonderful! Its located in a very nice spot centric to the city so we got to our destinations in the estimated times!",
+          "rating": 5,
+          "date": "2026-06-16",
+          "avatar": null
+        },
+        {
+          "name": "Ricardo",
+          "text": "¡Tuvimos una excelente estancia! Nos hospedamos 6 personas por 5 noches y  estuvimos muy cómodos. La ubicación es ideal, con dos estaciones de metro a unos 7 minutos caminando y el metrobús a solo una cuadra, lo que hizo muy fácil movernos por la ciudad. El departamento estaba muy limpio, bien cuidado y con todo lo necesario. Las camas son muy cómodas y el sofá de la sala fue perfecto para descansar después de recorrer la ciudad. \nAdemás, hay cafeterías, restaurantes y tiendas de conveniencia muy cerca. Recorrimos la zona en distintos momentos del día y siempre nos pareció segura y tranquila.\nLos anfitriones fueron muy amables y atentos; respondieron rápidamente a nuestras dudas, nos permitieron ingresar una hora antes y el proceso de entrada fue muy sencillo. Tuvimos un pequeño inconveniente con el calentador, pero lo resolvieron de forma oportuna .\n\nSin duda, recomendamos ampliamente este alojamiento. Nos llevamos una muy buena experiencia y volveríamos a hospedarnos aquí.",
+          "rating": 5,
+          "date": "2026-06-07",
+          "avatar": null
+        },
+        {
+          "name": "Roberto",
+          "text": "Todo muy bien, fue una estancia corta pero muy agradable",
+          "rating": 5,
+          "date": "2026-06-07",
+          "avatar": null
+        }
+      ]
+    },
+    "395664": {
+      "rating": 4.8,
+      "count": 38,
+      "reviews": [
+        {
+          "name": "Mateo",
+          "text": "We had a great experience staying here! The security was top-notch, which made us feel very comfortable throughout our stay. The location was also great, and the burgers across the street were absolutely delicious!\n\nThe apartment was clean and everything worked as expected. They even came by to clean the apartment mid-week, which was a really nice touch. The checkout requirements were minimal and very easy to follow.\n\nCommunication was excellent. Every question we had was answered very quickly, and we had no issues during our stay.\n\nOne thing to note: if you plan on using the pool, a swim cap is required. We didn’t have one, so unfortunately my daughter wasn’t able to use the pool, which was a little disappointing. However, this was clearly something we should have checked in the listing beforehand.\n\nOverall, we had a great experience and would definitely recommend staying here!",
+          "rating": 5,
+          "date": "2026-08-09",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Los dos departamentos funcionan increíble, tienen todo lo necesario para no tener que salir, y aún así la ubicación es grandiosa por lo que si sales llegas caminando a lo que necesites. La vista que ofrecen de la ciudad es increíble. La atención brindada es excelente, estuvieron atentos en todo momento.",
+          "rating": 5,
+          "date": "2026-07-31",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Los apartamentos excelentes; limpios, súper cómodos. Exacto como está en la página. Súper recomendable",
+          "rating": 5,
+          "date": "2026-06-26",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "Todo excelente",
+          "rating": 5,
+          "date": "2026-04-01",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Todo genial",
+          "rating": 5,
+          "date": "2026-01-31",
+          "avatar": null
+        },
+        {
+          "name": "Isabella",
+          "text": "The apartments were very clean and nice.  The host was very responsive and helpful throughout.  The location was just outside of Polanco and not quite in the heart of a neighborhood, but close enough.",
+          "rating": 4,
+          "date": "2026-01-23",
+          "avatar": null
+        },
+        {
+          "name": "Andrés",
+          "text": "The two apartments were well kept and had the amenities listed. The views were amazing day and night. Apartments were clean and tidy and all communication was quick and clear. Highly recommended",
+          "rating": 5,
+          "date": "2025-04-12",
+          "avatar": null
+        },
+        {
+          "name": "Fernando",
+          "text": "Simplemente excelente! Desde el momento de reservar María y su equipo me hicieron sentir como en casa, los departamentos super limpios y cómodos,  tuvimos varios vehículos y el estacionamiento fue de gran ayuda al igual que el personal del edificio, sin complicaciones.\n\nDespués de viajar por varias horas fue absolutamente relajante disfrutar de la calma y la hermosa vista que tienen ambos departamentos. Recomendado 100%, espero volver pronto!",
+          "rating": 5,
+          "date": "2025-03-30",
+          "avatar": null
+        }
+      ]
+    },
+    "395667": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Valeria",
+          "text": "Salvo por la cantidad de toallas proporcionada que no fue suficiente a pesar que lo solicité mucho antes de llegar y yo tuve que ir a comprar; la atención del host super, la ubicación también y la vista espectacular.",
+          "rating": 4,
+          "date": "2026-08-21",
+          "avatar": null
+        },
+        {
+          "name": "Gonzalo",
+          "text": "El departamento muy bien en todos los sentidos, Noely siempre atenta y accesible en todo momento!",
+          "rating": 5,
+          "date": "2026-08-18",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "Me gustó mucho a mi y a mi familia pasar un momento lindo familiar en sus instalaciones, nos la pasamos muy bien, tranquilos y super contentos , volveríamos más veces , el personal muy lindo y bueno , super recomendable",
+          "rating": 5,
+          "date": "2026-07-26",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "Excelente servicio. Instalaciones en buenas condiciones, limpieza, servicios disponibles, comunicación constante y disposición del arrendador para resolver dudas. \nExcelente ubicación con variedad de servicios en la zona. \nYa sea para disfrutar por viaje de trabajo o familiar, de placer, cumple con lo ofrecido. \n\nSin duda volvería.\nLo recomiendo ampliamente.",
+          "rating": 5,
+          "date": "2026-07-14",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "excelente lugar",
+          "rating": 5,
+          "date": "2026-07-06",
+          "avatar": null
+        },
+        {
+          "name": "Paulina",
+          "text": "excelente lugar",
+          "rating": 5,
+          "date": "2026-06-28",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "Todo super bien respecto al alojamiento y la anfitriona",
+          "rating": 5,
+          "date": "2026-06-22",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "Nuevamente muy agradecido con Noely y su equipo. muy dispuestos y atentos en todo momento.",
+          "rating": 5,
+          "date": "2026-06-16",
+          "avatar": null
+        }
+      ]
+    },
+    "395668": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Eduardo",
+          "text": "Excelente lugar, volvería sin lugar a dudas. Una vista increíble",
+          "rating": 5,
+          "date": "2026-07-28",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "Amazing view. Walmart and another large supermarket are just one block away, along with several excellent restaurants. The location is great—close to the highway and conveniently situated between the main tourist attractions. Uber rides are inexpensive, and it takes no more than 15 minutes to get almost anywhere.",
+          "rating": 5,
+          "date": "2026-07-21",
+          "avatar": null
+        },
+        {
+          "name": "Andrés",
+          "text": "Very nice apartment with what you need - diligent security, great location, all necessary appliances in the unit. When we needed to replace a kettle, the team responded swiftly.",
+          "rating": 5,
+          "date": "2026-07-06",
+          "avatar": null
+        },
+        {
+          "name": "Paulina",
+          "text": "Mi favorito hasta ahorita sin problema regreso",
+          "rating": 5,
+          "date": "2026-06-22",
+          "avatar": null
+        },
+        {
+          "name": "Javier",
+          "text": "Todo estuvo muy bien. Excelente atención",
+          "rating": 5,
+          "date": "2026-06-09",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Increíble lugar , increíble las instalaciones , increíble todo , todo es perfecto excepto la pésima pésima actitud de la seguridad del edifico , descontrol total , altaneros , prepotentes , me tuvieron a mi familia afuera por horas , pésimo los guardias de ahí en más todo perfecto",
+          "rating": 4,
+          "date": "2026-05-19",
+          "avatar": null
+        },
+        {
+          "name": "Carolina",
+          "text": "Muy cómodo y muy bonito",
+          "rating": 5,
+          "date": "2026-04-23",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "Great place for our family to stay. Easy to find, and we felt safe.",
+          "rating": 5,
+          "date": "2026-04-12",
+          "avatar": null
+        }
+      ]
+    },
+    "418925": {
+      "rating": 4.9,
+      "count": 9,
+      "reviews": [
+        {
+          "name": "Emiliano",
+          "text": "Loved the place. Incredible management team. Super responsive. Excellent location , peaceful and walkable. Would highly recommend.",
+          "rating": 5,
+          "date": "2026-08-01",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "Fantastic apartment and great host.  The only reason I am not giving a 5 star is because of the noise.   The streets are noisy and close to a school but the real problem is that apartments adjacent to this one are being remodeled and the noise can be unbearable during the day.   This is probably temporary but this is what we experienced",
+          "rating": 4,
+          "date": "2026-07-01",
+          "avatar": null
+        },
+        {
+          "name": "Isabella",
+          "text": "Muy buena ubicación, instalaciones y atención por parte de los anfitriones!",
+          "rating": 5,
+          "date": "2026-04-21",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "this place looks better then on the pictures. I especially appreciate details - bedding, towels, plates, all of this was really top quality, which is very rare for Airbnb places. I stayed there for a month and I would recommend this place.",
+          "rating": 5,
+          "date": "2026-03-24",
+          "avatar": null
+        },
+        {
+          "name": "Juan",
+          "text": "Amazing support staff and owner. Any issues you have they jump on it. \n\nPros: lots of space, amazing jacuzzi, king bed. Walking distance to Antara (mall) and Palacio de Hierro + so many delicious restaurants. Also close to Costco and Walmart. \n\nCons: It’s CDMX so it’s very noisy, but I found it very hard to sleep most of the time. Theres a gelato shop next door that stays open until 2am and you can hear everyone talking through the walls. The traffic one street over has horns going most of the day. And there construction everywhere. But like I said that’s CDMX. I tried 4 other Airbnbs in different sections of the city and had same results. It is what it is.",
+          "rating": 5,
+          "date": "2025-12-22",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Nos encantó nuestra estancia en este departamento.\nLas 3 recámaras y 3 baños hicieron que fuera perfecto para nuestra familia, con espacio y comodidad para todos. Todo estaba limpio, bien cuidado y equipado con lo necesario para sentirnos como en casa.\n\nLa ubicación es inmejorable: a pocos pasos de centros comerciales, restaurantes, supermercados y todo lo que podrías necesitar.\n\nAlina muy atenta y siempre estuvo disponible para cualquier duda. ¡Definitivamente lo recomendamos y nos encantaría volver!",
+          "rating": 5,
+          "date": "2025-04-01",
+          "avatar": null
+        },
+        {
+          "name": "Luis",
+          "text": "Todo como lo descrito y muy amables",
+          "rating": 5,
+          "date": "2024-02-01",
+          "avatar": null
+        },
+        {
+          "name": "Rafael",
+          "text": "Buena ubicación , excelente lugar para llegar con familia",
+          "rating": 5,
+          "date": "2023-01-03",
+          "avatar": null
+        }
+      ]
+    },
+    "418926": {
+      "rating": 4.8,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Juan",
+          "text": "Great stay for someone traveling on their own or a couple max. The bathroom is very small but functional. Only thing I would have liked to know beforehand was that this unit connects to the one next door with a lock on either side. The door is thin and you can hear the neighbors’ full conversation, which is not great when they’re talking loudly and 11 pm and you’re trying to sleep!",
+          "rating": 5,
+          "date": "2026-08-04",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "👍🏻",
+          "rating": 4,
+          "date": "2026-07-17",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Muy buena comunicación siempre , el depa coincide con las fotos y descripción. Todo muy limpio y Excelente ubicación",
+          "rating": 5,
+          "date": "2026-07-01",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Simple, it was perfect in every way!",
+          "rating": 5,
+          "date": "2026-06-29",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "We had a wonderful stay and would happily book again! The check-in process was incredibly clear and easy, making our arrival completely stress-free. The home was spotless, smelled amazing when we walked in, and felt very welcoming.\n\nWe especially appreciated the thoughtful extras, including lactose-free milk, orange juice, and cereal. It was such a nice touch. The host also provided excellent recommendations for local restaurants and activities, which helped us make the most of our visit.\n\nOverall, this was a fantastic experience with great attention to detail and hospitality. Highly recommended!",
+          "rating": 5,
+          "date": "2026-06-24",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "Es un departamento pequeño, perfecto para máximo 2 personas, acogedor, con lo indispensable. La regadera es pequeña pero solo es una ducha. Hay un walmart a 2 cuadras, se puede caminar y muchos lugares cerca para visitar.",
+          "rating": 5,
+          "date": "2026-06-10",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Great place, clean, Alina is super friendly and amazing host",
+          "rating": 5,
+          "date": "2026-06-06",
+          "avatar": null
+        },
+        {
+          "name": "Javier",
+          "text": "La verdad está facilísimo de llegar pero no está muy bien especificado que departamento es aparte se le manifestó que se iba a llegar tarde y no dio instrucciones ya que llegando al lugar nos costó bastante encontrar el departamento y no contaba con ventiladores",
+          "rating": 4,
+          "date": "2026-06-04",
+          "avatar": null
+        }
+      ]
+    },
+    "418927": {
+      "rating": 4.7,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Diego",
+          "text": "Un lugar muy agradable,  tal cual lo describen,  muy accesible y se siente mucha tranquilidad y seguridad. \nSin duda regresaría.",
+          "rating": 5,
+          "date": "2026-08-25",
+          "avatar": null
+        },
+        {
+          "name": "Verónica",
+          "text": "Great place very spacious and clean. Private but peaceful lots of things just walking distance!",
+          "rating": 5,
+          "date": "2026-08-06",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Un excelente lugar en una excelente ubicación a un precio bastante razonable, el lugar muy tranquilo, la hospitalidad y amabilidad del señor que está en recepción también abonan mucho a que este lugar sea una excelente opción para quienes busquen su estancia en la CDMX en un lugar muy tranquilo y bonito…",
+          "rating": 5,
+          "date": "2026-08-02",
+          "avatar": null
+        },
+        {
+          "name": "Rafael",
+          "text": "La ubicación excelente,  muy cómodo,  impecable  la limpieza,  todo  el proceso de llegada al departamento  super explicado. Al llegar el encargado nos recibió  muy amablemente  y nos dió  recomendaciones cercanas de lugares para cenar y hacer compra.\nSin duda lo recomiendo y volvería  a hospedarme",
+          "rating": 5,
+          "date": "2026-07-17",
+          "avatar": null
+        },
+        {
+          "name": "Andrés",
+          "text": "Excelente atención de Alina",
+          "rating": 5,
+          "date": "2026-07-15",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "El departamento es muy bonito, justo como las imágenes, la zona super tranquila, bastante cerca caminando de restaurantes, museos.  Un plus, que puedes llevar a tus mascotas, la llegada es autónoma y tienes espacio de estacionamiento.",
+          "rating": 5,
+          "date": "2026-07-08",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Great place!",
+          "rating": 5,
+          "date": "2026-07-03",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "El departamento está súper bonito y equipado, tal cual está en las fotos, sumamente limpio, cómodo y tiene todo lo que necesitas, Alina con muchos detalles, en una zona buenísima ! Alina siempre al pendiente ! Sin duda, regresaría !",
+          "rating": 5,
+          "date": "2026-06-20",
+          "avatar": null
+        }
+      ]
+    },
+    "418928": {
+      "rating": 5,
+      "count": 45,
+      "reviews": [
+        {
+          "name": "María",
+          "text": "Todo muy bien con el lugar de hospedaje",
+          "rating": 5,
+          "date": "2026-08-03",
+          "avatar": null
+        },
+        {
+          "name": "Paulina",
+          "text": "Excelente ubicación,  zona bonita y segura, departamento amplio y con todo los necesario. Estuvimos una semana (7 personas y la gatita de mi hermana), nos sentimos como en casa. Lo recomiendo!",
+          "rating": 5,
+          "date": "2026-07-25",
+          "avatar": null
+        },
+        {
+          "name": "Ricardo",
+          "text": "Todo en orden gracias!",
+          "rating": 5,
+          "date": "2026-05-26",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Este alojamiento nos salvo a mis compañeros y a mi, excelente lugar para descansar, cumple con todo lo que menciona y el anfitrion es muy amable.",
+          "rating": 5,
+          "date": "2026-04-20",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "Excelente lugar",
+          "rating": 5,
+          "date": "2026-04-20",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Muy buen lugar, limpio, cómodo, amplio, tal como en las fotos. Nos gustó mucho que teníamos cosas básicas para comer y tomar. Excelente lugar.",
+          "rating": 5,
+          "date": "2026-02-26",
+          "avatar": null
+        },
+        {
+          "name": "Carlos",
+          "text": "Excelente estancia!",
+          "rating": 5,
+          "date": "2026-02-09",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "Excelente hospedaje, departamento muy amplio y limpio, muy agradable estadia, inmejorable ubicación. Excelente y atenta comunicación con anfitriona. Toda la familia encantada.",
+          "rating": 5,
+          "date": "2026-02-06",
+          "avatar": null
+        }
+      ]
+    },
+    "429088": {
+      "rating": 4.8,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Javier",
+          "text": "Me gustó mucho el lugar y amé las  cortesías que me ayudaron a no salir de casa en ayunas. Sin duda me volveré a alojar ahí",
+          "rating": 5,
+          "date": "2026-08-27",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "One of the best BnB experiences I’ve ever had. Constantly checking up on us to make sure we were happy with our stay. Included cleaning service. We also forgot something there after checking out and within she reverted the code and told us so we could go back and get it so very responsive host.",
+          "rating": 5,
+          "date": "2026-08-14",
+          "avatar": null
+        },
+        {
+          "name": "Hugo",
+          "text": "We enjoyed it a lot, it’s a beautiful place, exactly as the photos, has everything you need. The host is really responsive and friendly, everyone in the staff of the building is really friendly \nSure the process of check in is a bit long but in my opinion is a really good thing because it means there is good security so you feel safe to stay there \n\nI would totally recommend this home and if the opportunity arises I would book it again",
+          "rating": 5,
+          "date": "2026-08-09",
+          "avatar": null
+        },
+        {
+          "name": "Isabella",
+          "text": "Todo excelente",
+          "rating": 5,
+          "date": "2026-07-23",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Un depto. muy bonito, cómodo y que coincide totalmente con las fotos. \n100% recomendado y muy buena ubicación. 👌",
+          "rating": 5,
+          "date": "2026-06-27",
+          "avatar": null
+        },
+        {
+          "name": "Daniela",
+          "text": "La experiencia fue excelente. Siempre estuvieron al tanto de nuestras necesidades y mantuvieron una comunicación constante. También nos dieron recomendaciones por la zona y dejaron un par de detalles como cereal y leche, que sin duda mejoraron nuestra estancia. Lo recomiendo muchísimo. ¡Muchas gracias por todo!",
+          "rating": 5,
+          "date": "2026-05-31",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Muy buena opción de alojamiento",
+          "rating": 5,
+          "date": "2026-05-06",
+          "avatar": null
+        },
+        {
+          "name": "Paulina",
+          "text": "Buen lugar",
+          "rating": 5,
+          "date": "2026-04-26",
+          "avatar": null
+        }
+      ]
+    },
+    "429313": {
+      "rating": 4.8,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Valeria",
+          "text": "El lugar es muy bonito y se encuentra en una zona tranquila y segura",
+          "rating": 5,
+          "date": "2026-08-29",
+          "avatar": null
+        },
+        {
+          "name": "Isabella",
+          "text": "El departamento es hermoso, solo tuvimos un inconveniente con el boiler la primera mañana y desafortunadamente era el día del bautizo de mi bebé, por lo que nos retrasó muchísimo porque el agua estaba helada. Ante este tipo de urgencias a las 5am no hubo respuesta hasta después de las 9am, entiendo perfecto que no estarán 24hrs, pero si considero que deberían tener algún mecanismo porque no es normal que tus huéspedes te llamen a esa hora. Sin embargo, lo antendieron y ya no hubo problema el resto de los días. La zona es maravillosa y cada vez que vamos a la ciudad, esta es la zona en la que nos quedamos. Gracias por el lindo detalle de las amenidades de llegada, el cereal, leche y café genuinamente se agradece. Sin duda regresaremos a hospedarnos aquí.",
+          "rating": 5,
+          "date": "2026-08-17",
+          "avatar": null
+        },
+        {
+          "name": "Paulina",
+          "text": "Todo excelente, muy limpio, muy bonita la zona y muy amables en el trato.",
+          "rating": 5,
+          "date": "2026-08-12",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "This is a fantastic place to stay during a vacation in the city! Everything felt perfect, and I would definitely return!",
+          "rating": 5,
+          "date": "2026-08-08",
+          "avatar": null
+        },
+        {
+          "name": "Mateo",
+          "text": "10/10 is one of the best places to have a great experience of Polanco",
+          "rating": 5,
+          "date": "2026-08-01",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "非常好的居住环境与服务，干净整洁。非常满意。",
+          "rating": 5,
+          "date": "2026-05-11",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Todo excelente, ubicación, atención. Todo!",
+          "rating": 5,
+          "date": "2026-05-03",
+          "avatar": null
+        },
+        {
+          "name": "Daniela",
+          "text": "Muy lindo lugar, limpio, cómodo. Atención amable \nVolveremos sin duda 💗",
+          "rating": 5,
+          "date": "2026-04-22",
+          "avatar": null
+        }
+      ]
+    },
+    "429314": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Juan",
+          "text": "Excelente Alojamiento",
+          "rating": 5,
+          "date": "2026-08-18",
+          "avatar": null
+        },
+        {
+          "name": "Adrián",
+          "text": "MaiaHome host was super friendly and responsive to whatever we needed. The location is amazing for a family vacation, walkable and amazing restaurants nearby. It was perfect for our group of 10, we would definitely come back!",
+          "rating": 5,
+          "date": "2026-08-15",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Beautiful and peaceful stay. Thank you so much for all your attentiveness and kindness.  Truly enjoyed your hospitality and excellent service.",
+          "rating": 5,
+          "date": "2026-08-10",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Excelente opción de hospedaje cerca de Polanco, limpieza impecable muebles muy padres",
+          "rating": 5,
+          "date": "2026-07-28",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "El apartamento muy espacioso y limpio,,la locación excelente",
+          "rating": 5,
+          "date": "2026-07-12",
+          "avatar": null
+        },
+        {
+          "name": "Regina",
+          "text": "Estadía laboral para 4 personas,   todo muy prolijo y nuevo.\nInstrucciones fáciles para acceder y respuestas super rápidas. \nRecomendamos 100% y lo seguiremos arrendando para futuros consultores.\nMuchas gracias",
+          "rating": 5,
+          "date": "2026-07-03",
+          "avatar": null
+        },
+        {
+          "name": "Carolina",
+          "text": "素晴らしいお部屋で対応も素晴らしかったです",
+          "rating": 5,
+          "date": "2026-06-22",
+          "avatar": null
+        },
+        {
+          "name": "Gonzalo",
+          "text": "Todo estuvo bien con el alojamiento; sin embargo, tuve una experiencia muy desagradable al olvidar un pantalón nuevo en una de las habitaciones.\nAproximadamente 20 minutos después de salir, recordé que lo había dejado sobre la cama. Incluso, antes de irme, el personal de limpieza ya se encontraba en el lugar y me preguntó si podían comenzar con la limpieza, a lo que respondí que sí.\nEn cuanto me di cuenta del olvido, contacté al anfitrión y regresé de inmediato. Al llegar, toqué varias veces, pero el personal de limpieza no me abrió. Tuve que esperar alrededor de 15 minutos más, y solo después de que el anfitrión se comunicó con ellos me permitieron entrar.\nLamentablemente, para ese momento el pantalón ya no estaba y nunca apareció. Agradezco que el anfitrión haya intentado ayudarme, pero considero muy desafortunado que, después de regresar tan rápido y avisar de inmediato, mi pertenencia se haya perdido.",
+          "rating": 4,
+          "date": "2026-06-15",
+          "avatar": null
+        }
+      ]
+    },
+    "461199": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Isabella",
+          "text": "This was my favorite airbnb that i ever stayed at. The hosts were so friendly and accommodating. The house was beautiful and well kept. Great location. Would 💯 recommend this airbnb. Shout out to Santiago for being a great host. Thank you again for a wonderful stay.",
+          "rating": 5,
+          "date": "2026-08-20",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "Súper recomendado! Excelente ubicación y muy cómodo!",
+          "rating": 5,
+          "date": "2026-08-10",
+          "avatar": null
+        },
+        {
+          "name": "Gonzalo",
+          "text": "The place was very nice. It was better than expected! The host was very proactive and responsive. They were there at the check in and even helped us out by offering their metro card. Gave great suggestions on where to eat in the area and supplied cereal, milk, and water for us upon arrival.",
+          "rating": 5,
+          "date": "2026-08-09",
+          "avatar": null
+        },
+        {
+          "name": "Alejandro",
+          "text": "Wonderful host! They were proactive and included a free cleaning and checked in frequently. The home was spacious  and our party of 7 was very comfortable. \n\nOnly thing to note is there’s a lot of steps. \n\nThanks again for the great vacation experience.",
+          "rating": 5,
+          "date": "2026-07-30",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "Our family had a wonderful stay at this gorgeous home during our one week trip in Mexico city. The place was spotless and looked even more beautiful than the photos. We appreciated having plenty of towels, toilet paper, and blankets. Each bedroom was comfortable with either an AC or a ceiling fan.  It was such a thoughtful touch to find breakfast cereal, coffee, milk, juice, and water waiting for us when we arrived. The location was perfect, walking distance to great restaurants and shopping. Our hosts responded quickly to anything we needed. We would happily stay here again!",
+          "rating": 5,
+          "date": "2026-07-24",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Very impressed with how clean the place was. Everything from the floors being clean and able to walk barefoot without having dirty feet that needed washing before getting into bed. Loved the little details to make us feel at home.  Everything from coffee to little cereal boxes to help with morning routine. Stayed with friends but when i return with my family I’ll definitely stay here.",
+          "rating": 5,
+          "date": "2026-07-03",
+          "avatar": null
+        },
+        {
+          "name": "Gonzalo",
+          "text": "Loved this place. I came with a huge group and we all felt like we had our own private space. This is a perfect place for a large group.",
+          "rating": 5,
+          "date": "2026-06-21",
+          "avatar": null
+        },
+        {
+          "name": "Carolina",
+          "text": "We had a wonderful stay at this property in Polanco. The location was absolutely perfect—within walking distance of great restaurants, shops, and everything we wanted to explore in the neighborhood. The host was incredibly responsive and helpful throughout our stay, making the entire experience smooth and stress-free. We would definitely stay here again and highly recommend it to anyone visiting Mexico City.",
+          "rating": 5,
+          "date": "2026-06-19",
+          "avatar": null
+        }
+      ]
+    },
+    "462994": {
+      "rating": 4.4,
+      "count": 18,
+      "reviews": [
+        {
+          "name": "Patricia",
+          "text": "Polanco is the best neighborhood in CDMX, this place is well located, nice and cosy.",
+          "rating": 5,
+          "date": "2026-07-07",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "excelente!",
+          "rating": 5,
+          "date": "2026-03-10",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Todo como esta en la publicación",
+          "rating": 5,
+          "date": "2025-12-08",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "Great place to stay in Mexico City. Hosts were super responsive and very proactive about sending information for check-in and check-out.",
+          "rating": 5,
+          "date": "2025-11-12",
+          "avatar": null
+        },
+        {
+          "name": "Roberto",
+          "text": "Nice place in a great, very walkable location! The host was attentive and kind. The only downside was the lack of information about the apartment being part of a shared house. The only separation between our space and the rest of the home was our bedroom door, so we could hear conversations from the downstairs living room. We had also requested a crib in advance, but it wasn’t set up until the day after our arrival, which meant we had to improvise by placing cushions on the floor and sleeping next to the baby. Otherwise, the apartment is very clean, in a central location in Polanco and very quiet.",
+          "rating": 4,
+          "date": "2025-11-10",
+          "avatar": null
+        },
+        {
+          "name": "Rafael",
+          "text": "Los cuartos están bien decorados pero no se sienten como habitaciones o departamentos, se sienten como oficinas adaptadas para ser departamentos. Las paredes son de tablaroca y se escucha todo, incluso hay una puerta que conecta a otro departamento y oyes todo con claridad. Incluso las escaleras de metal que conectan a los pisos, son demasiado ruidosas y vibran.",
+          "rating": 4,
+          "date": "2025-11-09",
+          "avatar": null
+        },
+        {
+          "name": "Gabriela",
+          "text": "Excelente ubicación y muy limpio.",
+          "rating": 4,
+          "date": "2025-10-29",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "muy agradable",
+          "rating": 4,
+          "date": "2025-10-02",
+          "avatar": null
+        }
+      ]
+    },
+    "466958": {
+      "rating": 4.9,
+      "count": 9,
+      "reviews": [
+        {
+          "name": "Ana",
+          "text": "Ideal para familias, el anfitrión muy amable, el lugar es muy bonito y cómodo, la zona es muy segura y tienes muchos lugares cerca para visitar.",
+          "rating": 5,
+          "date": "2025-11-06",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "Muy bueno , volvería a ir! 🙌🏼",
+          "rating": 5,
+          "date": "2025-09-30",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "Santi’s place was a great place to stay for my group of 7 friends. In Polanco close to where we wanted to be would stay again!",
+          "rating": 5,
+          "date": "2025-05-29",
+          "avatar": null
+        },
+        {
+          "name": "Regina",
+          "text": "Place is very nice, clean, free of clutter, and furniture makes the place feel elevated. Also the location was excellent as it was quiet and close to Chapultepec.\nOnly things we did not like were that we felt the air conditioning label was misleading as only one of the bedrooms had an AC in the entire house. \nThere was also a strong smell in the main bedroom that at first we thought it was gas but it was probably like a sewer smell.\nThe host was responsive and the instructions were very clear on everything.",
+          "rating": 4,
+          "date": "2025-05-20",
+          "avatar": null
+        },
+        {
+          "name": "Mariana",
+          "text": "excelente airbnb, nos gustó mucho y nos gustaría mucho regresar en una estancia más larga!",
+          "rating": 5,
+          "date": "2024-12-10",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Excelente alojamiento, cumplió con todas nuestras expectativas, mi familia la pasó muy a gusto. Excelente que cada habitación tenga su baño completo. Hay muchos lugares para comer o simplemente tomar un café. Santiago nos recibió y apoyó en todo momento. Recomendable al 100%",
+          "rating": 5,
+          "date": "2024-09-17",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "Excelente muy padre lugar",
+          "rating": 5,
+          "date": "2024-08-10",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "Excelente alojamiento, la casa es extraordinaria y los anfitriones muy atentos ! Muy recomendable!",
+          "rating": 5,
+          "date": "2024-05-13",
+          "avatar": null
+        }
+      ]
+    },
+    "469041": {
+      "rating": 4.8,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Fernando",
+          "text": "We had such an enjoyable stay at this Airbnb in Mexico City. The host was friendly and made the whole experience easy! The host was incredibly responsive and helpful as well,even late at night which made us feel very taken care of! We really enjoyed our time here and would stay again on our next trip.",
+          "rating": 5,
+          "date": "2026-08-15",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "Excelente la atención ! Contestaban muy rápido y súper amables ! Sin duda me vuelvo alojar en este loft",
+          "rating": 5,
+          "date": "2026-08-04",
+          "avatar": null
+        },
+        {
+          "name": "Luis",
+          "text": "Alojamiento muy bonito, con buenos espacios, con todo lo necesario para sentirte cómodo y con un anfitrión con excelente atención.",
+          "rating": 5,
+          "date": "2026-07-30",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Erick’s place in CDMX was amazing!!! We were shocked at how much they accommodated us! The king size bed was really comfortable!! The hosts provided a little milk, cereal, and orange juice which was really nice! We loved this cute little apartment! Note there isn’t an elevator so you will have to carry your luggage.",
+          "rating": 5,
+          "date": "2026-07-06",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Erick was a great host. They were very responsive and their place was very peaceful.",
+          "rating": 5,
+          "date": "2026-07-03",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Gran lugar la ubicación es increíble  el lugar coincide con las fotos",
+          "rating": 5,
+          "date": "2026-06-29",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Tener en cuenta escaleras , ruido de perros y vecinos.\nEl alojamiento exelente ubicación y muy bien acondicionado con todo lo necesario.",
+          "rating": 4,
+          "date": "2026-06-20",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "Excelente lugar! La comunicación muy efectiva, zona genial, el lugar impecable y muy fácil de llegar",
+          "rating": 5,
+          "date": "2026-06-16",
+          "avatar": null
+        }
+      ]
+    },
+    "472123": {
+      "rating": 4.9,
+      "count": 33,
+      "reviews": [
+        {
+          "name": "Carolina",
+          "text": "Todo excelente",
+          "rating": 5,
+          "date": "2026-06-26",
+          "avatar": null
+        },
+        {
+          "name": "Andrea",
+          "text": "Todo muy bien, gracias.",
+          "rating": 5,
+          "date": "2026-06-20",
+          "avatar": null
+        },
+        {
+          "name": "Roberto",
+          "text": "Excelente estadía",
+          "rating": 5,
+          "date": "2026-06-07",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Buen lugar, lo necesario para únicamente dormir, el único detalle yo vería y parece importante señalarlo que está en un tercer piso y no hay elevador y es un poco incómodo pero nada grave el subir y bajar con maletas",
+          "rating": 5,
+          "date": "2026-06-03",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "Un lugar tranquilo y acogedor. La ubicación bastante bien si requieres realizar algún trámite o visita en la zona de Polanco.",
+          "rating": 5,
+          "date": "2026-05-31",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "excelente ubicacion, cómodo y muy atentos",
+          "rating": 5,
+          "date": "2026-05-14",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Very nice place to stay at while in polcanco , space was clean and bright , host was attentive as well .",
+          "rating": 5,
+          "date": "2026-04-23",
+          "avatar": null
+        },
+        {
+          "name": "Ricardo",
+          "text": "El lugar es muy bonito, es muy fácil llegar. Además, hay muchísimos lugares para ir a comer y es una zona muy segura",
+          "rating": 5,
+          "date": "2026-03-31",
+          "avatar": null
+        }
+      ]
+    },
+    "489020": {
+      "rating": null,
+      "count": 0,
+      "reviews": []
+    },
+    "489635": {
+      "rating": 4,
+      "count": 3,
+      "reviews": [
+        {
+          "name": "Tomás",
+          "text": "Excellent place! Santi was a great host. I would stay here again.",
+          "rating": 5,
+          "date": "2025-11-10",
+          "avatar": null
+        },
+        {
+          "name": "Carolina",
+          "text": "Great place to stay walking distance of restaurant and bars had a great time will come back soon.",
+          "rating": 5,
+          "date": "2025-06-19",
+          "avatar": null
+        }
+      ]
+    },
+    "489637": {
+      "rating": 4.9,
+      "count": 7,
+      "reviews": [
+        {
+          "name": "Daniela",
+          "text": "This was my 2nd time staying here, and both times were great experiences. It has the perfect layout for my family and myself to be comfortable and have our own space. Very secure location and walking distance to so many things. Overall just a great place to stay.",
+          "rating": 5,
+          "date": "2026-06-01",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "We had a great stay with six of us (each person had their own bathroom and two people shared one bedroom with the two single beds). The apartment is very functional with each bedroom having its own bathroom. It was easy to get around in Polanco and we enjoyed renting the city bikes nearby. The separate loft does require you to take stairs that are outside (thanks for another reviewer for pointing this out), and the rooftop is communal. We would stay here again.",
+          "rating": 5,
+          "date": "2026-02-14",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "The location is great and the neighborhood is beautiful. Very walkable and close access to stores, coffee shops, and restaurants. \n\nEach bedroom has its own bathroom on the second floor. The downstairs has a nice living room and kitchen/dining room. We had an issue with 1 toilet, but they came out immediately and fixed it. I was a little frustrated to learn that the loft was only accessible from stairs that were outside. There were no pictures of the outside access before I booked the Airbnb. This is the main reason for the 4 star review or else  I would have given 5.",
+          "rating": 4,
+          "date": "2026-01-13",
+          "avatar": null
+        },
+        {
+          "name": "Roberto",
+          "text": "Santi was such an amazing host. We had my bachelorette with 15 people, and they were so attentive and flexible with us. They allowed us to drop off our bags early and store them there when we were waiting for our flight. They responded so quickly whenever we had questions! The girls had such a fun time catching up and hanging out at the airbnb. It was the perfect place for all of us after a long day.\n\nEach of the rooms had an AC units, fans, and bathrooms, which made getting ready so easy with a group our size. We would 100% stay here again in the future!! Thank you for having us!!",
+          "rating": 5,
+          "date": "2025-09-05",
+          "avatar": null
+        },
+        {
+          "name": "Pablo",
+          "text": "Beautiful neighborhood. The place is very nice. I would stay there again.",
+          "rating": 5,
+          "date": "2025-05-08",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Would definitely stay again! Location was great!",
+          "rating": 5,
+          "date": "2025-02-04",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Well located, easy access to Metro and walkable! Lots of food options, close to Masaryk (main shopping area) and had sufficient space to fit a big family of 11. Comfortable, spacious, great location! The house needs a few repairs (like a few toilets with very low water pressure) and it seems like they are working on it. Overall great location for a quick trip to CDMX close to everything",
+          "rating": 5,
+          "date": "2024-10-30",
+          "avatar": null
+        }
+      ]
+    },
+    "489638": {
+      "rating": 5,
+      "count": 4,
+      "reviews": [
+        {
+          "name": "Ximena",
+          "text": "Stayed with a total group of 9 family members and this place was exceptional! Each bedroom had their own bathroom which was the biggest plus. All rooms were clean, free of clutter, and comfortable. There are some stairs in the main house that leads to all the bedrooms which the host let me know ahead of time, but the stairs were easy for everyone to climb up and down from. We also had a couple stay at the loft which is on the third floor and this stay was nice too! So much space for everyone in our group to feel comfortable in. The area is totally safe, walkable to nearby pharmacy, restaurants, and a Walmart.  I wouldn’t say the neighborhood is totally quiet as there are local traffic sounds that can be heard but during hours you’re already awake by - during the late night it was totally quiet! Finally Santi and his team stocked the fridge with some water and juice, and some cereal for our group! Overall we had a fantastic stay, would highly recommend for a large group!",
+          "rating": 5,
+          "date": "2025-08-14",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "El alojamiento está en muy buena ubicación, Santi se mostró atento y en comunicación en todo momento",
+          "rating": 5,
+          "date": "2025-08-03",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "This was the best stay in an Airbnb. Everything was pristine and as the pictures, lovely place with everything you need for a great stay. I will definitely stay here again. great for a family it for a group.\nSanti's communication was great, always helpfull",
+          "rating": 5,
+          "date": "2024-12-03",
+          "avatar": null
+        },
+        {
+          "name": "Luis",
+          "text": "The Polanco home was spacious enough for my family of 9, and we were grateful that every room came with a private bathroom. \nThe house was beautifully decorated, and the beds were incredibly comfortable. \nThe area was incredibly walkable and I felt safe the entire time. \nWe were grateful that basic toiletries and some breakfast foods were provided with our stay.\nSantiago was quick to respond whenever we reached out for minor hiccups during our stay. \nDefinitely recommend this host and his properties.",
+          "rating": 5,
+          "date": "2024-07-11",
+          "avatar": null
+        }
+      ]
+    },
+    "494785": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Fernando",
+          "text": "Todo excelente!!!",
+          "rating": 5,
+          "date": "2026-08-01",
+          "avatar": null
+        },
+        {
+          "name": "Daniela",
+          "text": "Excelente lugar y muy buena ubicación.\nMuy recomendable!!!",
+          "rating": 5,
+          "date": "2026-07-28",
+          "avatar": null
+        },
+        {
+          "name": "Ximena",
+          "text": "Esta divino y super espacioso el departamento... la atención por parte de los hostal estuvo genial\nSin duda alguna volveré a hospedarme aqui.\nP.d. Sigamos cuidando el departamento para que continúe igual de bello\nGracias",
+          "rating": 5,
+          "date": "2026-07-27",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "The place was fantastic in so many ways. It was spacious, comfortable, and made us feel right at home from the moment we arrived. The location was excellent—a short walk to great restaurants, convenience stores, pharmacies, and shopping, which made everything incredibly convenient.\n\nWe also appreciated the 24-hour security, which gave us peace of mind and allowed us to relax and enjoy our stay without any worries. The host was responsive, and communication was excellent throughout our visit.\n\nWe had a wonderful experience and would definitely stay here again. Highly recommended!",
+          "rating": 5,
+          "date": "2026-07-09",
+          "avatar": null
+        },
+        {
+          "name": "Juan",
+          "text": "wonderful hosts. very helpful and responsive.  beautiful house with everything and anything needed. wonderful stay.",
+          "rating": 5,
+          "date": "2026-06-11",
+          "avatar": null
+        },
+        {
+          "name": "Juan",
+          "text": "El departamento  es muy agradable y muy bien ubicado, tiene todo para una estancia cómoda. Los anfitriones estuvieron pendientes de mis dudas, volvería a hospedarme ahí.",
+          "rating": 5,
+          "date": "2026-06-08",
+          "avatar": null
+        },
+        {
+          "name": "Roberto",
+          "text": "Excelente lugar para hospedarse en Polanco. Muy bien ubicado, seguro, amplio y limpio. La estancia fue muy cómoda. Nos encantó, totalmente recomendado.",
+          "rating": 5,
+          "date": "2026-06-01",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "Muy recomendable, un lugar super agradable, muy tranquilo, sin ruidos externos, mucho muy bonito, muy cómodo. Detalles como el cafe, jugo y leche en el refrigerador fue un estupendo detalle, tal vez agregaría un par de botellas de agua. Lo único que falta y con lo que no cuentan es con Aire acondicionado, por el precio y ubicación deberían contar con ello. Batallamos con la calidad del internet.",
+          "rating": 4,
+          "date": "2026-05-20",
+          "avatar": null
+        }
+      ]
+    },
+    "506100": {
+      "rating": 4.6,
+      "count": 41,
+      "reviews": [
+        {
+          "name": "Laura",
+          "text": "Buena atención de los anfitriones, siempre atentos a mis preguntas.",
+          "rating": 5,
+          "date": "2026-08-06",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "Todo perfecto. Excelente ubicación.",
+          "rating": 5,
+          "date": "2026-06-14",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Nice place in an excellent location",
+          "rating": 5,
+          "date": "2026-06-13",
+          "avatar": null
+        },
+        {
+          "name": "Carolina",
+          "text": "Very beautiful place!",
+          "rating": 5,
+          "date": "2026-06-10",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "hote tres réactif et amical.\nle logement etais conforme aux descriptions et propre.\nl'accès est facile (code) et protégé.\net l'environnement est calme.\ntrès bon séjour ! 🙂",
+          "rating": 5,
+          "date": "2026-05-14",
+          "avatar": null
+        },
+        {
+          "name": "Aitana",
+          "text": "Se ajustaba muy bien a la ubicación en la que necesitaba estar para esa semana de trabajo, pero el primer día no contaba con luz por unos arreglos que tenian en el edificio de departamentos, hacian mucho ruido con el trabajo y se pasaba todo el ruido y conversaciones de los vecinos de cuarto.\nOtro detalle fue que fallo el agua caliente el primer día, pero a todo esto, en cuanto me comunicaba con ellos respondian al momento sino que antes, muy amables, resolutivos, tiene sus detalles pero en cualquier lugar puede pasar, Si son muy atentos y tratan de resolver cualqueir detalle lo antes posible, cosa que no sucede en otros lugares, eso los vuelve  excelentes anfitriones. Gracia",
+          "rating": 4,
+          "date": "2026-04-01",
+          "avatar": null
+        },
+        {
+          "name": "Andrea",
+          "text": "Bastante agradable todo!",
+          "rating": 5,
+          "date": "2026-03-10",
+          "avatar": null
+        },
+        {
+          "name": "Mateo",
+          "text": "Muy buen lugar, en excelente zona, es como se veía en las fotos, tiene todo lo que necesitas, horario de llegada flexible lo cual es algo a favor. Lugar seguro y el host al pendiente.",
+          "rating": 5,
+          "date": "2026-03-09",
+          "avatar": null
+        }
+      ]
+    },
+    "506106": {
+      "rating": 4.8,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Patricia",
+          "text": "Great little place, fast WiFi, helpful hosts. Would recommend.",
+          "rating": 5,
+          "date": "2026-08-19",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "Excelente ubicación \nCómodo y práctico",
+          "rating": 5,
+          "date": "2026-08-03",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Absolutely great experience, very attentive and accommodating, would 10/10 rent again.",
+          "rating": 5,
+          "date": "2026-07-26",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "Todo excelente, me sentí muy cómoda",
+          "rating": 5,
+          "date": "2026-07-07",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Esta limpio y cómodo, muy tranquilo tanto la zona como el departamento. Todo bien",
+          "rating": 5,
+          "date": "2026-06-06",
+          "avatar": null
+        },
+        {
+          "name": "Emilio",
+          "text": "Thank you so much for your hospitality. The place is beautiful, clean and at a safe area in CDMX. Big comfy bed. The only thing I can comment is, if you have tons of heavy luggages, note that there is no elevator. Other than that, everything was great. Communication was good. Thank you again.",
+          "rating": 4,
+          "date": "2026-05-28",
+          "avatar": null
+        },
+        {
+          "name": "Ximena",
+          "text": "El lugar muy agradable, muy limpio, claras las instrucciones , muy buena ubicación , la anfitriona muy atenta , respuesta rápida , buen servicio y muy recomendable",
+          "rating": 5,
+          "date": "2026-05-22",
+          "avatar": null
+        },
+        {
+          "name": "Gabriela",
+          "text": "Es un lugar perfecto para 2 persinas, muy cómodo, lindo y limpio. \nLa ubicación es perfecta, teniendo Masaryk a 3 cuadras. \nEl lugar te hace sentir muy cómodo y bienvenido. \nHost responde muy rápido y siempre está al pendiente",
+          "rating": 5,
+          "date": "2026-03-23",
+          "avatar": null
+        }
+      ]
+    },
+    "506118": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Fernanda",
+          "text": "Desde nuestra llegada el equipo fue muy amable, siempre estuvieron pendientes, el alojamiento es excelente, súper recomendado, una zona privilegiada, muchos caminamientos y las principales tiendas todas en el sector, muy tranquilo y seguro. Las amenidades y el lugar muy bonito siempre limpio y ordenado.\n\nTuvimos siempre el respaldo y la cortesía del equipo de maia, la habitación súper acogedora, con todo lo necesario y hasta más!!\n\nMuchas gracias por hacer de nuestra estadía una increíble experiencia!!\nPor supuesto que volveré!! Recomendado al 100%!!!🔝🙌🏽🫶🏼",
+          "rating": 5,
+          "date": "2026-08-08",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Buen depa para dos personas y bien equipado. Solo un detalle: una de las mesitas no estaba limpia y en la madrugada se escuchó bastante ruido de otro huésped de al lado, y aunque la zona de noche es oscura, es tranquila. \nCuando reservas te piden llenar un formulario externo con tu información lo cual es un requisito obligatorio del anfitrión.",
+          "rating": 5,
+          "date": "2026-08-05",
+          "avatar": null
+        },
+        {
+          "name": "Emilio",
+          "text": "El lugar es tal cual como en las fotos, muy limpio y fácil de llegar!",
+          "rating": 5,
+          "date": "2026-07-25",
+          "avatar": null
+        },
+        {
+          "name": "Santiago",
+          "text": "Lovely place and great location.",
+          "rating": 5,
+          "date": "2026-04-21",
+          "avatar": null
+        },
+        {
+          "name": "Aitana",
+          "text": "Una estancia muy completa y cómoda",
+          "rating": 5,
+          "date": "2026-04-11",
+          "avatar": null
+        },
+        {
+          "name": "Mateo",
+          "text": "gran lugar, super recomendado",
+          "rating": 5,
+          "date": "2026-02-04",
+          "avatar": null
+        },
+        {
+          "name": "Lucía",
+          "text": "Logement comme sur les photos\nLocalisation très pratique au pied de très bons restaurants et de petits supermarchés\nTrès proche de l hôpital espagnol\nLe quartier de Polanco est sûr et agréable avec toutes les commodites accessibles à pied",
+          "rating": 5,
+          "date": "2026-02-04",
+          "avatar": null
+        },
+        {
+          "name": "Mateo",
+          "text": "Me encanto el loft muy limpio, muy ordenado, todo funciona y tiene todo lo necesario para el tiempo de estancia.\nEsta ubicado en una muy buena calle en la zona de Polanco cerca a restaurantes, tiendas.\nSe puede caminar por la zona y conseguir todo lo que se necesite.\nLa comunicacion con los adminsitradores fue muy buena.\nLo recomiendo mucho y sin duda volvere a hospedarme cuando regrese a la cdMx",
+          "rating": 5,
+          "date": "2026-02-02",
+          "avatar": null
+        }
+      ]
+    },
+    "506119": {
+      "rating": 4.9,
+      "count": 50,
+      "reviews": [
+        {
+          "name": "Luis",
+          "text": "Todo esta super bien y las anfitrionas muy atentas.",
+          "rating": 5,
+          "date": "2026-07-20",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "El alojamiento cuenta con una excelente ubicación y un diseño muy agradable. Tuve un pequeño inconveniente durante el proceso de check-in, pero agradezco que el equipo lo resolvió de manera inmediata. Como único punto de mejora, sugeriría programar fumigaciones con mayor frecuencia para garantizar una experiencia óptima. En general, una buena estancia.",
+          "rating": 5,
+          "date": "2026-07-08",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Tuve una excelente estancia. Paty fue una anfitriona muy atenta, amable y siempre estuvo al pendiente de que todo estuviera bien durante mi estancia. La comunicación fue excelente y me hizo sentir muy bienvenida. Sin duda, la recomiendo y volvería a hospedarme con ella. ¡Muchas gracias, Paty!",
+          "rating": 5,
+          "date": "2026-07-07",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "Todo estuvo muy bien, muy recomendable, y muy atentos en todo momento.",
+          "rating": 5,
+          "date": "2026-06-29",
+          "avatar": null
+        },
+        {
+          "name": "Adrián",
+          "text": "Excelente en todo. 100% recomendado.\n\n1. Seguridad: Me sentí muy seguro durante toda la estancia. La zona es tranquila.\n2. Relación calidad-precio: Inmejorable por el precio. Vale cada peso.\n3. Exacto a las fotos: El lugar es idéntico a las fotos del anuncio, sin sorpresas.\n4. Limpieza: Impecable y muy bien cuidado. Se nota la atención al detalle.\n5. Internet: El wifi es muy rápido y estable, perfecto para trabajar.\n6. Anfitrión: La respuesta del anfitrión fue tan rápida y detallada que hasta me dio pena. Un 10/10.\n\nVolvería a hospedarme sin dudarlo. ¡Gracias!",
+          "rating": 5,
+          "date": "2026-06-05",
+          "avatar": null
+        },
+        {
+          "name": "Andrés",
+          "text": "Great place to stay in Polanco, a few minutes walk from commerce and plenty of restaurants in Polanquito. The place is small but comfortable, with everything you might need to relax and unwind after a day of walking around Mexico City. It is not the most private as the apartment sits in a common court with views to other apartments, but it was very quiet and peaceful when we stayed there. It looks like a new build, so it was very clean, modern, and with all the appliances for a short stay. Although it was not a problem to us, do note that you have to go through a flight of stairs to access, especially with large and heavy luggage or restricted mobility. Lastly, the team is incredibly responsive and helpful. The check in process was very smooth, and they were very proactive in staying in touch and making sure that they were always available for any questions or assistance.",
+          "rating": 5,
+          "date": "2026-04-30",
+          "avatar": null
+        },
+        {
+          "name": "Rafael",
+          "text": "Excelente ubicacion y muy bonito cuarto. Recomendable 100%.",
+          "rating": 5,
+          "date": "2026-04-29",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Perfect",
+          "rating": 5,
+          "date": "2026-04-23",
+          "avatar": null
+        }
+      ]
+    },
+    "506193": {
+      "rating": 5,
+      "count": 3,
+      "reviews": [
+        {
+          "name": "Daniela",
+          "text": "We were a group of 5 (4 adults and 1 child) and stayed at Iris’ place for 8 nights. The setup included two connected lock-off apartments, which offered a nice balance of privacy and shared space. While the apartments are on the smaller side, they are charming, comfortable, and fully livable.\n\nCheck-in was seamless, and communication with Iris was fast and super easy throughout our stay.\n\nThe apartments were well-equipped with everything we needed, and having access to a laundry room was a great bonus.\n\nThe location is excellent, surrounded by plenty of restaurants, grocery stores, pharmacies, and other conveniences. Definitely a top spot!\n\nWe would absolutely book this place again. Highly recommended!",
+          "rating": 5,
+          "date": "2025-08-03",
+          "avatar": null
+        },
+        {
+          "name": "María",
+          "text": "It was fairly comfortable and convenient",
+          "rating": 5,
+          "date": "2025-05-25",
+          "avatar": null
+        },
+        {
+          "name": "Óscar",
+          "text": "Excelente estancia",
+          "rating": 5,
+          "date": "2025-05-19",
+          "avatar": null
+        }
+      ]
+    },
+    "506198": {
+      "rating": 4.8,
+      "count": 6,
+      "reviews": [
+        {
+          "name": "Emiliano",
+          "text": "Buen espacio y comodidad!! Siempre están al pendiente si necesitas algo, lo recomiendo mil!! ❤️",
+          "rating": 4,
+          "date": "2026-07-16",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Muy buen lugar, las camas muy cómodas, y muy amables.",
+          "rating": 5,
+          "date": "2026-01-26",
+          "avatar": null
+        },
+        {
+          "name": "Patricia",
+          "text": "Bueno, bonito y funcional",
+          "rating": 5,
+          "date": "2026-01-03",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Great option to stay.",
+          "rating": 5,
+          "date": "2025-08-10",
+          "avatar": null
+        },
+        {
+          "name": "Luis",
+          "text": "Excelente!! muchas gracias!!!",
+          "rating": 5,
+          "date": "2025-06-27",
+          "avatar": null
+        },
+        {
+          "name": "Ricardo",
+          "text": "Todo muy bien, muy limpio y excelente atención.",
+          "rating": 5,
+          "date": "2025-06-12",
+          "avatar": null
+        }
+      ]
+    },
+    "625019": {
+      "rating": 5,
+      "count": 34,
+      "reviews": [
+        {
+          "name": "Sebastián",
+          "text": "This was a great space! I really enjoyed how easy it was to get around from the airbnb and how comfortable the space felt for me and my friend. I was working from Mexico City for a few days and strong internet was a top priority for me — the wifi here did not disappoint, it was extremely fast! \n\nThe only thing i’ll note is that there was construction going on in the building and it was a bit loud during the day while taking calls, but after talking to the team they did their best to coordinate with construction and the noise levels decreased significantly! \n\nOverall would recommend to anyone visiting CDMX, and I surely plan to be back!!",
+          "rating": 5,
+          "date": "2026-08-14",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "This place was great. Loved the location, walkable, and lots of restaurants near by. Place was cute and clean!",
+          "rating": 5,
+          "date": "2026-08-11",
+          "avatar": null
+        },
+        {
+          "name": "María",
+          "text": "El alojamiento es tal como en las fotos, muy limpio y cualquier duda siempre están al pendiente, sin duda volvería a alojarme aquí.",
+          "rating": 5,
+          "date": "2026-07-19",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Staff? 11/10. Location 10/10. Actual space 10/10. Safety 10/10. \n\nI explored, what felt like, all of roma Norte from here and every time I returned I felt right at home. The bed is fantastic and large while the place is on a busy road you cannot hear a thing. \n\nThanking the team once again for all their communication, engagement and for creating such a warm, modern and functional space.",
+          "rating": 5,
+          "date": "2026-07-07",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "I had an excellent stay at this 1-bdrm Conchita apt in Roma Sur & would def recommend it to anyone visiting CDMX. From the moment I arrived, I felt comfortable.\n\nThe space was exactly as described—clean, comfortable, and thoughtfully designed. The apartment had everything I needed for a relaxing stay, and the bed was very comfortable. I appreciated how peaceful the apartment was at night, allowing for a great night’s sleep after busy days exploring the city. The hosts were fantastic and even provided a complimentary professional apartment cleaning during my stay.\n\nOne of the things I enjoyed most was the location in Roma Sur. The neighborhood has a wonderful local feel and strikes a great balance between being lively and relaxed. I loved walking around the area, discovering neighborhood cafés, restaurants, bakeries, and small shops. It felt authentic and welcoming.\n\nI loved my time here and hope to return in the future!",
+          "rating": 5,
+          "date": "2026-06-15",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "A very safe place to stay, nice and clean. Walking distance to Condesa which is a very nice neighborhood!",
+          "rating": 4,
+          "date": "2026-06-01",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "Great apartment and very comfortable. The location is ideal and very walkable. Hosts were incredibly helpful and responsive. We recommend this place and we will book again next time we are in CDMX.",
+          "rating": 5,
+          "date": "2026-05-08",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "They thought of everything! Super comfortable stay",
+          "rating": 5,
+          "date": "2026-05-03",
+          "avatar": null
+        }
+      ]
+    },
+    "625022": {
+      "rating": 4.9,
+      "count": 27,
+      "reviews": [
+        {
+          "name": "Juan",
+          "text": "Es igual a las fotos muy cómodo y la zona esta increíble!! Definitivamente nos hospedaríamos de nuevo",
+          "rating": 4,
+          "date": "2026-08-13",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "Thank you for a lovely stay!",
+          "rating": 5,
+          "date": "2026-06-28",
+          "avatar": null
+        },
+        {
+          "name": "Verónica",
+          "text": "Maiahome is a good option on the borders of condesa and escandon.\n\nthe team is super responsive for any question/issues, the flats are well equipped & super clean.\n\nBe sure to book one of the flat on the back of the building as the main road is extremely noisy, especially at night (truck traffic).\nThe wifi login is a bit of a pain and not secured.\nOverall a good option if you secure one the units at the back of the building.",
+          "rating": 4,
+          "date": "2026-06-25",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "Perfect little spot in Condesa for a short stay. Very clean and in a great location. Nice touch to have coffee, milk, water and juice provided. I’ve communicated a few things to the host that would make the apartment a solid 5*, but nothing that would make me hesitate in booking again!",
+          "rating": 4,
+          "date": "2026-05-27",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Muy cómodo, excelente ubicación",
+          "rating": 5,
+          "date": "2026-05-18",
+          "avatar": null
+        },
+        {
+          "name": "Emilio",
+          "text": "Muy buena ubicación y bonito lugar lo único es que nos costó trabajo regular la temperatura de la regadera",
+          "rating": 5,
+          "date": "2026-05-14",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Excelente departamento",
+          "rating": 5,
+          "date": "2026-05-06",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "Great place with lots of good restaurants around and walkable surroundings. Co-hosts were very helpful, friendly and responsive.",
+          "rating": 5,
+          "date": "2026-04-29",
+          "avatar": null
+        }
+      ]
+    },
+    "625023": {
+      "rating": 4.7,
+      "count": 15,
+      "reviews": [
+        {
+          "name": "Isabella",
+          "text": "Súper céntrico y excelente ubicación, el depa tal cuál se mostraba en las fotos, muy cómodo. La atención, trato y comunicación fue impecable de comienzo a fin, siempre muy atentas y al pendiente.",
+          "rating": 5,
+          "date": "2026-08-15",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "Excelente ubicación, línea 9 del metro y línea 1 del metro bus cercanas, café bola de oro a 1 cuadra, por la mañana mucha variedad para desayunar :D",
+          "rating": 5,
+          "date": "2026-08-02",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "Es la segunda vez que nos hospedamos en este mismo lugar y nos encanta, nos sentimos como en casa, es muy cómodo y sin duda nos volveríamos a hospedar ahí. Muy recomendado.",
+          "rating": 5,
+          "date": "2026-05-19",
+          "avatar": null
+        },
+        {
+          "name": "Emilio",
+          "text": "Estuvimos encantados, es un lugar muy cómodo y acogedor, fuimos por un viaje de trabajo/estudio, y es exactamente lo que necesitábamos y súper bien ubicado, estábamos muy cerca de los lugares a donde teníamos que ir y en una zona muy bella, sin duda lo recomendamos y nos volveríamos a hospedar aquí.",
+          "rating": 5,
+          "date": "2026-04-24",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Nos quedamos dos noches y fué una experiencia muy agradable desde la llegada, facíl y privado. Todo impecable y bien equipado para lo que se necesite, te hace sentir como en casa, no hubo ningun problema en la estancia\nAl rededor hay muy buenas opciones para desayunar o cenar, sobretodo en las noches es agradable para caminar.\nbastante recomendable para 1 o más noches :3",
+          "rating": 5,
+          "date": "2026-03-17",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "The place was clean, modern, and priced well. It was a short walk away from a lot of cafes, bars, and parks and it served us well for a couple nights. Would definitely book here again.",
+          "rating": 5,
+          "date": "2026-02-20",
+          "avatar": null
+        },
+        {
+          "name": "Camila",
+          "text": "Super lindo y cómodo. Muy bien ubicado, silencioso y cosas lindas cerca.",
+          "rating": 5,
+          "date": "2026-02-01",
+          "avatar": null
+        },
+        {
+          "name": "Hugo",
+          "text": "Bonne emplacement. Tout était à proximité. Notre chambre était propre et confortable sauf pour le bruit. Notre chambre faisait face au boulevard et on attendait les autos ce qui nous a empêché de dormir durant notre première nuit. On leur a fait part de la situation et le lendemain, ils nous transférer dans une autre chambre où le bruit n’était plus un problème. À partir de là, on a bien relaxer.",
+          "rating": 4,
+          "date": "2026-01-30",
+          "avatar": null
+        }
+      ]
+    },
+    "625024": {
+      "rating": 4.8,
+      "count": 32,
+      "reviews": [
+        {
+          "name": "Beatriz",
+          "text": "Gran atención de Natalia y a su equipo, estuvieron súper al pendiente en todo momento. \nEl departamento es justo como se muestra en las fotos: todo muy limpio, cómodo y muy agradable para quedarse.\nEl único detalle es la acústica con el departamento de al lado; las paredes son tan delgadas que se alcanza a escuchar casi cualquier cosa, incluso cuando los vecinos no están haciendo mucho ruido o solo están hablando normal.\nAún así, disfrute mucho la estancia.",
+          "rating": 5,
+          "date": "2026-08-25",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "La verdad todo excelente, me he hospedado varias veces en la condesa y es muy agradable, el departamento muy bonito, cómodo y bien ubicado\nSiempre estuvieron al pendiente",
+          "rating": 5,
+          "date": "2026-08-16",
+          "avatar": null
+        },
+        {
+          "name": "María",
+          "text": "n/a",
+          "rating": 5,
+          "date": "2026-07-13",
+          "avatar": null
+        },
+        {
+          "name": "Juan",
+          "text": "Hice la reserva tarde y Natalia me respondió en tiempo, pude hacer el check in más tarde, las instrucciones fueron clarísimas, con referencias para encontrar el lugar fácilmente, todo muy limpio, ordenado, sin ruido, dejaron snacks. \n\nMuy muy recomendado.",
+          "rating": 5,
+          "date": "2026-06-28",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "Apartment was clean and close to lots of restaurants and coffee shops.",
+          "rating": 5,
+          "date": "2026-06-27",
+          "avatar": null
+        },
+        {
+          "name": "Ximena",
+          "text": "Love the room and the location, it was awesome",
+          "rating": 5,
+          "date": "2026-06-25",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Fue una estancia súper bien me encantó que el departamento olía súper rico y que estaba muy limpio, el kit de bienvenida muy bien , tiene un ventilador en el techo que con este calor ayudó a dormir súper rico y la ubicación muchas cosas muy cerca y la comunicación súper bien, sin duda volvería a regresar",
+          "rating": 5,
+          "date": "2026-05-17",
+          "avatar": null
+        },
+        {
+          "name": "Regina",
+          "text": "Excelente lugar y ubicación",
+          "rating": 5,
+          "date": "2026-05-16",
+          "avatar": null
+        }
+      ]
+    },
+    "626201": {
+      "rating": 4.8,
+      "count": 17,
+      "reviews": [
+        {
+          "name": "Eduardo",
+          "text": "Muchas gracias al equipo por hacer nuestra estancia amena. Nos dejaron cereal, jugo de naranja, leche y agua, no todos los AirBnb hacen esas cosas para que te sientas como en casa. Espero volver :)",
+          "rating": 5,
+          "date": "2026-08-05",
+          "avatar": null
+        },
+        {
+          "name": "Mariana",
+          "text": "buena 10/10",
+          "rating": 5,
+          "date": "2026-06-19",
+          "avatar": null
+        },
+        {
+          "name": "Beatriz",
+          "text": "Gracias",
+          "rating": 5,
+          "date": "2026-06-04",
+          "avatar": null
+        },
+        {
+          "name": "Miguel",
+          "text": "Todo bien con el hospedaje. Está bien cuidado. Únicamente no pude conectar la tele a internet tuve que usar mis datos móviles y el agua tardaba en regresar a caliente",
+          "rating": 4,
+          "date": "2026-04-04",
+          "avatar": null
+        },
+        {
+          "name": "Daniela",
+          "text": "Lugar bonito,  impecable, cuenta con un sofa cama, comodo pero pequeño, la descripcion decia que eran dos camas pero era una y el sofá cama, muy atentos los anfitriones y responden al momento, dejan leche, cafe, cereal y jugo, detallazo los jabones de baño deliciosos, sin duda volveria",
+          "rating": 4,
+          "date": "2026-03-16",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "Lovely place, very clean, comfortable bed and in an excellent, central location. I would definitely stay again.",
+          "rating": 5,
+          "date": "2026-03-11",
+          "avatar": null
+        },
+        {
+          "name": "Lucía",
+          "text": "El lugar muy cómodo y limpio y funcional",
+          "rating": 5,
+          "date": "2026-02-28",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "Great stay, easy to access. The apartment is on a main avenue, but not noisy. The location is great a couple of blocks from metro station and close to good restaurants, coffee shops and convenience stores. The host is a great team that answers all questions and provides great service when needed. Great stay overall.",
+          "rating": 5,
+          "date": "2026-02-28",
+          "avatar": null
+        }
+      ]
+    },
+    "626202": {
+      "rating": 4.6,
+      "count": 18,
+      "reviews": [
+        {
+          "name": "Fernando",
+          "text": "Muchas gracias!",
+          "rating": 5,
+          "date": "2026-06-16",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Es lo que todo alojamiento deberia de ser, limpio, grande, agradable, cómodo, cama espectacular, y personalmente yo que me la paso viajando por trabajo a veces extraña comer sencillo y al llegar había un par de cereales y jugo de naranja, que aunque fueran las 3 PM me ayudaron a saciar el hambre un poco y a sentirme un poco en casa (Ya estoy harto de comer en restaurantes)",
+          "rating": 5,
+          "date": "2026-06-01",
+          "avatar": null
+        },
+        {
+          "name": "Ximena",
+          "text": "Este alojamiento es sin duda una opción de calidad, confortable, moderno y limpio que recomiendo al 100.",
+          "rating": 5,
+          "date": "2026-05-30",
+          "avatar": null
+        },
+        {
+          "name": "Bruno",
+          "text": "Es un excelente lugar y muy bien ubicado. Recomiendo",
+          "rating": 5,
+          "date": "2026-04-28",
+          "avatar": null
+        },
+        {
+          "name": "Mariana",
+          "text": "Nous avons passé un excellent séjour chez Natalia. L'hôte est très réactive. Son studio est agréable, moderne et bien équipé. Le quartier est très sympa. Tout est à proximité pour passer un bon séjour à Mexico city.",
+          "rating": 5,
+          "date": "2026-04-24",
+          "avatar": null
+        },
+        {
+          "name": "Rafael",
+          "text": "Todo excelente, genuinamente muy comoda la ubicacion y experiencia.\n\nGran comunicación y respuesta rápida ante cualquier necesidad.",
+          "rating": 5,
+          "date": "2026-04-22",
+          "avatar": null
+        },
+        {
+          "name": "Javier",
+          "text": "Amazing place, amazing neighborhood, very clean and very safe. They just needs to specify that there's a Blocked Door that separates the apartments, you can hear everything from the next apartment. So if your neighbors are noisy it can be a problem.",
+          "rating": 4,
+          "date": "2026-04-06",
+          "avatar": null
+        },
+        {
+          "name": "Luis",
+          "text": "Had a great stay. Felt like a hotel experience. Great location. Good internet.",
+          "rating": 5,
+          "date": "2026-04-02",
+          "avatar": null
+        }
+      ]
+    },
+    "626203": {
+      "rating": 4.8,
+      "count": 24,
+      "reviews": [
+        {
+          "name": "Andrés",
+          "text": "Sin duda la mejor opción que pude encontrar y mas por mi peludos, fueron felices tomando el sol en la terraza. Me sentí como en casa.\nSin duda esto es un claro ejemplo de servicio al cliente siempre atentos y dispuestos a tus dudas, yo estuve muy satisfecho.\nTodo esta igual a las fotos, un alojamiento céntrico, tranquilo, muchas opciones para ir a comer y caminar\nGracias Natalia y equipo, espero pronto vernos =)",
+          "rating": 5,
+          "date": "2026-08-26",
+          "avatar": null
+        },
+        {
+          "name": "Natalia",
+          "text": "Es de mis Airbnb favoritos en CDMX. Gran localización, comodidad, súper limpio y es tal cual como se ve en las fotos. Lo que más me gusta es la comunicación con el host, contestan súper rápido y siempre te dan soluciones.",
+          "rating": 5,
+          "date": "2026-06-23",
+          "avatar": null
+        },
+        {
+          "name": "Tomás",
+          "text": "Nos hemos quedado ya varias veces aquí y sin dudar cada vez que podemos nos volvemos a hospedar en estos apartamentos porque nos sentimos como en casa, muy cómodos, seguros y felices, los recomendamos siempre.",
+          "rating": 5,
+          "date": "2026-06-18",
+          "avatar": null
+        },
+        {
+          "name": "Verónica",
+          "text": "Ya van 2 veces que me quedó en este hospedaje y sobre todo lo hacemos porque es Pet Friendly. La ubicación es genial, puedes ir caminando a todas partes. El lugar es totalmente idéntico a las fotos. La comunicación con los hosts siempre es buena. Me parece una excelente opción de hospedaje.",
+          "rating": 5,
+          "date": "2026-06-08",
+          "avatar": null
+        },
+        {
+          "name": "Regina",
+          "text": "Todo excelente!",
+          "rating": 5,
+          "date": "2026-06-07",
+          "avatar": null
+        },
+        {
+          "name": "Isabella",
+          "text": "Esa la cuarta vez que nos quedamos, y estamos encantados, sin duda nos volveríamos a hospedar, nos sentimos como en casa siempre que volvemos.",
+          "rating": 5,
+          "date": "2026-06-01",
+          "avatar": null
+        },
+        {
+          "name": "Ana",
+          "text": "Muy bien todo la verdad!",
+          "rating": 5,
+          "date": "2026-05-24",
+          "avatar": null
+        },
+        {
+          "name": "Renata",
+          "text": "Viajamos con 2 perritos y fue la estancia perfecta para quedarnos. Cuenta con un balcón y las fotos son exactamente como el lugar se encuentra. Es un espacio moderno y amplio. \nLa comunicación con el soporte a tu estancia espacio buenísima. Está en una zona estratégica y súper bien conectado. Seguramente regresaremos :)",
+          "rating": 5,
+          "date": "2026-05-13",
+          "avatar": null
+        }
+      ]
+    },
+    "626206": {
+      "rating": 5,
+      "count": 3,
+      "reviews": [
+        {
+          "name": "Luis",
+          "text": "Buena ubicación,lindo departamento y me dejaron entrar con mis perritos 🐶 🙏🏻💖",
+          "rating": 5,
+          "date": "2026-08-22",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "Quiero agradecer profundamente la atención recibida en este airbnb. \nEs un edificio donde hay varios departamentos lindos y cómodos y fue siempre un agrado regresar en las tardes de vuelta de los paseos (a lo que consideraba ya como mi casa... :) Siempre estuvo todo impecable y oliendo muy rico!\nCuando necesité preguntar algo, me apoyaron de inmediato con la mejor disposición y amabilidad como tienen todos los mexicanos.\nEl edificio está en un barrio precioso, lleno de restaurantes y todo tipo de servicios.\nPuedes salir tranquilamente a recorrer sus lindas calles que están llenas de vida y entretención.\nAgradezco de corazón la atención recibida y recomiendo a ojos cerrados este lugar. \nLes deseo todo el éxito del mundo porque realmente se lo merecen 💕💕 Espero verlos muy pronto y mi México querido, me los llevo en el corazón ! ❤️",
+          "rating": 5,
+          "date": "2026-08-13",
+          "avatar": null
+        },
+        {
+          "name": "Sebastián",
+          "text": "El departamento tiene una ubicación inmejorable: restaurantes, farmacias y tiendas a unos pasos. Es cómodo, de fácil acceso y la zona se siente muy segura. La atención de Natalia y el equipo de Maiahome fue de las mejores que he tenido en un Airbnb; siempre pendientes de que no me faltara nada. ¡Sin duda volveré cada vez que visite la ciudad!",
+          "rating": 5,
+          "date": "2026-06-23",
+          "avatar": null
+        }
+      ]
+    },
+    "639778": {
+      "rating": 4.4,
+      "count": 8,
+      "reviews": [
+        {
+          "name": "Santiago",
+          "text": "It was very clean. It was extremely spacious, it was nice and felt like home. I Loved the fact it was convenient and not far from the University that I was dropping my daughter off at.  Me and my family were close by and I would definitely stay there every time I go to visit my daughter at school!",
+          "rating": 5,
+          "date": "2026-08-21",
+          "avatar": null
+        },
+        {
+          "name": "Verónica",
+          "text": "The house was big enough for my family to sleep comfortably. It was very clean. And the house was beautiful.",
+          "rating": 5,
+          "date": "2026-08-02",
+          "avatar": null
+        },
+        {
+          "name": "Valeria",
+          "text": "Pros: floor-plan was great. Looked exactly like pictures. Beds were comfortable. We had everything we needed!\n\nGrows: Traffic noise at all hours, Limited parking, Strong odor in the home. I recommend verifying that host has identified and eliminated the source of the smell prior to booking; \n\nNote: Do not over look the fact that they require all guests to send picture of their ID before they send your checkin details.",
+          "rating": 4,
+          "date": "2026-07-31",
+          "avatar": null
+        },
+        {
+          "name": "Laura",
+          "text": "Wonderful host, helped us check in a super short notice, the place was fantastic for our needs, and our large family, thanks for your kind support during our stay",
+          "rating": 5,
+          "date": "2026-07-29",
+          "avatar": null
+        },
+        {
+          "name": "Alejandro",
+          "text": "I was really happy and impressed with the home. I was a little worried about the location but we had no problems at all. We were in town for a World Cup game and the location was really close to the stadium. All beds were comfortable and bathrooms and kitchen were very nice!",
+          "rating": 5,
+          "date": "2026-07-05",
+          "avatar": null
+        },
+        {
+          "name": "Diego",
+          "text": "Very well communicative team. \nAny issues that arose were quickly addressed \n\nThank you again.",
+          "rating": 5,
+          "date": "2026-07-04",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "My family and I stayed for a night. No issues. It was a little noisy from the train/street. But other than that it was fine. Good communication, responding quickly. Comfortable stay.",
+          "rating": 4,
+          "date": "2026-06-24",
+          "avatar": null
+        }
+      ]
+    },
+    "669908": {
+      "rating": 4.9,
+      "count": 16,
+      "reviews": [
+        {
+          "name": "Eduardo",
+          "text": "Excelente estancia! Tal cual las fotos, muy buena ubicación, vecindario muy tranquilo y seguro, enfrente había seguridad. El acceso al edificio muy seguro, con seguridad las 24 horas! Muy limpio, muy grande, excelente para nuestra estancia!",
+          "rating": 5,
+          "date": "2026-08-03",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Mi familia y yo quedamos encantados! Realmente el lugar igual o mejor que en las fotos, muy cómodo, limpio, con todas las comodidades y hasta con un kit de bienvenida buenisimo! Lo disfrutamos mucho, encontramos todo muy organizado y limpio, además que responden casi de manera inmediata y nos enviaron instrucciones y recomendaciones con anticipación y muy claros! Definitivamente volveríamos! Recomendado 100%!!!",
+          "rating": 5,
+          "date": "2026-07-29",
+          "avatar": null
+        },
+        {
+          "name": "Eduardo",
+          "text": "Increíble ubicación, limpieza, fácil de accesar. Íbamos 7 personas y nos encantó que todos tuvimos habitación y baño propio. Los anfitriones estuvieron pendiente todo el tiempo y respondían muy rápido. Agradezco también la recomendación que me hicieron para elegir el lugar para comer.\nSin duda alguna volvería.",
+          "rating": 5,
+          "date": "2026-07-28",
+          "avatar": null
+        },
+        {
+          "name": "Óscar",
+          "text": "This was one of the nicest places I have stayed. Spacious. Beautiful. Near great parks, restaurants and window shopping. My older son went into Cartier to look around. Didn’t buy anything 😂. You can find just about anything in this area.",
+          "rating": 5,
+          "date": "2026-07-26",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "Perfect place for our group of 6.   Whilst we were there for 4 days we found it located in a quiet and peaceful street in Polanco.   Close to  shops, cafes, bars and restaurants.   We visited the anthropology museum, parks, shops, restaurants, bars and the azteca pyramids/hot sir ballooning .  We were also in Mexico City for the World Cup, Mexico vs England, and as England fans we found the Mexicans very welcoming and friendly.   Will be back to visit the City when the World Cup isn’t on.",
+          "rating": 5,
+          "date": "2026-07-18",
+          "avatar": null
+        },
+        {
+          "name": "Fernanda",
+          "text": "Nos encanto el lugar, las habitaciónes son amplias y comodas",
+          "rating": 5,
+          "date": "2026-07-17",
+          "avatar": null
+        },
+        {
+          "name": "Alejandra",
+          "text": "Excelente ubicacion,  Departamento muy Espacioso, muy limpio y muy completo.",
+          "rating": 5,
+          "date": "2026-07-12",
+          "avatar": null
+        },
+        {
+          "name": "Emiliano",
+          "text": "Excelente lugar, súper recomendado. El apartamento es increíble, de fácil acceso para personas mayores y puede alojar fácilmente familias grandes. La atención fue muy buena, todo el tiempo pendientes y reactivos a las consultas. Limpieza/espacioso/moderno/excelente atención.",
+          "rating": 5,
+          "date": "2026-07-12",
+          "avatar": null
+        }
+      ]
+    },
+    "704198": {
+      "rating": 5,
+      "count": 2,
+      "reviews": [
+        {
+          "name": "Valeria",
+          "text": "We had a wonderful stay! The Airbnb was comfortable, clean, and in a great location. It was perfect for our family and made it easy for us to explore Mexico City. The host was very helpful, responsive, and made us feel welcome. We really enjoyed our stay and would definitely recommend this place to anyone visiting Mexico City. We would happily stay here again! ❤️",
+          "rating": 5,
+          "date": "2026-08-22",
+          "avatar": null
+        },
+        {
+          "name": "Daniela",
+          "text": "The appartement was very clean and spacious. Natalia and her team were very helpful and responded immediately. The neighbourhood is very nice and safe. Many restaurants around. We'll book again if we go to Mexico city.",
+          "rating": 5,
+          "date": "2026-07-25",
+          "avatar": null
+        }
+      ]
+    },
+    "704200": {
+      "rating": null,
+      "count": 0,
+      "reviews": []
+    },
+    "704201": {
+      "rating": null,
+      "count": 0,
+      "reviews": []
+    }
+  },
+  "featured": [
+    {
+      "name": "Mia",
+      "text": "El departamento es hermoso, solo tuvimos un inconveniente con el boiler la primera mañana y desafortunadamente era el día del bautizo de mi bebé, por lo que nos retrasó muchísimo porque el agua estaba helada. Ante este tipo de urgencias a las 5am no hubo respuesta hasta después de las 9am, entiendo perfecto que no estarán 24hrs, pero si considero que deberían tener algún mecanismo porque no es normal que tus huéspedes te llamen a esa hora. Sin embargo, lo antendieron y ya no hubo problema el resto de los días. La zona es maravillosa y cada vez que vamos a la ciudad, esta es la zona en la que nos quedamos. Gracias por el lindo detalle de las amenidades de llegada, el cereal, leche y café genuinamente se agradece. Sin duda regresaremos a hospedarnos aquí.",
+      "rating": 5,
+      "date": "2026-08-17",
+      "avatar": null,
+      "property": "Tamayo"
+    },
+    {
+      "name": "Olivia",
+      "text": "Quiero agradecer profundamente la atención recibida en este airbnb. \nEs un edificio donde hay varios departamentos lindos y cómodos y fue siempre un agrado regresar en las tardes de vuelta de los paseos (a lo que consideraba ya como mi casa... :) Siempre estuvo todo impecable y oliendo muy rico!\nCuando necesité preguntar algo, me apoyaron de inmediato con la mejor disposición y amabilidad como tienen todos los mexicanos.\nEl edificio está en un barrio precioso, lleno de restaurantes y todo tipo de servicios.\nPuedes salir tranquilamente a recorrer sus lindas calles que están llenas de vida y entretención.\nAgradezco de corazón la atención recibida y recomiendo a ojos cerrados este lugar. \nLes deseo todo el éxito del mundo porque realmente se lo merecen 💕💕 Espero verlos muy pronto y mi México querido, me los llevo en el corazón ! ❤️",
+      "rating": 5,
+      "date": "2026-08-13",
+      "avatar": null,
+      "property": "Condesa"
+    },
+    {
+      "name": "Lily",
+      "text": "We had a great experience staying here! The security was top-notch, which made us feel very comfortable throughout our stay. The location was also great, and the burgers across the street were absolutely delicious!\n\nThe apartment was clean and everything worked as expected. They even came by to clean the apartment mid-week, which was a really nice touch. The checkout requirements were minimal and very easy to follow.\n\nCommunication was excellent. Every question we had was answered very quickly, and we had no issues during our stay.\n\nOne thing to note: if you plan on using the pool, a swim cap is required. We didn’t have one, so unfortunately my daughter wasn’t able to use the pool, which was a little disappointing. However, this was clearly something we should have checked in the listing beforehand.\n\nOverall, we had a great experience and would definitely recommend staying here!",
+      "rating": 5,
+      "date": "2026-08-09",
+      "avatar": null,
+      "property": "Condesa"
+    },
+    {
+      "name": "Justin",
+      "text": "One of the nicest AirBnB's my family has stayed in! The area is very friendly and safe with a very convenient pharmacy infront, a convenience store and down the street some restaurants and a park. The apartment was very neat and the beds very comfortable. Clean towels, clean restrooms, fans in the closet for the heat if needed. They did a courtesy cleaning which I thought would only be sweeping or mopping but they actually went above and beyond to clean it while we were there. I appreciate how responsive the hosts are. And helpful. Everything is perfect. I would recommend it because its very comfortable with two bathrooms, and the area outside is wonderful! Its located in a very nice spot centric to the city so we got to our destinations in the estimated times!",
+      "rating": 5,
+      "date": "2026-06-16",
+      "avatar": null,
+      "property": "Condesa"
+    },
+    {
+      "name": "Olivia",
+      "text": "I had an excellent stay at this 1-bdrm Conchita apt in Roma Sur & would def recommend it to anyone visiting CDMX. From the moment I arrived, I felt comfortable.\n\nThe space was exactly as described—clean, comfortable, and thoughtfully designed. The apartment had everything I needed for a relaxing stay, and the bed was very comfortable. I appreciated how peaceful the apartment was at night, allowing for a great night’s sleep after busy days exploring the city. The hosts were fantastic and even provided a complimentary professional apartment cleaning during my stay.\n\nOne of the things I enjoyed most was the location in Roma Sur. The neighborhood has a wonderful local feel and strikes a great balance between being lively and relaxed. I loved walking around the area, discovering neighborhood cafés, restaurants, bakeries, and small shops. It felt authentic and welcoming.\n\nI loved my time here and hope to return in the future!",
+      "rating": 5,
+      "date": "2026-06-15",
+      "avatar": null,
+      "property": "Condesa"
+    },
+    {
+      "name": "Hannah",
+      "text": "We had a wonderful stay and would definitely stay here again. The place was exceptionally clean and well-maintained, and we really appreciated that each bedroom had its own attached bathroom. There was plenty of space for our toddlers to run around and play comfortably.\n\nBeing on the second floor worked out great for us since the area below is just the entrance and garage, so we didn't have to worry too much about the noise our kids might be making. The location was also fantastic—very walkable, with lots of restaurants, parks, and other amenities nearby. Since the place is located in the city and directly across from a school, there was some noise throughout the day and into the evening, but that's to be expected given the convenient, central location.\n\nOverall, the home was spacious, spotless, well-equipped, and perfect for our family. Highly recommend!",
+      "rating": 5,
+      "date": "2026-06-10",
+      "avatar": null,
+      "property": "Polanco"
+    },
+    {
+      "name": "William",
+      "text": "¡Tuvimos una excelente estancia! Nos hospedamos 6 personas por 5 noches y  estuvimos muy cómodos. La ubicación es ideal, con dos estaciones de metro a unos 7 minutos caminando y el metrobús a solo una cuadra, lo que hizo muy fácil movernos por la ciudad. El departamento estaba muy limpio, bien cuidado y con todo lo necesario. Las camas son muy cómodas y el sofá de la sala fue perfecto para descansar después de recorrer la ciudad. \nAdemás, hay cafeterías, restaurantes y tiendas de conveniencia muy cerca. Recorrimos la zona en distintos momentos del día y siempre nos pareció segura y tranquila.\nLos anfitriones fueron muy amables y atentos; respondieron rápidamente a nuestras dudas, nos permitieron ingresar una hora antes y el proceso de entrada fue muy sencillo. Tuvimos un pequeño inconveniente con el calentador, pero lo resolvieron de forma oportuna .\n\nSin duda, recomendamos ampliamente este alojamiento. Nos llevamos una muy buena experiencia y volveríamos a hospedarnos aquí.",
+      "rating": 5,
+      "date": "2026-06-07",
+      "avatar": null,
+      "property": "Condesa"
+    },
+    {
+      "name": "Joshua",
+      "text": "Great place to stay in Polanco, a few minutes walk from commerce and plenty of restaurants in Polanquito. The place is small but comfortable, with everything you might need to relax and unwind after a day of walking around Mexico City. It is not the most private as the apartment sits in a common court with views to other apartments, but it was very quiet and peaceful when we stayed there. It looks like a new build, so it was very clean, modern, and with all the appliances for a short stay. Although it was not a problem to us, do note that you have to go through a flight of stairs to access, especially with large and heavy luggage or restricted mobility. Lastly, the team is incredibly responsive and helpful. The check in process was very smooth, and they were very proactive in staying in touch and making sure that they were always available for any questions or assistance.",
+      "rating": 5,
+      "date": "2026-04-30",
+      "avatar": null,
+      "property": "Polanco"
+    },
+    {
+      "name": "Stella",
+      "text": "Our family loved our stay! It was complete, clean, comfortable, safe, and perfectly located. It was walking distance to a lot of places like cafes, restaurants, and malls (30 minute walk to one of some museums). I also appreciate the smooth check-in process and the quick response from the owner especially when we have inquiries or requests. (Like when there was one door knob that needed change and they repaired it ASAP.) We have young children and a baby with us and it really helped that things like crib, highchair, tub, and even stool were provided. It is indeed a family friendly home. There was just a construction going on while we were there but they gave us a heads up and made sure to inform us of the time they would be working. Overall, I would definitely recommend this home to families and friends!",
+      "rating": 5,
+      "date": "2026-04-14",
+      "avatar": null,
+      "property": "Polanco"
+    }
+  ]
+}

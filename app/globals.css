@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maia-yellow: #FDDB51;
+  --maia-strong: #F9D316;
+  --maia-dark: #242323;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #111111;
+  background: #ffffff;
+}
+
+/* Sistema visual Maia — titulares Montserrat display (bold, apretado) */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
+}
+
+/* Placeholder de foto: degradado suave por-propiedad (sin imágenes reales aún) */
+.photo-ph {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--c1, #e8e2d4) 0%, var(--c2, #cfc6b2) 100%);
+}
+.photo-ph::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.35), transparent 60%),
+    radial-gradient(80% 70% at 10% 90%, rgba(0, 0, 0, 0.08), transparent 55%);
+}

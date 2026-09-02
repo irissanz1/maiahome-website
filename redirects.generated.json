@@ -1,0 +1,162 @@
+[
+  {
+    "old": "pr-kahlo",
+    "new": "condesa-kahlo"
+  },
+  {
+    "old": "bc2829-macotela",
+    "new": "polanco-macotela"
+  },
+  {
+    "old": "b2909-emilia",
+    "new": "polanco-emilia"
+  },
+  {
+    "old": "b2801-velasco",
+    "new": "polanco-velasco"
+  },
+  {
+    "old": "sol-cordelia",
+    "new": "polanco-cordelia"
+  },
+  {
+    "old": "h2-orozco",
+    "new": "polanco-horacio-2"
+  },
+  {
+    "old": "h1-rivera",
+    "new": "polanco-horacio-1"
+  },
+  {
+    "old": "h3-siqueiros",
+    "new": "polanco-horacio-1-2"
+  },
+  {
+    "old": "har-aurora",
+    "new": "polanco-aurora"
+  },
+  {
+    "old": "tamayo",
+    "new": "polanco-tamayo"
+  },
+  {
+    "old": "bern-leonora1",
+    "new": "polanco-leonora-1"
+  },
+  {
+    "old": "lac4-laila-casa-4-br",
+    "new": "polanco-laila-c4"
+  },
+  {
+    "old": "la04-luz-maria-4",
+    "new": "polanco-luz-maria-4"
+  },
+  {
+    "old": "lac3-laila-casa-3-br",
+    "new": "polanco-laila-c3"
+  },
+  {
+    "old": "la05-luz-maria-5",
+    "new": "polanco-luz-maria-5"
+  },
+  {
+    "old": "la06-luz-maria-6",
+    "new": "polanco-luz-maria-6"
+  },
+  {
+    "old": "la56-luz-maria-5--6",
+    "new": "polanco-luz-maria-l5-l6"
+  },
+  {
+    "old": "lac456-laila-casa-4-br--luz-maria-5--6",
+    "new": "polanco-laila-c4-l5-l6"
+  },
+  {
+    "old": "lac45-laila-casa-4-br--luz-maria-5",
+    "new": "polanco-laila-c4-l5"
+  },
+  {
+    "old": "lac46-laila-casa-4-br--luz-maria-6",
+    "new": "polanco-laila-c4-l6"
+  },
+  {
+    "old": "bern-leonora2",
+    "new": "polanco-leonora-2"
+  },
+  {
+    "old": "la10-luz-maria-10",
+    "new": "polanco-luz-maria-10"
+  },
+  {
+    "old": "la09-luz-maria-9",
+    "new": "polanco-luz-maria-9"
+  },
+  {
+    "old": "la07-luz-maria-7",
+    "new": "polanco-luz-maria-7"
+  },
+  {
+    "old": "la08-luz-maria-8",
+    "new": "polanco-luz-maria-8"
+  },
+  {
+    "old": "la910-luz-maria-9--10",
+    "new": "polanco-luz-maria-l9-l10"
+  },
+  {
+    "old": "la78-luz-maria-7--8",
+    "new": "polanco-luz-maria-l7-l8"
+  },
+  {
+    "old": "cond2-conchita-2",
+    "new": "condesa-conchita-2"
+  },
+  {
+    "old": "cond5-conchita-5",
+    "new": "condesa-conchita-5"
+  },
+  {
+    "old": "cond8-conchita-8",
+    "new": "condesa-conchita-8"
+  },
+  {
+    "old": "cond7-conchita-7",
+    "new": "condesa-conchita-7"
+  },
+  {
+    "old": "cond1-conchita-1",
+    "new": "condesa-conchita-1"
+  },
+  {
+    "old": "cond4-conchita-4",
+    "new": "condesa-conchita-4"
+  },
+  {
+    "old": "cond3-conchita-3",
+    "new": "condesa-conchita-3"
+  },
+  {
+    "old": "cond6-conchita-6",
+    "new": "condesa-conchita-6"
+  },
+  {
+    "old": "augustine",
+    "new": "houston-augustin"
+  },
+  {
+    "old": "bern-leonora3",
+    "new": "polanco-leonora-3"
+  },
+  {
+    "old": "condc1-2",
+    "new": "condesa-conchita-1-2"
+  },
+  {
+    "old": "condc4-5",
+    "new": "condesa-conchita-4-5"
+  },
+  {
+    "old": "condc7-8",
+    "new": "condesa-conchita-7-8"
+  }
+]

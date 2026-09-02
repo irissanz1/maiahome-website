@@ -1,0 +1,23 @@
+# dependencias
+/node_modules
+
+# build / caché de Next
+/.next
+/out
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+/.vercel
+
+# variables de entorno y secretos (NUNCA subir)
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# sistema
+.DS_Store
+*.log
+npm-debug.log*
