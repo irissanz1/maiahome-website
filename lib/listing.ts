@@ -30,9 +30,19 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
     .map((s) => s.trim())
     .filter(Boolean);
 
+  const m2 = str(sp.m2) ? Number(str(sp.m2)) : undefined;
+  const precio = str(sp.precio); // "min-max" en USD/noche (max vacío = abierto)
+
   let out = list;
   if (rec != null && !Number.isNaN(rec)) out = out.filter((p) => (p.recamaras ?? 0) >= rec);
   if (ban != null && !Number.isNaN(ban)) out = out.filter((p) => (p.banos ?? 0) >= ban);
+  if (m2 != null && !Number.isNaN(m2)) out = out.filter((p) => (p.m2 ?? 0) >= m2);
+  if (precio) {
+    const [mnS, mxS] = precio.split("-");
+    const min = mnS ? Number(mnS) : 0;
+    const max = mxS ? Number(mxS) : Infinity;
+    out = out.filter((p) => p.precioDesde != null && p.precioDesde >= min && p.precioDesde <= max);
+  }
   if (amen.length) out = out.filter((p) => amen.every((a) => p.amenidades.includes(a)));
   return out;
 }

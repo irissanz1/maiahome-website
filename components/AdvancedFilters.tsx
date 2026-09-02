@@ -12,8 +12,10 @@ export default function AdvancedFilters() {
 
   const rec = params.get("rec") || "";
   const ban = params.get("ban") || "";
+  const precio = params.get("precio") || "";
+  const m2 = params.get("m2") || "";
   const amen = (params.get("amen") || "").split(",").map((s) => s.trim()).filter(Boolean);
-  const activeCount = (rec ? 1 : 0) + (ban ? 1 : 0) + amen.length;
+  const activeCount = (rec ? 1 : 0) + (ban ? 1 : 0) + (precio ? 1 : 0) + (m2 ? 1 : 0) + amen.length;
 
   function update(next: Record<string, string | null>) {
     const p = new URLSearchParams(params.toString());
@@ -40,6 +42,8 @@ export default function AdvancedFilters() {
 
   const recOptions: [string, string][] = [["", "Cualquiera"], ["1", "1+"], ["2", "2+"], ["3", "3+"], ["4", "4+"]];
   const banOptions: [string, string][] = [["", "Cualquiera"], ["1", "1+"], ["2", "2+"], ["3", "3+"]];
+  const precioOptions: [string, string][] = [["", "Cualquiera"], ["0-100", "≤ $100"], ["100-150", "$100–150"], ["150-250", "$150–250"], ["250-", "≥ $250"]];
+  const m2Options: [string, string][] = [["", "Cualquiera"], ["50", "50+ m²"], ["80", "80+ m²"], ["120", "120+ m²"]];
 
   return (
     <div className="mt-4">
@@ -59,7 +63,7 @@ export default function AdvancedFilters() {
           )}
         </button>
         {activeCount > 0 && (
-          <button onClick={() => update({ rec: null, ban: null, amen: null })} className="text-sm text-neutral-500 underline hover:text-neutral-800">
+          <button onClick={() => update({ rec: null, ban: null, precio: null, m2: null, amen: null })} className="text-sm text-neutral-500 underline hover:text-neutral-800">
             Limpiar
           </button>
         )}
@@ -80,6 +84,22 @@ export default function AdvancedFilters() {
             <div className="flex flex-wrap gap-2">
               {banOptions.map(([v, label]) => (
                 <button key={v} className={pill(ban === v)} onClick={() => update({ ban: v || null })}>{label}</button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">Precio por noche (USD)</p>
+            <div className="flex flex-wrap gap-2">
+              {precioOptions.map(([v, label]) => (
+                <button key={v} className={pill(precio === v)} onClick={() => update({ precio: v || null })}>{label}</button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">Tamaño</p>
+            <div className="flex flex-wrap gap-2">
+              {m2Options.map(([v, label]) => (
+                <button key={v} className={pill(m2 === v)} onClick={() => update({ m2: v || null })}>{label}</button>
               ))}
             </div>
           </div>
