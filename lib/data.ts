@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { sanity } from "./sanity";
 import { MARKETS, type MarketId } from "./market";
+import { getAllOverrides } from "./overrides";
 import type { Property } from "./types";
 // Snapshot de la caché de Beds24 (empaquetado con la app para poder desplegar).
 // Se actualiza corriendo: npm run refresh-cache
@@ -81,6 +82,30 @@ export const getProperties = cache(async (): Promise<Property[]> => {
   props.sort((a, b) => a.prioridad - b.prioridad || a.nombre.localeCompare(b.nombre));
   return props;
 });
+
+/**
+ * Sobrepone los overrides del webhook (reservas/cancelaciones recientes) a la
+ * cache base. Reflejan cambios casi en tiempo real en las vistas de navegación.
+ * Si no hay store configurado o no hay overrides vigentes, devuelve la lista tal cual.
+ */
+export async function applyOverrides(props: Property[]): Promise<Property[]> {
+  const ov = await getAllOverrides((cacheJson as any).generatedAt);
+  if (!ov || Object.keys(ov).length === 0) return props;
+  return props.map((p) => {
+    const o = ov[p.beds24RoomId];
+    if (!o) return p;
+    const calendar = { ...p.calendar, ...o };
+    const prices = Object.values(calendar)
+      .map((x: any) => x.price)
+      .filter((v: any) => typeof v === "number");
+    return {
+      ...p,
+      calendar,
+      precioDesde: prices.length ? Math.min(...(prices as number[])) : p.precioDesde,
+      availNext45: countAvailNext(calendar),
+    };
+  });
+}
 
 export async function getByMarket(market: MarketId): Promise<Property[]> {
   const zonas = MARKETS[market].zonas;

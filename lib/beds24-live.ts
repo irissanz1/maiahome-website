@@ -16,7 +16,7 @@ function addDaysISO(iso: string, n: number): string {
  * un mapa por fecha { available, minStay, price }. Devuelve null si no se pudo
  * consultar (sin token, error de red, respuesta inesperada) → el llamador cae a la caché.
  */
-async function liveCalendar(
+export async function liveCalendarMap(
   roomId: string,
   checkin: string,
   checkout: string
@@ -81,7 +81,7 @@ export async function evaluateLive(
   input: SearchInput
 ): Promise<AvailResult | null> {
   if (!input.checkin || !input.checkout) return null;
-  const map = await liveCalendar(property.beds24RoomId, input.checkin, input.checkout);
+  const map = await liveCalendarMap(property.beds24RoomId, input.checkin, input.checkout);
   if (!map) return null;
   const merged: Property = { ...property, calendar: { ...property.calendar, ...map } };
   return evaluate(merged, input);

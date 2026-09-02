@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import SearchStrip from "@/components/SearchStrip";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
-import { getByMarket } from "@/lib/data";
+import { getByMarket, applyOverrides } from "@/lib/data";
 import { resolveMarket, ZONAS } from "@/lib/market";
 import { applyAvailability, str, type SP } from "@/lib/listing";
 import type { Segment } from "@/lib/types";
@@ -39,6 +39,9 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
   if (zonaSlug) list = list.filter((p) => p.zona === zonaSlug);
   if (segmento) list = list.filter((p) => p.segmentos.includes(segmento));
   if (q) list = list.filter((p) => p.nombre.toLowerCase().includes(q));
+
+  // Sobrepone reservas/cancelaciones recientes recibidas por webhook (si hay store).
+  list = await applyOverrides(list);
 
   const a = applyAvailability(list, sp);
 
