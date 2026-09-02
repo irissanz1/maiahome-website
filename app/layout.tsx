@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://book.maiahome.mx"),
+  metadataBase: new URL("https://maiahome.mx"),
   title: {
     default: "Maia Home · Departamentos amueblados en CDMX y Houston",
     template: "%s · Maia Home",

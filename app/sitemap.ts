@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getProperties } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
 
-const BASE = "https://book.maiahome.mx";
+const BASE = "https://maiahome.mx";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const catalog = await getProperties();
