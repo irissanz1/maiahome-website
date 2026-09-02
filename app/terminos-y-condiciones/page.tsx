@@ -10,14 +10,16 @@ export const metadata: Metadata = {
 
 export default function TerminosCondiciones() {
   return (
-    <LegalPage title="Términos y Condiciones de Servicio" updated="13 de junio de 2022">
+    <LegalPage title="Términos y Condiciones de Servicio" updated="2 de septiembre de 2026">
       <div className="mb-8 rounded-xl border border-maia-strong/40 bg-[#FDF9EC] p-4 text-sm text-neutral-700">
         <p className="font-semibold text-neutral-900">En pocas palabras</p>
         <p className="mt-1">
           Reserva de buena fe y cuida el espacio como si fuera tuyo. Lo esencial: el pago va por
           adelantado; respeta el número de huéspedes acordado; nada de fiestas, no fumar y silencio de
           10 p. m. a 8 a. m.; entrega el departamento como lo recibiste y avísanos de cualquier
-          desperfecto. El texto de abajo es el contrato formal de hospedaje.
+          desperfecto. <strong>Cancelaciones:</strong> reembolso escalonado según la anticipación (100%
+          con 14+ días, 50% entre 7 y 14, sin reembolso con menos de 7) — ver el punto 10. El texto de
+          abajo es el contrato formal de hospedaje.
         </p>
       </div>
       <h3>Acerca de los Términos y Condiciones del Servicio</h3>
@@ -176,9 +178,19 @@ export default function TerminosCondiciones() {
 
       <h2>10. Cancelación o modificación</h2>
       <p>
-        En caso de que “EL HUESPED” cancele su estancia o permanezca en el “EL INMUEBLE” menor tiempo
-        al pactado, no aplica devolución alguna, por lo que, “EL HOSPEDANTE” NO está obligado a hacer
-        algún tipo de devolución respecto a la cantidad pactada por la estancia.
+        <strong>Política de cancelación (reserva directa con Maia Home).</strong> Si “EL HUESPED”
+        cancela su estancia:
+      </p>
+      <ul>
+        <li>Con <strong>14 días naturales o más</strong> antes del check-in: reembolso del <strong>100%</strong>.</li>
+        <li>Entre <strong>7 y 14 días</strong> antes del check-in: reembolso del <strong>50%</strong>.</li>
+        <li>Con <strong>menos de 7 días</strong> de anticipación o en caso de no presentarse (no-show): <strong>sin reembolso</strong>.</li>
+      </ul>
+      <p>
+        Las reservas realizadas a través de plataformas (Airbnb, Booking.com, etc.) se rigen por la
+        política de cancelación de dicha plataforma. Los cargos ya devengados por servicios
+        adicionales no son reembolsables. Si “EL HUESPED” permanece en “EL INMUEBLE” menos tiempo del
+        pactado, no aplica reembolso por las noches no utilizadas.
       </p>
       <p>
         Si el “HUESPED” quisiera extender su reservación, podrá solicitar al “HOSPEDANTE” la extensión
