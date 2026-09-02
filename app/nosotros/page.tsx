@@ -37,7 +37,7 @@ export default function Nosotros() {
       {/* Hero */}
       <section className="relative flex min-h-[68vh] items-end overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/hero/hero-03.jpg" alt="Departamento Maia Home en CDMX" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="/hero/hero-06.jpg" alt="Departamento Maia Home en CDMX" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-14 md:pb-20">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Nosotros</p>
