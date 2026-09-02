@@ -11,6 +11,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/departamentos",
     "/mensuales",
     "/corporativo",
+    "/administramos-tu-depto",
+    "/recorridos-departamentos",
     "/nosotros",
     "/facturacion",
   ].map((path) => ({
