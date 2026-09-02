@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 export default function AvisoPrivacidad() {
   return (
     <LegalPage title="Aviso de Privacidad" updated="7 de julio de 2026">
+      <div className="mb-8 rounded-xl border border-maia-strong/40 bg-[#FDF9EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">En pocas palabras</p>
+        <p className="mt-1">
+          Cuidamos tus datos: solo pedimos lo necesario para atenderte, no los vendemos, y puedes
+          acceder, corregir o borrar tu información cuando quieras escribiendo a{" "}
+          <a href="mailto:privacidad@maiahome.mx">privacidad@maiahome.mx</a>.
+        </p>
+      </div>
       <h2>Aviso de Privacidad Integral</h2>
       <p>
         En Maia Luxury Apartments and services Mexico, SA de CV (“MaiaHome”), con domicilio en Jorge

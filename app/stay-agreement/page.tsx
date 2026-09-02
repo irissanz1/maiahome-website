@@ -10,7 +10,15 @@ export const metadata: Metadata = {
 
 export default function StayAgreement() {
   return (
-    <LegalPage title="Acuerdo de Estadía">
+    <LegalPage title="Acuerdo de Estadía" updated="2 de septiembre de 2026">
+      <div className="mb-8 rounded-xl border border-maia-strong/40 bg-[#FDF9EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">En pocas palabras</p>
+        <p className="mt-1">
+          Lo esencial para una gran estancia: solo se hospedan las personas registradas, nada de
+          fiestas, silencio de 10 p. m. a 8 a. m., no fumar y cuida el departamento. Cualquier duda,
+          escríbenos: estamos para ayudarte.
+        </p>
+      </div>
       <p>
         El presente Acuerdo de Estancia establece los términos bajo los cuales MaiaHome (el
         “Anfitrión”) proporciona alojamiento temporal al huésped registrado (el “Huésped”).
@@ -104,6 +112,10 @@ export default function StayAgreement() {
         <li>
           En caso de conflicto, prevalecerán los términos y procedimientos de la plataforma
           utilizada.
+        </li>
+        <li>
+          Cuando reserves <strong>directamente con Maia Home</strong> (sin plataforma), aplican estos
+          términos junto con la política de cancelación de Maia Home vigente para tu reserva.
         </li>
       </ul>
 

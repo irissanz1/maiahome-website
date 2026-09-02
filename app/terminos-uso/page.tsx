@@ -9,10 +9,18 @@ export const metadata: Metadata = {
 
 export default function TerminosUso() {
   return (
-    <LegalPage title="Términos de Uso del sitio web" updated="14 de octubre de 2020">
+    <LegalPage title="Términos de Uso del sitio web" updated="2 de septiembre de 2026">
+      <div className="mb-8 rounded-xl border border-maia-strong/40 bg-[#FDF9EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">En pocas palabras</p>
+        <p className="mt-1">
+          Estas son las reglas de uso de nuestro sitio web (no de tu estancia). En resumen: el
+          contenido es de Maia Home, úsalo de buena fe, y no nos hacemos responsables de los sitios de
+          terceros que enlacemos.
+        </p>
+      </div>
       <p>
         Los siguientes Términos y Condiciones de Uso rigen el uso que el usuario le dé al sitio web
-        www.maiahome.com (el “sitio web”) y a cualquiera de los contenidos disponibles a través o
+        www.maiahome.mx (el “sitio web”) y a cualquiera de los contenidos disponibles a través o
         derivado de este sitio web.
       </p>
       <p>
@@ -145,7 +153,7 @@ export default function TerminosUso() {
         Estos Términos y Condiciones estarán regidos por las leyes de los Estados Unidos Mexicanos.
         Cualquier controversia derivada de estos Términos y Condiciones de Uso, su existencia,
         validez, interpretación, alcance o cumplimiento, será sometida a las leyes aplicables y a los
-        Tribunales del Distrito Federal competentes para su conocimiento.
+        Tribunales competentes de la Ciudad de México para su conocimiento.
       </p>
 
       <h3>Contacto para Comentarios o Dudas</h3>

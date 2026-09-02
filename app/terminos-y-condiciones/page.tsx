@@ -11,6 +11,15 @@ export const metadata: Metadata = {
 export default function TerminosCondiciones() {
   return (
     <LegalPage title="Términos y Condiciones de Servicio" updated="13 de junio de 2022">
+      <div className="mb-8 rounded-xl border border-maia-strong/40 bg-[#FDF9EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">En pocas palabras</p>
+        <p className="mt-1">
+          Reserva de buena fe y cuida el espacio como si fuera tuyo. Lo esencial: el pago va por
+          adelantado; respeta el número de huéspedes acordado; nada de fiestas, no fumar y silencio de
+          10 p. m. a 8 a. m.; entrega el departamento como lo recibiste y avísanos de cualquier
+          desperfecto. El texto de abajo es el contrato formal de hospedaje.
+        </p>
+      </div>
       <h3>Acerca de los Términos y Condiciones del Servicio</h3>
       <p>
         Los términos y condiciones de servicio son parte del contrato de prestación de servicios de
