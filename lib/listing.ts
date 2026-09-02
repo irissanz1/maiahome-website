@@ -4,6 +4,39 @@ import type { Property } from "./types";
 export type SP = Record<string, string | string[] | undefined>;
 export const str = (v: string | string[] | undefined) => (typeof v === "string" ? v : undefined);
 
+// Amenidades disponibles como filtro (deben coincidir con las etiquetas en Sanity).
+export const AMENITY_FILTERS = [
+  "Terraza",
+  "Balcón",
+  "Alberca",
+  "Gimnasio",
+  "Jacuzzi",
+  "Elevador",
+  "Aire acondicionado",
+  "Lavadora",
+  "Estacionamiento",
+  "Pet friendly",
+];
+
+/**
+ * Filtros avanzados (recámaras mín., baños mín., amenidades).
+ * Amenidades = AND (el depto debe tener TODAS las seleccionadas).
+ */
+export function advancedFilter(list: Property[], sp: SP): Property[] {
+  const rec = str(sp.rec) ? Number(str(sp.rec)) : undefined;
+  const ban = str(sp.ban) ? Number(str(sp.ban)) : undefined;
+  const amen = (str(sp.amen) || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  let out = list;
+  if (rec != null && !Number.isNaN(rec)) out = out.filter((p) => (p.recamaras ?? 0) >= rec);
+  if (ban != null && !Number.isNaN(ban)) out = out.filter((p) => (p.banos ?? 0) >= ban);
+  if (amen.length) out = out.filter((p) => amen.every((a) => p.amenidades.includes(a)));
+  return out;
+}
+
 /**
  * Calcula conteos de disponibles/no disponibles y filtra la lista según ?disp=si|no.
  * Con fechas → disponibilidad exacta; sin fechas → según calendario.

@@ -25,6 +25,7 @@ export interface Property {
   banos?: number;
   capacidad?: number; // total (camas + sofá cama) — usado para el filtro de huéspedes
   capacidadCamas?: number; // huéspedes en camas fijas
+  amenidades: string[]; // amenidades para filtros (Terraza, Alberca, Gimnasio, …)
   segmentos: Segment[];
   headline: { es: string; en: string };
   descripcion: { es: string; en: string };

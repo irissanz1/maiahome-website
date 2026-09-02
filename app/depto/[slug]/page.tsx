@@ -152,6 +152,19 @@ export default async function StayDetail({
             <p className="mt-6 text-sm text-neutral-400">{p.images.length} fotos en total</p>
           )}
 
+          {p.amenidades.length > 0 && (
+            <section className="mt-8">
+              <h2 className="font-serif text-2xl text-neutral-900">Amenidades</h2>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {p.amenidades.map((a) => (
+                  <li key={a} className="rounded-full border border-neutral-200 bg-neutral-50 px-3.5 py-1.5 text-sm text-neutral-700">
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {p.rating != null && (
             <section className="mt-10">
               <h2 className="font-serif text-2xl text-neutral-900">

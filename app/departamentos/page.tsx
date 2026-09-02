@@ -3,9 +3,10 @@ import { Suspense } from "react";
 import SearchStrip from "@/components/SearchStrip";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
+import AdvancedFilters from "@/components/AdvancedFilters";
 import { getByMarket, withLiveAvailability } from "@/lib/data";
 import { resolveMarket, ZONAS } from "@/lib/market";
-import { applyAvailability, str, type SP } from "@/lib/listing";
+import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
 import type { Segment } from "@/lib/types";
 
 const SEGMENT_LABEL: Record<string, string> = {
@@ -40,6 +41,9 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
   if (segmento) list = list.filter((p) => p.segmentos.includes(segmento));
   if (q) list = list.filter((p) => p.nombre.toLowerCase().includes(q));
 
+  // Filtros avanzados (recámaras, baños, amenidades).
+  list = advancedFilter(list, sp);
+
   // Disponibilidad y precios EN VIVO directo de Beds24 (1 llamada, cacheada 90s).
   list = await withLiveAvailability(list, str(sp.checkout));
 
@@ -63,6 +67,9 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
       <div className="mt-6">
         <Suspense fallback={<div className="h-24 rounded-2xl border border-neutral-200 bg-white" />}>
           <SearchStrip />
+        </Suspense>
+        <Suspense fallback={null}>
+          <AdvancedFilters />
         </Suspense>
       </div>
 
