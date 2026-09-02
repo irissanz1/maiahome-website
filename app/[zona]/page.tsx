@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
-import { getByZona } from "@/lib/data";
+import { getByZona, withLiveAvailability } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
-import { applyAvailability, type SP } from "@/lib/listing";
+import { applyAvailability, str, type SP } from "@/lib/listing";
 
 export function generateStaticParams() {
   return Object.keys(ZONAS).map((zona) => ({ zona }));
@@ -38,7 +38,8 @@ export default async function ZonaLanding({
   const zona = ZONAS[slug];
   if (!zona) notFound();
 
-  const a = applyAvailability(await getByZona(slug), sp);
+  const list = await withLiveAvailability(await getByZona(slug), str(sp.checkout));
+  const a = applyAvailability(list, sp);
 
   return (
     <div>

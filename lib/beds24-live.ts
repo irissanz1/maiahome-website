@@ -71,6 +71,68 @@ export async function liveCalendarMap(
 }
 
 /**
+ * Trae el calendario EN VIVO de VARIOS deptos en UNA sola llamada (Beds24 acepta
+ * múltiples roomId y cobra 1 crédito por la llamada, sin importar cuántos deptos).
+ * Devuelve { roomId: { fecha: CalendarDay } } o null si no se pudo consultar.
+ * Cacheado ~90s: bajo tráfico comparte una sola llamada entre visitantes.
+ */
+export async function liveCalendarsForRooms(
+  roomIds: string[],
+  startDate: string,
+  endDate: string
+): Promise<Record<string, Record<string, CalendarDay>> | null> {
+  const token = process.env.BEDS24_LONG_LIFE_TOKEN;
+  if (!token || roomIds.length === 0) return null;
+
+  const q = new URLSearchParams({
+    startDate,
+    endDate,
+    includeNumAvail: "true",
+    includeMinStay: "true",
+    includePrices: "true",
+  });
+  for (const id of roomIds) q.append("roomId", id);
+
+  let res: Response;
+  try {
+    res = await fetch(`${BASE}/inventory/rooms/calendar?${q.toString()}`, {
+      headers: { accept: "application/json", token },
+      next: { revalidate: 90 },
+    });
+  } catch {
+    return null;
+  }
+  if (!res.ok) return null;
+
+  const data = await res.json().catch(() => null);
+  const arr = data?.data;
+  if (!Array.isArray(arr)) return null;
+
+  const out: Record<string, Record<string, CalendarDay>> = {};
+  for (const room of arr) {
+    const rid = room?.roomId != null ? String(room.roomId) : "";
+    if (!rid) continue;
+    const map: Record<string, CalendarDay> = {};
+    for (const rg of room.calendar || []) {
+      if (!rg?.from || !rg?.to) continue;
+      let d = rg.from as string;
+      for (let i = 0; i < 800 && d <= rg.to; i++) {
+        const numAvail = Number(rg.numAvail);
+        map[d] = {
+          available: numAvail > 0,
+          numAvail,
+          minStay: Number(rg.minStay) || 1,
+          price: rg.price1 != null ? Number(rg.price1) : null,
+        };
+        d = addDaysISO(d, 1);
+      }
+    }
+    out[rid] = map;
+  }
+  return out;
+}
+
+/**
  * Evalúa disponibilidad EN VIVO para el momento de reservar. Usa el mismo motor
  * que la caché (evaluate) pero con el calendario fresco de Beds24 sobrepuesto,
  * así el estado y el bloqueo de "Reservar" reflejan reservas hechas hace minutos.

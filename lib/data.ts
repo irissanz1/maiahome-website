@@ -1,7 +1,7 @@
 import { cache } from "react";
 import { sanity } from "./sanity";
 import { MARKETS, type MarketId } from "./market";
-import { getAllOverrides } from "./overrides";
+import { liveCalendarsForRooms } from "./beds24-live";
 import type { Property } from "./types";
 // Snapshot de la caché de Beds24 (empaquetado con la app para poder desplegar).
 // Se actualiza corriendo: npm run refresh-cache
@@ -83,18 +83,34 @@ export const getProperties = cache(async (): Promise<Property[]> => {
   return props;
 });
 
+function isoPlusDays(n: number): string {
+  return new Date(Date.now() + n * 86400000).toISOString().slice(0, 10);
+}
+
 /**
- * Sobrepone los overrides del webhook (reservas/cancelaciones recientes) a la
- * cache base. Reflejan cambios casi en tiempo real en las vistas de navegación.
- * Si no hay store configurado o no hay overrides vigentes, devuelve la lista tal cual.
+ * Sobrepone disponibilidad y precios EN VIVO desde Beds24 (una sola llamada para
+ * TODOS los deptos, ~1 crédito, cacheada 90s). Fuente única, sin triangular.
+ * `checkout` opcional extiende la ventana para cubrir la búsqueda; si Beds24 no
+ * responde, se conserva la cache base empaquetada como respaldo.
  */
-export async function applyOverrides(props: Property[]): Promise<Property[]> {
-  const ov = await getAllOverrides((cacheJson as any).generatedAt);
-  if (!ov || Object.keys(ov).length === 0) return props;
+export async function withLiveAvailability(
+  props: Property[],
+  checkout?: string
+): Promise<Property[]> {
+  if (props.length === 0) return props;
+  const start = isoPlusDays(0);
+  const base = isoPlusDays(45); // cubre la escasez "próx. 45 días"
+  const end = checkout && checkout > base ? checkout : base;
+  const live = await liveCalendarsForRooms(
+    props.map((p) => p.beds24RoomId),
+    start,
+    end
+  );
+  if (!live) return props; // respaldo: cache base
   return props.map((p) => {
-    const o = ov[p.beds24RoomId];
-    if (!o) return p;
-    const calendar = { ...p.calendar, ...o };
+    const m = live[p.beds24RoomId];
+    if (!m || Object.keys(m).length === 0) return p;
+    const calendar = { ...p.calendar, ...m };
     const prices = Object.values(calendar)
       .map((x: any) => x.price)
       .filter((v: any) => typeof v === "number");
