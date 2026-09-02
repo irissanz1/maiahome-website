@@ -1,7 +1,7 @@
 import { getFeaturedReviews } from "@/lib/data";
 
-export default function FeaturedReviews() {
-  const reviews = getFeaturedReviews().filter((r) => r.text).slice(0, 6);
+export default async function FeaturedReviews() {
+  const reviews = (await getFeaturedReviews()).filter((r) => r.text).slice(0, 6);
   if (reviews.length === 0) return null;
 
   return (

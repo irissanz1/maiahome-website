@@ -2,7 +2,7 @@ import { cache } from "react";
 import { sanity } from "./sanity";
 import { MARKETS, type MarketId } from "./market";
 import { liveCalendarsForRooms } from "./beds24-live";
-import type { Property } from "./types";
+import type { Property, Review } from "./types";
 // Snapshot de la caché de Beds24 (empaquetado con la app para poder desplegar).
 // Se actualiza corriendo: npm run refresh-cache
 import cacheJson from "@/data/beds24-cache.json";
@@ -10,6 +10,36 @@ import reviewsJson from "@/data/reviews.json";
 
 const ROOMS: Record<string, any> = (cacheJson as any).rooms || {};
 const REVIEWS: Record<string, any> = (reviewsJson as any).byRoom || {};
+
+// Reseñas curables desde Sanity Studio (visible / destacada / orden).
+const REVIEWS_QUERY = `*[_type=="review" && visible==true]{author,text,rating,date,avatar,beds24RoomId,orden}`;
+const FEATURED_QUERY = `*[_type=="review" && visible==true && destacada==true]{author,text,rating,date,avatar,propertyName,orden} | order(orden asc, date desc)`;
+
+function toReview(d: any): Review & { orden?: number } {
+  return {
+    name: d.author || "",
+    text: d.text || "",
+    rating: typeof d.rating === "number" ? d.rating : null,
+    date: d.date || "",
+    avatar: d.avatar || null,
+    orden: typeof d.orden === "number" ? d.orden : undefined,
+  };
+}
+
+function groupReviews(docs: any[]): Record<string, Review[]> {
+  const by: Record<string, (Review & { orden?: number })[]> = {};
+  for (const d of docs || []) {
+    const k = String(d.beds24RoomId || "");
+    if (!k) continue;
+    (by[k] ??= []).push(toReview(d));
+  }
+  for (const k in by) {
+    by[k].sort(
+      (a, b) => (a.orden ?? 9999) - (b.orden ?? 9999) || (b.date || "").localeCompare(a.date || "")
+    );
+  }
+  return by;
+}
 
 const QUERY = `*[_type=="property" && defined(slug.current) && defined(nombre)]{
   beds24RoomId,
@@ -33,8 +63,10 @@ function countAvailNext(calendar: Record<string, any>, days = 45): number {
   return c;
 }
 
-function build(d: any, room: any): Property {
+function build(d: any, room: any, sanityReviews?: Review[]): Property {
   const rev = REVIEWS[String(d.beds24RoomId)];
+  // Tarjetas de reseña: de Sanity (curadas); si no hay, cae al snapshot.
+  const reviews = sanityReviews && sanityReviews.length ? sanityReviews : rev?.reviews ?? [];
   const calendar = room?.calendar || {};
   const prices = Object.values(calendar)
     .map((x: any) => x.price)
@@ -65,20 +97,41 @@ function build(d: any, room: any): Property {
     calendar,
     rating: rev?.rating ?? null,
     reviewCount: rev?.count ?? 0,
-    reviews: rev?.reviews ?? [],
+    reviews,
     availNext45: countAvailNext(calendar),
   };
 }
 
-export function getFeaturedReviews() {
-  return ((reviewsJson as any).featured || []) as Array<{
-    name: string; text: string; rating: number | null; date: string; avatar: string | null; property: string;
-  }>;
-}
+export type FeaturedReview = {
+  name: string; text: string; rating: number | null; date: string; avatar: string | null; property: string;
+};
+
+export const getFeaturedReviews = cache(async (): Promise<FeaturedReview[]> => {
+  try {
+    const docs = (await sanity.fetch(FEATURED_QUERY)) as any[];
+    if (docs?.length) {
+      return docs.map((d) => ({
+        name: d.author || "",
+        text: d.text || "",
+        rating: typeof d.rating === "number" ? d.rating : null,
+        date: d.date || "",
+        avatar: d.avatar || null,
+        property: d.propertyName || "",
+      }));
+    }
+  } catch {
+    // fallback al snapshot
+  }
+  return ((reviewsJson as any).featured || []) as FeaturedReview[];
+});
 
 export const getProperties = cache(async (): Promise<Property[]> => {
-  const docs = (await sanity.fetch(QUERY)) as any[];
-  const props = docs.map((d) => build(d, ROOMS[String(d.beds24RoomId)]));
+  const [docs, reviewDocs] = await Promise.all([
+    sanity.fetch(QUERY) as Promise<any[]>,
+    (sanity.fetch(REVIEWS_QUERY) as Promise<any[]>).catch(() => [] as any[]),
+  ]);
+  const byRoom = groupReviews(reviewDocs);
+  const props = docs.map((d) => build(d, ROOMS[String(d.beds24RoomId)], byRoom[String(d.beds24RoomId)]));
   props.sort((a, b) => a.prioridad - b.prioridad || a.nombre.localeCompare(b.nombre));
   return props;
 });
