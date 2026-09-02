@@ -5,110 +5,153 @@ import { WHATSAPP_DISPLAY, PHONE_DISPLAY, SUPPORT_EMAIL, whatsappUrl } from "@/l
 export const metadata: Metadata = {
   title: "Nosotros",
   description:
-    "La historia de Maia Home: departamentos amueblados premium en el corazón de la Ciudad de México y Houston, con hospitalidad auténtica y compromiso con la comunidad.",
+    "Hospitalidad con propósito en el corazón de la CDMX. Maia Home: departamentos curados, anfitriones reales y un compromiso permanente con la comunidad.",
   alternates: { canonical: "/nosotros" },
 };
 
-const PILARES = [
+const VISION = [
   {
-    t: "El confort de un hogar",
-    d: "Espacios amueblados, cuidados y listos para vivir, con la calidez de un lugar propio.",
+    t: "Espacios cuidados",
+    d: "Departamentos curados con piezas locales, ropa de cama de calidad y un mantenimiento meticuloso. Nada genérico, nada al azar.",
   },
   {
-    t: "El servicio de un hotel",
-    d: "Atención humana y directa, antes y durante tu estancia. Reserva directo, sin intermediarios.",
+    t: "Anfitriones reales",
+    d: "Atención humana, en español e inglés, antes y durante tu estancia. Recomendaciones honestas, no listas turísticas.",
   },
   {
-    t: "La ciudad desde adentro",
-    d: "Ubicaciones privilegiadas y la mirada de un local para descubrir lo auténtico de la ciudad.",
+    t: "Conexión con la ciudad",
+    d: "Cada departamento es una puerta a un barrio vivo: cafés, librerías, mercados, talleres. Vivir la CDMX como un local.",
   },
 ];
 
 const METRICAS = [
-  ["40", "Departamentos únicos"],
+  ["40", "Departamentos curados"],
   ["+5,000", "Estancias memorables"],
-  ["4.8★", "Calificación promedio"],
+  ["4.8★", "Promedio de reseñas"],
   ["+75", "Iniciativas locales apoyadas"],
-];
-
-const ZONAS = [
-  ["Polanco", "polanco", "El corazón cultural y gastronómico de la ciudad."],
-  ["Condesa", "condesa", "Bohemia, arbolada y siempre viva."],
-  ["Houston", "houston", "Confort y ubicación para tu estancia en Texas."],
 ];
 
 export default function Nosotros() {
   return (
     <>
-      {/* Hero a sangre completa */}
+      {/* Hero */}
       <section className="relative flex min-h-[68vh] items-end overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/hero/hero-03.jpg"
-          alt="Departamento Maia Home"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+        <img src="/hero/hero-03.jpg" alt="Departamento Maia Home en CDMX" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-14 md:pb-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">
-            Nuestra historia
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Nosotros</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-[1.08] text-white md:text-6xl">
-            Lujo <span className="italic text-maia-yellow">auténtico</span> en el corazón de la
-            Ciudad de México
+            Hospitalidad con <span className="italic text-maia-yellow">propósito</span> en el corazón
+            de la CDMX
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-neutral-200">
-            Cada departamento es una puerta de entrada a la cultura, los ritmos y las historias de la
-            ciudad. No solo un lugar para dormir: una forma de pertenecer.
+            Maia Home no es solo una colección de departamentos amueblados. Es una manera de habitar
+            la Ciudad de México con cuidado por el lugar, las personas y la comunidad que la sostiene.
+          </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href="/departamentos" className="rounded-full bg-maia-yellow px-6 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong">
+              Ver departamentos
+            </Link>
+            <a href={whatsappUrl("Hola Maia Home, me gustaría más información.")} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+              Hablemos →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Manifiesto */}
+      <section className="bg-maia-dark text-white">
+        <div className="mx-auto max-w-4xl px-5 py-16 text-center md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Manifiesto</p>
+          <p className="mt-6 font-serif text-2xl leading-snug md:text-3xl">
+            Creemos en una hospitalidad que no extrae, sino que devuelve. Que cuida el barrio, escucha
+            a sus vecinos y abre la ciudad sin atropellarla.
+          </p>
+          <p className="mt-6 text-sm uppercase tracking-[0.2em] text-neutral-400">
+            Maia Home — CDMX · Polanco · Condesa
           </p>
         </div>
       </section>
 
-      {/* La historia */}
+      {/* Nuestra historia */}
       <section className="mx-auto max-w-3xl px-5 py-16 md:py-24">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">
-          Un legado de hospitalidad
-        </p>
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">Nuestra historia</p>
         <h2 className="mt-3 font-serif text-3xl leading-tight text-neutral-900 md:text-4xl">
-          Nacimos para transformar la forma de hospedarse
+          Una casa con historia, hecha en la ciudad
         </h2>
         <div className="mt-6 space-y-5 text-lg leading-relaxed text-neutral-600">
           <p>
-            Maia Home nació de una convicción: que hospedarse en la Ciudad de México debería sentirse
-            como pertenecer a ella. Por eso creamos estancias que combinan el confort de un hogar con
-            el servicio atento de un hotel, en los barrios que mejor cuentan la historia de la ciudad.
+            Maia Home nació de una idea sencilla: que quedarse en CDMX se sienta como vivir aquí, no
+            como mirar la ciudad desde un hotel. Cada departamento se piensa, decora y opera con
+            personas locales que entienden el ritmo del barrio.
           </p>
           <p>
-            Cada espacio está cuidadosamente diseñado para reflejar la riqueza histórica y el estilo
-            contemporáneo de Polanco y la Condesa. Más que cuatro paredes, son escenarios pensados
-            para que vivas la ciudad desde adentro, con la mirada de un local.
-          </p>
-          <p>
-            Desde una noche hasta una estancia de varios meses, nuestra misión es la misma: que cada
-            huésped se sienta en casa y se vaya con la ciudad en la piel.
+            Empezamos en Polanco y crecimos hacia la Condesa, manteniendo siempre la misma promesa:
+            pocos espacios, muy bien cuidados, anfitriones reales y un compromiso permanente con la
+            comunidad que nos rodea.
           </p>
         </div>
+        <blockquote className="mt-8 border-l-4 border-maia-strong pl-5 font-serif text-2xl italic text-neutral-800">
+          “Hechos en CDMX, para quien quiere vivirla de verdad.”
+        </blockquote>
       </section>
 
-      {/* Pilares */}
+      {/* Visión */}
       <section className="bg-neutral-50">
         <div className="mx-auto max-w-6xl px-5 py-16">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {PILARES.map((p) => (
-              <div key={p.t} className="rounded-2xl border border-neutral-200 bg-white p-7">
-                <h3 className="font-serif text-xl text-neutral-900">{p.t}</h3>
-                <p className="mt-3 leading-relaxed text-neutral-600">{p.d}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">Visión</p>
+          <h2 className="mt-3 font-serif text-3xl text-neutral-900 md:text-4xl">
+            Nuestra idea de hospitalidad
+          </h2>
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {VISION.map((v) => (
+              <div key={v.t} className="rounded-2xl border border-neutral-200 bg-white p-7">
+                <h3 className="font-serif text-xl text-neutral-900">{v.t}</h3>
+                <p className="mt-3 leading-relaxed text-neutral-600">{v.d}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Banda de impacto */}
+      {/* Comunidad */}
+      <section className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 py-16 md:py-24 lg:grid-cols-2">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:order-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/hero/hero-08.jpg" alt="Barrios de la Ciudad de México" className="h-full w-full object-cover" />
+        </div>
+        <div className="lg:order-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">Comunidad</p>
+          <h2 className="mt-3 font-serif text-3xl leading-tight text-neutral-900 md:text-4xl">
+            La ciudad es nuestra casa. Cuidarla, también.
+          </h2>
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-900">Trabajamos con vecinos, no contra ellos</h3>
+              <p className="mt-2 leading-relaxed text-neutral-600">
+                Compras a comercios cercanos, limpieza con equipos locales, mantenimiento con técnicos
+                del barrio. Nuestra operación deja en CDMX la mayor parte de lo que genera, porque un
+                barrio sano es lo que hace memorable una estancia.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-900">Una plataforma para el talento mexicano</h3>
+              <p className="mt-2 leading-relaxed text-neutral-600">
+                Más que un alojamiento, una invitación a habitar la ciudad con curiosidad y respeto.
+                Cada estancia recomienda diseño, artesanía, gastronomía y cultura que conocemos de
+                cerca, no porque sean famosas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Números */}
       <section className="bg-maia-dark text-white">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">
-            Nuestro impacto
+            Maia Home en números
           </p>
           <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4">
             {METRICAS.map(([n, l]) => (
@@ -121,100 +164,52 @@ export default function Nosotros() {
         </div>
       </section>
 
-      {/* Compromiso social */}
-      <section className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 py-16 md:py-24 lg:grid-cols-2">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/hero/hero-08.jpg" alt="Comunidad y cultura de la Ciudad de México" className="h-full w-full object-cover" />
-        </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">
-            Compromiso social
-          </p>
-          <h2 className="mt-3 font-serif text-3xl leading-tight text-neutral-900 md:text-4xl">
-            Cada reserva deja huella
-          </h2>
-          <div className="mt-5 space-y-4 leading-relaxed text-neutral-600">
-            <p>
-              En Maia Home creemos que la hospitalidad trasciende nuestras puertas. Cada reserva
-              contribuye a programas de educación y salud en nuestra comunidad, fortaleciendo el
-              tejido social y económico de la Ciudad de México.
-            </p>
-            <p>
-              Somos también una plataforma para el talento y la cultura mexicana: enriquecemos cada
-              estancia con experiencias auténticas y devolvemos a la ciudad parte de lo que nos da.
-            </p>
-          </div>
-          <a
-            href="https://grupoaltia.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-block text-sm font-semibold text-maia-dark underline decoration-maia-strong decoration-2 underline-offset-4 hover:text-maia-strong"
-          >
-            Conoce nuestra labor social →
-          </a>
-        </div>
+      {/* Propósito — Fundación Altía */}
+      <section className="mx-auto max-w-3xl px-5 py-16 md:py-24 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">Propósito</p>
+        <h2 className="mt-3 font-serif text-3xl leading-tight text-neutral-900 md:text-4xl">
+          Hospedarte aquí es también acompañar a Fundación Altía
+        </h2>
+        <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+          Una parte de cada estancia se destina al trabajo de la fundación con niñas, niños y
+          comunidades en situación vulnerable de la Ciudad de México. No es marketing: es la manera en
+          la que entendemos lo que significa abrir las puertas de un lugar. Hospedar implica también
+          devolver.
+        </p>
+        <a
+          href="https://grupoaltia.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block text-sm font-semibold text-maia-dark underline decoration-maia-strong decoration-2 underline-offset-4 hover:text-maia-strong"
+        >
+          Conoce Fundación Altía →
+        </a>
+        <p className="mt-10 font-serif text-2xl italic text-neutral-800">“Gracias por hospedarte con nosotros.”</p>
       </section>
 
-      {/* Zonas */}
+      {/* Contacto */}
       <section className="bg-neutral-50">
         <div className="mx-auto max-w-6xl px-5 py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">
-            Dónde estamos
-          </p>
-          <h2 className="mt-3 font-serif text-3xl text-neutral-900 md:text-4xl">
-            En los mejores barrios, siempre cerca de todo
-          </h2>
-          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {ZONAS.map(([nombre, slug, desc]) => (
-              <Link
-                key={slug}
-                href={`/${slug}`}
-                className="group rounded-2xl border border-neutral-200 bg-white p-7 transition hover:border-maia-strong hover:shadow-md"
-              >
-                <h3 className="font-serif text-2xl text-neutral-900">{nombre}</h3>
-                <p className="mt-2 text-neutral-600">{desc}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-maia-strong">
-                  Ver departamentos →
-                </span>
+          <div className="rounded-3xl bg-maia-dark px-8 py-14 text-center text-white">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Contacto</p>
+            <h2 className="mt-3 font-serif text-3xl md:text-4xl">Hablemos. Nos encantará escucharte.</h2>
+            <p className="mx-auto mt-3 max-w-xl text-neutral-300">
+              Recomendaciones, dudas, una colaboración o simplemente un hola. Escríbenos y respondemos
+              personalmente.
+            </p>
+            <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a href={whatsappUrl("Hola Maia Home, me gustaría más información.")} target="_blank" rel="noopener noreferrer" className="rounded-full bg-maia-yellow px-7 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong">
+                Escríbenos por WhatsApp
+              </a>
+              <Link href="/departamentos" className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                Ver departamentos
               </Link>
-            ))}
+            </div>
+            <p className="mt-6 text-sm text-neutral-400">
+              {WHATSAPP_DISPLAY} · {PHONE_DISPLAY} ·{" "}
+              <a href={`mailto:${SUPPORT_EMAIL}`} className="underline hover:text-white">{SUPPORT_EMAIL}</a>
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* CTA + contacto */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
-        <div className="rounded-3xl bg-maia-dark px-8 py-14 text-center text-white">
-          <h2 className="font-serif text-3xl md:text-4xl">
-            ¿Listo para vivir <span className="italic text-maia-yellow">extraordinario</span>?
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-neutral-300">
-            Descubre nuestros departamentos disponibles o escríbenos: estaremos encantados de
-            ayudarte a planear tu estancia.
-          </p>
-          <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/departamentos"
-              className="rounded-full bg-maia-yellow px-7 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong"
-            >
-              Ver departamentos
-            </Link>
-            <a
-              href={whatsappUrl("Hola Maia Home, me gustaría más información.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-            >
-              Escríbenos por WhatsApp
-            </a>
-          </div>
-          <p className="mt-6 text-sm text-neutral-400">
-            {WHATSAPP_DISPLAY} · {PHONE_DISPLAY} ·{" "}
-            <a href={`mailto:${SUPPORT_EMAIL}`} className="underline hover:text-white">
-              {SUPPORT_EMAIL}
-            </a>
-          </p>
         </div>
       </section>
     </>
