@@ -66,33 +66,45 @@ const FAQ = [
 export default function AdministramosTuDepto() {
   return (
     <div>
-      {/* Hero */}
-      <section className="border-b border-neutral-100 bg-gradient-to-b from-neutral-50 to-white">
-        <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">
-            Para propietarios · Property management CDMX
-          </p>
-          <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-[1.1] text-neutral-900 md:text-5xl">
-            Administramos tu departamento para rentas de corta y mediana estancia en CDMX
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-600">
-            Convierte tu departamento amueblado en un activo rentable sin operar nada tú.
-            Administración profesional con estándar hotelero: publicación multiplataforma, pricing
-            dinámico, limpieza, mantenimiento y reportes transparentes.{" "}
-            <b className="text-neutral-800">Trabaja menos, gana más.</b>
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <a href="#empecemos" className="rounded-xl bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong">
-              Quiero rentar mi depto
-            </a>
-            <a href={whatsappUrl("Hola Maia Home, quiero información para administrar mi departamento.")} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-700 transition hover:bg-neutral-50">
-              Hablar por WhatsApp
-            </a>
+      {/* Hero — dos columnas, foto con etiqueta de zonas */}
+      <section className="bg-gradient-to-br from-[#FDF3CF] via-white to-white">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 py-14 md:py-20 lg:grid-cols-2 lg:gap-14">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-neutral-500">
+              Para propietarios · Property management CDMX
+            </p>
+            <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.12] tracking-tight text-neutral-900 md:text-5xl">
+              Administramos tu departamento para{" "}
+              <span className="italic">rentas de corta y mediana estancia</span> en CDMX
+            </h1>
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-600">
+              Convierte tu departamento amueblado en un activo rentable sin operar nada tú.
+              Administración profesional con estándar hotelero: publicación multiplataforma, pricing
+              dinámico, limpieza, mantenimiento y reportes transparentes.{" "}
+              <b className="text-neutral-800">Trabaja menos, gana más.</b>
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a href="#empecemos" className="inline-flex items-center gap-2 rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong">
+                Quiero rentar mi depto <span aria-hidden="true">→</span>
+              </a>
+              <a href={whatsappUrl("Hola Maia Home, quiero información para administrar mi departamento.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-700 transition hover:bg-neutral-50">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.16c-.24.68-1.42 1.32-1.95 1.36-.5.04-.5.4-3.16-.66-2.66-1.06-4.34-3.79-4.47-3.97-.13-.18-1.07-1.43-1.07-2.72s.68-1.93.92-2.2c.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.8 2 .87 2.14.07.13.12.29.02.47-.34.66-.7.62-.44 1.07.18.29.79 1.3 1.69 2.11 1.16 1.03 2.13 1.35 2.43 1.5.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.29.4-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.68-.17 1.36Z" /></svg>
+                Hablar por WhatsApp
+              </a>
+            </div>
           </div>
-          <p className="mt-6 text-sm text-neutral-500">
-            <span className="font-semibold text-neutral-700">Polanco · Condesa · Roma</span> — operación
-            profesional en las mejores zonas de la ciudad.
-          </p>
+
+          <div className="relative">
+            <div className="absolute -right-3 -top-3 h-full w-full rounded-[2rem] bg-maia-yellow" aria-hidden="true" />
+            <div className="relative overflow-hidden rounded-[2rem] shadow-xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/duenos/hero.jpg" alt="Departamento amueblado en renta en CDMX administrado por Maia Home" className="h-full w-full object-cover" />
+              <div className="absolute inset-x-3 bottom-3 rounded-2xl bg-black/55 px-4 py-3 text-white backdrop-blur">
+                <p className="text-sm font-semibold">Polanco · Condesa · Roma</p>
+                <p className="text-xs text-neutral-200">Operación profesional en las mejores zonas de la ciudad</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
