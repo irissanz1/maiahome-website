@@ -9,8 +9,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/check-in" },
 };
 
-// TODO: reemplazar por la URL real del formulario de check-in cuando Iris la comparta.
-const FORM_CHECKIN = whatsappUrl("Hola, quiero completar el formulario de check-in de mi reserva en Maia Home.");
+// Formulario de check-in "Registro cliente" (Zoho Forms). URL directa del perma
+// (el link corto zfrmz.com/GY7BmSb90bzEFUWeumQ5 redirige aquí; usamos la directa
+// para evitar el 302 dentro del iframe).
+const FORM_CHECKIN =
+  "https://forms.zohopublic.com/maiahome/form/Registrocliente/formperma/bWjqVFwzm1erKYTem6NblUrmdOVbDVqaB2DgI3yMx6w";
 
 const PASOS = [
   ["1. Llena el formulario de check-in", "Es obligatorio: con tus datos activamos las claves de acceso al edificio y al departamento. Envíalo al menos un día antes de tu llegada; como mínimo, 1 hora antes."],
@@ -38,9 +41,7 @@ export default function CheckIn() {
           edificios.
         </p>
         <a
-          href={FORM_CHECKIN}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#formulario"
           className="mt-4 inline-block rounded-lg bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
         >
           Llenar formulario de check-in
@@ -72,6 +73,29 @@ export default function CheckIn() {
             <p className="mt-1 text-sm text-neutral-600">{d}</p>
           </div>
         ))}
+      </section>
+
+      {/* Formulario de check-in embebido */}
+      <section id="formulario" className="mt-12 scroll-mt-24">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <h2 className="font-serif text-2xl text-neutral-900">Formulario de check-in</h2>
+          <a
+            href={FORM_CHECKIN}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-neutral-500 hover:text-maia-strong"
+          >
+            Abrir en pantalla completa ↗
+          </a>
+        </div>
+        <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+          <iframe
+            src={FORM_CHECKIN}
+            title="Formulario de check-in — Maia Home"
+            className="h-[1600px] w-full"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       <section className="mt-10 rounded-2xl bg-[#FBF7EC] p-6 md:p-8">
