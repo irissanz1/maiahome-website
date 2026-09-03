@@ -59,9 +59,8 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
       ? `Departamentos en ${zona.nombre}`
       : `Departamentos en ${market.geo}`;
 
-  // Hero por mercado. CDMX: Palacio de Bellas Artes; Houston: pendiente de foto
-  // de ciudad (por ahora, degradado de marca).
-  const heroImg = market.id === "mx" ? "/departamentos/cdmx.jpg" : null;
+  // Hero por mercado. CDMX: Palacio de Bellas Artes; Houston: skyline (de explore).
+  const heroImg = market.id === "mx" ? "/departamentos/cdmx.jpg" : "/zonas/houston.webp";
 
   return (
     <div>

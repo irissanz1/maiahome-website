@@ -49,18 +49,25 @@ export default async function ZonaLanding({
 
   return (
     <div>
-      <section className="border-b border-neutral-100 bg-gradient-to-b from-neutral-50 to-white">
-        <div className="mx-auto max-w-6xl px-5 py-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/zonas/${slug}.webp`}
+          alt={zona.nombre}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/55" />
+        <div className="relative mx-auto max-w-6xl px-5 py-16 md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-yellow">
             {zona.pais === "MX" ? "Ciudad de México" : "Houston, Texas"}
           </p>
-          <h1 className="mt-3 font-serif text-4xl text-neutral-900 md:text-5xl">
+          <h1 className="mt-3 font-serif text-4xl text-white md:text-5xl">
             Departamentos amueblados en {zona.nombre}
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-neutral-600">{zona.descripcion.es}</p>
+          <p className="mt-4 max-w-2xl text-lg text-white/90">{zona.descripcion.es}</p>
           <Link
             href={`/departamentos?market=${zona.pais === "MX" ? "mx" : "us"}`}
-            className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-700 hover:text-maia-strong"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-white/90 hover:text-maia-yellow"
           >
             <span aria-hidden="true">←</span> Ver todas las zonas
           </Link>
