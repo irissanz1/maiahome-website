@@ -8,17 +8,54 @@ export function langFromPath(pathname: string): Lang {
   return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "es";
 }
 
-// Construye un href respetando el idioma (en → prefijo /en).
-export function withLang(lang: Lang, path: string): string {
-  if (lang === "es") return path;
-  if (path === "/") return "/en";
-  return `/en${path}`;
+// Mapa de rutas ES ↔ EN (slugs traducidos, opción B). Rutas estáticas:
+const PATHMAP: Array<[string, string]> = [
+  ["/", "/en"],
+  ["/departamentos", "/en/apartments"],
+  ["/mensuales", "/en/monthly-stays"],
+  ["/corporativo", "/en/corporate-housing"],
+  ["/administramos-tu-depto", "/en/manage-your-apartment"],
+  ["/nosotros", "/en/about"],
+  ["/formas-de-pago", "/en/payment-options"],
+  ["/recorridos-departamentos", "/en/virtual-tours"],
+  ["/facturacion", "/en/invoicing"],
+  ["/aviso-privacidad", "/en/privacy-notice"],
+  ["/terminos-y-condiciones", "/en/terms-and-conditions"],
+  ["/terminos-uso", "/en/terms-of-use"],
+  ["/stay-agreement", "/en/stay-agreement"],
+  ["/polanco", "/en/polanco"],
+  ["/condesa", "/en/condesa"],
+  ["/houston", "/en/houston"],
+];
+// Prefijos con segmento dinámico (ficha, reserva):
+const DYNMAP: Array<[string, string]> = [
+  ["/depto/", "/en/stay/"],
+  ["/reservar/", "/en/book/"],
+];
+
+// Traduce un path ES a su equivalente en el idioma dado.
+export function withLang(lang: Lang, esPath: string): string {
+  if (lang === "es") return esPath;
+  const exact = PATHMAP.find(([es]) => es === esPath);
+  if (exact) return exact[1];
+  const dyn = DYNMAP.find(([es]) => esPath.startsWith(es));
+  if (dyn) return dyn[1] + esPath.slice(dyn[0].length);
+  return esPath === "/" ? "/en" : `/en${esPath}`;
 }
 
-// Cambia el prefijo de idioma de una ruta actual (para el switch ES/EN).
+// Devuelve el equivalente ES de un path EN (para el switch y hreflang).
+export function toEs(enPath: string): string {
+  const exact = PATHMAP.find(([, en]) => en === enPath);
+  if (exact) return exact[0];
+  const dyn = DYNMAP.find(([, en]) => enPath.startsWith(en));
+  if (dyn) return dyn[0] + enPath.slice(dyn[1].length);
+  return enPath.replace(/^\/en/, "") || "/";
+}
+
+// Cambia el idioma de la ruta actual conservando la página (slugs traducidos).
 export function switchLangPath(pathname: string, to: Lang): string {
-  const bare = pathname === "/en" ? "/" : pathname.startsWith("/en/") ? pathname.slice(3) : pathname;
-  return to === "es" ? bare : withLang("en", bare);
+  const esPath = langFromPath(pathname) === "en" ? toEs(pathname) : pathname;
+  return to === "es" ? esPath : withLang("en", esPath);
 }
 
 // Elige el valor del idioma de un campo bilingüe { es, en } (con fallback a es).
