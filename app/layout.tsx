@@ -52,8 +52,8 @@ const ORG_JSONLD = {
   address: { "@type": "PostalAddress", addressLocality: "Ciudad de México", addressCountry: "MX" },
   sameAs: [
     "https://www.instagram.com/maiahomemx",
-    "https://www.facebook.com/maiahomemx",
     "https://www.tiktok.com/@maiahomemx",
+    // Facebook pendiente: confirmar la URL correcta (facebook.com/maiahomemx apunta a una página vieja).
   ],
 };
 
