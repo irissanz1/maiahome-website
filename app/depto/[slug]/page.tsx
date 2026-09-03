@@ -55,7 +55,10 @@ export default async function StayDetail({
   // Verificación EN VIVO al momento de reservar: si hay fechas, consulta Beds24
   // fresco (refleja reservas de hace minutos). Si falla, cae a la caché.
   const r = (await evaluateLive(p, search)) ?? evaluate(p, search);
-  const canReserve = r.status === "disponible" || r.status === "sin-fechas";
+  const available = r.status === "disponible";
+  const needsDates = r.status === "sin-fechas";
+  const reserveActionable = available || needsDates; // se ve activo (amarillo)
+  const reserveLabel = needsDates ? "Selecciona fechas" : available ? "Reservar" : "No disponible";
   const gallery = p.images.slice(0, 5);
   const zonaDesc = ZONAS[p.zona]?.descripcion.es;
   const availDays: Record<string, boolean> = {};
@@ -240,7 +243,9 @@ export default async function StayDetail({
             <p className="text-lg text-neutral-500">Consultar tarifa</p>
           )}
 
-          <StayDateForm slug={p.slug} checkin={search.checkin} checkout={search.checkout} guests={search.guests} />
+          <div id="fechas">
+            <StayDateForm slug={p.slug} checkin={search.checkin} checkout={search.checkout} guests={search.guests} />
+          </div>
 
           <div className="mt-4 rounded-xl bg-neutral-50 p-3 text-sm">
             <p className="font-medium text-neutral-700">
@@ -257,14 +262,15 @@ export default async function StayDetail({
             href={beds24Url}
             roomId={p.beds24RoomId}
             nombre={p.nombre}
-            disabled={!canReserve}
-            className={`mt-4 block rounded-xl px-4 py-3 text-center text-sm font-semibold transition ${
-              canReserve
+            disabled={!reserveActionable}
+            pickDates={needsDates}
+            className={`mt-4 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition ${
+              reserveActionable
                 ? "bg-maia-yellow text-black hover:bg-maia-strong"
                 : "cursor-not-allowed bg-neutral-200 text-neutral-500"
             }`}
           >
-            {canReserve ? "Reservar" : "No disponible"}
+            {reserveLabel}
           </ReserveButton>
           <p className="mt-2 text-center text-xs text-neutral-400">El cobro se procesa en Beds24 (checkout seguro)</p>
         </aside>
@@ -291,12 +297,13 @@ export default async function StayDetail({
           href={beds24Url}
           roomId={p.beds24RoomId}
           nombre={p.nombre}
-          disabled={!canReserve}
+          disabled={!reserveActionable}
+          pickDates={needsDates}
           className={`shrink-0 rounded-xl px-6 py-3 text-sm font-semibold ${
-            canReserve ? "bg-maia-yellow text-black" : "cursor-not-allowed bg-neutral-200 text-neutral-500"
+            reserveActionable ? "bg-maia-yellow text-black" : "cursor-not-allowed bg-neutral-200 text-neutral-500"
           }`}
         >
-          {canReserve ? "Reservar" : "No disponible"}
+          {reserveLabel}
         </ReserveButton>
       </div>
     </div>
