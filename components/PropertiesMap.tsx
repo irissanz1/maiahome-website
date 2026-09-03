@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
+import { POIS } from "@/lib/pois";
 
 export type MapMarker = {
   slug: string;
@@ -90,9 +91,11 @@ function groupPopupHtml(units: MapMarker[]) {
 export default function PropertiesMap({
   markers,
   heightClass = "h-[560px]",
+  showPois = false,
 }: {
   markers: MapMarker[];
   heightClass?: string;
+  showPois?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -124,6 +127,32 @@ export default function PropertiesMap({
           marker.bindPopup(groupPopupHtml(g.units), { minWidth: 0 });
           if (g.units.length === 1) marker.on("mouseover", () => marker.openPopup());
         });
+
+        // Puntos de interés cercanos (contexto). Solo los que están a < 8 km de
+        // alguna propiedad → el mapa de Houston no muestra POIs de CDMX.
+        if (showPois && pts.length) {
+          const near = POIS.filter((poi) =>
+            markers.some((m) => distM(m, poi) < 8000),
+          );
+          if (near.length) {
+            const poiLayer = L.layerGroup();
+            near.forEach((poi) => {
+              const icon = L.divIcon({
+                html: `<div class="maia-poi">${poi.emoji}</div>`,
+                className: "maia-poi-wrap",
+                iconSize: [24, 24],
+                iconAnchor: [12, 12],
+              });
+              L.marker([poi.lat, poi.lng], { icon })
+                .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
+                .addTo(poiLayer);
+            });
+            poiLayer.addTo(map);
+            L.control
+              .layers(null, { "Lugares de interés": poiLayer }, { collapsed: false, position: "topright" })
+              .addTo(map);
+          }
+        }
 
         // El contenedor puede medir 0 al montar (toggle). Recalcular y encuadrar.
         const fit = () => {

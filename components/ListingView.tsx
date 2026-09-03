@@ -64,7 +64,7 @@ export default function ListingView({
         </div>
       ) : markers.length ? (
         <div className="mt-6">
-          <PropertiesMap markers={markers} />
+          <PropertiesMap markers={markers} showPois />
           <p className="mt-3 text-xs text-neutral-400">
             Cada pin es un edificio. El número indica cuántas propiedades hay ahí: haz clic para verlas
             todas. Recibes el interior y las instrucciones de acceso al confirmar tu reserva.

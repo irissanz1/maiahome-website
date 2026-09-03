@@ -85,3 +85,22 @@ h1, h2, h3 {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
 }
 
+/* Marcador de punto de interés: discreto, distinto de los pines de propiedad */
+.leaflet-div-icon.maia-poi-wrap {
+  background: transparent;
+  border: 0;
+}
+.maia-poi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  line-height: 1;
+}
+
