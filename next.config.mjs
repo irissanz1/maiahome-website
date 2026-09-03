@@ -41,6 +41,18 @@ const nextConfig = {
       { source: "/Stays", destination: "/departamentos", permanent: true },
       { source: "/Home", destination: "/", permanent: true },
       { source: "/CorporateHousing", destination: "/corporativo", permanent: true },
+      // Rutas viejas del Wix (www.maiahome.mx) cuyo path CAMBIA de nombre.
+      // Las que mantienen el mismo path (nosotros, administramos-tu-depto,
+      // aviso-privacidad, terminos-uso, terminos-y-condiciones, stay-agreement,
+      // facturacion, blog, departamentos, recorridos-departamentos) NO necesitan
+      // redirect: resuelven solas.
+      { source: "/tours-mexico-city", destination: "/recorridos-departamentos", permanent: true },
+      { source: "/corporate-housing", destination: "/corporativo", permanent: true },
+      { source: "/reserva-ahora", destination: "/departamentos", permanent: true },
+      { source: "/descubre", destination: "/blog", permanent: true },
+      { source: "/explora", destination: "/blog", permanent: true },
+      { source: "/check-in", destination: "/", permanent: true },
+      { source: "/payment", destination: "/departamentos", permanent: true },
       // Fichas de propiedad viejas → nuevas (por slug)
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.

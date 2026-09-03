@@ -33,10 +33,31 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+const ORG_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  name: "Maia Home",
+  url: "https://maiahome.mx",
+  logo: "https://maiahome.mx/maia-logo.png",
+  image: "https://maiahome.mx/og/banner.jpg",
+  description:
+    "Departamentos amueblados premium en renta en Ciudad de México (Polanco, Condesa) y Houston. Reserva directo, sin intermediarios.",
+  telephone: "+525533505427",
+  email: "info@maiahome.com",
+  priceRange: "$$$",
+  areaServed: [
+    { "@type": "City", name: "Ciudad de México" },
+    { "@type": "City", name: "Houston" },
+  ],
+  address: { "@type": "PostalAddress", addressLocality: "Ciudad de México", addressCountry: "MX" },
+  // sameAs: agregar aquí los perfiles reales (Instagram, Facebook, etc.) cuando se confirmen.
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-MX" className={montserrat.variable}>
       <body className="font-sans">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }} />
         <Analytics />
         <Header />
         <main>{children}</main>
