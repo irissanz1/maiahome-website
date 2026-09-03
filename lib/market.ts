@@ -13,7 +13,7 @@ export interface Market {
 
 // Nota: todo cotiza en USD en Beds24 → moneda USD en ambos mercados.
 export const MARKETS: Record<MarketId, Market> = {
-  mx: { id: "mx", label: "México", geo: "Ciudad de México", pais: "MX", currency: "USD", zonas: ["polanco", "condesa"] },
+  mx: { id: "mx", label: "CDMX", geo: "Ciudad de México", pais: "MX", currency: "USD", zonas: ["polanco", "condesa"] },
   us: { id: "us", label: "Houston", geo: "Houston", pais: "US", currency: "USD", zonas: ["houston"] },
 };
 
