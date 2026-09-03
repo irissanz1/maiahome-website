@@ -87,7 +87,7 @@ export default async function Home({
       <section className="mx-auto max-w-6xl px-5 pb-4">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <h2 className="font-serif text-3xl text-neutral-900">Destacados en {market.label}</h2>
+            <h2 className="font-serif text-3xl text-neutral-900">Destacados en {market.geo}</h2>
             <p className="mt-1 text-sm text-neutral-500">Una muestra de nuestro catálogo.</p>
           </div>
           <Link

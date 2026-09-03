@@ -20,11 +20,14 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const market = resolveMarket(str(sp.market));
   const zona = str(sp.zona) ? ZONAS[str(sp.zona)!] : undefined;
   const seg = str(sp.segmento);
-  const where = zona ? zona.nombre : market.label;
+  const where = zona ? zona.nombre : market.geo;
   const what = seg ? SEGMENT_LABEL[seg] : "Departamentos amueblados";
+  // Barrios del mercado para reforzar la señal geográfica (SEO/GEO).
+  const barrios = market.zonas.map((z) => ZONAS[z]?.nombre).filter(Boolean).join(", ");
+  const zonaHint = !zona && barrios ? ` (${barrios})` : "";
   return {
-    title: `${what} en ${where}`,
-    description: `${what} en ${where}. Reserva directo con Maia Home: mejor tarifa, sin intermediarios.`,
+    title: `${what} en ${where}${zonaHint}`,
+    description: `${what} premium en ${where}${zonaHint}. Reserva directo con Maia Home: mejor tarifa, sin intermediarios ni comisiones.`,
     alternates: { canonical: "/departamentos" },
   };
 }
@@ -54,7 +57,7 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
     ? SEGMENT_LABEL[segmento]
     : zona
       ? `Departamentos en ${zona.nombre}`
-      : `Departamentos en ${market.label}`;
+      : `Departamentos en ${market.geo}`;
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10">
