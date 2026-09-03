@@ -1,8 +1,14 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { track } from "@/lib/analytics";
+import { langFromPath, withLang } from "@/lib/i18n";
+
+const SD = {
+  es: { checkin: "Entrada", checkout: "Salida", guests: "Huéspedes", apply: "Ver disponibilidad", book: "Reservar", blocked: "No disponible" },
+  en: { checkin: "Check-in", checkout: "Check-out", guests: "Guests", apply: "Check availability", book: "Book", blocked: "Not available" },
+} as const;
 
 // Selector de fechas + UN SOLO botón que hace ambas cosas:
 //  - si faltan fechas o cambiaron → "Ver disponibilidad" (recalcula en el servidor)
@@ -28,6 +34,8 @@ export default function StayDateForm({
   nombre: string;
 }) {
   const router = useRouter();
+  const lang = langFromPath(usePathname());
+  const sd = SD[lang];
   const [checkin, setCheckin] = useState(dci ?? "");
   const [checkout, setCheckout] = useState(dco ?? "");
   const [guests, setGuests] = useState(dg ? String(dg) : "2");
@@ -39,14 +47,14 @@ export default function StayDateForm({
 
   // Modo del botón
   let mode: "apply" | "reserve" | "blocked" = "apply";
-  let label = "Ver disponibilidad";
+  let label: string = sd.apply;
   if (complete && !changed) {
     if (status === "disponible") {
       mode = "reserve";
-      label = "Reservar";
+      label = sd.book;
     } else if (status === "no-disponible" || status === "estancia-minima" || status === "capacidad") {
       mode = "blocked";
-      label = "No disponible";
+      label = sd.blocked;
     }
   }
 
@@ -55,7 +63,7 @@ export default function StayDateForm({
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
     if (guests) q.set("guests", guests);
-    router.push(`/depto/${slug}${q.toString() ? `?${q.toString()}` : ""}`);
+    router.push(withLang(lang, `/depto/${slug}`) + (q.toString() ? `?${q.toString()}` : ""));
   }
 
   function onClick() {
@@ -81,16 +89,16 @@ export default function StayDateForm({
     <div className="mt-4 space-y-2">
       <div className="grid grid-cols-2 gap-2">
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-neutral-500">Entrada</span>
+          <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.checkin}</span>
           <input ref={ciRef} type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className={field} />
         </label>
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-neutral-500">Salida</span>
+          <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.checkout}</span>
           <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className={field} />
         </label>
       </div>
       <label className="block">
-        <span className="mb-1 block text-xs font-medium text-neutral-500">Huéspedes</span>
+        <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.guests}</span>
         <select value={guests} onChange={(e) => setGuests(e.target.value)} className={field}>
           {[1, 2, 3, 4, 5].map((n) => (
             <option key={n} value={n}>{n}</option>

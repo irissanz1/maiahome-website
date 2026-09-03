@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { track } from "@/lib/analytics";
+import { langFromPath } from "@/lib/i18n";
 
 export default function ReserveButton({
   href,
@@ -21,6 +23,7 @@ export default function ReserveButton({
   children: React.ReactNode;
 }) {
   const [flash, setFlash] = useState(false);
+  const flashMsg = langFromPath(usePathname()) === "en" ? "Pick your dates ☝️" : "Elige tus fechas ☝️";
 
   // Sin fechas: no manda a Beds24; pide elegir fechas y baja al selector.
   if (pickDates) {
@@ -40,7 +43,7 @@ export default function ReserveButton({
           track("reserva_pick_dates", { roomId, nombre });
         }}
       >
-        {flash ? "Elige tus fechas ☝️" : children}
+        {flash ? flashMsg : children}
       </button>
     );
   }
