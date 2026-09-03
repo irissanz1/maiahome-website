@@ -4,8 +4,10 @@ import HomeHero from "@/components/HomeHero";
 import StatsBar from "@/components/StatsBar";
 import TrustBar from "@/components/TrustBar";
 import FeaturedReviews from "@/components/FeaturedReviews";
+import PropertiesMap, { type MapMarker } from "@/components/PropertiesMap";
 import { getByMarket } from "@/lib/data";
 import { resolveMarket } from "@/lib/market";
+import { formatMoney, img } from "@/lib/format";
 
 const BENEFITS = [
   { t: "Ubicaciones premium", d: "Polanco, Condesa y Houston — las mejores zonas para vivir o trabajar." },
@@ -31,6 +33,28 @@ export default async function Home({
     pinned.length >= 3
       ? pinned.slice(0, 3)
       : [...pinned, ...marketProps.filter((p) => !FEATURED_SLUGS.includes(p.slug)).slice(0, 3 - pinned.length)];
+
+  // Mapa "Dónde estamos": pines del mercado actual + chips por zona con conteo.
+  const mapMarkers: MapMarker[] = marketProps
+    .filter((p) => typeof p.lat === "number" && typeof p.lng === "number")
+    .map((p) => ({
+      slug: p.slug,
+      nombre: p.nombre,
+      zonaNombre: p.zonaNombre,
+      lat: p.lat as number,
+      lng: p.lng as number,
+      priceLabel: p.precioDesde != null ? `${formatMoney(p.precioDesde, p.currency)} / noche` : null,
+      image: img(p.images[0], 400),
+      rating: p.rating,
+      href: `/depto/${p.slug}`,
+    }));
+  const zoneMap = new Map<string, { slug: string; count: number }>();
+  for (const p of marketProps) {
+    const cur = zoneMap.get(p.zonaNombre);
+    if (cur) cur.count += 1;
+    else zoneMap.set(p.zonaNombre, { slug: p.zona, count: 1 });
+  }
+  const zones = [...zoneMap.entries()].sort((a, b) => b[1].count - a[1].count);
 
   return (
     <>
@@ -79,6 +103,46 @@ export default async function Home({
           ))}
         </div>
       </section>
+
+      {/* Dónde estamos — teaser de mapa */}
+      {mapMarkers.length > 0 && (
+        <section className="mx-auto max-w-6xl px-5 py-16">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">Dónde estamos</p>
+              <h2 className="mt-3 font-serif text-3xl text-neutral-900 md:text-4xl">
+                En el corazón de las mejores zonas
+              </h2>
+              <p className="mt-3 text-neutral-600">
+                Nuestros departamentos se concentran en Polanco y Condesa (CDMX) y Houston: a pasos de la
+                mejor gastronomía, cultura y vida de negocios. Explora el mapa y elige por ubicación.
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {zones.map(([nombre, { slug, count }]) => (
+                  <Link
+                    key={slug}
+                    href={`/departamentos?market=${market.id}&zona=${slug}`}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-neutral-300 px-3.5 py-1.5 text-sm text-neutral-700 transition hover:border-maia-strong hover:bg-neutral-50"
+                  >
+                    {nombre}
+                    <span className="text-xs font-semibold text-neutral-400">{count}</span>
+                  </Link>
+                ))}
+              </div>
+
+              <Link
+                href={`/departamentos?market=${market.id}`}
+                className="mt-6 inline-block rounded-full bg-maia-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
+              >
+                Ver todos en el mapa →
+              </Link>
+            </div>
+
+            <PropertiesMap markers={mapMarkers} heightClass="h-[420px] md:h-[460px]" />
+          </div>
+        </section>
+      )}
 
       <FeaturedReviews />
 

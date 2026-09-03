@@ -87,7 +87,13 @@ function groupPopupHtml(units: MapMarker[]) {
   </div>`;
 }
 
-export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
+export default function PropertiesMap({
+  markers,
+  heightClass = "h-[560px]",
+}: {
+  markers: MapMarker[];
+  heightClass?: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
 
@@ -144,7 +150,7 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
   return (
     <div
       ref={ref}
-      className="h-[560px] w-full overflow-hidden rounded-2xl border border-neutral-200"
+      className={`${heightClass} w-full overflow-hidden rounded-2xl border border-neutral-200`}
       aria-label="Mapa de ubicaciones de los departamentos"
     />
   );
