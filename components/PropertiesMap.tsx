@@ -80,8 +80,16 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
         });
         map.addLayer(cluster);
 
-        if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
-        else map.setView([19.42, -99.19], 12);
+        // El contenedor puede medir 0 al montar (toggle); markercluster difiere
+        // el dibujado hasta que haya viewport. Recalcular tamaño y encuadrar
+        // (dos veces: al momento y tras el layout) evita el mapa "vacío".
+        const fit = () => {
+          map.invalidateSize();
+          if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
+          else map.setView([19.42, -99.19], 12);
+        };
+        fit();
+        setTimeout(fit, 250);
       })
       .catch(() => {});
     return () => {
