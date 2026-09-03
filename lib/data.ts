@@ -11,6 +11,10 @@ import reviewsJson from "@/data/reviews.json";
 const ROOMS: Record<string, any> = (cacheJson as any).rooms || {};
 const REVIEWS: Record<string, any> = (reviewsJson as any).byRoom || {};
 
+// Revalida las consultas a Sanity cada 60s → el contenido editado en el Studio
+// aparece en el sitio en ~1 min, sin necesidad de redesplegar.
+const REVALIDATE = { next: { revalidate: 60 } } as const;
+
 // Reseñas curables desde Sanity Studio (visible / destacada / orden).
 const REVIEWS_QUERY = `*[_type=="review" && visible==true]{author,text,rating,date,avatar,beds24RoomId,orden}`;
 const FEATURED_QUERY = `*[_type=="review" && visible==true && destacada==true]{author,text,rating,date,avatar,propertyName,orden} | order(orden asc, date desc)`;
@@ -113,7 +117,7 @@ export type FeaturedReview = {
 
 export const getFeaturedReviews = cache(async (): Promise<FeaturedReview[]> => {
   try {
-    const docs = (await sanity.fetch(FEATURED_QUERY)) as any[];
+    const docs = (await sanity.fetch(FEATURED_QUERY, {}, REVALIDATE)) as any[];
     if (docs?.length) {
       return docs.map((d) => ({
         name: d.author || "",
@@ -147,7 +151,7 @@ const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published=
 
 export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
   try {
-    return ((await sanity.fetch(BLOG_LIST_QUERY)) as BlogPostCard[]) || [];
+    return ((await sanity.fetch(BLOG_LIST_QUERY, {}, REVALIDATE)) as BlogPostCard[]) || [];
   } catch {
     return [];
   }
@@ -155,7 +159,7 @@ export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
 
 export async function getBlogPost(slug: string): Promise<BlogPostFull | null> {
   try {
-    return (await sanity.fetch(BLOG_ONE_QUERY, { slug })) as BlogPostFull | null;
+    return (await sanity.fetch(BLOG_ONE_QUERY, { slug }, REVALIDATE)) as BlogPostFull | null;
   } catch {
     return null;
   }
@@ -163,8 +167,8 @@ export async function getBlogPost(slug: string): Promise<BlogPostFull | null> {
 
 export const getProperties = cache(async (): Promise<Property[]> => {
   const [docs, reviewDocs] = await Promise.all([
-    sanity.fetch(QUERY) as Promise<any[]>,
-    (sanity.fetch(REVIEWS_QUERY) as Promise<any[]>).catch(() => [] as any[]),
+    sanity.fetch(QUERY, {}, REVALIDATE) as Promise<any[]>,
+    (sanity.fetch(REVIEWS_QUERY, {}, REVALIDATE) as Promise<any[]>).catch(() => [] as any[]),
   ]);
   const byRoom = groupReviews(reviewDocs);
   const props = docs.map((d) => build(d, ROOMS[String(d.beds24RoomId)], byRoom[String(d.beds24RoomId)]));
