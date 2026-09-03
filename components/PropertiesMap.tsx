@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { loadLeaflet } from "@/lib/leaflet";
+import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
 
 export type MapMarker = {
   slug: string;
@@ -104,10 +104,7 @@ export default function PropertiesMap({
         if (cancelled || !ref.current || mapRef.current) return;
         const map = L.map(ref.current, { scrollWheelZoom: false });
         mapRef.current = map;
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        }).addTo(map);
+        addBaseLayer(L, map);
 
         const groups = groupByBuilding(markers);
         const pts: [number, number][] = [];

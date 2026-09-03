@@ -31,3 +31,18 @@ export function loadLeaflet(): Promise<any> {
     document.head.appendChild(s);
   });
 }
+
+// Basemap de marca: Esri "Light Gray Canvas" (gris minimalista) + etiquetas.
+// maxNativeZoom 16 porque el estilo gris llega a z16; Leaflet reescala más allá.
+export function addBaseLayer(L: any, map: any) {
+  const attribution =
+    'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors';
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: 19, maxNativeZoom: 16, attribution },
+  ).addTo(map);
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: 19, maxNativeZoom: 16 },
+  ).addTo(map);
+}
