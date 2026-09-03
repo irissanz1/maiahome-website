@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description: p.headline.es || p.descripcion.es?.slice(0, 150),
-    alternates: { canonical: `/depto/${p.slug}` },
+    alternates: { canonical: `/depto/${p.slug}`, languages: { es: `/depto/${p.slug}`, en: `/en/stay/${p.slug}` } },
     openGraph: { title, description: p.headline.es, images: ogImage ? [ogImage] : [] },
   };
 }

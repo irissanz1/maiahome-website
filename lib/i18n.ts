@@ -1,6 +1,6 @@
 // Base de internacionalización. Español en la raíz (/), inglés bajo /en.
 // Activar cuando las páginas /en estén construidas (enciende el switch de idioma).
-export const LANG_SWITCH_ENABLED = false;
+export const LANG_SWITCH_ENABLED = true;
 
 export type Lang = "es" | "en";
 

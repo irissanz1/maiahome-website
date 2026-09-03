@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title: `Departamentos amueblados en ${zona.nombre}`,
     description: zona.seo.es,
-    alternates: { canonical: `/${zona.slug}` },
+    alternates: { canonical: `/${zona.slug}`, languages: { es: `/${zona.slug}`, en: `/en/${zona.slug}` } },
     openGraph: { title: `Departamentos amueblados en ${zona.nombre}`, description: zona.seo.es },
   };
 }

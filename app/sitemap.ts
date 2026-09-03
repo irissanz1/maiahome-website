@@ -61,5 +61,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
-  return [...staticPages, ...legalPages, ...zonas, ...deptos, ...blog];
+  // Versión en inglés (/en, slugs traducidos). El blog se mantiene solo en español.
+  const enStatic = [
+    "/en",
+    "/en/apartments",
+    "/en/monthly-stays",
+    "/en/corporate-housing",
+    "/en/manage-your-apartment",
+    "/en/virtual-tours",
+    "/en/about",
+    "/en/payment-options",
+    "/en/invoicing",
+  ].map((path) => ({ url: `${BASE}${path}`, changeFrequency: "weekly" as const, priority: path === "/en" ? 0.9 : 0.7 }));
+  const enZonas = Object.keys(ZONAS).map((slug) => ({
+    url: `${BASE}/en/${slug}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+  const enDeptos = catalog.map((p) => ({
+    url: `${BASE}/en/stay/${p.slug}`,
+    changeFrequency: "daily" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...legalPages, ...zonas, ...deptos, ...blog, ...enStatic, ...enZonas, ...enDeptos];
 }

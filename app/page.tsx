@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import HomeHero from "@/components/HomeHero";
@@ -8,6 +9,10 @@ import PropertiesMap, { type MapMarker } from "@/components/PropertiesMap";
 import { getByMarket } from "@/lib/data";
 import { resolveMarket } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/", languages: { es: "/", en: "/en" } },
+};
 
 const BENEFITS = [
   { t: "Ubicaciones premium", d: "Polanco, Condesa y Houston — las mejores zonas para vivir o trabajar." },

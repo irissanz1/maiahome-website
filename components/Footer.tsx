@@ -79,7 +79,8 @@ export default function Footer() {
                 <ul className="space-y-2 text-neutral-400">
                   {col.items.map((it) => (
                     <li key={it.p}>
-                      <Link href={withLang(lang, it.p)} className="hover:text-maia-yellow">
+                      {/* El blog vive solo en español; se enlaza a /blog en ambos idiomas. */}
+                      <Link href={it.p === "/blog" ? "/blog" : withLang(lang, it.p)} className="hover:text-maia-yellow">
                         {lang === "en" ? it.en : it.es}
                       </Link>
                     </li>

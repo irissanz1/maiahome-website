@@ -28,7 +28,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   return {
     title: `${what} en ${where}${zonaHint}`,
     description: `${what} premium en ${where}${zonaHint}. Reserva directo con Maia Home: mejor tarifa, sin intermediarios ni comisiones.`,
-    alternates: { canonical: "/departamentos" },
+    alternates: { canonical: "/departamentos", languages: { es: "/departamentos", en: "/en/apartments" } },
   };
 }
 
