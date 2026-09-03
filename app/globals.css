@@ -69,3 +69,8 @@ h1, h2, h3 {
     radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.35), transparent 60%),
     radial-gradient(80% 70% at 10% 90%, rgba(0, 0, 0, 0.08), transparent 55%);
 }
+
+/* Mapas Leaflet: tipografía Montserrat en popups/controles para no romper la marca */
+.leaflet-container {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}

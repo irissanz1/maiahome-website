@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import SearchStrip from "@/components/SearchStrip";
-import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
 import AdvancedFilters from "@/components/AdvancedFilters";
+import ListingView from "@/components/ListingView";
 import { getByMarket, withLiveAvailability } from "@/lib/data";
 import { resolveMarket, ZONAS } from "@/lib/market";
 import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
@@ -86,11 +86,7 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
       {a.filtered.length === 0 ? (
         <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>
       ) : (
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {a.filtered.map((p) => (
-            <PropertyCard key={p.beds24RoomId} property={p} search={a.search} />
-          ))}
-        </div>
+        <ListingView properties={a.filtered} search={a.search} />
       )}
     </div>
   );
