@@ -22,7 +22,7 @@ const PILARES = [
   ["01", "Comercialización", "Publicación multiplataforma (Airbnb, Booking.com, VRBO, web propia), anuncios diseñados a medida, herramientas de tarifas y revenue, y difusión en redes de Maia Home."],
   ["02", "Administración", "Histórico y forecast de ingresos en tiempo real, estado de cuenta mensual y administración de servicios de la propiedad (amenidades, limpieza y mantenimiento)."],
   ["03", "Operación", "Atención al huésped en línea, check-in autónomo en todas las propiedades, limpieza profesional por estancia y control de inventario por departamento."],
-  ["04", "Tecnología", "Motor de pagos seguro multipago (Visa, MasterCard, Amex, PayPal), motor de reservas independiente y monitoreo de ruido y aforo en tiempo real."],
+  ["04", "Tecnología", "Motor de pagos seguro con Stripe (Visa, MasterCard, Amex), motor de reservas independiente y monitoreo de ruido y aforo en tiempo real."],
 ];
 
 const PASOS = [
