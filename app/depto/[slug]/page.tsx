@@ -244,10 +244,19 @@ export default async function StayDetail({
           )}
 
           <div id="fechas">
-            <StayDateForm slug={p.slug} checkin={search.checkin} checkout={search.checkout} guests={search.guests} />
+            <StayDateForm
+              slug={p.slug}
+              checkin={search.checkin}
+              checkout={search.checkout}
+              guests={search.guests}
+              status={r.status}
+              beds24Url={beds24Url}
+              roomId={p.beds24RoomId}
+              nombre={p.nombre}
+            />
           </div>
 
-          <div className="mt-4 rounded-xl bg-neutral-50 p-3 text-sm">
+          <div className="mt-3 rounded-xl bg-neutral-50 p-3 text-sm">
             <p className="font-medium text-neutral-700">
               {statusLabel(r.status)}
               {r.status === "estancia-minima" && r.minStayRequerido ? ` · mínimo ${r.minStayRequerido} noches` : ""}
@@ -255,23 +264,8 @@ export default async function StayDetail({
             {r.status === "disponible" && r.total != null && (
               <p className="mt-1 text-neutral-600">{formatMoney(r.total, cur)} por {r.nights} noches</p>
             )}
-            {r.status === "sin-fechas" && <p className="mt-1 text-neutral-500">Elige fechas en el buscador para ver el total.</p>}
+            {r.status === "sin-fechas" && <p className="mt-1 text-neutral-500">Elige fechas para ver el total.</p>}
           </div>
-
-          <ReserveButton
-            href={beds24Url}
-            roomId={p.beds24RoomId}
-            nombre={p.nombre}
-            disabled={!reserveActionable}
-            pickDates={needsDates}
-            className={`mt-4 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition ${
-              reserveActionable
-                ? "bg-maia-yellow text-black hover:bg-maia-strong"
-                : "cursor-not-allowed bg-neutral-200 text-neutral-500"
-            }`}
-          >
-            {reserveLabel}
-          </ReserveButton>
           <p className="mt-2 text-center text-xs text-neutral-400">El cobro se procesa en Beds24 (checkout seguro)</p>
         </aside>
       </div>
