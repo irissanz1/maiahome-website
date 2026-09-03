@@ -59,38 +59,60 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
       ? `Departamentos en ${zona.nombre}`
       : `Departamentos en ${market.geo}`;
 
+  // Hero por mercado. CDMX: Palacio de Bellas Artes; Houston: pendiente de foto
+  // de ciudad (por ahora, degradado de marca).
+  const heroImg = market.id === "mx" ? "/departamentos/cdmx.jpg" : null;
+
   return (
-    <div className="mx-auto max-w-6xl px-5 py-10">
-      <h1 className="font-serif text-3xl text-neutral-900 md:text-4xl">{heading}</h1>
-      <p className="mt-2 text-sm text-neutral-500">
-        {a.totalCount} {a.totalCount === 1 ? "propiedad" : "propiedades"}
-        {a.hasDates ? ` · ${a.search.checkin} → ${a.search.checkout}` : ""}
-      </p>
+    <div>
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
+        {heroImg && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={heroImg} alt={market.geo} className="absolute inset-0 h-full w-full object-cover object-center" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/45" />
+        <div className="relative mx-auto max-w-6xl px-5 pb-24 pt-14 md:pb-28 md:pt-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">
+            Estancias Maia · {market.geo}
+          </p>
+          <h1 className="mt-3 font-serif text-4xl text-white md:text-5xl">{heading}</h1>
+          <p className="mt-2 text-sm text-white/85">
+            {a.totalCount} {a.totalCount === 1 ? "propiedad" : "propiedades"}
+            {a.hasDates ? ` · ${a.search.checkin} → ${a.search.checkout}` : ""}
+          </p>
+        </div>
+      </section>
 
-      <div className="mt-6">
-        <Suspense fallback={<div className="h-24 rounded-2xl border border-neutral-200 bg-white" />}>
-          <SearchStrip />
-        </Suspense>
-        <Suspense fallback={null}>
-          <AdvancedFilters />
-        </Suspense>
+      <div className="mx-auto max-w-6xl px-5 pb-12">
+        {/* Buscador flotante sobre el hero */}
+        <div className="relative z-10 -mt-16">
+          <Suspense fallback={<div className="h-24 rounded-2xl border border-neutral-200 bg-white shadow-lg" />}>
+            <SearchStrip />
+          </Suspense>
+          <div className="mt-3">
+            <Suspense fallback={null}>
+              <AdvancedFilters />
+            </Suspense>
+          </div>
+        </div>
+
+        <AvailabilityChips
+          basePath="/departamentos"
+          params={sp}
+          disp={a.disp}
+          total={a.totalCount}
+          available={a.availableCount}
+          unavailable={a.unavailableCount}
+          hasDates={a.hasDates}
+        />
+
+        {a.filtered.length === 0 ? (
+          <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>
+        ) : (
+          <ListingView properties={a.filtered} search={a.search} />
+        )}
       </div>
-
-      <AvailabilityChips
-        basePath="/departamentos"
-        params={sp}
-        disp={a.disp}
-        total={a.totalCount}
-        available={a.availableCount}
-        unavailable={a.unavailableCount}
-        hasDates={a.hasDates}
-      />
-
-      {a.filtered.length === 0 ? (
-        <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>
-      ) : (
-        <ListingView properties={a.filtered} search={a.search} />
-      )}
     </div>
   );
 }
