@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getBySlug, getProperties } from "@/lib/data";
 import { whatsappUrl, WHATSAPP_DISPLAY } from "@/lib/contact";
+import { img } from "@/lib/format";
 
 export const metadata: Metadata = {
   title: "Completa tu reserva",
@@ -52,6 +53,7 @@ export default async function Reservar({
   // Sin fechas no hay nada que reservar → de vuelta a la ficha.
   if (!checkin || !checkout) redirect(`/depto/${slug}`);
 
+  const cover = img(p.images[0], 800);
   const nights = Math.round((Date.parse(checkout) - Date.parse(checkin)) / 86400000);
   const ci = fmtDates(checkin);
   const co = fmtDates(checkout);
@@ -105,6 +107,18 @@ export default async function Reservar({
 
         {/* Sidebar: reserva con confianza */}
         <aside className="h-fit space-y-4 lg:sticky lg:top-24">
+          {/* Foto de portada nuestra: refuerza que es el mismo departamento */}
+          {cover && (
+            <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={cover} alt={p.nombre} className="h-44 w-full object-cover" />
+              <div className="px-4 py-3">
+                <p className="text-sm font-semibold text-neutral-900">{p.nombre}</p>
+                <p className="text-xs text-neutral-500">{p.zonaNombre}</p>
+              </div>
+            </div>
+          )}
+
           <div className="rounded-2xl border border-neutral-200 p-5">
             <h2 className="font-serif text-lg text-neutral-900">Reserva con confianza</h2>
             <ul className="mt-4 space-y-4">
