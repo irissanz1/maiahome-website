@@ -6,10 +6,9 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-12">
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="max-w-sm">
-            <span className="font-serif text-2xl">
-              Maia<span className="text-maia-yellow">.</span> Home
-            </span>
-            <p className="mt-3 text-sm text-neutral-400">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/maia-logo-white.png" alt="Maia Home" className="h-14 w-auto" />
+            <p className="mt-4 text-sm text-neutral-400">
               Departamentos amueblados en CDMX (Polanco, Condesa) y Houston. Reserva directo,
               sin intermediarios.
             </p>

@@ -21,13 +21,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-100 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5">
-        <Link href="/" className="shrink-0">
-          <span className="font-serif text-2xl tracking-tight text-maia-dark">
-            Maia<span className="text-maia-strong">.</span>
-            <span className="text-base font-sans font-semibold uppercase tracking-[0.2em] text-neutral-500">
-              {" "}Home
-            </span>
-          </span>
+        <Link href="/" className="shrink-0" aria-label="Maia Home — inicio">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/maia-logo.png" alt="Maia Home" className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
