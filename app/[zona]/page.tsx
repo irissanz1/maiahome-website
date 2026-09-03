@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import PropertyCard from "@/components/PropertyCard";
+import { Suspense } from "react";
+import SearchStrip from "@/components/SearchStrip";
+import AdvancedFilters from "@/components/AdvancedFilters";
+import ListingView from "@/components/ListingView";
 import AvailabilityChips from "@/components/AvailabilityChips";
 import { getByZona, withLiveAvailability } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
-import { applyAvailability, str, type SP } from "@/lib/listing";
+import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
 
 export function generateStaticParams() {
   return Object.keys(ZONAS).map((zona) => ({ zona }));
@@ -38,7 +41,9 @@ export default async function ZonaLanding({
   const zona = ZONAS[slug];
   if (!zona) notFound();
 
-  const list = await withLiveAvailability(await getByZona(slug), str(sp.checkout));
+  let list = await getByZona(slug);
+  list = advancedFilter(list, sp);
+  list = await withLiveAvailability(list, str(sp.checkout));
   const a = applyAvailability(list, sp);
 
   return (
@@ -56,6 +61,15 @@ export default async function ZonaLanding({
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-12">
+        <div className="space-y-3">
+          <Suspense fallback={<div className="h-24 rounded-2xl border border-neutral-200 bg-white" />}>
+            <SearchStrip basePath={`/${slug}`} fixedZona={slug} />
+          </Suspense>
+          <Suspense fallback={null}>
+            <AdvancedFilters />
+          </Suspense>
+        </div>
+
         <AvailabilityChips
           basePath={`/${slug}`}
           params={sp}
@@ -65,11 +79,12 @@ export default async function ZonaLanding({
           unavailable={a.unavailableCount}
           hasDates={a.hasDates}
         />
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {a.filtered.map((p) => (
-            <PropertyCard key={p.beds24RoomId} property={p} search={a.search} />
-          ))}
-        </div>
+
+        {a.filtered.length === 0 ? (
+          <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>
+        ) : (
+          <ListingView properties={a.filtered} search={a.search} />
+        )}
       </section>
     </div>
   );

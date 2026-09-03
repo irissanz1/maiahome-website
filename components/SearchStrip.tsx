@@ -5,7 +5,13 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { MARKETS, ZONAS, resolveMarket } from "@/lib/market";
 import { track } from "@/lib/analytics";
 
-export default function SearchStrip() {
+export default function SearchStrip({
+  basePath = "/departamentos",
+  fixedZona,
+}: {
+  basePath?: string;
+  fixedZona?: string; // en una landing de zona: fija la zona y oculta el selector
+} = {}) {
   const router = useRouter();
   const sp = useSearchParams();
   const market = resolveMarket(sp.get("market"));
@@ -13,7 +19,7 @@ export default function SearchStrip() {
   const [checkin, setCheckin] = useState(sp.get("checkin") ?? "");
   const [checkout, setCheckout] = useState(sp.get("checkout") ?? "");
   const [guests, setGuests] = useState(sp.get("guests") ?? "2");
-  const [zona, setZona] = useState(sp.get("zona") ?? "");
+  const [zona, setZona] = useState(fixedZona ?? sp.get("zona") ?? "");
 
   function search() {
     const params = new URLSearchParams();
@@ -21,9 +27,9 @@ export default function SearchStrip() {
     if (checkin) params.set("checkin", checkin);
     if (checkout) params.set("checkout", checkout);
     if (guests) params.set("guests", guests);
-    if (zona) params.set("zona", zona);
+    if (!fixedZona && zona) params.set("zona", zona);
     track("search", { market: market.id, checkin, checkout, guests, zona });
-    router.push(`/departamentos?${params.toString()}`);
+    router.push(`${basePath}?${params.toString()}`);
   }
 
   const field =
@@ -31,7 +37,11 @@ export default function SearchStrip() {
 
   return (
     <div className="rounded-2xl border border-neutral-200 bg-white p-3 shadow-sm">
-      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_auto_1fr_auto] lg:items-end">
+      <div
+        className={`grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:items-end ${
+          fixedZona ? "lg:grid-cols-[1fr_1fr_auto_auto]" : "lg:grid-cols-[1fr_1fr_auto_1fr_auto]"
+        }`}
+      >
         <label className="block">
           <span className="mb-1 block text-xs font-medium text-neutral-500">Entrada</span>
           <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className={field} />
@@ -52,17 +62,19 @@ export default function SearchStrip() {
             <option value="6">6+</option>
           </select>
         </label>
-        <label className="block">
-          <span className="mb-1 block text-xs font-medium text-neutral-500">Zona</span>
-          <select value={zona} onChange={(e) => setZona(e.target.value)} className={field}>
-            <option value="">Todas ({market.label})</option>
-            {market.zonas.map((z) => (
-              <option key={z} value={z}>
-                {ZONAS[z]?.nombre}
-              </option>
-            ))}
-          </select>
-        </label>
+        {!fixedZona && (
+          <label className="block">
+            <span className="mb-1 block text-xs font-medium text-neutral-500">Zona</span>
+            <select value={zona} onChange={(e) => setZona(e.target.value)} className={field}>
+              <option value="">Todas ({market.label})</option>
+              {market.zonas.map((z) => (
+                <option key={z} value={z}>
+                  {ZONAS[z]?.nombre}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
         <button
           type="button"
           onClick={search}
