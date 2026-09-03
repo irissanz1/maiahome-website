@@ -66,7 +66,9 @@ export default function ListingView({
         <div className="mt-6">
           <PropertiesMap markers={markers} />
           <p className="mt-3 text-xs text-neutral-400">
-            Las áreas mostradas son aproximadas por privacidad. Recibes la dirección exacta al confirmar tu reserva.
+            El pin muestra la ubicación del edificio. Cuando hay varias unidades en el mismo edificio, se
+            agrupan en un pin con número: haz clic para verlas todas. Recibes el interior y las
+            instrucciones de acceso al confirmar tu reserva.
           </p>
         </div>
       ) : (

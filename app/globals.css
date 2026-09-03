@@ -84,3 +84,23 @@ h1, h2, h3 {
   border: 0;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
 }
+
+/* Burbuja de cluster (varias unidades del mismo edificio / cercanas) */
+.leaflet-div-icon.maia-cluster {
+  background: transparent;
+  border: 0;
+}
+.leaflet-div-icon.maia-cluster span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: #f9d316;
+  color: #171717;
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid #171717;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

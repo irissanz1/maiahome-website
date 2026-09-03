@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { loadLeaflet } from "@/lib/leaflet";
+import { loadMarkerCluster } from "@/lib/leaflet";
 
 export type MapMarker = {
   slug: string;
@@ -18,16 +18,6 @@ export type MapMarker = {
 const esc = (s: string) =>
   s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c] || c));
 
-// Desplazamiento determinista (~120–190 m) por propiedad: el pin queda cerca,
-// pero NO sobre la dirección exacta (privacidad).
-function jitter(slug: string, lat: number, lng: number): [number, number] {
-  let h = 0;
-  for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0;
-  const angle = (h % 360) * (Math.PI / 180);
-  const dist = 0.0011 + ((h >>> 9) % 700) / 1_000_000; // grados (~120–190 m)
-  return [lat + dist * Math.cos(angle), lng + dist * Math.sin(angle)];
-}
-
 // Pin SVG en dorado de la marca (divIcon, sin imagen externa).
 const PIN_SVG =
   '<svg width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">' +
@@ -40,7 +30,7 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
 
   useEffect(() => {
     let cancelled = false;
-    loadLeaflet()
+    loadMarkerCluster()
       .then((L) => {
         if (cancelled || !ref.current || mapRef.current) return;
         const map = L.map(ref.current, { scrollWheelZoom: false });
@@ -58,12 +48,24 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
           popupAnchor: [0, -36],
         });
 
+        // Agrupa unidades del mismo edificio / muy cercanas; al hacer clic las
+        // abre en abanico (spiderfy) para poder elegir cada una.
+        const cluster = L.markerClusterGroup({
+          showCoverageOnHover: false,
+          spiderfyDistanceMultiplier: 1.6,
+          maxClusterRadius: 40,
+          iconCreateFunction: (c: any) =>
+            L.divIcon({
+              html: `<span>${c.getChildCount()}</span>`,
+              className: "maia-cluster",
+              iconSize: [38, 38],
+            }),
+        });
+
         const pts: [number, number][] = [];
         markers.forEach((m) => {
-          // Punto aproximado (privacidad): no se marca la dirección exacta.
-          const [plat, plng] = jitter(m.slug, m.lat, m.lng);
-          pts.push([plat, plng]);
-          const marker = L.marker([plat, plng], { icon, title: m.nombre }).addTo(map);
+          pts.push([m.lat, m.lng]); // coordenada real
+          const marker = L.marker([m.lat, m.lng], { icon, title: m.nombre });
           const html = `
             <a href="${esc(m.href)}" style="display:block;width:190px;text-decoration:none;color:inherit">
               ${m.image ? `<img src="${esc(m.image)}" alt="" style="width:100%;height:104px;object-fit:cover;border-radius:8px;display:block" />` : ""}
@@ -74,7 +76,9 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
             </a>`;
           marker.bindPopup(html);
           marker.on("mouseover", () => marker.openPopup());
+          cluster.addLayer(marker);
         });
+        map.addLayer(cluster);
 
         if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
         else map.setView([19.42, -99.19], 12);
@@ -93,7 +97,7 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
     <div
       ref={ref}
       className="h-[560px] w-full overflow-hidden rounded-2xl border border-neutral-200"
-      aria-label="Mapa de ubicaciones aproximadas de los departamentos"
+      aria-label="Mapa de ubicaciones de los departamentos"
     />
   );
 }
