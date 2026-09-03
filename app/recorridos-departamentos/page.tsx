@@ -9,13 +9,29 @@ export const metadata: Metadata = {
 };
 
 const P = "&qs=1&ts=2&brand=0&play=1";
+const tour = (nombre: string, specs: string, id: string): Tour => ({
+  nombre,
+  specs,
+  url: `https://my.matterport.com/show/?m=${id}${P}`,
+});
+
+// IDs reales de la carpeta "MaiaHome" en Matterport; specs del catálogo.
+// Solo se incluyen los espacios con compartir público activado (embebibles).
+// Pendientes de activar en Matterport: Leonora 3, Leonora 1, Emilia.
 const TOURS: Tour[] = [
-  { nombre: "Rivera", specs: "3 recámaras · 3 baños · hasta 9 huéspedes", url: `https://my.matterport.com/show/?m=VoXXX8jrRyw${P}` },
-  { nombre: "Aurora — Hares", specs: "2 recámaras · 2 baños · hasta 5 huéspedes", url: `https://my.matterport.com/show/?m=fGbXDVcWNbe${P}` },
-  { nombre: "Kahlo — Prosperidad", specs: "2 recámaras · 1.5 baños · hasta 5 huéspedes", url: `https://my.matterport.com/show/?m=9uAknyL9NoZ${P}` },
-  { nombre: "Laila Casa 4", specs: "4 recámaras · 4.5 baños · hasta 12 huéspedes", url: `https://my.matterport.com/show/?m=2iXvwvrh9v3${P}` },
-  { nombre: "Tamayo", specs: "3 recámaras · 2 baños · hasta 6 huéspedes", url: `https://my.matterport.com/show/?m=c2cEAaarUR9${P}` },
-  { nombre: "Leonora", specs: "3 recámaras · 3 baños · hasta 10 huéspedes", url: `https://my.matterport.com/show/?m=qa8sWXc8o7q${P}` },
+  tour("Leonora 2", "4 recámaras · 3.5 baños · hasta 8 huéspedes", "m7gmXThXLfE"),
+  tour("Velasco", "3 recámaras · 2 baños · hasta 8 huéspedes", "KEb5Tff3qaW"),
+  tour("Cordelia", "3 recámaras · 3 baños · hasta 6 huéspedes", "jyqhFFVF2Rk"),
+  tour("Tamayo", "3 recámaras · 2 baños · hasta 6 huéspedes", "c2cEAaarUR9"),
+  tour("Aurora", "2 recámaras · 2 baños · hasta 5 huéspedes", "ENJc19G1n7X"),
+  tour("Kahlo", "2 recámaras · 1.5 baños · hasta 7 huéspedes", "9uAknyL9NoZ"),
+  tour("Laila Casa 4", "4 recámaras · 4.5 baños · hasta 12 huéspedes", "CnnE69kAYSa"),
+  tour("Laila Casa 3", "3 recámaras · 3.5 baños · hasta 9 huéspedes", "ccchH4ysu2P"),
+  tour("Luz María 6", "1 recámara · 1 baño · hasta 4 huéspedes", "WaKxtYmk9G7"),
+  tour("Luz María 9", "1 recámara · 1 baño · hasta 4 huéspedes", "aGGehXJWaED"),
+  tour("Luz María 5", "Estudio · 1 baño · hasta 3 huéspedes", "uWDrgQZnLTM"),
+  tour("Luz María 10", "Estudio · 1 baño · hasta 2 huéspedes", "eSc6QfPSPH4"),
+  tour("Rivera", "3 recámaras · 3 baños · hasta 9 huéspedes", "tA4z5uDyDcT"),
 ];
 
 export default function Recorridos() {
