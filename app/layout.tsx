@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Maia Home",
     locale: "es_MX",
+    images: [{ url: "/og/banner.jpg", width: 1200, height: 630, alt: "Maia Home — departamentos de lujo en CDMX" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og/banner.jpg"],
   },
   alternates: { canonical: "/" },
 };
