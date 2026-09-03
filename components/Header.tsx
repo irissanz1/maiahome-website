@@ -4,24 +4,26 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense, useState, useEffect } from "react";
 import MarketSelector from "./MarketSelector";
-
-const NAV = [
-  { href: "/departamentos", label: "Por noche" },
-  { href: "/mensuales", label: "Estancias mensuales" },
-  { href: "/corporativo", label: "Vivienda corporativa" },
-  { href: "/nosotros", label: "Nosotros" },
-];
+import { langFromPath, getDict, withLang, switchLangPath, LANG_SWITCH_ENABLED } from "@/lib/i18n";
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const lang = langFromPath(pathname);
+  const d = getDict(lang);
+  const NAV = [
+    { href: withLang(lang, "/departamentos"), label: d.nav.nightly },
+    { href: withLang(lang, "/mensuales"), label: d.nav.monthly },
+    { href: withLang(lang, "/corporativo"), label: d.nav.corporate },
+    { href: withLang(lang, "/nosotros"), label: d.nav.about },
+  ];
 
   useEffect(() => setOpen(false), [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-100 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5">
-        <Link href="/" className="shrink-0" aria-label="Maia Home — inicio">
+        <Link href={withLang(lang, "/")} className="shrink-0" aria-label="Maia Home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/maia-logo.png" alt="Maia Home" className="h-10 w-auto" />
         </Link>
@@ -46,6 +48,16 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          {/* Switch de idioma: se activa cuando existan las páginas /en (evita 404 en el sitio vivo). */}
+          {LANG_SWITCH_ENABLED && (
+            <Link
+              href={switchLangPath(pathname, lang === "es" ? "en" : "es")}
+              className="rounded-full border border-neutral-200 px-2.5 py-1 text-xs font-semibold text-neutral-600 transition hover:border-neutral-400 hover:text-neutral-900"
+              aria-label={lang === "es" ? "Switch to English" : "Cambiar a español"}
+            >
+              {lang === "es" ? "EN" : "ES"}
+            </Link>
+          )}
           <Suspense fallback={null}>
             <MarketSelector />
           </Suspense>
@@ -76,10 +88,10 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/facturacion"
+              href={withLang(lang, "/facturacion")}
               className="rounded-lg px-3 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50"
             >
-              Facturación
+              {d.nav.billing}
             </Link>
           </nav>
         </div>
