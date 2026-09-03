@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Antes de tu llegada a Maia Home: llena el formulario de check-in para activar tus claves de acceso. Envíalo al menos un día antes (mínimo 1 hora antes de llegar).",
   alternates: { canonical: "/check-in" },
+  robots: { index: false, follow: false }, // página operativa post-reserva (no indexar)
 };
 
 // Formulario de check-in "Registro cliente" (Zoho Forms). URL directa del perma

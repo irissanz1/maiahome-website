@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Guía de salida de Maia Home: horario de check-out y qué revisar antes de irte (ventanas, equipos, puerta principal).",
   alternates: { canonical: "/check-out" },
+  robots: { index: false, follow: false }, // página operativa post-reserva (no indexar)
 };
 
 const PUNTOS = [
@@ -26,16 +27,21 @@ export default function CheckOut() {
         lo siguiente.
       </p>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-neutral-200 p-5">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Salida</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Hasta 11:00 h</p>
-          <p className="mt-1 text-xs text-neutral-500">Late check-out sujeto a disponibilidad (consúltanos).</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Salida · CDMX</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Hasta 12:00 h</p>
+          <p className="mt-1 text-xs text-neutral-500">Polanco y Condesa.</p>
         </div>
         <div className="rounded-2xl border border-neutral-200 p-5">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Al salir</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">4 pasos rápidos</p>
-          <p className="mt-1 text-xs text-neutral-500">Sin trámites: solo asegura el departamento.</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Salida · Houston</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Hasta 10:00 h</p>
+          <p className="mt-1 text-xs text-neutral-500">Hora local de Houston.</p>
+        </div>
+        <div className="rounded-2xl border border-neutral-200 p-5">
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Late check-out</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Consúltanos</p>
+          <p className="mt-1 text-xs text-neutral-500">Sujeto a disponibilidad.</p>
         </div>
       </div>
 
