@@ -66,9 +66,8 @@ export default function ListingView({
         <div className="mt-6">
           <PropertiesMap markers={markers} />
           <p className="mt-3 text-xs text-neutral-400">
-            El pin muestra la ubicación del edificio. Cuando hay varias unidades en el mismo edificio, se
-            agrupan en un pin con número: haz clic para verlas todas. Recibes el interior y las
-            instrucciones de acceso al confirmar tu reserva.
+            Cada pin es un edificio. El número indica cuántas propiedades hay ahí: haz clic para verlas
+            todas. Recibes el interior y las instrucciones de acceso al confirmar tu reserva.
           </p>
         </div>
       ) : (
