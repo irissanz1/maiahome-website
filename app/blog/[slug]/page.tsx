@@ -30,6 +30,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const p = await getBlogPost(slug);
   if (!p) notFound();
 
+  // Evita duplicar la portada: si la primera imagen del cuerpo es la misma de la
+  // portada (coverUrl), la quitamos del cuerpo (ya se muestra arriba como hero).
+  let bodyWithoutCover = p.body || "";
+  if (p.coverUrl) {
+    const coverBase = p.coverUrl.split("?")[0];
+    bodyWithoutCover = bodyWithoutCover.replace(
+      /!\[[^\]]*\]\(([^)]+)\)\s*/,
+      (m, url) => (String(url).split("?")[0] === coverBase ? "" : m)
+    );
+  }
+
   return (
     <article className="mx-auto max-w-3xl px-5 py-10 md:py-14">
       <nav className="mb-6 text-sm text-neutral-500">
@@ -54,7 +65,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       )}
 
       <div className="mt-6 text-[15px]">
-        <Markdown text={p.body || ""} />
+        <Markdown text={bodyWithoutCover} />
       </div>
 
       {/* CTA */}
