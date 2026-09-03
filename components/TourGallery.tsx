@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 
 export type Tour = { nombre: string; specs: string; url: string; image?: string | null };
 
-export default function TourGallery({ tours }: { tours: Tour[] }) {
+export default function TourGallery({ tours, lang = "es" }: { tours: Tour[]; lang?: "es" | "en" }) {
+  const badge = lang === "en" ? "3D tour" : "Recorrido 3D";
   const [active, setActive] = useState<Tour | null>(null);
 
   useEffect(() => {
@@ -46,7 +47,7 @@ export default function TourGallery({ tours }: { tours: Tour[] }) {
                 </svg>
               </span>
               <span className="absolute bottom-3 left-3 rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-white">
-                Recorrido 3D
+                {badge}
               </span>
             </div>
             <div className="p-4">
@@ -75,7 +76,7 @@ export default function TourGallery({ tours }: { tours: Tour[] }) {
           <div className="flex-1 overflow-hidden rounded-2xl bg-black" onClick={(e) => e.stopPropagation()}>
             <iframe
               src={active.url}
-              title={`Recorrido virtual — ${active.nombre}`}
+              title={`${lang === "en" ? "Virtual tour" : "Recorrido virtual"} — ${active.nombre}`}
               className="h-full w-full"
               // Realce sutil de luminosidad para interiores (el brillo del escaneo
               // es fijo en Matterport; esto lo aclara visualmente sin quemar ventanas).
