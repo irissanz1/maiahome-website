@@ -98,7 +98,7 @@ export default async function Reservar({
           <iframe
             src={beds24Src}
             title={`Reserva de ${p.nombre}`}
-            className="h-[1600px] w-full"
+            className="h-[1280px] w-full"
             allow="payment"
           />
         </div>
