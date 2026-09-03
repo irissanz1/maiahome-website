@@ -50,7 +50,11 @@ const ORG_JSONLD = {
     { "@type": "City", name: "Houston" },
   ],
   address: { "@type": "PostalAddress", addressLocality: "Ciudad de México", addressCountry: "MX" },
-  // sameAs: agregar aquí los perfiles reales (Instagram, Facebook, etc.) cuando se confirmen.
+  sameAs: [
+    "https://www.instagram.com/maiahomemx",
+    "https://www.facebook.com/maiahomemx",
+    "https://www.tiktok.com/@maiahomemx",
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
