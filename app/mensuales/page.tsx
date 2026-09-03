@@ -24,15 +24,22 @@ export default async function Mensuales({ searchParams }: { searchParams: Promis
   const a = applyAvailability(list, sp);
   return (
     <>
-      <section className="border-b border-neutral-100 bg-gradient-to-b from-neutral-50 to-white">
-        <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/departamentos/cdmx.jpg"
+          alt="Ciudad de México"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/50" />
+        <div className="relative mx-auto max-w-6xl px-5 py-16 md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-yellow">
             Para personas y familias
           </p>
-          <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight text-neutral-900 md:text-5xl">
+          <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight text-white md:text-5xl">
             Estancias mensuales, con la comodidad de un hogar
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-neutral-600">
+          <p className="mt-4 max-w-xl text-lg text-white/90">
             Vive por mes en Polanco, Condesa o Houston con tarifa preferencial y todo listo para
             mudarte hoy.
           </p>
