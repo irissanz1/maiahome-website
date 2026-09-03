@@ -11,9 +11,9 @@ import { formatMoney, img } from "@/lib/format";
 
 const BENEFITS = [
   { t: "Ubicaciones premium", d: "Polanco, Condesa y Houston — las mejores zonas para vivir o trabajar." },
-  { t: "Mejor tarifa, directo", d: "Reserva sin intermediarios y sin comisiones de plataformas." },
-  { t: "Listos para vivir", d: "Amueblados, con WiFi, cocina equipada y todo incluido." },
-  { t: "Atención personal", d: "Respuesta rápida por mensaje o correo, antes y durante tu estancia." },
+  { t: "Espacios de diseño", d: "Departamentos amueblados con estilo, WiFi, cocina equipada y todo incluido." },
+  { t: "Estancias a tu medida", d: "Por noche, mensual o vivienda corporativa, según lo que necesites." },
+  { t: "Experiencia local", d: "Un equipo que conoce cada zona y te recomienda lo mejor de la ciudad." },
 ];
 
 export default async function Home({

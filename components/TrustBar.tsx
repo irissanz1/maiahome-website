@@ -1,8 +1,8 @@
 const POINTS = [
   { t: "Mejor tarifa, directo", d: "Sin comisiones de plataformas" },
-  { t: "Reserva segura", d: "Pago protegido con Beds24" },
+  { t: "Pago 100% seguro", d: "Cifrado SSL con Beds24" },
+  { t: "Confirmación inmediata", d: "Por correo al reservar" },
   { t: "Atención personal", d: "Respuesta rápida por WhatsApp" },
-  { t: "Listos para vivir", d: "Amueblados y equipados" },
 ];
 
 export default function TrustBar() {
