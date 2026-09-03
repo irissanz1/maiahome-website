@@ -65,6 +65,15 @@ export default function FormasDePago() {
         </div>
       </section>
 
+      <div className="mt-10">
+        <Link
+          href="/departamentos"
+          className="inline-block rounded-full bg-maia-yellow px-7 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
+        >
+          Ver departamentos y reservar →
+        </Link>
+      </div>
+
       <section className="mt-12 rounded-2xl bg-[#FBF7EC] p-6 md:p-8">
         <h2 className="font-serif text-2xl text-neutral-900">¿Dudas sobre tu pago o factura?</h2>
         <p className="mt-2 text-neutral-600">
@@ -75,19 +84,19 @@ export default function FormasDePago() {
             href={whatsappUrl("Hola, tengo una duda sobre las formas de pago de Maia Home.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-maia-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
+            className="rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
           >
             WhatsApp {WHATSAPP_DISPLAY}
           </a>
           <a
             href={`mailto:${SUPPORT_EMAIL}`}
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-700 transition hover:bg-white"
+            className="rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
           >
             {SUPPORT_EMAIL}
           </a>
           <Link
             href="/facturacion"
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-700 transition hover:bg-white"
+            className="rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
           >
             Solicitar factura
           </Link>

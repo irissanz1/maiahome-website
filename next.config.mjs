@@ -52,8 +52,8 @@ const nextConfig = {
       { source: "/descubre", destination: "/blog", permanent: true },
       { source: "/explora", destination: "/blog", permanent: true },
       { source: "/payment", destination: "/formas-de-pago", permanent: true },
-      // NOTA: /check-in y /check-out del Wix quedan pendientes de decisión
-      // (sitio principal vs subdominio de huésped). Sin redirect por ahora.
+      // /check-in y /check-out viven en el sitio principal con el MISMO path
+      // que tenía el Wix → no necesitan redirect.
       // Fichas de propiedad viejas → nuevas (por slug)
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.

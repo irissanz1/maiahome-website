@@ -43,6 +43,8 @@ export default function Footer() {
                 <li><Link href="/nosotros" className="hover:text-maia-yellow">Nosotros</Link></li>
                 <li><Link href="/formas-de-pago" className="hover:text-maia-yellow">Formas de pago</Link></li>
                 <li><Link href="/facturacion" className="hover:text-maia-yellow">Facturación</Link></li>
+                <li><Link href="/check-in" className="hover:text-maia-yellow">Check-in</Link></li>
+                <li><Link href="/check-out" className="hover:text-maia-yellow">Check-out</Link></li>
               </ul>
             </div>
           </div>
