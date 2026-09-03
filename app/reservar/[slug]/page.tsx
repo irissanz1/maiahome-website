@@ -29,8 +29,8 @@ function fmtDates(iso: string) {
 }
 
 const TRUST = [
-  ["Pago 100% seguro", "Procesamiento cifrado SSL. Tus datos nunca se almacenan en nuestros servidores."],
-  ["Métodos aceptados", "Visa · Mastercard · American Express · PayPal."],
+  ["Pago 100% seguro", "Procesado por Stripe con cifrado SSL. Tus datos nunca se almacenan en nuestros servidores."],
+  ["Métodos aceptados", "Visa · Mastercard · American Express."],
   ["Reserva garantizada", "Confirmación inmediata por correo electrónico al completar el pago."],
   ["Política de cancelación", "Reembolso escalonado según la anticipación (ver términos)."],
 ];

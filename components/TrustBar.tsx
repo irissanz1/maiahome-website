@@ -1,6 +1,6 @@
 const POINTS = [
   { t: "Mejor tarifa, directo", d: "Sin comisiones de plataformas" },
-  { t: "Pago 100% seguro", d: "Visa, Mastercard, Amex y PayPal" },
+  { t: "Pago 100% seguro", d: "Visa, Mastercard y Amex vía Stripe" },
   { t: "Confirmación inmediata", d: "Por correo al reservar" },
   { t: "Atención personal", d: "Respuesta rápida por WhatsApp" },
 ];
