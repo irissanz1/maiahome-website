@@ -41,6 +41,7 @@ export default function Footer() {
                 <li><Link href="/corporativo" className="hover:text-maia-yellow">Vivienda corporativa</Link></li>
                 <li><Link href="/administramos-tu-depto" className="hover:text-maia-yellow">Administra tu depto</Link></li>
                 <li><Link href="/nosotros" className="hover:text-maia-yellow">Nosotros</Link></li>
+                <li><Link href="/formas-de-pago" className="hover:text-maia-yellow">Formas de pago</Link></li>
                 <li><Link href="/facturacion" className="hover:text-maia-yellow">Facturación</Link></li>
               </ul>
             </div>
