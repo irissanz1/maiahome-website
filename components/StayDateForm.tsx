@@ -14,7 +14,7 @@ export default function StayDateForm({
   checkout: dco,
   guests: dg,
   status,
-  beds24Url,
+  checkoutUrl,
   roomId,
   nombre,
 }: {
@@ -23,7 +23,7 @@ export default function StayDateForm({
   checkout?: string;
   guests?: number;
   status: string;
-  beds24Url: string;
+  checkoutUrl: string;
   roomId: string;
   nombre: string;
 }) {
@@ -62,7 +62,7 @@ export default function StayDateForm({
     if (mode === "blocked") return;
     if (mode === "reserve") {
       track("reserva_click", { roomId, nombre });
-      window.open(beds24Url, "_blank", "noopener");
+      window.open(checkoutUrl, "_blank", "noopener");
       return;
     }
     // apply

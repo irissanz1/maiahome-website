@@ -76,41 +76,17 @@ export default async function StayDetail({
     address: { "@type": "PostalAddress", addressLocality: p.zonaNombre, addressCountry: p.pais },
   };
 
-  // Deep-link a Beds24. Con fechas → salta directo al paso final (page=book3);
-  // sin fechas → cae en la selección de fechas del depto.
-  const DOW = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  function bd(iso: string) {
-    const d = new Date(iso + "T00:00:00Z");
-    return {
-      disp: `${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}`,
-      hide: `${d.getUTCFullYear()}-${d.getUTCMonth() + 1}-${d.getUTCDate()}`,
-    };
-  }
-  let beds24Url: string;
-  if (search.checkin && search.checkout && p.beds24PropertyId) {
-    const ci = bd(search.checkin);
-    const co = bd(search.checkout);
-    const nights = Math.round((Date.parse(search.checkout) - Date.parse(search.checkin)) / 86400000);
+  // Handoff al Checkout de book.maiahome.mx (base44) con fechas.
+  let checkoutUrl = "";
+  if (search.checkin && search.checkout) {
     const q = new URLSearchParams();
-    q.set("propid", String(p.beds24PropertyId));
-    q.set("roomid", p.beds24RoomId);
-    q.set("width", "960");
-    q.set("page", "book3");
-    q.set("limitstart", "0");
-    q.set("checkin", ci.disp);
-    q.set("checkin_hide", ci.hide);
-    q.set("checkout", co.disp);
-    q.set("checkout_hide", co.hide);
-    q.set("numnight", String(nights));
-    q.set("numadult", String(search.guests || 2));
-    q.set("numchild", "0");
-    q.set(`br1-${p.beds24RoomId}`, "Book");
-    beds24Url = `https://beds24.com/booking.php?${q.toString()}`;
-  } else {
-    const q = new URLSearchParams({ roomid: p.beds24RoomId });
-    if (p.beds24PropertyId) q.set("propid", String(p.beds24PropertyId));
-    beds24Url = `https://beds24.com/booking.php?${q.toString()}`;
+    if (p.beds24PropertyId != null) q.set("propId", String(p.beds24PropertyId));
+    q.set("roomId", p.beds24RoomId);
+    q.set("checkIn", search.checkin);
+    q.set("checkOut", search.checkout);
+    q.set("guests", String(search.guests || 2));
+    if (p.base44Slug) q.set("slug", p.base44Slug);
+    checkoutUrl = `https://book.maiahome.mx/Checkout?${q.toString()}`;
   }
 
   return (
@@ -250,7 +226,7 @@ export default async function StayDetail({
               checkout={search.checkout}
               guests={search.guests}
               status={r.status}
-              beds24Url={beds24Url}
+              checkoutUrl={checkoutUrl}
               roomId={p.beds24RoomId}
               nombre={p.nombre}
             />
@@ -288,7 +264,7 @@ export default async function StayDetail({
           )}
         </div>
         <ReserveButton
-          href={beds24Url}
+          href={checkoutUrl}
           roomId={p.beds24RoomId}
           nombre={p.nombre}
           disabled={!reserveActionable}
