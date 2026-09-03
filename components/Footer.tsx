@@ -27,6 +27,15 @@ export default function Footer() {
               </ul>
             </div>
             <div>
+              <h3 className="mb-3 font-semibold text-maia-yellow">Legal</h3>
+              <ul className="space-y-2 text-neutral-400">
+                <li><Link href="/aviso-privacidad" className="hover:text-maia-yellow">Aviso de Privacidad</Link></li>
+                <li><Link href="/terminos-y-condiciones" className="hover:text-maia-yellow">Términos y Condiciones</Link></li>
+                <li><Link href="/terminos-uso" className="hover:text-maia-yellow">Términos de Uso</Link></li>
+                <li><Link href="/stay-agreement" className="hover:text-maia-yellow">Acuerdo de Estadía</Link></li>
+              </ul>
+            </div>
+            <div>
               <h3 className="mb-3 font-semibold text-maia-yellow">Maia Home</h3>
               <ul className="space-y-2 text-neutral-400">
                 <li><Link href="/mensuales" className="hover:text-maia-yellow">Estancias mensuales</Link></li>
@@ -34,15 +43,6 @@ export default function Footer() {
                 <li><Link href="/administramos-tu-depto" className="hover:text-maia-yellow">Administra tu depto</Link></li>
                 <li><Link href="/nosotros" className="hover:text-maia-yellow">Nosotros</Link></li>
                 <li><Link href="/facturacion" className="hover:text-maia-yellow">Facturación</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-3 font-semibold text-maia-yellow">Legal</h3>
-              <ul className="space-y-2 text-neutral-400">
-                <li><Link href="/aviso-privacidad" className="hover:text-maia-yellow">Aviso de Privacidad</Link></li>
-                <li><Link href="/terminos-y-condiciones" className="hover:text-maia-yellow">Términos y Condiciones</Link></li>
-                <li><Link href="/terminos-uso" className="hover:text-maia-yellow">Términos de Uso</Link></li>
-                <li><Link href="/stay-agreement" className="hover:text-maia-yellow">Acuerdo de Estadía</Link></li>
               </ul>
             </div>
           </div>
