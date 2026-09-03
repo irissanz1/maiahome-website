@@ -77,6 +77,9 @@ export default function TourGallery({ tours }: { tours: Tour[] }) {
               src={active.url}
               title={`Recorrido virtual — ${active.nombre}`}
               className="h-full w-full"
+              // Realce sutil de luminosidad para interiores (el brillo del escaneo
+              // es fijo en Matterport; esto lo aclara visualmente sin quemar ventanas).
+              style={{ filter: "brightness(1.12) contrast(1.02) saturate(1.03)" }}
               allow="fullscreen; xr-spatial-tracking"
               allowFullScreen
             />
