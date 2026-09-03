@@ -5,14 +5,17 @@ import { whatsappUrl, WHATSAPP_DISPLAY } from "@/lib/contact";
 export const metadata: Metadata = {
   title: "Proceso de check-in",
   description:
-    "Todo lo que necesitas saber para tu llegada a Maia Home: horario de entrada, acceso autoguiado, qué llevar y cómo pedir ayuda.",
+    "Antes de tu llegada a Maia Home: llena el formulario de check-in para activar tus claves de acceso. Envíalo al menos un día antes (mínimo 1 hora antes de llegar).",
   alternates: { canonical: "/check-in" },
 };
 
+// TODO: reemplazar por la URL real del formulario de check-in cuando Iris la comparta.
+const FORM_CHECKIN = whatsappUrl("Hola, quiero completar el formulario de check-in de mi reserva en Maia Home.");
+
 const PASOS = [
-  ["1. Antes de llegar", "Un día antes recibirás por WhatsApp y correo la dirección exacta y las instrucciones de acceso a tu departamento."],
-  ["2. Tu llegada", "Check-in autoguiado a partir de las 15:00 h. Te guiamos paso a paso; si prefieres, un anfitrión puede recibirte."],
-  ["3. Al entrar", "Encontrarás el WiFi, la guía del departamento y todo listo para tu estancia. Cualquier duda, estamos a un mensaje."],
+  ["1. Llena el formulario de check-in", "Es obligatorio: con tus datos activamos las claves de acceso al edificio y al departamento. Envíalo al menos un día antes de tu llegada; como mínimo, 1 hora antes."],
+  ["2. Validamos tu información", "Revisamos que todo esté listo para solicitar el acceso a los edificios. Este paso es necesario antes de compartirte las claves."],
+  ["3. Recibes tus instrucciones", "Una vez validado, te enviamos por WhatsApp y correo la dirección exacta, las claves de acceso y las instrucciones para entrar."],
 ];
 
 export default function CheckIn() {
@@ -21,24 +24,44 @@ export default function CheckIn() {
       <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Antes de tu llegada</p>
       <h1 className="mt-3 font-serif text-4xl text-neutral-900 md:text-5xl">Proceso de check-in</h1>
       <p className="mt-4 max-w-2xl text-lg text-neutral-600">
-        Queremos que tu llegada sea simple y sin contratiempos. Así funciona el check-in en Maia Home.
+        Para que tu llegada sea simple y segura, necesitamos que completes el formulario de check-in.
+        Con él activamos tus claves de acceso.
       </p>
+
+      {/* Aviso clave */}
+      <div className="mt-6 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
+        <p className="text-sm font-semibold text-neutral-900">Importante</p>
+        <p className="mt-1 text-sm text-neutral-700">
+          Sin el formulario no podemos activar tus claves de acceso. Envíalo <strong>al menos un día
+          antes</strong> de tu llegada (o <strong>mínimo 1 hora antes</strong>). Las instrucciones se
+          envían <strong>después</strong> de validar que todo esté listo para solicitar el acceso a los
+          edificios.
+        </p>
+        <a
+          href={FORM_CHECKIN}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block rounded-lg bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong"
+        >
+          Llenar formulario de check-in
+        </a>
+      </div>
 
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-neutral-200 p-5">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Entrada</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Desde 15:00 h</p>
-          <p className="mt-1 text-xs text-neutral-500">Early check-in sujeto a disponibilidad.</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Formulario</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Obligatorio</p>
+          <p className="mt-1 text-xs text-neutral-500">Activa tus claves de acceso.</p>
+        </div>
+        <div className="rounded-2xl border border-neutral-200 p-5">
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Envíalo</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">1 día antes</p>
+          <p className="mt-1 text-xs text-neutral-500">Mínimo 1 hora antes de llegar.</p>
         </div>
         <div className="rounded-2xl border border-neutral-200 p-5">
           <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Acceso</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Autoguiado</p>
-          <p className="mt-1 text-xs text-neutral-500">Instrucciones enviadas antes de tu llegada.</p>
-        </div>
-        <div className="rounded-2xl border border-neutral-200 p-5">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Necesitas</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Identificación</p>
-          <p className="mt-1 text-xs text-neutral-500">Reserva confirmada e ID oficial.</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Tras validar</p>
+          <p className="mt-1 text-xs text-neutral-500">Te enviamos claves e instrucciones.</p>
         </div>
       </div>
 
