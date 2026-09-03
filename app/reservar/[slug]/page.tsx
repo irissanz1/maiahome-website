@@ -16,7 +16,6 @@ export async function generateStaticParams() {
 type SP = Record<string, string | string[] | undefined>;
 const str = (v: SP[string]) => (typeof v === "string" ? v : undefined);
 
-const OWNER_ID = "108670"; // cuenta Beds24 de Maia Home
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -57,9 +56,12 @@ export default async function Reservar({
   const ci = fmtDates(checkin);
   const co = fmtDates(checkout);
 
+  // Property Booking Page (propid+roomid). NO usar ownerid: la variante
+  // multi-booking NO recibe nuestro Custom CSS de marca (branding + ocultar
+  // la foto de Beds24). Con propid/roomid sí aplica y la foto queda oculta.
   const q = new URLSearchParams();
-  q.set("ownerid", OWNER_ID);
   if (p.beds24PropertyId != null) q.set("propid", String(p.beds24PropertyId));
+  if (p.beds24RoomId != null) q.set("roomid", String(p.beds24RoomId));
   q.set("width", "960");
   q.set("page", "book3");
   q.set("limitstart", "0");
