@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { Suspense } from "react";
 import SearchStrip from "@/components/SearchStrip";
 import AdvancedFilters from "@/components/AdvancedFilters";
@@ -57,6 +58,12 @@ export default async function ZonaLanding({
             Departamentos amueblados en {zona.nombre}
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-neutral-600">{zona.descripcion.es}</p>
+          <Link
+            href={`/departamentos?market=${zona.pais === "MX" ? "mx" : "us"}`}
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-700 hover:text-maia-strong"
+          >
+            <span aria-hidden="true">←</span> Ver todas las zonas
+          </Link>
         </div>
       </section>
 
