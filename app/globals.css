@@ -77,3 +77,10 @@ h1, h2, h3 {
 .leaflet-control-attribution {
   font-family: var(--font-montserrat), system-ui, sans-serif !important;
 }
+
+/* Pin de marca (divIcon): sin el recuadro blanco por defecto de Leaflet */
+.leaflet-div-icon.maia-pin {
+  background: transparent;
+  border: 0;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}

@@ -18,6 +18,22 @@ export type MapMarker = {
 const esc = (s: string) =>
   s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c] || c));
 
+// Desplazamiento determinista (~120–190 m) por propiedad: el pin queda cerca,
+// pero NO sobre la dirección exacta (privacidad).
+function jitter(slug: string, lat: number, lng: number): [number, number] {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0;
+  const angle = (h % 360) * (Math.PI / 180);
+  const dist = 0.0011 + ((h >>> 9) % 700) / 1_000_000; // grados (~120–190 m)
+  return [lat + dist * Math.cos(angle), lng + dist * Math.sin(angle)];
+}
+
+// Pin SVG en dorado de la marca (divIcon, sin imagen externa).
+const PIN_SVG =
+  '<svg width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">' +
+  '<path d="M15 0C6.7 0 0 6.7 0 15c0 10.3 15 25 15 25s15-14.7 15-25C30 6.7 23.3 0 15 0z" fill="#F9D316" stroke="#171717" stroke-width="1.5"/>' +
+  '<circle cx="15" cy="15" r="5.2" fill="#171717"/></svg>';
+
 export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -34,17 +50,20 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         }).addTo(map);
 
+        const icon = L.divIcon({
+          html: PIN_SVG,
+          className: "maia-pin",
+          iconSize: [30, 40],
+          iconAnchor: [15, 40],
+          popupAnchor: [0, -36],
+        });
+
         const pts: [number, number][] = [];
         markers.forEach((m) => {
-          pts.push([m.lat, m.lng]);
-          // Área aproximada (privacidad): no se marca la dirección exacta.
-          const circle = L.circle([m.lat, m.lng], {
-            radius: 350,
-            color: "#F9D316",
-            weight: 2,
-            fillColor: "#FDDB51",
-            fillOpacity: 0.35,
-          }).addTo(map);
+          // Punto aproximado (privacidad): no se marca la dirección exacta.
+          const [plat, plng] = jitter(m.slug, m.lat, m.lng);
+          pts.push([plat, plng]);
+          const marker = L.marker([plat, plng], { icon, title: m.nombre }).addTo(map);
           const html = `
             <a href="${esc(m.href)}" style="display:block;width:190px;text-decoration:none;color:inherit">
               ${m.image ? `<img src="${esc(m.image)}" alt="" style="width:100%;height:104px;object-fit:cover;border-radius:8px;display:block" />` : ""}
@@ -53,8 +72,8 @@ export default function PropertiesMap({ markers }: { markers: MapMarker[] }) {
               ${m.priceLabel ? `<div style="font-size:12px;font-weight:600;margin-top:3px;color:#171717">${esc(m.priceLabel)}</div>` : ""}
               <div style="margin-top:6px;font-size:12px;font-weight:700;color:#a16207">Ver departamento →</div>
             </a>`;
-          circle.bindPopup(html);
-          circle.on("mouseover", () => circle.openPopup());
+          marker.bindPopup(html);
+          marker.on("mouseover", () => marker.openPopup());
         });
 
         if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
