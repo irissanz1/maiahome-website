@@ -30,7 +30,7 @@ const TOURS_RAW = [
   { nombre: "Luz María 9", specs: "1 recámara · 1 baño · hasta 4 huéspedes", id: "aGGehXJWaED", slug: "polanco-luz-maria-9" },
   { nombre: "Luz María 5", specs: "Estudio · 1 baño · hasta 3 huéspedes", id: "uWDrgQZnLTM", slug: "polanco-luz-maria-5" },
   { nombre: "Luz María 10", specs: "Estudio · 1 baño · hasta 2 huéspedes", id: "eSc6QfPSPH4", slug: "polanco-luz-maria-10" },
-  { nombre: "Rivera", specs: "3 recámaras · 3 baños · hasta 9 huéspedes", id: "tA4z5uDyDcT", slug: undefined },
+  { nombre: "Horacio 1&2", specs: "3 recámaras · 3 baños · hasta 9 huéspedes", id: "tA4z5uDyDcT", slug: "polanco-horacio-1-2" },
 ];
 
 export default async function Recorridos() {
