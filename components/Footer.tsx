@@ -23,6 +23,7 @@ export default function Footer() {
                 <li><Link href="/condesa" className="hover:text-maia-yellow">Condesa</Link></li>
                 <li><Link href="/houston" className="hover:text-maia-yellow">Houston</Link></li>
                 <li><Link href="/recorridos-departamentos" className="hover:text-maia-yellow">Tours virtuales</Link></li>
+                <li><Link href="/blog" className="hover:text-maia-yellow">Guía de la ciudad</Link></li>
               </ul>
             </div>
             <div>

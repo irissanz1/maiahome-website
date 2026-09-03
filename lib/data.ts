@@ -130,6 +130,37 @@ export const getFeaturedReviews = cache(async (): Promise<FeaturedReview[]> => {
   return ((reviewsJson as any).featured || []) as FeaturedReview[];
 });
 
+export interface BlogPostCard {
+  title: string;
+  slug: string;
+  fecha: string;
+  excerpt: string;
+  coverUrl: string | null;
+  zona: string | null;
+}
+export interface BlogPostFull extends BlogPostCard {
+  body: string;
+}
+
+const BLOG_LIST_QUERY = `*[_type=="blogPost" && published==true]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona} | order(fecha desc)`;
+const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,body}`;
+
+export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
+  try {
+    return ((await sanity.fetch(BLOG_LIST_QUERY)) as BlogPostCard[]) || [];
+  } catch {
+    return [];
+  }
+});
+
+export async function getBlogPost(slug: string): Promise<BlogPostFull | null> {
+  try {
+    return (await sanity.fetch(BLOG_ONE_QUERY, { slug })) as BlogPostFull | null;
+  } catch {
+    return null;
+  }
+}
+
 export const getProperties = cache(async (): Promise<Property[]> => {
   const [docs, reviewDocs] = await Promise.all([
     sanity.fetch(QUERY) as Promise<any[]>,

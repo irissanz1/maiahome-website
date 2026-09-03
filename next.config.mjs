@@ -18,6 +18,16 @@ function loadPropertyRedirects() {
   }
 }
 
+// Posts de blog migrados: /post/<viejo> → /blog/<nuevo>. El resto de /post/* → /blog.
+function loadBlogRedirects() {
+  try {
+    const list = JSON.parse(readFileSync(join(__dirname, "blog-redirects.generated.json"), "utf8"));
+    return list.map((r) => ({ source: `/post/${r.old}`, destination: `/blog/${r.new}`, permanent: true }));
+  } catch {
+    return [];
+  }
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -33,6 +43,9 @@ const nextConfig = {
       { source: "/CorporateHousing", destination: "/corporativo", permanent: true },
       // Fichas de propiedad viejas → nuevas (por slug)
       ...loadPropertyRedirects(),
+      // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.
+      ...loadBlogRedirects(),
+      { source: "/post/:slug*", destination: "/blog", permanent: true },
     ];
   },
 };
