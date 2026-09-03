@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Markdown from "@/components/Markdown";
 import { getBlogPost, getBlogPosts } from "@/lib/data";
+import { categoryLabel } from "@/lib/blog";
 
 export async function generateStaticParams() {
   return (await getBlogPosts()).map((p) => ({ slug: p.slug }));
@@ -46,11 +47,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <nav className="mb-6 text-sm text-neutral-500">
         <Link href="/blog" className="hover:text-neutral-900">Guía de la ciudad</Link>
         <span className="mx-2">/</span>
-        <span className="text-neutral-700">{p.zona || "CDMX"}</span>
+        {p.categoria && categoryLabel(p.categoria) ? (
+          <Link href={`/blog/categoria/${p.categoria}`} className="hover:text-neutral-900">{categoryLabel(p.categoria)}</Link>
+        ) : (
+          <span className="text-neutral-700">{p.zona || "CDMX"}</span>
+        )}
       </nav>
 
-      {p.zona && (
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">{p.zona}</p>
+      {(categoryLabel(p.categoria) || p.zona) && (
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">
+          {categoryLabel(p.categoria) || p.zona}
+        </p>
       )}
       <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
         {p.title}

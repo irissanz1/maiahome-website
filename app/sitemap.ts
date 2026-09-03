@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-import { getProperties } from "@/lib/data";
+import { getProperties, getBlogPosts } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
+import { BLOG_CATEGORIES } from "@/lib/blog";
 
 const BASE = "https://maiahome.mx";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const catalog = await getProperties();
+  const [catalog, posts] = await Promise.all([getProperties(), getBlogPosts()]);
   const staticPages = [
     "",
     "/departamentos",
@@ -44,5 +45,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...legalPages, ...zonas, ...deptos];
+  const blog = [
+    { url: `${BASE}/blog`, changeFrequency: "weekly" as const, priority: 0.6 },
+    ...BLOG_CATEGORIES.map((c) => ({
+      url: `${BASE}/blog/categoria/${c.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    })),
+    ...posts.map((p) => ({
+      url: `${BASE}/blog/${p.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
+  ];
+
+  return [...staticPages, ...legalPages, ...zonas, ...deptos, ...blog];
 }

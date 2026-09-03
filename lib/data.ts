@@ -141,13 +141,14 @@ export interface BlogPostCard {
   excerpt: string;
   coverUrl: string | null;
   zona: string | null;
+  categoria: string | null;
 }
 export interface BlogPostFull extends BlogPostCard {
   body: string;
 }
 
-const BLOG_LIST_QUERY = `*[_type=="blogPost" && published==true]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona} | order(fecha desc)`;
-const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,body}`;
+const BLOG_LIST_QUERY = `*[_type=="blogPost" && published==true]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria} | order(fecha desc)`;
+const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria,body}`;
 
 export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
   try {

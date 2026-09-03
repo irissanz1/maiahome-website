@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/data";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/blog";
 
-export const metadata: Metadata = {
-  title: "Guía de la ciudad",
-  description:
-    "Guía de Maia Home para vivir la Ciudad de México: barrios, museos, mercados, restaurantes y lo mejor de Polanco y la Condesa.",
-  alternates: { canonical: "/blog" },
-};
+export function generateStaticParams() {
+  return BLOG_CATEGORIES.map((c) => ({ slug: c.slug }));
+}
 
-type SP = Record<string, string | string[] | undefined>;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const label = categoryLabel(slug);
+  if (!label) return {};
+  return {
+    title: `${label} · Guía CDMX`,
+    description: `${label} en la Ciudad de México: guías y recomendaciones de Maia Home para vivir la ciudad como un local.`,
+    alternates: { canonical: `/blog/categoria/${slug}` },
+  };
+}
 
-export default async function Blog({ searchParams }: { searchParams: Promise<SP> }) {
-  const sp = await searchParams;
-  const cat = typeof sp.cat === "string" ? sp.cat : undefined;
-  const all = await getBlogPosts();
-  const posts = cat ? all.filter((p) => p.categoria === cat) : all;
+export default async function Categoria({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const label = categoryLabel(slug);
+  if (!label) notFound();
+  const posts = (await getBlogPosts()).filter((p) => p.categoria === slug);
 
   const chip = (active: boolean) =>
     `rounded-full border px-4 py-1.5 text-sm transition ${
@@ -25,23 +32,22 @@ export default async function Blog({ searchParams }: { searchParams: Promise<SP>
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">
-      <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">Guía de la ciudad</p>
-      <h1 className="mt-3 font-serif text-4xl font-bold text-neutral-900 md:text-5xl">Vive la CDMX como un local</h1>
-      <p className="mt-4 max-w-2xl text-lg text-neutral-600">
-        Museos, mercados, barrios y los mejores rincones de la ciudad — recomendaciones honestas del
-        equipo de Maia Home.
-      </p>
+      <nav className="mb-3 text-sm text-neutral-500">
+        <Link href="/blog" className="hover:text-neutral-900">Guía de la ciudad</Link>
+        <span className="mx-2">/</span>
+        <span className="text-neutral-700">{label}</span>
+      </nav>
+      <h1 className="font-serif text-4xl font-bold text-neutral-900 md:text-5xl">{label} en la CDMX</h1>
 
-      {/* Filtro por categoría */}
       <div className="mt-6 flex flex-wrap gap-2">
-        <Link href="/blog" className={chip(!cat)}>Todas</Link>
+        <Link href="/blog" className={chip(false)}>Todas</Link>
         {BLOG_CATEGORIES.map((c) => (
-          <Link key={c.slug} href={`/blog?cat=${c.slug}`} className={chip(cat === c.slug)}>{c.label}</Link>
+          <Link key={c.slug} href={`/blog/categoria/${c.slug}`} className={chip(c.slug === slug)}>{c.label}</Link>
         ))}
       </div>
 
       {posts.length === 0 ? (
-        <p className="mt-16 text-center text-neutral-500">No hay artículos en esta categoría todavía.</p>
+        <p className="mt-16 text-center text-neutral-500">Pronto publicaremos más en esta categoría.</p>
       ) : (
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((p) => (
@@ -50,11 +56,6 @@ export default async function Blog({ searchParams }: { searchParams: Promise<SP>
                 {p.coverUrl && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={p.coverUrl} alt={p.title} className="h-full w-full object-cover transition group-hover:scale-105" loading="lazy" />
-                )}
-                {categoryLabel(p.categoria) && (
-                  <span className="absolute left-3 top-3 rounded-full bg-black/55 px-3 py-1 text-xs font-medium text-white backdrop-blur">
-                    {categoryLabel(p.categoria)}
-                  </span>
                 )}
               </div>
               <div className="p-5">
