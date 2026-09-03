@@ -47,12 +47,18 @@ export default function FormasDePago() {
       {/* 2. Transferencia bancaria */}
       <section className="mt-6 rounded-2xl border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">2. Transferencia bancaria</h2>
-        <dl className="mt-3 space-y-1 text-sm">
-          <div className="flex gap-2"><dt className="w-20 text-neutral-500">Cta BBVA</dt><dd className="font-medium text-neutral-900">0115807069</dd></div>
-          <div className="flex gap-2"><dt className="w-20 text-neutral-500">CLABE</dt><dd className="font-medium text-neutral-900">012180001158070695</dd></div>
-          <div className="flex gap-2"><dt className="w-20 text-neutral-500">Titular</dt><dd className="font-medium text-neutral-900">Maia Luxury Apartments and Services</dd></div>
-        </dl>
-        <p className="mt-3 text-xs text-neutral-400">Envíanos tu comprobante por WhatsApp para confirmar tu reserva.</p>
+        <p className="mt-1 text-sm text-neutral-600">
+          Por tu seguridad, compartimos los datos bancarios directamente por WhatsApp. Te enviamos la
+          cuenta y confirmamos tu reserva al recibir el comprobante.
+        </p>
+        <a
+          href={whatsappUrl("Hola, quiero pagar por transferencia bancaria mi reserva en Maia Home. ¿Me comparten los datos?")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-4 ${btnYellow}`}
+        >
+          Solicitar datos de transferencia por WhatsApp
+        </a>
       </section>
 
       {/* 3. Pago con tarjeta en línea */}
