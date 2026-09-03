@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
-import { POIS } from "@/lib/pois";
+import { POIS, POI_GROUPS, CAT_EMOJI } from "@/lib/pois";
 
 export type MapMarker = {
   slug: string;
@@ -128,29 +128,31 @@ export default function PropertiesMap({
           if (g.units.length === 1) marker.on("mouseover", () => marker.openPopup());
         });
 
-        // Puntos de interés cercanos (contexto). Solo los que están a < 8 km de
-        // alguna propiedad → el mapa de Houston no muestra POIs de CDMX.
+        // Puntos de interés cercanos (contexto), agrupados por tipo con toggle.
+        // Solo los que están a < 8 km de alguna propiedad → Houston no muestra CDMX.
         if (showPois && pts.length) {
-          const near = POIS.filter((poi) =>
-            markers.some((m) => distM(m, poi) < 8000),
-          );
-          if (near.length) {
-            const poiLayer = L.layerGroup();
-            near.forEach((poi) => {
+          const near = POIS.filter((poi) => markers.some((m) => distM(m, poi) < 8000));
+          const overlays: Record<string, any> = {};
+          POI_GROUPS.forEach((g) => {
+            const items = near.filter((poi) => g.cats.includes(poi.cat));
+            if (!items.length) return;
+            const layer = L.layerGroup();
+            items.forEach((poi) => {
               const icon = L.divIcon({
-                html: `<div class="maia-poi">${poi.emoji}</div>`,
+                html: `<div class="maia-poi">${CAT_EMOJI[poi.cat]}</div>`,
                 className: "maia-poi-wrap",
                 iconSize: [24, 24],
                 iconAnchor: [12, 12],
               });
               L.marker([poi.lat, poi.lng], { icon })
                 .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
-                .addTo(poiLayer);
+                .addTo(layer);
             });
-            poiLayer.addTo(map);
-            L.control
-              .layers(null, { "Lugares de interés": poiLayer }, { collapsed: false, position: "topright" })
-              .addTo(map);
+            overlays[`${g.emoji} ${g.label}`] = layer;
+            if (g.onByDefault) layer.addTo(map);
+          });
+          if (Object.keys(overlays).length) {
+            L.control.layers(null, overlays, { collapsed: false, position: "topright" }).addTo(map);
           }
         }
 
