@@ -76,17 +76,14 @@ export default async function StayDetail({
     address: { "@type": "PostalAddress", addressLocality: p.zonaNombre, addressCountry: p.pais },
   };
 
-  // Handoff al Checkout de book.maiahome.mx (base44) con fechas.
+  // "Reservar" → página de checkout propia (/reservar/[slug]) que embebe Beds24.
   let checkoutUrl = "";
   if (search.checkin && search.checkout) {
     const q = new URLSearchParams();
-    if (p.beds24PropertyId != null) q.set("propId", String(p.beds24PropertyId));
-    q.set("roomId", p.beds24RoomId);
-    q.set("checkIn", search.checkin);
-    q.set("checkOut", search.checkout);
+    q.set("checkin", search.checkin);
+    q.set("checkout", search.checkout);
     q.set("guests", String(search.guests || 2));
-    if (p.base44Slug) q.set("slug", p.base44Slug);
-    checkoutUrl = `https://book.maiahome.mx/Checkout?${q.toString()}`;
+    checkoutUrl = `/reservar/${p.slug}?${q.toString()}`;
   }
 
   return (

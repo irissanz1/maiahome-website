@@ -53,11 +53,11 @@ export default function ReserveButton({
     );
   }
 
+  const external = /^https?:/i.test(href);
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={className}
       onClick={() => track("reserva_click", { roomId, nombre })}
     >

@@ -62,7 +62,7 @@ export default function StayDateForm({
     if (mode === "blocked") return;
     if (mode === "reserve") {
       track("reserva_click", { roomId, nombre });
-      window.open(checkoutUrl, "_blank", "noopener");
+      router.push(checkoutUrl);
       return;
     }
     // apply
