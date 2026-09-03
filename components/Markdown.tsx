@@ -37,6 +37,30 @@ export default function Markdown({ text }: { text: string }) {
       flushList();
       continue;
     }
+    // Imagen en su propia línea: ![alt](url)
+    const im = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (im) {
+      flushPara();
+      flushList();
+      const src = im[2].includes("cdn.sanity.io") ? `${im[2].split("?")[0]}?w=1200&auto=format&fit=max` : im[2];
+      blocks.push(
+        <figure key={blocks.length} className="my-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={src} alt={im[1] || ""} className="w-full rounded-2xl object-cover" loading="lazy" />
+        </figure>
+      );
+      continue;
+    }
+    if (line.startsWith("&gt; ") || line.startsWith("> ")) {
+      flushPara();
+      flushList();
+      blocks.push(
+        <blockquote key={blocks.length} className="my-6 border-l-4 border-maia-strong pl-5 italic text-neutral-700">
+          {line.replace(/^(&gt;|>)\s/, "")}
+        </blockquote>
+      );
+      continue;
+    }
     if (line.startsWith("## ")) {
       flushPara();
       flushList();
