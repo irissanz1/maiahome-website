@@ -139,7 +139,13 @@ export default async function Home({
               </Link>
             </div>
 
-            <PropertiesMap markers={mapMarkers} heightClass="h-[420px] md:h-[460px]" />
+            <PropertiesMap
+              markers={mapMarkers}
+              heightClass="h-[420px] md:h-[460px]"
+              showPois
+              poiGroupKeys={["cultura", "compras", "parques"]}
+              poiControl={false}
+            />
           </div>
         </section>
       )}

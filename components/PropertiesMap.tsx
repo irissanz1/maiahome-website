@@ -92,10 +92,14 @@ export default function PropertiesMap({
   markers,
   heightClass = "h-[560px]",
   showPois = false,
+  poiGroupKeys,
+  poiControl = true,
 }: {
   markers: MapMarker[];
   heightClass?: string;
   showPois?: boolean;
+  poiGroupKeys?: string[]; // limita a estos grupos (por key). Si se omite, todos.
+  poiControl?: boolean; // false = marcadores fijos sin panel de toggles
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -132,8 +136,11 @@ export default function PropertiesMap({
         // Solo los que están a < 8 km de alguna propiedad → Houston no muestra CDMX.
         if (showPois && pts.length) {
           const near = POIS.filter((poi) => markers.some((m) => distM(m, poi) < 8000));
+          const groups = poiGroupKeys
+            ? POI_GROUPS.filter((g) => poiGroupKeys.includes(g.key))
+            : POI_GROUPS;
           const overlays: Record<string, any> = {};
-          POI_GROUPS.forEach((g) => {
+          groups.forEach((g) => {
             const items = near.filter((poi) => g.cats.includes(poi.cat));
             if (!items.length) return;
             const layer = L.layerGroup();
@@ -149,9 +156,10 @@ export default function PropertiesMap({
                 .addTo(layer);
             });
             overlays[`${g.emoji} ${g.label}`] = layer;
-            if (g.onByDefault) layer.addTo(map);
+            // Sin panel de toggles: se muestran todos los grupos indicados.
+            if (!poiControl || g.onByDefault) layer.addTo(map);
           });
-          if (Object.keys(overlays).length) {
+          if (poiControl && Object.keys(overlays).length) {
             L.control.layers(null, overlays, { collapsed: false, position: "topright" }).addTo(map);
           }
         }
