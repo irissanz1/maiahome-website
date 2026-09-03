@@ -21,7 +21,16 @@ export default async function Home({
 }) {
   const sp = await searchParams;
   const market = resolveMarket(typeof sp.market === "string" ? sp.market : undefined);
-  const featured = (await getByMarket(market.id)).slice(0, 3);
+
+  // Destacados fijos (en orden). Si no están en el mercado actual, se completa con el catálogo.
+  const FEATURED_SLUGS = ["polanco-leonora-3", "polanco-velasco", "condesa-conchita-5"];
+  const marketProps = await getByMarket(market.id);
+  const bySlug = new Map(marketProps.map((p) => [p.slug, p]));
+  const pinned = FEATURED_SLUGS.map((s) => bySlug.get(s)).filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const featured =
+    pinned.length >= 3
+      ? pinned.slice(0, 3)
+      : [...pinned, ...marketProps.filter((p) => !FEATURED_SLUGS.includes(p.slug)).slice(0, 3 - pinned.length)];
 
   return (
     <>
