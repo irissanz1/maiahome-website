@@ -1,14 +1,15 @@
 import { getFeaturedReviews } from "@/lib/data";
 
-export default async function FeaturedReviews() {
+export default async function FeaturedReviews({ lang = "es" }: { lang?: "es" | "en" }) {
+  const L = lang === "en" ? { eyebrow: "Real reviews", title: "What our guests say" } : { eyebrow: "Reseñas reales", title: "Lo que dicen los huéspedes" };
   const reviews = (await getFeaturedReviews()).filter((r) => r.text).slice(0, 6);
   if (reviews.length === 0) return null;
 
   return (
     <section className="mx-auto max-w-6xl px-5 py-16">
       <div className="mb-8 text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Reseñas reales</p>
-        <h2 className="mt-2 font-serif text-3xl text-neutral-900">Lo que dicen los huéspedes</h2>
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">{L.eyebrow}</p>
+        <h2 className="mt-2 font-serif text-3xl text-neutral-900">{L.title}</h2>
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         {reviews.map((r, i) => (
