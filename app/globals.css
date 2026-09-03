@@ -70,7 +70,10 @@ h1, h2, h3 {
     radial-gradient(80% 70% at 10% 90%, rgba(0, 0, 0, 0.08), transparent 55%);
 }
 
-/* Mapas Leaflet: tipografía Montserrat en popups/controles para no romper la marca */
-.leaflet-container {
-  font-family: var(--font-montserrat), system-ui, sans-serif;
+/* Mapas Leaflet: tipografía Montserrat en popups/controles para no romper la marca.
+   !important porque el CSS de Leaflet (CDN) carga después y usa el shorthand `font`. */
+.leaflet-container,
+.leaflet-container .leaflet-popup-content,
+.leaflet-control-attribution {
+  font-family: var(--font-montserrat), system-ui, sans-serif !important;
 }
