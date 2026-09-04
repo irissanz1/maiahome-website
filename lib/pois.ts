@@ -4,12 +4,12 @@ export type PoiCat = "comer" | "cafe" | "beber" | "compras" | "cultura" | "parqu
 export type Poi = { name: string; cat: PoiCat; lat: number; lng: number };
 
 // Grupos mostrados en el mapa (con toggle). onByDefault = visibles al abrir.
-export const POI_GROUPS: { key: string; label: string; emoji: string; cats: PoiCat[]; onByDefault: boolean }[] = [
-  { key: "cultura", label: "Museos y cultura", emoji: "🏛️", cats: ["cultura"], onByDefault: true },
-  { key: "compras", label: "Compras", emoji: "🛍️", cats: ["compras"], onByDefault: true },
-  { key: "parques", label: "Parques", emoji: "🌳", cats: ["parques"], onByDefault: true },
-  { key: "comer", label: "Restaurantes", emoji: "🍽️", cats: ["comer"], onByDefault: false },
-  { key: "cafebar", label: "Cafés y bares", emoji: "☕", cats: ["cafe", "beber", "nocturna"], onByDefault: false },
+export const POI_GROUPS: { key: string; label: string; labelEn: string; emoji: string; cats: PoiCat[]; onByDefault: boolean }[] = [
+  { key: "cultura", label: "Museos y cultura", labelEn: "Museums & culture", emoji: "🏛️", cats: ["cultura"], onByDefault: true },
+  { key: "compras", label: "Compras", labelEn: "Shopping", emoji: "🛍️", cats: ["compras"], onByDefault: true },
+  { key: "parques", label: "Parques", labelEn: "Parks", emoji: "🌳", cats: ["parques"], onByDefault: true },
+  { key: "comer", label: "Restaurantes", labelEn: "Restaurants", emoji: "🍽️", cats: ["comer"], onByDefault: false },
+  { key: "cafebar", label: "Cafés y bares", labelEn: "Cafés & bars", emoji: "☕", cats: ["cafe", "beber", "nocturna"], onByDefault: false },
 ];
 
 export const CAT_EMOJI: Record<PoiCat, string> = {

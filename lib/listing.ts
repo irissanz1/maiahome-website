@@ -18,6 +18,15 @@ export const AMENITY_FILTERS = [
   "Pet friendly",
 ];
 
+// Traducción EN de amenidades para mostrar (el valor en español se mantiene para el match).
+export const AMENITY_EN: Record<string, string> = {
+  "Terraza": "Terrace", "Balcón": "Balcony", "Alberca": "Pool", "Gimnasio": "Gym", "Jacuzzi": "Jacuzzi",
+  "Elevador": "Elevator", "Aire acondicionado": "Air conditioning", "Lavadora": "Washer",
+  "Estacionamiento": "Parking", "Pet friendly": "Pet friendly", "Cocina equipada": "Equipped kitchen",
+  "WiFi": "WiFi", "Smart TV": "Smart TV", "Escritorio": "Desk", "Vista": "View", "Roof garden": "Roof garden",
+};
+export const amenityLabel = (a: string, lang: "es" | "en") => (lang === "en" ? AMENITY_EN[a] ?? a : a);
+
 /**
  * Filtros avanzados (recámaras mín., baños mín., amenidades).
  * Amenidades = AND (el depto debe tener TODAS las seleccionadas).

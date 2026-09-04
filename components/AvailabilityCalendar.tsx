@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { langFromPath } from "@/lib/i18n";
 
-const WD = ["L", "M", "M", "J", "V", "S", "D"];
+const WD = { es: ["L", "M", "M", "J", "V", "S", "D"], en: ["M", "T", "W", "T", "F", "S", "S"] } as const;
+const CT = { es: { avail: "Disponible", unavail: "No disponible", prev: "Mes anterior", next: "Mes siguiente" }, en: { avail: "Available", unavail: "Not available", prev: "Previous month", next: "Next month" } } as const;
 
 function ymd(d: Date) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -20,6 +23,8 @@ function monthCells(y: number, m: number): (Date | null)[] {
 
 export default function AvailabilityCalendar({ days }: { days: Record<string, boolean> }) {
   const [offset, setOffset] = useState(0);
+  const lang = langFromPath(usePathname());
+  const ct = CT[lang];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -31,10 +36,10 @@ export default function AvailabilityCalendar({ days }: { days: Record<string, bo
     return (
       <div>
         <p className="mb-2 text-center text-sm font-semibold capitalize text-neutral-800">
-          {d.toLocaleDateString("es-MX", { month: "long", year: "numeric" })}
+          {d.toLocaleDateString(lang === "en" ? "en-US" : "es-MX", { month: "long", year: "numeric" })}
         </p>
         <div className="grid grid-cols-7 gap-1 text-center text-[11px] text-neutral-400">
-          {WD.map((w, i) => (
+          {WD[lang].map((w, i) => (
             <div key={i} className="py-1">{w}</div>
           ))}
         </div>
@@ -49,7 +54,7 @@ export default function AvailabilityCalendar({ days }: { days: Record<string, bo
             else if (avail === false) cls += "bg-neutral-100 text-neutral-400 line-through";
             else cls += "bg-maia-yellow/25 font-medium text-neutral-800";
             return (
-              <div key={i} className={cls} title={past ? "" : avail === false ? "No disponible" : "Disponible"}>
+              <div key={i} className={cls} title={past ? "" : avail === false ? ct.unavail : ct.avail}>
                 {cell.getDate()}
               </div>
             );
@@ -66,19 +71,19 @@ export default function AvailabilityCalendar({ days }: { days: Record<string, bo
           onClick={() => setOffset((o) => Math.max(0, o - 1))}
           disabled={offset <= 0}
           className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 disabled:opacity-30 hover:enabled:bg-neutral-50"
-          aria-label="Mes anterior"
+          aria-label={ct.prev}
         >
           ‹
         </button>
         <div className="flex items-center gap-4 text-xs text-neutral-500">
-          <span className="flex items-center gap-1.5"><span className="h-3 w-3 rounded bg-maia-yellow/25" /> Disponible</span>
-          <span className="flex items-center gap-1.5"><span className="h-3 w-3 rounded bg-neutral-100" /> No disponible</span>
+          <span className="flex items-center gap-1.5"><span className="h-3 w-3 rounded bg-maia-yellow/25" /> {ct.avail}</span>
+          <span className="flex items-center gap-1.5"><span className="h-3 w-3 rounded bg-neutral-100" /> {ct.unavail}</span>
         </div>
         <button
           onClick={() => setOffset((o) => Math.min(10, o + 1))}
           disabled={offset >= 10}
           className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 disabled:opacity-30 hover:enabled:bg-neutral-50"
-          aria-label="Mes siguiente"
+          aria-label={ct.next}
         >
           ›
         </button>

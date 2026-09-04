@@ -12,6 +12,7 @@ import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
 import { formatMoney, img } from "@/lib/format";
+import { amenityLabel } from "@/lib/listing";
 
 type SP = Record<string, string | string[] | undefined>;
 const str = (v: string | string[] | undefined) => (typeof v === "string" ? v : undefined);
@@ -127,7 +128,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
               <h2 className="font-serif text-2xl text-neutral-900">Amenities</h2>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {p.amenidades.map((a) => (
-                  <li key={a} className="rounded-full border border-neutral-200 bg-neutral-50 px-3.5 py-1.5 text-sm text-neutral-700">{a}</li>
+                  <li key={a} className="rounded-full border border-neutral-200 bg-neutral-50 px-3.5 py-1.5 text-sm text-neutral-700">{amenityLabel(a, "en")}</li>
                 ))}
               </ul>
             </section>

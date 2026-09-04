@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
+import { langFromPath } from "@/lib/i18n";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
 import { POIS, POI_GROUPS, CAT_EMOJI } from "@/lib/pois";
 
@@ -57,33 +59,33 @@ function pinHtml(count: number) {
   );
 }
 
-function unitCardHtml(m: MapMarker) {
+function unitCardHtml(m: MapMarker, lang: "es" | "en") {
   return `<a href="${esc(m.href)}" style="display:block;width:200px;text-decoration:none;color:inherit">
     ${m.image ? `<img src="${esc(m.image)}" alt="" style="width:100%;height:104px;object-fit:cover;border-radius:8px;display:block" />` : ""}
     <div style="font-weight:600;font-size:13px;margin-top:6px;color:#171717">${esc(m.nombre)}</div>
     <div style="font-size:11px;color:#737373;margin-top:1px">${esc(m.zonaNombre)}${m.rating != null ? ` &middot; &#9733; ${m.rating.toFixed(1)}` : ""}</div>
     ${m.priceLabel ? `<div style="font-size:12px;font-weight:600;margin-top:3px;color:#171717">${esc(m.priceLabel)}</div>` : ""}
-    <div style="margin-top:6px;font-size:12px;font-weight:700;color:#a16207">Ver departamento →</div>
+    <div style="margin-top:6px;font-size:12px;font-weight:700;color:#a16207">${lang === "en" ? "View apartment →" : "Ver departamento →"}</div>
   </a>`;
 }
 
-function unitRowHtml(m: MapMarker) {
+function unitRowHtml(m: MapMarker, lang: "es" | "en") {
   return `<a href="${esc(m.href)}" style="display:flex;gap:8px;align-items:center;text-decoration:none;color:inherit">
     ${m.image ? `<img src="${esc(m.image)}" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:6px;flex:0 0 auto" />` : ""}
     <span style="min-width:0">
       <span style="display:block;font-weight:600;font-size:12px;color:#171717">${esc(m.nombre)}</span>
       ${m.priceLabel ? `<span style="display:block;font-size:11px;color:#525252">${esc(m.priceLabel)}</span>` : ""}
-      <span style="display:block;font-size:11px;font-weight:700;color:#a16207">Ver →</span>
+      <span style="display:block;font-size:11px;font-weight:700;color:#a16207">${lang === "en" ? "See →" : "Ver →"}</span>
     </span>
   </a>`;
 }
 
-function groupPopupHtml(units: MapMarker[]) {
-  if (units.length === 1) return unitCardHtml(units[0]);
+function groupPopupHtml(units: MapMarker[], lang: "es" | "en") {
+  if (units.length === 1) return unitCardHtml(units[0], lang);
   return `<div style="width:224px">
-    <div style="font-weight:700;font-size:12px;color:#171717;margin-bottom:8px">${units.length} propiedades en este edificio</div>
+    <div style="font-weight:700;font-size:12px;color:#171717;margin-bottom:8px">${units.length} ${lang === "en" ? "properties in this building" : "propiedades en este edificio"}</div>
     <div style="max-height:236px;overflow:auto;display:flex;flex-direction:column;gap:10px">
-      ${units.map(unitRowHtml).join("")}
+      ${units.map((u) => unitRowHtml(u, lang)).join("")}
     </div>
   </div>`;
 }
@@ -103,6 +105,7 @@ export default function PropertiesMap({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
+  const lang = langFromPath(usePathname());
 
   useEffect(() => {
     let cancelled = false;
@@ -126,9 +129,9 @@ export default function PropertiesMap({
           });
           const marker = L.marker([g.lat, g.lng], {
             icon,
-            title: g.units.length > 1 ? `${g.units.length} propiedades` : g.units[0].nombre,
+            title: g.units.length > 1 ? `${g.units.length} ${lang === "en" ? "properties" : "propiedades"}` : g.units[0].nombre,
           }).addTo(map);
-          marker.bindPopup(groupPopupHtml(g.units), { minWidth: 0 });
+          marker.bindPopup(groupPopupHtml(g.units, lang), { minWidth: 0 });
           if (g.units.length === 1) marker.on("mouseover", () => marker.openPopup());
         });
 
@@ -155,7 +158,7 @@ export default function PropertiesMap({
                 .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
                 .addTo(layer);
             });
-            overlays[`${g.emoji} ${g.label}`] = layer;
+            overlays[`${g.emoji} ${lang === "en" ? g.labelEn : g.label}`] = layer;
             // Sin panel de toggles: se muestran todos los grupos indicados.
             if (!poiControl || g.onByDefault) layer.addTo(map);
           });
@@ -181,7 +184,7 @@ export default function PropertiesMap({
         mapRef.current = null;
       }
     };
-  }, [markers]);
+  }, [markers, lang]);
 
   return (
     <div
