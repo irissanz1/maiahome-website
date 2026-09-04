@@ -151,6 +151,10 @@ export interface BlogPostFull extends BlogPostCard {
 
 const BLOG_LIST_QUERY = `*[_type=="blogPost" && published==true]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria} | order(fecha desc)`;
 const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria,body,"updatedAt":_updatedAt}`;
+// Versión en inglés: usa los campos titleEn/excerptEn/bodyEn/slugEn. `slug` = slugEn
+// para que los enlaces construyan /en/blog/<slugEn>. Solo posts ya traducidos.
+const BLOG_LIST_EN_QUERY = `*[_type=="blogPost" && published==true && defined(titleEn) && defined(slugEn)]{"title":titleEn,"slug":slugEn,fecha,"excerpt":excerptEn,coverUrl,zona,categoria} | order(fecha desc)`;
+const BLOG_ONE_EN_QUERY = `*[_type=="blogPost" && slugEn==$slug && published==true][0]{"title":titleEn,"slug":slugEn,fecha,"excerpt":excerptEn,coverUrl,zona,categoria,"body":bodyEn,"updatedAt":_updatedAt}`;
 
 export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
   try {
@@ -163,6 +167,22 @@ export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
 export async function getBlogPost(slug: string): Promise<BlogPostFull | null> {
   try {
     return (await sanity.fetch(BLOG_ONE_QUERY, { slug }, REVALIDATE)) as BlogPostFull | null;
+  } catch {
+    return null;
+  }
+}
+
+export const getBlogPostsEn = cache(async (): Promise<BlogPostCard[]> => {
+  try {
+    return ((await sanity.fetch(BLOG_LIST_EN_QUERY, {}, REVALIDATE)) as BlogPostCard[]) || [];
+  } catch {
+    return [];
+  }
+});
+
+export async function getBlogPostEn(slug: string): Promise<BlogPostFull | null> {
+  try {
+    return (await sanity.fetch(BLOG_ONE_EN_QUERY, { slug }, REVALIDATE)) as BlogPostFull | null;
   } catch {
     return null;
   }

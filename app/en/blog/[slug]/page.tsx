@@ -2,62 +2,53 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Markdown from "@/components/Markdown";
-import { getBlogPost, getBlogPosts } from "@/lib/data";
+import { getBlogPostEn, getBlogPostsEn } from "@/lib/data";
 import { categoryLabel } from "@/lib/blog";
-import { BLOG_SLUG_ES_TO_EN } from "@/lib/blogSlugs";
+import { BLOG_SLUG_EN_TO_ES } from "@/lib/blogSlugs";
 
 export async function generateStaticParams() {
-  return (await getBlogPosts()).map((p) => ({ slug: p.slug }));
+  return (await getBlogPostsEn()).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const p = await getBlogPost(slug);
+  const p = await getBlogPostEn(slug);
   if (!p) return {};
-  const enSlug = BLOG_SLUG_ES_TO_EN[p.slug];
+  const esSlug = BLOG_SLUG_EN_TO_ES[slug];
   return {
     title: p.title,
     description: p.excerpt || undefined,
     alternates: {
-      canonical: `/blog/${p.slug}`,
-      languages: { es: `/blog/${p.slug}`, ...(enSlug ? { en: `/en/blog/${enSlug}` } : {}) },
+      canonical: `/en/blog/${slug}`,
+      languages: { en: `/en/blog/${slug}`, ...(esSlug ? { es: `/blog/${esSlug}` } : {}) },
     },
-    openGraph: {
-      title: p.title,
-      description: p.excerpt || undefined,
-      images: p.coverUrl ? [p.coverUrl] : [],
-      type: "article",
-    },
+    openGraph: { title: p.title, description: p.excerpt || undefined, images: p.coverUrl ? [p.coverUrl] : [], type: "article" },
   };
 }
 
-// Fecha legible en español (acepta fecha simple "2022-02-28" o timestamp ISO; usa UTC).
 function formatDate(iso?: string | null): string | null {
   if (!iso) return null;
   const d = new Date(iso.includes("T") ? iso : `${iso}T12:00:00Z`);
   if (Number.isNaN(d.getTime())) return null;
-  return new Intl.DateTimeFormat("es-MX", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(d);
+  return new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(d);
 }
 
-// CTA/enlace consciente de la zona del post (con imagen de fondo y titular).
 function zoneCta(zona?: string | null): { href: string; label: string; img: string; headline: string } {
   const z = (zona || "").toLowerCase();
   if (z.includes("polanco"))
-    return { href: "/polanco", label: "departamentos en Polanco", img: "/zonas/polanco.webp", headline: "Tu base en Polanco te espera" };
+    return { href: "/en/polanco", label: "apartments in Polanco", img: "/zonas/polanco.webp", headline: "Your base in Polanco awaits" };
   if (z.includes("condesa"))
-    return { href: "/condesa", label: "departamentos en la Condesa", img: "/zonas/condesa.webp", headline: "Tu base en la Condesa te espera" };
+    return { href: "/en/condesa", label: "apartments in Condesa", img: "/zonas/condesa.webp", headline: "Your base in Condesa awaits" };
   if (z.includes("houston"))
-    return { href: "/houston", label: "departamentos en Houston", img: "/zonas/houston.webp", headline: "Tu base en Houston te espera" };
-  return { href: "/departamentos", label: "departamentos Maia Home", img: "/departamentos/cdmx.jpg", headline: "Tu hogar en la Ciudad de México te espera" };
+    return { href: "/en/houston", label: "apartments in Houston", img: "/zonas/houston.webp", headline: "Your base in Houston awaits" };
+  return { href: "/en/apartments", label: "Maia Home apartments", img: "/departamentos/cdmx.jpg", headline: "Your home in Mexico City awaits" };
 }
 
-export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+export default async function BlogPostEn({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const p = await getBlogPost(slug);
+  const p = await getBlogPostEn(slug);
   if (!p) notFound();
 
-  // Evita duplicar la portada: si la primera imagen del cuerpo es la misma de la
-  // portada (coverUrl), la quitamos del cuerpo (ya se muestra arriba como hero).
   let bodyWithoutCover = p.body || "";
   if (p.coverUrl) {
     const coverBase = p.coverUrl.split("?")[0];
@@ -72,11 +63,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const showUpd = Boolean(upd && upd !== pub);
   const cta = zoneCta(p.zona);
 
-  // Posts relacionados: misma categoría, excluye el actual (máx. 3).
-  const all = await getBlogPosts();
-  const related = all
-    .filter((r) => r.slug !== p.slug && p.categoria && r.categoria === p.categoria)
-    .slice(0, 3);
+  const all = await getBlogPostsEn();
+  const related = all.filter((r) => r.slug !== p.slug && p.categoria && r.categoria === p.categoria).slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -86,14 +74,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     image: p.coverUrl ? [p.coverUrl] : undefined,
     datePublished: p.fecha || undefined,
     dateModified: p.updatedAt || p.fecha || undefined,
-    inLanguage: "es-MX",
+    inLanguage: "en",
     author: { "@type": "Organization", name: "Maia Home", url: "https://maiahome.mx" },
-    publisher: {
-      "@type": "Organization",
-      name: "Maia Home",
-      logo: { "@type": "ImageObject", url: "https://maiahome.mx/maia-logo.png" },
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://maiahome.mx/blog/${p.slug}` },
+    publisher: { "@type": "Organization", name: "Maia Home", logo: { "@type": "ImageObject", url: "https://maiahome.mx/maia-logo.png" } },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://maiahome.mx/en/blog/${p.slug}` },
   };
 
   return (
@@ -101,32 +85,30 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="mb-6 text-sm text-neutral-500">
-        <Link href="/blog" className="hover:text-neutral-900">Guía de la ciudad</Link>
+        <Link href="/en/blog" className="hover:text-neutral-900">City guide</Link>
         <span className="mx-2">/</span>
-        {p.categoria && categoryLabel(p.categoria) ? (
-          <Link href={`/blog/categoria/${p.categoria}`} className="hover:text-neutral-900">{categoryLabel(p.categoria)}</Link>
+        {p.categoria && categoryLabel(p.categoria, "en") ? (
+          <Link href={`/en/blog/category/${p.categoria}`} className="hover:text-neutral-900">{categoryLabel(p.categoria, "en")}</Link>
         ) : (
-          <span className="text-neutral-700">{p.zona || "CDMX"}</span>
+          <span className="text-neutral-700">{p.zona || "Mexico City"}</span>
         )}
       </nav>
 
-      {(categoryLabel(p.categoria) || p.zona) && (
+      {(categoryLabel(p.categoria, "en") || p.zona) && (
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-strong">
-          {categoryLabel(p.categoria) || p.zona}
+          {categoryLabel(p.categoria, "en") || p.zona}
         </p>
       )}
-      <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
-        {p.title}
-      </h1>
+      <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">{p.title}</h1>
       {(pub || upd) && (
         <p className="mt-3 text-sm text-neutral-400">
           {showUpd ? (
             <>
-              <span className="font-medium text-neutral-500">Actualizado el {upd}</span>
-              {pub && <span> · publicado el {pub}</span>}
+              <span className="font-medium text-neutral-500">Updated {upd}</span>
+              {pub && <span> · published {pub}</span>}
             </>
           ) : (
-            <>Publicado el {pub}</>
+            <>Published {pub}</>
           )}
         </p>
       )}
@@ -143,39 +125,35 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <Markdown text={bodyWithoutCover} />
       </div>
 
-      {/* CTA con imagen de la zona */}
+      {/* CTA with zone image */}
       <section className="relative mt-12 overflow-hidden rounded-3xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={cta.img} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40" />
         <div className="relative max-w-xl px-6 py-10 md:px-10 md:py-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Reserva directo</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Book direct</p>
           <h2 className="mt-3 font-serif text-3xl leading-tight text-white md:text-4xl">{cta.headline}</h2>
           <p className="mt-3 text-white/85">
-            Departamentos amueblados con todo incluido, listos para tu llegada. Mejor precio directo,
-            sin intermediarios y con atención personal.
+            Fully furnished apartments with everything included, ready for your arrival. Best direct rate,
+            no middlemen and personal service.
           </p>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-white/80">
-            <span>✓ Mejor precio directo</span>
-            <span>✓ Sin comisiones</span>
-            <span>✓ Atención personal</span>
+            <span>✓ Best direct rate</span>
+            <span>✓ No booking fees</span>
+            <span>✓ Personal service</span>
           </div>
-          <Link
-            href={cta.href}
-            className="mt-6 inline-block rounded-full bg-maia-yellow px-7 py-3.5 text-sm font-semibold text-black shadow-lg transition hover:bg-maia-strong"
-          >
-            Ver {cta.label} →
+          <Link href={cta.href} className="mt-6 inline-block rounded-full bg-maia-yellow px-7 py-3.5 text-sm font-semibold text-black shadow-lg transition hover:bg-maia-strong">
+            See {cta.label} →
           </Link>
         </div>
       </section>
 
-      {/* Posts relacionados */}
       {related.length > 0 && (
         <section className="mt-12">
-          <h2 className="font-serif text-2xl text-neutral-900">Sigue leyendo</h2>
+          <h2 className="font-serif text-2xl text-neutral-900">Keep reading</h2>
           <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
             {related.map((r) => (
-              <Link key={r.slug} href={`/blog/${r.slug}`} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:shadow-lg">
+              <Link key={r.slug} href={`/en/blog/${r.slug}`} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:shadow-lg">
                 <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-maia-yellow/40 to-neutral-200">
                   {r.coverUrl && (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -192,7 +170,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       )}
 
       <div className="mt-8">
-        <Link href="/blog" className="text-sm font-semibold text-maia-strong">← Volver a la guía</Link>
+        <Link href="/en/blog" className="text-sm font-semibold text-maia-strong">← Back to the guide</Link>
       </div>
     </article>
   );

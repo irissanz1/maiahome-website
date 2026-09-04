@@ -1,5 +1,7 @@
 // Base de internacionalización. Español en la raíz (/), inglés bajo /en.
 // Activar cuando las páginas /en estén construidas (enciende el switch de idioma).
+import { BLOG_SLUG_ES_TO_EN, BLOG_SLUG_EN_TO_ES } from "./blogSlugs";
+
 export const LANG_SWITCH_ENABLED = true;
 
 export type Lang = "es" | "en";
@@ -40,6 +42,13 @@ export function withLang(lang: Lang, esPath: string): string {
   if (exact) return exact[1];
   const dyn = DYNMAP.find(([es]) => esPath.startsWith(es));
   if (dyn) return dyn[1] + esPath.slice(dyn[0].length);
+  // Blog (slugs traducidos): /blog, /blog/categoria/<c>, /blog/<esSlug>
+  if (esPath === "/blog") return "/en/blog";
+  if (esPath.startsWith("/blog/categoria/")) return `/en/blog/category/${esPath.slice("/blog/categoria/".length)}`;
+  if (esPath.startsWith("/blog/")) {
+    const es = esPath.slice("/blog/".length);
+    return `/en/blog/${BLOG_SLUG_ES_TO_EN[es] || es}`;
+  }
   return esPath === "/" ? "/en" : `/en${esPath}`;
 }
 
@@ -49,6 +58,13 @@ export function toEs(enPath: string): string {
   if (exact) return exact[0];
   const dyn = DYNMAP.find(([, en]) => enPath.startsWith(en));
   if (dyn) return dyn[0] + enPath.slice(dyn[1].length);
+  // Blog EN → ES
+  if (enPath === "/en/blog") return "/blog";
+  if (enPath.startsWith("/en/blog/category/")) return `/blog/categoria/${enPath.slice("/en/blog/category/".length)}`;
+  if (enPath.startsWith("/en/blog/")) {
+    const en = enPath.slice("/en/blog/".length);
+    return `/blog/${BLOG_SLUG_EN_TO_ES[en] || en}`;
+  }
   return enPath.replace(/^\/en/, "") || "/";
 }
 

@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
-import { getProperties, getBlogPosts } from "@/lib/data";
+import { getProperties, getBlogPosts, getBlogPostsEn } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
 import { BLOG_CATEGORIES } from "@/lib/blog";
 
 const BASE = "https://maiahome.mx";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [catalog, posts] = await Promise.all([getProperties(), getBlogPosts()]);
+  const [catalog, posts, postsEn] = await Promise.all([getProperties(), getBlogPosts(), getBlogPostsEn()]);
   const staticPages = [
     "",
     "/departamentos",
@@ -84,5 +84,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...legalPages, ...zonas, ...deptos, ...blog, ...enStatic, ...enZonas, ...enDeptos];
+  const enBlog = [
+    { url: `${BASE}/en/blog`, changeFrequency: "weekly" as const, priority: 0.6 },
+    ...BLOG_CATEGORIES.map((c) => ({
+      url: `${BASE}/en/blog/category/${c.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    })),
+    ...postsEn.map((p) => ({
+      url: `${BASE}/en/blog/${p.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
+  ];
+
+  return [...staticPages, ...legalPages, ...zonas, ...deptos, ...blog, ...enStatic, ...enZonas, ...enDeptos, ...enBlog];
 }
