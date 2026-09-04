@@ -48,15 +48,25 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          {/* Switch de idioma: se activa cuando existan las páginas /en (evita 404 en el sitio vivo). */}
+          {/* Toggle de idioma: muestra ES | EN con el activo resaltado. */}
           {LANG_SWITCH_ENABLED && (
-            <Link
-              href={switchLangPath(pathname, lang === "es" ? "en" : "es")}
-              className="rounded-full border border-neutral-200 px-2.5 py-1 text-xs font-semibold text-neutral-600 transition hover:border-neutral-400 hover:text-neutral-900"
-              aria-label={lang === "es" ? "Switch to English" : "Cambiar a español"}
-            >
-              {lang === "es" ? "EN" : "ES"}
-            </Link>
+            <div className="flex items-center rounded-full border border-neutral-200 p-0.5 text-xs font-semibold">
+              {(["es", "en"] as const).map((code) => {
+                const active = lang === code;
+                return (
+                  <Link
+                    key={code}
+                    href={switchLangPath(pathname, code)}
+                    aria-current={active ? "true" : undefined}
+                    className={`rounded-full px-2.5 py-1 uppercase transition ${
+                      active ? "bg-neutral-900 text-white" : "text-neutral-500 hover:text-neutral-900"
+                    }`}
+                  >
+                    {code}
+                  </Link>
+                );
+              })}
+            </div>
           )}
           <Suspense fallback={null}>
             <MarketSelector />
