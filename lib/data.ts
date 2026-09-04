@@ -146,10 +146,11 @@ export interface BlogPostCard {
 }
 export interface BlogPostFull extends BlogPostCard {
   body: string;
+  updatedAt: string | null; // _updatedAt de Sanity: se refresca solo en cada edición
 }
 
 const BLOG_LIST_QUERY = `*[_type=="blogPost" && published==true]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria} | order(fecha desc)`;
-const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria,body}`;
+const BLOG_ONE_QUERY = `*[_type=="blogPost" && slug.current==$slug && published==true][0]{title,"slug":slug.current,fecha,excerpt,coverUrl,zona,categoria,body,"updatedAt":_updatedAt}`;
 
 export const getBlogPosts = cache(async (): Promise<BlogPostCard[]> => {
   try {

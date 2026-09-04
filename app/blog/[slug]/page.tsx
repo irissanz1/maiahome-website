@@ -26,21 +26,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// Fecha legible en español (evita desfase de zona usando UTC).
-function formatFecha(iso?: string): string | null {
+// Fecha legible en español (acepta fecha simple "2022-02-28" o timestamp ISO; usa UTC).
+function formatDate(iso?: string | null): string | null {
   if (!iso) return null;
-  const d = new Date(`${iso}T12:00:00Z`);
+  const d = new Date(iso.includes("T") ? iso : `${iso}T12:00:00Z`);
   if (Number.isNaN(d.getTime())) return null;
   return new Intl.DateTimeFormat("es-MX", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(d);
 }
 
-// CTA/enlace consciente de la zona del post.
-function zoneCta(zona?: string | null): { href: string; label: string } {
+// CTA/enlace consciente de la zona del post (con imagen de fondo y titular).
+function zoneCta(zona?: string | null): { href: string; label: string; img: string; headline: string } {
   const z = (zona || "").toLowerCase();
-  if (z.includes("polanco")) return { href: "/polanco", label: "departamentos en Polanco" };
-  if (z.includes("condesa")) return { href: "/condesa", label: "departamentos en la Condesa" };
-  if (z.includes("houston")) return { href: "/houston", label: "departamentos en Houston" };
-  return { href: "/departamentos", label: "departamentos Maia Home" };
+  if (z.includes("polanco"))
+    return { href: "/polanco", label: "departamentos en Polanco", img: "/zonas/polanco.webp", headline: "Tu base en Polanco te espera" };
+  if (z.includes("condesa"))
+    return { href: "/condesa", label: "departamentos en la Condesa", img: "/zonas/condesa.webp", headline: "Tu base en la Condesa te espera" };
+  if (z.includes("houston"))
+    return { href: "/houston", label: "departamentos en Houston", img: "/zonas/houston.webp", headline: "Tu base en Houston te espera" };
+  return { href: "/departamentos", label: "departamentos Maia Home", img: "/departamentos/cdmx.jpg", headline: "Tu hogar en la Ciudad de México te espera" };
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
@@ -59,7 +62,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     );
   }
 
-  const fecha = formatFecha(p.fecha);
+  const pub = formatDate(p.fecha);
+  const upd = formatDate(p.updatedAt);
+  const showUpd = Boolean(upd && upd !== pub);
   const cta = zoneCta(p.zona);
 
   // Posts relacionados: misma categoría, excluye el actual (máx. 3).
@@ -75,7 +80,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     description: p.excerpt || undefined,
     image: p.coverUrl ? [p.coverUrl] : undefined,
     datePublished: p.fecha || undefined,
-    dateModified: p.fecha || undefined,
+    dateModified: p.updatedAt || p.fecha || undefined,
     inLanguage: "es-MX",
     author: { "@type": "Organization", name: "Maia Home", url: "https://maiahome.mx" },
     publisher: {
@@ -108,7 +113,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
         {p.title}
       </h1>
-      {fecha && <p className="mt-3 text-sm text-neutral-400">{fecha}</p>}
+      {(pub || upd) && (
+        <p className="mt-3 text-sm text-neutral-400">
+          {showUpd ? (
+            <>
+              <span className="font-medium text-neutral-500">Actualizado el {upd}</span>
+              {pub && <span> · publicado el {pub}</span>}
+            </>
+          ) : (
+            <>Publicado el {pub}</>
+          )}
+        </p>
+      )}
       {p.excerpt && <p className="mt-4 text-lg leading-relaxed text-neutral-600">{p.excerpt}</p>}
 
       {p.coverUrl && (
@@ -122,14 +138,31 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <Markdown text={bodyWithoutCover} />
       </div>
 
-      {/* CTA */}
-      <div className="mt-12 rounded-2xl bg-maia-dark px-6 py-8 text-center text-white">
-        <h2 className="font-serif text-2xl">¿Listo para vivir la ciudad?</h2>
-        <p className="mt-2 text-sm text-neutral-300">Hospédate en un departamento Maia Home en la mejor zona.</p>
-        <Link href={cta.href} className="mt-5 inline-block rounded-full bg-maia-yellow px-6 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong">
-          Ver {cta.label}
-        </Link>
-      </div>
+      {/* CTA con imagen de la zona */}
+      <section className="relative mt-12 overflow-hidden rounded-3xl">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={cta.img} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40" />
+        <div className="relative max-w-xl px-6 py-10 md:px-10 md:py-14">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Reserva directo</p>
+          <h2 className="mt-3 font-serif text-3xl leading-tight text-white md:text-4xl">{cta.headline}</h2>
+          <p className="mt-3 text-white/85">
+            Departamentos amueblados con todo incluido, listos para tu llegada. Mejor precio directo,
+            sin intermediarios y con atención personal.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-white/80">
+            <span>✓ Mejor precio directo</span>
+            <span>✓ Sin comisiones</span>
+            <span>✓ Atención personal</span>
+          </div>
+          <Link
+            href={cta.href}
+            className="mt-6 inline-block rounded-full bg-maia-yellow px-7 py-3.5 text-sm font-semibold text-black shadow-lg transition hover:bg-maia-strong"
+          >
+            Ver {cta.label} →
+          </Link>
+        </div>
+      </section>
 
       {/* Posts relacionados */}
       {related.length > 0 && (
