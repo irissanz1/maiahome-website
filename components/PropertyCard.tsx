@@ -6,10 +6,10 @@ import { type Lang, withLang, pick } from "@/lib/i18n";
 import Placeholder from "./Placeholder";
 
 const T = {
-  es: { guests: "huéspedes", bath: "baño", baths: "baños", min: "min", nights: "noches", reviews: "reseñas",
+  es: { guests: "huéspedes", bath: "baño", baths: "baños", bed: "cama", beds: "camas", min: "min", nights: "noches", reviews: "reseñas",
         fast: "Se reserva rápido", free: "noches libres", from: "desde", night: "/ noche", month: "/ mes",
         ask: "Consultar tarifa" },
-  en: { guests: "guests", bath: "bath", baths: "baths", min: "min", nights: "nights", reviews: "reviews",
+  en: { guests: "guests", bath: "bath", baths: "baths", bed: "bed", beds: "beds", min: "min", nights: "nights", reviews: "reviews",
         fast: "Books fast", free: "nights left", from: "from", night: "/ night", month: "/ month",
         ask: "Rates on request" },
 } as const;
@@ -49,6 +49,7 @@ export default function PropertyCard({
   const hero = img(property.images[0], 800);
   const specs = [
     property.tipo,
+    property.camas ? `${property.camas} ${property.camas !== 1 ? t.beds : t.bed}` : null,
     property.capacidad ? `${property.capacidad} ${t.guests}` : null,
     property.banos ? `${property.banos} ${property.banos !== 1 ? t.baths : t.bath}` : null,
   ]
