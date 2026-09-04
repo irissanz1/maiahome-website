@@ -51,6 +51,27 @@ const nextConfig = {
       { source: "/descubre", destination: "/blog", permanent: true },
       { source: "/explora", destination: "/blog", permanent: true },
       { source: "/payment", destination: "/formas-de-pago", permanent: true },
+      // Rutas EN viejas del Wix: usaban /en/<slug-español>. El sitio nuevo usa
+      // slugs EN traducidos, así que estas 404 sin redirect. (Las que ya existen
+      // con el mismo path —/en/polanco, /en/condesa, /en/houston, /en/blog,
+      // /en/stay-agreement— resuelven solas.)
+      { source: "/en/departamentos", destination: "/en/apartments", permanent: true },
+      { source: "/en/mensuales", destination: "/en/monthly-stays", permanent: true },
+      { source: "/en/corporativo", destination: "/en/corporate-housing", permanent: true },
+      { source: "/en/administramos-tu-depto", destination: "/en/manage-your-apartment", permanent: true },
+      { source: "/en/nosotros", destination: "/en/about", permanent: true },
+      { source: "/en/formas-de-pago", destination: "/en/payment-options", permanent: true },
+      { source: "/en/payment", destination: "/en/payment-options", permanent: true },
+      { source: "/en/recorridos-departamentos", destination: "/en/virtual-tours", permanent: true },
+      { source: "/en/facturacion", destination: "/en/invoicing", permanent: true },
+      { source: "/en/tours-mexico-city", destination: "/en/mexico-city-tours", permanent: true },
+      { source: "/en/aviso-privacidad", destination: "/en/privacy-notice", permanent: true },
+      { source: "/en/terminos-y-condiciones", destination: "/en/terms-and-conditions", permanent: true },
+      { source: "/en/terminos-uso", destination: "/en/terms-of-use", permanent: true },
+      { source: "/en/reserva-ahora", destination: "/en/apartments", permanent: true },
+      { source: "/en/descubre", destination: "/en/blog", permanent: true },
+      { source: "/en/explora", destination: "/en/blog", permanent: true },
+      { source: "/en/post/:slug*", destination: "/en/blog", permanent: true },
       // /check-in y /check-out viven en el sitio principal con el MISMO path
       // que tenía el Wix → no necesitan redirect.
       // Fichas de propiedad viejas → nuevas (por slug)
