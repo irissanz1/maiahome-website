@@ -6,9 +6,9 @@ import { AMENITY_FILTERS } from "@/lib/listing";
 import { langFromPath } from "@/lib/i18n";
 
 const T = {
-  es: { title: "Filtros avanzados", clear: "Limpiar", rec: "Recámaras", ban: "Baños",
+  es: { title: "Filtros avanzados", clear: "Limpiar", rec: "Recámaras", ban: "Baños", camas: "Camas",
     price: "Precio por noche (USD)", size: "Tamaño", amen: "Amenidades", any: "Cualquiera" },
-  en: { title: "Advanced filters", clear: "Clear", rec: "Bedrooms", ban: "Baths",
+  en: { title: "Advanced filters", clear: "Clear", rec: "Bedrooms", ban: "Baths", camas: "Beds",
     price: "Price per night (USD)", size: "Size", amen: "Amenities", any: "Any" },
 } as const;
 const AMEN_EN: Record<string, string> = {
@@ -26,11 +26,12 @@ export default function AdvancedFilters() {
   const t = T[lang];
 
   const rec = params.get("rec") || "";
+  const camas = params.get("camas") || "";
   const ban = params.get("ban") || "";
   const precio = params.get("precio") || "";
   const m2 = params.get("m2") || "";
   const amen = (params.get("amen") || "").split(",").map((s) => s.trim()).filter(Boolean);
-  const activeCount = (rec ? 1 : 0) + (ban ? 1 : 0) + (precio ? 1 : 0) + (m2 ? 1 : 0) + amen.length;
+  const activeCount = (rec ? 1 : 0) + (camas ? 1 : 0) + (ban ? 1 : 0) + (precio ? 1 : 0) + (m2 ? 1 : 0) + amen.length;
 
   function update(next: Record<string, string | null>) {
     const p = new URLSearchParams(params.toString());
@@ -56,6 +57,7 @@ export default function AdvancedFilters() {
     }`;
 
   const recOptions: [string, string][] = [["", t.any], ["1", "1+"], ["2", "2+"], ["3", "3+"], ["4", "4+"]];
+  const camasOptions: [string, string][] = [["", t.any], ["2", "2+"], ["4", "4+"], ["6", "6+"], ["8", "8+"], ["10", "10+"]];
   const banOptions: [string, string][] = [["", t.any], ["1", "1+"], ["2", "2+"], ["3", "3+"]];
   const precioOptions: [string, string][] = [["", t.any], ["0-100", "≤ $100"], ["100-150", "$100–150"], ["150-250", "$150–250"], ["250-", "≥ $250"]];
   const m2Options: [string, string][] = [["", t.any], ["50", "50+ m²"], ["80", "80+ m²"], ["120", "120+ m²"]];
@@ -78,7 +80,7 @@ export default function AdvancedFilters() {
           )}
         </button>
         {activeCount > 0 && (
-          <button onClick={() => update({ rec: null, ban: null, precio: null, m2: null, amen: null })} className="text-sm text-neutral-500 underline hover:text-neutral-800">
+          <button onClick={() => update({ rec: null, camas: null, ban: null, precio: null, m2: null, amen: null })} className="text-sm text-neutral-500 underline hover:text-neutral-800">
             {t.clear}
           </button>
         )}
@@ -91,6 +93,14 @@ export default function AdvancedFilters() {
             <div className="flex flex-wrap gap-2">
               {recOptions.map(([v, label]) => (
                 <button key={v} className={pill(rec === v)} onClick={() => update({ rec: v || null })}>{label}</button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">{t.camas}</p>
+            <div className="flex flex-wrap gap-2">
+              {camasOptions.map(([v, label]) => (
+                <button key={v} className={pill(camas === v)} onClick={() => update({ camas: v || null })}>{label}</button>
               ))}
             </div>
           </div>
