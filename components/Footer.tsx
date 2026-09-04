@@ -81,6 +81,23 @@ export default function Footer() {
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3v11.4a2.5 2.5 0 1 1-2.5-2.5c.26 0 .5.04.75.11V8.9a5.6 5.6 0 0 0-.75-.05 5.5 5.5 0 1 0 5.5 5.5V8.9a7.2 7.2 0 0 0 4.2 1.35V7.2a4.3 4.3 0 0 1-3.2-1.4Z" /></svg>
               </a>
             </div>
+
+            {/* También reservables en OTAs */}
+            <div className="mt-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-500">
+                {lang === "en" ? "Also on" : "También en"}
+              </p>
+              <div className="mt-3 flex items-center gap-5">
+                <a href="https://www.airbnb.mx/users/profile/1463379377061041440" target="_blank" rel="noopener noreferrer" aria-label="Airbnb — Maia Home">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/ota/airbnb.svg" alt="Airbnb" className="h-6 w-auto opacity-70 brightness-0 invert transition hover:opacity-100" />
+                </a>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/ota/vrbo.svg" alt="Vrbo" className="h-6 w-auto opacity-70 brightness-0 invert" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/ota/booking.svg" alt="Booking.com" className="h-5 w-auto opacity-70 brightness-0 invert" />
+              </div>
+            </div>
           </div>
           <div className="flex flex-wrap gap-12 text-sm">
             {COLS.map((col) => (
