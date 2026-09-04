@@ -11,7 +11,7 @@ import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
 export async function generateMetadata({ searchParams }: { searchParams: Promise<SP> }): Promise<Metadata> {
   const sp = await searchParams;
   const market = resolveMarket(str(sp.market));
-  const where = market.geo;
+  const where = market.geoEn;
   const barrios = market.zonas.map((z) => ZONAS[z]?.nombre).filter(Boolean).join(", ");
   return {
     title: `Furnished apartments in ${where}`,
@@ -37,11 +37,11 @@ export default async function Apartments({ searchParams }: { searchParams: Promi
     <div>
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={heroImg} alt={market.geo} className="absolute inset-0 h-full w-full object-cover object-center" />
+        <img src={heroImg} alt={market.geoEn} className="absolute inset-0 h-full w-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/45" />
         <div className="relative mx-auto max-w-6xl px-5 pb-24 pt-14 md:pb-28 md:pt-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Maia stays · {market.geo}</p>
-          <h1 className="mt-3 font-serif text-4xl text-white md:text-5xl">Furnished apartments in {market.geo}</h1>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-maia-yellow">Maia stays · {market.geoEn}</p>
+          <h1 className="mt-3 font-serif text-4xl text-white md:text-5xl">Furnished apartments in {market.geoEn}</h1>
           <p className="mt-2 text-sm text-white/85">
             {a.totalCount} {a.totalCount === 1 ? "property" : "properties"}
             {a.hasDates ? ` · ${a.search.checkin} → ${a.search.checkout}` : ""}

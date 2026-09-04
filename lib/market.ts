@@ -5,7 +5,8 @@ export type MarketId = "mx" | "us";
 export interface Market {
   id: MarketId;
   label: string; // etiqueta corta del toggle (México / Houston)
-  geo: string; // rótulo geográfico específico para títulos y SEO/GEO
+  geo: string; // rótulo geográfico específico para títulos y SEO/GEO (español)
+  geoEn: string; // rótulo geográfico en inglés
   pais: Country;
   currency: Currency;
   zonas: string[]; // slugs de zona visibles en este mercado
@@ -13,8 +14,8 @@ export interface Market {
 
 // Nota: todo cotiza en USD en Beds24 → moneda USD en ambos mercados.
 export const MARKETS: Record<MarketId, Market> = {
-  mx: { id: "mx", label: "CDMX", geo: "Ciudad de México", pais: "MX", currency: "USD", zonas: ["polanco", "condesa"] },
-  us: { id: "us", label: "Houston", geo: "Houston", pais: "US", currency: "USD", zonas: ["houston"] },
+  mx: { id: "mx", label: "CDMX", geo: "Ciudad de México", geoEn: "Mexico City", pais: "MX", currency: "USD", zonas: ["polanco", "condesa"] },
+  us: { id: "us", label: "Houston", geo: "Houston", geoEn: "Houston", pais: "US", currency: "USD", zonas: ["houston"] },
 };
 
 export const DEFAULT_MARKET: MarketId = "mx";

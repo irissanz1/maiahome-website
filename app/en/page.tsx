@@ -66,7 +66,7 @@ export default async function HomeEn({ searchParams }: { searchParams: Promise<R
       <section className="mx-auto max-w-6xl px-5 pb-4">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <h2 className="font-serif text-3xl text-neutral-900">Featured in {market.geo}</h2>
+            <h2 className="font-serif text-3xl text-neutral-900">Featured in {market.geoEn}</h2>
             <p className="mt-1 text-sm text-neutral-500">A glimpse of our collection.</p>
           </div>
           <Link href={`/en/apartments?market=${market.id}`} className="rounded-full border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">View all</Link>
