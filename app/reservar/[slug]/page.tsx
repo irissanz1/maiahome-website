@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getBySlug, getProperties } from "@/lib/data";
 import { whatsappUrl, WHATSAPP_DISPLAY } from "@/lib/contact";
 import { img } from "@/lib/format";
+import TrackCheckout from "@/components/TrackCheckout";
 
 export const metadata: Metadata = {
   title: "Completa tu reserva",
@@ -79,6 +80,7 @@ export default async function Reservar({
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-8">
+      <TrackCheckout />
       <div className="flex items-center justify-between gap-4">
         <Link href={`/depto/${slug}`} className="inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-900">
           <span aria-hidden="true">←</span> Volver a la propiedad

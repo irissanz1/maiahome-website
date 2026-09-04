@@ -27,6 +27,31 @@ function PageViews() {
   return null;
 }
 
+// Eventos de conversión por interacción (delegación de clics en todo el sitio):
+// - WhatsApp (wa.me) → Contact
+// - Link de pago Stripe (buy.stripe.com) → InitiateCheckout
+function Interactions() {
+  useEffect(() => {
+    function onClick(e: MouseEvent) {
+      const el = e.target as HTMLElement | null;
+      const a = el && typeof el.closest === "function" ? el.closest("a") : null;
+      const href = a?.getAttribute("href") || "";
+      if (!href) return;
+      const w = window as any;
+      if (/wa\.me|api\.whatsapp\.com|whatsapp:/i.test(href)) {
+        if (typeof w.fbq === "function") w.fbq("track", "Contact");
+        if (typeof w.gtag === "function") w.gtag("event", "contact", { method: "whatsapp" });
+      } else if (/buy\.stripe\.com/i.test(href)) {
+        if (typeof w.fbq === "function") w.fbq("track", "InitiateCheckout");
+        if (typeof w.gtag === "function") w.gtag("event", "begin_checkout", { method: "stripe" });
+      }
+    }
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
+  return null;
+}
+
 export default function Analytics() {
   if (!GA && !PX) return null; // sin IDs configurados, no carga nada
   return (
@@ -47,6 +72,7 @@ export default function Analytics() {
       <Suspense fallback={null}>
         <PageViews />
       </Suspense>
+      <Interactions />
     </>
   );
 }
