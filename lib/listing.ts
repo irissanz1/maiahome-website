@@ -28,12 +28,12 @@ export const AMENITY_EN: Record<string, string> = {
 export const amenityLabel = (a: string, lang: "es" | "en") => (lang === "en" ? AMENITY_EN[a] ?? a : a);
 
 /**
- * Filtros avanzados (recámaras mín., camas mín., baños mín., amenidades).
+ * Filtros avanzados (recámaras mín., plazas en cama mín., baños mín., amenidades).
  * Amenidades = AND (el depto debe tener TODAS las seleccionadas).
  */
 export function advancedFilter(list: Property[], sp: SP): Property[] {
   const rec = str(sp.rec) ? Number(str(sp.rec)) : undefined;
-  const camas = str(sp.camas) ? Number(str(sp.camas)) : undefined;
+  const plazas = str(sp.plazas) ? Number(str(sp.plazas)) : undefined; // huéspedes en camas fijas (capacidadCamas)
   const ban = str(sp.ban) ? Number(str(sp.ban)) : undefined;
   const amen = (str(sp.amen) || "")
     .split(",")
@@ -45,7 +45,7 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
 
   let out = list;
   if (rec != null && !Number.isNaN(rec)) out = out.filter((p) => (p.recamaras ?? 0) >= rec);
-  if (camas != null && !Number.isNaN(camas)) out = out.filter((p) => (p.capacidadCamas ?? 0) >= camas);
+  if (plazas != null && !Number.isNaN(plazas)) out = out.filter((p) => (p.capacidadCamas ?? 0) >= plazas);
   if (ban != null && !Number.isNaN(ban)) out = out.filter((p) => (p.banos ?? 0) >= ban);
   if (m2 != null && !Number.isNaN(m2)) out = out.filter((p) => (p.m2 ?? 0) >= m2);
   if (precio) {
