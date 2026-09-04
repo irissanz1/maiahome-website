@@ -20,6 +20,7 @@ const PATHMAP: Array<[string, string]> = [
   ["/nosotros", "/en/about"],
   ["/formas-de-pago", "/en/payment-options"],
   ["/recorridos-departamentos", "/en/virtual-tours"],
+  ["/tours-mexico-city", "/en/mexico-city-tours"],
   ["/facturacion", "/en/invoicing"],
   ["/aviso-privacidad", "/en/privacy-notice"],
   ["/terminos-y-condiciones", "/en/terms-and-conditions"],

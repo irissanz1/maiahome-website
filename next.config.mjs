@@ -46,7 +46,6 @@ const nextConfig = {
       // aviso-privacidad, terminos-uso, terminos-y-condiciones, stay-agreement,
       // facturacion, blog, departamentos, recorridos-departamentos) NO necesitan
       // redirect: resuelven solas.
-      { source: "/tours-mexico-city", destination: "/recorridos-departamentos", permanent: true },
       { source: "/corporate-housing", destination: "/corporativo", permanent: true },
       { source: "/reserva-ahora", destination: "/departamentos", permanent: true },
       { source: "/descubre", destination: "/blog", permanent: true },

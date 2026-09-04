@@ -13,6 +13,7 @@ const COLS = [
       { p: "/condesa", es: "Condesa", en: "Condesa" },
       { p: "/houston", es: "Houston", en: "Houston" },
       { p: "/recorridos-departamentos", es: "Tours virtuales", en: "Virtual tours" },
+      { p: "/tours-mexico-city", es: "Tours y experiencias", en: "Tours & experiences" },
       { p: "/blog", es: "Guía de la ciudad", en: "City guide" },
     ],
   },
