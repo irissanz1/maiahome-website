@@ -58,6 +58,7 @@ export default function AdvancedFilters() {
     }`;
 
   const recOptions: [string, string][] = [["", t.any], ["1", "1+"], ["2", "2+"], ["3", "3+"], ["4", "4+"]];
+  const camasOptions: [string, string][] = [["", t.any], ["2", "2+"], ["3", "3+"], ["4", "4+"], ["6", "6+"], ["8", "8+"]];
   const plazasOptions: [string, string][] = [["", t.any], ["2", "2+"], ["4", "4+"], ["6", "6+"], ["8", "8+"], ["10", "10+"]];
   const banOptions: [string, string][] = [["", t.any], ["1", "1+"], ["2", "2+"], ["3", "3+"]];
   const precioOptions: [string, string][] = [["", t.any], ["0-100", "≤ $100"], ["100-150", "$100–150"], ["150-250", "$150–250"], ["250-", "≥ $250"]];
@@ -94,6 +95,14 @@ export default function AdvancedFilters() {
             <div className="flex flex-wrap gap-2">
               {recOptions.map(([v, label]) => (
                 <button key={v} className={pill(rec === v)} onClick={() => update({ rec: v || null })}>{label}</button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">{t.camas}</p>
+            <div className="flex flex-wrap gap-2">
+              {camasOptions.map(([v, label]) => (
+                <button key={v} className={pill(camas === v)} onClick={() => update({ camas: v || null })}>{label}</button>
               ))}
             </div>
           </div>

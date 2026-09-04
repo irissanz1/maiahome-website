@@ -34,6 +34,7 @@ export const amenityLabel = (a: string, lang: "es" | "en") => (lang === "en" ? A
 export function advancedFilter(list: Property[], sp: SP): Property[] {
   const rec = str(sp.rec) ? Number(str(sp.rec)) : undefined;
   const plazas = str(sp.plazas) ? Number(str(sp.plazas)) : undefined; // huéspedes en camas fijas (capacidadCamas)
+  const camas = str(sp.camas) ? Number(str(sp.camas)) : undefined; // número de camas (conteo literal)
   const ban = str(sp.ban) ? Number(str(sp.ban)) : undefined;
   const amen = (str(sp.amen) || "")
     .split(",")
@@ -46,6 +47,7 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
   let out = list;
   if (rec != null && !Number.isNaN(rec)) out = out.filter((p) => (p.recamaras ?? 0) >= rec);
   if (plazas != null && !Number.isNaN(plazas)) out = out.filter((p) => (p.capacidadCamas ?? 0) >= plazas);
+  if (camas != null && !Number.isNaN(camas)) out = out.filter((p) => (p.camas ?? 0) >= camas);
   if (ban != null && !Number.isNaN(ban)) out = out.filter((p) => (p.banos ?? 0) >= ban);
   if (m2 != null && !Number.isNaN(m2)) out = out.filter((p) => (p.m2 ?? 0) >= m2);
   if (precio) {

@@ -28,7 +28,8 @@ export interface Property {
   lng?: number;
   base44Slug?: string; // slug para el Checkout de book.maiahome.mx
   capacidad?: number; // total (camas + sofá cama) — usado para el filtro de huéspedes
-  capacidadCamas?: number; // huéspedes en camas fijas
+  capacidadCamas?: number; // huéspedes en camas fijas (plazas)
+  camas?: number; // número de camas (conteo literal de camas fijas) — de FAQs v50
   amenidades: string[]; // amenidades para filtros (Terraza, Alberca, Gimnasio, …)
   segmentos: Segment[];
   headline: { es: string; en: string };
