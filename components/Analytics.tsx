@@ -2,16 +2,23 @@
 
 import Script from "next/script";
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, Suspense } from "react";
+import { useEffect, useRef, Suspense } from "react";
 
 const GA = process.env.NEXT_PUBLIC_GA_ID;
 const PX = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
-// Envía page_view en cada cambio de ruta (SPA).
+// Envía page_view en cada cambio de ruta (SPA). La primera carga ya la reportan
+// los snippets base (gtag config / fbq PageView), así que la omitimos aquí para
+// no duplicar el PageView inicial.
 function PageViews() {
   const pathname = usePathname();
   const sp = useSearchParams();
+  const first = useRef(true);
   useEffect(() => {
+    if (first.current) {
+      first.current = false;
+      return;
+    }
     const w = window as any;
     const url = pathname + (sp.toString() ? `?${sp.toString()}` : "");
     if (typeof w.gtag === "function" && GA) w.gtag("event", "page_view", { page_path: url });
