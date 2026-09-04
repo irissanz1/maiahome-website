@@ -48,12 +48,14 @@ export default function PaymentOptions() {
         </p>
         <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <p className="font-semibold">⚠️ Verify it's our account</p>
-          <p className="mt-1">
-            We only receive transfers to this account: <strong>BBVA · CLABE ending in 70695 · account
-            ending in 7069</strong>, under the name <strong>Maia Luxury Apartments and Services Mexico
-            S.A. de C.V.</strong>
-          </p>
-          <p className="mt-1">
+          <p className="mt-1">We only receive transfers to this account:</p>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            <li><strong>Bank:</strong> BBVA</li>
+            <li><strong>CLABE:</strong> ending in 70695</li>
+            <li><strong>Account:</strong> ending in 7069</li>
+            <li><strong>Account holder:</strong> Maia Luxury Apartments and Services Mexico S.A. de C.V.</li>
+          </ul>
+          <p className="mt-2">
             If anyone gives you a different number or account holder, <strong>do not transfer</strong> and
             contact us to confirm.
           </p>

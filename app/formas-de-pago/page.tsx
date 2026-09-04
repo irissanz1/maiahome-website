@@ -53,12 +53,14 @@ export default function FormasDePago() {
         </p>
         <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <p className="font-semibold">⚠️ Verifica que sea nuestra cuenta</p>
-          <p className="mt-1">
-            Solo recibimos transferencias en esta cuenta: <strong>BBVA · CLABE terminada en 70695 · cuenta
-            terminada en 7069</strong>, a nombre de <strong>Maia Luxury Apartments and Services Mexico
-            S.A. de C.V.</strong>
-          </p>
-          <p className="mt-1">
+          <p className="mt-1">Solo recibimos transferencias en esta cuenta:</p>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            <li><strong>Banco:</strong> BBVA</li>
+            <li><strong>CLABE:</strong> terminada en 70695</li>
+            <li><strong>Cuenta:</strong> terminada en 7069</li>
+            <li><strong>Titular:</strong> Maia Luxury Apartments and Services Mexico S.A. de C.V.</li>
+          </ul>
+          <p className="mt-2">
             Si alguien te comparte un número o un titular distinto, <strong>no transfieras</strong> y
             escríbenos para confirmar.
           </p>
