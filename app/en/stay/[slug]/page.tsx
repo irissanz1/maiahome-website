@@ -11,7 +11,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img } from "@/lib/format";
+import { formatMoney, img, bedBreakdown } from "@/lib/format";
 import { amenityLabel } from "@/lib/listing";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -115,6 +115,12 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
                   {p.capacidad - p.capacidadCamas > 0 ? ` + ${p.capacidad - p.capacidadCamas} on sofa bed` : ""}
                 </span>
               )}
+            </p>
+          )}
+          {bedBreakdown(p, "en") && (
+            <p className="mt-2 flex flex-wrap items-center gap-x-2 text-sm text-neutral-600">
+              <span aria-hidden="true">🛌</span>
+              <span><b className="font-medium text-neutral-800">Beds:</b> {bedBreakdown(p, "en")}</span>
             </p>
           )}
           {p.headline.en && !p.descripcion.en.startsWith(p.headline.en.slice(0, 40)) && (

@@ -30,6 +30,11 @@ export interface Property {
   capacidad?: number; // total (camas + sofá cama) — usado para el filtro de huéspedes
   capacidadCamas?: number; // huéspedes en camas fijas (plazas)
   camas?: number; // número de camas (conteo literal de camas fijas) — de FAQs v50
+  camasKing?: number;
+  camasQueen?: number;
+  camasDobles?: number;
+  camasIndividuales?: number;
+  sofasCama?: number;
   amenidades: string[]; // amenidades para filtros (Terraza, Alberca, Gimnasio, …)
   segmentos: Segment[];
   headline: { es: string; en: string };
