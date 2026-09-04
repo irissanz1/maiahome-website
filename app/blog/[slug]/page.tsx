@@ -143,6 +143,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <Markdown text={bodyWithoutCover} />
       </div>
 
+      {/* Cross-link a tours y experiencias (GetYourGuide) */}
+      <div className="mt-8 flex flex-col items-start gap-3 rounded-2xl border border-neutral-200 bg-maia-yellow/10 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-neutral-700">
+          ¿Buscas qué hacer? Reserva <strong>tours y experiencias en la Ciudad de México</strong> — museos, gastronomía, Xochimilco y más.
+        </p>
+        <Link href="/tours-mexico-city" className="shrink-0 rounded-full border border-maia-strong px-4 py-2 text-sm font-semibold text-maia-strong transition hover:bg-maia-strong hover:text-white">
+          Ver experiencias →
+        </Link>
+      </div>
+
       {/* CTA con imagen de la zona */}
       <section className="relative mt-12 overflow-hidden rounded-3xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}

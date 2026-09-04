@@ -125,6 +125,16 @@ export default async function BlogPostEn({ params }: { params: Promise<{ slug: s
         <Markdown text={bodyWithoutCover} />
       </div>
 
+      {/* Cross-link to tours & experiences (GetYourGuide) */}
+      <div className="mt-8 flex flex-col items-start gap-3 rounded-2xl border border-neutral-200 bg-maia-yellow/10 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-neutral-700">
+          Looking for things to do? Book <strong>tours and experiences in Mexico City</strong> — museums, food, Xochimilco and more.
+        </p>
+        <Link href="/en/mexico-city-tours" className="shrink-0 rounded-full border border-maia-strong px-4 py-2 text-sm font-semibold text-maia-strong transition hover:bg-maia-strong hover:text-white">
+          See experiences →
+        </Link>
+      </div>
+
       {/* CTA with zone image */}
       <section className="relative mt-12 overflow-hidden rounded-3xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}
