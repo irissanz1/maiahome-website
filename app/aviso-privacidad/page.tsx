@@ -81,7 +81,7 @@ export default function AvisoPrivacidad() {
       <p>
         Para operar el sitio, las reservas y la comunicación contigo nos apoyamos en proveedores que
         actúan como encargados y tratan los datos únicamente por cuenta de MaiaHome y conforme a este
-        aviso, entre ellos: <strong>Beds24</strong> (motor de disponibilidad, reservas y cobro), el
+        aviso, entre ellos: nuestro <strong>motor de disponibilidad y reservas</strong>, el
         procesador de pagos correspondiente, <strong>Google</strong> (analítica),{" "}
         <strong>Meta/WhatsApp</strong> (contacto y medición) y nuestra plataforma de CRM y correo. No
         transferimos tus datos a terceros para sus propios fines sin tu consentimiento, salvo las
