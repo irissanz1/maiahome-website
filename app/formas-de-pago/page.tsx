@@ -48,9 +48,21 @@ export default function FormasDePago() {
       <section className="mt-6 rounded-2xl border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">2. Transferencia bancaria</h2>
         <p className="mt-1 text-sm text-neutral-600">
-          Por tu seguridad, compartimos los datos bancarios directamente por WhatsApp. Te enviamos la
-          cuenta y confirmamos tu reserva al recibir el comprobante.
+          Por tu seguridad, compartimos los datos bancarios completos directamente por WhatsApp. Te
+          enviamos la cuenta y confirmamos tu reserva al recibir el comprobante.
         </p>
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <p className="font-semibold">⚠️ Verifica que sea nuestra cuenta</p>
+          <p className="mt-1">
+            Solo recibimos transferencias en esta cuenta: <strong>BBVA · CLABE terminada en 70695 · cuenta
+            terminada en 7069</strong>, a nombre de <strong>Maia Luxury Apartments and Services Mexico
+            S.A. de C.V.</strong>
+          </p>
+          <p className="mt-1">
+            Si alguien te comparte un número o un titular distinto, <strong>no transfieras</strong> y
+            escríbenos para confirmar.
+          </p>
+        </div>
         <a
           href={whatsappUrl("Hola, quiero pagar por transferencia bancaria mi reserva en Maia Home. ¿Me comparten los datos?")}
           target="_blank"

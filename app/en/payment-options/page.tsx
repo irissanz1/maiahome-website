@@ -43,9 +43,21 @@ export default function PaymentOptions() {
       <section className="mt-6 rounded-2xl border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">2. Bank transfer</h2>
         <p className="mt-1 text-sm text-neutral-600">
-          For your security, we share the bank details directly via WhatsApp. We send the account and
-          confirm your booking once we receive your payment proof.
+          For your security, we share the full bank details directly via WhatsApp. We send the account
+          and confirm your booking once we receive your payment proof.
         </p>
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <p className="font-semibold">⚠️ Verify it's our account</p>
+          <p className="mt-1">
+            We only receive transfers to this account: <strong>BBVA · CLABE ending in 70695 · account
+            ending in 7069</strong>, under the name <strong>Maia Luxury Apartments and Services Mexico
+            S.A. de C.V.</strong>
+          </p>
+          <p className="mt-1">
+            If anyone gives you a different number or account holder, <strong>do not transfer</strong> and
+            contact us to confirm.
+          </p>
+        </div>
         <a
           href={whatsappUrl("Hi, I'd like to pay my Maia Home booking by bank transfer. Could you share the details?")}
           target="_blank"
