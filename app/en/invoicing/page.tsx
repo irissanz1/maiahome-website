@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const CASES = [
   { t: "I booked directly with Maia Home", d: "Fill in the form on this page with your tax details." },
-  { t: "I booked via Airbnb, Booking or Vrbo", d: "Those platforms issue their own receipt; message us if you need help." },
+  { t: "I booked via Airbnb, Booking or Vrbo", d: "We still issue your invoice: fill in the form with your tax details and attach your payment receipt." },
   { t: "I need an invoice for a company", d: "Enter the company's legal name and tax details in the form." },
 ];
 const HAVE_READY = ["Tax ID (RFC) and legal name", "Proof of tax status", "CFDI use", "Email to receive the invoice", "Image of your payment receipt"];

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const CASES = [
   { t: "Reservé directo con Maia Home", d: "Llena el formulario de esta página con tus datos fiscales." },
-  { t: "Reservé por Airbnb, Booking o Vrbo", d: "Esas plataformas emiten su propio comprobante; escríbenos si necesitas apoyo." },
+  { t: "Reservé por Airbnb, Booking o Vrbo", d: "También te facturamos nosotros: llena el formulario con tus datos fiscales y adjunta tu comprobante de pago." },
   { t: "Necesito factura para una empresa", d: "Indica la razón social y datos fiscales de la empresa en el formulario." },
 ];
 
@@ -118,8 +118,9 @@ export default function Facturacion() {
               Reservé por Airbnb, ¿me facturan ustedes?
             </summary>
             <p className="mt-2 text-sm text-neutral-600">
-              El comprobante de reservas hechas por plataformas lo emite la propia plataforma.
-              Contáctanos si necesitas apoyo con tu caso.
+              Sí. Aunque hayas reservado por Airbnb, Booking o Vrbo, nosotros emitimos tu factura
+              fiscal (CFDI). Llena el formulario con tus datos fiscales y adjunta el comprobante de tu
+              reserva o pago.
             </p>
           </details>
         </div>
