@@ -1,6 +1,56 @@
 import React from "react";
+import Link from "next/link";
 
-/** Renderizador ligero: ## / ### encabezados, - listas, párrafos separados por línea en blanco. */
+/** Procesa formato en línea: [texto](url), **negrita**, *itálica*. */
+function emphasis(text: string, kp: string): React.ReactNode[] {
+  const out: React.ReactNode[] = [];
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let i = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    if (m[1] !== undefined) out.push(<strong key={`${kp}-b${i}`}>{m[1]}</strong>);
+    else out.push(<em key={`${kp}-i${i}`}>{m[2]}</em>);
+    last = m.index + m[0].length;
+    i++;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
+function inline(text: string, kp: string): React.ReactNode[] {
+  const nodes: React.ReactNode[] = [];
+  const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let i = 0;
+  const linkCls = "font-medium text-maia-strong underline underline-offset-2 hover:text-maia-dark";
+  while ((m = linkRe.exec(text))) {
+    if (m.index > last) nodes.push(...emphasis(text.slice(last, m.index), `${kp}-t${i}`));
+    const label = m[1];
+    const href = m[2];
+    if (href.startsWith("/")) {
+      nodes.push(
+        <Link key={`${kp}-l${i}`} href={href} className={linkCls}>
+          {label}
+        </Link>
+      );
+    } else {
+      nodes.push(
+        <a key={`${kp}-a${i}`} href={href} target="_blank" rel="noopener noreferrer" className={linkCls}>
+          {label}
+        </a>
+      );
+    }
+    last = m.index + m[0].length;
+    i++;
+  }
+  if (last < text.length) nodes.push(...emphasis(text.slice(last), `${kp}-t${i}`));
+  return nodes;
+}
+
+/** Renderizador ligero: ## / ### encabezados, - listas, > citas, imágenes y párrafos; con enlaces/negritas/itálicas en línea. */
 export default function Markdown({ text }: { text: string }) {
   const lines = (text || "").split("\n");
   const blocks: React.ReactNode[] = [];
@@ -11,7 +61,7 @@ export default function Markdown({ text }: { text: string }) {
     if (para.length) {
       blocks.push(
         <p key={blocks.length} className="mt-4 leading-relaxed text-neutral-700">
-          {para.join(" ")}
+          {inline(para.join(" "), `p${blocks.length}`)}
         </p>
       );
       para = [];
@@ -22,7 +72,7 @@ export default function Markdown({ text }: { text: string }) {
       blocks.push(
         <ul key={blocks.length} className="mt-4 list-disc space-y-1.5 pl-5 text-neutral-700">
           {list.map((li, i) => (
-            <li key={i}>{li}</li>
+            <li key={i}>{inline(li, `li${blocks.length}-${i}`)}</li>
           ))}
         </ul>
       );
@@ -56,7 +106,7 @@ export default function Markdown({ text }: { text: string }) {
       flushList();
       blocks.push(
         <blockquote key={blocks.length} className="my-6 border-l-4 border-maia-strong pl-5 italic text-neutral-700">
-          {line.replace(/^(&gt;|>)\s/, "")}
+          {inline(line.replace(/^(&gt;|>)\s/, ""), `q${blocks.length}`)}
         </blockquote>
       );
       continue;
@@ -66,7 +116,7 @@ export default function Markdown({ text }: { text: string }) {
       flushList();
       blocks.push(
         <h2 key={blocks.length} className="mt-8 font-serif text-2xl text-neutral-900">
-          {line.slice(3)}
+          {inline(line.slice(3), `h2${blocks.length}`)}
         </h2>
       );
       continue;
@@ -76,7 +126,7 @@ export default function Markdown({ text }: { text: string }) {
       flushList();
       blocks.push(
         <h3 key={blocks.length} className="mt-6 font-serif text-xl text-neutral-900">
-          {line.slice(4)}
+          {inline(line.slice(4), `h3${blocks.length}`)}
         </h3>
       );
       continue;

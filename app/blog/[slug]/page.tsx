@@ -26,6 +26,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// Fecha legible en español (evita desfase de zona usando UTC).
+function formatFecha(iso?: string): string | null {
+  if (!iso) return null;
+  const d = new Date(`${iso}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return null;
+  return new Intl.DateTimeFormat("es-MX", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(d);
+}
+
+// CTA/enlace consciente de la zona del post.
+function zoneCta(zona?: string | null): { href: string; label: string } {
+  const z = (zona || "").toLowerCase();
+  if (z.includes("polanco")) return { href: "/polanco", label: "departamentos en Polanco" };
+  if (z.includes("condesa")) return { href: "/condesa", label: "departamentos en la Condesa" };
+  if (z.includes("houston")) return { href: "/houston", label: "departamentos en Houston" };
+  return { href: "/departamentos", label: "departamentos Maia Home" };
+}
+
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const p = await getBlogPost(slug);
@@ -42,8 +59,37 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     );
   }
 
+  const fecha = formatFecha(p.fecha);
+  const cta = zoneCta(p.zona);
+
+  // Posts relacionados: misma categoría, excluye el actual (máx. 3).
+  const all = await getBlogPosts();
+  const related = all
+    .filter((r) => r.slug !== p.slug && p.categoria && r.categoria === p.categoria)
+    .slice(0, 3);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: p.title,
+    description: p.excerpt || undefined,
+    image: p.coverUrl ? [p.coverUrl] : undefined,
+    datePublished: p.fecha || undefined,
+    dateModified: p.fecha || undefined,
+    inLanguage: "es-MX",
+    author: { "@type": "Organization", name: "Maia Home", url: "https://maiahome.mx" },
+    publisher: {
+      "@type": "Organization",
+      name: "Maia Home",
+      logo: { "@type": "ImageObject", url: "https://maiahome.mx/maia-logo.png" },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://maiahome.mx/blog/${p.slug}` },
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-5 py-10 md:py-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
       <nav className="mb-6 text-sm text-neutral-500">
         <Link href="/blog" className="hover:text-neutral-900">Guía de la ciudad</Link>
         <span className="mx-2">/</span>
@@ -62,6 +108,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <h1 className="mt-3 font-serif text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
         {p.title}
       </h1>
+      {fecha && <p className="mt-3 text-sm text-neutral-400">{fecha}</p>}
       {p.excerpt && <p className="mt-4 text-lg leading-relaxed text-neutral-600">{p.excerpt}</p>}
 
       {p.coverUrl && (
@@ -79,10 +126,32 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <div className="mt-12 rounded-2xl bg-maia-dark px-6 py-8 text-center text-white">
         <h2 className="font-serif text-2xl">¿Listo para vivir la ciudad?</h2>
         <p className="mt-2 text-sm text-neutral-300">Hospédate en un departamento Maia Home en la mejor zona.</p>
-        <Link href="/departamentos" className="mt-5 inline-block rounded-full bg-maia-yellow px-6 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong">
-          Ver departamentos
+        <Link href={cta.href} className="mt-5 inline-block rounded-full bg-maia-yellow px-6 py-3 text-sm font-semibold text-black transition hover:bg-maia-strong">
+          Ver {cta.label}
         </Link>
       </div>
+
+      {/* Posts relacionados */}
+      {related.length > 0 && (
+        <section className="mt-12">
+          <h2 className="font-serif text-2xl text-neutral-900">Sigue leyendo</h2>
+          <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {related.map((r) => (
+              <Link key={r.slug} href={`/blog/${r.slug}`} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:shadow-lg">
+                <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-maia-yellow/40 to-neutral-200">
+                  {r.coverUrl && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={r.coverUrl} alt={r.title} className="h-full w-full object-cover transition group-hover:scale-105" loading="lazy" />
+                  )}
+                </div>
+                <div className="p-4">
+                  <h3 className="font-serif text-base leading-snug text-neutral-900">{r.title}</h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-8">
         <Link href="/blog" className="text-sm font-semibold text-maia-strong">← Volver a la guía</Link>
