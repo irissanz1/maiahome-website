@@ -35,6 +35,7 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
   const rec = str(sp.rec) ? Number(str(sp.rec)) : undefined;
   const plazas = str(sp.plazas) ? Number(str(sp.plazas)) : undefined; // huéspedes en camas fijas (capacidadCamas)
   const camas = str(sp.camas) ? Number(str(sp.camas)) : undefined; // número de camas (conteo literal)
+  const indiv = str(sp.indiv) ? Number(str(sp.indiv)) : undefined; // número de camas individuales
   const ban = str(sp.ban) ? Number(str(sp.ban)) : undefined;
   const amen = (str(sp.amen) || "")
     .split(",")
@@ -48,6 +49,7 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
   if (rec != null && !Number.isNaN(rec)) out = out.filter((p) => (p.recamaras ?? 0) >= rec);
   if (plazas != null && !Number.isNaN(plazas)) out = out.filter((p) => (p.capacidadCamas ?? 0) >= plazas);
   if (camas != null && !Number.isNaN(camas)) out = out.filter((p) => (p.camas ?? 0) >= camas);
+  if (indiv != null && !Number.isNaN(indiv)) out = out.filter((p) => (p.camasIndividuales ?? 0) >= indiv);
   if (ban != null && !Number.isNaN(ban)) out = out.filter((p) => (p.banos ?? 0) >= ban);
   if (m2 != null && !Number.isNaN(m2)) out = out.filter((p) => (p.m2 ?? 0) >= m2);
   if (precio) {
