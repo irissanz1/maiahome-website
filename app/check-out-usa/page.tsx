@@ -14,7 +14,7 @@ const PUNTOS = [
   ["Cierra bien todas las ventanas", "Por seguridad y para evitar que entre agua."],
   ["Saca la basura a los botes de afuera", "Antes de salir, deja las bolsas de basura en los botes que están afuera de la casa."],
   ["No es necesario limpiar", "Pero te agradeceremos que dejes el espacio ordenado."],
-  ["Apaga todos los equipos", "Especialmente el aire acondicionado / la calefacción y las luces."],
+  ["Apaga las luces", "Deja apagadas las luces al salir. El aire acondicionado déjalo encendido (por la humedad, no lo apagues)."],
   ["Cierra bien la puerta principal", "Asegúrate de que quede bien cerrada al salir."],
 ];
 

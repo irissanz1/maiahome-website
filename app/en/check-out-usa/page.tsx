@@ -14,7 +14,7 @@ const POINTS = [
   ["Close all windows properly", "For security and to keep rain out."],
   ["Take the trash to the bins outside", "Before you leave, place the trash bags in the bins located outside the house."],
   ["No need to clean", "But we'll appreciate it if you leave the space tidy."],
-  ["Turn off all appliances", "Especially the air conditioning / heating and the lights."],
+  ["Turn off the lights", "Switch off the lights when you leave. Please leave the air conditioning on (due to the humidity, don't turn it off)."],
   ["Close the front door firmly", "Make sure it's securely closed when you leave."],
 ];
 
