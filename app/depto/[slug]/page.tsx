@@ -116,7 +116,7 @@ export default async function StayDetail({
           </p>
           {p.capacidad != null && (
             <p className="mt-3 inline-flex flex-wrap items-center gap-x-2 rounded-lg bg-neutral-50 px-3 py-2 text-sm text-neutral-700">
-              <span aria-hidden="true">🛏️</span>
+              <span aria-hidden="true">👥</span>
               <span>Hasta <b className="text-neutral-900">{p.capacidad} huéspedes</b></span>
               {p.capacidadCamas != null && (
                 <span className="text-neutral-500">

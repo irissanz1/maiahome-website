@@ -107,7 +107,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
           </p>
           {p.capacidad != null && (
             <p className="mt-3 inline-flex flex-wrap items-center gap-x-2 rounded-lg bg-neutral-50 px-3 py-2 text-sm text-neutral-700">
-              <span aria-hidden="true">🛏️</span>
+              <span aria-hidden="true">👥</span>
               <span>Up to <b className="text-neutral-900">{p.capacidad} guests</b></span>
               {p.capacidadCamas != null && (
                 <span className="text-neutral-500">
