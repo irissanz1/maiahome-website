@@ -84,6 +84,11 @@ export default function CheckInUsa() {
           propiedad y la zona. Así protegemos a todos nuestros huéspedes y la casa.
         </p>
         <p className="mt-2 text-sm text-neutral-700">
+          Además, es un <strong>requisito normativo</strong> que los anfitriones en Houston debemos
+          cumplir <strong>a partir de enero de 2026</strong>, como parte de las medidas para{" "}
+          <strong>combatir la trata de personas</strong>.
+        </p>
+        <p className="mt-2 text-sm text-neutral-700">
           Tus datos se tratan de forma <strong>confidencial</strong> y se usan <strong>solo para tu
           estancia</strong> (consulta nuestro{" "}
           <Link href="/aviso-privacidad" className="font-semibold text-maia-strong underline">

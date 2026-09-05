@@ -83,6 +83,11 @@ export default function CheckInUsa() {
           security rules. This is how we protect all our guests and the home.
         </p>
         <p className="mt-2 text-sm text-neutral-700">
+          It is also a <strong>regulatory requirement</strong> that hosts in Houston must comply with{" "}
+          <strong>starting January 2026</strong>, as part of the measures to{" "}
+          <strong>combat human trafficking</strong>.
+        </p>
+        <p className="mt-2 text-sm text-neutral-700">
           Your information is handled <strong>confidentially</strong> and used <strong>only for your
           stay</strong> (see our{" "}
           <Link href="/en/privacy-notice" className="font-semibold text-maia-strong underline">
