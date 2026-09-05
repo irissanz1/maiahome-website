@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Proceso de check-out",
   description:
     "Guía de salida de Maia Home: horario de check-out y qué revisar antes de irte (ventanas, equipos, puerta principal).",
-  alternates: { canonical: "/check-out" },
+  alternates: { canonical: "/check-out", languages: { es: "/check-out", en: "/en/check-out" } },
   robots: { index: false, follow: false }, // página operativa post-reserva (no indexar)
 };
 
