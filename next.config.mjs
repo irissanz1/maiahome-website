@@ -33,6 +33,16 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
+      // Dominio técnico de Vercel → dominio canónico. Evita que maia-home.vercel.app
+      // sea una superficie separada (contenido duplicado + issues de "Tag coverage" en
+      // el Google tag). Solo matchea el alias de producción exacto; los previews usan
+      // hosts con hash (maia-home-<hash>.vercel.app) y NO se ven afectados.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "maia-home.vercel.app" }],
+        destination: "https://maiahome.mx/:path*",
+        permanent: true,
+      },
       // Rutas viejas de base44 → nuevas.
       // OJO: Vercel matchea sin distinguir mayúsculas, así que NO se agregan
       // redirects cuya única diferencia sea el case (p.ej. /Nosotros→/nosotros,
