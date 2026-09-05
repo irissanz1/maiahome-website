@@ -76,6 +76,17 @@ export default function CheckIn() {
         ))}
       </section>
 
+      {/* Política de mascotas */}
+      <section className="mt-10 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
+        <p className="text-sm font-semibold text-neutral-900">🐾 Política de mascotas</p>
+        <p className="mt-1 text-sm text-neutral-700">
+          Somos pet friendly, pero toda mascota debe <strong>declararse y aprobarse antes</strong> de tu
+          estancia. Aplica una <strong>tarifa de mascota de $50 USD</strong>. Si se hospeda una mascota{" "}
+          <strong>no declarada</strong>, se cobra un <strong>cargo adicional de limpieza de $90 USD</strong>{" "}
+          (el acceso cuenta con cámara de seguridad). Escríbenos y con gusto la registramos.
+        </p>
+      </section>
+
       {/* Formulario de check-in embebido */}
       <section id="formulario" className="mt-12 scroll-mt-24">
         <div className="flex flex-wrap items-end justify-between gap-2">

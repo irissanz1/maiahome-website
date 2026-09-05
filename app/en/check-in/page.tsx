@@ -74,6 +74,17 @@ export default function CheckIn() {
         ))}
       </section>
 
+      {/* Pet policy */}
+      <section className="mt-10 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
+        <p className="text-sm font-semibold text-neutral-900">🐾 Pet policy</p>
+        <p className="mt-1 text-sm text-neutral-700">
+          We're pet friendly, but every pet must be <strong>declared and approved before</strong> your
+          stay. A <strong>pet fee of $50 USD</strong> applies. An <strong>undeclared pet</strong> results
+          in an <strong>additional cleaning charge of $90 USD</strong> (the entrance has a security
+          camera). Message us and we'll gladly add it to your booking.
+        </p>
+      </section>
+
       {/* Formulario de check-in embebido */}
       <section id="form" className="mt-12 scroll-mt-24">
         <div className="flex flex-wrap items-end justify-between gap-2">
