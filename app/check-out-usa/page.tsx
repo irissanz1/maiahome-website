@@ -11,9 +11,10 @@ export const metadata: Metadata = {
 };
 
 const PUNTOS = [
+  ["Deja los platos en el lavavajillas", "Colócalos dentro y ponlo a andar antes de salir."],
+  ["Tira la comida y saca la basura", "Desecha lo perecedero del refri y la cocina, y deja las bolsas en los botes de afuera."],
+  ["Junta las toallas usadas", "Déjalas juntas en el baño."],
   ["Cierra bien todas las ventanas", "Por seguridad y para evitar que entre agua."],
-  ["Saca la basura a los botes de afuera", "Antes de salir, deja las bolsas de basura en los botes que están afuera de la casa."],
-  ["No es necesario limpiar", "Pero te agradeceremos que dejes el espacio ordenado."],
   ["Apaga las luces", "Deja apagadas las luces al salir. El aire acondicionado déjalo encendido (por la humedad, no lo apagues)."],
   ["Cierra bien la puerta principal", "Asegúrate de que quede bien cerrada al salir."],
 ];
@@ -43,6 +44,10 @@ export default function CheckOutUsa() {
 
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-neutral-900">Antes de salir, por favor revisa:</h2>
+        <p className="mt-2 max-w-2xl text-sm text-neutral-600">
+          No esperamos una limpieza profunda —de eso se encarga nuestro equipo—, solo que dejes la casa
+          en orden con estos pasos.
+        </p>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {PUNTOS.map(([t, d]) => (
             <div key={t} className="rounded-2xl border border-neutral-200 border-t-4 border-t-maia-yellow p-5">
@@ -51,6 +56,10 @@ export default function CheckOutUsa() {
             </div>
           ))}
         </div>
+        <p className="mt-4 rounded-xl bg-neutral-50 p-4 text-sm text-neutral-600">
+          La tarifa de limpieza cubre la limpieza estándar. El <strong>desorden o los daños excesivos</strong> pueden
+          generar un cargo adicional.
+        </p>
       </section>
 
       <div className="mt-10 rounded-2xl bg-[#FBF7EC] p-6 text-center">

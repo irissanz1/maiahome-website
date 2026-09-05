@@ -11,9 +11,10 @@ export const metadata: Metadata = {
 };
 
 const POINTS = [
+  ["Load the dishwasher", "Place the dishes inside and start it before you leave."],
+  ["Trash and food", "Throw away perishable food from the fridge and kitchen, and leave the bags in the bins outside."],
+  ["Gather used towels", "Leave them together in the bathroom."],
   ["Close all windows properly", "For security and to keep rain out."],
-  ["Take the trash to the bins outside", "Before you leave, place the trash bags in the bins located outside the house."],
-  ["No need to clean", "But we'll appreciate it if you leave the space tidy."],
   ["Turn off the lights", "Switch off the lights when you leave. Please leave the air conditioning on (due to the humidity, don't turn it off)."],
   ["Close the front door firmly", "Make sure it's securely closed when you leave."],
 ];
@@ -42,6 +43,10 @@ export default function CheckOutUsa() {
 
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-neutral-900">Before you leave, please check:</h2>
+        <p className="mt-2 max-w-2xl text-sm text-neutral-600">
+          We don't expect a deep clean —our team takes care of that— just that you leave the house tidy
+          with these steps.
+        </p>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {POINTS.map(([t, d]) => (
             <div key={t} className="rounded-2xl border border-neutral-200 border-t-4 border-t-maia-yellow p-5">
@@ -50,6 +55,10 @@ export default function CheckOutUsa() {
             </div>
           ))}
         </div>
+        <p className="mt-4 rounded-xl bg-neutral-50 p-4 text-sm text-neutral-600">
+          The cleaning fee covers standard cleaning. <strong>Excessive mess or damage</strong> may incur an
+          additional charge.
+        </p>
       </section>
 
       <div className="mt-10 rounded-2xl bg-[#FBF7EC] p-6 text-center">
