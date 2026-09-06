@@ -98,6 +98,18 @@ export default function CheckInUsa() {
         </p>
       </section>
 
+      {/* Ocupación y visitas */}
+      <section className="mt-6 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
+        <p className="text-sm font-semibold text-neutral-900">🚫 Ocupación y visitas</p>
+        <p className="mt-1 text-sm text-neutral-700">
+          En la casa solo pueden estar las <strong>personas registradas</strong> en tu reserva; el número
+          reservado es el <strong>máximo permitido</strong>. No se permiten visitas adicionales, ni{" "}
+          <strong>fiestas o eventos</strong>. El incumplimiento puede <strong>terminar la estancia sin
+          reembolso</strong> y generar cargos por limpieza o daños. El acceso cuenta con cámara de
+          seguridad.
+        </p>
+      </section>
+
       {/* Política de mascotas */}
       <section className="mt-6 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
         <p className="text-sm font-semibold text-neutral-900">🐾 Política de mascotas</p>

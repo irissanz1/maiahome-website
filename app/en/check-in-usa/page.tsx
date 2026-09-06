@@ -97,6 +97,17 @@ export default function CheckInUsa() {
         </p>
       </section>
 
+      {/* Occupancy and visitors */}
+      <section className="mt-6 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
+        <p className="text-sm font-semibold text-neutral-900">🚫 Occupancy and visitors</p>
+        <p className="mt-1 text-sm text-neutral-700">
+          Only the <strong>guests registered</strong> in your booking may be at the house; the number
+          booked is the <strong>maximum allowed</strong>. No additional visitors, <strong>parties or
+          events</strong> are permitted. Violations may <strong>end the stay without a refund</strong> and
+          result in cleaning or damage charges. The entrance has a security camera.
+        </p>
+      </section>
+
       {/* Pet policy */}
       <section className="mt-6 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-5">
         <p className="text-sm font-semibold text-neutral-900">🐾 Pet policy</p>
