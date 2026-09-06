@@ -24,6 +24,9 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
     next: es ? "Siguiente" : "Next",
   };
   const altFor = (k: number) => (k === 0 ? alt : `${alt} — ${photoWord} ${k + 1}`);
+  // Aspect ratio real (del URL de Sanity, p.ej. -1200x900.jpg) para reservar el alto
+  // antes de que carguen las imágenes lazy y que el scroll-a-la-foto sea preciso.
+  const ar = (u: string) => { const m = u.match(/-(\d+)x(\d+)\./); return m ? `${m[1]}/${m[2]}` : "3/2"; };
   const [open, setOpen] = useState(false);
   const [grid, setGrid] = useState(false);
   const [gridTarget, setGridTarget] = useState(0);
@@ -120,10 +123,11 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
                 key={k}
                 id={`gtour-${k}`}
                 onClick={() => openAt(k)}
-                className="scroll-mt-16 overflow-hidden rounded-xl bg-neutral-100"
+                style={{ aspectRatio: ar(u) }}
+                className="scroll-mt-16 block w-full overflow-hidden rounded-xl bg-neutral-100"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img(u, 1400)!} alt={altFor(k)} className="h-auto w-full object-cover" loading="lazy" />
+                <img src={img(u, 1400)!} alt={altFor(k)} className="h-full w-full object-cover" loading="lazy" />
               </button>
             ))}
           </div>
