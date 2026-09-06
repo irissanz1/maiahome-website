@@ -4,7 +4,7 @@ import OwnerLeadForm from "@/components/OwnerLeadForm";
 import { whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  ...ogMeta("Manage your apartment", "Rentals handled by Maia Home"), "en_US",
+  ...ogMeta("Manage your apartment", "Rentals handled by Maia Home", "en_US"),
   title: "Apartment management in Mexico City",
   description:
     "We manage your furnished apartment for short and mid-term rentals in Mexico City with hotel standards: multi-platform, dynamic pricing, cleaning, maintenance and transparent reporting. Work less, earn more.",

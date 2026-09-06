@@ -12,7 +12,7 @@ import { resolveMarket } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
 
 export const metadata: Metadata = {
-  ...ogMeta("Furnished apartments in Mexico City & Houston", "Book direct, no middlemen"), "en_US",
+  ...ogMeta("Furnished apartments in Mexico City & Houston", "Book direct, no middlemen", "en_US"),
   title: "Furnished apartments in Mexico City & Houston",
   description: "Premium furnished apartments in Polanco, Condesa (Mexico City) and Houston. Book directly with Maia Home: best rate and personal service.",
   alternates: { canonical: "/en", languages: { es: "/", en: "/en" } },

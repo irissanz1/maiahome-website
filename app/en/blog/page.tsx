@@ -5,7 +5,7 @@ import { getBlogPostsEn } from "@/lib/data";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  ...ogMeta("City guide", "What to do in Mexico City"), "en_US",
+  ...ogMeta("City guide", "What to do in Mexico City", "en_US"),
   title: "City guide",
   description:
     "Maia Home's guide to living Mexico City: neighborhoods, museums, markets, restaurants and the best of Polanco and Condesa.",

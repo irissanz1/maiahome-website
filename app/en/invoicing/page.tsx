@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
-  ...ogMeta("Invoicing", "Request your invoice (CFDI)"), "en_US",
+  ...ogMeta("Invoicing", "Request your invoice (CFDI)", "en_US"),
   title: "Invoicing",
   description:
     "Request the tax invoice (CFDI) for your stay with Maia Home. Fill in the form with your tax details and receive it by email.",
