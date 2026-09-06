@@ -26,12 +26,21 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
   const altFor = (k: number) => (k === 0 ? alt : `${alt} — ${photoWord} ${k + 1}`);
   const [open, setOpen] = useState(false);
   const [grid, setGrid] = useState(false);
+  const [gridTarget, setGridTarget] = useState(0);
   const [i, setI] = useState(0);
   const touchX = useRef<number | null>(null);
 
   const n = images.length;
   const go = useCallback((d: number) => setI((prev) => (prev + d + n) % n), [n]);
   const openAt = (idx: number) => { setI(idx); setOpen(true); };
+  const openGrid = (idx = 0) => { setGridTarget(idx); setGrid(true); };
+
+  // Al abrir el photo tour, posiciona en la foto que se tocó en el mosaico.
+  useEffect(() => {
+    if (!grid) return;
+    const el = document.getElementById(`gtour-${gridTarget}`);
+    if (el) el.scrollIntoView({ block: "start" });
+  }, [grid, gridTarget]);
 
   useEffect(() => {
     if (!open && !grid) return;
@@ -54,7 +63,7 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
       {/* Vista previa estilo mosaico (hero + 2x2) */}
       <div className="relative">
         <div className="grid grid-cols-1 gap-2 overflow-hidden rounded-2xl md:h-[440px] md:grid-cols-4 md:grid-rows-2">
-          <button onClick={() => openAt(0)} className="group relative block overflow-hidden md:col-span-2 md:row-span-2">
+          <button onClick={() => openGrid(0)} className="group relative block overflow-hidden md:col-span-2 md:row-span-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={hero!} alt={altFor(0)} className="h-72 w-full object-cover transition group-hover:brightness-95 md:h-full" />
           </button>
@@ -63,7 +72,7 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
             return (
               <button
                 key={k}
-                onClick={() => (isLast ? setGrid(true) : openAt(k + 1))}
+                onClick={() => openGrid(k + 1)}
                 className="group relative hidden overflow-hidden md:block"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -83,7 +92,7 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
         {/* Botón "Ver todas las fotos" (estilo Airbnb) */}
         {n > 1 && (
           <button
-            onClick={() => setGrid(true)}
+            onClick={() => openGrid(0)}
             className="absolute bottom-3 right-3 inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white/95 px-4 py-2 text-sm font-semibold text-neutral-800 shadow-sm transition hover:bg-white"
           >
             <GridIcon className="h-4 w-4" /> {T.showAll}
@@ -109,8 +118,9 @@ export default function Gallery({ images, alt, photoWord }: { images: string[]; 
             {images.map((u, k) => (
               <button
                 key={k}
+                id={`gtour-${k}`}
                 onClick={() => openAt(k)}
-                className="overflow-hidden rounded-xl bg-neutral-100"
+                className="scroll-mt-16 overflow-hidden rounded-xl bg-neutral-100"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={img(u, 1400)!} alt={altFor(k)} className="h-auto w-full object-cover" loading="lazy" />
