@@ -34,7 +34,7 @@ export function imageAlt(
   lang: "es" | "en",
   idx = 0
 ): string {
-  const city = p.pais === "MX" ? "Ciudad de México" : "Houston";
+  const city = p.pais === "MX" ? (lang === "en" ? "Mexico City" : "Ciudad de México") : "Houston";
   const loc = p.zonaNombre && p.zonaNombre !== city ? `${p.zonaNombre}, ${city}` : city;
   const base =
     lang === "en"
