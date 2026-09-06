@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
+  ...ogMeta("Facturación", "Solicita tu factura (CFDI)"),
   title: "Facturación",
   description:
     "Solicita tu factura fiscal (CFDI) de tu estancia con Maia Home. Llena el formulario con tus datos fiscales y recíbela por correo.",

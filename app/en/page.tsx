@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import HomeHero from "@/components/HomeHero";
@@ -11,6 +12,7 @@ import { resolveMarket } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
 
 export const metadata: Metadata = {
+  ...ogMeta("Furnished apartments in Mexico City & Houston", "Book direct, no middlemen"),
   title: "Furnished apartments in Mexico City & Houston",
   description: "Premium furnished apartments in Polanco, Condesa (Mexico City) and Houston. Book directly with Maia Home: best rate and personal service.",
   alternates: { canonical: "/en", languages: { es: "/", en: "/en" } },

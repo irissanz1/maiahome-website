@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import TourGallery, { type Tour } from "@/components/TourGallery";
 import { getProperties } from "@/lib/data";
 import { img } from "@/lib/format";
 
 export const metadata: Metadata = {
+  ...ogMeta("Tours virtuales", "Recorre los departamentos en 3D"),
   title: "Tours Virtuales",
   description:
     "Recorridos virtuales 3D de los departamentos amueblados de Maia Home en CDMX. Conoce cada espacio antes de reservar.",

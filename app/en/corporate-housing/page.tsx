@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
@@ -7,6 +8,7 @@ import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Corporate housing", "Stays for teams and executives"),
   title: "Corporate housing",
   description:
     "Corporate housing in Mexico City and Houston for relocations, projects and business travel: one point of contact, invoicing and company agreements.",

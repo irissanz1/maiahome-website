@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import GygWidget from "@/components/GygWidget";
 
 export const metadata: Metadata = {
+  ...ogMeta("Tours & activities in Mexico City", "Experiences for your stay"),
   title: "Tours & activities in Mexico City",
   description:
     "Discover and book the best tours, experiences and activities in Mexico City. Curated by Maia Home so you make the most of your stay.",

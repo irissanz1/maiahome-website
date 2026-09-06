@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 
 export const metadata: Metadata = {
+  ...ogMeta("Monthly stays", "Furnished monthly rentals"),
   title: "Monthly stays",
   description:
     "Furnished apartments by the month in Mexico City and Houston: preferential rates, all-inclusive and no complicated contracts. Ideal for individuals and families.",

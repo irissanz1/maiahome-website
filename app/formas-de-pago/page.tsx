@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import { whatsappUrl, WHATSAPP_DISPLAY, SUPPORT_EMAIL } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Formas de pago", "Reserva con confianza"),
   title: "Formas de pago",
   description:
     "Opciones de pago en Maia Home: liga de pago con tarjeta (Visa, Mastercard, Amex), transferencia bancaria y pago en línea. Reserva directo con confianza.",

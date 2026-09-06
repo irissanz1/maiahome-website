@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import GygWidget from "@/components/GygWidget";
 
 export const metadata: Metadata = {
+  ...ogMeta("Tours y actividades en CDMX", "Experiencias para tu estancia"),
   title: "Tours y actividades en CDMX",
   description:
     "Descubre y reserva los mejores tours, experiencias y actividades en la Ciudad de México. Curados por Maia Home para que aproveches al máximo tu estancia.",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import { Suspense } from "react";
 import SearchStrip from "@/components/SearchStrip";
 import AvailabilityChips from "@/components/AvailabilityChips";
@@ -26,6 +27,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const barrios = market.zonas.map((z) => ZONAS[z]?.nombre).filter(Boolean).join(", ");
   const zonaHint = !zona && barrios ? ` (${barrios})` : "";
   return {
+    ...ogMeta(`${what} en ${where}`, "Reserva directo, sin intermediarios"),
     title: `${what} en ${where}${zonaHint}`,
     description: `${what} premium en ${where}${zonaHint}. Reserva directo con Maia Home: mejor tarifa, sin intermediarios ni comisiones.`,
     alternates: { canonical: "/departamentos", languages: { es: "/departamentos", en: "/en/apartments" } },

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 
 export const metadata: Metadata = {
+  ...ogMeta("Estancias mensuales", "Renta amueblada por mes"),
   title: "Estancias mensuales",
   description:
     "Departamentos amueblados por mes en CDMX y Houston: tarifa preferencial, todo incluido y sin contratos complicados. Ideal para personas y familias.",

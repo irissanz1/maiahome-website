@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import { getBlogPostsEn } from "@/lib/data";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/blog";
 
 export const metadata: Metadata = {
+  ...ogMeta("City guide", "What to do in Mexico City"),
   title: "City guide",
   description:
     "Maia Home's guide to living Mexico City: neighborhoods, museums, markets, restaurants and the best of Polanco and Condesa.",

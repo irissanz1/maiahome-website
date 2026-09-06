@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import OwnerLeadForm from "@/components/OwnerLeadForm";
 import { whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Administra tu departamento", "Rentas gestionadas por Maia Home"),
   title: "Administración de departamentos en CDMX",
   description:
     "Administramos tu departamento amueblado para rentas de corta y mediana estancia en CDMX con estándar hotelero: multiplataforma, pricing dinámico, limpieza, mantenimiento y reportes transparentes. Trabaja menos, gana más.",

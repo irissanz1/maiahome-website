@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/data";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/blog";
 
 export const metadata: Metadata = {
+  ...ogMeta("Guía de la ciudad", "Qué hacer en CDMX"),
   title: "Guía de la ciudad",
   description:
     "Guía de Maia Home para vivir la Ciudad de México: barrios, museos, mercados, restaurantes y lo mejor de Polanco y la Condesa.",

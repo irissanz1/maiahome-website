@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import { whatsappUrl, WHATSAPP_DISPLAY, SUPPORT_EMAIL } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Payment options", "Book with confidence"),
   title: "Payment options",
   description:
     "Payment options at Maia Home: card payment link (Visa, Mastercard, Amex), bank transfer and online card payment. Book directly with confidence.",

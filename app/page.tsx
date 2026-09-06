@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import HomeHero from "@/components/HomeHero";
@@ -11,6 +12,7 @@ import { resolveMarket } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
 
 export const metadata: Metadata = {
+  ...ogMeta("Departamentos amueblados en CDMX y Houston", "Reserva directo, sin intermediarios"),
   alternates: { canonical: "/", languages: { es: "/", en: "/en" } },
 };
 

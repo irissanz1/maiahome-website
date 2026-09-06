@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import { WHATSAPP_DISPLAY, SUPPORT_EMAIL, whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Nosotros", "Quiénes somos"),
   title: "Nosotros",
   description:
     "Hospitalidad con propósito en el corazón de la CDMX. Maia Home: departamentos curados, anfitriones reales y un compromiso permanente con la comunidad.",

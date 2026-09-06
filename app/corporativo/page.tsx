@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
@@ -7,6 +8,7 @@ import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
+  ...ogMeta("Vivienda corporativa", "Estancias para equipos y ejecutivos"),
   title: "Vivienda corporativa",
   description:
     "Alojamiento corporativo en CDMX y Houston para relocations, proyectos y viajes de negocio: un solo contacto, facturación y convenios para empresas.",
