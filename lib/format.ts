@@ -27,6 +27,23 @@ export function img(url: string | undefined | null, w = 1200): string | null {
   return `${url}?w=${w}&auto=format&fit=max`;
 }
 
+// Alt text descriptivo para las fotos de una propiedad (SEO + accesibilidad).
+// idx>0 agrega " — foto N" / " — photo N" para diferenciar las de la galería.
+export function imageAlt(
+  p: Pick<Property, "nombre" | "zonaNombre" | "pais">,
+  lang: "es" | "en",
+  idx = 0
+): string {
+  const city = p.pais === "MX" ? "Ciudad de México" : "Houston";
+  const loc = p.zonaNombre && p.zonaNombre !== city ? `${p.zonaNombre}, ${city}` : city;
+  const base =
+    lang === "en"
+      ? `Furnished apartment ${p.nombre} in ${loc}`
+      : `Departamento amueblado ${p.nombre} en ${loc}`;
+  if (idx > 0) return `${base} — ${lang === "en" ? "photo" : "foto"} ${idx + 1}`;
+  return base;
+}
+
 export function formatMoney(amount: number, currency: Currency): string {
   const locale = currency === "USD" ? "en-US" : "es-MX";
   return new Intl.NumberFormat(locale, {

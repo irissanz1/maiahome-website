@@ -11,7 +11,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img, bedBreakdown } from "@/lib/format";
+import { formatMoney, img, bedBreakdown, imageAlt } from "@/lib/format";
 import { amenityLabel } from "@/lib/listing";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -65,7 +65,12 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
     numberOfBedrooms: p.recamaras,
     numberOfBathroomsTotal: p.banos,
     occupancy: { "@type": "QuantitativeValue", maxValue: p.capacidad },
-    image: gallery.map((u) => img(u, 1200)).filter(Boolean),
+    image: gallery
+      .map((u, k) => {
+        const url = img(u, 1600);
+        return url ? { "@type": "ImageObject", url, caption: imageAlt(p, "en", k) } : null;
+      })
+      .filter(Boolean),
     address: { "@type": "PostalAddress", addressLocality: p.zonaNombre, addressCountry: p.pais },
   };
 
@@ -91,7 +96,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
       </nav>
 
       {p.images.length > 0 ? (
-        <Gallery images={p.images} nombre={p.nombre} />
+        <Gallery images={p.images} alt={imageAlt(p, "en")} photoWord="photo" />
       ) : (
         <Placeholder seed={p.beds24RoomId} label={p.nombre} className="h-72 w-full rounded-2xl" />
       )}

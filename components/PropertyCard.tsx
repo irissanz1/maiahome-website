@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Property } from "@/lib/types";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
-import { formatMoney, img } from "@/lib/format";
+import { formatMoney, img, imageAlt } from "@/lib/format";
 import { type Lang, withLang, pick } from "@/lib/i18n";
 import Placeholder from "./Placeholder";
 
@@ -64,7 +64,7 @@ export default function PropertyCard({
       <div className="relative h-52 w-full">
         {hero ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={hero} alt={property.nombre} className="h-52 w-full object-cover" loading="lazy" />
+          <img src={hero} alt={imageAlt(property, lang)} className="h-52 w-full object-cover" loading="lazy" />
         ) : (
           <Placeholder seed={property.beds24RoomId} label={property.nombre} className="h-52 w-full" />
         )}

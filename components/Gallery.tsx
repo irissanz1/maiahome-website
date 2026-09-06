@@ -14,7 +14,8 @@ function GridIcon({ className = "" }: { className?: string }) {
   );
 }
 
-export default function Gallery({ images, nombre }: { images: string[]; nombre: string }) {
+export default function Gallery({ images, alt, photoWord }: { images: string[]; alt: string; photoWord: string }) {
+  const altFor = (k: number) => (k === 0 ? alt : `${alt} — ${photoWord} ${k + 1}`);
   const [open, setOpen] = useState(false);
   const [i, setI] = useState(0);
   const touchX = useRef<number | null>(null);
@@ -45,7 +46,7 @@ export default function Gallery({ images, nombre }: { images: string[]; nombre: 
       <div className="grid grid-cols-1 gap-2 overflow-hidden rounded-2xl md:h-[440px] md:grid-cols-4 md:grid-rows-2">
         <button onClick={() => openAt(0)} className="group relative block overflow-hidden md:col-span-2 md:row-span-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={hero!} alt={nombre} className="h-72 w-full object-cover transition group-hover:brightness-95 md:h-full" />
+          <img src={hero!} alt={altFor(0)} className="h-72 w-full object-cover transition group-hover:brightness-95 md:h-full" />
           <span className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-lg bg-white/95 px-3 py-1.5 text-sm font-semibold text-neutral-800 shadow md:hidden">
             <GridIcon className="h-4 w-4" /> {n} fotos
           </span>
@@ -53,7 +54,7 @@ export default function Gallery({ images, nombre }: { images: string[]; nombre: 
         {thumbs.map((u, k) => (
           <button key={k} onClick={() => openAt(k + 1)} className="group relative hidden overflow-hidden md:block">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img(u, 700)!} alt="" className="h-full w-full object-cover transition group-hover:brightness-95" />
+            <img src={img(u, 700)!} alt={altFor(k + 1)} className="h-full w-full object-cover transition group-hover:brightness-95" />
             {k === thumbs.length - 1 && n > 5 && (
               <span className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/45 text-white transition group-hover:bg-black/55">
                 <GridIcon className="h-6 w-6" />
@@ -86,7 +87,7 @@ export default function Gallery({ images, nombre }: { images: string[]; nombre: 
           <div className="relative flex flex-1 items-center justify-center px-2 pb-4" onClick={(e) => e.stopPropagation()}>
             <button onClick={() => go(-1)} aria-label="Anterior" className="absolute left-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-2xl text-white hover:bg-white/25">‹</button>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img(images[i], 1600)!} alt={`${nombre} ${i + 1}`} className="max-h-full max-w-full rounded-lg object-contain" />
+            <img src={img(images[i], 1600)!} alt={altFor(i)} className="max-h-full max-w-full rounded-lg object-contain" />
             <button onClick={() => go(1)} aria-label="Siguiente" className="absolute right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-2xl text-white hover:bg-white/25">›</button>
           </div>
 
