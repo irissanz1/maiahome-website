@@ -4,7 +4,7 @@ import Link from "next/link";
 import { WHATSAPP_DISPLAY, SUPPORT_EMAIL, whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  ...ogMeta("About us", "Who we are"),
+  ...ogMeta("About us", "Who we are"), "en_US",
   title: "About us",
   description:
     "Hospitality with purpose in the heart of Mexico City. Maia Home: curated apartments, real hosts and a lasting commitment to the community.",

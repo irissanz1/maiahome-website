@@ -5,7 +5,7 @@ import { getProperties } from "@/lib/data";
 import { img } from "@/lib/format";
 
 export const metadata: Metadata = {
-  ...ogMeta("Virtual tours", "Explore the apartments in 3D"),
+  ...ogMeta("Virtual tours", "Explore the apartments in 3D"), "en_US",
   title: "Virtual tours",
   description: "3D virtual tours of Maia Home's furnished apartments in Mexico City. Explore every space before you book.",
   alternates: { canonical: "/en/virtual-tours", languages: { es: "/recorridos-departamentos", en: "/en/virtual-tours" } },

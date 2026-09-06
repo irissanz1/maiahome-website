@@ -8,7 +8,7 @@ import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  ...ogMeta("Corporate housing", "Stays for teams and executives"),
+  ...ogMeta("Corporate housing", "Stays for teams and executives"), "en_US",
   title: "Corporate housing",
   description:
     "Corporate housing in Mexico City and Houston for relocations, projects and business travel: one point of contact, invoicing and company agreements.",

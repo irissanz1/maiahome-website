@@ -6,7 +6,7 @@ import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 
 export const metadata: Metadata = {
-  ...ogMeta("Monthly stays", "Furnished monthly rentals"),
+  ...ogMeta("Monthly stays", "Furnished monthly rentals"), "en_US",
   title: "Monthly stays",
   description:
     "Furnished apartments by the month in Mexico City and Houston: preferential rates, all-inclusive and no complicated contracts. Ideal for individuals and families.",

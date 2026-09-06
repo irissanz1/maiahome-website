@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const where = market.geoEn;
   const barrios = market.zonas.map((z) => ZONAS[z]?.nombre).filter(Boolean).join(", ");
   return {
-    ...ogMeta(`Furnished apartments in ${where}`, "Book direct, no middlemen"),
+    ...ogMeta(`Furnished apartments in ${where}`, "Book direct, no middlemen", "en_US"),
     title: `Furnished apartments in ${where}`,
     description: `Premium furnished apartments in ${where} (${barrios}). Book directly with Maia Home: best rate, no middlemen.`,
     alternates: { canonical: "/en/apartments", languages: { es: "/departamentos", en: "/en/apartments" } },

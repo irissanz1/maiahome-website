@@ -10,10 +10,21 @@ export function ogImageUrl(title: string, subtitle?: string): string {
 // Fragmento de metadata para dar a una página su propio OG (Open Graph + Twitter).
 // Se hace spread dentro del objeto `metadata` de la página; hereda el resto (type,
 // siteName, locale) del layout.
-export function ogMeta(title: string, subtitle?: string): Pick<Metadata, "openGraph" | "twitter"> {
+export function ogMeta(
+  title: string,
+  subtitle?: string,
+  locale: string = "es_MX"
+): Pick<Metadata, "openGraph" | "twitter"> {
   const url = ogImageUrl(title, subtitle);
+  // Next NO hace deep-merge de openGraph: si la página define openGraph, reemplaza el del
+  // layout. Por eso repetimos type/siteName/locale para no perder esas etiquetas.
   return {
-    openGraph: { images: [{ url, width: 1200, height: 630, alt: title }] },
-    twitter: { images: [url] },
+    openGraph: {
+      type: "website",
+      siteName: "Maia Home",
+      locale,
+      images: [{ url, width: 1200, height: 630, alt: title }],
+    },
+    twitter: { card: "summary_large_image", images: [url] },
   };
 }
