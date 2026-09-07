@@ -36,8 +36,10 @@ for (const row of base44) {
   const rid = String(row.beds24RoomId);
   try {
     const d = await reviews({ mode: "property_by_slug", slug: row.slug, limit: 8, language: "es" });
-    const rating = d.averageRating ?? d.reportedAverageRating ?? d.summary?.overallRating ?? null;
-    const count = d.totalReviews ?? d.reportedReviewCount ?? d.publishedReviewCount ?? 0;
+    const rating = d.authorizedAverageRating ?? d.averageRating ?? d.reportedAverageRating ?? d.summary?.overallRating ?? null;
+    // authorizedReviewCount = total REAL (sin capar); los otros (totalReviews/
+    // reportedReviewCount/totalDetected) vienen capados en 50 por la API.
+    const count = d.authorizedReviewCount ?? d.totalReviews ?? d.reportedReviewCount ?? d.publishedReviewCount ?? 0;
     out.byRoom[rid] = {
       rating: rating ? Math.round(rating * 10) / 10 : null,
       count: count || 0,

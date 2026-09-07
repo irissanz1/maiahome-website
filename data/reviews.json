@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-02T04:03:37.594Z",
+  "generatedAt": "2026-09-07T00:30:09.555Z",
   "byRoom": {
     "395621": {
-      "rating": 4.7,
-      "count": 50,
+      "rating": 4.8,
+      "count": 52,
       "reviews": [
         {
           "name": "Fernanda",
@@ -127,7 +127,7 @@
     },
     "395667": {
       "rating": 4.9,
-      "count": 50,
+      "count": 52,
       "reviews": [
         {
           "name": "Valeria",
@@ -313,7 +313,7 @@
     },
     "418926": {
       "rating": 4.8,
-      "count": 50,
+      "count": 51,
       "reviews": [
         {
           "name": "Juan",
@@ -375,7 +375,7 @@
     },
     "418927": {
       "rating": 4.7,
-      "count": 50,
+      "count": 54,
       "reviews": [
         {
           "name": "Diego",
@@ -499,7 +499,7 @@
     },
     "429088": {
       "rating": 4.8,
-      "count": 50,
+      "count": 53,
       "reviews": [
         {
           "name": "Javier",
@@ -561,7 +561,7 @@
     },
     "429313": {
       "rating": 4.8,
-      "count": 50,
+      "count": 54,
       "reviews": [
         {
           "name": "Valeria",
@@ -623,7 +623,7 @@
     },
     "429314": {
       "rating": 4.9,
-      "count": 50,
+      "count": 53,
       "reviews": [
         {
           "name": "Juan",
@@ -685,7 +685,7 @@
     },
     "461199": {
       "rating": 4.9,
-      "count": 50,
+      "count": 53,
       "reviews": [
         {
           "name": "Isabella",
@@ -871,7 +871,7 @@
     },
     "469041": {
       "rating": 4.8,
-      "count": 50,
+      "count": 53,
       "reviews": [
         {
           "name": "Fernando",
@@ -1109,8 +1109,15 @@
     },
     "494785": {
       "rating": 4.9,
-      "count": 50,
+      "count": 52,
       "reviews": [
+        {
+          "name": "Camila",
+          "text": "Excellent stay at MaiaHome in Polanco. We had a plumbing issue during our visit, and the response was extremely rapid and helpful. Highly recommend this place!",
+          "rating": 5,
+          "date": "2026-08-26",
+          "avatar": null
+        },
         {
           "name": "Fernando",
           "text": "Todo excelente!!!",
@@ -1158,13 +1165,6 @@
           "text": "Excelente lugar para hospedarse en Polanco. Muy bien ubicado, seguro, amplio y limpio. La estancia fue muy cómoda. Nos encantó, totalmente recomendado.",
           "rating": 5,
           "date": "2026-06-01",
-          "avatar": null
-        },
-        {
-          "name": "Alejandra",
-          "text": "Muy recomendable, un lugar super agradable, muy tranquilo, sin ruidos externos, mucho muy bonito, muy cómodo. Detalles como el cafe, jugo y leche en el refrigerador fue un estupendo detalle, tal vez agregaría un par de botellas de agua. Lo único que falta y con lo que no cuentan es con Aire acondicionado, por el precio y ubicación deberían contar con ello. Batallamos con la calidad del internet.",
-          "rating": 4,
-          "date": "2026-05-20",
           "avatar": null
         }
       ]
@@ -1233,7 +1233,7 @@
     },
     "506106": {
       "rating": 4.8,
-      "count": 50,
+      "count": 51,
       "reviews": [
         {
           "name": "Patricia",
@@ -1295,7 +1295,7 @@
     },
     "506118": {
       "rating": 4.9,
-      "count": 50,
+      "count": 52,
       "reviews": [
         {
           "name": "Fernanda",
@@ -1333,15 +1333,15 @@
           "avatar": null
         },
         {
-          "name": "Mateo",
-          "text": "gran lugar, super recomendado",
+          "name": "Lucía",
+          "text": "Logement comme sur les photos\nLocalisation très pratique au pied de très bons restaurants et de petits supermarchés\nTrès proche de l hôpital espagnol\nLe quartier de Polanco est sûr et agréable avec toutes les commodites accessibles à pied",
           "rating": 5,
           "date": "2026-02-04",
           "avatar": null
         },
         {
-          "name": "Lucía",
-          "text": "Logement comme sur les photos\nLocalisation très pratique au pied de très bons restaurants et de petits supermarchés\nTrès proche de l hôpital espagnol\nLe quartier de Polanco est sûr et agréable avec toutes les commodites accessibles à pied",
+          "name": "Mateo",
+          "text": "gran lugar, super recomendado",
           "rating": 5,
           "date": "2026-02-04",
           "avatar": null
@@ -1357,7 +1357,7 @@
     },
     "506119": {
       "rating": 4.9,
-      "count": 50,
+      "count": 51,
       "reviews": [
         {
           "name": "Luis",
@@ -1556,8 +1556,15 @@
     },
     "625022": {
       "rating": 4.9,
-      "count": 27,
+      "count": 28,
       "reviews": [
+        {
+          "name": "Valeria",
+          "text": "We have tried several Airbnb, but this place in particular deserves the 5 stars. Everything was perfect, look like the photos, super clean, the host is very friendly and attentive, we stayed 10 days and everyday were people cleaning the building, also we got a free cleaning service on our place and they helped us on whatever we needed. I had a surgery and they made my stay peaceful and pleasant. I couldn’t recommend them enough. Lots of good restaurants nearby, pharmacy, food store, very quiet neighborhood. Thank you so much",
+          "rating": 5,
+          "date": "2026-08-30",
+          "avatar": null
+        },
         {
           "name": "Juan",
           "text": "Es igual a las fotos muy cómodo y la zona esta increíble!! Definitivamente nos hospedaríamos de nuevo",
@@ -1605,13 +1612,6 @@
           "text": "Excelente departamento",
           "rating": 5,
           "date": "2026-05-06",
-          "avatar": null
-        },
-        {
-          "name": "Sebastián",
-          "text": "Great place with lots of good restaurants around and walkable surroundings. Co-hosts were very helpful, friendly and responsive.",
-          "rating": 5,
-          "date": "2026-04-29",
           "avatar": null
         }
       ]
@@ -1866,13 +1866,20 @@
     },
     "626203": {
       "rating": 4.8,
-      "count": 24,
+      "count": 25,
       "reviews": [
         {
           "name": "Andrés",
           "text": "Sin duda la mejor opción que pude encontrar y mas por mi peludos, fueron felices tomando el sol en la terraza. Me sentí como en casa.\nSin duda esto es un claro ejemplo de servicio al cliente siempre atentos y dispuestos a tus dudas, yo estuve muy satisfecho.\nTodo esta igual a las fotos, un alojamiento céntrico, tranquilo, muchas opciones para ir a comer y caminar\nGracias Natalia y equipo, espero pronto vernos =)",
           "rating": 5,
           "date": "2026-08-26",
+          "avatar": null
+        },
+        {
+          "name": "Hugo",
+          "text": "Me encantó el lugar, bonito, bien decorado. Tienen muchas atenciones con sus huéspedes de bienvenida. La zona es perfecta para pasear en la condesa. Mi perrito y yo disfrutamos mucho la estadía pet friendly",
+          "rating": 5,
+          "date": "2026-08-25",
           "avatar": null
         },
         {
@@ -1916,20 +1923,27 @@
           "rating": 5,
           "date": "2026-05-24",
           "avatar": null
-        },
-        {
-          "name": "Renata",
-          "text": "Viajamos con 2 perritos y fue la estancia perfecta para quedarnos. Cuenta con un balcón y las fotos son exactamente como el lugar se encuentra. Es un espacio moderno y amplio. \nLa comunicación con el soporte a tu estancia espacio buenísima. Está en una zona estratégica y súper bien conectado. Seguramente regresaremos :)",
-          "rating": 5,
-          "date": "2026-05-13",
-          "avatar": null
         }
       ]
     },
     "626206": {
-      "rating": 5,
-      "count": 3,
+      "rating": 4.8,
+      "count": 5,
       "reviews": [
+        {
+          "name": "Emiliano",
+          "text": "Muchas gracias!",
+          "rating": 5,
+          "date": "2026-08-30",
+          "avatar": null
+        },
+        {
+          "name": "Sofía",
+          "text": "We were one of the first guests in this property . The property itself is beautiful and in a great location . It looks like it's photos . However, the communication was very chaotic and excessive and non-streamlined . Although it was very complex and the Wi-Fi had so many hoops we had to hotspot our phones, I think with a few tweaks this could be a great place to stay.",
+          "rating": 4,
+          "date": "2026-08-26",
+          "avatar": null
+        },
         {
           "name": "Luis",
           "text": "Buena ubicación,lindo departamento y me dejaron entrar con mis perritos 🐶 🙏🏻💖",
@@ -2010,8 +2024,15 @@
     },
     "669908": {
       "rating": 4.9,
-      "count": 16,
+      "count": 17,
       "reviews": [
+        {
+          "name": "María",
+          "text": "The place was great for our group of 7, and we had a wonderful stay overall. The team was very helpful with decorating the space for our celebrations and was quick to respond whenever we needed assistance. They even helped us promptly when the coffee machine wasn’t working properly.\n\nOur only concern was the noise. Since we were located on the 1st floor, we could hear quite a bit of outside noise, including neighbors returning late at night and sounds from the street. Aside from that, everything was great, and we appreciated the hospitality and responsiveness of the team.",
+          "rating": 5,
+          "date": "2026-09-03",
+          "avatar": null
+        },
         {
           "name": "Eduardo",
           "text": "Excelente estancia! Tal cual las fotos, muy buena ubicación, vecindario muy tranquilo y seguro, enfrente había seguridad. El acceso al edificio muy seguro, con seguridad las 24 horas! Muy limpio, muy grande, excelente para nuestra estancia!",
@@ -2055,13 +2076,6 @@
           "avatar": null
         },
         {
-          "name": "Alejandra",
-          "text": "Excelente ubicacion,  Departamento muy Espacioso, muy limpio y muy completo.",
-          "rating": 5,
-          "date": "2026-07-12",
-          "avatar": null
-        },
-        {
           "name": "Emiliano",
           "text": "Excelente lugar, súper recomendado. El apartamento es increíble, de fácil acceso para personas mayores y puede alojar fácilmente familias grandes. La atención fue muy buena, todo el tiempo pendientes y reactivos a las consultas. Limpieza/espacioso/moderno/excelente atención.",
           "rating": 5,
@@ -2072,8 +2086,15 @@
     },
     "704198": {
       "rating": 5,
-      "count": 2,
+      "count": 3,
       "reviews": [
+        {
+          "name": "Fernanda",
+          "text": "Excelente alojamiento! Super recomendable!",
+          "rating": 5,
+          "date": "2026-08-24",
+          "avatar": null
+        },
         {
           "name": "Valeria",
           "text": "We had a wonderful stay! The Airbnb was comfortable, clean, and in a great location. It was perfect for our family and made it easy for us to explore Mexico City. The host was very helpful, responsive, and made us feel welcome. We really enjoyed our stay and would definitely recommend this place to anyone visiting Mexico City. We would happily stay here again! ❤️",
