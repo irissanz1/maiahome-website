@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-07T00:30:09.555Z",
+  "generatedAt": "2026-09-07T00:43:19.064Z",
   "byRoom": {
     "395621": {
       "rating": 4.8,
-      "count": 52,
+      "count": 164,
       "reviews": [
         {
           "name": "Fernanda",
@@ -127,7 +127,7 @@
     },
     "395667": {
       "rating": 4.9,
-      "count": 52,
+      "count": 191,
       "reviews": [
         {
           "name": "Valeria",
@@ -189,7 +189,7 @@
     },
     "395668": {
       "rating": 4.9,
-      "count": 50,
+      "count": 143,
       "reviews": [
         {
           "name": "Eduardo",
@@ -313,7 +313,7 @@
     },
     "418926": {
       "rating": 4.8,
-      "count": 51,
+      "count": 108,
       "reviews": [
         {
           "name": "Juan",
@@ -375,7 +375,7 @@
     },
     "418927": {
       "rating": 4.7,
-      "count": 54,
+      "count": 134,
       "reviews": [
         {
           "name": "Diego",
@@ -499,7 +499,7 @@
     },
     "429088": {
       "rating": 4.8,
-      "count": 53,
+      "count": 164,
       "reviews": [
         {
           "name": "Javier",
@@ -561,7 +561,7 @@
     },
     "429313": {
       "rating": 4.8,
-      "count": 54,
+      "count": 151,
       "reviews": [
         {
           "name": "Valeria",
@@ -623,7 +623,7 @@
     },
     "429314": {
       "rating": 4.9,
-      "count": 53,
+      "count": 193,
       "reviews": [
         {
           "name": "Juan",
@@ -685,7 +685,7 @@
     },
     "461199": {
       "rating": 4.9,
-      "count": 53,
+      "count": 75,
       "reviews": [
         {
           "name": "Isabella",
@@ -871,7 +871,7 @@
     },
     "469041": {
       "rating": 4.8,
-      "count": 53,
+      "count": 98,
       "reviews": [
         {
           "name": "Fernando",
@@ -1109,7 +1109,7 @@
     },
     "494785": {
       "rating": 4.9,
-      "count": 52,
+      "count": 89,
       "reviews": [
         {
           "name": "Camila",
@@ -1295,7 +1295,7 @@
     },
     "506118": {
       "rating": 4.9,
-      "count": 52,
+      "count": 53,
       "reviews": [
         {
           "name": "Fernanda",
@@ -1357,7 +1357,7 @@
     },
     "506119": {
       "rating": 4.9,
-      "count": 51,
+      "count": 80,
       "reviews": [
         {
           "name": "Luis",
@@ -1494,7 +1494,7 @@
     },
     "625019": {
       "rating": 5,
-      "count": 34,
+      "count": 35,
       "reviews": [
         {
           "name": "Sebastián",
@@ -2024,7 +2024,7 @@
     },
     "669908": {
       "rating": 4.9,
-      "count": 17,
+      "count": 18,
       "reviews": [
         {
           "name": "María",
