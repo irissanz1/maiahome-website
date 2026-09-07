@@ -27,11 +27,13 @@ export default function PropertyCard({
   search,
   priceMode = "night",
   lang = "es",
+  badge,
 }: {
   property: Property;
   search: SearchInput;
   priceMode?: "night" | "month";
   lang?: Lang;
+  badge?: string;
 }) {
   const t = T[lang];
   const r = evaluate(property, search);
@@ -72,6 +74,11 @@ export default function PropertyCard({
           {statusLabel(r.status, lang)}
           {r.status === "estancia-minima" && r.minStayRequerido ? ` · ${t.min} ${r.minStayRequerido} ${t.nights}` : ""}
         </span>
+        {badge && (
+          <span className="absolute right-3 top-3 rounded-full bg-maia-yellow px-3 py-1 text-xs font-bold text-black shadow-sm">
+            {badge}
+          </span>
+        )}
       </div>
 
       <div className="p-4">

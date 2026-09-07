@@ -24,6 +24,12 @@ export default async function MonthlyStays({ searchParams }: { searchParams: Pro
   const sp = await searchParams;
   const list = (await getProperties()).filter((p) => p.segmentos.includes("monthly") && p.precioMes != null);
   const a = applyAvailability(list, sp);
+  // Cordelia: medium-term only, special monthly price → shown first, as a deal.
+  const CORDELIA = "polanco-cordelia";
+  const ordered = [
+    ...a.filtered.filter((p) => p.slug === CORDELIA),
+    ...a.filtered.filter((p) => p.slug !== CORDELIA),
+  ];
   return (
     <>
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
@@ -54,8 +60,15 @@ export default async function MonthlyStays({ searchParams }: { searchParams: Pro
         <h2 className="font-serif text-3xl text-neutral-900">Ideal for long stays</h2>
         <AvailabilityChips basePath="/en/monthly-stays" params={sp} disp={a.disp} total={a.totalCount} available={a.availableCount} unavailable={a.unavailableCount} hasDates={a.hasDates} lang="en" />
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {a.filtered.map((p) => (
-            <PropertyCard key={p.beds24RoomId} property={p} search={a.search} priceMode="month" lang="en" />
+          {ordered.map((p) => (
+            <PropertyCard
+              key={p.beds24RoomId}
+              property={p}
+              search={a.search}
+              priceMode="month"
+              lang="en"
+              badge={p.slug === CORDELIA ? "⭐ Monthly deal" : undefined}
+            />
           ))}
         </div>
       </section>

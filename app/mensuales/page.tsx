@@ -24,6 +24,12 @@ export default async function Mensuales({ searchParams }: { searchParams: Promis
   const sp = await searchParams;
   const list = (await getProperties()).filter((p) => p.segmentos.includes("monthly") && p.precioMes != null);
   const a = applyAvailability(list, sp);
+  // Cordelia: solo mediano plazo, con precio especial mensual → va primero, como oferta.
+  const CORDELIA = "polanco-cordelia";
+  const ordered = [
+    ...a.filtered.filter((p) => p.slug === CORDELIA),
+    ...a.filtered.filter((p) => p.slug !== CORDELIA),
+  ];
   return (
     <>
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
@@ -71,8 +77,14 @@ export default async function Mensuales({ searchParams }: { searchParams: Promis
           hasDates={a.hasDates}
         />
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {a.filtered.map((p) => (
-            <PropertyCard key={p.beds24RoomId} property={p} search={a.search} priceMode="month" />
+          {ordered.map((p) => (
+            <PropertyCard
+              key={p.beds24RoomId}
+              property={p}
+              search={a.search}
+              priceMode="month"
+              badge={p.slug === CORDELIA ? "⭐ Oferta mensual" : undefined}
+            />
           ))}
         </div>
       </section>
