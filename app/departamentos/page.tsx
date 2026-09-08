@@ -5,6 +5,7 @@ import SearchStrip from "@/components/SearchStrip";
 import AvailabilityChips from "@/components/AvailabilityChips";
 import AdvancedFilters from "@/components/AdvancedFilters";
 import ListingView from "@/components/ListingView";
+import SortControl from "@/components/SortControl";
 import { getByMarket, withLiveAvailability } from "@/lib/data";
 import { resolveMarket, ZONAS } from "@/lib/market";
 import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
@@ -107,6 +108,12 @@ export default async function Departamentos({ searchParams }: { searchParams: Pr
           unavailable={a.unavailableCount}
           hasDates={a.hasDates}
         />
+
+        <div className="mt-3 flex justify-end">
+          <Suspense fallback={null}>
+            <SortControl />
+          </Suspense>
+        </div>
 
         {a.filtered.length === 0 ? (
           <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>

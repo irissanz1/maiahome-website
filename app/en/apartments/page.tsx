@@ -5,6 +5,7 @@ import SearchStrip from "@/components/SearchStrip";
 import AdvancedFilters from "@/components/AdvancedFilters";
 import ListingView from "@/components/ListingView";
 import AvailabilityChips from "@/components/AvailabilityChips";
+import SortControl from "@/components/SortControl";
 import { getByMarket, withLiveAvailability } from "@/lib/data";
 import { resolveMarket, ZONAS } from "@/lib/market";
 import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
@@ -64,6 +65,12 @@ export default async function Apartments({ searchParams }: { searchParams: Promi
         </div>
 
         <AvailabilityChips basePath="/en/apartments" params={sp} disp={a.disp} total={a.totalCount} available={a.availableCount} unavailable={a.unavailableCount} hasDates={a.hasDates} lang="en" />
+
+        <div className="mt-3 flex justify-end">
+          <Suspense fallback={null}>
+            <SortControl />
+          </Suspense>
+        </div>
 
         {a.filtered.length === 0 ? (
           <p className="mt-16 text-center text-neutral-500">No properties match your search.</p>

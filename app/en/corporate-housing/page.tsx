@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ogMeta } from "@/lib/og";
 import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
+import SortControl from "@/components/SortControl";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
@@ -65,6 +67,12 @@ export default async function CorporateHousing({ searchParams }: { searchParams:
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <h2 className="font-serif text-3xl text-neutral-900">Options for your team</h2>
         <AvailabilityChips basePath="/en/corporate-housing" params={sp} disp={a.disp} total={a.totalCount} available={a.availableCount} unavailable={a.unavailableCount} hasDates={a.hasDates} lang="en" />
+
+        <div className="mt-3 flex justify-end">
+          <Suspense fallback={null}>
+            <SortControl />
+          </Suspense>
+        </div>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {a.filtered.map((p) => (
             <PropertyCard key={p.beds24RoomId} property={p} search={a.search} lang="en" />

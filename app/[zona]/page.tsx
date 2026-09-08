@@ -6,6 +6,7 @@ import SearchStrip from "@/components/SearchStrip";
 import AdvancedFilters from "@/components/AdvancedFilters";
 import ListingView from "@/components/ListingView";
 import AvailabilityChips from "@/components/AvailabilityChips";
+import SortControl from "@/components/SortControl";
 import { getByZona, withLiveAvailability } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
 import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
@@ -93,6 +94,12 @@ export default async function ZonaLanding({
           unavailable={a.unavailableCount}
           hasDates={a.hasDates}
         />
+
+        <div className="mt-3 flex justify-end">
+          <Suspense fallback={null}>
+            <SortControl />
+          </Suspense>
+        </div>
 
         {a.filtered.length === 0 ? (
           <p className="mt-16 text-center text-neutral-500">No hay propiedades que coincidan con tu búsqueda.</p>

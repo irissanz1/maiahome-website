@@ -64,7 +64,11 @@ export function advancedFilter(list: Property[], sp: SP): Property[] {
  * Calcula conteos de disponibles/no disponibles y filtra la lista según ?disp=si|no.
  * Con fechas → disponibilidad exacta; sin fechas → según calendario.
  */
-export function applyAvailability(list: Property[], sp: SP) {
+export function applyAvailability(
+  list: Property[],
+  sp: SP,
+  opts?: { priceField?: "precioDesde" | "precioMes" }
+) {
   const search: SearchInput = {
     checkin: str(sp.checkin),
     checkout: str(sp.checkout),
@@ -72,6 +76,10 @@ export function applyAvailability(list: Property[], sp: SP) {
   };
   const hasDates = Boolean(search.checkin && search.checkout);
   const disp = str(sp.disp);
+  const orden = str(sp.orden); // "precio-asc" | "precio-desc" | undefined (relevancia)
+  const priceField = opts?.priceField ?? "precioDesde";
+  const priceOf = (p: Property) =>
+    (priceField === "precioMes" ? p.precioMes : p.precioDesde) ?? Number.POSITIVE_INFINITY;
 
   // Filtro por capacidad (criterio de búsqueda): si piden N huéspedes, solo caben los de capacidad >= N.
   let base = list;
@@ -84,32 +92,39 @@ export function applyAvailability(list: Property[], sp: SP) {
       ? evaluate(p, search).status === "disponible"
       : Object.values(p.calendar).some((d) => d.available);
 
+  // Rango de disponibilidad: disponibles primero, estancia mínima, luego no disponibles.
+  const rank = (p: Property) => {
+    if (hasDates) {
+      const s = evaluate(p, search).status;
+      if (s === "disponible") return 0;
+      if (s === "estancia-minima") return 1;
+      return 2;
+    }
+    return Object.values(p.calendar).some((d) => d.available) ? 0 : 1;
+  };
+
   const totalCount = base.length;
   const availableCount = base.filter(isAvail).length;
   const unavailableCount = totalCount - availableCount;
 
-  let filtered: Property[];
-  if (disp === "si") {
-    filtered = base.filter(isAvail);
-  } else if (disp === "no") {
-    filtered = base.filter((p) => !isAvail(p));
-  } else {
-    // "Todos": ordena en 3 niveles → disponibles, estancia mínima, no disponibles.
-    // (Con fechas usa el estado real; sin fechas, disponibles según calendario primero.)
-    const rank = (p: Property) => {
-      if (hasDates) {
-        const s = evaluate(p, search).status;
-        if (s === "disponible") return 0;
-        if (s === "estancia-minima") return 1;
-        return 2; // no-disponible / capacidad
-      }
-      return Object.values(p.calendar).some((d) => d.available) ? 0 : 1;
-    };
-    filtered = base
-      .map((p) => ({ p, r: rank(p) }))
-      .sort((x, y) => x.r - y.r)
-      .map((x) => x.p);
-  }
+  let subset: Property[];
+  if (disp === "si") subset = base.filter(isAvail);
+  else if (disp === "no") subset = base.filter((p) => !isAvail(p));
+  else subset = base.slice();
 
-  return { search, hasDates, disp, totalCount, availableCount, unavailableCount, filtered };
+  // Orden: siempre disponibles primero; dentro del mismo rango, por precio si se pidió,
+  // o el orden original (prioridad) como relevancia por defecto.
+  const dir = orden === "precio-desc" ? -1 : 1;
+  const filtered = subset
+    .map((p, i) => ({ p, i, r: rank(p), price: priceOf(p) }))
+    .sort((x, y) => {
+      if (x.r !== y.r) return x.r - y.r;
+      if (orden === "precio-asc" || orden === "precio-desc") {
+        if (x.price !== y.price) return (x.price - y.price) * dir;
+      }
+      return x.i - y.i; // estable: conserva prioridad
+    })
+    .map((x) => x.p);
+
+  return { search, hasDates, disp, orden, totalCount, availableCount, unavailableCount, filtered };
 }

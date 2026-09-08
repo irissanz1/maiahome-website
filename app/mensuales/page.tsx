@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ogMeta } from "@/lib/og";
 import PropertyCard from "@/components/PropertyCard";
 import AvailabilityChips from "@/components/AvailabilityChips";
+import SortControl from "@/components/SortControl";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 
@@ -23,7 +25,7 @@ const BENEFITS = [
 export default async function Mensuales({ searchParams }: { searchParams: Promise<SP> }) {
   const sp = await searchParams;
   const list = (await getProperties()).filter((p) => p.segmentos.includes("monthly") && p.precioMes != null);
-  const a = applyAvailability(list, sp);
+  const a = applyAvailability(list, sp, { priceField: "precioMes" });
   // Cordelia: solo mediano plazo, con precio especial mensual → va primero, como oferta.
   const CORDELIA = "polanco-cordelia";
   const ordered = [
@@ -76,6 +78,12 @@ export default async function Mensuales({ searchParams }: { searchParams: Promis
           unavailable={a.unavailableCount}
           hasDates={a.hasDates}
         />
+
+        <div className="mt-3 flex justify-end">
+          <Suspense fallback={null}>
+            <SortControl />
+          </Suspense>
+        </div>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ordered.map((p) => (
             <PropertyCard
