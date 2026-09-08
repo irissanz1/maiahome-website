@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Placeholder from "@/components/Placeholder";
 import Gallery from "@/components/Gallery";
+import PropertyCard from "@/components/PropertyCard";
 import ReserveButton from "@/components/ReserveButton";
 import StayDateForm from "@/components/StayDateForm";
 import LocationMap from "@/components/LocationMap";
@@ -60,6 +61,13 @@ export default async function StayDetail({
   const reserveActionable = available || needsDates; // se ve activo (amarillo)
   const reserveLabel = needsDates ? "Selecciona fechas" : available ? "Reservar" : "No disponible";
   const gallery = p.images.slice(0, 5);
+  // Departamentos similares: mismo mercado, prioriza misma zona y nº de recámaras parecido.
+  const similar = (await getProperties())
+    .filter((x) => x.slug !== p.slug && x.pais === p.pais)
+    .map((x) => ({ x, score: (x.zona === p.zona ? 0 : 3) + Math.abs((x.recamaras ?? 0) - (p.recamaras ?? 0)) }))
+    .sort((a, b) => a.score - b.score || (b.x.rating ?? 0) - (a.x.rating ?? 0))
+    .slice(0, 3)
+    .map((s) => s.x);
   const zonaDesc = ZONAS[p.zona]?.descripcion.es;
   const availDays: Record<string, boolean> = {};
   for (const [date, entry] of Object.entries(p.calendar)) availDays[date] = !!(entry as any).available;
@@ -253,6 +261,19 @@ export default async function StayDetail({
           <p className="mt-2 text-center text-xs text-neutral-400">El cobro se procesa en Beds24 (checkout seguro)</p>
         </aside>
       </div>
+
+      {/* Departamentos similares */}
+      {similar.length > 0 && (
+        <section className="mt-14 pb-24 md:pb-6">
+          <h2 className="font-serif text-2xl text-neutral-900 md:text-3xl">Departamentos similares</h2>
+          <p className="mt-1 text-sm text-neutral-500">Otras opciones que también te pueden gustar.</p>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {similar.map((s) => (
+              <PropertyCard key={s.beds24RoomId} property={s} search={search} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Barra fija de reserva (móvil) */}
       <div className="fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-neutral-200 bg-white/95 py-3 pl-4 pr-24 backdrop-blur md:hidden">
