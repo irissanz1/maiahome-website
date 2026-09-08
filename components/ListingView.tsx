@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import PropertyCard from "./PropertyCard";
 import PropertiesMap, { type MapMarker } from "./PropertiesMap";
+import SortControl from "./SortControl";
 import type { Property } from "@/lib/types";
 import type { SearchInput } from "@/lib/availability";
 import { formatMoney, img } from "@/lib/format";
@@ -62,9 +63,12 @@ export default function ListingView({
 
   return (
     <div>
-      <div className="mt-6 flex items-center gap-1 rounded-full border border-neutral-200 bg-white p-1 w-fit">
-        {tab("list", t.list)}
-        {tab("map", `${t.map}${markers.length ? ` · ${markers.length}` : ""}`)}
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-1 rounded-full border border-neutral-200 bg-white p-1 w-fit">
+          {tab("list", t.list)}
+          {tab("map", `${t.map}${markers.length ? ` · ${markers.length}` : ""}`)}
+        </div>
+        <SortControl />
       </div>
 
       {view === "list" ? (
