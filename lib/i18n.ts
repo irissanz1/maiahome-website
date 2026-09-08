@@ -26,6 +26,7 @@ const PATHMAP: Array<[string, string]> = [
   ["/terminos-y-condiciones", "/en/terms-and-conditions"],
   ["/terminos-uso", "/en/terms-of-use"],
   ["/stay-agreement", "/en/stay-agreement"],
+  ["/registro-cliente", "/en/registration-complete"],
   ["/polanco", "/en/polanco"],
   ["/condesa", "/en/condesa"],
   ["/houston", "/en/houston"],
