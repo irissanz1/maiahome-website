@@ -96,13 +96,23 @@ export default async function Reservar({
         {p.nombre} · {checkin} → {checkout} · {nights} {nights === 1 ? "noche" : "noches"} · {guests} huéspedes
       </p>
 
+      {/* Guía para completar la reserva */}
+      <div className="mt-5 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">Cómo completar tu reserva</p>
+        <p className="mt-1">
+          Revisa las fechas y el total, llena tus datos y <strong>baja hasta el final del formulario</strong>{" "}
+          para hacer clic en <strong>Confirmar reserva</strong> y realizar el pago seguro. Si no ves el botón,
+          desliza un poco más hacia abajo dentro del formulario.
+        </p>
+      </div>
+
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
         {/* Iframe de Beds24 (motor de reserva y pago) */}
         <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
           <iframe
             src={beds24Src}
             title={`Reserva de ${p.nombre}`}
-            className="h-[1280px] w-full"
+            className="h-[2600px] w-full"
             allow="payment"
           />
         </div>

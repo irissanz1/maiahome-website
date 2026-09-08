@@ -75,9 +75,19 @@ export default async function BookEn({ params, searchParams }: { params: Promise
         {p.nombre} · {checkin} → {checkout} · {nights} {nights === 1 ? "night" : "nights"} · {guests} guests
       </p>
 
+      {/* How to complete the booking */}
+      <div className="mt-5 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4 text-sm text-neutral-700">
+        <p className="font-semibold text-neutral-900">How to complete your booking</p>
+        <p className="mt-1">
+          Review the dates and total, fill in your details and <strong>scroll to the bottom of the form</strong>{" "}
+          to click <strong>Confirm booking</strong> and make your secure payment. If you don't see the button,
+          scroll down a little further inside the form.
+        </p>
+      </div>
+
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
         <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-          <iframe src={beds24Src} title={`Booking for ${p.nombre}`} className="h-[1280px] w-full" allow="payment" />
+          <iframe src={beds24Src} title={`Booking for ${p.nombre}`} className="h-[2600px] w-full" allow="payment" />
         </div>
 
         <aside className="h-fit space-y-4 lg:sticky lg:top-24">
