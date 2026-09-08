@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { track } from "@/lib/analytics";
 import { langFromPath, withLang } from "@/lib/i18n";
+import { dateBounds, nextDay } from "@/lib/dates";
 
 const SD = {
   es: { checkin: "Entrada", checkout: "Salida", guests: "Huéspedes", apply: "Ver disponibilidad", book: "Reservar", blocked: "No disponible" },
@@ -40,6 +41,10 @@ export default function StayDateForm({
   const [checkout, setCheckout] = useState(dco ?? "");
   const [guests, setGuests] = useState(dg ? String(dg) : "2");
   const ciRef = useRef<HTMLInputElement>(null);
+  // Límites del calendario (hoy → +1 año), fijados tras montar (hora local).
+  const [bounds, setBounds] = useState<{ min: string; max: string }>();
+  useEffect(() => setBounds(dateBounds()), []);
+  const onCheckin = (v: string) => { setCheckin(v); if (checkout && checkout <= v) setCheckout(""); };
 
   const appliedGuests = dg ? String(dg) : "2";
   const complete = Boolean(checkin && checkout);
@@ -90,11 +95,11 @@ export default function StayDateForm({
       <div className="grid grid-cols-2 gap-2">
         <label className="block">
           <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.checkin}</span>
-          <input ref={ciRef} type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className={field} />
+          <input ref={ciRef} type="date" value={checkin} min={bounds?.min} max={bounds?.max} onChange={(e) => onCheckin(e.target.value)} className={field} />
         </label>
         <label className="block">
           <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.checkout}</span>
-          <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className={field} />
+          <input type="date" value={checkout} min={checkin ? nextDay(checkin) : bounds?.min} max={bounds?.max} onChange={(e) => setCheckout(e.target.value)} className={field} />
         </label>
       </div>
       <label className="block">

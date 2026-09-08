@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { langFromPath, withLang } from "@/lib/i18n";
+import { dateBounds, nextDay } from "@/lib/dates";
 
 const IMAGES = Array.from({ length: 10 }, (_, k) => `/hero/hero-${String(k + 1).padStart(2, "0")}.jpg`);
 
@@ -33,6 +34,9 @@ export default function HomeHero() {
   const [checkin, setCheckin] = useState("");
   const [checkout, setCheckout] = useState("");
   const [guests, setGuests] = useState(2);
+  const [bounds, setBounds] = useState<{ min: string; max: string }>();
+  useEffect(() => setBounds(dateBounds()), []);
+  const onCheckin = (v: string) => { setCheckin(v); if (checkout && checkout <= v) setCheckout(""); };
 
   useEffect(() => {
     const t = setInterval(() => setI((p) => (p + 1) % IMAGES.length), 5000);
@@ -77,11 +81,11 @@ export default function HomeHero() {
           <div className="grid grid-cols-2 gap-2.5">
             <label className="block">
               <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-neutral-400">{h.checkin}</span>
-              <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className={field} />
+              <input type="date" value={checkin} min={bounds?.min} max={bounds?.max} onChange={(e) => onCheckin(e.target.value)} className={field} />
             </label>
             <label className="block">
               <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-neutral-400">{h.checkout}</span>
-              <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className={field} />
+              <input type="date" value={checkout} min={checkin ? nextDay(checkin) : bounds?.min} max={bounds?.max} onChange={(e) => setCheckout(e.target.value)} className={field} />
             </label>
           </div>
 

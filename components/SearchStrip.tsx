@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { MARKETS, ZONAS, resolveMarket } from "@/lib/market";
 import { track } from "@/lib/analytics";
 import { langFromPath } from "@/lib/i18n";
+import { dateBounds, nextDay } from "@/lib/dates";
 
 const ST = {
   es: { checkin: "Entrada", checkout: "Salida", guests: "Huéspedes", add: "Agregar", zone: "Zona", all: "Todas", search: "Buscar" },
@@ -28,6 +29,10 @@ export default function SearchStrip({
   const [checkout, setCheckout] = useState(sp.get("checkout") ?? "");
   const [guests, setGuests] = useState(sp.get("guests") ?? "2");
   const [zona, setZona] = useState(fixedZona ?? sp.get("zona") ?? "");
+  // Límites del calendario (hoy → +1 año); se fijan tras montar para usar la hora local.
+  const [bounds, setBounds] = useState<{ min: string; max: string }>();
+  useEffect(() => setBounds(dateBounds()), []);
+  const onCheckin = (v: string) => { setCheckin(v); if (checkout && checkout <= v) setCheckout(""); };
 
   function search() {
     const params = new URLSearchParams();
@@ -52,11 +57,11 @@ export default function SearchStrip({
       >
         <label className="block">
           <span className="mb-1 block text-xs font-medium text-neutral-500">{st.checkin}</span>
-          <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className={field} />
+          <input type="date" value={checkin} min={bounds?.min} max={bounds?.max} onChange={(e) => onCheckin(e.target.value)} className={field} />
         </label>
         <label className="block">
           <span className="mb-1 block text-xs font-medium text-neutral-500">{st.checkout}</span>
-          <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className={field} />
+          <input type="date" value={checkout} min={checkin ? nextDay(checkin) : bounds?.min} max={bounds?.max} onChange={(e) => setCheckout(e.target.value)} className={field} />
         </label>
         <label className="block lg:w-28">
           <span className="mb-1 block text-xs font-medium text-neutral-500">{st.guests}</span>
