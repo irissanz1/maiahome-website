@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { whatsappUrl, WHATSAPP_DISPLAY, SUPPORT_EMAIL } from "@/lib/contact";
+import RegLangRedirect from "@/components/RegLangRedirect";
 
 export const metadata: Metadata = {
   title: "¡Registro exitoso!",
@@ -26,6 +27,7 @@ const btn = "inline-block rounded-lg bg-maia-yellow px-6 py-3 text-sm font-bold 
 export default function RegistroCliente() {
   return (
     <div className="mx-auto max-w-4xl px-5 py-14 md:py-16">
+      <RegLangRedirect />
       {/* Éxito */}
       <div className="text-center">
         <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-maia-yellow text-black">
