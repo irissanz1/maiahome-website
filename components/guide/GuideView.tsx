@@ -1,39 +1,42 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import GuideMap from "@/components/guide/GuideMap";
+import { useEffect, useState } from "react";
 import type { Guide } from "@/lib/guides";
-import { nearbyPois } from "@/lib/pois";
+
+// Barrio de la guía → zona en explore.maiahome.mx (fuente única de recomendaciones).
+const EXPLORE_ZONE: Record<string, string> = { Polanco: "zone-polanco", Condesa: "zone-condesa", Houston: "zone-houston" };
 
 type Lang = "es" | "en";
 const pick = (l: Lang, f?: { es: string; en: string } | null) => (f ? (l === "en" ? f.en || f.es : f.es || f.en) : "");
 
 const T = {
   es: {
-    arrival: "Cómo llegar", house: "Manual de la casa", map: "Mapa", nearby: "Explora la zona", checkout: "Salida",
+    arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
     checkIn: "Check-in desde las", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
-    attractions: "Atracciones", restaurants: "Dónde comer", malls: "Compras", checkoutTitle: "Antes de salir",
+    exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
+    exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir",
     checkoutTime: "El check-out es a las 12:00. Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
     checkoutList: "Deja las llaves donde te indicamos, cierra ventanas y apaga luces. La ropa de cama usada puede quedar en la cama. ¡Gracias por cuidar la casa!",
-    help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.", km: "km",
+    help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.",
   },
   en: {
-    arrival: "Getting here", house: "House manual", map: "Map", nearby: "Explore the area", checkout: "Check-out",
+    arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
     checkIn: "Check-in from", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
-    attractions: "Attractions", restaurants: "Where to eat", malls: "Shopping", checkoutTitle: "Before you leave",
+    exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
+    exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave",
     checkoutTime: "Check-out is at 12:00. If you need to leave later, let us know in advance and we'll gladly try to help.",
     checkoutList: "Leave the keys where we indicated, close windows and turn off the lights. Used linens can stay on the bed. Thanks for taking care of the home!",
-    help: "Questions during your stay? Message us on WhatsApp and we'll help right away.", km: "km",
+    help: "Questions during your stay? Message us on WhatsApp and we'll help right away.",
   },
 };
 
-const SECTIONS = ["arrival", "house", "map", "nearby", "checkout"] as const;
+const SECTIONS = ["arrival", "house", "explore", "checkout"] as const;
 
 export default function GuideView({ guide }: { guide: Guide }) {
   const [lang, setLang] = useState<Lang>("es");
@@ -49,12 +52,8 @@ export default function GuideView({ guide }: { guide: Guide }) {
   const setL = (l: Lang) => { setLang(l); try { localStorage.setItem("guideLang", l); } catch {} };
   const t = T[lang];
 
-  const nearby = useMemo(
-    () => (guide.lat != null && guide.lng != null ? nearbyPois(guide.lat, guide.lng) : []),
-    [guide]
-  );
-  const hasNearby = nearby.length > 0;
-  const navItems = SECTIONS.filter((s) => s !== "nearby" || hasNearby);
+  const exploreZone = EXPLORE_ZONE[guide.neighborhood];
+  const navItems = SECTIONS.filter((s) => s !== "explore" || !!exploreZone);
 
   return (
     <div className="mx-auto max-w-3xl px-5 pb-24">
@@ -183,41 +182,23 @@ export default function GuideView({ guide }: { guide: Guide }) {
         </section>
       )}
 
-      {/* Mapa */}
-      {guide.lat != null && guide.lng != null && (
-        <section id="map" className="scroll-mt-24 pt-10">
-          <SectionTitle>{t.map}</SectionTitle>
-          <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200">
-            <GuideMap lat={guide.lat} lng={guide.lng} label={guide.title} lang={lang} />
-          </div>
-        </section>
-      )}
-
-      {/* Explora la zona */}
-      {hasNearby && (
-        <section id="nearby" className="scroll-mt-24 pt-10">
-          <SectionTitle>{t.nearby}</SectionTitle>
-          {nearby.map((g) => (
-            <div key={g.key} className="mt-6">
-              <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-maia-strong">
-                {g.emoji} {lang === "en" ? g.labelEn : g.label}
-              </h3>
-              <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-                {g.items.map((p, i) => (
-                  <div key={i} className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3">
-                    <div className="min-w-0">
-                      <p className="truncate font-medium text-neutral-900">{p.name}</p>
-                      <p className="text-xs text-neutral-400">{p.dist.toFixed(1)} {t.km}</p>
-                    </div>
-                    <div className="flex shrink-0 gap-2">
-                      <a href={p.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-maia-strong hover:underline">{t.maps}</a>
-                      <a href={p.wazeUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-maia-strong hover:underline">{t.waze}</a>
-                    </div>
-                  </div>
-                ))}
-              </div>
+      {/* Explora la zona → guía de barrio en explore.maiahome.mx (fuente única) */}
+      {exploreZone && (
+        <section id="explore" className="scroll-mt-24 pt-10">
+          <SectionTitle>{t.explore}</SectionTitle>
+          <a
+            href={`https://explore.maiahome.mx/${exploreZone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 flex items-center justify-between gap-4 rounded-2xl border border-neutral-200 bg-[#FBF7EC] p-5 transition hover:border-maia-strong"
+          >
+            <div>
+              <p className="text-base font-semibold text-neutral-900">{guide.neighborhood}</p>
+              <p className="mt-1 text-sm text-neutral-600">{t.exploreDesc}</p>
+              <span className="mt-3 inline-block text-sm font-semibold text-maia-strong">{t.exploreBtn}</span>
             </div>
-          ))}
+            <span className="hidden shrink-0 text-3xl sm:block" aria-hidden="true">🗺️</span>
+          </a>
         </section>
       )}
 

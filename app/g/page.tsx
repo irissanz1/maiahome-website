@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getGuides } from "@/lib/guides";
-import { nearbyPois } from "@/lib/pois";
 
 // Índice interno de guías (para el equipo). Privado: no indexar.
 export const metadata: Metadata = { robots: { index: false, follow: false }, title: "Guías del huésped · índice interno" };
@@ -51,8 +50,6 @@ export default function GuidesIndex() {
             <h2 className="font-serif text-2xl text-neutral-900">{z} <span className="text-base font-normal text-neutral-400">· {list.length}</span></h2>
             <div className="mt-4 space-y-3">
               {list.map((g) => {
-                const poiCount = g.lat != null && g.lng != null
-                  ? nearbyPois(g.lat, g.lng).reduce((n, grp) => n + grp.items.length, 0) : 0;
                 return (
                   <div key={g.slug} className="flex flex-col gap-3 rounded-2xl border border-neutral-200 p-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="min-w-0">
@@ -63,7 +60,6 @@ export default function GuidesIndex() {
                       </div>
                       <div className="mt-2 flex flex-wrap gap-1.5">
                         <Chip ok={g.amenities.length > 0}>Amenidades {g.amenities.length}</Chip>
-                        <Chip ok={poiCount > 0}>POIs {poiCount}</Chip>
                         <Chip ok={!!g.access.video}>Video</Chip>
                         <Chip ok={!!g.address}>Dirección</Chip>
                         <Chip ok={!!g.checkout}>{g.checkout ? "Check-out propio" : "Check-out estándar"}</Chip>
