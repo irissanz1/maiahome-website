@@ -13,7 +13,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img, bedBreakdown, imageAlt } from "@/lib/format";
+import { formatMoney, img, bedBreakdown, imageAlt, plainDescription } from "@/lib/format";
 import { amenityLabel } from "@/lib/listing";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -70,7 +70,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
     "@context": "https://schema.org",
     "@type": "Apartment",
     name: p.nombre,
-    description: p.descripcion.en,
+    description: plainDescription(p.headline.en, p.descripcion.en),
     numberOfBedrooms: p.recamaras,
     numberOfBathroomsTotal: p.banos,
     occupancy: { "@type": "QuantitativeValue", maxValue: p.capacidad },

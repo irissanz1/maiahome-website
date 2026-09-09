@@ -1,5 +1,16 @@
 import type { Currency, Property } from "./types";
 
+// Descripción en texto plano para datos estructurados (JSON-LD). Une el intro
+// (headline) con las viñetas sin el marcador "•", en una sola frase legible.
+export function plainDescription(headline: string, descripcion: string): string {
+  const body = (descripcion || "")
+    .split("\n")
+    .map((l) => l.replace(/^•\s*/, "").trim())
+    .filter(Boolean)
+    .join(". ");
+  return [headline?.trim(), body].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
+}
+
 // Desglose de camas para la página de detalle. Devuelve p.ej.:
 // ES: "5 camas · 1 king, 4 individuales · 1 sofá cama" | EN: "5 beds · 1 king, 4 singles · 1 sofa bed"
 // Regresa null si no hay dato de camas.
