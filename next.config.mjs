@@ -80,6 +80,16 @@ const nextConfig = {
         destination: "https://maiahome.mx/:path*",
         permanent: true,
       },
+      // Caso especial de book: /Nosotros (mayúscula) — la ruta de Next es
+      // case-sensitive (404) y un redirect global haría loop (Vercel matchea el
+      // source sin distinguir mayúsculas). Scoped al host de book y con destino en
+      // maiahome.mx no hay loop. DEBE ir antes del catch-all de book.
+      {
+        source: "/Nosotros",
+        has: [{ type: "host", value: "book.maiahome.mx" }],
+        destination: "https://maiahome.mx/nosotros",
+        permanent: true,
+      },
       // Retiro de book.maiahome.mx: mueve TODO al dominio canónico. Inerte hasta que
       // book.maiahome.mx apunte a Vercel (DNS + dominio en el proyecto). Después de
       // este salto, las reglas por ruta de abajo (/StayDetail, /d/, /Stays…) terminan
