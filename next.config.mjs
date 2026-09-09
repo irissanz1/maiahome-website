@@ -39,6 +39,22 @@ function conchitaToCocoRedirects() {
   return out;
 }
 
+// Retiro de book.maiahome.mx: las guías del huésped viejas /d/<slug> → /g/<slug>
+// (con los renombres conchita→coco y siqueiros→horacio). Host-agnóstico: también
+// arregla maiahome.mx/d/* (hoy 404).
+function guideRedirects() {
+  const map = {
+    aurora: "aurora", "bg-polanco": "bg-polanco", conchita: "coco", cordelia: "cordelia",
+    kahlo: "kahlo", "laila-casa": "laila-casa", leonora: "leonora", "luz-maria": "luz-maria",
+    "siqueiros-orozco-rivera": "horacio", tamayo: "tamayo",
+  };
+  return Object.entries(map).map(([from, to]) => ({
+    source: `/d/${from}`,
+    destination: `/g/${to}`,
+    permanent: true,
+  }));
+}
+
 // Rename Augustin → Augustine (2026-09-09): 301 del slug viejo en las 4 rutas.
 function augustinToAugustineRedirects() {
   const prefixes = ["/depto", "/reservar", "/en/stay", "/en/book"];
@@ -61,6 +77,16 @@ const nextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "maia-home.vercel.app" }],
+        destination: "https://maiahome.mx/:path*",
+        permanent: true,
+      },
+      // Retiro de book.maiahome.mx: mueve TODO al dominio canónico. Inerte hasta que
+      // book.maiahome.mx apunte a Vercel (DNS + dominio en el proyecto). Después de
+      // este salto, las reglas por ruta de abajo (/StayDetail, /d/, /Stays…) terminan
+      // el mapeo: p.ej. book/StayDetail?slug=har-aurora → maiahome.mx/StayDetail?… → /depto/polanco-aurora.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "book.maiahome.mx" }],
         destination: "https://maiahome.mx/:path*",
         permanent: true,
       },
@@ -111,6 +137,8 @@ const nextConfig = {
       // Guía del huésped: slugs viejos de book → nuevos.
       { source: "/g/conchita", destination: "/g/coco", permanent: true },
       { source: "/g/siqueiros-orozco-rivera", destination: "/g/horacio", permanent: true },
+      // Guías viejas de book /d/<slug> → /g/<slug>.
+      ...guideRedirects(),
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.
       ...loadBlogRedirects(),
