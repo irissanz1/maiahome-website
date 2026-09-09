@@ -1,5 +1,36 @@
 import type { Currency, Property } from "./types";
 
+// Fragmento de JSON-LD con la calificación agregada + reseñas (para rich snippet
+// de estrellas). Solo se emite si hay rating real y reseñas; el rating coincide
+// con el que se muestra en la ficha (mismo redondeo a 1 decimal).
+export function ratingJsonLd(p: Property): Record<string, unknown> {
+  if (p.rating == null || !p.reviewCount) return {};
+  const out: Record<string, unknown> = {
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: Number(p.rating.toFixed(1)),
+      reviewCount: p.reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  };
+  const reviews = (p.reviews || [])
+    .filter((rv) => rv.rating != null && rv.name)
+    .slice(0, 5)
+    .map((rv) => {
+      const r: Record<string, unknown> = {
+        "@type": "Review",
+        author: { "@type": "Person", name: rv.name },
+        reviewRating: { "@type": "Rating", ratingValue: rv.rating, bestRating: 5, worstRating: 1 },
+      };
+      if (rv.text) r.reviewBody = rv.text;
+      if (rv.date && /\d{4}/.test(rv.date)) r.datePublished = rv.date;
+      return r;
+    });
+  if (reviews.length) out.review = reviews;
+  return out;
+}
+
 // Descripción en texto plano para datos estructurados (JSON-LD). Une el intro
 // (headline) con las viñetas sin el marcador "•", en una sola frase legible.
 export function plainDescription(headline: string, descripcion: string): string {

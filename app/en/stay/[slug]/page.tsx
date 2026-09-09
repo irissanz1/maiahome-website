@@ -13,7 +13,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img, bedBreakdown, imageAlt, plainDescription } from "@/lib/format";
+import { formatMoney, img, bedBreakdown, imageAlt, plainDescription, ratingJsonLd } from "@/lib/format";
 import { amenityLabel } from "@/lib/listing";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -81,6 +81,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
       })
       .filter(Boolean),
     address: { "@type": "PostalAddress", addressLocality: p.zonaNombre, addressCountry: p.pais },
+    ...ratingJsonLd(p),
   };
 
   let checkoutUrl = "";

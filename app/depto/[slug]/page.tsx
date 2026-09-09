@@ -13,7 +13,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img, bedBreakdown, imageAlt, plainDescription } from "@/lib/format";
+import { formatMoney, img, bedBreakdown, imageAlt, plainDescription, ratingJsonLd } from "@/lib/format";
 
 type SP = Record<string, string | string[] | undefined>;
 const str = (v: string | string[] | undefined) => (typeof v === "string" ? v : undefined);
@@ -88,6 +88,7 @@ export default async function StayDetail({
       })
       .filter(Boolean),
     address: { "@type": "PostalAddress", addressLocality: p.zonaNombre, addressCountry: p.pais },
+    ...ratingJsonLd(p),
   };
 
   // "Reservar" → página de checkout propia (/reservar/[slug]) que embebe Beds24.
