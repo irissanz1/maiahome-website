@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import LocationMap from "@/components/LocationMap";
+import GuideMap from "@/components/guide/GuideMap";
 import type { Guide } from "@/lib/guides";
 import { nearbyPois } from "@/lib/pois";
 
@@ -178,7 +178,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
         <section id="map" className="scroll-mt-24 pt-10">
           <SectionTitle>{t.map}</SectionTitle>
           <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200">
-            <LocationMap lat={guide.lat} lng={guide.lng} label={guide.title} />
+            <GuideMap lat={guide.lat} lng={guide.lng} label={guide.title} lang={lang} />
           </div>
         </section>
       )}
