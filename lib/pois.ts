@@ -62,3 +62,63 @@ export const POIS: Poi[] = [
   {"name":"Haruko Sushi","cat":"comer","lat":19.43856,"lng":-99.17588},
   {"name":"Delicatto Coffee & Bakery","cat":"cafe","lat":19.43858,"lng":-99.17888},
 ];
+
+// POIs de Houston (Museum District / Medical Center / cerca de Augustine y NRG).
+// Aparte de POIS para no meter marcadores lejanos en el mapa de propiedades de CDMX.
+export const HOUSTON_POIS: Poi[] = [
+  {"name":"Museum of Fine Arts, Houston","cat":"cultura","lat":29.7259,"lng":-95.3905},
+  {"name":"Houston Museum of Natural Science","cat":"cultura","lat":29.7221,"lng":-95.3893},
+  {"name":"The Menil Collection","cat":"cultura","lat":29.7376,"lng":-95.3985},
+  {"name":"Houston Zoo","cat":"cultura","lat":29.7148,"lng":-95.3903},
+  {"name":"NRG Stadium","cat":"cultura","lat":29.6847,"lng":-95.4107},
+  {"name":"Hermann Park","cat":"parques","lat":29.7176,"lng":-95.3903},
+  {"name":"Buffalo Bayou Park","cat":"parques","lat":29.7607,"lng":-95.3929},
+  {"name":"Discovery Green","cat":"parques","lat":29.7534,"lng":-95.3595},
+  {"name":"The Galleria","cat":"compras","lat":29.7398,"lng":-95.4618},
+  {"name":"Rice Village","cat":"compras","lat":29.7157,"lng":-95.4148},
+  {"name":"Lucille's","cat":"comer","lat":29.7385,"lng":-95.3862},
+  {"name":"Coppa Osteria","cat":"comer","lat":29.7157,"lng":-95.4155},
+  {"name":"Pinkerton's Barbecue","cat":"comer","lat":29.7752,"lng":-95.4022},
+  {"name":"Blacksmith","cat":"cafe","lat":29.7443,"lng":-95.3946},
+];
+
+function _hav(aLat: number, aLng: number, bLat: number, bLng: number) {
+  const R = 6371, d = (x: number) => (x * Math.PI) / 180;
+  const s =
+    Math.sin(d(bLat - aLat) / 2) ** 2 +
+    Math.cos(d(aLat)) * Math.cos(d(bLat)) * Math.sin(d(bLng - aLng) / 2) ** 2;
+  return R * 2 * Math.asin(Math.sqrt(s));
+}
+
+export type NearbyItem = { name: string; cat: PoiCat; dist: number; mapsUrl: string; wazeUrl: string };
+export type NearbyGroup = { key: string; label: string; labelEn: string; emoji: string; items: NearbyItem[] };
+
+// POIs cercanos a una coordenada, agrupados (para la sección "Explora la zona" de
+// las guías). Distancia real → sirve para cualquier zona (Polanco, Condesa, Houston)
+// sin mezclar geografías: las de otra ciudad quedan fuera del radio.
+export function nearbyPois(
+  lat: number,
+  lng: number,
+  opts?: { maxKm?: number; perGroup?: number }
+): NearbyGroup[] {
+  const maxKm = opts?.maxKm ?? 12;
+  const perGroup = opts?.perGroup ?? 6;
+  const all = [...POIS, ...HOUSTON_POIS].map((p) => ({ ...p, dist: _hav(lat, lng, p.lat, p.lng) }));
+  return POI_GROUPS.map((g) => ({
+    key: g.key,
+    label: g.label,
+    labelEn: g.labelEn,
+    emoji: g.emoji,
+    items: all
+      .filter((p) => p.dist <= maxKm && g.cats.includes(p.cat))
+      .sort((a, b) => a.dist - b.dist)
+      .slice(0, perGroup)
+      .map((p) => ({
+        name: p.name,
+        cat: p.cat,
+        dist: p.dist,
+        mapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`,
+        wazeUrl: `https://waze.com/ul?ll=${p.lat},${p.lng}&navigate=yes`,
+      })),
+  })).filter((g) => g.items.length > 0);
+}

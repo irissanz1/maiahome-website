@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import LocationMap from "@/components/LocationMap";
-import type { Guide, GuidePOI } from "@/lib/guides";
+import type { Guide } from "@/lib/guides";
+import { nearbyPois } from "@/lib/pois";
 
 type Lang = "es" | "en";
 const pick = (l: Lang, f?: { es: string; en: string } | null) => (f ? (l === "en" ? f.en || f.es : f.es || f.en) : "");
@@ -30,12 +31,6 @@ const T = {
   },
 };
 
-function haversine(aLat: number, aLng: number, bLat: number, bLng: number) {
-  const R = 6371, d = (x: number) => (x * Math.PI) / 180;
-  const s = Math.sin(d(bLat - aLat) / 2) ** 2 + Math.cos(d(aLat)) * Math.cos(d(bLat)) * Math.sin(d(bLng - aLng) / 2) ** 2;
-  return R * 2 * Math.asin(Math.sqrt(s));
-}
-
 const SECTIONS = ["arrival", "house", "map", "nearby", "checkout"] as const;
 
 export default function GuideView({ guide }: { guide: Guide }) {
@@ -52,17 +47,11 @@ export default function GuideView({ guide }: { guide: Guide }) {
   const setL = (l: Lang) => { setLang(l); try { localStorage.setItem("guideLang", l); } catch {} };
   const t = T[lang];
 
-  const poisByCat = useMemo(() => {
-    const withDist = (p: GuidePOI) => ({
-      ...p,
-      dist: guide.lat != null && guide.lng != null && p.lat != null && p.lng != null
-        ? haversine(guide.lat, guide.lng, p.lat, p.lng) : null,
-    });
-    const g = (cat: string) => guide.pois.filter((p) => p.category === cat).map(withDist);
-    return { attraction: g("attraction"), restaurant: g("restaurant"), mall: g("mall") };
-  }, [guide]);
-
-  const hasNearby = guide.pois.length > 0;
+  const nearby = useMemo(
+    () => (guide.lat != null && guide.lng != null ? nearbyPois(guide.lat, guide.lng) : []),
+    [guide]
+  );
+  const hasNearby = nearby.length > 0;
   const navItems = SECTIONS.filter((s) => s !== "nearby" || hasNearby);
 
   return (
@@ -132,7 +121,12 @@ export default function GuideView({ guide }: { guide: Guide }) {
             <p className="text-sm font-semibold text-neutral-900">{t.access}</p>
             {pick(lang, guide.access.toApt) && <p className="mt-1 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.toApt)}</p>}
             {pick(lang, guide.access.instructions) && <p className="mt-2 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.instructions)}</p>}
-            {guide.access.video && <LinkBtn href={guide.access.video} className="mt-3">{t.accessVideo}</LinkBtn>}
+            {guide.access.video && (
+              <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200 bg-black">
+                <video controls preload="metadata" className="aspect-video w-full" src={guide.access.video} />
+                <figcaption className="bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{t.accessVideo}</figcaption>
+              </figure>
+            )}
           </div>
         )}
         {pick(lang, guide.access.security) && (
@@ -181,36 +175,27 @@ export default function GuideView({ guide }: { guide: Guide }) {
       {hasNearby && (
         <section id="nearby" className="scroll-mt-24 pt-10">
           <SectionTitle>{t.nearby}</SectionTitle>
-          {([["attraction", t.attractions], ["restaurant", t.restaurants], ["mall", t.malls]] as const).map(([cat, label]) => {
-            const list = poisByCat[cat as keyof typeof poisByCat];
-            if (!list.length) return null;
-            return (
-              <div key={cat} className="mt-6">
-                <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-maia-strong">{label}</h3>
-                <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                  {list.map((p, i) => (
-                    <div key={i} className="flex flex-col overflow-hidden rounded-2xl border border-neutral-200">
-                      {p.imageUrl && (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={p.imageUrl} alt={pick(lang, p.name)} className="h-28 w-full object-cover" />
-                      )}
-                      <div className="flex flex-1 flex-col p-4">
-                        <div className="flex items-start justify-between gap-2">
-                          <p className="font-semibold text-neutral-900">{pick(lang, p.name)}</p>
-                          {p.dist != null && <span className="shrink-0 text-xs text-neutral-400">{p.dist.toFixed(1)} {t.km}</span>}
-                        </div>
-                        <p className="mt-1 line-clamp-3 text-sm text-neutral-600">{pick(lang, p.description)}</p>
-                        <div className="mt-3 flex gap-2">
-                          {p.mapsUrl && <LinkBtn href={p.mapsUrl} small>{t.maps}</LinkBtn>}
-                          {p.wazeUrl && <LinkBtn href={p.wazeUrl} small>{t.waze}</LinkBtn>}
-                        </div>
-                      </div>
+          {nearby.map((g) => (
+            <div key={g.key} className="mt-6">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-maia-strong">
+                {g.emoji} {lang === "en" ? g.labelEn : g.label}
+              </h3>
+              <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {g.items.map((p, i) => (
+                  <div key={i} className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3">
+                    <div className="min-w-0">
+                      <p className="truncate font-medium text-neutral-900">{p.name}</p>
+                      <p className="text-xs text-neutral-400">{p.dist.toFixed(1)} {t.km}</p>
                     </div>
-                  ))}
-                </div>
+                    <div className="flex shrink-0 gap-2">
+                      <a href={p.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-maia-strong hover:underline">{t.maps}</a>
+                      <a href={p.wazeUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-maia-strong hover:underline">{t.waze}</a>
+                    </div>
+                  </div>
+                ))}
               </div>
-            );
-          })}
+            </div>
+          ))}
         </section>
       )}
 
