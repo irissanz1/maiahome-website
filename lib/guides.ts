@@ -35,7 +35,8 @@ export interface Guide {
   waze: string | null;
   heroImg: string | null;
   welcome: BL;
-  arrival: { noCar: BL; byCar: BL };
+  // Llegada: texto (a pie / en auto) + Street View de Google de la entrada.
+  arrival: { noCar: BL; byCar: BL; streetNoCar?: string | null; streetByCar?: string | null };
   access: { video: string | null; toApt: BL; instructions: BL; security: BL; trash: BL };
   cleaning: BL;
   kit: BL; // HTML

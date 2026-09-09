@@ -13,6 +13,7 @@ const T = {
     arrival: "Cómo llegar", house: "Manual de la casa", map: "Mapa", nearby: "Explora la zona", checkout: "Salida",
     checkIn: "Check-in desde las", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
+    entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
     attractions: "Atracciones", restaurants: "Dónde comer", malls: "Compras", checkoutTitle: "Antes de salir",
     checkoutTime: "El check-out es a las 12:00. Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
@@ -23,6 +24,7 @@ const T = {
     arrival: "Getting here", house: "House manual", map: "Map", nearby: "Explore the area", checkout: "Check-out",
     checkIn: "Check-in from", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
+    entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
     attractions: "Attractions", restaurants: "Where to eat", malls: "Shopping", checkoutTitle: "Before you leave",
     checkoutTime: "Check-out is at 12:00. If you need to leave later, let us know in advance and we'll gladly try to help.",
@@ -103,10 +105,24 @@ export default function GuideView({ guide }: { guide: Guide }) {
           </div>
         )}
         {(() => {
-          const hasNoCar = !!pick(lang, guide.arrival.noCar);
-          const hasByCar = !!pick(lang, guide.arrival.byCar);
-          if (!hasNoCar && !hasByCar) return null;
-          if (hasNoCar && hasByCar) {
+          const street = (m: "noCar" | "byCar") => (m === "noCar" ? guide.arrival.streetNoCar : guide.arrival.streetByCar);
+          const hasMode = (m: "noCar" | "byCar") => !!pick(lang, guide.arrival[m]) || !!street(m);
+          const renderMode = (m: "noCar" | "byCar") => (
+            <>
+              {pick(lang, guide.arrival[m]) && (
+                <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">{pick(lang, guide.arrival[m])}</p>
+              )}
+              {street(m) && (
+                <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200">
+                  <iframe src={street(m)!} title={t.entrance} loading="lazy" className="aspect-video w-full" style={{ border: 0 }} allowFullScreen />
+                  <figcaption className="bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">📍 {t.entrance}</figcaption>
+                </figure>
+              )}
+            </>
+          );
+          const nc = hasMode("noCar"), bc = hasMode("byCar");
+          if (!nc && !bc) return null;
+          if (nc && bc) {
             return (
               <div className="mt-4">
                 <div className="flex overflow-hidden rounded-full border border-neutral-300 text-sm font-semibold">
@@ -115,17 +131,11 @@ export default function GuideView({ guide }: { guide: Guide }) {
                       className={`flex-1 px-4 py-2 ${arrivalMode === m ? "bg-maia-yellow text-black" : "text-neutral-600"}`}>{t[m]}</button>
                   ))}
                 </div>
-                <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">
-                  {pick(lang, arrivalMode === "noCar" ? guide.arrival.noCar : guide.arrival.byCar)}
-                </p>
+                {renderMode(arrivalMode)}
               </div>
             );
           }
-          return (
-            <p className="mt-4 whitespace-pre-line leading-relaxed text-neutral-700">
-              {pick(lang, hasByCar ? guide.arrival.byCar : guide.arrival.noCar)}
-            </p>
-          );
+          return <div className="mt-1">{renderMode(nc ? "noCar" : "byCar")}</div>;
         })()}
         {/* Acceso al depto */}
         {(pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
