@@ -28,6 +28,17 @@ function loadBlogRedirects() {
   }
 }
 
+// Rename Conchita → Coco (2026-09-09): 301 de los slugs viejos en las 4 rutas.
+function conchitaToCocoRedirects() {
+  const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "1-2", "4-5", "7-8"];
+  const prefixes = ["/depto", "/reservar", "/en/stay", "/en/book"];
+  const out = [];
+  for (const n of nums)
+    for (const pre of prefixes)
+      out.push({ source: `${pre}/condesa-conchita-${n}`, destination: `${pre}/condesa-coco-${n}`, permanent: true });
+  return out;
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -85,6 +96,7 @@ const nextConfig = {
       // /check-in y /check-out viven en el sitio principal con el MISMO path
       // que tenía el Wix → no necesitan redirect.
       // Fichas de propiedad viejas → nuevas (por slug)
+      ...conchitaToCocoRedirects(),
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.
       ...loadBlogRedirects(),
