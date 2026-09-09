@@ -3744,5 +3744,190 @@
     "lng": -99.20235
    }
   ]
+ },
+ {
+  "slug": "augustine",
+  "title": "Augustine",
+  "neighborhood": "Houston",
+  "address": "",
+  "lat": 29.6922845,
+  "lng": -95.3583376,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com/maps/search/?api=1&query=29.6922845,-95.3583376",
+  "waze": "https://waze.com/ul?ll=29.6922845,-95.3583376&navigate=yes",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/ae4aea8c4bd2203098c451a3eb83fb437216089a-1200x900.jpg",
+  "welcome": {
+   "es": "Bienvenido a Augustine. Disfruta tu estancia en Houston.",
+   "en": "Welcome to Augustine. Enjoy your stay in Houston."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "",
+    "en": ""
+   },
+   "byCar": {
+    "es": "Houston se recorre mejor en auto y la casa cuenta con estacionamiento en el lugar. Al llegar, sigue las instrucciones de acceso que te enviamos por WhatsApp y correo.",
+    "en": "Houston is best explored by car, and the house has on-site parking. On arrival, follow the access instructions we send you by WhatsApp and email."
+   }
+  },
+  "access": {
+   "video": null,
+   "toApt": {
+    "es": "1. Llena el formulario de check-in — es obligatorio: con tus datos y los de tus acompañantes activamos las claves de acceso. Envíalo al menos un día antes de tu llegada (mínimo 1 hora antes).\n2. Validamos tu información antes de darte acceso a la casa.\n3. Recibes tus instrucciones: la dirección exacta, las claves y cómo entrar, por WhatsApp y correo.",
+    "en": "1. Fill out the check-in form — it's required: your details and your companions' let us activate the access codes. Send it at least one day before arrival (minimum 1 hour before).\n2. We validate your information before granting access to the house.\n3. You receive your instructions: the exact address, codes and how to get in, by WhatsApp and email."
+   },
+   "instructions": {
+    "es": "Registrar a todos los huéspedes es parte de nuestras medidas de seguridad y, a partir de enero de 2026, un requisito normativo que los anfitriones en Houston debemos cumplir como parte de las medidas contra la trata de personas. Tus datos se tratan de forma confidencial y se usan solo para tu estancia.",
+    "en": "Registering all guests is part of our security measures and, starting January 2026, a regulatory requirement that hosts in Houston must comply with as part of measures against human trafficking. Your information is handled confidentially and used only for your stay."
+   },
+   "security": {
+    "es": "En la casa solo pueden estar las personas registradas en tu reserva; el número reservado es el máximo permitido. No se permiten visitas adicionales ni fiestas.",
+    "en": "Only the guests registered in your booking may stay in the house; the number booked is the maximum allowed. No additional visitors or parties are permitted."
+   },
+   "trash": {
+    "es": "Saca la basura a los botes de afuera antes de salir y desecha lo perecedero del refri y la cocina.",
+    "en": "Take the trash to the bins outside before you leave and discard perishables from the fridge and kitchen."
+   }
+  },
+  "cleaning": {
+   "es": "",
+   "en": ""
+  },
+  "kit": {
+   "es": "",
+   "en": ""
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Aire acondicionado",
+     "en": "Air conditioning"
+    },
+    "description": {
+     "es": "Déjalo encendido durante tu estancia y también al salir: por la humedad de Houston no se debe apagar.",
+     "en": "Keep it on during your stay and when you leave: due to Houston's humidity it should not be turned off."
+    },
+    "imageUrl": null,
+    "order": 10
+   },
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking"
+    },
+    "description": {
+     "es": "La casa cuenta con estacionamiento en el lugar.",
+     "en": "The house has on-site parking."
+    },
+    "imageUrl": null,
+    "order": 20
+   },
+   {
+    "title": {
+     "es": "Cocina equipada y lavandería",
+     "en": "Equipped kitchen & laundry"
+    },
+    "description": {
+     "es": "Cocina totalmente equipada, lavadora y varias Smart TVs para tu estancia.",
+     "en": "Fully equipped kitchen, washer and several Smart TVs for your stay."
+    },
+    "imageUrl": null,
+    "order": 30
+   },
+   {
+    "title": {
+     "es": "Mascotas",
+     "en": "Pets"
+    },
+    "description": {
+     "es": "Somos pet friendly, pero toda mascota debe declararse y aprobarse antes de tu estancia. Aplica una tarifa de $50 USD. Una mascota no declarada genera un cargo de limpieza adicional de $90 USD (el acceso cuenta con cámara de seguridad).",
+     "en": "We're pet-friendly, but every pet must be declared and approved before your stay. A $50 USD fee applies. An undeclared pet results in an additional $90 USD cleaning charge (the entrance has a security camera)."
+    },
+    "imageUrl": null,
+    "order": 40
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Marca 911 para Servicios de Emergencia.",
+     "en": "Dial 911 for Emergency Services."
+    },
+    "imageUrl": null,
+    "order": 50
+   }
+  ],
+  "pois": [],
+  "checkout": {
+   "time": "10:00",
+   "note": {
+    "es": "El check-out es a las 10:00 h. Antes de salir, ayúdanos con esta breve lista para dejar la casa lista para el siguiente huésped.",
+    "en": "Check-out is at 10:00. Before you leave, please help us with this short list so the house is ready for the next guest."
+   },
+   "items": [
+    {
+     "title": {
+      "es": "Lavavajillas",
+      "en": "Dishwasher"
+     },
+     "desc": {
+      "es": "Coloca los platos dentro y ponlo a andar antes de salir.",
+      "en": "Place the dishes inside and start it before you leave."
+     }
+    },
+    {
+     "title": {
+      "es": "Basura y comida",
+      "en": "Trash & food"
+     },
+     "desc": {
+      "es": "Desecha lo perecedero del refri y la cocina, y deja las bolsas en los botes de afuera.",
+      "en": "Throw away perishable food from the fridge and kitchen, and leave the bags in the bins outside."
+     }
+    },
+    {
+     "title": {
+      "es": "Toallas usadas",
+      "en": "Used towels"
+     },
+     "desc": {
+      "es": "Déjalas juntas en el baño.",
+      "en": "Leave them together in the bathroom."
+     }
+    },
+    {
+     "title": {
+      "es": "Ventanas",
+      "en": "Windows"
+     },
+     "desc": {
+      "es": "Cierra bien todas las ventanas, por seguridad y para evitar que entre agua.",
+      "en": "Close all windows properly, for security and to keep rain out."
+     }
+    },
+    {
+     "title": {
+      "es": "Luces y A/C",
+      "en": "Lights & A/C"
+     },
+     "desc": {
+      "es": "Apaga las luces al salir. El aire acondicionado déjalo ENCENDIDO (por la humedad, no lo apagues).",
+      "en": "Turn off the lights when you leave. Please leave the air conditioning ON (due to the humidity, don't turn it off)."
+     }
+    },
+    {
+     "title": {
+      "es": "Puerta principal",
+      "en": "Front door"
+     },
+     "desc": {
+      "es": "Asegúrate de que quede bien cerrada al salir.",
+      "en": "Make sure it's securely closed when you leave."
+     }
+    }
+   ]
+  }
  }
 ]

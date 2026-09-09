@@ -102,19 +102,31 @@ export default function GuideView({ guide }: { guide: Guide }) {
             </div>
           </div>
         )}
-        {(pick(lang, guide.arrival.noCar) || pick(lang, guide.arrival.byCar)) && (
-          <div className="mt-4">
-            <div className="flex overflow-hidden rounded-full border border-neutral-300 text-sm font-semibold">
-              {(["noCar", "byCar"] as const).map((m) => (
-                <button key={m} onClick={() => setArrivalMode(m)}
-                  className={`flex-1 px-4 py-2 ${arrivalMode === m ? "bg-maia-yellow text-black" : "text-neutral-600"}`}>{t[m]}</button>
-              ))}
-            </div>
-            <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">
-              {pick(lang, arrivalMode === "noCar" ? guide.arrival.noCar : guide.arrival.byCar)}
+        {(() => {
+          const hasNoCar = !!pick(lang, guide.arrival.noCar);
+          const hasByCar = !!pick(lang, guide.arrival.byCar);
+          if (!hasNoCar && !hasByCar) return null;
+          if (hasNoCar && hasByCar) {
+            return (
+              <div className="mt-4">
+                <div className="flex overflow-hidden rounded-full border border-neutral-300 text-sm font-semibold">
+                  {(["noCar", "byCar"] as const).map((m) => (
+                    <button key={m} onClick={() => setArrivalMode(m)}
+                      className={`flex-1 px-4 py-2 ${arrivalMode === m ? "bg-maia-yellow text-black" : "text-neutral-600"}`}>{t[m]}</button>
+                  ))}
+                </div>
+                <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">
+                  {pick(lang, arrivalMode === "noCar" ? guide.arrival.noCar : guide.arrival.byCar)}
+                </p>
+              </div>
+            );
+          }
+          return (
+            <p className="mt-4 whitespace-pre-line leading-relaxed text-neutral-700">
+              {pick(lang, hasByCar ? guide.arrival.byCar : guide.arrival.noCar)}
             </p>
-          </div>
-        )}
+          );
+        })()}
         {/* Acceso al depto */}
         {(pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
           <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
@@ -202,10 +214,27 @@ export default function GuideView({ guide }: { guide: Guide }) {
       {/* Salida */}
       <section id="checkout" className="scroll-mt-24 pt-10">
         <SectionTitle>{t.checkoutTitle}</SectionTitle>
-        <p className="mt-3 leading-relaxed text-neutral-700">{t.checkoutTime}</p>
-        <p className="mt-2 leading-relaxed text-neutral-600">{t.checkoutList}</p>
-        {pick(lang, guide.access.trash) && (
-          <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.trash}:</b> {pick(lang, guide.access.trash)}</p>
+        {guide.checkout ? (
+          <>
+            <p className="mt-2 text-sm text-neutral-500">{lang === "en" ? "Check-out at" : "Check-out a las"} {guide.checkout.time}</p>
+            <p className="mt-2 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {guide.checkout.items.map((it, i) => (
+                <div key={i} className="rounded-2xl border border-neutral-200 p-4">
+                  <p className="text-base font-semibold text-neutral-900">{pick(lang, it.title)}</p>
+                  <p className="mt-1 text-sm text-neutral-600">{pick(lang, it.desc)}</p>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <p className="mt-3 leading-relaxed text-neutral-700">{t.checkoutTime}</p>
+            <p className="mt-2 leading-relaxed text-neutral-600">{t.checkoutList}</p>
+            {pick(lang, guide.access.trash) && (
+              <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.trash}:</b> {pick(lang, guide.access.trash)}</p>
+            )}
+          </>
         )}
       </section>
 

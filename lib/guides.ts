@@ -40,6 +40,8 @@ export interface Guide {
   kit: BL; // HTML
   amenities: GuideAmenity[];
   pois: GuidePOI[];
+  // Check-out específico por unidad (opcional; si falta se usa el genérico).
+  checkout?: { time: string; note: BL; items: { title: BL; desc: BL }[] };
 }
 
 const GUIDES = guidesData as unknown as Guide[];
