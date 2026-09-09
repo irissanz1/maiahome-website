@@ -39,6 +39,16 @@ function conchitaToCocoRedirects() {
   return out;
 }
 
+// Rename Augustin → Augustine (2026-09-09): 301 del slug viejo en las 4 rutas.
+function augustinToAugustineRedirects() {
+  const prefixes = ["/depto", "/reservar", "/en/stay", "/en/book"];
+  return prefixes.map((pre) => ({
+    source: `${pre}/houston-augustin`,
+    destination: `${pre}/houston-augustine`,
+    permanent: true,
+  }));
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -97,6 +107,7 @@ const nextConfig = {
       // que tenía el Wix → no necesitan redirect.
       // Fichas de propiedad viejas → nuevas (por slug)
       ...conchitaToCocoRedirects(),
+      ...augustinToAugustineRedirects(),
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.
       ...loadBlogRedirects(),
