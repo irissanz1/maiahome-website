@@ -9,7 +9,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com/maps/dir//Lago+Alberto+300,+An%C3%A1huac+I+Secc,+Miguel+Hidalgo,+11320+Ciudad+de+M%C3%A9xico,+CDMX+N%C3%BAmero+de+Departamento:+2909+Torre+2/@19.4396271,-99.2233941,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d1f91108868f41:0x10acbfce42922203!2m2!1d-99.1821945!2d19.4395508?entry=ttu",
   "waze": "https://www.waze.com/ul?ll=19.44006280%2C-99.18302660&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/5d0ec0_b27fb49c77ac41b5bd139ca2b87adf18~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/a78bbdeff3d220396fb58406027e1bcac1e3460c-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Bg Polanco. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Bg Polanco. Enjoy your stay in Polanco."
@@ -390,7 +390,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com.mx/maps/dir//Tennyson+312,+Polanco,+Polanco+IV+Secc,+Miguel+Hidalgo,+11550+Ciudad+de+M%C3%A9xico,+CDMX/@19.436256,-99.1971776,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d20206ace97aeb:0x6cca5da8e6e52784!2m2!1d-99.1949889!2d19.436256",
   "waze": "https://www.waze.com/ul?ll=19.43625600%2C-99.19498890&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/b02660_23ee300077cf41f6a3e1b71eefa4bcfc~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/ed14ac5ec79b6d06d4391e2d2ab6436f1ae8d29d-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Tamayo. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Tamayo. Enjoy your stay in Polanco."
@@ -759,7 +759,7 @@
   "checkInTime": "15:00",
   "maps": "https://maps.app.goo.gl/VXrBveaMQsYBmC5PA",
   "waze": "https://www.waze.com/live-map/directions/mx/cdmx/mexico-d.f./av.-ejercito-nacional-mexicano-225?navigate=yes&to=place.ChIJt1YChZP50YURiYjW6HdPy00",
-  "heroImg": "https://static.wixstatic.com/media/5d0ec0_7fe20ea454824f6b90e06eec96d259f1~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/61430a3544cdaf98b4faddbf810edc3ae9402e43-1200x794.jpg",
   "welcome": {
    "es": "Bienvenido a Aurora. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Aurora. Enjoy your stay in Polanco."
@@ -1140,7 +1140,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com/maps/dir//Jorge+Bernard+Shaw+34,+Polanco,+Polanco+II+Secc,+Miguel+Hidalgo,+11550+Ciudad+de+M%C3%A9xico,+CDMX/@19.4312638,-99.2067401,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d2021d97e0afad:0xbc108ffa449af785!2m2!1d-99.2045514!2d19.4312588",
   "waze": "https://www.waze.com/ul?ll=19.43307700%2C-99.19821230&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/b02660_f36374c749054b5b9b893916ec0b4323~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/5d869cf8c5b31db0a68b7fd83d0fd27e06cfe95e-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Leonora. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Leonora. Enjoy your stay in Polanco."
@@ -1509,7 +1509,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com/maps/dir//Av.+Baja+California+301,+Hip%C3%B3dromo,+Cuauht%C3%A9moc,+06140+Ciudad+de+M%C3%A9xico,+CDMX/@19.4061235,-99.2136933,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d1ff6a3c9bf69d:0x390ceee7994d1fc6!2m2!1d-99.1724937!2d19.4060472?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D",
   "waze": "https://www.waze.com/es/live-map/directions/mx/cdmx/mexico-d.f./av.-baja-california-301?navigate=yes&to=place.ChIJnfabPGr_0YURxh9NmefuDDk",
-  "heroImg": "https://static.wixstatic.com/media/b02660_29f349961654411f9917745ff7e961ef~mv2.avif",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/dd08a9a3ef81e54e30140719dbf69e8ff2a53f42-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Coco. Disfruta tu estancia en CDMX.",
    "en": "Welcome to Coco. Enjoy your stay in Mexico City."
@@ -1613,7 +1613,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com.mx/maps/place/C.+de+la+Prosperidad+17,+Escand%C3%B3n+II+Secc,+Miguel+Hidalgo,+11800+Ciudad+de+M%C3%A9xico,+CDMX/@19.403664,-99.1772013,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fff8b8969b91:0xaa12e1640150f3cf!8m2!3d19.403659!4d-99.1746264!16s%2Fg%2F11y1g2sfsl?coh=210790&entry=tts",
   "waze": "https://www.waze.com/es/live-map/directions?navigate=yes&to=ll.19.4036007%2C-99.17469978",
-  "heroImg": "https://static.wixstatic.com/media/b02660_fc598264b3834d7ea7e9cadd555789b1~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/37210846b3b6000244627405fe96d25ef60bd202-1200x800.jpg",
   "welcome": {
    "es": "Bienvenido a Kahlo. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Kahlo. Enjoy your stay in Polanco."
@@ -1982,7 +1982,7 @@
   "checkInTime": "15:00",
   "maps": "https://maps.app.goo.gl/e8FvBQWjn5yqy3PJ6",
   "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/5d0ec0_d134b95a139d41c9aa99a980a290a6f5~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/cd9d8b68a5213cf82aac1547eb10e79bcd803de7-1200x901.jpg",
   "welcome": {
    "es": "Bienvenido a Luz María. Tu guía personalizada para disfrutar Polanco.",
    "en": "Welcome to Luz María. Your personal guide to enjoy Polanco."
@@ -2327,7 +2327,7 @@
   "checkInTime": "15:00",
   "maps": "https://maps.app.goo.gl/e8FvBQWjn5yqy3PJ6",
   "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/ba1f31_25cbbc5484cd48f18acced1cc9e0b60f~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/8b555b8828b1419435181451ca5d7b6432fcc4ab-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Laila Casa. Espacio amplio ideal para familias en Chapultepec Morales.",
    "en": "Welcome to Laila Casa. Spacious home perfect for families in Chapultepec Morales."
@@ -2672,7 +2672,7 @@
   "checkInTime": "15:00",
   "maps": "https://maps.app.goo.gl/1LLNodj4zPxBYnAt6",
   "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/ba1f31_de62157d47ac451c94ad5cb1c59bc5c0~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/05aa1391d81ab39733cf4a820acc6d2e7874448f-1200x900.jpg",
   "welcome": {
    "es": "Bienvenido a Cordelia. Disfruta el corazón de Polanco II.",
    "en": "Welcome to Cordelia. Enjoy the heart of Polanco II."
@@ -3398,7 +3398,7 @@
   "checkInTime": "15:00",
   "maps": "https://www.google.com/maps/dir//Depto.+1A,+Privada+Horacio+13,+Polanco,+Polanco+I+Secc,+11510+Ciudad+de+M%C3%A9xico,+CDMX",
   "waze": "https://www.waze.com/ul?ll=19.43518730%2C-99.21095810&navigate=yes",
-  "heroImg": "https://static.wixstatic.com/media/5d0ec0_bbd26111aa4d454c80d29abc05c90ffc~mv2.jpg",
+  "heroImg": "https://cdn.sanity.io/images/6o3ro0a1/production/68f922fd50e137e72aedebcc9261ef213d933aba-1200x801.jpg",
   "welcome": {
    "es": "Bienvenido a Horacio. Disfruta tu estancia en Polanco.",
    "en": "Welcome to Horacio. Enjoy your stay in Polanco."
