@@ -1,0 +1,3748 @@
+[
+ {
+  "slug": "bg-polanco",
+  "title": "Bg Polanco",
+  "neighborhood": "Polanco",
+  "address": "Lago Alberto 300, Anáhuac I Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX",
+  "lat": 19.43938166824858,
+  "lng": -99.18206137947718,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com/maps/dir//Lago+Alberto+300,+An%C3%A1huac+I+Secc,+Miguel+Hidalgo,+11320+Ciudad+de+M%C3%A9xico,+CDMX+N%C3%BAmero+de+Departamento:+2909+Torre+2/@19.4396271,-99.2233941,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d1f91108868f41:0x10acbfce42922203!2m2!1d-99.1821945!2d19.4395508?entry=ttu",
+  "waze": "https://www.waze.com/ul?ll=19.44006280%2C-99.18302660&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/5d0ec0_b27fb49c77ac41b5bd139ca2b87adf18~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Bg Polanco. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Bg Polanco. Enjoy your stay in Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con vigilancia las 24 hrs, por lo que al llegar indica tu nombre y número de departamento para que el guardia te dé acceso.",
+    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+   },
+   "byCar": {
+    "es": "Si tu acceso es con vehículo, la entrada al estacionamiento se encuentra en la calle Lago Iseo casi esquina con lago Alberto. Identificarás el portón de madera y el personal de seguridad te recibirá y validará los accesos al departamento, no olvides mencionar el número de departamento. Consulta a tu anfitrión acerca de la ubicación del cajón que te corresponde. \n​",
+    "en": "If your access is by vehicle, the entrance to the parking lot is located on Lago Iseo street, almost on the corner with Lago Alberto. You will identify the wooden gate, the security personnel will receive you and validate the accesses to the apartment, do not forget to mention the apartment number."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you the 6-digit password by email, enter the digits on the button followed by * or ✔ and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "You must enter the 6 digits that we send you, then press * or ✔ to later open."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en el ducto ubicado en las escaleras de servicio.",
+    "en": "You can deposit the garbage in the containers that are in the service stairs"
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 30 dólares / al día incluyendo hasta 3 horas.\n\nServicio de lavandería: El departamento cuenta con lavadora y secadora, si lo requieres podemos ayudarte a coordinar el servicio con un proveedorcercano.",
+   "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor.</p></li> <li><p>Calentador eléctrico.</p></li> <li><p>Caja de seguridad.</p></li> <li><p>Lavadora y secadora de ropa.</p></li> <li><p>Aspiradora.</p></li>\n</ul>",
+   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron.</p></li> <li><p>Electric heater.</p></li> <li><p>Safe deposit box.</p></li> <li><p>Clothes washer and dryer.</p></li> <li><p>Vacuum cleaner.</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   },
+   {
+    "title": {
+     "es": "Alberca, Gimnasio, Sauna y Vapor",
+     "en": "Pool, Gym, Sauna and Steam"
+    },
+    "description": {
+     "es": "Estos servicios están localizados en la planta baja. Saliendo del cubo de elevadores toma a la izquierda y al final encontrarás el área de Deportes. No olvides llevar toalla para el área, traje de baño completo y gorro de natación para el uso de la alberca. El horario de servicio es de 6:00 am a 11:00 pm.",
+     "en": "These services are located on the ground floor. Leaving the elevator hub, take a left and at the end you will find the Sports area. Do not forget to bring a towel for the area, a complete bathing suit and a swimming cap for the use of the pool. Service hours are from 6:00 am to 11:00 pm."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_20c89d76d46245c2866b291fc34c65c5~mv2.webp",
+    "order": 70.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "tamayo",
+  "title": "Tamayo",
+  "neighborhood": "Polanco",
+  "address": "Tennyson, Col. Polanco, Delegación Miguel Hidalgo, México D.F.",
+  "lat": 19.43633123861355,
+  "lng": -99.1947905287557,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com.mx/maps/dir//Tennyson+312,+Polanco,+Polanco+IV+Secc,+Miguel+Hidalgo,+11550+Ciudad+de+M%C3%A9xico,+CDMX/@19.436256,-99.1971776,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d20206ace97aeb:0x6cca5da8e6e52784!2m2!1d-99.1949889!2d19.436256",
+  "waze": "https://www.waze.com/ul?ll=19.43625600%2C-99.19498890&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/b02660_23ee300077cf41f6a3e1b71eefa4bcfc~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Tamayo. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Tamayo. Enjoy your stay in Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
+    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+   },
+   "byCar": {
+    "es": "El portero te abrirá y te indicará el portón correspondiente al departamento. Se encuentra ubicado a la derecha de la puerta peatonal.",
+    "en": "The doorman will open you and indicate the gate corresponding to the apartment. It is located to the right of the pedestrian door."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you the 6-digit password by email, enter the digits on the button followed by * or ✔ and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "You must enter the 6 digits that we send you, then press * or ✔ to later open."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
+   },
+   "trash": {
+    "es": "Pueden bajar la basura al estacionamiento y depositarla en los contenedores",
+    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 40 dólares / al día incluyendo hasta 3 horas.\nServicio de lavandería: El departamento cuenta con lavadora y secadora. Si lo requieres, podemos coordinar servicio de lavandería con un proveedor cercano.",
+   "en": "Cleaning service: $ 40 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor.</p></li> <li><p>Calentador eléctrico.</p></li> <li><p>Caja de seguridad.</p></li> <li><p>Lavadora y secadora de ropa.</p></li> <li><p>Aspiradora.</p></li>\n</ul>",
+   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron.</p></li> <li><p>Electric heater.</p></li> <li><p>Safe deposit box.</p></li> <li><p>Clothes washer and dryer.</p></li> <li><p>Vacuum cleaner.</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "aurora",
+  "title": "Aurora",
+  "neighborhood": "Polanco",
+  "address": "Av. Ejército Nacional Mexicano 225, Anáhuac I Secc, 11320 Ciudad de México, CDMX, México",
+  "lat": 19.436712,
+  "lng": -99.1794439,
+  "checkInTime": "15:00",
+  "maps": "https://maps.app.goo.gl/VXrBveaMQsYBmC5PA",
+  "waze": "https://www.waze.com/live-map/directions/mx/cdmx/mexico-d.f./av.-ejercito-nacional-mexicano-225?navigate=yes&to=place.ChIJt1YChZP50YURiYjW6HdPy00",
+  "heroImg": "https://static.wixstatic.com/media/5d0ec0_7fe20ea454824f6b90e06eec96d259f1~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Aurora. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Aurora. Enjoy your stay in Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con vigilancia las 24 hrs, por lo que al llegar indica tu nombre y número de departamento para que el guardia te dé acceso.",
+    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+   },
+   "byCar": {
+    "es": "Si tu acceso es con vehículo, la entrada al estacionamiento se encuentra en la calle de Bahía de San Hipólito. Identificarás el acceso y el personal de seguridad validará los accesos al departamento, tu cajon de estacionamiento se encuentra en sotano 3, lugar marcado D809.",
+    "en": "If your access is by vehicle, the entrance to the parking lot is located on Bahía de San Hipólito street. You will identify the access and the security personnel will receive you and validate the accesses to the apartment."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you the 6-digit password by email, enter the digits on the button followed by * or ✔ and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "You must enter the 6 digits that we send you, then press * or ✔ to later open."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
+   },
+   "trash": {
+    "es": "Puede depositar la basura en los contenedores que están en la escalera de servicio.",
+    "en": "You can deposit the garbage in the containers that are in the service stairs."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 30 dólares / al día incluyendo hasta 3 horas.\n\nServicio de lavandería: El departamento cuenta con lavadora y secadora, si lo requieres podemos ayudarte a coordinar el servicio con un proveedor cercano.",
+   "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Calentador eléctrico. (Clóset de recámara principal)</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li>\n</ul>",
+   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Electric heater. (Master bedroom closet)</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   },
+   {
+    "title": {
+     "es": "Alberca, Gimnasio, Sauna y Vapor",
+     "en": "Pool, Gym, Sauna and Steam"
+    },
+    "description": {
+     "es": "Estos servicios están localizados en la planta baja. Saliendo del cubo de elevadores toma a la izquierda y al final encontrarás el área de Deportes. No olvides llevar toalla para el área, traje de baño completo y gorro de natación para el uso de la alberca. El horario de servicio es de 6:00 am a 11:00 pm.",
+     "en": "These services are located on the ground floor. Leaving the elevator hub, take a left and at the end you will find the Sports area. Do not forget to bring a towel for the area, a complete bathing suit and a swimming cap for the use of the pool. Service hours are from 6:00 am to 11:00 pm."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_20c89d76d46245c2866b291fc34c65c5~mv2.webp",
+    "order": 70.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "leonora",
+  "title": "Leonora",
+  "neighborhood": "Polanco",
+  "address": "Jorge Bernard Shaw 34, Polanco, Polanco II Secc, Miguel Hidalgo, 11550 Ciudad de México, CDMX, México",
+  "lat": 19.4312588,
+  "lng": -99.2045514,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com/maps/dir//Jorge+Bernard+Shaw+34,+Polanco,+Polanco+II+Secc,+Miguel+Hidalgo,+11550+Ciudad+de+M%C3%A9xico,+CDMX/@19.4312638,-99.2067401,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d2021d97e0afad:0xbc108ffa449af785!2m2!1d-99.2045514!2d19.4312588",
+  "waze": "https://www.waze.com/ul?ll=19.43307700%2C-99.19821230&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/b02660_f36374c749054b5b9b893916ec0b4323~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Leonora. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Leonora. Enjoy your stay in Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
+    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+   },
+   "byCar": {
+    "es": "El departamento cuenta con 1 lugar de estacionamiento, en caso de requerirlo debes dejar las llaves al portero para que pueda mover el auto en caso de que se necesite.",
+    "en": "The apartment does not have parking, however there is a parking lot located very close by that offers 24-hour service at a rate of 28 MXN per hour.\n\nThe address is: Superama Los Morales. Avenida Horacio 1740, Polanco, Polanco I Secc, 11510 Mexico City, CDMX"
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you the 6-digit password by email, enter the 4 digits and then press the top button to open the lid and remove the keys."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "You must enter the 6 digits that we send you, press the upper button and then it will open."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nPlease remove the lock and take it inside the apartment."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
+    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 40 dólares / al día incluyendo hasta 3 horas.\nServicio de lavandería: El departamento cuenta con lavadora y secadora. Si lo requieres, podemos coordinar servicio de lavandería con un proveedor cercano.",
+   "en": "Cleaning service: $ 40 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Lavavajillas</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Calentador eléctrico. (Clóset de recámara principal)</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Aspiradora</p></li>\n</ul>",
+   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Dishwasher</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Electric heater. (Master bedroom closet)</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li> <li><p>Vacuum cleaner</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "coco",
+  "title": "Coco",
+  "neighborhood": "Condesa",
+  "address": "Av. Baja California 301, Hipódromo, Cuauhtémoc, 06140 Ciudad de México, CDMX, Mexico",
+  "lat": 19.4060472,
+  "lng": -99.1724937,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com/maps/dir//Av.+Baja+California+301,+Hip%C3%B3dromo,+Cuauht%C3%A9moc,+06140+Ciudad+de+M%C3%A9xico,+CDMX/@19.4061235,-99.2136933,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d1ff6a3c9bf69d:0x390ceee7994d1fc6!2m2!1d-99.1724937!2d19.4060472?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D",
+  "waze": "https://www.waze.com/es/live-map/directions/mx/cdmx/mexico-d.f./av.-baja-california-301?navigate=yes&to=place.ChIJnfabPGr_0YURxh9NmefuDDk",
+  "heroImg": "https://static.wixstatic.com/media/b02660_29f349961654411f9917745ff7e961ef~mv2.avif",
+  "welcome": {
+   "es": "Bienvenido a Coco. Disfruta tu estancia en CDMX.",
+   "en": "Welcome to Coco. Enjoy your stay in Mexico City."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
+    "en": "The building has 24-hour concierge service, so when you arrive, just ring the bell and mention your name for access."
+   },
+   "byCar": {
+    "es": "El departamento no cuenta con estacionamiento.",
+    "en": "The apartment does not have parking."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We've emailed you a 6-digit code. Please enter the digits followed by # and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "Please enter the code we sent you and then press # to unlock the building and your apartment door."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are very safe, but we recommend always locking the door with the bolt when you're inside. \n\nWhen you go out, just make sure the lock engages automatically 5 seconds after closing the door, or you can swipe your hand over it to lock it manually."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1 de estacionamiento.",
+    "en": "Please place your trash in sealed plastic bags inside the containers located in Parking Basement 1."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 50 dólares / al día incluyendo hasta 3 horas.\n\nServicio de lavandería: En el edificio hay lavadora y secadora disponibles, o si lo requieres podemos coordinar el servicio con un proveedor cercano.",
+   "en": "Cleaning service: $50 per day, including up to 3 hours. \n\nLaundry service: There is a washing machine and dryer available on-site, or we can coordinate with a nearby provider if needed."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Cocina</p></li> <li><p>Refrigerador</p></li> <li><p>Platos y cubiertos</p></li> <li><p>Cafetera</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Televisión HD con pantalla de 105\" y Video de Amazon Prime, HBO Max, Netflix.</p></li> <li><p>Área para trabajar</p></li>\n</ul>",
+   "en": "<p>Kitchen</p>\n<ul> <li><p>Kitchen</p></li> <li><p>Refrigerator</p></li> <li><p>Dishes and cutlery</p></li> <li><p>Coffee maker</p></li>\n</ul>\n<p>Others</p>\n<ul> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Washing machine and dryer. (Service room)</p></li> <li><p>HD television with a 105\" screen and Video from Amazon Prime, HBO Max, Netflix.</p></li> <li><p>Work area</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": []
+ },
+ {
+  "slug": "kahlo",
+  "title": "Kahlo",
+  "neighborhood": "Polanco",
+  "address": "Calle Prosperidad 17, Col. Polanco, Ciudad de México.",
+  "lat": 19.40366489074144,
+  "lng": -99.17471145061533,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com.mx/maps/place/C.+de+la+Prosperidad+17,+Escand%C3%B3n+II+Secc,+Miguel+Hidalgo,+11800+Ciudad+de+M%C3%A9xico,+CDMX/@19.403664,-99.1772013,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fff8b8969b91:0xaa12e1640150f3cf!8m2!3d19.403659!4d-99.1746264!16s%2Fg%2F11y1g2sfsl?coh=210790&entry=tts",
+  "waze": "https://www.waze.com/es/live-map/directions?navigate=yes&to=ll.19.4036007%2C-99.17469978",
+  "heroImg": "https://static.wixstatic.com/media/b02660_fc598264b3834d7ea7e9cadd555789b1~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Kahlo. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Kahlo. Enjoy your stay in Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
+    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+   },
+   "byCar": {
+    "es": "El departamento cuenta con 1 lugar de estacionamiento, en caso de requerirlo debes dejar las llaves al portero para que pueda mover el auto en caso de que se necesite.",
+    "en": "The apartment has 1 parking space, if required you must leave the keys to the doorman so that he can move the car in case it is needed."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico,  ingresa los dígitos en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you the 6-digit password by email, enter the digits on the button followed by * or ✔ and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Deberás ingresar los dígitos de la clave que te enviamos, después presionar # para abrir la puerta del edificio y del departamento.",
+    "en": "You must enter the 6 digits that we send you, then press * or ✔ to later open."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.\n\n​Cuando salgas solo verifica que la cerradura realice el cierre automático a los 5 seg después de cerrar la puerta o puedes pasar la mano por encima y realizará el cierre.",
+    "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
+    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 30 dólares / al día incluyendo hasta 3 horas.\nServicio de lavandería: El departamento cuenta con lava secadora. Si lo requieres, podemos coordinar servicio de lavandería con un proveedor cercano.",
+   "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Cafetera.</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Aspiradora</p></li>\n</ul>",
+   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Coffee maker.</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li> <li><p>Vacuum cleaner</p></li>\n</ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "luz-maria",
+  "title": "Luz María",
+  "neighborhood": "Polanco",
+  "address": "Lamartine 115, Chapultepec Morales, Polanco V Secc, 11560 Ciudad de México, CDMX",
+  "lat": 19.4371673,
+  "lng": -99.1897198,
+  "checkInTime": "15:00",
+  "maps": "https://maps.app.goo.gl/e8FvBQWjn5yqy3PJ6",
+  "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/5d0ec0_d134b95a139d41c9aa99a980a290a6f5~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Luz María. Tu guía personalizada para disfrutar Polanco.",
+   "en": "Welcome to Luz María. Your personal guide to enjoy Polanco."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con servicio de portería las 24 hrs. Al llegar toca el timbre y menciona tu nombre para identificarte.",
+    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name to identify yourself."
+   },
+   "byCar": {
+    "es": "El portero te abrirá el portón y te indicará el cajón correspondiente al departamento. Se encuentra a la derecha de la puerta peatonal.",
+    "en": "The doorman will open the gate and direct you to the parking spot assigned to the apartment. It is located to the right of the pedestrian door."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo electrónico. Ingresa los dígitos enviados en la chapa seguido de # y después gira la manija para ingresar.",
+    "en": "We send you a 6-digit code by email. Enter the digits on the lock followed by # and then turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Ingresa los dígitos de la clave enviada por correo, después presiona # para abrir la puerta del edificio y del departamento.",
+    "en": "Enter the code digits sent to your email, then press # to open both the building and apartment doors."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro. Cuando salgas verifica que la cerradura realice el cierre automático.",
+    "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside. When leaving, verify that the lock engages automatically."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1 de estacionamiento.",
+    "en": "Place trash in closed plastic bags in the containers located on parking basement level 1."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 50 USD/día incluyendo hasta 3 horas. Servicio de lavandería: el edificio cuenta con lavadora y secadora, o coordinamos servicio con un proveedor cercano.",
+   "en": "Cleaning service: $50 USD/day including up to 3 hours. Laundry service: the building has washer and dryer, or we can coordinate service with a nearby provider."
+  },
+  "kit": {
+   "es": "<p><strong>Cocina</strong></p><ul><li>Refrigerador</li><li>Platos y cubiertos</li><li>Cafetera</li></ul><p><strong>Otros</strong></p><ul><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa (Cuarto de servicio)</li><li>Televisión HD con pantalla de 105\" y Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
+   "en": "<p><strong>Kitchen</strong></p><ul><li>Refrigerator</li><li>Plates and utensils</li><li>Coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Steam iron (Main bedroom)</li><li>Washer and dryer (Service room)</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "laila-casa",
+  "title": "Laila Casa",
+  "neighborhood": "Polanco",
+  "address": "Lamartine 115, Chapultepec Morales, Polanco V Secc, 11560 Ciudad de México, CDMX",
+  "lat": 19.4371673,
+  "lng": -99.1897198,
+  "checkInTime": "15:00",
+  "maps": "https://maps.app.goo.gl/e8FvBQWjn5yqy3PJ6",
+  "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/ba1f31_25cbbc5484cd48f18acced1cc9e0b60f~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Laila Casa. Espacio amplio ideal para familias en Chapultepec Morales.",
+   "en": "Welcome to Laila Casa. Spacious home perfect for families in Chapultepec Morales."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con portería 24 hrs. Al llegar toca el timbre y menciona tu nombre.",
+    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name."
+   },
+   "byCar": {
+    "es": "El portero te abrirá el portón y te indicará el cajón correspondiente.",
+    "en": "The doorman will open the gate and direct you to the parking spot assigned to the apartment."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo. Ingresa los dígitos enviados en la chapa seguido de # y gira la manija.",
+    "en": "We send you a 6-digit code by email. Enter the digits on the lock followed by # and turn the handle."
+   },
+   "instructions": {
+    "es": "Ingresa los dígitos enviados, después presiona # para abrir.",
+    "en": "Enter the code digits sent to your email, then press # to open the building and apartment doors."
+   },
+   "security": {
+    "es": "El edificio y el área son seguros. Recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.",
+    "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside."
+   },
+   "trash": {
+    "es": "Deposita la basura en bolsas plásticas cerradas en los contenedores del sótano 1 de estacionamiento.",
+    "en": "Place trash in closed plastic bags in the containers located on parking basement level 1."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 50 USD/día incluyendo hasta 3 horas. El edificio cuenta con lavadora y secadora.",
+   "en": "Cleaning service: $50 USD/day including up to 3 hours. The building has washer and dryer."
+  },
+  "kit": {
+   "es": "<p><strong>Cocina</strong></p><ul><li>Refrigerador</li><li>Platos y cubiertos</li><li>Cafetera</li></ul><p><strong>Otros</strong></p><ul><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa</li><li>Televisión HD 105\" con Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
+   "en": "<p><strong>Kitchen</strong></p><ul><li>Refrigerator</li><li>Plates and utensils</li><li>Coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Steam iron (Main bedroom)</li><li>Washer and dryer</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "cordelia",
+  "title": "Cordelia",
+  "neighborhood": "Polanco",
+  "address": "Solón 210, Polanco, Polanco II Secc, 11530 Ciudad de México, CDMX",
+  "lat": 19.435921,
+  "lng": -99.206055,
+  "checkInTime": "15:00",
+  "maps": "https://maps.app.goo.gl/1LLNodj4zPxBYnAt6",
+  "waze": "https://ul.waze.com/ul?place=ChIJhW4_-RsC0oURHgi1j1q0r1s&ll=19.43592100%2C-99.20605500&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/ba1f31_de62157d47ac451c94ad5cb1c59bc5c0~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Cordelia. Disfruta el corazón de Polanco II.",
+   "en": "Welcome to Cordelia. Enjoy the heart of Polanco II."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con portería 24 hrs. Toca el timbre al llegar y menciona tu nombre.",
+    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name."
+   },
+   "byCar": {
+    "es": "El portero te abrirá el portón y te indicará el cajón. Se encuentra a la derecha de la puerta peatonal.",
+    "en": "The doorman will open the gate and direct you to your parking spot. It is located to the right of the pedestrian door."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo. Ingresa los dígitos enviados en la chapa seguido de # y gira la manija.",
+    "en": "We send you a 6-digit code by email. Enter the digits on the lock followed by # and turn the handle."
+   },
+   "instructions": {
+    "es": "Ingresa los dígitos enviados, después presiona # para abrir la puerta del edificio y del departamento.",
+    "en": "Enter the digits we sent you, then press # to open the building and apartment doors."
+   },
+   "security": {
+    "es": "El edificio y el área son bastante seguros, pero recomendamos cerrar siempre la puerta con el pasador cuando estés dentro.",
+    "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside."
+   },
+   "trash": {
+    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1.",
+    "en": "Place trash in closed plastic bags in the containers located on basement level 1."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 40 USD/día incluyendo hasta 3 horas. El departamento cuenta con lavadora y secadora.",
+   "en": "Cleaning service: $40 USD/day including up to 3 hours. The apartment has washer and dryer."
+  },
+  "kit": {
+   "es": "<p><strong>Cocina</strong></p><ul><li>Microondas</li><li>Refrigerador</li><li>Horno tostador</li><li>Artículos básicos de cocina</li><li>Platos y cubiertos</li><li>Cafetera de filtro</li></ul><p><strong>Otros</strong></p><ul><li>Secadora de cabello (Baño principal)</li><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa (Cuarto de servicio)</li><li>Televisión HD 105\" con Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
+   "en": "<p><strong>Kitchen</strong></p><ul><li>Microwave</li><li>Refrigerator</li><li>Toaster oven</li><li>Basic kitchen items</li><li>Plates and utensils</li><li>Drip coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Hair dryer (Main bathroom)</li><li>Steam iron (Main bedroom)</li><li>Washer and dryer (Service room)</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "paula",
+  "title": "Paula",
+  "neighborhood": "Polanco",
+  "address": "C. Lago Zurich 156-154, Granada, 11529 Ciudad de México, CDMX",
+  "lat": 19.4453909,
+  "lng": -99.2027582,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com.mx/maps/dir//C.+Lago+Zurich+156-154,+Granada,+Miguel+Hidalgo,+11529+Ciudad+de+M%C3%A9xico,+CDMX",
+  "waze": "https://www.waze.com/es/live-map/directions?navigate=yes&to=ll.19.4454865%2C-99.2030137",
+  "heroImg": "https://static.wixstatic.com/media/b02660_4443088b83984fa7a2caec7f3ef41c64~mv2.webp",
+  "welcome": {
+   "es": "Bienvenido a Paula. Lago Zúrich, una de las zonas más vibrantes de CDMX.",
+   "en": "Welcome to Paula. Lago Zurich, one of CDMX's most vibrant areas."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con portería 24 hrs. Al llegar toca el timbre y menciona tu nombre.",
+    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name."
+   },
+   "byCar": {
+    "es": "Acceso vehicular por calle Lago Zurich. El personal de seguridad validará el acceso; tu cajón se encuentra en sótano 6.",
+    "en": "Vehicle access via Lago Zurich street. Security will validate access; your parking spot is on basement 6."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo. Ingresa los dígitos enviados en la chapa seguido de # y gira la manija.",
+    "en": "We send you a 6-digit code by email. Enter the digits on the lock followed by # and turn the handle."
+   },
+   "instructions": {
+    "es": "Ingresa los dígitos enviados, después presiona # para abrir.",
+    "en": "Enter the digits we sent you, then press # to open."
+   },
+   "security": {
+    "es": "El edificio y el área son seguros. Cierra siempre la puerta con el pasador cuando estés dentro.",
+    "en": "The building and area are quite safe. Always lock the door when you are inside."
+   },
+   "trash": {
+    "es": "Deposita la basura en bolsas plásticas cerradas en el ducto ubicado en las escaleras de servicio.",
+    "en": "Deposit garbage in closed plastic bags in the duct located in the service stairs."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 30 USD/día incluyendo hasta 3 horas. El departamento cuenta con lavasecadora.",
+   "en": "Cleaning service: $30 USD/day including up to 3 hours. The apartment has a washer/dryer."
+  },
+  "kit": {
+   "es": "<p><strong>Cocina</strong></p><ul><li>Microondas</li><li>Estufa/Horno</li><li>Horno tostador</li><li>Cafetera (Dolce Gusto)</li><li>Licuadora</li><li>Filtro de agua para beber</li></ul><p><strong>Otros</strong></p><ul><li>Secadora de cabello</li><li>Plancha de vapor</li><li>Calentador eléctrico</li><li>Caja de seguridad</li><li>Lavadora y secadora</li><li>Aspiradora</li></ul>",
+   "en": "<p><strong>Kitchen</strong></p><ul><li>Microwave</li><li>Stove/Oven</li><li>Toaster</li><li>Coffee maker</li><li>Blender</li><li>Drinking water filter</li></ul><p><strong>Others</strong></p><ul><li>Hair dryer</li><li>Steam iron</li><li>Electric heater</li><li>Safe deposit box</li><li>Washer and dryer</li><li>Vacuum cleaner</li></ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "Estacionamiento",
+     "en": "Parking lot"
+    },
+    "description": {
+     "es": "El departamento cuenta con lugar de estacionamiento, por favor avisar con anticipación para hacer los trámites correspondientes.",
+     "en": "The apartment has a parking space, please notify in advance to carry out the corresponding procedures."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
+    "order": 10.0
+   },
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ },
+ {
+  "slug": "siqueiros-orozco-rivera",
+  "title": "Siqueiros Orozco Rivera",
+  "neighborhood": "Polanco",
+  "address": "Privada de Horacio 13, Col. Polanco, CDMX",
+  "lat": 19.4351873,
+  "lng": -99.2109581,
+  "checkInTime": "15:00",
+  "maps": "https://www.google.com/maps/dir//Depto.+1A,+Privada+Horacio+13,+Polanco,+Polanco+I+Secc,+11510+Ciudad+de+M%C3%A9xico,+CDMX",
+  "waze": "https://www.waze.com/ul?ll=19.43518730%2C-99.21095810&navigate=yes",
+  "heroImg": "https://static.wixstatic.com/media/5d0ec0_bbd26111aa4d454c80d29abc05c90ffc~mv2.jpg",
+  "welcome": {
+   "es": "Bienvenido a Siqueiros Orozco Rivera. Polanco I a unos pasos de Horacio.",
+   "en": "Welcome to Siqueiros Orozco Rivera. Polanco I, steps from Horacio."
+  },
+  "arrival": {
+   "noCar": {
+    "es": "El edificio cuenta con portería durante el día, pero la entrada es autónoma 24/7. Lleva contigo la llave del edificio.",
+    "en": "The building has daytime doorman service but autonomous entry 24/7. Bring the building key with you."
+   },
+   "byCar": {
+    "es": "El departamento cuenta con un lugar de estacionamiento para auto mediano. Abre el portón desde el interior y estaciónate en el cajón asignado.",
+    "en": "The apartment has a parking space for a medium-sized car. Open the gate from inside and park in the assigned spot."
+   }
+  },
+  "access": {
+   "video": "https://video.wixstatic.com/video/b02660_4cfbe052b6a845e58f7d5d7d03f2a262/720p/mp4/file.mp4",
+   "toApt": {
+    "es": "Te enviamos una clave de 6 dígitos por correo. Ingresa los dígitos enviados en la chapa seguido de # y gira la manija.",
+    "en": "We send you a 6-digit code by email. Enter the digits on the lock followed by # and turn the handle to enter."
+   },
+   "instructions": {
+    "es": "Ingresa los dígitos enviados por correo, después presiona # para abrir.",
+    "en": "Enter the digits we sent you, then press # to open."
+   },
+   "security": {
+    "es": "El edificio y el área son seguros. Cierra siempre la puerta con el pasador cuando estés dentro.",
+    "en": "The building and area are quite safe. Always lock the door when you are inside."
+   },
+   "trash": {
+    "es": "Deposita la basura en bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
+    "en": "Deposit garbage in closed plastic bags in the containers located in the parking lot."
+   }
+  },
+  "cleaning": {
+   "es": "Servicio de limpieza: 30 USD/día incluyendo hasta 3 horas. El departamento cuenta con lavadora y secadora.",
+   "en": "Cleaning service: $30 USD/day including up to 3 hours. The apartment has washer and dryer."
+  },
+  "kit": {
+   "es": "<p><strong>Cocina</strong></p><ul><li>Microondas</li><li>Horno tostador</li><li>Cafetera (Dolce Gusto)</li><li>Licuadora</li><li>Filtro de agua para beber</li></ul><p><strong>Otros</strong></p><ul><li>Secadora de cabello</li><li>Plancha de vapor</li><li>Calentador eléctrico</li><li>Caja de seguridad</li><li>Lavadora y secadora de ropa</li><li>Aspiradora</li></ul>",
+   "en": "<p><strong>Kitchen</strong></p><ul><li>Microwave</li><li>Coffee maker</li><li>Blender</li><li>Drinking water filter</li></ul><p><strong>Others</strong></p><ul><li>Hair dryer</li><li>Safe deposit box</li><li>Clothes washer and dryer</li><li>Vacuum cleaner</li></ul>"
+  },
+  "amenities": [
+   {
+    "title": {
+     "es": "En caso de emergencia",
+     "en": "In case of emergency"
+    },
+    "description": {
+     "es": "Alerte a los Servicios de Emergencia mediante el teléfono: 911",
+     "en": "Alert Emergency Services by phone: 911"
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_103d1b92e88b4d73949f19f114b6f414~mv2.jpeg",
+    "order": 20.0
+   },
+   {
+    "title": {
+     "es": "Agua para Beber",
+     "en": "Drinking Water"
+    },
+    "description": {
+     "es": "En el lavabo de la cocina encontrarás un filtro que purifica el agua para beber.",
+     "en": "In the kitchen sink you will find a filter that purifies the drinking water."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
+    "order": 30.0
+   },
+   {
+    "title": {
+     "es": "Televisión y Sistema de Cable",
+     "en": "Television and Cable System"
+    },
+    "description": {
+     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
+     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
+    "order": 40.0
+   },
+   {
+    "title": {
+     "es": "En caso de que falte luz en alguna zona",
+     "en": "In case there is a lack of light in any area"
+    },
+    "description": {
+     "es": "El panel de control de la luz está localizado en la pared del área de lavandería.",
+     "en": "The light control panel is located on the wall of the laundry area."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/ba1f31_b1c292c3f7ac4678af1e942625ed2209~mv2.jpg",
+    "order": 50.0
+   },
+   {
+    "title": {
+     "es": "Ropa de cama y Toallas",
+     "en": "Linens and towels"
+    },
+    "description": {
+     "es": "Las camas están recién preparadas para tu estancia. Al inicio de tu estancia se hace la limpieza de todas las áreas. Las toallas están en el closet fuera del baño principal.",
+     "en": "The beds are freshly prepared for your stay. At the beginning of your stay, all areas are cleaned. Towels are in the closet outside the main bathroom."
+    },
+    "imageUrl": "https://static.wixstatic.com/media/nsplsh_f860cc47d5494870a04582664f8f6e60~mv2.jpg",
+    "order": 60.0
+   }
+  ],
+  "pois": [
+   {
+    "name": {
+     "es": "Máximo",
+     "en": "Maximo"
+    },
+    "description": {
+     "es": "Referente de la gastronomía de autor en México, donde el chef Eduardo García transforma ingredientes locales en obras maestras culinarias.",
+     "en": "A benchmark of signature Mexican gastronomy, where Chef Eduardo García transforms local ingredients into culinary masterpieces."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%2019.416812%2C-99.160754",
+    "wazeUrl": "https://waze.com/ul?ll=19.416812,-99.160754&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/7918db39c_generated_image.png",
+    "lat": 19.416812,
+    "lng": -99.160754
+   },
+   {
+    "name": {
+     "es": "Museo Soumaya",
+     "en": "Soumaya Museum"
+    },
+    "description": {
+     "es": "Una joya arquitectónica de fachada plateada que resguarda una de las colecciones de arte más importantes del mundo, incluyendo obras de Rodin y Dalí.",
+     "en": "An architectural jewel with a silver facade housing one of the world's most significant art collections, including masterpieces by Rodin and Dalí."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Soumaya%2019.44069%2C-99.20468",
+    "wazeUrl": "https://waze.com/ul?ll=19.44069,-99.20468&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/980207534_generated_image.png",
+    "lat": 19.44069,
+    "lng": -99.20468
+   },
+   {
+    "name": {
+     "es": "Azul Condesa",
+     "en": "Azul Condesa"
+    },
+    "description": {
+     "es": "Cocina mexicana de alto nivel en un ambiente sofisticado y selvático, famoso por sus festivales gastronómicos regionales.",
+     "en": "High-end Mexican cuisine in a sophisticated, lush setting, famous for its regional gastronomic festivals."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%2019.412521%2C-99.170512",
+    "wazeUrl": "https://waze.com/ul?ll=19.412521,-99.170512&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/afaaf7573_generated_image.png",
+    "lat": 19.412521,
+    "lng": -99.170512
+   },
+   {
+    "name": {
+     "es": "Museo Jumex",
+     "en": "Jumex Museum"
+    },
+    "description": {
+     "es": "El destino principal para el arte contemporáneo en la ciudad, diseñado por David Chipperfield y sede de exposiciones internacionales vanguardistas.",
+     "en": "The city's premier destination for contemporary art, designed by David Chipperfield and host to cutting-edge international exhibitions."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Jumex%2019.44141%2C-99.20335",
+    "wazeUrl": "https://waze.com/ul?ll=19.44141,-99.20335&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ff70b6b76_generated_image.png",
+    "lat": 19.44141,
+    "lng": -99.20335
+   },
+   {
+    "name": {
+     "es": "Parque México",
+     "en": "Mexico Park"
+    },
+    "description": {
+     "es": "Icónico parque de estilo Art Déco rodeado de arquitectura histórica, ideal para un paseo romántico bajo la fronda de sus jacarandas.",
+     "en": "Iconic Art Deco park surrounded by historic architecture, ideal for a romantic stroll under the canopy of jacaranda trees."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parque%20M%C3%A9xico%2019.411822%2C-99.169558",
+    "wazeUrl": "https://waze.com/ul?ll=19.411822,-99.169558&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/490b4356f_generated_image.png",
+    "lat": 19.411822,
+    "lng": -99.169558
+   },
+   {
+    "name": {
+     "es": "La Buena Barra",
+     "en": "La Buena Barra"
+    },
+    "description": {
+     "es": "Una experiencia gastronómica de alta gama en una espectacular terraza sobre Masaryk, ideal para comidas de negocios con los mejores cortes y mariscos.",
+     "en": "A high-end dining experience on a spectacular terrace overlooking Masaryk, ideal for business lunches with the finest steaks and seafood."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Buena%20Barra%2019.43088%2C-99.19129",
+    "wazeUrl": "https://waze.com/ul?ll=19.43088,-99.19129&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/cef77bee3_generated_image.png",
+    "lat": 19.43088,
+    "lng": -99.19129
+   },
+   {
+    "name": {
+     "es": "Pujol",
+     "en": "Pujol Restaurant"
+    },
+    "description": {
+     "es": "Clasificado entre los mejores del mundo, este restaurante ofrece una experiencia sensorial única basada en la cocina mexicana de autor de Enrique Olvera.",
+     "en": "Ranked among the world's best, this restaurant offers a unique sensory experience based on Enrique Olvera's signature Mexican haute cuisine."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pujol%2019.43262%2C-99.19321",
+    "wazeUrl": "https://waze.com/ul?ll=19.43262,-99.19321&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/04de6ff1e_generated_image.png",
+    "lat": 19.43262,
+    "lng": -99.19321
+   },
+   {
+    "name": {
+     "es": "Museo Casa de la Bola",
+     "en": "Casa de la Bola Museum"
+    },
+    "description": {
+     "es": "Una joya oculta del siglo XVI que alberga una opulenta colección de arte europeo y jardines espectaculares de estilo francés.",
+     "en": "A 16th-century hidden gem housing an opulent collection of European art and spectacular French-style gardens."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Casa%20de%20la%20Bola%2019.405528%2C-99.187424",
+    "wazeUrl": "https://waze.com/ul?ll=19.405528,-99.187424&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/bec0240cf_generated_image.png",
+    "lat": 19.405528,
+    "lng": -99.187424
+   },
+   {
+    "name": {
+     "es": "Museo Nacional de Antropología",
+     "en": "National Museum of Anthropology"
+    },
+    "description": {
+     "es": "Considerado uno de los museos más bellos del mundo, resguarda el legado arqueológico de las culturas mesoamericanas en un entorno arquitectónico único.",
+     "en": "Considered one of the most beautiful museums in the world, it houses the archaeological legacy of Mesoamerican cultures in a unique architectural setting."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%2019.426%2C-99.18627",
+    "wazeUrl": "https://waze.com/ul?ll=19.426,-99.18627&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/ef81d6c7a_generated_image.png",
+    "lat": 19.426,
+    "lng": -99.18627
+   },
+   {
+    "name": {
+     "es": "Quintonil",
+     "en": "Quintonil Restaurant"
+    },
+    "description": {
+     "es": "Un templo de la gastronomía mexicana moderna que destaca por el uso de ingredientes locales y una técnica impecable del chef Jorge Vallejo.",
+     "en": "A temple of modern Mexican gastronomy that stands out for its use of local ingredients and impeccable technique by Chef Jorge Vallejo."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quintonil%2019.43194%2C-99.18683",
+    "wazeUrl": "https://waze.com/ul?ll=19.43194,-99.18683&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/322dc70d1_generated_image.png",
+    "lat": 19.43194,
+    "lng": -99.18683
+   },
+   {
+    "name": {
+     "es": "Acuario Inbursa",
+     "en": "Inbursa Aquarium"
+    },
+    "description": {
+     "es": "El acuario más grande de la Ciudad de México, ofreciendo una experiencia inmersiva subterránea con especies marinas de todo el mundo.",
+     "en": "The largest aquarium in Mexico City, offering an immersive underground experience with marine species from around the world."
+    },
+    "category": "attraction",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Acuario%20Inbursa%2019.440662%2C-99.204128",
+    "wazeUrl": "https://waze.com/ul?ll=19.440662,-99.204128&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/f4434f07d_generated_image.png",
+    "lat": 19.440662,
+    "lng": -99.204128
+   },
+   {
+    "name": {
+     "es": "Hacienda de los Morales",
+     "en": "Hacienda de los Morales"
+    },
+    "description": {
+     "es": "Una joya arquitectónica del siglo XVI que ofrece alta cocina mexicana en un ambiente de elegancia histórica inigualable.",
+     "en": "A 16th-century architectural gem offering fine Mexican cuisine in an atmosphere of unparalleled historical elegance."
+    },
+    "category": "restaurant",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hacienda%20de%20los%20Morales%2019.436323%2C-99.21319",
+    "wazeUrl": "https://waze.com/ul?ll=19.436323,-99.21319&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/780e500de_generated_image.png",
+    "lat": 19.436323,
+    "lng": -99.21319
+   },
+   {
+    "name": {
+     "es": "Metrópoli Patriotismo",
+     "en": "Metropoli Patriotismo Mall"
+    },
+    "description": {
+     "es": "Centro comercial moderno y dinámico con una oferta ejecutiva completa, cines premium y boutiques de diseñador.",
+     "en": "Modern and dynamic shopping center with a complete executive offering, premium cinemas, and designer boutiques."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metr%C3%B3poli%20Patriotismo%2019.395834%2C-99.178221",
+    "wazeUrl": "https://waze.com/ul?ll=19.395834,-99.178221&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/55995da74_generated_image.png",
+    "lat": 19.395834,
+    "lng": -99.178221
+   },
+   {
+    "name": {
+     "es": "Miyana Comercial",
+     "en": "Miyana Mall"
+    },
+    "description": {
+     "es": "Un destino de estilo de vida premium que combina exclusivas tiendas de diseño, una vibrante oferta culinaria y arquitectura moderna a pasos de su ubicación.",
+     "en": "A premium lifestyle destination combining exclusive design shops, a vibrant culinary scene, and modern architecture just steps away from your location."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Miyana%20Comercial%2019.44101%2C-99.18252",
+    "wazeUrl": "https://waze.com/ul?ll=19.44101,-99.18252&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/d8f465c03_generated_image.png",
+    "lat": 19.44101,
+    "lng": -99.18252
+   },
+   {
+    "name": {
+     "es": "Antara Fashion Hall",
+     "en": "Antara Fashion Hall"
+    },
+    "description": {
+     "es": "Exclusivo centro comercial al aire libre que combina las mejores firmas de lujo internacionales con un diseño paisajístico sofisticado.",
+     "en": "Exclusive open-air shopping center that combines top international luxury brands with sophisticated landscape design."
+    },
+    "category": "mall",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Antara%20Fashion%20Hall%2019.44021%2C-99.20235",
+    "wazeUrl": "https://waze.com/ul?ll=19.44021,-99.20235&navigate=yes",
+    "imageUrl": "https://media.base44.com/images/public/6977966e4d4826177c38cef7/03ff103a4_generated_image.png",
+    "lat": 19.44021,
+    "lng": -99.20235
+   }
+  ]
+ }
+]

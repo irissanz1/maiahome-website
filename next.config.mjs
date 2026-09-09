@@ -108,6 +108,8 @@ const nextConfig = {
       // Fichas de propiedad viejas → nuevas (por slug)
       ...conchitaToCocoRedirects(),
       ...augustinToAugustineRedirects(),
+      // Guía del huésped: el slug viejo de book (conchita) → coco.
+      { source: "/g/conchita", destination: "/g/coco", permanent: true },
       ...loadPropertyRedirects(),
       // Blog: posts migrados a su nuevo slug, y el resto de /post/* a la guía.
       ...loadBlogRedirects(),

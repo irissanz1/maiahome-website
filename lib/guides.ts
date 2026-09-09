@@ -1,0 +1,53 @@
+// Guías del huésped (post-reserva, privadas, noindex). Datos migrados desde la
+// app base44 de book.maiahome.mx (snapshot en data/guides.json), desacoplados.
+import guidesData from "@/data/guides.json";
+
+type BL = { es: string; en: string };
+
+export interface GuidePOI {
+  name: BL;
+  description: BL;
+  category: "attraction" | "restaurant" | "mall" | string;
+  mapsUrl: string | null;
+  wazeUrl: string | null;
+  imageUrl: string | null;
+  lat: number | null;
+  lng: number | null;
+}
+
+export interface GuideAmenity {
+  title: BL;
+  description: BL;
+  imageUrl: string | null;
+  order: number;
+}
+
+export interface Guide {
+  slug: string;
+  title: string;
+  neighborhood: string;
+  address: string;
+  lat: number | null;
+  lng: number | null;
+  checkInTime: string;
+  maps: string | null;
+  waze: string | null;
+  heroImg: string | null;
+  welcome: BL;
+  arrival: { noCar: BL; byCar: BL };
+  access: { video: string | null; toApt: BL; instructions: BL; security: BL; trash: BL };
+  cleaning: BL;
+  kit: BL; // HTML
+  amenities: GuideAmenity[];
+  pois: GuidePOI[];
+}
+
+const GUIDES = guidesData as unknown as Guide[];
+
+export function getGuides(): Guide[] {
+  return GUIDES;
+}
+
+export function getGuide(slug: string): Guide | undefined {
+  return GUIDES.find((g) => g.slug === slug);
+}
