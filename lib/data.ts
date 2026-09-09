@@ -55,7 +55,7 @@ const QUERY = `*[_type=="property" && defined(slug.current) && defined(nombre)]{
   tipo, recamaras, banos, m2, lat, lng, base44Slug, capacidad, capacidadCamas, camas,
   camasKing, camasQueen, camasDobles, camasIndividuales, sofasCama, precioMesBase, segmentos,
   amenidades,
-  headlineEs, headlineEn, descripcionEs, descripcionEn, prioridad,
+  headlineEs, headlineEn, descripcionEs, descripcionEn, metaDescriptionEs, metaDescriptionEn, prioridad,
   "images": galeria[].asset->url
 }`;
 
@@ -105,6 +105,7 @@ function build(d: any, room: any, sanityReviews?: Review[]): Property {
     segmentos: d.segmentos || [],
     headline: { es: d.headlineEs || "", en: d.headlineEn || "" },
     descripcion: { es: d.descripcionEs || "", en: d.descripcionEn || "" },
+    metaDescription: { es: d.metaDescriptionEs || "", en: d.metaDescriptionEn || "" },
     images: (d.images || []).filter(Boolean),
     prioridad: typeof d.prioridad === "number" ? d.prioridad : 999,
     currency: room?.currency || "USD",

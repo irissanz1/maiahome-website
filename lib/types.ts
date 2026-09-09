@@ -39,6 +39,8 @@ export interface Property {
   segmentos: Segment[];
   headline: { es: string; en: string };
   descripcion: { es: string; en: string };
+  metaDescription: { es: string; en: string }; // meta description SEO (150-160 ch); fallback a headline
+
   images: string[]; // URLs base del CDN de Sanity, en orden (0 = portada)
   prioridad: number;
   currency: Currency;

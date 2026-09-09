@@ -5,6 +5,7 @@ import Placeholder from "@/components/Placeholder";
 import Gallery from "@/components/Gallery";
 import PropertyCard from "@/components/PropertyCard";
 import ReserveButton from "@/components/ReserveButton";
+import RichDescription from "@/components/RichDescription";
 import StayDateForm from "@/components/StayDateForm";
 import LocationMap from "@/components/LocationMap";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
@@ -29,9 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const ogImage = img(p.images[0], 1200);
   return {
     title,
-    description: p.headline.es || p.descripcion.es?.slice(0, 150),
+    description: p.metaDescription.es || p.headline.es || p.descripcion.es?.slice(0, 150),
     alternates: { canonical: `/depto/${p.slug}`, languages: { es: `/depto/${p.slug}`, en: `/en/stay/${p.slug}` } },
-    openGraph: { title, description: p.headline.es, images: ogImage ? [ogImage] : [] },
+    openGraph: { title, description: p.metaDescription.es || p.headline.es, images: ogImage ? [ogImage] : [] },
   };
 }
 
@@ -148,7 +149,7 @@ export default async function StayDetail({
           {p.headline.es && !p.descripcion.es.startsWith(p.headline.es.slice(0, 40)) && (
             <p className="mt-5 text-lg text-neutral-700">{p.headline.es}</p>
           )}
-          {p.descripcion.es && <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-600">{p.descripcion.es}</p>}
+          <RichDescription text={p.descripcion.es} />
           {gallery.length > 1 && (
             <p className="mt-6 text-sm text-neutral-400">{p.images.length} fotos en total</p>
           )}
