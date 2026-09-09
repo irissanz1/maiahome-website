@@ -3389,8 +3389,8 @@
   ]
  },
  {
-  "slug": "siqueiros-orozco-rivera",
-  "title": "Siqueiros Orozco Rivera",
+  "slug": "horacio",
+  "title": "Horacio",
   "neighborhood": "Polanco",
   "address": "Privada de Horacio 13, Col. Polanco, CDMX",
   "lat": 19.4351873,
@@ -3400,8 +3400,8 @@
   "waze": "https://www.waze.com/ul?ll=19.43518730%2C-99.21095810&navigate=yes",
   "heroImg": "https://static.wixstatic.com/media/5d0ec0_bbd26111aa4d454c80d29abc05c90ffc~mv2.jpg",
   "welcome": {
-   "es": "Bienvenido a Siqueiros Orozco Rivera. Polanco I a unos pasos de Horacio.",
-   "en": "Welcome to Siqueiros Orozco Rivera. Polanco I, steps from Horacio."
+   "es": "Bienvenido a Horacio. Disfruta tu estancia en Polanco.",
+   "en": "Welcome to Horacio. Enjoy your stay in Polanco."
   },
   "arrival": {
    "noCar": {
