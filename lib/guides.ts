@@ -44,6 +44,11 @@ export interface Guide {
   pois: GuidePOI[];
   // Check-out específico por unidad (opcional; si falta se usa el genérico).
   checkout?: { time: string; note: BL; items: { title: BL; desc: BL }[] };
+  // Enriquecido del FAQ v56 (nivel edificio): WiFi, clima, reglas/seguridad, horarios.
+  wifi?: BL;
+  climate?: BL;
+  amenityRules?: BL;
+  schedule?: { checkOut: string; checkIn: string; earlyCheckIn: BL; lateCheckOut: BL; luggage: BL };
 }
 
 const GUIDES = guidesData as unknown as Guide[];

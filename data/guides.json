@@ -381,7 +381,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Bg"
+  "code": "Bg",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay / Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay / Izzi internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($40 USD).",
+    "en": "Early check-in subject to availability ($40 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($40 USD).",
+    "en": "Late check-out subject to availability ($40 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Alberca: reservas por hora, gorro obligatorio. Seguridad: portero 24/7.",
+   "en": "Pool: by-the-hour reservations, swim cap required. Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Aire acondicionado portátil (2). Cuenta con 5 ventiladores de techo, 4 ventiladores portátiles.",
+   "en": "Portable air conditioning (2). It has 5 ceiling fans, 4 portable fans."
+  }
  },
  {
   "slug": "tamayo",
@@ -753,7 +781,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Tennyson"
+  "code": "Tennyson",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($50 USD).",
+    "en": "Early check-in subject to availability ($50 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($50 USD).",
+    "en": "Late check-out subject to availability ($50 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: portero 24/7.",
+   "en": "Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 3 ventiladores portátiles, 2 calentadores portátiles.",
+   "en": "No air conditioning. It has 3 portable fans, 2 portable heaters."
+  }
  },
  {
   "slug": "aurora",
@@ -1137,7 +1193,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Hares"
+  "code": "Hares",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($40 USD).",
+    "en": "Early check-in subject to availability ($40 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($40 USD).",
+    "en": "Late check-out subject to availability ($40 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Alberca: reservas por hora, gorro obligatorio. Seguridad: portero 24/7.",
+   "en": "Pool: by-the-hour reservations, swim cap required. Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 3 ventiladores portátiles, 2 calentadores portátiles.",
+   "en": "No air conditioning. It has 3 portable fans, 2 portable heaters."
+  }
  },
  {
   "slug": "leonora",
@@ -1509,7 +1593,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Bernard"
+  "code": "Bernard",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay + Telmex, hasta 200 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay + Telmex internet, up to 200 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($60 USD).",
+    "en": "Early check-in subject to availability ($60 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($60 USD).",
+    "en": "Late check-out subject to availability ($60 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: portero 24/7.",
+   "en": "Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 3 ventiladores portátiles, 3 calentadores portátiles.",
+   "en": "No air conditioning. It has 3 portable fans, 3 portable heaters."
+  }
  },
  {
   "slug": "coco",
@@ -1616,7 +1728,35 @@
    }
   ],
   "pois": [],
-  "code": "Condesa"
+  "code": "Condesa",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Telmex, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Telmex internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($35 USD).",
+    "en": "Early check-in subject to availability ($35 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($35 USD).",
+    "en": "Late check-out subject to availability ($35 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje sujeta a disponibilidad.",
+    "en": "Luggage storage subject to availability."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: cámaras de seguridad.",
+   "en": "Security: security cameras."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 1 ventilador de techo, 1 calentador portátil.",
+   "en": "No air conditioning. It has 1 ceiling fan, 1 portable heater."
+  }
  },
  {
   "slug": "kahlo",
@@ -1988,7 +2128,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Prospe"
+  "code": "Prospe",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($40 USD).",
+    "en": "Early check-in subject to availability ($40 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($40 USD).",
+    "en": "Late check-out subject to availability ($40 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: portero 24/7.",
+   "en": "Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 2 ventiladores portátiles, 2 calentadores portátiles.",
+   "en": "No air conditioning. It has 2 portable fans, 2 portable heaters."
+  }
  },
  {
   "slug": "luz-maria",
@@ -2336,7 +2504,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Lam"
+  "code": "Lam",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($35 USD).",
+    "en": "Early check-in subject to availability ($35 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($35 USD).",
+    "en": "Late check-out subject to availability ($35 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje sujeta a disponibilidad.",
+    "en": "Luggage storage subject to availability."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: cámaras de seguridad.",
+   "en": "Security: security cameras."
+  },
+  "climate": {
+   "es": "Aire acondicionado en la recámara principal. Cuenta con 1 ventilador de techo.",
+   "en": "Air conditioning in the main bedroom. It has 1 ceiling fan."
+  }
  },
  {
   "slug": "laila-casa",
@@ -2684,7 +2880,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "LamCasa"
+  "code": "LamCasa",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($60 USD).",
+    "en": "Early check-in subject to availability ($60 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($60 USD).",
+    "en": "Late check-out subject to availability ($60 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje sujeta a disponibilidad.",
+    "en": "Luggage storage subject to availability."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: cámaras de seguridad.",
+   "en": "Security: security cameras."
+  },
+  "climate": {
+   "es": "Aire acondicionado (1). Cuenta con 3 ventiladores de techo, 1 calentador portátil.",
+   "en": "Air conditioning (1). It has 3 ceiling fans, 1 portable heater."
+  }
  },
  {
   "slug": "cordelia",
@@ -3044,7 +3268,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Solon"
+  "code": "Solon",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($50 USD).",
+    "en": "Early check-in subject to availability ($50 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($50 USD).",
+    "en": "Late check-out subject to availability ($50 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje dentro del departamento de 12:00 a 15:00.",
+    "en": "Luggage storage inside the apartment from 12:00 to 15:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: portero 24/7.",
+   "en": "Security: 24/7 doorman."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 2 ventiladores portátiles, 3 calentadores portátiles.",
+   "en": "No air conditioning. It has 2 portable fans, 3 portable heaters."
+  }
  },
  {
   "slug": "horacio",
@@ -3404,7 +3656,35 @@
     "lng": -99.20235
    }
   ],
-  "code": "Horacio"
+  "code": "Horacio",
+  "wifi": {
+   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "12:00",
+   "checkIn": "15:00",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($40 USD).",
+    "en": "Early check-in subject to availability ($40 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($40 USD).",
+    "en": "Late check-out subject to availability ($40 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje en recepción, lun–vie de 10:00 a 18:00.",
+    "en": "Luggage storage at reception, Mon–Fri 10:00–18:00."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: portero de 10:00 a 18:00.",
+   "en": "Security: doorman 10:00–18:00."
+  },
+  "climate": {
+   "es": "Sin aire acondicionado. Cuenta con 2 ventiladores portátiles, 2 calentadores portátiles.",
+   "en": "No air conditioning. It has 2 portable fans, 2 portable heaters."
+  }
  },
  {
   "slug": "augustine",
@@ -3592,6 +3872,34 @@
     }
    ]
   },
-  "code": "Augustine"
+  "code": "Augustine",
+  "wifi": {
+   "es": "Los datos de acceso al Wi-Fi están en el marco junto a la puerta de entrada. Internet AT&T, hasta 1 Gbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi access details are on the frame next to the entrance door. AT&T internet, up to 1 Gbps. We email you the password with your access details."
+  },
+  "schedule": {
+   "checkOut": "10:00",
+   "checkIn": "15:30",
+   "earlyCheckIn": {
+    "es": "Early check-in sujeto a disponibilidad ($60 USD).",
+    "en": "Early check-in subject to availability ($60 USD)."
+   },
+   "lateCheckOut": {
+    "es": "Late check-out sujeto a disponibilidad ($60 USD).",
+    "en": "Late check-out subject to availability ($60 USD)."
+   },
+   "luggage": {
+    "es": "Guarda de equipaje sujeta a disponibilidad.",
+    "en": "Luggage storage subject to availability."
+   }
+  },
+  "amenityRules": {
+   "es": "Seguridad: cámaras de seguridad.",
+   "en": "Security: security cameras."
+  },
+  "climate": {
+   "es": "Aire acondicionado (2). Cuenta con 5 ventiladores de techo.",
+   "en": "Air conditioning (2). It has 5 ceiling fans."
+  }
  }
 ]

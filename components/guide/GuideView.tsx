@@ -16,6 +16,7 @@ const T = {
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
+    wifiLabel: "Wi-Fi", climateLabel: "Clima", rulesLabel: "Reglas y seguridad", flexLabel: "Horarios flexibles",
     exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
     exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir",
     checkoutTime: "El check-out es a las 12:00. Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
@@ -28,6 +29,7 @@ const T = {
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
+    wifiLabel: "Wi-Fi", climateLabel: "Climate", rulesLabel: "Rules & security", flexLabel: "Flexible hours",
     exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
     exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave",
     checkoutTime: "Check-out is at 12:00. If you need to leave later, let us know in advance and we'll gladly try to help.",
@@ -153,12 +155,26 @@ export default function GuideView({ guide }: { guide: Guide }) {
         {pick(lang, guide.access.security) && (
           <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.security}:</b> {pick(lang, guide.access.security)}</p>
         )}
+        {guide.schedule && (pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
+          <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
+            <p className="font-semibold text-neutral-900">{t.flexLabel}</p>
+            {pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
+            {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
+          </div>
+        )}
       </section>
 
       {/* Manual de la casa */}
-      {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning)) && (
+      {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.climate || guide.amenityRules) && (
         <section id="house" className="scroll-mt-24 pt-10">
           <SectionTitle>{t.house}</SectionTitle>
+          {(guide.wifi || guide.climate || guide.amenityRules) && (
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {guide.wifi && <ManualCard title={t.wifiLabel}>{bold(pick(lang, guide.wifi))}</ManualCard>}
+              {guide.climate && <ManualCard title={t.climateLabel}>{pick(lang, guide.climate)}</ManualCard>}
+              {guide.amenityRules && <ManualCard title={t.rulesLabel}>{pick(lang, guide.amenityRules)}</ManualCard>}
+            </div>
+          )}
           {guide.amenities.length > 0 && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.amenities.map((a, i) => (
@@ -227,6 +243,9 @@ export default function GuideView({ guide }: { guide: Guide }) {
             )}
           </>
         )}
+        {guide.schedule && pick(lang, guide.schedule.lateCheckOut) && (
+          <p className="mt-3 text-sm text-neutral-500">{pick(lang, guide.schedule.lateCheckOut)}</p>
+        )}
       </section>
 
       <p className="mt-10 rounded-2xl bg-[#FBF7EC] p-4 text-center text-sm text-neutral-600">{t.help}</p>
@@ -236,6 +255,20 @@ export default function GuideView({ guide }: { guide: Guide }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return <h2 className="font-serif text-2xl text-neutral-900">{children}</h2>;
+}
+
+// Renderiza **negritas** simples dentro de un texto.
+function bold(text: string) {
+  return text.split("**").map((seg, i) => (i % 2 ? <strong key={i} className="font-semibold text-neutral-800">{seg}</strong> : <span key={i}>{seg}</span>));
+}
+
+function ManualCard({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl border border-neutral-200 p-4">
+      <p className="text-base font-semibold text-neutral-900">{title}</p>
+      <p className="mt-1 text-sm text-neutral-600">{children}</p>
+    </div>
+  );
 }
 
 function LinkBtn({ href, children, small, className = "" }: { href: string; children: React.ReactNode; small?: boolean; className?: string }) {
