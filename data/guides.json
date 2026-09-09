@@ -378,7 +378,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Bg"
  },
  {
   "slug": "tamayo",
@@ -747,7 +748,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Tennyson"
  },
  {
   "slug": "aurora",
@@ -1128,7 +1130,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Hares"
  },
  {
   "slug": "leonora",
@@ -1497,7 +1500,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Bernard"
  },
  {
   "slug": "coco",
@@ -1601,7 +1605,8 @@
     "order": 60.0
    }
   ],
-  "pois": []
+  "pois": [],
+  "code": "Condesa"
  },
  {
   "slug": "kahlo",
@@ -1970,7 +1975,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Prospe"
  },
  {
   "slug": "luz-maria",
@@ -2315,7 +2321,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Lam"
  },
  {
   "slug": "laila-casa",
@@ -2660,7 +2667,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "LamCasa"
  },
  {
   "slug": "cordelia",
@@ -3017,7 +3025,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Solon"
  },
  {
   "slug": "horacio",
@@ -3374,7 +3383,8 @@
     "lat": 19.44021,
     "lng": -99.20235
    }
-  ]
+  ],
+  "code": "Horacio"
  },
  {
   "slug": "augustine",
@@ -3559,6 +3569,7 @@
      }
     }
    ]
-  }
+  },
+  "code": "Augustine"
  }
 ]

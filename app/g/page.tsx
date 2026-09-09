@@ -56,7 +56,8 @@ export default function GuidesIndex() {
                 return (
                   <div key={g.slug} className="flex flex-col gap-3 rounded-2xl border border-neutral-200 p-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="min-w-0">
-                      <div className="flex items-baseline gap-2">
+                      <div className="flex flex-wrap items-baseline gap-x-2">
+                        {g.code && <span className="font-normal text-neutral-400">{g.code} —</span>}
                         <span className="font-semibold text-neutral-900">{g.title}</span>
                         <code className="text-xs text-neutral-400">/g/{g.slug}</code>
                       </div>

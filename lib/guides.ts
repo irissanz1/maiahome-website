@@ -25,6 +25,7 @@ export interface GuideAmenity {
 export interface Guide {
   slug: string;
   title: string;
+  code?: string; // código interno del edificio (ej. "Hares" para Aurora) — uso del equipo
   neighborhood: string;
   address: string;
   lat: number | null;
