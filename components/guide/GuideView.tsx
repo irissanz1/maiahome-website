@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Guide } from "@/lib/guides";
 
 // Barrio de la guía → zona en explore.maiahome.mx (fuente única de recomendaciones).
@@ -40,18 +40,10 @@ const T = {
 
 const SECTIONS = ["arrival", "house", "explore", "checkout"] as const;
 
-export default function GuideView({ guide }: { guide: Guide }) {
-  const [lang, setLang] = useState<Lang>("es");
+// El idioma viene por URL (/g = ES, /en/g = EN), consistente con el resto del
+// sitio; el cambio se hace con el toggle del header.
+export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang }) {
   const [arrivalMode, setArrivalMode] = useState<"noCar" | "byCar">("noCar");
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("guideLang");
-      if (saved === "es" || saved === "en") setLang(saved);
-      else if ((navigator.language || "").toLowerCase().startsWith("en")) setLang("en");
-    } catch {}
-  }, []);
-  const setL = (l: Lang) => { setLang(l); try { localStorage.setItem("guideLang", l); } catch {} };
   const t = T[lang];
 
   const exploreZone = EXPLORE_ZONE[guide.neighborhood];
@@ -61,16 +53,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
     <div className="mx-auto max-w-3xl px-5 pb-24">
       {/* Encabezado sticky */}
       <div className="sticky top-0 z-30 -mx-5 mb-2 border-b border-neutral-200 bg-white/90 px-5 py-3 backdrop-blur">
-        <div className="flex items-center justify-between gap-3">
-          <span className="font-serif text-lg text-neutral-900">{guide.title}</span>
-          <div className="flex overflow-hidden rounded-full border border-neutral-300 text-xs font-semibold">
-            {(["es", "en"] as Lang[]).map((l) => (
-              <button key={l} onClick={() => setL(l)} className={`px-3 py-1 ${lang === l ? "bg-neutral-900 text-white" : "text-neutral-600"}`}>
-                {l.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        </div>
+        <span className="font-serif text-lg text-neutral-900">{guide.title}</span>
         <nav className="mt-2 flex gap-4 overflow-x-auto text-sm text-neutral-500">
           {navItems.map((s) => (
             <a key={s} href={`#${s}`} className="whitespace-nowrap hover:text-neutral-900">{t[s]}</a>

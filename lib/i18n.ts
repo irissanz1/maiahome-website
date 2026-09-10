@@ -35,6 +35,7 @@ const PATHMAP: Array<[string, string]> = [
 const DYNMAP: Array<[string, string]> = [
   ["/depto/", "/en/stay/"],
   ["/reservar/", "/en/book/"],
+  ["/g/", "/en/g/"], // guías del huésped (privadas): /g ES ↔ /en/g EN
 ];
 
 // Traduce un path ES a su equivalente en el idioma dado.
