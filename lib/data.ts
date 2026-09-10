@@ -197,6 +197,36 @@ export async function getBlogPostEn(slug: string): Promise<BlogPostFull | null> 
 }
 
 /**
+ * Posts relacionados para el final de un artículo (enlaces internos blog↔blog).
+ * Prioriza misma categoría, luego misma zona, y RELLENA con los más recientes
+ * para garantizar `limit` posts aunque la categoría sea pequeña.
+ */
+export async function getRelatedPosts(
+  post: { slug: string; categoria?: string | null; zona?: string | null },
+  lang: "es" | "en" = "es",
+  limit = 3
+): Promise<BlogPostCard[]> {
+  const all = (lang === "en" ? await getBlogPostsEn() : await getBlogPosts()).filter(
+    (r) => r.slug && r.slug !== post.slug
+  );
+  const picked: BlogPostCard[] = [];
+  const seen = new Set<string>();
+  const take = (list: BlogPostCard[]) => {
+    for (const r of list) {
+      if (picked.length >= limit) break;
+      if (!seen.has(r.slug)) {
+        seen.add(r.slug);
+        picked.push(r);
+      }
+    }
+  };
+  if (post.categoria) take(all.filter((r) => r.categoria === post.categoria));
+  if (post.zona) take(all.filter((r) => r.zona === post.zona));
+  take(all); // relleno con los más recientes (la lista ya viene por fecha desc)
+  return picked.slice(0, limit);
+}
+
+/**
  * Posts del blog relevantes para una zona, para enlazar internamente desde la
  * página de zona (empuja la indexación del blog). `zonas` es una lista de valores
  * del campo `zona` en orden de prioridad (p.ej. ["Polanco", "CDMX"]): primero los

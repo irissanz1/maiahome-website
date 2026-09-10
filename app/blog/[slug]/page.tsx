@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Markdown from "@/components/Markdown";
-import { getBlogPost, getBlogPosts } from "@/lib/data";
+import { getBlogPost, getBlogPosts, getRelatedPosts } from "@/lib/data";
 import { categoryLabel } from "@/lib/blog";
 import { BLOG_SLUG_ES_TO_EN } from "@/lib/blogSlugs";
 
@@ -72,11 +72,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const showUpd = Boolean(upd && upd !== pub);
   const cta = zoneCta(p.zona);
 
-  // Posts relacionados: misma categoría, excluye el actual (máx. 3).
-  const all = await getBlogPosts();
-  const related = all
-    .filter((r) => r.slug !== p.slug && p.categoria && r.categoria === p.categoria)
-    .slice(0, 3);
+  // Posts relacionados (máx. 3): misma categoría → misma zona → recientes.
+  const related = await getRelatedPosts(p, "es");
 
   const jsonLd = {
     "@context": "https://schema.org",

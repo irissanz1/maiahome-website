@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Markdown from "@/components/Markdown";
-import { getBlogPostEn, getBlogPostsEn } from "@/lib/data";
+import { getBlogPostEn, getBlogPostsEn, getRelatedPosts } from "@/lib/data";
 import { categoryLabel } from "@/lib/blog";
 import { BLOG_SLUG_EN_TO_ES } from "@/lib/blogSlugs";
 
@@ -63,8 +63,7 @@ export default async function BlogPostEn({ params }: { params: Promise<{ slug: s
   const showUpd = Boolean(upd && upd !== pub);
   const cta = zoneCta(p.zona);
 
-  const all = await getBlogPostsEn();
-  const related = all.filter((r) => r.slug !== p.slug && p.categoria && r.categoria === p.categoria).slice(0, 3);
+  const related = await getRelatedPosts(p, "en");
 
   const jsonLd = {
     "@context": "https://schema.org",
