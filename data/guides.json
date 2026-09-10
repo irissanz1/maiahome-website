@@ -16,8 +16,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con vigilancia las 24 hrs, por lo que al llegar indica tu nombre y número de departamento para que el guardia te dé acceso.",
-    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "Si tu acceso es con vehículo, la entrada al estacionamiento se encuentra en la calle Lago Iseo casi esquina con lago Alberto. Identificarás el portón de madera y el personal de seguridad te recibirá y validará los accesos al departamento, no olvides mencionar el número de departamento. Consulta a tu anfitrión acerca de la ubicación del cajón que te corresponde. \n​",
@@ -428,8 +428,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
-    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El portero te abrirá y te indicará el portón correspondiente al departamento. Se encuentra ubicado a la derecha de la puerta peatonal.",
@@ -828,8 +828,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con vigilancia las 24 hrs, por lo que al llegar indica tu nombre y número de departamento para que el guardia te dé acceso.",
-    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "Si tu acceso es con vehículo, la entrada al estacionamiento se encuentra en la calle de Bahía de San Hipólito. Identificarás el acceso y el personal de seguridad validará los accesos al departamento, tu cajon de estacionamiento se encuentra en sotano 3, lugar marcado D809.",
@@ -1240,8 +1240,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
-    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El departamento cuenta con 1 lugar de estacionamiento, en caso de requerirlo debes dejar las llaves al portero para que pueda mover el auto en caso de que se necesite.",
@@ -1640,8 +1640,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
-    "en": "The building has 24-hour concierge service, so when you arrive, just ring the bell and mention your name for access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El departamento no cuenta con estacionamiento.",
@@ -1775,8 +1775,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con servicio de portería las 24 hrs, por lo que al llegar toca el timbre y menciona tu nombre para identificarte y te permitirá el acceso.",
-    "en": "The building has a 24-hour doorman service, so when you arrive, ring the bell and mention your name to identify yourself and it will allow you access."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El departamento cuenta con 1 lugar de estacionamiento, en caso de requerirlo debes dejar las llaves al portero para que pueda mover el auto en caso de que se necesite.",
@@ -2175,8 +2175,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con servicio de portería las 24 hrs. Al llegar toca el timbre y menciona tu nombre para identificarte.",
-    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name to identify yourself."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El portero te abrirá el portón y te indicará el cajón correspondiente al departamento. Se encuentra a la derecha de la puerta peatonal.",
@@ -2551,8 +2551,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con portería 24 hrs. Al llegar toca el timbre y menciona tu nombre.",
-    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El portero te abrirá el portón y te indicará el cajón correspondiente.",
@@ -2927,8 +2927,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con portería 24 hrs. Toca el timbre al llegar y menciona tu nombre.",
-    "en": "The building has 24-hour doorman service. Ring the bell upon arrival and state your name."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El portero te abrirá el portón y te indicará el cajón. Se encuentra a la derecha de la puerta peatonal.",
@@ -3315,8 +3315,8 @@
   },
   "arrival": {
    "noCar": {
-    "es": "El edificio cuenta con portería durante el día, pero la entrada es autónoma 24/7. Lleva contigo la llave del edificio.",
-    "en": "The building has daytime doorman service but autonomous entry 24/7. Bring the building key with you."
+    "es": "",
+    "en": ""
    },
    "byCar": {
     "es": "El departamento cuenta con un lugar de estacionamiento para auto mediano. Abre el portón desde el interior y estaciónate en el cajón asignado.",
