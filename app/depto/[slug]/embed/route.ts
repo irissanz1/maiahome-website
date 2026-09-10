@@ -33,6 +33,7 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ slug: strin
     "content-type": "text/html; charset=utf-8",
     "content-security-policy": "frame-ancestors https://beds24.com https://*.beds24.com https://maiahome.mx 'self'",
     "cache-control": "public, max-age=300, s-maxage=300",
+    "x-robots-tag": "noindex, nofollow", // el embed duplica /depto/<slug>: no indexar
   };
 
   const p = await getBySlug(slug);
