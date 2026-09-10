@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T02:34:11.295Z",
+  "generatedAt": "2026-09-10T03:22:13.247Z",
   "complete": true,
   "incompleteRooms": [],
   "rooms": {
@@ -2214,7 +2214,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "395664": {
       "beds24PropertyId": 182463,
@@ -4419,15 +4419,15 @@
           "price": 658
         },
         "2026-09-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": null
         }
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "395667": {
       "beds24PropertyId": 182466,
@@ -6640,7 +6640,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "395668": {
       "beds24PropertyId": 182467,
@@ -8853,7 +8853,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "418925": {
       "beds24PropertyId": 194738,
@@ -11066,7 +11066,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "418926": {
       "beds24PropertyId": 194739,
@@ -13279,7 +13279,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "418927": {
       "beds24PropertyId": 194740,
@@ -15492,7 +15492,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "418928": {
       "beds24PropertyId": 194741,
@@ -17705,7 +17705,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "429088": {
       "beds24PropertyId": 200307,
@@ -19918,7 +19918,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "429313": {
       "beds24PropertyId": 200452,
@@ -22131,7 +22131,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "429314": {
       "beds24PropertyId": 200453,
@@ -24344,7 +24344,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "461199": {
       "beds24PropertyId": 216896,
@@ -26557,7 +26557,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "462994": {
       "beds24PropertyId": 217773,
@@ -28762,15 +28762,15 @@
           "price": 141
         },
         "2026-09-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": null
         }
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "466958": {
       "beds24PropertyId": 220105,
@@ -30975,15 +30975,15 @@
           "price": 397
         },
         "2026-09-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": null
         }
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "469041": {
       "beds24PropertyId": 221189,
@@ -33196,7 +33196,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "472123": {
       "beds24PropertyId": 222112,
@@ -35409,7 +35409,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "489020": {
       "beds24PropertyId": 230828,
@@ -37622,7 +37622,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "489635": {
       "beds24PropertyId": 231191,
@@ -39835,7 +39835,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "489637": {
       "beds24PropertyId": 231193,
@@ -42048,7 +42048,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "489638": {
       "beds24PropertyId": 231194,
@@ -44261,7 +44261,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "494785": {
       "beds24PropertyId": 233801,
@@ -46474,7 +46474,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506100": {
       "beds24PropertyId": 239803,
@@ -48687,7 +48687,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506106": {
       "beds24PropertyId": 239805,
@@ -50900,7 +50900,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506118": {
       "beds24PropertyId": 239813,
@@ -53113,7 +53113,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506119": {
       "beds24PropertyId": 239814,
@@ -55326,7 +55326,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506193": {
       "beds24PropertyId": 239877,
@@ -57539,7 +57539,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "506198": {
       "beds24PropertyId": 239880,
@@ -59752,7 +59752,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "625019": {
       "beds24PropertyId": 299461,
@@ -61965,7 +61965,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "625022": {
       "beds24PropertyId": 299463,
@@ -64178,7 +64178,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "625023": {
       "beds24PropertyId": 299464,
@@ -66391,7 +66391,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "625024": {
       "beds24PropertyId": 299465,
@@ -68604,7 +68604,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "626201": {
       "beds24PropertyId": 300033,
@@ -70817,7 +70817,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "626202": {
       "beds24PropertyId": 300034,
@@ -73030,7 +73030,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "626203": {
       "beds24PropertyId": 300035,
@@ -75243,7 +75243,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "626206": {
       "beds24PropertyId": 300038,
@@ -77456,7 +77456,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "639778": {
       "beds24PropertyId": 306961,
@@ -79669,7 +79669,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "669908": {
       "beds24PropertyId": 322312,
@@ -81882,7 +81882,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "704198": {
       "beds24PropertyId": 340718,
@@ -84095,7 +84095,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "704200": {
       "beds24PropertyId": 340720,
@@ -86308,7 +86308,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "704201": {
       "beds24PropertyId": 340721,
@@ -88521,7 +88521,7 @@
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     },
     "715030": {
       "beds24PropertyId": 346349,
@@ -88530,110 +88530,110 @@
       "currency": "USD",
       "calendar": {
         "2026-09-10": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-11": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-12": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-13": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-14": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-15": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-16": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-17": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-18": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-19": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-20": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-21": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-22": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-23": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-24": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-25": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-26": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-09-27": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
@@ -88686,368 +88686,368 @@
           "price": 1200
         },
         "2026-10-06": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-07": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-08": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-09": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-10": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-11": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-12": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-13": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-14": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-15": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-16": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-17": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-18": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-19": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-20": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-21": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-22": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-23": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-24": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-25": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-26": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-27": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-28": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-29": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-30": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-10-31": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-01": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-02": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-03": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-04": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-05": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-06": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-07": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-08": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-09": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-10": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-11": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-12": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-13": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-14": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-15": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-16": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-17": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-18": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-19": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-20": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-21": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-22": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-23": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-24": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-26": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-27": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-28": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-29": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-11-30": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-12-01": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-12-02": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-12-03": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-12-04": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
         "2026-12-05": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": 1200
         },
@@ -90726,21 +90726,20 @@
           "price": 1200
         },
         "2026-09-09": {
-          "available": false,
-          "numAvail": 0,
+          "available": true,
+          "numAvail": 1,
           "minStay": 1,
           "price": null
         }
       },
       "complete": true,
       "days": 367,
-      "updatedAt": "2026-09-10T02:34:11.295Z"
+      "updatedAt": "2026-09-10T03:22:13.247Z"
     }
   },
   "bookingsOverlay": {
-    "appliedAt": "2026-09-10T02:42:35.614Z",
+    "appliedAt": "2026-09-10T03:30:39.004Z",
     "bookings": 83,
-    "overridden": 79,
     "reconstructed": 41
   }
 }
