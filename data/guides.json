@@ -2179,8 +2179,8 @@
     "en": ""
    },
    "byCar": {
-    "es": "El portero te abrirá el portón y te indicará el cajón correspondiente al departamento. Se encuentra a la derecha de la puerta peatonal.",
-    "en": "The doorman will open the gate and direct you to the parking spot assigned to the apartment. It is located to the right of the pedestrian door."
+    "es": "",
+    "en": ""
    },
    "streetNoCar": "https://www.google.com/maps/embed?pb=!4v1703205649203!6m8!1m7!1sXfhwjOIu3uGiXb7Y5qESBg!2m2!1d19.43716413018497!2d-99.1896302092047!3f292.9651723698482!4f-8.080743066393822!5f1.7767551675860371",
    "streetByCar": "https://www.google.com/maps/embed?pb=!4v1703205577620!6m8!1m7!1sXfhwjOIu3uGiXb7Y5qESBg!2m2!1d19.43716413018497!2d-99.1896302092047!3f316.0224497885923!4f-5.397409044194873!5f0.4000000000000002"
@@ -2555,8 +2555,8 @@
     "en": ""
    },
    "byCar": {
-    "es": "El portero te abrirá el portón y te indicará el cajón correspondiente.",
-    "en": "The doorman will open the gate and direct you to the parking spot assigned to the apartment."
+    "es": "",
+    "en": ""
    },
    "streetNoCar": "https://www.google.com/maps/embed?pb=!4v1703205649203!6m8!1m7!1sXfhwjOIu3uGiXb7Y5qESBg!2m2!1d19.43716413018497!2d-99.1896302092047!3f292.9651723698482!4f-8.080743066393822!5f1.7767551675860371",
    "streetByCar": "https://www.google.com/maps/embed?pb=!4v1703205577620!6m8!1m7!1sXfhwjOIu3uGiXb7Y5qESBg!2m2!1d19.43716413018497!2d-99.1896302092047!3f316.0224497885923!4f-5.397409044194873!5f0.4000000000000002"
