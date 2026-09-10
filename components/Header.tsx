@@ -10,6 +10,9 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const lang = langFromPath(pathname);
+  // Las guías del huésped (/g y /g/*) son una sola página bilingüe con su propio
+  // toggle ES|EN; no existe ruta /en/g, así que el toggle del header daría 404.
+  const isGuide = pathname === "/g" || pathname.startsWith("/g/");
   const d = getDict(lang);
   const NAV = [
     { href: withLang(lang, "/departamentos"), label: d.nav.nightly },
@@ -48,8 +51,9 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          {/* Toggle de idioma: muestra ES | EN con el activo resaltado. */}
-          {LANG_SWITCH_ENABLED && (
+          {/* Toggle de idioma: muestra ES | EN con el activo resaltado. Oculto en
+              las guías (/g), que tienen su propio toggle y no tienen ruta /en/g. */}
+          {LANG_SWITCH_ENABLED && !isGuide && (
             <div className="flex items-center rounded-full border border-neutral-200 p-0.5 text-xs font-semibold">
               {(["es", "en"] as const).map((code) => {
                 const active = lang === code;
