@@ -123,8 +123,11 @@ ${bullets.length ? `<ul class="d">${bullets.map((b) => `<li><span>${esc(b)}</spa
 ${amen.length ? `<p class="at">${t.ame}</p><ul class="a">${amen.map((a) => `<li>${esc(a)}</li>`).join("")}</ul>` : ""}
 ${similar.length ? `<section class="sim"><h3>${t.sim}</h3><p class="sub">${t.simSub}</p><div class="sim-row">${similar.map(simCard).join("")}</div></section>` : ""}
 <script>
-(function(){function ph(){try{parent.postMessage({type:'maia-embed-h',h:Math.ceil(document.documentElement.scrollHeight)},'*')}catch(e){}}
-window.addEventListener('load',ph);window.addEventListener('resize',ph);setTimeout(ph,250);setTimeout(ph,1000);setTimeout(ph,2500);
+(function(){
+function ph(){try{var w=document.documentElement.clientWidth||0;if(w<240)return;var h=Math.ceil(document.body.scrollHeight);if(h>0&&h<6000)parent.postMessage({type:'maia-embed-h',h:h},'*')}catch(e){}}
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(ph)}
+window.addEventListener('load',ph);window.addEventListener('resize',ph);
+[400,1200,2500].forEach(function(t){setTimeout(ph,t)});
 if(window.ResizeObserver){new ResizeObserver(ph).observe(document.body)}})();
 </script>
 </body></html>`;
