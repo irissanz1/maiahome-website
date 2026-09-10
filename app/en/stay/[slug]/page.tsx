@@ -53,7 +53,13 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
   const available = r.status === "disponible";
   const needsDates = r.status === "sin-fechas";
   const reserveActionable = available || needsDates;
-  const reserveLabel = needsDates ? "Select dates" : available ? "Book" : "Not available";
+  const reserveLabel = needsDates
+    ? "Select dates"
+    : available
+    ? "Book"
+    : r.status === "estancia-minima" && r.minStayRequerido
+    ? `${r.minStayRequerido}-night minimum`
+    : "Not available";
   const gallery = p.images.slice(0, 5);
   // Similar apartments: same market, prioritizes same zone and similar bedroom count.
   const similar = (await getProperties())

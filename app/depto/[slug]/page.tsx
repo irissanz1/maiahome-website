@@ -60,7 +60,13 @@ export default async function StayDetail({
   const available = r.status === "disponible";
   const needsDates = r.status === "sin-fechas";
   const reserveActionable = available || needsDates; // se ve activo (amarillo)
-  const reserveLabel = needsDates ? "Selecciona fechas" : available ? "Reservar" : "No disponible";
+  const reserveLabel = needsDates
+    ? "Selecciona fechas"
+    : available
+    ? "Reservar"
+    : r.status === "estancia-minima" && r.minStayRequerido
+    ? `Mínimo ${r.minStayRequerido} noches`
+    : "No disponible";
   const gallery = p.images.slice(0, 5);
   // Departamentos similares: mismo mercado, prioriza misma zona y nº de recámaras parecido.
   const similar = (await getProperties())
