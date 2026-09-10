@@ -6,6 +6,7 @@ import AvailabilityChips from "@/components/AvailabilityChips";
 import SortControl from "@/components/SortControl";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
+import ZonePromoSection from "@/components/ZonePromoSection";
 
 export const metadata: Metadata = {
   ...ogMeta("Monthly stays", "Furnished monthly rentals", "en_US"),
@@ -80,6 +81,8 @@ export default async function MonthlyStays({ searchParams }: { searchParams: Pro
           ))}
         </div>
       </section>
+
+      <ZonePromoSection intent="monthly" lang="en" />
     </>
   );
 }

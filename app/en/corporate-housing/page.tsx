@@ -8,12 +8,13 @@ import SortControl from "@/components/SortControl";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
+import ZonePromoSection from "@/components/ZonePromoSection";
 
 export const metadata: Metadata = {
   ...ogMeta("Corporate housing", "Stays for teams and executives", "en_US"),
-  title: "Corporate housing",
+  title: "Corporate housing in Mexico City & Houston",
   description:
-    "Corporate housing in Mexico City and Houston for relocations, projects and business travel: one point of contact, invoicing and company agreements.",
+    "Corporate housing in Mexico City and Houston for relocations, projects and business travel: furnished apartments in Polanco and Condesa, one point of contact, invoicing and company agreements.",
   alternates: { canonical: "/en/corporate-housing", languages: { es: "/corporativo", en: "/en/corporate-housing" } },
 };
 
@@ -79,6 +80,8 @@ export default async function CorporateHousing({ searchParams }: { searchParams:
           ))}
         </div>
       </section>
+
+      <ZonePromoSection intent="corporate" lang="en" />
     </>
   );
 }

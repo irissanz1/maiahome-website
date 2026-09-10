@@ -8,6 +8,7 @@ import SortControl from "@/components/SortControl";
 import { getProperties } from "@/lib/data";
 import { applyAvailability, type SP } from "@/lib/listing";
 import { whatsappUrl } from "@/lib/contact";
+import ZonePromoSection from "@/components/ZonePromoSection";
 
 export const metadata: Metadata = {
   ...ogMeta("Vivienda corporativa", "Estancias para equipos y ejecutivos"),
@@ -95,6 +96,8 @@ export default async function Corporativo({ searchParams }: { searchParams: Prom
           ))}
         </div>
       </section>
+
+      <ZonePromoSection intent="corporate" lang="es" />
     </>
   );
 }
