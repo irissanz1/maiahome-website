@@ -231,7 +231,10 @@ export default function GuideView({ guide }: { guide: Guide }) {
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.checkout.items.map((it, i) => (
                 <div key={i} className="rounded-2xl border border-neutral-200 p-4">
-                  <p className="text-base font-semibold text-neutral-900">{pick(lang, it.title)}</p>
+                  <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
+                    <span className="text-maia-strong">{<Icon name={checkoutIcon(it.title.es)} />}</span>
+                    {pick(lang, it.title)}
+                  </p>
                   <p className="mt-1 text-sm text-neutral-600">{pick(lang, it.desc)}</p>
                 </div>
               ))}
@@ -280,7 +283,23 @@ const ICONS: Record<string, React.ReactNode> = {
   bed: <path d="M2 5v15M2 10h18a2 2 0 0 1 2 2v8M2 16h20M6 10V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />,
   tv: <><rect x="3" y="6.5" width="18" height="12" rx="2" /><path d="m8 3 4 3 4-3" /></>,
   info: <><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8v.2" /></>,
+  // Puntos de check-out:
+  trash: <path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M6 7l1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13M10 11v6M14 11v6" />,
+  window: <><rect x="4" y="3" width="16" height="18" rx="1.5" /><path d="M4 12h16M12 3v18" /></>,
+  bulb: <path d="M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.8 10.6c.7.6 1.3 1.2 1.3 2.4h5c0-1.2.6-1.8 1.3-2.4A6 6 0 0 0 12 3Z" />,
 };
+
+// Título de un punto de check-out (ES) → ícono.
+function checkoutIcon(titleEs: string): string {
+  const s = (titleEs || "").toLowerCase();
+  if (s.includes("lavavajillas") || s.includes("platos")) return "utensils";
+  if (s.includes("basura") || s.includes("comida")) return "trash";
+  if (s.includes("toalla")) return "bed";
+  if (s.includes("ventana")) return "window";
+  if (s.includes("luces") || s.includes("luz") || s.includes("a/c")) return "bulb";
+  if (s.includes("puerta")) return "door";
+  return "info";
+}
 
 // Título de amenidad (ES) → nombre de ícono, por palabra clave.
 function amenityIcon(titleEs: string): string {
