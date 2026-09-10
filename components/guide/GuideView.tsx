@@ -179,7 +179,10 @@ export default function GuideView({ guide }: { guide: Guide }) {
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.amenities.map((a, i) => (
                 <div key={i} className="rounded-2xl border border-neutral-200 p-4">
-                  <p className="text-base font-semibold text-neutral-900">{pick(lang, a.title)}</p>
+                  <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
+                    <span className="text-maia-strong">{<Icon name={amenityIcon(a.title.es)} />}</span>
+                    {pick(lang, a.title)}
+                  </p>
                   <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">{pick(lang, a.description)}</p>
                 </div>
               ))}
@@ -266,7 +269,34 @@ const ICONS: Record<string, React.ReactNode> = {
   door: <><path d="M4 21h16M6 21V4h11v17" /><path d="M13 12h.5" /></>,
   luggage: <><rect x="6" y="7.5" width="12" height="12.5" rx="2" /><path d="M9.5 7.5V4.5h5v3M10 20.5v1M14 20.5v1" /></>,
   car: <><path d="M5 16.5V13l1.8-4.2A2 2 0 0 1 8.7 7.5h6.6a2 2 0 0 1 1.9 1.3L19 13v3.5" /><path d="M3.5 13h17" /><circle cx="7.5" cy="16.5" r="1.4" /><circle cx="16.5" cy="16.5" r="1.4" /></>,
+  // Amenidades del manual:
+  droplet: <path d="M12 3s6 5.6 6 10a6 6 0 0 1-12 0c0-4.4 6-10 6-10Z" />,
+  snow: <path d="M12 2.5v19M4.2 7l15.6 9M19.8 7 4.2 16M12 5.2l2.4-1.7M12 5.2 9.6 3.5M12 18.8l2.4 1.7M12 18.8l-2.4 1.7" />,
+  waves: <path d="M2 15c1.8 0 1.8-1.5 3.5-1.5S7.3 15 9 15s1.8-1.5 3.5-1.5S14.3 15 16 15s1.8-1.5 3.5-1.5M2 10c1.8 0 1.8-1.5 3.5-1.5S7.3 10 9 10s1.8-1.5 3.5-1.5S14.3 10 16 10s1.8-1.5 3.5-1.5" />,
+  utensils: <><path d="M7 2v7a2 2 0 0 0 4 0V2M9 9v13" /><path d="M16 2c-1.6 0-2.8 2-2.8 4.5S14.4 11 16 11v11" /></>,
+  alert: <path d="M12 3 2.5 20h19L12 3ZM12 9.5v4.5M12 17.3v.2" />,
+  bolt: <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" />,
+  paw: <><circle cx="8" cy="9" r="1.4" /><circle cx="16" cy="9" r="1.4" /><circle cx="5.5" cy="13" r="1.4" /><circle cx="18.5" cy="13" r="1.4" /><path d="M12 13.5c-2.2 0-3.8 1.6-3.8 3.4 0 1.2 1 2 2.2 2 .7 0 1.1-.4 1.6-.4s.9.4 1.6.4c1.2 0 2.2-.8 2.2-2 0-1.8-1.6-3.4-3.8-3.4Z" /></>,
+  bed: <path d="M2 5v15M2 10h18a2 2 0 0 1 2 2v8M2 16h20M6 10V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />,
+  tv: <><rect x="3" y="6.5" width="18" height="12" rx="2" /><path d="m8 3 4 3 4-3" /></>,
+  info: <><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8v.2" /></>,
 };
+
+// Título de amenidad (ES) → nombre de ícono, por palabra clave.
+function amenityIcon(titleEs: string): string {
+  const s = (titleEs || "").toLowerCase();
+  if (s.includes("agua")) return "droplet";
+  if (s.includes("aire aconds") || s.includes("aire acond")) return "snow";
+  if (s.includes("alberca") || s.includes("gimnasio") || s.includes("gym")) return "waves";
+  if (s.includes("cocina") || s.includes("lavander")) return "utensils";
+  if (s.includes("emergencia")) return "alert";
+  if (s.includes("luz")) return "bolt";
+  if (s.includes("estacionamiento")) return "car";
+  if (s.includes("mascota")) return "paw";
+  if (s.includes("ropa de cama") || s.includes("toalla")) return "bed";
+  if (s.includes("televis") || s.includes("cable")) return "tv";
+  return "info";
+}
 
 function Icon({ name, className = "h-5 w-5" }: { name: string; className?: string }) {
   return (
