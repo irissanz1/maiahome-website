@@ -6,7 +6,7 @@ import SearchStrip from "@/components/SearchStrip";
 import AdvancedFilters from "@/components/AdvancedFilters";
 import ListingView from "@/components/ListingView";
 import AvailabilityChips from "@/components/AvailabilityChips";
-import { getByZona, withLiveAvailability } from "@/lib/data";
+import { getByZona, withLiveAvailability, getBlogPostsForZona } from "@/lib/data";
 import { ZONAS } from "@/lib/market";
 import { applyAvailability, advancedFilter, str, type SP } from "@/lib/listing";
 
@@ -33,6 +33,10 @@ export default async function ZonaEn({ params, searchParams }: { params: Promise
   if (!zona) notFound();
 
   const allInZona = await getByZona(slug);
+  const zonaBlog = await getBlogPostsForZona(
+    zona.pais === "MX" ? [zona.nombre, "CDMX"] : [zona.nombre],
+    "en"
+  );
   let list = advancedFilter(allInZona, sp);
   list = await withLiveAvailability(list, str(sp.checkout));
   const a = applyAvailability(list, sp);
@@ -103,6 +107,50 @@ export default async function ZonaEn({ params, searchParams }: { params: Promise
           <ListingView properties={a.filtered} search={a.search} />
         )}
       </section>
+
+      {zonaBlog.length > 0 && (
+        <section className="mx-auto max-w-6xl px-5 py-14">
+          <h2 className="font-serif text-2xl text-neutral-900 md:text-3xl">
+            {zona.nombre} guides
+          </h2>
+          <p className="mt-2 text-neutral-600">
+            What to do, where to eat and what to see around your apartment.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {zonaBlog.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/en/blog/${post.slug}`}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:border-maia-strong"
+              >
+                {post.coverUrl ? (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={post.coverUrl}
+                    alt={post.title}
+                    loading="lazy"
+                    className="h-40 w-full object-cover"
+                  />
+                ) : (
+                  <div className="h-40 w-full bg-neutral-100" />
+                )}
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-serif text-lg leading-snug text-neutral-900 group-hover:text-maia-strong">
+                    {post.title}
+                  </h3>
+                  {post.excerpt && (
+                    <p className="mt-2 line-clamp-2 text-sm text-neutral-600">{post.excerpt}</p>
+                  )}
+                  <span className="mt-3 text-sm font-semibold text-maia-strong">Read more →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link href="/en/blog" className="mt-8 inline-block text-sm font-semibold text-maia-strong underline">
+            See all blog guides →
+          </Link>
+        </section>
+      )}
 
       <section className="border-t border-neutral-200 bg-neutral-50">
         <div className="mx-auto max-w-3xl px-5 py-14">

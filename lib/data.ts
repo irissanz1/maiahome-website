@@ -196,6 +196,32 @@ export async function getBlogPostEn(slug: string): Promise<BlogPostFull | null> 
   }
 }
 
+/**
+ * Posts del blog relevantes para una zona, para enlazar internamente desde la
+ * página de zona (empuja la indexación del blog). `zonas` es una lista de valores
+ * del campo `zona` en orden de prioridad (p.ej. ["Polanco", "CDMX"]): primero los
+ * específicos del barrio, luego los generales de la ciudad como complemento.
+ */
+export async function getBlogPostsForZona(
+  zonas: string[],
+  lang: "es" | "en" = "es",
+  limit = 6
+): Promise<BlogPostCard[]> {
+  const posts = lang === "en" ? await getBlogPostsEn() : await getBlogPosts();
+  const seen = new Set<string>();
+  const out: BlogPostCard[] = [];
+  for (const zname of zonas) {
+    for (const p of posts) {
+      if (p.zona === zname && p.slug && !seen.has(p.slug)) {
+        seen.add(p.slug);
+        out.push(p);
+        if (out.length >= limit) return out;
+      }
+    }
+  }
+  return out;
+}
+
 export const getProperties = cache(async (): Promise<Property[]> => {
   const [docs, reviewDocs] = await Promise.all([
     sanity.fetch(QUERY, {}, REVALIDATE) as Promise<any[]>,
