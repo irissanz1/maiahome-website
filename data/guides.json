@@ -383,8 +383,8 @@
   ],
   "code": "Bg",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay / Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay / Izzi internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Bg Polanco**; al conectarte te lleva al portal de registro. Internet Totalplay / Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Bg Polanco**; connecting takes you to the registration portal. Totalplay / Izzi internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -783,8 +783,8 @@
   ],
   "code": "Tennyson",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Tamayo**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Tamayo**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -1195,8 +1195,8 @@
   ],
   "code": "Hares",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Aurora**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Aurora**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -1595,8 +1595,8 @@
   ],
   "code": "Bernard",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay + Telmex, hasta 200 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay + Telmex internet, up to 200 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Leonora**; al conectarte te lleva al portal de registro. Internet Totalplay + Telmex, hasta 200 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Leonora**; connecting takes you to the registration portal. Totalplay + Telmex internet, up to 200 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -1730,8 +1730,8 @@
   "pois": [],
   "code": "Condesa",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Telmex, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Telmex internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Coco**; al conectarte te lleva al portal de registro. Internet Telmex, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Coco**; connecting takes you to the registration portal. Telmex internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -2130,8 +2130,8 @@
   ],
   "code": "Prospe",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Kahlo**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Kahlo**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -2506,8 +2506,8 @@
   ],
   "code": "Lam",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Luz María**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Luz María**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -2882,8 +2882,8 @@
   ],
   "code": "LamCasa",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Laila Casa**; al conectarte te lleva al portal de registro. Internet TotalPlay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Laila Casa**; connecting takes you to the registration portal. TotalPlay internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -3270,8 +3270,8 @@
   ],
   "code": "Solon",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Cordelia**; al conectarte te lleva al portal de registro. Internet Izzi, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Cordelia**; connecting takes you to the registration portal. Izzi internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -3658,8 +3658,8 @@
   ],
   "code": "Horacio",
   "wifi": {
-   "es": "La red Wi-Fi aparece como **MaiaHome + [nombre del depto]**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi network shows up as **MaiaHome + [apartment name]**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+   "es": "La red Wi-Fi aparece como **MaiaHome Horacio**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
+   "en": "The Wi-Fi network shows up as **MaiaHome Horacio**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
   },
   "schedule": {
    "checkOut": "12:00",
