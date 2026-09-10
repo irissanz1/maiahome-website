@@ -32,13 +32,39 @@ export default async function ZonaEn({ params, searchParams }: { params: Promise
   const zona = ZONAS[slug];
   if (!zona) notFound();
 
-  let list = await getByZona(slug);
-  list = advancedFilter(list, sp);
+  const allInZona = await getByZona(slug);
+  let list = advancedFilter(allInZona, sp);
   list = await withLiveAvailability(list, str(sp.checkout));
   const a = applyAvailability(list, sp);
 
+  const BASE = "https://maiahome.mx";
+  const marketId = zona.pais === "MX" ? "mx" : "us";
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${BASE}/en` },
+      { "@type": "ListItem", position: 2, name: "Apartments", item: `${BASE}/en/apartments` },
+      { "@type": "ListItem", position: 3, name: `Apartments in ${zona.nombre}`, item: `${BASE}/en/${slug}` },
+    ],
+  };
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Furnished apartments in ${zona.nombre}`,
+    numberOfItems: allInZona.length,
+    itemListElement: allInZona.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${BASE}/en/stay/${p.slug}`,
+      name: p.nombre,
+    })),
+  };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={`/zonas/${slug}.webp`} alt={zona.nombre} className="absolute inset-0 h-full w-full object-cover object-center" />
@@ -76,6 +102,28 @@ export default async function ZonaEn({ params, searchParams }: { params: Promise
         ) : (
           <ListingView properties={a.filtered} search={a.search} />
         )}
+      </section>
+
+      <section className="border-t border-neutral-200 bg-neutral-50">
+        <div className="mx-auto max-w-3xl px-5 py-14">
+          <h2 className="font-serif text-2xl text-neutral-900 md:text-3xl">
+            Furnished apartment rentals in {zona.nombre}
+          </h2>
+          <p className="mt-4 leading-relaxed text-neutral-600">{zona.seo.en}</p>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            Book directly with Maia Home for the best rate, with no intermediary fees. Every apartment
+            in {zona.nombre} is fully furnished and equipped, with high-speed Wi-Fi, self check-in and
+            the option of nightly or monthly stays.
+          </p>
+          <ul className="mt-6 grid gap-2 text-sm sm:grid-cols-2">
+            <li><Link href="/en/monthly-stays" className="font-medium text-maia-strong underline">Monthly stays</Link></li>
+            <li><Link href="/en/corporate-housing" className="font-medium text-maia-strong underline">Corporate housing</Link></li>
+            <li><Link href="/en/faq" className="font-medium text-maia-strong underline">Frequently asked questions</Link></li>
+            <li><Link href="/en/payment-options" className="font-medium text-maia-strong underline">Payment options</Link></li>
+            <li><Link href={`/en/apartments?market=${marketId}`} className="font-medium text-maia-strong underline">View all areas</Link></li>
+            <li><Link href="/en/blog" className="font-medium text-maia-strong underline">Neighborhood guides &amp; blog</Link></li>
+          </ul>
+        </div>
       </section>
     </div>
   );

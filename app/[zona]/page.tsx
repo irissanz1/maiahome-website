@@ -42,13 +42,39 @@ export default async function ZonaLanding({
   const zona = ZONAS[slug];
   if (!zona) notFound();
 
-  let list = await getByZona(slug);
-  list = advancedFilter(list, sp);
+  const allInZona = await getByZona(slug);
+  let list = advancedFilter(allInZona, sp);
   list = await withLiveAvailability(list, str(sp.checkout));
   const a = applyAvailability(list, sp);
 
+  const BASE = "https://maiahome.mx";
+  const marketId = zona.pais === "MX" ? "mx" : "us";
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: `${BASE}/` },
+      { "@type": "ListItem", position: 2, name: "Departamentos", item: `${BASE}/departamentos` },
+      { "@type": "ListItem", position: 3, name: `Departamentos en ${zona.nombre}`, item: `${BASE}/${slug}` },
+    ],
+  };
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Departamentos amueblados en ${zona.nombre}`,
+    numberOfItems: allInZona.length,
+    itemListElement: allInZona.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${BASE}/depto/${p.slug}`,
+      name: p.nombre,
+    })),
+  };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-700">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -100,6 +126,28 @@ export default async function ZonaLanding({
         ) : (
           <ListingView properties={a.filtered} search={a.search} />
         )}
+      </section>
+
+      <section className="border-t border-neutral-200 bg-neutral-50">
+        <div className="mx-auto max-w-3xl px-5 py-14">
+          <h2 className="font-serif text-2xl text-neutral-900 md:text-3xl">
+            Renta de departamentos amueblados en {zona.nombre}
+          </h2>
+          <p className="mt-4 leading-relaxed text-neutral-600">{zona.seo.es}</p>
+          <p className="mt-3 leading-relaxed text-neutral-600">
+            Reserva directo con Maia Home y obtén la mejor tarifa, sin comisiones de intermediarios.
+            Todos nuestros departamentos en {zona.nombre} están totalmente amueblados y equipados, con
+            Wi-Fi de alta velocidad, check-in autónomo y opción de estancias por noche o por mes.
+          </p>
+          <ul className="mt-6 grid gap-2 text-sm sm:grid-cols-2">
+            <li><Link href="/mensuales" className="font-medium text-maia-strong underline">Estancias mensuales</Link></li>
+            <li><Link href="/corporativo" className="font-medium text-maia-strong underline">Vivienda corporativa</Link></li>
+            <li><Link href="/preguntas-frecuentes" className="font-medium text-maia-strong underline">Preguntas frecuentes</Link></li>
+            <li><Link href="/formas-de-pago" className="font-medium text-maia-strong underline">Formas de pago</Link></li>
+            <li><Link href={`/departamentos?market=${marketId}`} className="font-medium text-maia-strong underline">Ver todas las zonas</Link></li>
+            <li><Link href="/blog" className="font-medium text-maia-strong underline">Guías y blog del barrio</Link></li>
+          </ul>
+        </div>
       </section>
     </div>
   );
