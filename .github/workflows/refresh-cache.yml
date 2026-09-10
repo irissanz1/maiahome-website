@@ -1,10 +1,12 @@
 name: Refrescar cache Beds24 (respaldo)
 
-# La disponibilidad del sitio es EN VIVO directo de Beds24; esta cache es solo el
-# respaldo para cuando Beds24 no responde. La refrescamos cada madrugada.
+# La ficha/reserva verifica disponibilidad EN VIVO contra Beds24 (protege contra
+# doble-booking). Esta cache alimenta el LISTADO y el calendario; se refresca cada
+# 4 h para que las reservas same-day se reflejen pronto (antes era 1x/día y las
+# reservas posteriores a la corrida no salían en el listado hasta el día siguiente).
 on:
   schedule:
-    - cron: "0 10 * * *" # 04:00 CDMX (UTC-6)
+    - cron: "0 */4 * * *" # cada 4 h (00,04,08,12,16,20 UTC)
   workflow_dispatch: {} # permite correrlo a mano desde la pestaña Actions
 
 permissions:
@@ -37,6 +39,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sin cambios en la cache."
           else
-            git commit -m "chore: refresco nocturno de cache Beds24 (respaldo)"
+            git commit -m "chore: refresco de cache Beds24 (cada 4h)"
             git push
           fi
