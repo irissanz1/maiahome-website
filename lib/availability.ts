@@ -37,6 +37,14 @@ export function evaluate(property: Property, input: SearchInput): AvailResult {
   const nights = daysBetween(checkin, checkout);
   if (nights <= 0) return { status: "sin-fechas", nights: null, total: null };
 
+  // Última fecha con dato en el calendario = horizonte sincronizado. Una noche
+  // SIN dato pero DENTRO del horizonte (p.ej. "hoy", que Beds24 deja de devolver
+  // al avanzar el día) se trata como NO disponible (fail-closed) — nunca mostrar
+  // disponible sin confirmación positiva. Solo MÁS ALLÁ del horizonte se asume
+  // disponible (fechas fuera del rango sincronizado). Calendario vacío → optimista.
+  const dates = Object.keys(property.calendar);
+  const maxSync = dates.length ? dates.reduce((a, b) => (a > b ? a : b)) : null;
+
   const minStays: number[] = [];
   let total = 0;
   let d = new Date(checkin + "T00:00:00Z");
@@ -48,8 +56,11 @@ export function evaluate(property: Property, input: SearchInput): AvailResult {
       if (!entry.available) return { status: "no-disponible", nights, total: null };
       minStays.push(entry.minStay || 1);
       total += entry.price ?? property.precioDesde ?? 0;
+    } else if (maxSync && date <= maxSync) {
+      // dentro del horizonte sincronizado pero sin dato = ocupado/no ofrecido
+      return { status: "no-disponible", nights, total: null };
     } else {
-      // fuera del rango sincronizado → optimista
+      // más allá del horizonte sincronizado → optimista
       minStays.push(1);
       total += property.precioDesde ?? 0;
     }
