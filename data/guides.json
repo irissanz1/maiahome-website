@@ -3714,7 +3714,7 @@
    "streetByCar": null
   },
   "access": {
-   "video": null,
+   "video": "https://cdn.sanity.io/files/6o3ro0a1/production/a7c0c88d68980aded022513f765e468d36adf389.mp4",
    "toApt": {
     "es": "1. Llena el formulario de check-in — es obligatorio: con tus datos y los de tus acompañantes activamos las claves de acceso. Envíalo al menos un día antes de tu llegada (mínimo 1 hora antes).\n2. Validamos tu información antes de darte acceso a la casa.\n3. Recibes tus instrucciones: la dirección exacta, las claves y cómo entrar, por WhatsApp y correo.",
     "en": "1. Fill out the check-in form — it's required: your details and your companions' let us activate the access codes. Send it at least one day before arrival (minimum 1 hour before).\n2. We validate your information before granting access to the house.\n3. You receive your instructions: the exact address, codes and how to get in, by WhatsApp and email."
