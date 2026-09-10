@@ -18,8 +18,8 @@ const T = {
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
     wifiLabel: "Wi-Fi", climateLabel: "Clima", rulesLabel: "Reglas y seguridad", flexLabel: "Horarios flexibles",
     exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
-    exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir",
-    checkoutTime: "El check-out es a las 12:00. Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
+    exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir", checkoutTimeLabel: "Hora de salida",
+    checkoutTime: "Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
     checkoutList: "Deja las llaves donde te indicamos, cierra ventanas y apaga luces. La ropa de cama usada puede quedar en la cama. ¡Gracias por cuidar la casa!",
     help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.",
   },
@@ -31,8 +31,8 @@ const T = {
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
     wifiLabel: "Wi-Fi", climateLabel: "Climate", rulesLabel: "Rules & security", flexLabel: "Flexible hours",
     exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
-    exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave",
-    checkoutTime: "Check-out is at 12:00. If you need to leave later, let us know in advance and we'll gladly try to help.",
+    exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave", checkoutTimeLabel: "Check-out time",
+    checkoutTime: "If you need to leave later, let us know in advance and we'll gladly try to help.",
     checkoutList: "Leave the keys where we indicated, close windows and turn off the lights. Used linens can stay on the bed. Thanks for taking care of the home!",
     help: "Questions during your stay? Message us on WhatsApp and we'll help right away.",
   },
@@ -207,10 +207,18 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       {/* Salida */}
       <section id="checkout" className="scroll-mt-24 pt-10">
         <SectionTitle icon="door">{t.checkoutTitle}</SectionTitle>
+        {(guide.checkout?.time || guide.schedule?.checkOut) && (
+          <div className="mt-3 inline-flex items-center gap-3 rounded-2xl bg-[#FBF7EC] px-5 py-3">
+            <span className="text-maia-strong"><Icon name="door" className="h-7 w-7" /></span>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">{t.checkoutTimeLabel}</p>
+              <p className="font-serif text-4xl font-semibold leading-none text-neutral-900">{guide.checkout?.time || guide.schedule?.checkOut}</p>
+            </div>
+          </div>
+        )}
         {guide.checkout ? (
           <>
-            <p className="mt-2 text-sm text-neutral-500">{lang === "en" ? "Check-out at" : "Check-out a las"} {guide.checkout.time}</p>
-            <p className="mt-2 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
+            <p className="mt-4 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.checkout.items.map((it, i) => (
                 <div key={i} className="rounded-2xl border border-neutral-200 p-4">

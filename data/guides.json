@@ -3806,8 +3806,8 @@
   "checkout": {
    "time": "10:00",
    "note": {
-    "es": "El check-out es a las 10:00 h. Antes de salir, ayúdanos con esta breve lista para dejar la casa lista para el siguiente huésped.",
-    "en": "Check-out is at 10:00. Before you leave, please help us with this short list so the house is ready for the next guest."
+    "es": "Antes de salir, ayúdanos con esta breve lista para dejar la casa lista para el siguiente huésped.",
+    "en": "Before you leave, please help us with this short list so the house is ready for the next guest."
    },
    "items": [
     {
