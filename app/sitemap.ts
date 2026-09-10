@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/nosotros",
     "/formas-de-pago",
     "/facturacion",
+    "/preguntas-frecuentes",
     // /check-in y /check-out: páginas operativas post-reserva → noindex, fuera del sitemap.
   ].map((path) => ({
     url: `${BASE}${path}`,
@@ -74,6 +75,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/en/about",
     "/en/payment-options",
     "/en/invoicing",
+    "/en/faq",
   ].map((path) => ({ url: `${BASE}${path}`, changeFrequency: "weekly" as const, priority: path === "/en" ? 0.9 : 0.7 }));
   const enZonas = Object.keys(ZONAS).map((slug) => ({
     url: `${BASE}/en/${slug}`,

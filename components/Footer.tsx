@@ -35,6 +35,7 @@ const COLS = [
       { p: "/nosotros", es: "Nosotros", en: "About us" },
       { p: "/formas-de-pago", es: "Formas de pago", en: "Payment options" },
       { p: "/facturacion", es: "Facturación", en: "Invoicing" },
+      { p: "/preguntas-frecuentes", es: "Preguntas frecuentes", en: "FAQ" },
     ],
   },
 ] as const;
