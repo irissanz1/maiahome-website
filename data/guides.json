@@ -41,8 +41,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en el ducto ubicado en las escaleras de servicio.",
-    "en": "You can deposit the garbage in the containers that are in the service stairs"
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -50,8 +50,8 @@
    "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor.</p></li> <li><p>Calentador eléctrico.</p></li> <li><p>Caja de seguridad.</p></li> <li><p>Lavadora y secadora de ropa.</p></li> <li><p>Aspiradora.</p></li>\n</ul>",
-   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron.</p></li> <li><p>Electric heater.</p></li> <li><p>Safe deposit box.</p></li> <li><p>Clothes washer and dryer.</p></li> <li><p>Vacuum cleaner.</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -453,8 +453,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
    },
    "trash": {
-    "es": "Pueden bajar la basura al estacionamiento y depositarla en los contenedores",
-    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -462,8 +462,8 @@
    "en": "Cleaning service: $ 40 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor.</p></li> <li><p>Calentador eléctrico.</p></li> <li><p>Caja de seguridad.</p></li> <li><p>Lavadora y secadora de ropa.</p></li> <li><p>Aspiradora.</p></li>\n</ul>",
-   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron.</p></li> <li><p>Electric heater.</p></li> <li><p>Safe deposit box.</p></li> <li><p>Clothes washer and dryer.</p></li> <li><p>Vacuum cleaner.</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -853,8 +853,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
    },
    "trash": {
-    "es": "Puede depositar la basura en los contenedores que están en la escalera de servicio.",
-    "en": "You can deposit the garbage in the containers that are in the service stairs."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -862,8 +862,8 @@
    "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Calentador eléctrico. (Clóset de recámara principal)</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li>\n</ul>",
-   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Electric heater. (Master bedroom closet)</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -1265,8 +1265,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nPlease remove the lock and take it inside the apartment."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
-    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -1274,8 +1274,8 @@
    "en": "Cleaning service: $ 40 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Estufa/Horno.</p></li> <li><p>Horno tostador.</p></li> <li><p>Lavavajillas</p></li> <li><p>Cafetera (Dulce gusto).</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Calentador eléctrico. (Clóset de recámara principal)</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Aspiradora</p></li>\n</ul>",
-   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Stove / Oven.</p></li> <li><p>Dishwasher</p></li> <li><p>Toaster.</p></li> <li><p>Coffee maker (Sweet taste).</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Electric heater. (Master bedroom closet)</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li> <li><p>Vacuum cleaner</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -1665,8 +1665,8 @@
     "en": "The building and area are very safe, but we recommend always locking the door with the bolt when you're inside. \n\nWhen you go out, just make sure the lock engages automatically 5 seconds after closing the door, or you can swipe your hand over it to lock it manually."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1 de estacionamiento.",
-    "en": "Please place your trash in sealed plastic bags inside the containers located in Parking Basement 1."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -1674,8 +1674,8 @@
    "en": "Cleaning service: $50 per day, including up to 3 hours. \n\nLaundry service: There is a washing machine and dryer available on-site, or we can coordinate with a nearby provider if needed."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Cocina</p></li> <li><p>Refrigerador</p></li> <li><p>Platos y cubiertos</p></li> <li><p>Cafetera</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Plancha de vapor. (Recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Televisión HD con pantalla de 105\" y Video de Amazon Prime, HBO Max, Netflix.</p></li> <li><p>Área para trabajar</p></li>\n</ul>",
-   "en": "<p>Kitchen</p>\n<ul> <li><p>Kitchen</p></li> <li><p>Refrigerator</p></li> <li><p>Dishes and cutlery</p></li> <li><p>Coffee maker</p></li>\n</ul>\n<p>Others</p>\n<ul> <li><p>Steam iron. (Master bedroom)</p></li> <li><p>Washing machine and dryer. (Service room)</p></li> <li><p>HD television with a 105\" screen and Video from Amazon Prime, HBO Max, Netflix.</p></li> <li><p>Work area</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -1800,8 +1800,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door when you are inside.\n\nWhen you go out, just check that the lock closes automatically 5 seconds after closing the door or you can pass your hand over it and execute the closing."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
-    "en": "They can take the garbage down to the parking lot and deposit it in the containers"
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -1809,8 +1809,8 @@
    "en": "Cleaning service: $ 35 / day including up to 3 hours.\n\nLaundry service: If you require it, we can coordinate cleaning service with a nearby provider."
   },
   "kit": {
-   "es": "<p>Cocina</p>\n<ul> <li><p>Microondas.</p></li> <li><p>Cafetera.</p></li> <li><p>Licuadora.</p></li> <li><p>Filtro de agua para beber.</p></li>\n</ul>\n<p>Otros</p>\n<ul> <li><p>Secadora de cabello (Baño principal).</p></li> <li><p>Caja de seguridad. (Clóset de recámara principal)</p></li> <li><p>Lavadora y secadora de ropa. (Cuarto de servicio)</p></li> <li><p>Aspiradora</p></li>\n</ul>",
-   "en": "<p><strong>Kitchen</strong></p>\n<ul> <li><p>Microwave.</p></li> <li><p>Coffee maker.</p></li> <li><p>Blender.</p></li> <li><p>Drinking water filter.</p></li>\n</ul>\n<p><strong>Others</strong></p>\n<ul> <li><p>Hair dryer (Main bathroom).</p></li> <li><p>Safe deposit box. (Master bedroom closet)</p></li> <li><p>Clothes washer and dryer. (Service room)</p></li> <li><p>Vacuum cleaner</p></li>\n</ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -2200,8 +2200,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside. When leaving, verify that the lock engages automatically."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1 de estacionamiento.",
-    "en": "Place trash in closed plastic bags in the containers located on parking basement level 1."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -2209,8 +2209,8 @@
    "en": "Cleaning service: $50 USD/day including up to 3 hours. Laundry service: the building has washer and dryer, or we can coordinate service with a nearby provider."
   },
   "kit": {
-   "es": "<p><strong>Cocina</strong></p><ul><li>Refrigerador</li><li>Platos y cubiertos</li><li>Cafetera</li></ul><p><strong>Otros</strong></p><ul><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa (Cuarto de servicio)</li><li>Televisión HD con pantalla de 105\" y Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
-   "en": "<p><strong>Kitchen</strong></p><ul><li>Refrigerator</li><li>Plates and utensils</li><li>Coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Steam iron (Main bedroom)</li><li>Washer and dryer (Service room)</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -2576,8 +2576,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside."
    },
    "trash": {
-    "es": "Deposita la basura en bolsas plásticas cerradas en los contenedores del sótano 1 de estacionamiento.",
-    "en": "Place trash in closed plastic bags in the containers located on parking basement level 1."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -2585,8 +2585,8 @@
    "en": "Cleaning service: $50 USD/day including up to 3 hours. The building has washer and dryer."
   },
   "kit": {
-   "es": "<p><strong>Cocina</strong></p><ul><li>Refrigerador</li><li>Platos y cubiertos</li><li>Cafetera</li></ul><p><strong>Otros</strong></p><ul><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa</li><li>Televisión HD 105\" con Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
-   "en": "<p><strong>Kitchen</strong></p><ul><li>Refrigerator</li><li>Plates and utensils</li><li>Coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Steam iron (Main bedroom)</li><li>Washer and dryer</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -2931,8 +2931,8 @@
     "en": ""
    },
    "byCar": {
-    "es": "El portero te abrirá el portón y te indicará el cajón. Se encuentra a la derecha de la puerta peatonal.",
-    "en": "The doorman will open the gate and direct you to your parking spot. It is located to the right of the pedestrian door."
+    "es": "El portero te abrirá el portón y te indicará el cajón. Se encuentra a la izquierda de la puerta peatonal.",
+    "en": "The doorman will open the gate and direct you to your parking spot. It is located to the left of the pedestrian door."
    },
    "streetNoCar": "https://www.google.com/maps/embed?pb=!4v1703202771771!6m8!1m7!1sgHeGgxTXn4D622I-jChClg!2m2!1d19.43589914285653!2d-99.20629023089548!3f82.08815779291649!4f-2.420508105909761!5f1.9257322269159318",
    "streetByCar": "https://www.google.com/maps/embed?pb=!4v1703202884475!6m8!1m7!1sgHeGgxTXn4D622I-jChClg!2m2!1d19.43589914285653!2d-99.20629023089548!3f100.33050819319341!4f11.119686441520884!5f0.4000000000000002"
@@ -2952,8 +2952,8 @@
     "en": "The building and area are quite safe, but we recommend always locking the door with the deadbolt when you are inside."
    },
    "trash": {
-    "es": "Puedes depositar la basura dentro de bolsas plásticas cerradas en los contenedores ubicados en el sótano 1.",
-    "en": "Place trash in closed plastic bags in the containers located on basement level 1."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -2961,8 +2961,8 @@
    "en": "Cleaning service: $40 USD/day including up to 3 hours. The apartment has washer and dryer."
   },
   "kit": {
-   "es": "<p><strong>Cocina</strong></p><ul><li>Microondas</li><li>Refrigerador</li><li>Horno tostador</li><li>Artículos básicos de cocina</li><li>Platos y cubiertos</li><li>Cafetera de filtro</li></ul><p><strong>Otros</strong></p><ul><li>Secadora de cabello (Baño principal)</li><li>Plancha de vapor (Recámara principal)</li><li>Lavadora y secadora de ropa (Cuarto de servicio)</li><li>Televisión HD 105\" con Amazon Prime, HBO Max, Netflix</li><li>Área para trabajar</li></ul>",
-   "en": "<p><strong>Kitchen</strong></p><ul><li>Microwave</li><li>Refrigerator</li><li>Toaster oven</li><li>Basic kitchen items</li><li>Plates and utensils</li><li>Drip coffee maker</li></ul><p><strong>Others</strong></p><ul><li>Hair dryer (Main bathroom)</li><li>Steam iron (Main bedroom)</li><li>Washer and dryer (Service room)</li><li>105\" HD TV with Amazon Prime, HBO Max, Netflix</li><li>Work area</li></ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {
@@ -3340,8 +3340,8 @@
     "en": "The building and area are quite safe. Always lock the door when you are inside."
    },
    "trash": {
-    "es": "Deposita la basura en bolsas plásticas cerradas en los contenedores ubicados en el estacionamiento.",
-    "en": "Deposit garbage in closed plastic bags in the containers located in the parking lot."
+    "es": "",
+    "en": ""
    }
   },
   "cleaning": {
@@ -3349,8 +3349,8 @@
    "en": "Cleaning service: $30 USD/day including up to 3 hours. The apartment has washer and dryer."
   },
   "kit": {
-   "es": "<p><strong>Cocina</strong></p><ul><li>Microondas</li><li>Horno tostador</li><li>Cafetera (Dolce Gusto)</li><li>Licuadora</li><li>Filtro de agua para beber</li></ul><p><strong>Otros</strong></p><ul><li>Secadora de cabello</li><li>Plancha de vapor</li><li>Calentador eléctrico</li><li>Caja de seguridad</li><li>Lavadora y secadora de ropa</li><li>Aspiradora</li></ul>",
-   "en": "<p><strong>Kitchen</strong></p><ul><li>Microwave</li><li>Coffee maker</li><li>Blender</li><li>Drinking water filter</li></ul><p><strong>Others</strong></p><ul><li>Hair dryer</li><li>Safe deposit box</li><li>Clothes washer and dryer</li><li>Vacuum cleaner</li></ul>"
+   "es": "",
+   "en": ""
   },
   "amenities": [
    {

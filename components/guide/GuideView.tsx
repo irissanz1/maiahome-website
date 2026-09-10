@@ -20,7 +20,7 @@ const T = {
     exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
     exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir", checkoutTimeLabel: "Hora de salida",
     checkoutTime: "Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
-    checkoutList: "Deja las llaves donde te indicamos, cierra ventanas y apaga luces. La ropa de cama usada puede quedar en la cama. ¡Gracias por cuidar la casa!",
+    checkoutList: "Cierra ventanas, apaga luces, ventiladores y calentadores. ¡Gracias por cuidar la casa!",
     help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.",
   },
   en: {
@@ -33,7 +33,7 @@ const T = {
     exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
     exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave", checkoutTimeLabel: "Check-out time",
     checkoutTime: "If you need to leave later, let us know in advance and we'll gladly try to help.",
-    checkoutList: "Leave the keys where we indicated, close windows and turn off the lights. Used linens can stay on the bed. Thanks for taking care of the home!",
+    checkoutList: "Close windows, turn off lights, fans and heaters. Thanks for taking care of the home!",
     help: "Questions during your stay? Message us on WhatsApp and we'll help right away.",
   },
 };
