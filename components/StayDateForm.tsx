@@ -7,8 +7,14 @@ import { langFromPath, withLang } from "@/lib/i18n";
 import { dateBounds, nextDay } from "@/lib/dates";
 
 const SD = {
-  es: { checkin: "Entrada", checkout: "Salida", guests: "Huéspedes", apply: "Ver disponibilidad", book: "Reservar", blocked: "No disponible" },
-  en: { checkin: "Check-in", checkout: "Check-out", guests: "Guests", apply: "Check availability", book: "Book", blocked: "Not available" },
+  es: {
+    checkin: "Entrada", checkout: "Salida", guests: "Huéspedes", apply: "Ver disponibilidad",
+    book: "Reservar", blocked: "No disponible", minStay: (n: number) => `Mínimo ${n} noches`,
+  },
+  en: {
+    checkin: "Check-in", checkout: "Check-out", guests: "Guests", apply: "Check availability",
+    book: "Book", blocked: "Not available", minStay: (n: number) => `${n}-night minimum`,
+  },
 } as const;
 
 // Selector de fechas + UN SOLO botón que hace ambas cosas:
@@ -21,6 +27,7 @@ export default function StayDateForm({
   checkout: dco,
   guests: dg,
   status,
+  minStayRequerido,
   checkoutUrl,
   roomId,
   nombre,
@@ -30,6 +37,7 @@ export default function StayDateForm({
   checkout?: string;
   guests?: number;
   status: string;
+  minStayRequerido?: number;
   checkoutUrl: string;
   roomId: string;
   nombre: string;
@@ -57,7 +65,10 @@ export default function StayDateForm({
     if (status === "disponible") {
       mode = "reserve";
       label = sd.book;
-    } else if (status === "no-disponible" || status === "estancia-minima" || status === "capacidad") {
+    } else if (status === "estancia-minima") {
+      mode = "blocked";
+      label = minStayRequerido ? sd.minStay(minStayRequerido) : sd.blocked;
+    } else if (status === "no-disponible" || status === "capacidad") {
       mode = "blocked";
       label = sd.blocked;
     }

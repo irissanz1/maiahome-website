@@ -220,7 +220,7 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
           )}
 
           <div id="fechas">
-            <StayDateForm slug={p.slug} checkin={search.checkin} checkout={search.checkout} guests={search.guests} status={r.status} checkoutUrl={checkoutUrl} roomId={p.beds24RoomId} nombre={p.nombre} />
+            <StayDateForm slug={p.slug} checkin={search.checkin} checkout={search.checkout} guests={search.guests} status={r.status} minStayRequerido={r.minStayRequerido} checkoutUrl={checkoutUrl} roomId={p.beds24RoomId} nombre={p.nombre} />
           </div>
 
           <div className="mt-3 rounded-xl bg-neutral-50 p-3 text-sm">

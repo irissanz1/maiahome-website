@@ -250,6 +250,7 @@ export default async function StayDetail({
               checkout={search.checkout}
               guests={search.guests}
               status={r.status}
+              minStayRequerido={r.minStayRequerido}
               checkoutUrl={checkoutUrl}
               roomId={p.beds24RoomId}
               nombre={p.nombre}
