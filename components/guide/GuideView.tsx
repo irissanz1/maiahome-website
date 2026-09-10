@@ -12,7 +12,7 @@ const pick = (l: Lang, f?: { es: string; en: string } | null) => (f ? (l === "en
 const T = {
   es: {
     arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
-    checkIn: "Check-in desde las", address: "Dirección", maps: "Google Maps", waze: "Waze",
+    checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
@@ -25,7 +25,7 @@ const T = {
   },
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
-    checkIn: "Check-in from", address: "Address", maps: "Google Maps", waze: "Waze",
+    checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
@@ -77,7 +77,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       {/* Llegada */}
       <section id="arrival" className="scroll-mt-24 pt-10">
         <SectionTitle icon="pin">{t.arrival}</SectionTitle>
-        <p className="mt-2 flex items-center gap-1.5 text-sm text-neutral-500"><Icon name="clock" className="h-4 w-4 text-maia-strong" />{t.checkIn} {guide.checkInTime}</p>
+        <TimeCallout icon="clock" label={t.checkInLabel} time={guide.schedule?.checkIn || guide.checkInTime} />
         {guide.address && (
           <div className="mt-4 rounded-2xl border border-neutral-200 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">{t.address}</p>
@@ -207,15 +207,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       {/* Salida */}
       <section id="checkout" className="scroll-mt-24 pt-10">
         <SectionTitle icon="door">{t.checkoutTitle}</SectionTitle>
-        {(guide.checkout?.time || guide.schedule?.checkOut) && (
-          <div className="mt-3 inline-flex items-center gap-3 rounded-2xl bg-[#FBF7EC] px-5 py-3">
-            <span className="text-maia-strong"><Icon name="door" className="h-7 w-7" /></span>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">{t.checkoutTimeLabel}</p>
-              <p className="font-serif text-4xl font-semibold leading-none text-neutral-900">{guide.checkout?.time || guide.schedule?.checkOut}</p>
-            </div>
-          </div>
-        )}
+        <TimeCallout icon="door" label={t.checkoutTimeLabel} time={guide.checkout?.time || guide.schedule?.checkOut || ""} />
         {guide.checkout ? (
           <>
             <p className="mt-4 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
@@ -328,6 +320,20 @@ function SectionTitle({ icon, children }: { icon?: string; children: React.React
 // Renderiza **negritas** simples dentro de un texto.
 function bold(text: string) {
   return text.split("**").map((seg, i) => (i % 2 ? <strong key={i} className="font-semibold text-neutral-800">{seg}</strong> : <span key={i}>{seg}</span>));
+}
+
+// Recuadro destacado con una hora (entrada / salida).
+function TimeCallout({ icon, label, time }: { icon: string; label: string; time: string }) {
+  if (!time) return null;
+  return (
+    <div className="mt-3 inline-flex items-center gap-3 rounded-2xl bg-[#FBF7EC] px-5 py-3">
+      <span className="text-maia-strong"><Icon name={icon} className="h-7 w-7" /></span>
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">{label}</p>
+        <p className="font-serif text-4xl font-semibold leading-none text-neutral-900">{time}</p>
+      </div>
+    </div>
+  );
 }
 
 function ManualCard({ title, icon, children }: { title: string; icon?: string; children: React.ReactNode }) {
