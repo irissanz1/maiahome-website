@@ -93,8 +93,8 @@ export default function GuideView({ guide }: { guide: Guide }) {
 
       {/* Llegada */}
       <section id="arrival" className="scroll-mt-24 pt-10">
-        <SectionTitle>{t.arrival}</SectionTitle>
-        <p className="mt-2 text-sm text-neutral-500">{t.checkIn} {guide.checkInTime}</p>
+        <SectionTitle icon="pin">{t.arrival}</SectionTitle>
+        <p className="mt-2 flex items-center gap-1.5 text-sm text-neutral-500"><Icon name="clock" className="h-4 w-4 text-maia-strong" />{t.checkIn} {guide.checkInTime}</p>
         {guide.address && (
           <div className="mt-4 rounded-2xl border border-neutral-200 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">{t.address}</p>
@@ -141,7 +141,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
         {/* Acceso al depto */}
         {(pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
           <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
-            <p className="text-sm font-semibold text-neutral-900">{t.access}</p>
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="key" className="h-4 w-4 text-maia-strong" />{t.access}</p>
             {pick(lang, guide.access.toApt) && <p className="mt-1 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.toApt)}</p>}
             {pick(lang, guide.access.instructions) && <p className="mt-2 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.instructions)}</p>}
             {guide.access.video && (
@@ -157,7 +157,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
         )}
         {guide.schedule && (pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
           <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
-            <p className="font-semibold text-neutral-900">{t.flexLabel}</p>
+            <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
             {pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
             {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
           </div>
@@ -167,12 +167,12 @@ export default function GuideView({ guide }: { guide: Guide }) {
       {/* Manual de la casa */}
       {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.climate || guide.amenityRules) && (
         <section id="house" className="scroll-mt-24 pt-10">
-          <SectionTitle>{t.house}</SectionTitle>
+          <SectionTitle icon="home">{t.house}</SectionTitle>
           {(guide.wifi || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {guide.wifi && <ManualCard title={t.wifiLabel}>{bold(pick(lang, guide.wifi))}</ManualCard>}
-              {guide.climate && <ManualCard title={t.climateLabel}>{pick(lang, guide.climate)}</ManualCard>}
-              {guide.amenityRules && <ManualCard title={t.rulesLabel}>{pick(lang, guide.amenityRules)}</ManualCard>}
+              {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
+              {guide.climate && <ManualCard title={t.climateLabel} icon="temp">{pick(lang, guide.climate)}</ManualCard>}
+              {guide.amenityRules && <ManualCard title={t.rulesLabel} icon="shield">{pick(lang, guide.amenityRules)}</ManualCard>}
             </div>
           )}
           {guide.amenities.length > 0 && (
@@ -201,7 +201,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
       {/* Explora la zona → guía de barrio en explore.maiahome.mx (fuente única) */}
       {exploreZone && (
         <section id="explore" className="scroll-mt-24 pt-10">
-          <SectionTitle>{t.explore}</SectionTitle>
+          <SectionTitle icon="compass">{t.explore}</SectionTitle>
           <a
             href={`https://explore.maiahome.mx/${exploreZone}`}
             target="_blank"
@@ -220,7 +220,7 @@ export default function GuideView({ guide }: { guide: Guide }) {
 
       {/* Salida */}
       <section id="checkout" className="scroll-mt-24 pt-10">
-        <SectionTitle>{t.checkoutTitle}</SectionTitle>
+        <SectionTitle icon="door">{t.checkoutTitle}</SectionTitle>
         {guide.checkout ? (
           <>
             <p className="mt-2 text-sm text-neutral-500">{lang === "en" ? "Check-out at" : "Check-out a las"} {guide.checkout.time}</p>
@@ -253,8 +253,36 @@ export default function GuideView({ guide }: { guide: Guide }) {
   );
 }
 
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="font-serif text-2xl text-neutral-900">{children}</h2>;
+// Íconos de línea (estilo Lucide) — stroke currentColor, heredan color del contenedor.
+const ICONS: Record<string, React.ReactNode> = {
+  pin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="2.6" /></>,
+  clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7.5V12l3 1.8" /></>,
+  key: <><circle cx="7.5" cy="15.5" r="3.5" /><path d="m10 13 8-8M16.5 4.5l2 2M14.5 6.5l2 2" /></>,
+  shield: <><path d="M12 3 5 6v5.5c0 4.3 3 7.7 7 9.5 4-1.8 7-5.2 7-9.5V6l-7-3Z" /></>,
+  wifi: <><path d="M4.5 12.5a10.5 10.5 0 0 1 15 0M8 16a6 6 0 0 1 8 0" /><circle cx="12" cy="19.5" r="1" /></>,
+  temp: <><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0Z" /></>,
+  home: <><path d="m3 11 9-7 9 7" /><path d="M5 9.5V20h14V9.5" /></>,
+  compass: <><circle cx="12" cy="12" r="9" /><path d="m15.5 8.5-2 5.5-5 2 2-5.5 5-2Z" /></>,
+  door: <><path d="M4 21h16M6 21V4h11v17" /><path d="M13 12h.5" /></>,
+  luggage: <><rect x="6" y="7.5" width="12" height="12.5" rx="2" /><path d="M9.5 7.5V4.5h5v3M10 20.5v1M14 20.5v1" /></>,
+  car: <><path d="M5 16.5V13l1.8-4.2A2 2 0 0 1 8.7 7.5h6.6a2 2 0 0 1 1.9 1.3L19 13v3.5" /><path d="M3.5 13h17" /><circle cx="7.5" cy="16.5" r="1.4" /><circle cx="16.5" cy="16.5" r="1.4" /></>,
+};
+
+function Icon({ name, className = "h-5 w-5" }: { name: string; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      {ICONS[name]}
+    </svg>
+  );
+}
+
+function SectionTitle({ icon, children }: { icon?: string; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-2.5 font-serif text-2xl text-neutral-900">
+      {icon && <span className="text-maia-strong">{<Icon name={icon} className="h-6 w-6" />}</span>}
+      {children}
+    </h2>
+  );
 }
 
 // Renderiza **negritas** simples dentro de un texto.
@@ -262,10 +290,13 @@ function bold(text: string) {
   return text.split("**").map((seg, i) => (i % 2 ? <strong key={i} className="font-semibold text-neutral-800">{seg}</strong> : <span key={i}>{seg}</span>));
 }
 
-function ManualCard({ title, children }: { title: string; children: React.ReactNode }) {
+function ManualCard({ title, icon, children }: { title: string; icon?: string; children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-neutral-200 p-4">
-      <p className="text-base font-semibold text-neutral-900">{title}</p>
+      <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
+        {icon && <span className="text-maia-strong">{<Icon name={icon} />}</span>}
+        {title}
+      </p>
       <p className="mt-1 text-sm text-neutral-600">{children}</p>
     </div>
   );
