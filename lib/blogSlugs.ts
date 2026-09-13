@@ -30,6 +30,12 @@ export const BLOG_SLUG_ES_TO_EN: Record<string, string> = {
   "cdmx-el-destino-ideal-para-corporate-housing-y-viajes-de-negocios": "mexico-city-corporate-housing",
   "la-mejor-epoca-para-visitar-cdmx-clima-mes-a-mes": "best-time-to-visit-mexico-city",
   "por-que-visitar-la-cdmx-10-razones-para-enamorarte": "reasons-to-visit-mexico-city",
+  // Guías de la Condesa (2026-09-13)
+  "por-que-hospedarte-en-la-condesa": "why-stay-in-condesa",
+  "los-mejores-cafes-de-especialidad-en-la-condesa": "best-specialty-coffee-condesa",
+  "restaurantes-imperdibles-en-la-condesa": "best-restaurants-condesa",
+  "parque-mexico-y-parque-espana-guia-de-la-condesa": "parque-mexico-parque-espana-condesa-guide",
+  "vida-nocturna-y-bares-en-la-condesa": "condesa-nightlife-bars",
 };
 
 export const BLOG_SLUG_EN_TO_ES: Record<string, string> = Object.fromEntries(
