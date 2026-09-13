@@ -47,6 +47,9 @@ function guideRedirects() {
     aurora: "aurora", "bg-polanco": "bg-polanco", conchita: "coco", cordelia: "cordelia",
     kahlo: "kahlo", "laila-casa": "laila-casa", leonora: "leonora", "luz-maria": "luz-maria",
     "siqueiros-orozco-rivera": "horacio", tamayo: "tamayo",
+    // Slugs nuevos que Beds24 ya usa en [PROPERTYTEMPLATE1] de los correos
+    // automáticos (book.maiahome.mx/d/<slug>): sin esto daban 404.
+    coco: "coco", augustine: "augustine",
   };
   return Object.entries(map).map(([from, to]) => ({
     source: `/d/${from}`,
