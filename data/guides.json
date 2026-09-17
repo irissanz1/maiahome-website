@@ -4293,46 +4293,364 @@
    "prototype": true,
    "units": [
     {
+     "id": "horacio-1",
      "name": "Horacio 1",
      "door": "101",
      "note": {
       "es": "Piso 1 · 2 recámaras",
       "en": "Floor 1 · 2 bedrooms"
+     },
+     "details": [
+      {
+       "icon": "door",
+       "label": {
+        "es": "Puerta",
+        "en": "Door"
+       },
+       "value": {
+        "es": "**101** · piso 1 · con elevador",
+        "en": "**101** · floor 1 · elevator"
+       }
+      },
+      {
+       "icon": "bed",
+       "label": {
+        "es": "Capacidad",
+        "en": "Capacity"
+       },
+       "value": {
+        "es": "2 recámaras · 2 baños · hasta 6 huéspedes",
+        "en": "2 bedrooms · 2 baths · up to 6 guests"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Early check-in",
+        "en": "Early check-in"
+       },
+       "value": {
+        "es": "USD 40 · sujeto a disponibilidad",
+        "en": "USD 40 · subject to availability"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Late check-out",
+        "en": "Late check-out"
+       },
+       "value": {
+        "es": "USD 40 · hasta las 16:00 · sujeto a disponibilidad",
+        "en": "USD 40 · until 4:00 PM · subject to availability"
+       }
+      },
+      {
+       "icon": "home",
+       "label": {
+        "es": "Limpieza extra",
+        "en": "Extra cleaning"
+       },
+       "value": {
+        "es": "USD 30 por día (hasta 3 horas)",
+        "en": "USD 30 per day (up to 3 hours)"
+       }
+      },
+      {
+       "icon": "droplet",
+       "label": {
+        "es": "Lavadora y secadora",
+        "en": "Washer & dryer"
+       },
+       "value": {
+        "es": "Sí, dentro del departamento",
+        "en": "Yes, inside the apartment"
+       }
+      },
+      {
+       "icon": "car",
+       "label": {
+        "es": "Estacionamiento",
+        "en": "Parking"
+       },
+       "value": {
+        "es": "1 cajón · planta baja, carril central · altura máx. 2.10 m",
+        "en": "1 spot · ground floor, center lane · max height 2.10 m"
+       }
+      },
+      {
+       "icon": "paw",
+       "label": {
+        "es": "Mascotas",
+        "en": "Pets"
+       },
+       "value": {
+        "es": "USD 40 por estancia · máx. 2",
+        "en": "USD 40 per stay · max 2"
+       }
+      }
+     ],
+     "earlyCheckIn": {
+      "es": "Early check-in sujeto a disponibilidad (USD 40).",
+      "en": "Early check-in subject to availability (USD 40)."
+     },
+     "lateCheckOut": {
+      "es": "Late check-out sujeto a disponibilidad (USD 40, hasta las 16:00).",
+      "en": "Late check-out subject to availability (USD 40, until 4:00 PM)."
+     },
+     "cleaning": {
+      "es": "Servicio de limpieza: USD 30 por día, hasta 3 horas. El departamento cuenta con lavadora y secadora.",
+      "en": "Cleaning service: USD 30 per day, up to 3 hours. The apartment has a washer and dryer."
      }
     },
     {
+     "id": "horacio-2",
      "name": "Horacio 2",
      "door": "102",
      "note": {
       "es": "Piso 1 · 1 recámara",
       "en": "Floor 1 · 1 bedroom"
+     },
+     "details": [
+      {
+       "icon": "door",
+       "label": {
+        "es": "Puerta",
+        "en": "Door"
+       },
+       "value": {
+        "es": "**102** · piso 1 · con elevador",
+        "en": "**102** · floor 1 · elevator"
+       }
+      },
+      {
+       "icon": "bed",
+       "label": {
+        "es": "Capacidad",
+        "en": "Capacity"
+       },
+       "value": {
+        "es": "1 recámara · 1 baño · hasta 3 huéspedes",
+        "en": "1 bedroom · 1 bath · up to 3 guests"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Early check-in",
+        "en": "Early check-in"
+       },
+       "value": {
+        "es": "USD 35 · sujeto a disponibilidad",
+        "en": "USD 35 · subject to availability"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Late check-out",
+        "en": "Late check-out"
+       },
+       "value": {
+        "es": "USD 35 · hasta las 16:00 · sujeto a disponibilidad",
+        "en": "USD 35 · until 4:00 PM · subject to availability"
+       }
+      },
+      {
+       "icon": "home",
+       "label": {
+        "es": "Limpieza extra",
+        "en": "Extra cleaning"
+       },
+       "value": {
+        "es": "USD 25 por día (hasta 3 horas)",
+        "en": "USD 25 per day (up to 3 hours)"
+       }
+      },
+      {
+       "icon": "droplet",
+       "label": {
+        "es": "Lavadora y secadora",
+        "en": "Washer & dryer"
+       },
+       "value": {
+        "es": "No",
+        "en": "No"
+       }
+      },
+      {
+       "icon": "car",
+       "label": {
+        "es": "Estacionamiento",
+        "en": "Parking"
+       },
+       "value": {
+        "es": "No incluye · hay estacionamiento público cerca",
+        "en": "Not included · public parking nearby"
+       }
+      },
+      {
+       "icon": "paw",
+       "label": {
+        "es": "Mascotas",
+        "en": "Pets"
+       },
+       "value": {
+        "es": "USD 30 por estancia · máx. 2",
+        "en": "USD 30 per stay · max 2"
+       }
+      }
+     ],
+     "earlyCheckIn": {
+      "es": "Early check-in sujeto a disponibilidad (USD 35).",
+      "en": "Early check-in subject to availability (USD 35)."
+     },
+     "lateCheckOut": {
+      "es": "Late check-out sujeto a disponibilidad (USD 35, hasta las 16:00).",
+      "en": "Late check-out subject to availability (USD 35, until 4:00 PM)."
+     },
+     "cleaning": {
+      "es": "Servicio de limpieza: USD 25 por día, hasta 3 horas. Este departamento no tiene lavadora.",
+      "en": "Cleaning service: USD 25 per day, up to 3 hours. This apartment has no washer."
      }
     },
     {
+     "id": "horacio-1-2",
      "name": "Horacio 1&2",
      "door": "101 + 102",
      "note": {
       "es": "Piso 1 · ambos departamentos",
       "en": "Floor 1 · both apartments"
+     },
+     "details": [
+      {
+       "icon": "door",
+       "label": {
+        "es": "Puerta",
+        "en": "Door"
+       },
+       "value": {
+        "es": "**101 y 102** · piso 1 · con elevador",
+        "en": "**101 and 102** · floor 1 · elevator"
+       }
+      },
+      {
+       "icon": "bed",
+       "label": {
+        "es": "Capacidad",
+        "en": "Capacity"
+       },
+       "value": {
+        "es": "3 recámaras · 3 baños · hasta 9 huéspedes",
+        "en": "3 bedrooms · 3 baths · up to 9 guests"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Early check-in",
+        "en": "Early check-in"
+       },
+       "value": {
+        "es": "USD 50 · sujeto a disponibilidad",
+        "en": "USD 50 · subject to availability"
+       }
+      },
+      {
+       "icon": "clock",
+       "label": {
+        "es": "Late check-out",
+        "en": "Late check-out"
+       },
+       "value": {
+        "es": "USD 50 · hasta las 16:00 · sujeto a disponibilidad",
+        "en": "USD 50 · until 4:00 PM · subject to availability"
+       }
+      },
+      {
+       "icon": "home",
+       "label": {
+        "es": "Limpieza extra",
+        "en": "Extra cleaning"
+       },
+       "value": {
+        "es": "USD 50 por día (hasta 3 horas)",
+        "en": "USD 50 per day (up to 3 hours)"
+       }
+      },
+      {
+       "icon": "droplet",
+       "label": {
+        "es": "Lavadora y secadora",
+        "en": "Washer & dryer"
+       },
+       "value": {
+        "es": "Sí, en el departamento 101",
+        "en": "Yes, in apartment 101"
+       }
+      },
+      {
+       "icon": "car",
+       "label": {
+        "es": "Estacionamiento",
+        "en": "Parking"
+       },
+       "value": {
+        "es": "1 cajón · planta baja, carril central · altura máx. 2.10 m",
+        "en": "1 spot · ground floor, center lane · max height 2.10 m"
+       }
+      },
+      {
+       "icon": "paw",
+       "label": {
+        "es": "Mascotas",
+        "en": "Pets"
+       },
+       "value": {
+        "es": "USD 45 por estancia · máx. 2",
+        "en": "USD 45 per stay · max 2"
+       }
+      }
+     ],
+     "earlyCheckIn": {
+      "es": "Early check-in sujeto a disponibilidad (USD 50).",
+      "en": "Early check-in subject to availability (USD 50)."
+     },
+     "lateCheckOut": {
+      "es": "Late check-out sujeto a disponibilidad (USD 50, hasta las 16:00).",
+      "en": "Late check-out subject to availability (USD 50, until 4:00 PM)."
+     },
+     "cleaning": {
+      "es": "Servicio de limpieza: USD 50 por día, hasta 3 horas. Hay lavadora y secadora en el departamento 101.",
+      "en": "Cleaning service: USD 50 per day, up to 3 hours. There's a washer and dryer in apartment 101."
      }
     }
    ],
    "beforeArrival": [
     {
-     "es": "**Envía tu registro** al menos 1 día antes (mínimo 1 hora): al validarlo activamos tu código. [Completar registro](https://maiahome.mx/check-in)",
-     "en": "**Submit your registration** at least 1 day before (1 hour minimum): once validated, we activate your code. [Complete registration](https://maiahome.mx/en/check-in)"
+     "text": {
+      "es": "**Envía tu registro** al menos 1 día antes (mínimo 1 hora): al validarlo activamos tu código. [Completar registro](https://maiahome.mx/check-in)",
+      "en": "**Submit your registration** at least 1 day before (1 hour minimum): once validated, we activate your code. [Complete registration](https://maiahome.mx/en/check-in)"
+     }
     },
     {
-     "es": "Ten a la mano tu **código de 6 dígitos**: llega por correo (revisa también spam).",
-     "en": "Have your **6-digit code** handy: it arrives by email (check spam too)."
+     "text": {
+      "es": "Ten a la mano tu **código de 6 dígitos**: llega por correo (revisa también spam).",
+      "en": "Have your **6-digit code** handy: it arrives by email (check spam too)."
+     }
     },
     {
-     "es": "Dirección para tu app de transporte: **Privada de Horacio 13, Polanco**.",
-     "en": "Address for your ride app: **Privada de Horacio 13, Polanco**."
+     "text": {
+      "es": "Dirección para tu app de transporte: **Privada de Horacio 13, Polanco**.",
+      "en": "Address for your ride app: **Privada de Horacio 13, Polanco**."
+     },
+     "maps": true
     },
     {
-     "es": "Entrada a partir de las **15:00**. ¿Llegas antes? Puedes dejar tus maletas en recepción (lun–vie, 10:00–18:00).",
-     "en": "Check-in from **3:00 PM**. Arriving earlier? You can leave your luggage at reception (Mon–Fri, 10:00–18:00)."
+     "text": {
+      "es": "Entrada a partir de las **15:00**. ¿Llegas antes? Puedes dejar tus maletas en recepción (lun–vie, 10:00–18:00).",
+      "en": "Check-in from **3:00 PM**. Arriving earlier? You can leave your luggage at reception (Mon–Fri, 10:00–18:00)."
+     }
     }
    ],
    "steps": [

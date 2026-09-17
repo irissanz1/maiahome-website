@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Guide } from "@/lib/guides";
 import { whatsappUrl } from "@/lib/contact";
 
@@ -27,6 +27,8 @@ const T = {
     beforeArrival: "Antes de llegar", stepByStep: "Llegada paso a paso", troubleshoot: "¿Algo no funciona?",
     stuckBtn: "Estoy afuera y no puedo entrar · WhatsApp",
     protoBanner: "Prototipo interno — no enviar a huéspedes.", protoHint: "Lo marcado con ✎ lo debe completar el equipo.",
+    whichUnit: "¿Cuál departamento reservaste?", whichUnitHint: "Elígelo para ver tu puerta, horarios flexibles y costos.",
+    variesByUnit: "Varía por departamento: elige el tuyo en «¿Cuál departamento reservaste?», al inicio de la guía.",
   },
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
@@ -44,6 +46,8 @@ const T = {
     beforeArrival: "Before you arrive", stepByStep: "Step-by-step arrival", troubleshoot: "Something not working?",
     stuckBtn: "I'm outside and can't get in · WhatsApp",
     protoBanner: "Internal prototype — do not send to guests.", protoHint: "Items marked ✎ must be completed by the team.",
+    whichUnit: "Which apartment did you book?", whichUnitHint: "Pick it to see your door, flexible hours and fees.",
+    variesByUnit: "Varies by apartment: pick yours under “Which apartment did you book?” at the top of the guide.",
   },
 };
 
@@ -54,6 +58,26 @@ const SECTIONS = ["arrival", "house", "explore", "checkout"] as const;
 export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang }) {
   const [arrivalMode, setArrivalMode] = useState<"noCar" | "byCar">("noCar");
   const t = T[lang];
+
+  // Selector de unidad: una guía sirve a varias publicaciones. Se preselecciona con
+  // ?unidad=<id> (útil en los mensajes) o con la última elección en este navegador.
+  const units = guide.arrivalPlus?.units ?? [];
+  const unitAware = units.length > 0;
+  const [unitId, setUnitId] = useState<string | null>(null);
+  useEffect(() => {
+    const list = guide.arrivalPlus?.units ?? [];
+    if (!list.length) return;
+    const fromUrl = new URLSearchParams(window.location.search).get("unidad");
+    let saved: string | null = null;
+    try { saved = localStorage.getItem(`maia-guide-unit:${guide.slug}`); } catch {}
+    const chosen = [fromUrl, saved].find((x) => x && list.some((u) => u.id === x));
+    if (chosen) setUnitId(chosen);
+  }, [guide.slug, guide.arrivalPlus]);
+  const chooseUnit = (id: string) => {
+    setUnitId(id);
+    try { localStorage.setItem(`maia-guide-unit:${guide.slug}`, id); } catch {}
+  };
+  const unit = units.find((u) => u.id === unitId);
 
   const exploreZone = EXPLORE_ZONE[guide.neighborhood];
   const navItems = SECTIONS.filter((s) => s !== "explore" || !!exploreZone);
@@ -92,7 +116,14 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       {/* Llegada */}
       <section id="arrival" className="scroll-mt-24 pt-10">
         <SectionTitle icon="pin">{t.arrival}</SectionTitle>
-        <TimeCallout icon="clock" label={t.checkInLabel} time={guide.schedule?.checkIn || guide.checkInTime} />
+        {guide.arrivalPlus ? (
+          <div className="mt-3 grid max-w-md grid-cols-2 gap-2">
+            <TimeTile icon="clock" label={t.checkInLabel} time={guide.schedule?.checkIn || guide.checkInTime} />
+            <TimeTile icon="door" label={t.checkoutTimeLabel} time={guide.checkout?.time || guide.schedule?.checkOut || ""} />
+          </div>
+        ) : (
+          <TimeCallout icon="clock" label={t.checkInLabel} time={guide.schedule?.checkIn || guide.checkInTime} />
+        )}
         {guide.address && (
           <div className="mt-4 rounded-2xl border border-neutral-200 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">{t.address}</p>
@@ -103,19 +134,36 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             </div>
           </div>
         )}
-        {guide.arrivalPlus?.units?.length ? (
+        {unitAware ? (
           <div className="mt-4 rounded-2xl border-2 border-maia-yellow p-4">
-            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{t.yourUnit}</p>
-            <p className="mt-0.5 text-xs text-neutral-500">{t.yourUnitHint}</p>
-            <div className="mt-3 grid gap-2 sm:grid-cols-3">
-              {guide.arrivalPlus.units.map((u) => (
-                <div key={u.name} className="rounded-xl bg-neutral-50 px-3 py-2.5">
-                  <p className="text-xs text-neutral-500">{u.name}</p>
-                  <p className="font-serif text-2xl font-semibold leading-tight text-neutral-900">{u.door}</p>
-                  {pick(lang, u.note) && <p className="text-xs text-neutral-600">{pick(lang, u.note)}</p>}
-                </div>
-              ))}
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{t.whichUnit}</p>
+            <p className="mt-0.5 text-xs text-neutral-500">{t.whichUnitHint}</p>
+            <div className="mt-3 grid gap-2 sm:grid-cols-3" role="radiogroup" aria-label={t.whichUnit}>
+              {units.map((u) => {
+                const on = u.id === unitId;
+                return (
+                  <button key={u.id} type="button" role="radio" aria-checked={on} onClick={() => chooseUnit(u.id)}
+                    className={`rounded-xl border-2 px-3 py-2.5 text-left transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-maia-strong ${on ? "border-maia-strong bg-[#FBF7EC]" : "border-neutral-200 bg-white hover:border-neutral-400"}`}>
+                    <span className="flex items-center justify-between text-xs text-neutral-500">{u.name}{on && <span className="font-semibold text-maia-strong">✓</span>}</span>
+                    <span className="block font-serif text-2xl font-semibold leading-tight text-neutral-900">{u.door}</span>
+                    {pick(lang, u.note) && <span className="block text-xs text-neutral-600">{pick(lang, u.note)}</span>}
+                  </button>
+                );
+              })}
             </div>
+            {unit?.details?.length ? (
+              <dl className="mt-3 grid gap-x-4 gap-y-2.5 border-t border-neutral-200 pt-3 text-sm sm:grid-cols-2">
+                {unit.details.map((d, i) => (
+                  <div key={i} className="flex items-start gap-2">
+                    <span className="mt-0.5 text-maia-strong"><Icon name={d.icon || "info"} className="h-4 w-4" /></span>
+                    <div>
+                      <dt className="text-xs text-neutral-500">{pick(lang, d.label)}</dt>
+                      <dd className="text-neutral-800">{rich(pick(lang, d.value))}</dd>
+                    </div>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
           </div>
         ) : null}
         {guide.arrivalPlus?.beforeArrival?.length ? (
@@ -123,7 +171,18 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="info" className="h-4 w-4 text-maia-strong" />{t.beforeArrival}</p>
             <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-neutral-700">
               {guide.arrivalPlus.beforeArrival.map((b, i) => (
-                <li key={i} className="flex gap-2"><span className="text-maia-strong">✓</span><span>{rich(pick(lang, b))}</span></li>
+                <li key={i} className="flex gap-2">
+                  <span className="text-maia-strong">✓</span>
+                  <span>
+                    {rich(pick(lang, b.text))}
+                    {b.maps && (guide.maps || guide.waze) && (
+                      <span className="mt-1.5 flex flex-wrap gap-2">
+                        {guide.maps && <LinkBtn small href={guide.maps}>{t.maps}</LinkBtn>}
+                        {guide.waze && <LinkBtn small href={guide.waze}>{t.waze}</LinkBtn>}
+                      </span>
+                    )}
+                  </span>
+                </li>
               ))}
             </ul>
           </div>
@@ -221,7 +280,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         {pick(lang, guide.access.security) && (
           <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.security}:</b> {pick(lang, guide.access.security)}</p>
         )}
-        {guide.schedule && (pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
+        {!unitAware && guide.schedule && (pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
           <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
             <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
             {pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
@@ -258,10 +317,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             <div className="prose-guide mt-5 rounded-2xl border border-neutral-200 p-4 text-sm text-neutral-700"
               dangerouslySetInnerHTML={{ __html: pick(lang, guide.kit) }} />
           )}
-          {pick(lang, guide.cleaning) && (
+          {(pick(lang, guide.cleaning) || unitAware) && (
             <div className="mt-4 rounded-2xl bg-neutral-50 p-4">
               <p className="text-sm font-semibold text-neutral-900">{t.cleaning}</p>
-              <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">{pick(lang, guide.cleaning)}</p>
+              <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
+                {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
+              </p>
             </div>
           )}
         </section>
@@ -315,8 +376,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             )}
           </>
         )}
-        {guide.schedule && pick(lang, guide.schedule.lateCheckOut) && (
-          <p className="mt-3 text-sm text-neutral-500">{pick(lang, guide.schedule.lateCheckOut)}</p>
+        {unitAware ? (
+          <p className="mt-3 text-sm text-neutral-500">{unit ? pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut) : t.variesByUnit}</p>
+        ) : (
+          guide.schedule && pick(lang, guide.schedule.lateCheckOut) && (
+            <p className="mt-3 text-sm text-neutral-500">{pick(lang, guide.schedule.lateCheckOut)}</p>
+          )
         )}
       </section>
 
@@ -419,6 +484,20 @@ function rich(text: string) {
     }
     return <span key={i}>{bold(seg)}</span>;
   });
+}
+
+// Versión compacta para mostrar entrada y salida lado a lado.
+function TimeTile({ icon, label, time }: { icon: string; label: string; time: string }) {
+  if (!time) return null;
+  return (
+    <div className="flex items-center gap-2.5 rounded-2xl bg-[#FBF7EC] px-3.5 py-3">
+      <span className="text-maia-strong"><Icon name={icon} className="h-6 w-6" /></span>
+      <div>
+        <p className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{label}</p>
+        <p className="font-serif text-3xl font-semibold leading-none text-neutral-900">{time}</p>
+      </div>
+    </div>
+  );
 }
 
 // Recuadro destacado con una hora (entrada / salida).

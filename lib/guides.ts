@@ -25,10 +25,23 @@ export interface GuideAmenity {
 // Llegada reforzada (piloto: horacio-prototipo). Todo opcional: si una guía no lo
 // trae, GuideView pinta la sección de acceso de siempre. En los textos se admite
 // **negrita**, [texto](url) y [[por completar]] (resaltado para el equipo).
+// Una publicación de las que comparten la guía (p.ej. Horacio 1, 2 y 1&2).
+export interface GuideUnit {
+  id: string; // se puede preseleccionar con ?unidad=<id>
+  name: string;
+  door: string;
+  note?: BL;
+  details?: { icon?: string; label: BL; value: BL }[]; // se muestran al elegirla
+  // Reemplazan los textos genéricos de la guía cuando esta unidad está elegida:
+  earlyCheckIn?: BL;
+  lateCheckOut?: BL;
+  cleaning?: BL;
+}
+
 export interface GuideArrivalPlus {
   prototype?: boolean; // muestra el aviso "prototipo interno"
-  units?: { name: string; door: string; note?: BL }[]; // qué puerta es cada publicación
-  beforeArrival?: BL[]; // checklist "antes de llegar"
+  units?: GuideUnit[]; // selector: qué puerta y qué condiciones aplican a cada publicación
+  beforeArrival?: { text: BL; maps?: boolean }[]; // checklist; maps = botones Google Maps / Waze
   steps?: { title: BL; body: BL }[]; // llegada paso a paso (reemplaza el bloque genérico)
   troubleshoot?: { q: BL; a: BL }[]; // "¿algo no funciona?"
   helpMessage?: BL; // mensaje precargado del botón de WhatsApp
