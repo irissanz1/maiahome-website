@@ -22,6 +22,18 @@ export interface GuideAmenity {
   order: number;
 }
 
+// Llegada reforzada (piloto: horacio-prototipo). Todo opcional: si una guía no lo
+// trae, GuideView pinta la sección de acceso de siempre. En los textos se admite
+// **negrita**, [texto](url) y [[por completar]] (resaltado para el equipo).
+export interface GuideArrivalPlus {
+  prototype?: boolean; // muestra el aviso "prototipo interno"
+  units?: { name: string; door: string; note?: BL }[]; // qué puerta es cada publicación
+  beforeArrival?: BL[]; // checklist "antes de llegar"
+  steps?: { title: BL; body: BL }[]; // llegada paso a paso (reemplaza el bloque genérico)
+  troubleshoot?: { q: BL; a: BL }[]; // "¿algo no funciona?"
+  helpMessage?: BL; // mensaje precargado del botón de WhatsApp
+}
+
 export interface Guide {
   slug: string;
   title: string;
@@ -49,6 +61,7 @@ export interface Guide {
   climate?: BL;
   amenityRules?: BL;
   schedule?: { checkOut: string; checkIn: string; earlyCheckIn: BL; lateCheckOut: BL; luggage: BL };
+  arrivalPlus?: GuideArrivalPlus;
 }
 
 const GUIDES = guidesData as unknown as Guide[];

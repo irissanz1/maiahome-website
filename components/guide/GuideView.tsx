@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Guide } from "@/lib/guides";
+import { whatsappUrl } from "@/lib/contact";
 
 // Barrio de la guía → zona en explore.maiahome.mx (fuente única de recomendaciones).
 const EXPLORE_ZONE: Record<string, string> = { Polanco: "zone-polanco", Condesa: "zone-condesa", Houston: "zone-houston" };
@@ -22,6 +23,10 @@ const T = {
     checkoutTime: "Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
     checkoutList: "Cierra ventanas, apaga luces, ventiladores y calentadores. ¡Gracias por cuidar la casa!",
     help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.",
+    yourUnit: "¿Cuál es tu puerta?", yourUnitHint: "Busca el nombre de tu reserva en la confirmación.",
+    beforeArrival: "Antes de llegar", stepByStep: "Llegada paso a paso", troubleshoot: "¿Algo no funciona?",
+    stuckBtn: "Estoy afuera y no puedo entrar · WhatsApp",
+    protoBanner: "Prototipo interno — no enviar a huéspedes.", protoHint: "Lo marcado con ✎ lo debe completar el equipo.",
   },
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
@@ -35,6 +40,10 @@ const T = {
     checkoutTime: "If you need to leave later, let us know in advance and we'll gladly try to help.",
     checkoutList: "Close windows, turn off lights, fans and heaters. Thanks for taking care of the home!",
     help: "Questions during your stay? Message us on WhatsApp and we'll help right away.",
+    yourUnit: "Which door is yours?", yourUnitHint: "Find your booking name in the confirmation.",
+    beforeArrival: "Before you arrive", stepByStep: "Step-by-step arrival", troubleshoot: "Something not working?",
+    stuckBtn: "I'm outside and can't get in · WhatsApp",
+    protoBanner: "Internal prototype — do not send to guests.", protoHint: "Items marked ✎ must be completed by the team.",
   },
 };
 
@@ -60,6 +69,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           ))}
         </nav>
       </div>
+
+      {guide.arrivalPlus?.prototype && (
+        <div className="mt-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-2.5 text-sm text-amber-900">
+          <b>{t.protoBanner}</b> {t.protoHint}
+        </div>
+      )}
 
       {/* Bienvenida */}
       <header className="relative mt-4 overflow-hidden rounded-3xl bg-neutral-900 px-6 py-14 text-center text-white">
@@ -88,13 +103,38 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             </div>
           </div>
         )}
+        {guide.arrivalPlus?.units?.length ? (
+          <div className="mt-4 rounded-2xl border-2 border-maia-yellow p-4">
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{t.yourUnit}</p>
+            <p className="mt-0.5 text-xs text-neutral-500">{t.yourUnitHint}</p>
+            <div className="mt-3 grid gap-2 sm:grid-cols-3">
+              {guide.arrivalPlus.units.map((u) => (
+                <div key={u.name} className="rounded-xl bg-neutral-50 px-3 py-2.5">
+                  <p className="text-xs text-neutral-500">{u.name}</p>
+                  <p className="font-serif text-2xl font-semibold leading-tight text-neutral-900">{u.door}</p>
+                  {pick(lang, u.note) && <p className="text-xs text-neutral-600">{pick(lang, u.note)}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
+        {guide.arrivalPlus?.beforeArrival?.length ? (
+          <div className="mt-4 rounded-2xl bg-neutral-50 p-4">
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="info" className="h-4 w-4 text-maia-strong" />{t.beforeArrival}</p>
+            <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-neutral-700">
+              {guide.arrivalPlus.beforeArrival.map((b, i) => (
+                <li key={i} className="flex gap-2"><span className="text-maia-strong">✓</span><span>{rich(pick(lang, b))}</span></li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
         {(() => {
           const street = (m: "noCar" | "byCar") => (m === "noCar" ? guide.arrival.streetNoCar : guide.arrival.streetByCar);
           const hasMode = (m: "noCar" | "byCar") => !!pick(lang, guide.arrival[m]) || !!street(m);
           const renderMode = (m: "noCar" | "byCar") => (
             <>
               {pick(lang, guide.arrival[m]) && (
-                <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">{pick(lang, guide.arrival[m])}</p>
+                <p className="mt-3 whitespace-pre-line leading-relaxed text-neutral-700">{rich(pick(lang, guide.arrival[m]))}</p>
               )}
               {street(m) && (
                 <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200">
@@ -121,8 +161,30 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           }
           return <div className="mt-1">{renderMode(nc ? "noCar" : "byCar")}</div>;
         })()}
-        {/* Acceso al depto */}
-        {(pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
+        {/* Acceso al depto: paso a paso (si la guía lo trae) o bloque de siempre */}
+        {guide.arrivalPlus?.steps?.length ? (
+          <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="key" className="h-4 w-4 text-maia-strong" />{t.stepByStep}</p>
+            <ol className="mt-3 space-y-3">
+              {guide.arrivalPlus.steps.map((st, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-sm font-semibold text-white">{i + 1}</span>
+                  <div>
+                    <p className="font-semibold text-neutral-900">{rich(pick(lang, st.title))}</p>
+                    <p className="mt-0.5 text-sm leading-relaxed text-neutral-700">{rich(pick(lang, st.body))}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            {guide.access.video && (
+              <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200 bg-black">
+                <video controls preload="metadata" className="aspect-video w-full" src={guide.access.video} />
+                <figcaption className="bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{t.accessVideo}</figcaption>
+              </figure>
+            )}
+          </div>
+        ) : (
+          (pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
           <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
             <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="key" className="h-4 w-4 text-maia-strong" />{t.access}</p>
             {pick(lang, guide.access.toApt) && <p className="mt-1 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.toApt)}</p>}
@@ -134,7 +196,28 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               </figure>
             )}
           </div>
+        )
         )}
+        {guide.arrivalPlus?.troubleshoot?.length ? (
+          <div className="mt-4 rounded-2xl border border-amber-300 bg-amber-50 p-4">
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="alert" className="h-4 w-4 text-amber-600" />{t.troubleshoot}</p>
+            <div className="mt-2 divide-y divide-amber-200">
+              {guide.arrivalPlus.troubleshoot.map((it, i) => (
+                <details key={i} className="group py-2.5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-medium text-neutral-900">
+                    {pick(lang, it.q)}
+                    <span className="shrink-0 text-amber-600 transition group-open:rotate-45">＋</span>
+                  </summary>
+                  <p className="mt-1.5 text-sm leading-relaxed text-neutral-700">{rich(pick(lang, it.a))}</p>
+                </details>
+              ))}
+            </div>
+            <a href={whatsappUrl(pick(lang, guide.arrivalPlus.helpMessage))} target="_blank" rel="noopener noreferrer"
+              className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#1FAF55] px-4 py-3 text-sm font-semibold text-white transition hover:brightness-95">
+              {t.stuckBtn}
+            </a>
+          </div>
+        ) : null}
         {pick(lang, guide.access.security) && (
           <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.security}:</b> {pick(lang, guide.access.security)}</p>
         )}
@@ -320,6 +403,22 @@ function SectionTitle({ icon, children }: { icon?: string; children: React.React
 // Renderiza **negritas** simples dentro de un texto.
 function bold(text: string) {
   return text.split("**").map((seg, i) => (i % 2 ? <strong key={i} className="font-semibold text-neutral-800">{seg}</strong> : <span key={i}>{seg}</span>));
+}
+
+// Texto con **negritas**, [enlaces](url) y [[marcas por completar]] (resaltadas
+// para el equipo; solo aparecen en prototipos).
+function rich(text: string) {
+  if (!text) return null;
+  return text.split(/(\[\[[^\]]+\]\]|\[[^\]]+\]\([^)]+\))/g).map((seg, i) => {
+    if (seg.startsWith("[[")) {
+      return <mark key={i} className="rounded bg-amber-200 px-1 py-0.5 text-[0.85em] font-semibold text-amber-900">✎ {seg.slice(2, -2)}</mark>;
+    }
+    const link = seg.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) {
+      return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer" className="font-semibold text-maia-strong underline">{link[1]}</a>;
+    }
+    return <span key={i}>{bold(seg)}</span>;
+  });
 }
 
 // Recuadro destacado con una hora (entrada / salida).
