@@ -22,9 +22,10 @@ export interface GuideAmenity {
   order: number;
 }
 
-// Llegada reforzada (piloto: horacio-prototipo). Todo opcional: si una guía no lo
-// trae, GuideView pinta la sección de acceso de siempre. En los textos se admite
-// **negrita**, [texto](url) y [[por completar]] (resaltado para el equipo).
+// Llegada reforzada: datos de la v2 de «Guias llegada - campos por completar»
+// (2026-09-24), en las 11 guías. Todo opcional: si una guía no lo trae, GuideView
+// pinta la sección de acceso de siempre. En los textos se admite **negrita**,
+// [texto](url) y [[por completar]] (resaltado para el equipo).
 // Una publicación de las que comparten la guía (p.ej. Horacio 1, 2 y 1&2).
 export interface GuideUnit {
   id: string; // se puede preseleccionar con ?unidad=<id>

@@ -150,6 +150,8 @@ const nextConfig = {
       // Guía del huésped: slugs viejos de book → nuevos.
       { source: "/g/conchita", destination: "/g/coco", permanent: true },
       { source: "/g/siqueiros-orozco-rivera", destination: "/g/horacio", permanent: true },
+      // El prototipo de llegada (16-sep) ya vive en la guía real.
+      { source: "/g/horacio-prototipo", destination: "/g/horacio", permanent: true },
       // Combo Luz María 5&6 (489020) retirado del sitio (2026-09-13) → listado.
       { source: "/depto/polanco-luz-maria-l5-l6", destination: "/departamentos", permanent: true },
       { source: "/en/stay/polanco-luz-maria-l5-l6", destination: "/en/apartments", permanent: true },

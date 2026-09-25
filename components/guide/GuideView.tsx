@@ -23,11 +23,11 @@ const T = {
     checkoutTime: "Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
     checkoutList: "Cierra ventanas, apaga luces, ventiladores y calentadores. ¡Gracias por cuidar la casa!",
     help: "¿Dudas durante tu estancia? Escríbenos por WhatsApp y te asistimos al momento.",
-    yourUnit: "¿Cuál es tu puerta?", yourUnitHint: "Busca el nombre de tu reserva en la confirmación.",
     beforeArrival: "Antes de llegar", stepByStep: "Llegada paso a paso", troubleshoot: "¿Algo no funciona?",
     stuckBtn: "Estoy afuera y no puedo entrar · WhatsApp",
     protoBanner: "Prototipo interno — no enviar a huéspedes.", protoHint: "Lo marcado con ✎ lo debe completar el equipo.",
     whichUnit: "¿Cuál departamento reservaste?", whichUnitHint: "Elígelo para ver tu puerta, horarios flexibles y costos.",
+    yourUnit: "Tu departamento",
     variesByUnit: "Varía por departamento: elige el tuyo en «¿Cuál departamento reservaste?», al inicio de la guía.",
   },
   en: {
@@ -42,11 +42,11 @@ const T = {
     checkoutTime: "If you need to leave later, let us know in advance and we'll gladly try to help.",
     checkoutList: "Close windows, turn off lights, fans and heaters. Thanks for taking care of the home!",
     help: "Questions during your stay? Message us on WhatsApp and we'll help right away.",
-    yourUnit: "Which door is yours?", yourUnitHint: "Find your booking name in the confirmation.",
     beforeArrival: "Before you arrive", stepByStep: "Step-by-step arrival", troubleshoot: "Something not working?",
     stuckBtn: "I'm outside and can't get in · WhatsApp",
     protoBanner: "Internal prototype — do not send to guests.", protoHint: "Items marked ✎ must be completed by the team.",
     whichUnit: "Which apartment did you book?", whichUnitHint: "Pick it to see your door, flexible hours and fees.",
+    yourUnit: "Your apartment",
     variesByUnit: "Varies by apartment: pick yours under “Which apartment did you book?” at the top of the guide.",
   },
 };
@@ -63,10 +63,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
   // ?unidad=<id> (útil en los mensajes) o con la última elección en este navegador.
   const units = guide.arrivalPlus?.units ?? [];
   const unitAware = units.length > 0;
+  const singleUnit = units.length === 1; // guía de una sola publicación: sin selector
   const [unitId, setUnitId] = useState<string | null>(null);
   useEffect(() => {
     const list = guide.arrivalPlus?.units ?? [];
     if (!list.length) return;
+    if (list.length === 1) { setUnitId(list[0].id); return; }
     const fromUrl = new URLSearchParams(window.location.search).get("unidad");
     let saved: string | null = null;
     try { saved = localStorage.getItem(`maia-guide-unit:${guide.slug}`); } catch {}
@@ -77,7 +79,8 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
     setUnitId(id);
     try { localStorage.setItem(`maia-guide-unit:${guide.slug}`, id); } catch {}
   };
-  const unit = units.find((u) => u.id === unitId);
+  // Con una sola publicación se resuelve ya en el servidor (sin esperar al efecto).
+  const unit = units.find((u) => u.id === unitId) ?? (singleUnit ? units[0] : undefined);
 
   const exploreZone = EXPLORE_ZONE[guide.neighborhood];
   const navItems = SECTIONS.filter((s) => s !== "explore" || !!exploreZone);
@@ -136,9 +139,10 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         )}
         {unitAware ? (
           <div className="mt-4 rounded-2xl border-2 border-maia-yellow p-4">
-            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{t.whichUnit}</p>
-            <p className="mt-0.5 text-xs text-neutral-500">{t.whichUnitHint}</p>
-            <div className="mt-3 grid gap-2 sm:grid-cols-3" role="radiogroup" aria-label={t.whichUnit}>
+            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{singleUnit ? t.yourUnit : t.whichUnit}</p>
+            {!singleUnit && <p className="mt-0.5 text-xs text-neutral-500">{t.whichUnitHint}</p>}
+            {!singleUnit && (
+            <div className={`mt-3 grid gap-2 sm:grid-cols-3 ${units.length > 4 ? "grid-cols-2" : ""}`} role="radiogroup" aria-label={t.whichUnit}>
               {units.map((u) => {
                 const on = u.id === unitId;
                 return (
@@ -151,8 +155,9 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                 );
               })}
             </div>
+            )}
             {unit?.details?.length ? (
-              <dl className="mt-3 grid gap-x-4 gap-y-2.5 border-t border-neutral-200 pt-3 text-sm sm:grid-cols-2">
+              <dl className={`grid gap-x-4 gap-y-2.5 text-sm sm:grid-cols-2 ${singleUnit ? "mt-3" : "mt-3 border-t border-neutral-200 pt-3"}`}>
                 {unit.details.map((d, i) => (
                   <div key={i} className="flex items-start gap-2">
                     <span className="mt-0.5 text-maia-strong"><Icon name={d.icon || "info"} className="h-4 w-4" /></span>
@@ -280,10 +285,10 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         {pick(lang, guide.access.security) && (
           <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.security}:</b> {pick(lang, guide.access.security)}</p>
         )}
-        {!unitAware && guide.schedule && (pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
+        {guide.schedule && ((!unitAware && pick(lang, guide.schedule.earlyCheckIn)) || pick(lang, guide.schedule.luggage)) && (
           <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
             <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
-            {pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
+            {!unitAware && pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
             {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
           </div>
         )}
