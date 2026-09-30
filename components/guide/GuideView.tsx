@@ -13,6 +13,7 @@ const pick = (l: Lang, f?: { es: string; en: string } | null) => (f ? (l === "en
 const T = {
   es: {
     arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
+    guideLabel: "Guía del huésped",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
@@ -32,6 +33,7 @@ const T = {
   },
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
+    guideLabel: "Guest guide",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
@@ -52,6 +54,7 @@ const T = {
 };
 
 const SECTIONS = ["arrival", "house", "explore", "checkout"] as const;
+const SECTION_ICON: Record<string, string> = { arrival: "pin", house: "home", explore: "compass", checkout: "door" };
 
 // El idioma viene por URL (/g = ES, /en/g = EN), consistente con el resto del
 // sitio; el cambio se hace con el toggle del header.
@@ -85,15 +88,39 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
   const exploreZone = EXPLORE_ZONE[guide.neighborhood];
   const navItems = SECTIONS.filter((s) => s !== "explore" || !!exploreZone);
 
+  // Marca la opción de la sección que se está leyendo.
+  const [activeSection, setActiveSection] = useState<string>(navItems[0]);
+  useEffect(() => {
+    const els = navItems.map((s) => document.getElementById(s)).filter(Boolean) as HTMLElement[];
+    if (!els.length) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible[0]) setActiveSection(visible[0].target.id);
+      },
+      { rootMargin: "-130px 0px -60% 0px", threshold: 0 }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [navItems.join()]);
+
   return (
     <div className="mx-auto max-w-3xl px-5 pb-24">
       {/* Encabezado sticky */}
-      <div className="sticky top-0 z-30 -mx-5 mb-2 border-b border-neutral-200 bg-white/90 px-5 py-3 backdrop-blur">
-        <span className="font-serif text-lg text-neutral-900">{guide.title}</span>
-        <nav className="mt-2 flex gap-4 overflow-x-auto text-sm text-neutral-500">
-          {navItems.map((s) => (
-            <a key={s} href={`#${s}`} className="whitespace-nowrap hover:text-neutral-900">{t[s]}</a>
-          ))}
+      <div className="sticky top-[64px] z-30 -mx-5 mb-2 border-b border-neutral-200 bg-white/95 px-5 py-2.5 backdrop-blur">
+        <nav className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {navItems.map((s) => {
+            const on = activeSection === s;
+            return (
+              <a key={s} href={`#${s}`} aria-current={on ? "true" : undefined}
+                className={`flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition ${
+                  on ? "border-maia-strong bg-maia-yellow font-semibold text-black" : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-500 hover:text-neutral-900"
+                }`}>
+                <Icon name={SECTION_ICON[s]} className="h-3.5 w-3.5" />
+                {t[s]}
+              </a>
+            );
+          })}
         </nav>
       </div>
 
@@ -104,20 +131,26 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       )}
 
       {/* Bienvenida */}
-      <header className="relative mt-4 overflow-hidden rounded-3xl bg-neutral-900 px-6 py-14 text-center text-white">
+      <header className="relative mt-4 overflow-hidden rounded-3xl bg-neutral-900 px-6 py-16 text-center text-white">
         {guide.heroImg && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={guide.heroImg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-40" />
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={guide.heroImg} alt="" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/40" />
+          </>
         )}
         <div className="relative">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-yellow">{guide.neighborhood || "Maia Home"}</p>
-          <h1 className="mt-3 font-serif text-3xl md:text-4xl">{guide.title}</h1>
-          <p className="mx-auto mt-3 max-w-lg text-neutral-200">{pick(lang, guide.welcome)}</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-maia-yellow">
+            {t.guideLabel}{guide.neighborhood ? ` · ${guide.neighborhood}` : ""}
+          </p>
+          <h1 className="mt-3 font-serif text-4xl leading-tight drop-shadow-sm md:text-5xl">{guide.title}</h1>
+          <span className="mx-auto mt-4 block h-px w-12 bg-maia-yellow/80" />
+          <p className="mx-auto mt-4 max-w-lg text-neutral-100">{pick(lang, guide.welcome)}</p>
         </div>
       </header>
 
       {/* Llegada */}
-      <section id="arrival" className="scroll-mt-24 pt-10">
+      <section id="arrival" className="scroll-mt-32 pt-10">
         <SectionTitle icon="pin">{t.arrival}</SectionTitle>
         {guide.arrivalPlus ? (
           <div className="mt-3 grid max-w-md grid-cols-2 gap-2">
@@ -296,7 +329,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
 
       {/* Manual de la casa */}
       {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.climate || guide.amenityRules) && (
-        <section id="house" className="scroll-mt-24 pt-10">
+        <section id="house" className="scroll-mt-32 pt-10">
           <SectionTitle icon="home">{t.house}</SectionTitle>
           {(guide.wifi || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -335,7 +368,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
 
       {/* Explora la zona → guía de barrio en explore.maiahome.mx (fuente única) */}
       {exploreZone && (
-        <section id="explore" className="scroll-mt-24 pt-10">
+        <section id="explore" className="scroll-mt-32 pt-10">
           <SectionTitle icon="compass">{t.explore}</SectionTitle>
           <a
             href={`https://explore.maiahome.mx/${exploreZone}`}
@@ -354,7 +387,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       )}
 
       {/* Salida */}
-      <section id="checkout" className="scroll-mt-24 pt-10">
+      <section id="checkout" className="scroll-mt-32 pt-10">
         <SectionTitle icon="door">{t.checkoutTitle}</SectionTitle>
         <TimeCallout icon="door" label={t.checkoutTimeLabel} time={guide.checkout?.time || guide.schedule?.checkOut || ""} />
         {guide.checkout ? (
