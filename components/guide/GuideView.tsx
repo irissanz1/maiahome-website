@@ -14,6 +14,7 @@ const T = {
   es: {
     arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
     guideLabel: "Guía del huésped",
+    accessSection: "Cómo entrar", accessCta: "Cómo entrar al depto", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
@@ -34,6 +35,7 @@ const T = {
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
     guideLabel: "Guest guide",
+    accessSection: "Getting in", accessCta: "How to get in", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
@@ -53,8 +55,8 @@ const T = {
   },
 };
 
-const SECTIONS = ["arrival", "house", "explore", "checkout"] as const;
-const SECTION_ICON: Record<string, string> = { arrival: "pin", house: "home", explore: "compass", checkout: "door" };
+const SECTIONS = ["arrival", "access", "house", "explore", "checkout"] as const;
+const SECTION_ICON: Record<string, string> = { arrival: "pin", access: "key", house: "home", explore: "compass", checkout: "door" };
 
 // El idioma viene por URL (/g = ES, /en/g = EN), consistente con el resto del
 // sitio; el cambio se hace con el toggle del header.
@@ -85,8 +87,26 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
   // Con una sola publicación se resuelve ya en el servidor (sin esperar al efecto).
   const unit = units.find((u) => u.id === unitId) ?? (singleUnit ? units[0] : undefined);
 
+  // Línea práctica de la portada: calle y horarios, sin repetir el nombre.
+  const checkIn = guide.schedule?.checkIn || guide.checkInTime;
+  const checkOut = guide.checkout?.time || guide.schedule?.checkOut || "";
+  const heroFacts = [
+    guide.address ? guide.address.split(",")[0].trim() : "",
+    checkIn ? `${t.checkInLabel} ${checkIn}` : "",
+    checkOut ? `${t.checkoutTimeLabel} ${checkOut}` : "",
+  ].filter(Boolean);
+
   const exploreZone = EXPLORE_ZONE[guide.neighborhood];
   const navItems = SECTIONS.filter((s) => s !== "explore" || !!exploreZone);
+
+  // Un enlace como /g/coco#access debe caer en la sección: al cargar, el navegador
+  // aún no tiene la altura final (imágenes), así que reponemos el salto.
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (!id) return;
+    const t = setTimeout(() => document.getElementById(id)?.scrollIntoView(), 80);
+    return () => clearTimeout(t);
+  }, []);
 
   // Marca la opción de la sección que se está leyendo.
   const [activeSection, setActiveSection] = useState<string>(navItems[0]);
@@ -105,10 +125,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
   }, [navItems.join()]);
 
   return (
-    <div className="mx-auto max-w-3xl px-5 pb-24">
+    <div id="top" className="mx-auto max-w-3xl px-5 pb-24">
       {/* Encabezado sticky */}
-      <div className="sticky top-[64px] z-30 -mx-5 mb-2 border-b border-neutral-200 bg-white/95 px-5 py-2.5 backdrop-blur">
-        <nav className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="sticky top-[64px] z-30 -mx-5 mb-2 flex items-center gap-3 border-b border-neutral-200 bg-white/95 px-5 py-2.5 backdrop-blur">
+        <a href="#top" className="max-w-[32%] shrink-0 truncate font-serif text-base leading-none text-neutral-900 sm:max-w-none">{guide.title}</a>
+        <span className="h-5 w-px shrink-0 bg-neutral-200" />
+        <nav className="-mr-5 flex flex-1 gap-2 overflow-x-auto pb-0.5 pr-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {navItems.map((s) => {
             const on = activeSection === s;
             return (
@@ -117,7 +139,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                   on ? "border-maia-strong bg-maia-yellow font-semibold text-black" : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-500 hover:text-neutral-900"
                 }`}>
                 <Icon name={SECTION_ICON[s]} className="h-3.5 w-3.5" />
-                {t[s]}
+                {s === "access" ? t.accessSection : t[s]}
               </a>
             );
           })}
@@ -131,21 +153,29 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       )}
 
       {/* Bienvenida */}
-      <header className="relative mt-4 overflow-hidden rounded-3xl bg-neutral-900 px-6 py-16 text-center text-white">
-        {guide.heroImg && (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={guide.heroImg} alt="" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/40" />
-          </>
-        )}
-        <div className="relative">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-maia-yellow">
-            {t.guideLabel}{guide.neighborhood ? ` · ${guide.neighborhood}` : ""}
-          </p>
-          <h1 className="mt-3 font-serif text-4xl leading-tight drop-shadow-sm md:text-5xl">{guide.title}</h1>
-          <span className="mx-auto mt-4 block h-px w-12 bg-maia-yellow/80" />
-          <p className="mx-auto mt-4 max-w-lg text-neutral-100">{pick(lang, guide.welcome)}</p>
+      <header className="mt-4 overflow-hidden rounded-3xl border border-neutral-200 bg-white">
+        <div className="grid md:grid-cols-2">
+          <div className="order-2 flex flex-col justify-center px-6 py-7 md:order-1 md:px-8 md:py-9">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-maia-strong">
+              {t.guideLabel}{guide.neighborhood ? ` · ${guide.neighborhood}` : ""}
+            </p>
+            <h1 className="mt-2 font-serif text-3xl leading-tight text-neutral-900 md:text-4xl">{guide.title}</h1>
+            <span className="mt-3.5 block h-px w-12 bg-maia-yellow" />
+            <p className="mt-3.5 text-neutral-600">{pick(lang, guide.welcome)}</p>
+            {heroFacts.length > 0 && (
+              <p className="mt-3 text-[13px] leading-relaxed text-neutral-500">{heroFacts.join("  ·  ")}</p>
+            )}
+            <a href="#access" className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-neutral-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-neutral-700">
+              <Icon name="key" className="h-4 w-4 text-maia-yellow" />
+              {t.accessCta}
+            </a>
+          </div>
+          {guide.heroImg && (
+            <div className="order-1 md:order-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={guide.heroImg} alt="" className="h-52 w-full object-cover sm:h-64 md:h-full md:min-h-[340px]" />
+            </div>
+          )}
         </div>
       </header>
 
@@ -258,6 +288,20 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           }
           return <div className="mt-1">{renderMode(nc ? "noCar" : "byCar")}</div>;
         })()}
+        {guide.schedule && ((!unitAware && pick(lang, guide.schedule.earlyCheckIn)) || pick(lang, guide.schedule.luggage)) && (
+          <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
+            <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
+            {!unitAware && pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
+            {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
+          </div>
+        )}
+      </section>
+
+      {/* Entrar al depto: sale de "Cómo llegar" y tiene sección propia — es el
+          punto de fricción nº1 en las reseñas. */}
+      <section id="access" className="scroll-mt-32 pt-10">
+        <SectionTitle icon="key">{t.accessSection}</SectionTitle>
+        <p className="mt-2 text-sm text-neutral-500">{t.accessLead}</p>
         {/* Acceso al depto: paso a paso (si la guía lo trae) o bloque de siempre */}
         {guide.arrivalPlus?.steps?.length ? (
           <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
@@ -317,13 +361,6 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         ) : null}
         {pick(lang, guide.access.security) && (
           <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.security}:</b> {pick(lang, guide.access.security)}</p>
-        )}
-        {guide.schedule && ((!unitAware && pick(lang, guide.schedule.earlyCheckIn)) || pick(lang, guide.schedule.luggage)) && (
-          <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
-            <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
-            {!unitAware && pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
-            {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
-          </div>
         )}
       </section>
 
