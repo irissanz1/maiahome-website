@@ -20,6 +20,12 @@ const T = {
     petsUndeclared: "Solo te pedimos declararla antes de llegar. Una mascota sin declarar tiene un cargo de limpieza de USD 90.",
     cleanIncluded: (f: string) => `Tu reserva incluye la limpieza estándar al salir. Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
     checkoutCare: "Déjalo más o menos como lo encontraste y listo: de la limpieza estándar nos encargamos nosotros.",
+    coWindows: "Ventanas", coWindowsD: "Ciérralas todas antes de salir.",
+    coLights: "Luces y aparatos", coLightsD: "Apaga luces, ventiladores y calentadores.",
+    coDoor: "Puerta", coDoorD: "Asegúrate de que quede bien cerrada al salir.",
+    coTrash: "Basura",
+    coClean: "Limpieza", coCleanD: "Tu reserva incluye la limpieza estándar al salir.",
+    coCleanFee: (f: string) => `Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
     regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
@@ -47,6 +53,12 @@ const T = {
     petsUndeclared: "We just ask that you let us know before you arrive. An undeclared pet carries a USD 90 cleaning charge.",
     cleanIncluded: (f: string) => `Your booking includes the standard cleaning when you leave. Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
     checkoutCare: "Leave it roughly as you found it and that's it: the standard cleaning is on us.",
+    coWindows: "Windows", coWindowsD: "Close them all before you leave.",
+    coLights: "Lights & appliances", coLightsD: "Switch off lights, fans and heaters.",
+    coDoor: "Front door", coDoorD: "Make sure it closes properly on your way out.",
+    coTrash: "Trash",
+    coClean: "Cleaning", coCleanD: "Your booking includes the standard cleaning when you leave.",
+    coCleanFee: (f: string) => `Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
     regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
@@ -462,30 +474,46 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       <section id="checkout" className="scroll-mt-32 pt-10">
         <SectionTitle icon="door">{t.checkoutTitle}</SectionTitle>
         <TimeCallout icon="door" label={t.checkoutTimeLabel} time={guide.checkout?.time || guide.schedule?.checkOut || ""} />
-        {guide.checkout ? (
-          <>
-            <p className="mt-4 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
-            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {guide.checkout.items.map((it, i) => (
-                <div key={i} className="rounded-2xl border border-neutral-200 p-4">
-                  <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
-                    <span className="text-maia-strong">{<Icon name={checkoutIcon(it.title.es)} />}</span>
-                    {pick(lang, it.title)}
-                  </p>
-                  <p className="mt-1 text-sm text-neutral-600">{pick(lang, it.desc)}</p>
-                </div>
-              ))}
-            </div>
-          </>
-        ) : (
-          <>
-            <p className="mt-3 leading-relaxed text-neutral-700">{t.checkoutTime}</p>
-            <p className="mt-2 leading-relaxed text-neutral-600">{t.checkoutList}</p>
-            {pick(lang, guide.access.trash) && (
-              <p className="mt-3 text-sm text-neutral-500"><b className="text-neutral-700">{t.trash}:</b> {pick(lang, guide.access.trash)}</p>
-            )}
-          </>
+        {guide.checkout && pick(lang, guide.checkout.note) && (
+          <p className="mt-4 leading-relaxed text-neutral-700">{pick(lang, guide.checkout.note)}</p>
         )}
+        {/* Todo en tarjetas con icono: antes solo Augustine las tenia y el resto
+            veia un parrafo plano. La limpieza va aqui, que es cuando aplica. */}
+        <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {(guide.checkout?.items?.length
+            ? guide.checkout.items.map((it) => ({
+                icon: checkoutIcon(it.title.es),
+                title: pick(lang, it.title),
+                desc: pick(lang, it.desc),
+              }))
+            : [
+                { icon: "window", title: t.coWindows, desc: t.coWindowsD },
+                { icon: "bulb", title: t.coLights, desc: t.coLightsD },
+                { icon: "door", title: t.coDoor, desc: t.coDoorD },
+                ...(pick(lang, guide.access.trash)
+                  ? [{ icon: "trash", title: t.coTrash, desc: pick(lang, guide.access.trash) }]
+                  : []),
+              ]
+          ).map((c, i) => (
+            <div key={i} className="rounded-2xl border border-neutral-200 p-4">
+              <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
+                <span className="text-maia-strong"><Icon name={c.icon} /></span>
+                {c.title}
+              </p>
+              <p className="mt-1 text-sm text-neutral-600">{c.desc}</p>
+            </div>
+          ))}
+          <div className="rounded-2xl border-2 border-maia-yellow bg-[#FBF7EC] p-4 sm:col-span-2">
+            <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
+              <span className="text-maia-strong"><Icon name="droplet" /></span>
+              {t.coClean}
+            </p>
+            <p className="mt-1 text-sm text-neutral-700">
+              <b>{t.coCleanD}</b>{" "}
+              {unitAware ? (unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.variesByUnit) : ""}
+            </p>
+          </div>
+        </div>
         <p className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">{t.checkoutCare}</p>
         {unitAware ? (
           <p className="mt-3 text-sm text-neutral-500">{unit ? pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut) : t.variesByUnit}</p>
