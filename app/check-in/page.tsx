@@ -111,7 +111,7 @@ export default async function CheckIn({ searchParams }: { searchParams: Promise<
         <p className="mt-1 text-sm text-neutral-700">
           Somos pet friendly, pero toda mascota debe <strong>declararse y aprobarse antes</strong> de tu
           estancia. La <strong>tarifa por mascota depende del departamento</strong> (de $30 a $60 USD por estancia, hasta 2 mascotas): la ves en la guía de tu departamento y en tu confirmación. Si se hospeda una mascota{" "}
-          <strong>no declarada</strong>, se cobra un <strong>cargo de limpieza de $90 USD adicional a la tarifa de mascota</strong>{" "}
+          <strong>no declarada</strong>, se cobra un <strong>cargo de limpieza de $150 USD adicional a la tarifa de mascota</strong>{" "}
           (el acceso cuenta con cámara de seguridad). Escríbenos y con gusto la registramos.
         </p>
       </section>

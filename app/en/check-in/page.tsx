@@ -107,7 +107,7 @@ export default async function CheckIn({ searchParams }: { searchParams: Promise<
         <p className="mt-1 text-sm text-neutral-700">
           We're pet friendly, but every pet must be <strong>declared and approved before</strong> your
           stay. The <strong>pet fee depends on the apartment</strong> ($30 to $60 USD per stay, up to 2 pets): you'll find it in your apartment's guide and in your confirmation. An <strong>undeclared pet</strong> results
-          in a <strong>$90 USD cleaning charge on top of the pet fee</strong> (the entrance has a security
+          in a <strong>$150 USD cleaning charge on top of the pet fee</strong> (the entrance has a security
           camera). Message us and we'll gladly add it to your booking.
         </p>
       </section>
