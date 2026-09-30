@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { whatsappUrl, WHATSAPP_DISPLAY } from "@/lib/contact";
+import { getGuide } from "@/lib/guides";
 
 export const metadata: Metadata = {
   title: "Proceso de check-in",
@@ -20,9 +21,14 @@ const PASOS = [
   ["1. Llena el formulario de check-in", "Es obligatorio: con tus datos activamos las claves de acceso al edificio y al departamento. Envíalo al menos un día antes de tu llegada; como mínimo, 1 hora antes."],
   ["2. Validamos tu información", "Revisamos que todo esté listo para solicitar el acceso a los edificios. Este paso es necesario antes de compartirte las claves."],
   ["3. Recibes tus instrucciones", "Una vez validado, te enviamos por WhatsApp y correo la dirección exacta, las claves de acceso y las instrucciones para entrar."],
+  ["4. Revisa cómo entrar", "En la guía de tu departamento está el paso a paso de la llegada: cómo llegar al edificio, cómo se abre la puerta y qué hacer si la chapa no responde."],
 ];
 
-export default function CheckIn() {
+// ?g=<slug> (p. ej. /check-in?g=coco) enlaza a la guía de esa propiedad. Los
+// mensajes previos a la llegada lo mandan así; sin el parámetro se explica que
+// la guía llega en el mismo mensaje.
+export default async function CheckIn({ searchParams }: { searchParams: Promise<{ g?: string }> }) {
+  const guia = getGuide(((await searchParams).g || "").trim());
   return (
     <div className="mx-auto max-w-4xl px-5 py-14 md:py-16">
       <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Antes de tu llegada</p>
@@ -74,6 +80,29 @@ export default function CheckIn() {
             <p className="mt-1 text-sm text-neutral-600">{d}</p>
           </div>
         ))}
+      </section>
+
+      {/* Puente a la guía: el trámite termina aquí, la llegada sigue allá. */}
+      <section className="mt-6 rounded-2xl border border-neutral-900 bg-neutral-900 p-5 text-white md:p-6">
+        <p className="font-serif text-xl">¿Ya lo enviaste? Lo que sigue es entrar</p>
+        {guia ? (
+          <>
+            <p className="mt-1.5 text-sm text-neutral-300">
+              En la guía de <strong className="text-white">{guia.title}</strong> está el paso a paso: cómo llegar,
+              cómo se abre la puerta del edificio y qué hacer si la chapa no responde.
+            </p>
+            <Link href={`/g/${guia.slug}#access`}
+              className="mt-4 inline-block rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong">
+              Ver cómo entrar a {guia.title} →
+            </Link>
+          </>
+        ) : (
+          <p className="mt-1.5 text-sm text-neutral-300">
+            Junto con tus claves te enviamos el enlace a la guía de tu departamento: ahí está el paso a paso
+            de la llegada, el video de la chapa y qué hacer si algo no funciona. Si no lo encuentras,
+            escríbenos por WhatsApp y te lo reenviamos.
+          </p>
+        )}
       </section>
 
       {/* Política de mascotas */}

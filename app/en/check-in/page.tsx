@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getGuide } from "@/lib/guides";
 import { whatsappUrl, WHATSAPP_DISPLAY } from "@/lib/contact";
 
 export const metadata: Metadata = {
@@ -19,9 +20,12 @@ const STEPS = [
   ["1. Fill out the check-in form", "It's required: your details let us activate the access codes for the building and the apartment. Send it at least one day before your arrival; at minimum, 1 hour before."],
   ["2. We validate your information", "We check that everything is ready to request building access. This step is required before we can share your codes."],
   ["3. You receive your instructions", "Once validated, we send you the exact address, access codes and entry instructions by WhatsApp and email."],
+  ["4. Check how to get in", "Your apartment's guide has the arrival step by step: how to reach the building, how the door opens and what to do if the lock won't respond."],
 ];
 
-export default function CheckIn() {
+// ?g=<slug> links to that property's guide; see the ES page.
+export default async function CheckIn({ searchParams }: { searchParams: Promise<{ g?: string }> }) {
+  const guide = getGuide(((await searchParams).g || "").trim());
   return (
     <div className="mx-auto max-w-4xl px-5 py-14 md:py-16">
       <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Before you arrive</p>
@@ -72,6 +76,29 @@ export default function CheckIn() {
             <p className="mt-1 text-sm text-neutral-600">{d}</p>
           </div>
         ))}
+      </section>
+
+      {/* Bridge to the guide: the paperwork ends here, the arrival continues there. */}
+      <section className="mt-6 rounded-2xl border border-neutral-900 bg-neutral-900 p-5 text-white md:p-6">
+        <p className="font-serif text-xl">Sent it? Getting in is what comes next</p>
+        {guide ? (
+          <>
+            <p className="mt-1.5 text-sm text-neutral-300">
+              The <strong className="text-white">{guide.title}</strong> guide has the step by step: how to reach
+              the building, how the front door opens and what to do if the lock won't respond.
+            </p>
+            <Link href={`/en/g/${guide.slug}#access`}
+              className="mt-4 inline-block rounded-full bg-maia-yellow px-6 py-3 text-sm font-bold text-black transition hover:bg-maia-strong">
+              See how to get into {guide.title} →
+            </Link>
+          </>
+        ) : (
+          <p className="mt-1.5 text-sm text-neutral-300">
+            Along with your codes we send you the link to your apartment's guide: it has the arrival step by
+            step, the lock video and what to do if something doesn't work. If you can't find it, message us on
+            WhatsApp and we'll resend it.
+          </p>
+        )}
       </section>
 
       {/* Pet policy */}

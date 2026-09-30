@@ -14,7 +14,8 @@ const T = {
   es: {
     arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
     guideLabel: "Guía del huésped",
-    accessSection: "Cómo entrar", accessCta: "Cómo entrar al depto", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
+    accessSection: "Cómo entrar", accessCta: "Cómo entrar al depto",
+    regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
@@ -35,7 +36,8 @@ const T = {
   en: {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
     guideLabel: "Guest guide",
-    accessSection: "Getting in", accessCta: "How to get in", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
+    accessSection: "Getting in", accessCta: "How to get in",
+    regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
@@ -302,6 +304,17 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       <section id="access" className="scroll-mt-32 pt-10">
         <SectionTitle icon="key">{t.accessSection}</SectionTitle>
         <p className="mt-2 text-sm text-neutral-500">{t.accessLead}</p>
+        {/* El registro es la causa nº1 de "mi código no funciona": se recuerda aquí,
+            no solo en "Antes de llegar". */}
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-neutral-900 bg-neutral-900 px-4 py-3 text-white">
+          <p className="text-sm">
+            <b>{t.regTitle}</b> <span className="text-neutral-300">{t.regBody}</span>
+          </p>
+          <a href={`${lang === "en" ? "/en/check-in" : "/check-in"}?g=${guide.slug}`}
+            className="shrink-0 rounded-full bg-maia-yellow px-4 py-2 text-sm font-bold text-black transition hover:bg-maia-strong">
+            {t.regCta}
+          </a>
+        </div>
         {/* Acceso al depto: paso a paso (si la guía lo trae) o bloque de siempre */}
         {guide.arrivalPlus?.steps?.length ? (
           <div className="mt-4 rounded-2xl border-l-4 border-maia-yellow bg-[#FBF7EC] p-4">
