@@ -37,6 +37,10 @@ export interface GuideUnit {
   earlyCheckIn?: BL;
   lateCheckOut?: BL;
   cleaning?: BL;
+  // Importes sueltos para las políticas (limpieza estándar y mascotas declaradas).
+  // null en petFee = este departamento no admite mascotas.
+  cleaningFee?: BL;
+  petFee?: BL | null;
 }
 
 export interface GuideArrivalPlus {

@@ -15,6 +15,11 @@ const T = {
     arrival: "Cómo llegar", house: "Manual de la casa", explore: "Explora la zona", checkout: "Salida",
     guideLabel: "Guía del huésped",
     accessSection: "Cómo entrar", accessCta: "Cómo entrar al depto",
+    petsLabel: "Mascotas", petsNone: "Este departamento no admite mascotas.",
+    petsOk: (f: string) => `Son bienvenidas: ${f} por estancia, hasta 2.`,
+    petsUndeclared: "Solo te pedimos declararla antes de llegar. Una mascota sin declarar tiene un cargo de limpieza de USD 90.",
+    cleanIncluded: (f: string) => `Tu reserva incluye la limpieza estándar al salir. Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
+    checkoutCare: "Déjalo más o menos como lo encontraste y listo: de la limpieza estándar nos encargamos nosotros.",
     regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
@@ -37,6 +42,11 @@ const T = {
     arrival: "Getting here", house: "House manual", explore: "Explore the area", checkout: "Check-out",
     guideLabel: "Guest guide",
     accessSection: "Getting in", accessCta: "How to get in",
+    petsLabel: "Pets", petsNone: "This apartment doesn't allow pets.",
+    petsOk: (f: string) => `They're welcome: ${f} per stay, up to 2.`,
+    petsUndeclared: "We just ask that you let us know before you arrive. An undeclared pet carries a USD 90 cleaning charge.",
+    cleanIncluded: (f: string) => `Your booking includes the standard cleaning when you leave. Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
+    checkoutCare: "Leave it roughly as you found it and that's it: the standard cleaning is on us.",
     regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
@@ -386,11 +396,20 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
               {guide.climate && <ManualCard title={t.climateLabel} icon="temp">{pick(lang, guide.climate)}</ManualCard>}
               {guide.amenityRules && <ManualCard title={t.rulesLabel} icon="shield">{pick(lang, guide.amenityRules)}</ManualCard>}
+              {unitAware && (
+                <ManualCard title={t.petsLabel} icon="paw">
+                  {unit
+                    ? unit.petFee
+                      ? `${t.petsOk(pick(lang, unit.petFee))} ${t.petsUndeclared}`
+                      : t.petsNone
+                    : t.variesByUnit}
+                </ManualCard>
+              )}
             </div>
           )}
           {guide.amenities.length > 0 && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {guide.amenities.map((a, i) => (
+              {guide.amenities.filter((a) => !(unitAware && /^(mascotas|pets)$/i.test(a.title.es.trim()))).map((a, i) => (
                 <div key={i} className="rounded-2xl border border-neutral-200 p-4">
                   <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
                     <span className="text-maia-strong">{<Icon name={amenityIcon(a.title.es)} />}</span>
@@ -411,6 +430,9 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
+              {unit?.cleaningFee && (
+                <p className="mt-2 text-sm text-neutral-600">{t.cleanIncluded(pick(lang, unit.cleaningFee))}</p>
+              )}
             </div>
           )}
         </section>
@@ -464,6 +486,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             )}
           </>
         )}
+        <p className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">{t.checkoutCare}</p>
         {unitAware ? (
           <p className="mt-3 text-sm text-neutral-500">{unit ? pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut) : t.variesByUnit}</p>
         ) : (

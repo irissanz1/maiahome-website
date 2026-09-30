@@ -532,6 +532,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -654,6 +662,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 60",
+      "en": "USD 60"
      }
     },
     {
@@ -776,6 +792,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 45",
+      "en": "USD 45"
      }
     }
    ],
@@ -1443,6 +1467,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     },
+     "petFee": {
+      "es": "USD 45",
+      "en": "USD 45"
      }
     }
    ],
@@ -2122,6 +2154,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     }
    ],
@@ -2789,6 +2829,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     },
+     "petFee": {
+      "es": "USD 50",
+      "en": "USD 50"
      }
     },
     {
@@ -2911,7 +2959,12 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
-     }
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": null
     },
     {
      "id": "leonora-3",
@@ -3033,7 +3086,12 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
-     }
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": null
     }
    ],
    "beforeArrival": [
@@ -3446,6 +3504,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -3579,6 +3645,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -3712,6 +3786,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25 por unidad",
+      "en": "USD 25 per unit"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -3845,6 +3927,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -3978,6 +4068,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -4111,6 +4209,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -4244,6 +4350,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -4377,6 +4491,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -4510,6 +4632,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -4643,6 +4773,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -4776,6 +4914,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -4909,6 +5055,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     }
    ],
@@ -5581,6 +5735,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     }
    ],
@@ -6224,6 +6386,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": {
+      "es": "USD 60",
+      "en": "USD 60"
      }
     },
     {
@@ -6346,6 +6516,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": {
+      "es": "USD 50",
+      "en": "USD 50"
      }
     },
     {
@@ -6468,6 +6646,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": {
+      "es": "USD 60",
+      "en": "USD 60"
      }
     },
     {
@@ -6590,6 +6776,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -6712,6 +6906,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -6834,6 +7036,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -6956,6 +7166,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -7078,6 +7296,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -7200,6 +7426,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -7322,6 +7556,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     },
     {
@@ -7444,6 +7686,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -7566,6 +7816,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 40",
+      "en": "USD 40"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     }
    ],
@@ -8209,6 +8467,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     },
+     "petFee": {
+      "es": "USD 45",
+      "en": "USD 45"
      }
     },
     {
@@ -8331,6 +8597,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
       "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+     },
+     "cleaningFee": {
+      "es": "USD 60",
+      "en": "USD 60"
+     },
+     "petFee": {
+      "es": "USD 50",
+      "en": "USD 50"
      }
     }
    ],
@@ -8986,6 +9260,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     },
+     "petFee": {
+      "es": "USD 45",
+      "en": "USD 45"
      }
     }
    ],
@@ -9641,6 +9923,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 30 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 30 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 30",
+      "en": "USD 30"
+     },
+     "petFee": {
+      "es": "USD 40",
+      "en": "USD 40"
      }
     },
     {
@@ -9763,6 +10053,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     },
+     "petFee": {
+      "es": "USD 45",
+      "en": "USD 45"
      }
     },
     {
@@ -9885,6 +10183,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. Este departamento no tiene lavadora.",
       "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. This apartment has no washer."
+     },
+     "cleaningFee": {
+      "es": "USD 25",
+      "en": "USD 25"
+     },
+     "petFee": {
+      "es": "USD 30",
+      "en": "USD 30"
      }
     }
    ],
@@ -10368,6 +10674,14 @@
      "cleaning": {
       "es": "Limpieza extra: USD 100 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La casa tiene lavadora y secadora.",
       "en": "Extra cleaning: USD 100 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The house has a washer and dryer."
+     },
+     "cleaningFee": {
+      "es": "USD 100",
+      "en": "USD 100"
+     },
+     "petFee": {
+      "es": "USD 50",
+      "en": "USD 50"
      }
     }
    ],
