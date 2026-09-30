@@ -31,6 +31,7 @@ const T = {
       "Si una pieza ya no se puede recuperar, se cobra la limpieza adicional o su reposición; el monto depende del departamento: elígelo arriba para verlo.",
     ],
     petsFeeAny: "La tarifa por mascota depende del departamento: elígelo arriba para verla.",
+    quietFrom: "Silencio desde", quietUntil: "Silencio hasta",
     neighborsEd: "Son departamentos en edificios donde vive gente todo el año, así que el horario de silencio —de 9 pm a 9 am— importa de verdad. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
     neighborsCasa: "Es una casa en una zona residencial, con vecinos que viven ahí todo el año, así que el horario de silencio —de 9 pm a 9 am— importa de verdad. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
     neighborsFee: "No se puede fumar dentro ni hacer fiestas. Si alguna de las dos se rompe, aplica un cargo de 400 USD, como indica el [acuerdo de estancia](https://maiahome.mx/stay-agreement).",
@@ -78,6 +79,7 @@ const T = {
       "If an item can't be recovered, either the extra cleaning or its replacement is charged; the amount depends on the apartment: pick yours above to see it.",
     ],
     petsFeeAny: "The pet fee depends on the apartment: pick yours above to see it.",
+    quietFrom: "Quiet hours from", quietUntil: "Quiet hours until",
     neighborsEd: "These are apartments in buildings where people live year-round, so quiet hours —9 pm to 9 am— really matter. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
     neighborsCasa: "This is a house in a residential neighborhood, with neighbors who live there year-round, so quiet hours —9 pm to 9 am— really matter. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
     neighborsFee: "Smoking indoors and parties are not allowed. If either happens, a USD 400 charge applies, as stated in the [stay agreement](https://maiahome.mx/en/stay-agreement).",
@@ -465,6 +467,10 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.climate || guide.amenityRules) && (
         <section id="house" className="scroll-mt-32 pt-10">
           <SectionTitle icon="home">{t.house}</SectionTitle>
+          <div className="mt-3 grid max-w-md grid-cols-2 gap-2">
+            <TimeTile icon="clock" label={t.quietFrom} time="21:00" />
+            <TimeTile icon="clock" label={t.quietUntil} time="09:00" />
+          </div>
           {(guide.wifi || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
