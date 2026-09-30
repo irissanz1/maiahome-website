@@ -24,9 +24,19 @@ const T = {
     coDoor: "Puerta", coDoorD: "Asegúrate de que quede bien cerrada al salir.",
     coTrash: "Basura",
     coClean: "Limpieza", coCleanD: "Tu reserva incluye la limpieza estándar al salir.",
-    coCleanFeeAny: "No hace falta que dejes nada impecable. Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado. Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva. Cuando una pieza ya no se puede recuperar, se cobra la limpieza adicional o su reposición; el monto depende del departamento: elígelo arriba para verlo.",
+    coCleanFeeAny: [
+      "No hace falta que dejes nada impecable.",
+      "Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado.",
+      "Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva.",
+      "Si una pieza ya no se puede recuperar, se cobra la limpieza adicional o su reposición; el monto depende del departamento: elígelo arriba para verlo.",
+    ],
     petsFeeAny: "La tarifa por mascota depende del departamento: elígelo arriba para verla.",
-    coCleanFee: (f: string) => `No hace falta que dejes nada impecable. Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado. Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva. Cuando una pieza ya no se puede recuperar, se cobra la limpieza adicional de ${f} o su reposición.`,
+    coCleanFee: (f: string) => [
+      "No hace falta que dejes nada impecable.",
+      "Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado.",
+      "Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva.",
+      `Si una pieza ya no se puede recuperar, se cobra la limpieza adicional de ${f} o su reposición.`,
+    ],
     regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
@@ -58,9 +68,19 @@ const T = {
     coDoor: "Front door", coDoorD: "Make sure it closes properly on your way out.",
     coTrash: "Trash",
     coClean: "Cleaning", coCleanD: "Your booking includes the standard cleaning when you leave.",
-    coCleanFeeAny: "There's no need to leave anything spotless. We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out. If something gets stained, message us right away so we can treat it in time; that usually saves it. When an item can't be recovered, either the extra cleaning or its replacement is charged; the amount depends on the apartment: pick yours above to see it.",
+    coCleanFeeAny: [
+      "There's no need to leave anything spotless.",
+      "We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out.",
+      "If something gets stained, message us right away so we can treat it in time; that usually saves it.",
+      "If an item can't be recovered, either the extra cleaning or its replacement is charged; the amount depends on the apartment: pick yours above to see it.",
+    ],
     petsFeeAny: "The pet fee depends on the apartment: pick yours above to see it.",
-    coCleanFee: (f: string) => `There's no need to leave anything spotless. We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out. If something gets stained, message us right away so we can treat it in time; that usually saves it. When an item can't be recovered, either the extra cleaning of ${f} or its replacement is charged.`,
+    coCleanFee: (f: string) => [
+      "There's no need to leave anything spotless.",
+      "We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out.",
+      "If something gets stained, message us right away so we can treat it in time; that usually saves it.",
+      `If an item can't be recovered, either the extra cleaning of ${f} or its replacement is charged.`,
+    ],
     regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
@@ -478,9 +498,9 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
-              <p className="mt-2 text-sm text-neutral-600">
-                {unit?.cleaningFee ? `${t.coCleanD} ${t.coCleanFee(pick(lang, unit.cleaningFee))}` : `${t.coCleanD} ${t.coCleanFeeAny}`}
-              </p>
+              <div className="mt-3 border-t border-neutral-200 pt-3">
+                <CleanPolicy lead={t.coCleanD} items={unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny} />
+              </div>
             </div>
           )}
         </section>
@@ -544,10 +564,13 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <span className="text-maia-strong"><Icon name="droplet" /></span>
               {t.coClean}
             </p>
-            <p className="mt-1 text-sm text-neutral-700">
-              <b>{t.coCleanD}</b>{" "}
-              {unitAware ? (unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny) : ""}
-            </p>
+            <div className="mt-1">
+              {unitAware ? (
+                <CleanPolicy lead={t.coCleanD} items={unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny} />
+              ) : (
+                <p className="text-sm font-semibold text-neutral-900">{t.coCleanD}</p>
+              )}
+            </div>
           </div>
         </div>
         <p className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">{t.checkoutCare}</p>
@@ -662,6 +685,22 @@ function rich(text: string) {
 }
 
 // Versión compacta para mostrar entrada y salida lado a lado.
+function CleanPolicy({ lead, items }: { lead: string; items: string[] }) {
+  return (
+    <>
+      <p className="text-sm font-semibold text-neutral-900">{lead}</p>
+      <ul className="mt-1.5 space-y-1 text-sm text-neutral-700">
+        {items.map((it, i) => (
+          <li key={i} className="flex gap-2">
+            <span className="mt-[0.45em] h-1 w-1 shrink-0 rounded-full bg-maia-strong" />
+            <span>{it}</span>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
 function TimeTile({ icon, label, time }: { icon: string; label: string; time: string }) {
   if (!time) return null;
   return (
