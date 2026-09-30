@@ -113,8 +113,8 @@ export default function CheckInUsa() {
         <p className="text-sm font-semibold text-neutral-900">🐾 Pet policy</p>
         <p className="mt-1 text-sm text-neutral-700">
           We're pet friendly, but every pet must be <strong>declared and approved before</strong> your
-          stay. A <strong>pet fee of $50 USD</strong> applies. An <strong>undeclared pet</strong> results
-          in an <strong>additional cleaning charge of $90 USD</strong> (the entrance has a security
+          stay. The <strong>pet fee is $50 USD per stay</strong>, up to 2 pets. An <strong>undeclared pet</strong> results
+          in a <strong>$90 USD cleaning charge on top of that fee</strong> (the entrance has a security
           camera). Message us and we'll gladly add it to your booking.
         </p>
       </section>

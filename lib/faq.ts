@@ -92,8 +92,8 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: { es: "¿Aceptan mascotas?", en: "Are pets allowed?" },
         a: {
-          es: "Sí, somos pet friendly. Aplica un cargo único por estancia (no por noche), con un máximo de 1 mascota por reserva; el monto se confirma al reservar según la propiedad. Toda mascota debe declararse y aprobarse antes de tu llegada.",
-          en: "Yes, we're pet-friendly. A single per-stay fee applies (not per night), with a maximum of 1 pet per booking; the amount is confirmed at booking depending on the property. Every pet must be declared and approved before arrival.",
+          es: "Sí, somos pet friendly. Aplica un cargo único por estancia (no por noche), de 30 a 60 USD según el departamento y hasta 2 mascotas por reserva. Toda mascota debe declararse y aprobarse antes de tu llegada.",
+          en: "Yes, we're pet-friendly. A single per-stay fee applies (not per night), from USD 30 to 60 depending on the apartment, and up to 2 pets per booking. Every pet must be declared and approved before arrival.",
         },
       },
       {
