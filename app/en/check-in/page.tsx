@@ -107,7 +107,7 @@ export default async function CheckIn({ searchParams }: { searchParams: Promise<
         <p className="mt-1 text-sm text-neutral-700">
           We're pet friendly, but every pet must be <strong>declared and approved before</strong> your
           stay. A <strong>pet fee of $50 USD</strong> applies. An <strong>undeclared pet</strong> results
-          in an <strong>additional cleaning charge of $90 USD</strong> (the entrance has a security
+          in a <strong>$90 USD cleaning charge on top of the pet fee</strong> (the entrance has a security
           camera). Message us and we'll gladly add it to your booking.
         </p>
       </section>

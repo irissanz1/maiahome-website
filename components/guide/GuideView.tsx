@@ -17,7 +17,7 @@ const T = {
     accessSection: "Cómo entrar", accessCta: "Cómo entrar al depto",
     petsLabel: "Mascotas", petsNone: "Este departamento no admite mascotas.",
     petsOk: (f: string) => `Son bienvenidas: ${f} por estancia, hasta 2.`,
-    petsUndeclared: "Solo te pedimos declararla antes de llegar. Una mascota sin declarar tiene un cargo de limpieza de USD 90.",
+    petsUndeclared: "Solo te pedimos declararla antes de llegar. Si llega una mascota sin declarar, se cobra un cargo de limpieza de USD 90 **adicional** a esa tarifa.",
     cleanIncluded: (f: string) => `Tu reserva incluye la limpieza estándar al salir. Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
     checkoutCare: "Déjalo más o menos como lo encontraste y listo: de la limpieza estándar nos encargamos nosotros.",
     coWindows: "Ventanas", coWindowsD: "Ciérralas todas antes de salir.",
@@ -50,7 +50,7 @@ const T = {
     accessSection: "Getting in", accessCta: "How to get in",
     petsLabel: "Pets", petsNone: "This apartment doesn't allow pets.",
     petsOk: (f: string) => `They're welcome: ${f} per stay, up to 2.`,
-    petsUndeclared: "We just ask that you let us know before you arrive. An undeclared pet carries a USD 90 cleaning charge.",
+    petsUndeclared: "We just ask that you let us know before you arrive. An undeclared pet carries a USD 90 cleaning charge **on top of** that fee.",
     cleanIncluded: (f: string) => `Your booking includes the standard cleaning when you leave. Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
     checkoutCare: "Leave it roughly as you found it and that's it: the standard cleaning is on us.",
     coWindows: "Windows", coWindowsD: "Close them all before you leave.",
@@ -412,7 +412,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                 <ManualCard title={t.petsLabel} icon="paw">
                   {unit
                     ? unit.petFee
-                      ? `${t.petsOk(pick(lang, unit.petFee))} ${t.petsUndeclared}`
+                      ? rich(`${t.petsOk(pick(lang, unit.petFee))} ${t.petsUndeclared}`)
                       : t.petsNone
                     : t.variesByUnit}
                 </ManualCard>
