@@ -58,8 +58,9 @@ export default function StayAgreement() {
       <ul>
         <li>El horario de silencio es de 10:00 PM a 8:00 AM.</li>
         <li>
-          El ruido excesivo durante este horario podrá generar penalidades conforme a lo indicado en
-          el anuncio y podrá resultar en la terminación anticipada de la estancia.
+          El ruido excesivo durante este horario podrá generar un cargo de 400 USD por cada
+          incidencia. Si hay más de un reporte en la misma noche, cada uno se cobra por separado.
+          También podrá resultar en la terminación anticipada de la estancia.
         </li>
         <li>
           En caso de existir dispositivos de monitoreo de ruido, estos únicamente miden niveles de
@@ -70,7 +71,7 @@ export default function StayAgreement() {
       <h2>4. Política de No Fumar</h2>
       <ul>
         <li>Está estrictamente prohibido fumar dentro de la propiedad y en áreas no designadas.</li>
-        <li>El incumplimiento podrá generar cargos adicionales por limpieza especializada.</li>
+        <li>El incumplimiento podrá generar un cargo de 400 USD por limpieza especializada.</li>
       </ul>
 
       <h2>5. Daños y Responsabilidad</h2>
