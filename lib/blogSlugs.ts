@@ -36,6 +36,8 @@ export const BLOG_SLUG_ES_TO_EN: Record<string, string> = {
   "restaurantes-imperdibles-en-la-condesa": "best-restaurants-condesa",
   "parque-mexico-y-parque-espana-guia-de-la-condesa": "parque-mexico-parque-espana-condesa-guide",
   "vida-nocturna-y-bares-en-la-condesa": "condesa-nightlife-bars",
+  // Hospedaje con factura para empresas (2026-10-01)
+  "hospedaje-con-factura-para-empresas-cdmx": "business-lodging-invoice-mexico-city",
 };
 
 export const BLOG_SLUG_EN_TO_ES: Record<string, string> = Object.fromEntries(
