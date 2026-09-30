@@ -115,8 +115,8 @@ export default function CheckInUsa() {
         <p className="text-sm font-semibold text-neutral-900">🐾 Política de mascotas</p>
         <p className="mt-1 text-sm text-neutral-700">
           Somos pet friendly, pero toda mascota debe <strong>declararse y aprobarse antes</strong> de tu
-          estancia. La <strong>tarifa por mascota es de $50 USD por estancia</strong>, hasta 2 mascotas. Si se hospeda una mascota{" "}
-          <strong>no declarada</strong>, se cobra un <strong>cargo de limpieza de $150 USD adicional a esa tarifa</strong>{" "}
+          estancia. La <strong>tarifa por mascota es de 50 USD por estancia</strong>, hasta 2 mascotas. Si se hospeda una mascota{" "}
+          <strong>no declarada</strong>, se cobra un <strong>cargo de limpieza de 150 USD adicional a esa tarifa</strong>{" "}
           (el acceso cuenta con cámara de seguridad). Escríbenos y con gusto la registramos.
         </p>
       </section>
