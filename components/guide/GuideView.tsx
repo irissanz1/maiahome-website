@@ -18,16 +18,15 @@ const T = {
     petsLabel: "Mascotas", petsNone: "Este departamento no admite mascotas.",
     petsOk: (f: string) => `Son bienvenidas: ${f} por estancia, hasta 2.`,
     petsUndeclared: "Solo te pedimos declararla antes de llegar. Si llega una mascota sin declarar, se cobra un cargo de limpieza de USD 90 **adicional** a esa tarifa.",
-    cleanIncluded: (f: string) => `Tu reserva incluye la limpieza estándar al salir. Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
     checkoutCare: "Déjalo más o menos como lo encontraste y listo: de la limpieza estándar nos encargamos nosotros.",
     coWindows: "Ventanas", coWindowsD: "Ciérralas todas antes de salir.",
     coLights: "Luces y aparatos", coLightsD: "Apaga luces, ventiladores y calentadores.",
     coDoor: "Puerta", coDoorD: "Asegúrate de que quede bien cerrada al salir.",
     coTrash: "Basura",
     coClean: "Limpieza", coCleanD: "Tu reserva incluye la limpieza estándar al salir.",
-    coCleanFeeAny: "Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional. El monto depende del departamento: elígelo arriba para verlo.",
+    coCleanFeeAny: "No hace falta que dejes nada impecable. Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado. Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva. Cuando una pieza ya no se puede recuperar, se cobra la limpieza adicional o su reposición; el monto depende del departamento: elígelo arriba para verlo.",
     petsFeeAny: "La tarifa por mascota depende del departamento: elígelo arriba para verla.",
-    coCleanFee: (f: string) => `Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
+    coCleanFee: (f: string) => `No hace falta que dejes nada impecable. Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado. Si se mancha algo, escríbenos en el momento y lo tratamos a tiempo; así casi siempre se salva. Cuando una pieza ya no se puede recuperar, se cobra la limpieza adicional de ${f} o su reposición.`,
     regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
@@ -53,16 +52,15 @@ const T = {
     petsLabel: "Pets", petsNone: "This apartment doesn't allow pets.",
     petsOk: (f: string) => `They're welcome: ${f} per stay, up to 2.`,
     petsUndeclared: "We just ask that you let us know before you arrive. An undeclared pet carries a USD 90 cleaning charge **on top of** that fee.",
-    cleanIncluded: (f: string) => `Your booking includes the standard cleaning when you leave. Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
     checkoutCare: "Leave it roughly as you found it and that's it: the standard cleaning is on us.",
     coWindows: "Windows", coWindowsD: "Close them all before you leave.",
     coLights: "Lights & appliances", coLightsD: "Switch off lights, fans and heaters.",
     coDoor: "Front door", coDoorD: "Make sure it closes properly on your way out.",
     coTrash: "Trash",
     coClean: "Cleaning", coCleanD: "Your booking includes the standard cleaning when you leave.",
-    coCleanFeeAny: "Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning applies. The amount depends on the apartment: pick yours above to see it.",
+    coCleanFeeAny: "There's no need to leave anything spotless. We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out. If something gets stained, message us right away so we can treat it in time; that usually saves it. When an item can't be recovered, either the extra cleaning or its replacement is charged; the amount depends on the apartment: pick yours above to see it.",
     petsFeeAny: "The pet fee depends on the apartment: pick yours above to see it.",
-    coCleanFee: (f: string) => `Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
+    coCleanFee: (f: string) => `There's no need to leave anything spotless. We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out. If something gets stained, message us right away so we can treat it in time; that usually saves it. When an item can't be recovered, either the extra cleaning of ${f} or its replacement is charged.`,
     regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
@@ -481,7 +479,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
               <p className="mt-2 text-sm text-neutral-600">
-                {unit?.cleaningFee ? t.cleanIncluded(pick(lang, unit.cleaningFee)) : `${t.coCleanD} ${t.coCleanFeeAny}`}
+                {unit?.cleaningFee ? `${t.coCleanD} ${t.coCleanFee(pick(lang, unit.cleaningFee))}` : `${t.coCleanD} ${t.coCleanFeeAny}`}
               </p>
             </div>
           )}
