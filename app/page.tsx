@@ -6,6 +6,7 @@ import HomeHero from "@/components/HomeHero";
 import StatsBar from "@/components/StatsBar";
 import TrustBar from "@/components/TrustBar";
 import FeaturedReviews from "@/components/FeaturedReviews";
+import HomeFaq from "@/components/HomeFaq";
 import PropertiesMap, { type MapMarker } from "@/components/PropertiesMap";
 import { getByMarket } from "@/lib/data";
 import { resolveMarket } from "@/lib/market";
@@ -159,6 +160,7 @@ export default async function Home({
 
       <FeaturedReviews />
 
+      <HomeFaq />
       {/* Propósito — banda compacta (impacto social) */}
       <section className="mt-4 bg-[#FBF7EC]">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-5 py-12 md:flex-row md:items-center md:justify-between">
