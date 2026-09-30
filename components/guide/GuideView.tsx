@@ -469,13 +469,6 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
               {guide.climate && <ManualCard title={t.climateLabel} icon="temp">{pick(lang, guide.climate)}</ManualCard>}
-              {guide.amenityRules && (
-                <ManualCard title={t.rulesLabel} icon="shield">
-                  {pick(lang, guide.amenityRules)}
-                  <span className="mt-2 block">{guide.slug === "augustine" ? t.neighborsCasa : t.neighborsEd}</span>
-                  <span className="mt-2 block">{rich(t.neighborsFee)}</span>
-                </ManualCard>
-              )}
               {unitAware && (
                 <ManualCard title={t.petsLabel} icon="paw">
                   {unit
@@ -513,6 +506,15 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <div className="mt-3 border-t border-neutral-200 pt-3">
                 <CleanPolicy lead={t.coCleanD} items={unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny} />
               </div>
+            </div>
+          )}
+          {guide.amenityRules && (
+            <div className="mt-4">
+              <ManualCard title={t.rulesLabel} icon="shield">
+                {pick(lang, guide.amenityRules)}
+                <span className="mt-2 block">{guide.slug === "augustine" ? t.neighborsCasa : t.neighborsEd}</span>
+                <span className="mt-2 block">{rich(t.neighborsFee)}</span>
+              </ManualCard>
             </div>
           )}
         </section>
