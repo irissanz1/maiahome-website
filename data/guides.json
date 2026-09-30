@@ -3070,8 +3070,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "No se admiten mascotas",
-        "en": "No pets allowed"
+        "es": "USD 50 por estancia · máx. 2",
+        "en": "USD 50 per stay · max 2"
        }
       }
      ],
@@ -3091,7 +3091,10 @@
       "es": "USD 60",
       "en": "USD 60"
      },
-     "petFee": null
+     "petFee": {
+      "es": "USD 50",
+      "en": "USD 50"
+     }
     }
    ],
    "beforeArrival": [
