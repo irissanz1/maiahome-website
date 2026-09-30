@@ -499,7 +499,10 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           )}
           {(pick(lang, guide.cleaning) || unitAware) && (
             <div className="mt-4 rounded-2xl bg-neutral-50 p-4">
-              <p className="text-sm font-semibold text-neutral-900">{t.cleaning}</p>
+              <p className="flex items-center gap-2 text-sm font-semibold text-neutral-900">
+                <span className="text-maia-strong"><Icon name="droplet" className="h-4 w-4" /></span>
+                {t.cleaning}
+              </p>
               <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
