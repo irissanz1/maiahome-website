@@ -96,8 +96,9 @@ export default function Facturacion() {
           <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
             <p className="font-semibold">Plazo</p>
             <p className="mt-1">
-              Solicita tu factura dentro del <b>mes en curso</b> de tu pago. Emitimos en un plazo de
-              <b> 1 a 3 días hábiles</b>.
+              Solicita tu factura dentro del <b>mes en curso</b> de tu pago. Si reservaste directo,
+              la emitimos <b>al recibir el pago</b>; si llegaste por Airbnb, Booking o Vrbo, la
+              emitimos <b>un día después de iniciada tu estancia</b>.
             </p>
           </div>
         </aside>

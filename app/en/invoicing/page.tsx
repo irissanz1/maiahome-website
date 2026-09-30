@@ -55,7 +55,7 @@ export default function Invoicing() {
           </div>
           <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
             <p className="font-semibold">Deadline</p>
-            <p className="mt-1">Request your invoice within the <b>same calendar month</b> of your payment. We issue it within <b>1 to 3 business days</b>.</p>
+            <p className="mt-1">Request your invoice within the <b>same calendar month</b> of your payment. If you booked direct, we issue it <b>as soon as we receive payment</b>; if you came through Airbnb, Booking or Vrbo, <b>the day after your stay begins</b>.</p>
           </div>
         </aside>
       </div>
