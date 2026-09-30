@@ -31,6 +31,9 @@ const T = {
       "Si una pieza ya no se puede recuperar, se cobra la limpieza adicional o su reposición; el monto depende del departamento: elígelo arriba para verlo.",
     ],
     petsFeeAny: "La tarifa por mascota depende del departamento: elígelo arriba para verla.",
+    neighborsEd: "Son departamentos en edificios donde vive gente todo el año, así que el horario de silencio —de 9 pm a 9 am— importa de verdad. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
+    neighborsCasa: "Es una casa en una zona residencial, con vecinos que viven ahí todo el año, así que el horario de silencio —de 9 pm a 9 am— importa de verdad. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
+    neighborsFee: "No se puede fumar dentro ni hacer fiestas. Si alguna de las dos se rompe, aplica un cargo de 400 USD, como indica el [acuerdo de estancia](https://maiahome.mx/stay-agreement).",
     coCleanFee: (f: string) => [
       "No hace falta que dejes nada impecable.",
       "Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado.",
@@ -75,6 +78,9 @@ const T = {
       "If an item can't be recovered, either the extra cleaning or its replacement is charged; the amount depends on the apartment: pick yours above to see it.",
     ],
     petsFeeAny: "The pet fee depends on the apartment: pick yours above to see it.",
+    neighborsEd: "These are apartments in buildings where people live year-round, so quiet hours —9 pm to 9 am— really matter. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
+    neighborsCasa: "This is a house in a residential neighborhood, with neighbors who live there year-round, so quiet hours —9 pm to 9 am— really matter. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
+    neighborsFee: "Smoking indoors and parties are not allowed. If either happens, a USD 400 charge applies, as stated in the [stay agreement](https://maiahome.mx/en/stay-agreement).",
     coCleanFee: (f: string) => [
       "There's no need to leave anything spotless.",
       "We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out.",
@@ -463,7 +469,13 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
               {guide.climate && <ManualCard title={t.climateLabel} icon="temp">{pick(lang, guide.climate)}</ManualCard>}
-              {guide.amenityRules && <ManualCard title={t.rulesLabel} icon="shield">{pick(lang, guide.amenityRules)}</ManualCard>}
+              {guide.amenityRules && (
+                <ManualCard title={t.rulesLabel} icon="shield">
+                  {pick(lang, guide.amenityRules)}
+                  <span className="mt-2 block">{guide.slug === "augustine" ? t.neighborsCasa : t.neighborsEd}</span>
+                  <span className="mt-2 block">{rich(t.neighborsFee)}</span>
+                </ManualCard>
+              )}
               {unitAware && (
                 <ManualCard title={t.petsLabel} icon="paw">
                   {unit

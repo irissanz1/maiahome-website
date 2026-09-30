@@ -16,7 +16,7 @@ export default function TerminosCondiciones() {
         <p className="mt-1">
           Reserva de buena fe y cuida el espacio como si fuera tuyo. Lo esencial: el pago va por
           adelantado; respeta el número de huéspedes acordado; nada de fiestas, no fumar y silencio de
-          10 p. m. a 8 a. m.; entrega el departamento como lo recibiste y avísanos de cualquier
+          9 p. m. a 9 a. m.; entrega el departamento como lo recibiste y avísanos de cualquier
           desperfecto. <strong>Cancelaciones:</strong> reembolso escalonado según la anticipación (100%
           con 14+ días, 50% entre 7 y 14, sin reembolso con menos de 7) — ver el punto 10. El texto de
           abajo es el contrato formal de hospedaje.

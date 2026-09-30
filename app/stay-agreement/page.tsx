@@ -15,7 +15,7 @@ export default function StayAgreement() {
         <p className="font-semibold text-neutral-900">En pocas palabras</p>
         <p className="mt-1">
           Lo esencial para una gran estancia: solo se hospedan las personas registradas, nada de
-          fiestas, silencio de 10 p. m. a 8 a. m., no fumar y cuida el departamento. Cualquier duda,
+          fiestas, silencio de 9 p. m. a 9 a. m., no fumar y cuida el departamento. Cualquier duda,
           escríbenos: estamos para ayudarte.
         </p>
       </div>
@@ -56,7 +56,7 @@ export default function StayAgreement() {
 
       <h2>3. Horarios de Silencio y Ruido</h2>
       <ul>
-        <li>El horario de silencio es de 10:00 PM a 8:00 AM.</li>
+        <li>El horario de silencio es de 9:00 PM a 9:00 AM.</li>
         <li>
           El ruido excesivo durante este horario podrá generar un cargo de 400 USD por cada
           incidencia. Si hay más de un reporte en la misma noche, cada uno se cobra por separado.
