@@ -25,6 +25,8 @@ const T = {
     coDoor: "Puerta", coDoorD: "Asegúrate de que quede bien cerrada al salir.",
     coTrash: "Basura",
     coClean: "Limpieza", coCleanD: "Tu reserva incluye la limpieza estándar al salir.",
+    coCleanFeeAny: "Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional. El monto depende del departamento: elígelo arriba para verlo.",
+    petsFeeAny: "La tarifa por mascota depende del departamento: elígelo arriba para verla.",
     coCleanFee: (f: string) => `Solo si hace falta una limpieza profunda —blancos muy manchados, por ejemplo— se cobra una limpieza adicional de ${f}.`,
     regTitle: "¿Ya enviaste tu registro?", regBody: "Sin él no podemos activar tu código: ninguna puerta abre hasta que lo validamos.", regCta: "Completar registro", accessLead: "El punto donde más se traba la llegada. Tómate un minuto aquí antes de salir.",
     checkIn: "Check-in desde las", checkInLabel: "Hora de entrada", address: "Dirección", maps: "Google Maps", waze: "Waze",
@@ -58,6 +60,8 @@ const T = {
     coDoor: "Front door", coDoorD: "Make sure it closes properly on your way out.",
     coTrash: "Trash",
     coClean: "Cleaning", coCleanD: "Your booking includes the standard cleaning when you leave.",
+    coCleanFeeAny: "Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning applies. The amount depends on the apartment: pick yours above to see it.",
+    petsFeeAny: "The pet fee depends on the apartment: pick yours above to see it.",
     coCleanFee: (f: string) => `Only if a deep clean is needed —heavily stained linens, for example— an extra cleaning of ${f} applies.`,
     regTitle: "Have you sent your registration?", regBody: "Without it we can't activate your code: no door opens until we validate it.", regCta: "Complete registration", accessLead: "This is where arrivals usually get stuck. Take a minute here before you head over.",
     checkIn: "Check-in from", checkInLabel: "Check-in time", address: "Address", maps: "Google Maps", waze: "Waze",
@@ -448,7 +452,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                     ? unit.petFee
                       ? rich(`${t.petsOk(pick(lang, unit.petFee))} ${t.petsUndeclared}`)
                       : t.petsNone
-                    : t.variesByUnit}
+                    : rich(`${t.petsFeeAny} ${t.petsUndeclared}`)}
                 </ManualCard>
               )}
             </div>
@@ -476,9 +480,9 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
-              {unit?.cleaningFee && (
-                <p className="mt-2 text-sm text-neutral-600">{t.cleanIncluded(pick(lang, unit.cleaningFee))}</p>
-              )}
+              <p className="mt-2 text-sm text-neutral-600">
+                {unit?.cleaningFee ? t.cleanIncluded(pick(lang, unit.cleaningFee)) : `${t.coCleanD} ${t.coCleanFeeAny}`}
+              </p>
             </div>
           )}
         </section>
@@ -544,7 +548,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             </p>
             <p className="mt-1 text-sm text-neutral-700">
               <b>{t.coCleanD}</b>{" "}
-              {unitAware ? (unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.variesByUnit) : ""}
+              {unitAware ? (unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny) : ""}
             </p>
           </div>
         </div>
