@@ -3608,8 +3608,8 @@
         "en": "How to spot it"
        },
        "value": {
-        "es": "Reservaste el edificio completo: son las ocho puertas, de la 1 a la 8, repartidas en los tres pisos (1 y 2 en el primero, 3 a 6 en el segundo, 7 y 8 en el tercero). Tu código abre la puerta de la calle y todas las puertas.",
-        "en": "You booked the whole building: all eight doors, 1 through 8, across the three floors (1 and 2 on the first, 3 to 6 on the second, 7 and 8 on the third). Your code opens the street door and every apartment door."
+        "es": "Reservaste el edificio completo: son las ocho puertas, de la 1 a la 8, repartidas en los tres pisos (1, 2 y 3 en el primero, 4, 5 y 6 en el segundo, 7 y 8 en el tercero). Tu código abre la puerta de la calle y todas las puertas.",
+        "en": "You booked the whole building: all eight doors, 1 through 8, across the three floors (1, 2 and 3 on the first, 4, 5 and 6 on the second, 7 and 8 on the third). Your code opens the street door and every apartment door."
        }
       },
       {
