@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -58,6 +59,12 @@ export default function Invoicing() {
           </div>
         </aside>
       </div>
+        <div className="mt-10 rounded-2xl border border-neutral-200 bg-[#FBF7EC] p-5">
+          <p className="text-sm text-neutral-700">
+            Traveling for work?{" "}
+            <Link href="/en/blog/business-lodging-invoice-mexico-city" className="font-semibold text-neutral-900 underline underline-offset-2">Business lodging with a tax invoice in Mexico City</Link> covers what your accounting team needs, when the invoice is issued and how it works for longer stays.
+          </p>
+        </div>
     </div>
   );
 }

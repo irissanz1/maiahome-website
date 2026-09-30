@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -125,6 +126,12 @@ export default function Facturacion() {
               reserva o pago.
             </p>
           </details>
+        </div>
+        <div className="mt-10 rounded-2xl border border-neutral-200 bg-[#FBF7EC] p-5">
+          <p className="text-sm text-neutral-700">
+            ¿Viajas por trabajo?{" "}
+            <Link href="/blog/hospedaje-con-factura-para-empresas-cdmx" className="font-semibold text-neutral-900 underline underline-offset-2">Hospedaje con factura para empresas en CDMX</Link> explica qué datos necesita tu contabilidad, cuándo se emite la factura y cómo funciona en estancias largas.
+          </p>
         </div>
       </div>
     </div>

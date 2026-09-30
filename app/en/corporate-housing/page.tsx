@@ -81,6 +81,15 @@ export default async function CorporateHousing({ searchParams }: { searchParams:
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-5">
+        <div className="mt-10 rounded-2xl border border-neutral-200 bg-[#FBF7EC] p-5">
+          <p className="text-sm text-neutral-700">
+            Traveling for work?{" "}
+            <Link href="/en/blog/business-lodging-invoice-mexico-city" className="font-semibold text-neutral-900 underline underline-offset-2">Business lodging with a tax invoice in Mexico City</Link> covers what your accounting team needs, when the invoice is issued and how it works for longer stays.
+          </p>
+        </div>
+      </section>
+
       <ZonePromoSection intent="corporate" lang="en" />
     </>
   );
