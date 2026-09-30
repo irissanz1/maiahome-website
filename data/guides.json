@@ -461,8 +461,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -472,8 +472,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -483,8 +483,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -516,30 +516,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -591,8 +591,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -602,8 +602,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -613,8 +613,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -646,30 +646,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 60 por estancia · máx. 2",
-        "en": "USD 60 per stay · max 2"
+        "es": "60 USD por estancia · máx. 2",
+        "en": "60 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 70).",
-      "en": "Early check-in subject to availability (USD 70)."
+      "es": "Early check-in sujeto a disponibilidad (70 USD).",
+      "en": "Early check-in subject to availability (70 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 70).",
-      "en": "Late check-out subject to availability (USD 70)."
+      "es": "Late check-out sujeto a disponibilidad (70 USD).",
+      "en": "Late check-out subject to availability (70 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      }
     },
     {
@@ -721,8 +721,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -732,8 +732,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -743,8 +743,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -776,30 +776,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 45 por estancia · máx. 2",
-        "en": "USD 45 per stay · max 2"
+        "es": "45 USD por estancia · máx. 2",
+        "en": "45 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 50).",
-      "en": "Early check-in subject to availability (USD 50)."
+      "es": "Early check-in sujeto a disponibilidad (50 USD).",
+      "en": "Early check-in subject to availability (50 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 50).",
-      "en": "Late check-out subject to availability (USD 50)."
+      "es": "Late check-out sujeto a disponibilidad (50 USD).",
+      "en": "Late check-out subject to availability (50 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 45",
-      "en": "USD 45"
+      "es": "45 USD",
+      "en": "45 USD"
      }
     }
    ],
@@ -935,8 +935,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 40).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 40)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
      }
     }
    ],
@@ -1396,8 +1396,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -1407,8 +1407,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -1418,8 +1418,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 50 por servicio",
-        "en": "USD 50 per service"
+        "es": "50 USD por servicio",
+        "en": "50 USD per service"
        }
       },
       {
@@ -1451,30 +1451,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 45 por estancia · máx. 2",
-        "en": "USD 45 per stay · max 2"
+        "es": "45 USD por estancia · máx. 2",
+        "en": "45 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 50).",
-      "en": "Early check-in subject to availability (USD 50)."
+      "es": "Early check-in sujeto a disponibilidad (50 USD).",
+      "en": "Early check-in subject to availability (50 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 50).",
-      "en": "Late check-out subject to availability (USD 50)."
+      "es": "Late check-out sujeto a disponibilidad (50 USD).",
+      "en": "Late check-out subject to availability (50 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      },
      "petFee": {
-      "es": "USD 45",
-      "en": "USD 45"
+      "es": "45 USD",
+      "en": "45 USD"
      }
     }
    ],
@@ -1610,8 +1610,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 50).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 50)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
      }
     }
    ],
@@ -2083,8 +2083,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -2094,8 +2094,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -2105,8 +2105,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -2138,30 +2138,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     }
    ],
@@ -2297,8 +2297,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 40).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 40)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
      }
     }
    ],
@@ -2758,8 +2758,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -2769,8 +2769,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -2780,8 +2780,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 50 por servicio",
-        "en": "USD 50 per service"
+        "es": "50 USD por servicio",
+        "en": "50 USD per service"
        }
       },
       {
@@ -2813,30 +2813,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 50 por estancia · máx. 2",
-        "en": "USD 50 per stay · max 2"
+        "es": "50 USD por estancia · máx. 2",
+        "en": "50 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 60).",
-      "en": "Early check-in subject to availability (USD 60)."
+      "es": "Early check-in sujeto a disponibilidad (60 USD).",
+      "en": "Early check-in subject to availability (60 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 60).",
-      "en": "Late check-out subject to availability (USD 60)."
+      "es": "Late check-out sujeto a disponibilidad (60 USD).",
+      "en": "Late check-out subject to availability (60 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      },
      "petFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      }
     },
     {
@@ -2888,8 +2888,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -2899,8 +2899,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -2910,8 +2910,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -2949,20 +2949,20 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 60).",
-      "en": "Early check-in subject to availability (USD 60)."
+      "es": "Early check-in sujeto a disponibilidad (60 USD).",
+      "en": "Early check-in subject to availability (60 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 60).",
-      "en": "Late check-out subject to availability (USD 60)."
+      "es": "Late check-out sujeto a disponibilidad (60 USD).",
+      "en": "Late check-out subject to availability (60 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": null
     },
@@ -3015,8 +3015,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -3026,8 +3026,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -3037,8 +3037,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -3070,30 +3070,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 50 por estancia · máx. 2",
-        "en": "USD 50 per stay · max 2"
+        "es": "50 USD por estancia · máx. 2",
+        "en": "50 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 60).",
-      "en": "Early check-in subject to availability (USD 60)."
+      "es": "Early check-in sujeto a disponibilidad (60 USD).",
+      "en": "Early check-in subject to availability (60 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 60).",
-      "en": "Late check-out subject to availability (USD 60)."
+      "es": "Late check-out sujeto a disponibilidad (60 USD).",
+      "en": "Late check-out subject to availability (60 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      }
     }
    ],
@@ -3229,8 +3229,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 60).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 60)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 60 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 60 USD)."
      }
     }
    ],
@@ -3425,8 +3425,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -3436,8 +3436,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -3447,8 +3447,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -3480,8 +3480,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -3497,24 +3497,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -3566,8 +3566,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -3577,8 +3577,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -3588,8 +3588,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -3621,8 +3621,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       },
       {
@@ -3638,24 +3638,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -3707,8 +3707,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -3718,8 +3718,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -3729,8 +3729,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por unidad por servicio",
-        "en": "USD 25 per unit per service"
+        "es": "25 USD por unidad por servicio",
+        "en": "25 USD per unit per service"
        }
       },
       {
@@ -3762,8 +3762,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       },
       {
@@ -3779,24 +3779,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25 por unidad",
-      "en": "USD 25 per unit"
+      "es": "25 USD por unidad",
+      "en": "25 USD per unit"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -3848,8 +3848,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -3859,8 +3859,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -3870,8 +3870,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -3903,8 +3903,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -3920,24 +3920,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -3989,8 +3989,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4000,8 +4000,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4011,8 +4011,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4044,8 +4044,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -4061,24 +4061,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -4130,8 +4130,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4141,8 +4141,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4152,8 +4152,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4185,8 +4185,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -4202,24 +4202,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -4271,8 +4271,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -4282,8 +4282,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -4293,8 +4293,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4326,8 +4326,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       },
       {
@@ -4343,24 +4343,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -4412,8 +4412,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4423,8 +4423,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4434,8 +4434,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4467,8 +4467,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -4484,24 +4484,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -4553,8 +4553,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4564,8 +4564,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4575,8 +4575,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4608,8 +4608,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -4625,24 +4625,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -4694,8 +4694,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4705,8 +4705,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4716,8 +4716,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4749,8 +4749,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -4766,24 +4766,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -4835,8 +4835,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -4846,8 +4846,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -4857,8 +4857,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -4890,8 +4890,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       },
       {
@@ -4907,24 +4907,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -4976,8 +4976,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4987,8 +4987,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -4998,8 +4998,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -5031,8 +5031,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       },
       {
@@ -5048,24 +5048,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     }
    ],
@@ -5195,8 +5195,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 35).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 35)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
      }
     }
    ],
@@ -5656,8 +5656,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -5667,8 +5667,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -5678,8 +5678,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -5711,8 +5711,8 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       },
       {
@@ -5728,24 +5728,24 @@
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     }
    ],
@@ -5881,8 +5881,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 40).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 40)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
      }
     }
    ],
@@ -6318,8 +6318,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -6329,8 +6329,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -6340,8 +6340,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -6373,30 +6373,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 60 por estancia · máx. 2",
-        "en": "USD 60 per stay · max 2"
+        "es": "60 USD por estancia · máx. 2",
+        "en": "60 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 70).",
-      "en": "Early check-in subject to availability (USD 70)."
+      "es": "Early check-in sujeto a disponibilidad (70 USD).",
+      "en": "Early check-in subject to availability (70 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 70).",
-      "en": "Late check-out subject to availability (USD 70)."
+      "es": "Late check-out sujeto a disponibilidad (70 USD).",
+      "en": "Late check-out subject to availability (70 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      }
     },
     {
@@ -6448,8 +6448,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 80 · sujeto a disponibilidad",
-        "en": "USD 80 · subject to availability"
+        "es": "80 USD · sujeto a disponibilidad",
+        "en": "80 USD · subject to availability"
        }
       },
       {
@@ -6459,8 +6459,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 80 · sujeto a disponibilidad",
-        "en": "USD 80 · subject to availability"
+        "es": "80 USD · sujeto a disponibilidad",
+        "en": "80 USD · subject to availability"
        }
       },
       {
@@ -6470,8 +6470,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -6503,30 +6503,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 50 por estancia · máx. 2",
-        "en": "USD 50 per stay · max 2"
+        "es": "50 USD por estancia · máx. 2",
+        "en": "50 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 80).",
-      "en": "Early check-in subject to availability (USD 80)."
+      "es": "Early check-in sujeto a disponibilidad (80 USD).",
+      "en": "Early check-in subject to availability (80 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 80).",
-      "en": "Late check-out subject to availability (USD 80)."
+      "es": "Late check-out sujeto a disponibilidad (80 USD).",
+      "en": "Late check-out subject to availability (80 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      }
     },
     {
@@ -6578,8 +6578,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -6589,8 +6589,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 70 · sujeto a disponibilidad",
-        "en": "USD 70 · subject to availability"
+        "es": "70 USD · sujeto a disponibilidad",
+        "en": "70 USD · subject to availability"
        }
       },
       {
@@ -6600,8 +6600,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -6633,30 +6633,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 60 por estancia · máx. 2",
-        "en": "USD 60 per stay · max 2"
+        "es": "60 USD por estancia · máx. 2",
+        "en": "60 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 70).",
-      "en": "Early check-in subject to availability (USD 70)."
+      "es": "Early check-in sujeto a disponibilidad (70 USD).",
+      "en": "Early check-in subject to availability (70 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 70).",
-      "en": "Late check-out subject to availability (USD 70)."
+      "es": "Late check-out sujeto a disponibilidad (70 USD).",
+      "en": "Late check-out subject to availability (70 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      }
     },
     {
@@ -6708,8 +6708,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6719,8 +6719,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6730,8 +6730,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -6763,30 +6763,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -6838,8 +6838,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6849,8 +6849,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6860,8 +6860,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -6893,30 +6893,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -6968,8 +6968,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6979,8 +6979,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -6990,8 +6990,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -7023,30 +7023,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -7098,8 +7098,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7109,8 +7109,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7120,8 +7120,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -7153,30 +7153,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -7228,8 +7228,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7239,8 +7239,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7250,8 +7250,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -7283,30 +7283,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -7358,8 +7358,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7369,8 +7369,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7380,8 +7380,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -7413,30 +7413,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -7488,8 +7488,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7499,8 +7499,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -7510,8 +7510,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -7543,30 +7543,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     },
     {
@@ -7618,8 +7618,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -7629,8 +7629,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -7640,8 +7640,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -7673,30 +7673,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -7748,8 +7748,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -7759,8 +7759,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -7770,8 +7770,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 40 por servicio",
-        "en": "USD 40 per service"
+        "es": "40 USD por servicio",
+        "en": "40 USD per service"
        }
       },
       {
@@ -7803,30 +7803,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 40 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 40 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     }
    ],
@@ -7962,8 +7962,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 35).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 35)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
      }
     }
    ],
@@ -8399,8 +8399,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -8410,8 +8410,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -8421,8 +8421,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 50 por servicio",
-        "en": "USD 50 per service"
+        "es": "50 USD por servicio",
+        "en": "50 USD per service"
        }
       },
       {
@@ -8454,30 +8454,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 45 por estancia · máx. 2",
-        "en": "USD 45 per stay · max 2"
+        "es": "45 USD por estancia · máx. 2",
+        "en": "45 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 50).",
-      "en": "Early check-in subject to availability (USD 50)."
+      "es": "Early check-in sujeto a disponibilidad (50 USD).",
+      "en": "Early check-in subject to availability (50 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 50).",
-      "en": "Late check-out subject to availability (USD 50)."
+      "es": "Late check-out sujeto a disponibilidad (50 USD).",
+      "en": "Late check-out subject to availability (50 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      },
      "petFee": {
-      "es": "USD 45",
-      "en": "USD 45"
+      "es": "45 USD",
+      "en": "45 USD"
      }
     },
     {
@@ -8529,8 +8529,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -8540,8 +8540,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -8551,8 +8551,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 60 por servicio",
-        "en": "USD 60 per service"
+        "es": "60 USD por servicio",
+        "en": "60 USD per service"
        }
       },
       {
@@ -8584,30 +8584,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 50 por estancia · máx. 2",
-        "en": "USD 50 per stay · max 2"
+        "es": "50 USD por estancia · máx. 2",
+        "en": "50 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 60).",
-      "en": "Early check-in subject to availability (USD 60)."
+      "es": "Early check-in sujeto a disponibilidad (60 USD).",
+      "en": "Early check-in subject to availability (60 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 60).",
-      "en": "Late check-out subject to availability (USD 60)."
+      "es": "Late check-out sujeto a disponibilidad (60 USD).",
+      "en": "Late check-out subject to availability (60 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 60 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: USD 60 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
      },
      "cleaningFee": {
-      "es": "USD 60",
-      "en": "USD 60"
+      "es": "60 USD",
+      "en": "60 USD"
      },
      "petFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      }
     }
    ],
@@ -8743,8 +8743,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 50).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 50)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
      }
     }
    ],
@@ -9192,8 +9192,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -9203,8 +9203,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -9214,8 +9214,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 50 por servicio",
-        "en": "USD 50 per service"
+        "es": "50 USD por servicio",
+        "en": "50 USD per service"
        }
       },
       {
@@ -9247,30 +9247,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 45 por estancia · máx. 2",
-        "en": "USD 45 per stay · max 2"
+        "es": "45 USD por estancia · máx. 2",
+        "en": "45 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 50).",
-      "en": "Early check-in subject to availability (USD 50)."
+      "es": "Early check-in sujeto a disponibilidad (50 USD).",
+      "en": "Early check-in subject to availability (50 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 50).",
-      "en": "Late check-out subject to availability (USD 50)."
+      "es": "Late check-out sujeto a disponibilidad (50 USD).",
+      "en": "Late check-out subject to availability (50 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      },
      "petFee": {
-      "es": "USD 45",
-      "en": "USD 45"
+      "es": "45 USD",
+      "en": "45 USD"
      }
     }
    ],
@@ -9406,8 +9406,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 50).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 50)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
      }
     }
    ],
@@ -9855,8 +9855,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -9866,8 +9866,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 40 · sujeto a disponibilidad",
-        "en": "USD 40 · subject to availability"
+        "es": "40 USD · sujeto a disponibilidad",
+        "en": "40 USD · subject to availability"
        }
       },
       {
@@ -9877,8 +9877,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 30 por servicio",
-        "en": "USD 30 per service"
+        "es": "30 USD por servicio",
+        "en": "30 USD per service"
        }
       },
       {
@@ -9910,30 +9910,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 40 por estancia · máx. 2",
-        "en": "USD 40 per stay · max 2"
+        "es": "40 USD por estancia · máx. 2",
+        "en": "40 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 40).",
-      "en": "Early check-in subject to availability (USD 40)."
+      "es": "Early check-in sujeto a disponibilidad (40 USD).",
+      "en": "Early check-in subject to availability (40 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 40).",
-      "en": "Late check-out subject to availability (USD 40)."
+      "es": "Late check-out sujeto a disponibilidad (40 USD).",
+      "en": "Late check-out subject to availability (40 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 30 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 30 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 30 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 30 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      },
      "petFee": {
-      "es": "USD 40",
-      "en": "USD 40"
+      "es": "40 USD",
+      "en": "40 USD"
      }
     },
     {
@@ -9985,8 +9985,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -9996,8 +9996,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 50 · sujeto a disponibilidad",
-        "en": "USD 50 · subject to availability"
+        "es": "50 USD · sujeto a disponibilidad",
+        "en": "50 USD · subject to availability"
        }
       },
       {
@@ -10007,8 +10007,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 50 por servicio",
-        "en": "USD 50 per service"
+        "es": "50 USD por servicio",
+        "en": "50 USD per service"
        }
       },
       {
@@ -10040,30 +10040,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 45 por estancia · máx. 2",
-        "en": "USD 45 per stay · max 2"
+        "es": "45 USD por estancia · máx. 2",
+        "en": "45 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 50).",
-      "en": "Early check-in subject to availability (USD 50)."
+      "es": "Early check-in sujeto a disponibilidad (50 USD).",
+      "en": "Early check-in subject to availability (50 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 50).",
-      "en": "Late check-out subject to availability (USD 50)."
+      "es": "Late check-out sujeto a disponibilidad (50 USD).",
+      "en": "Late check-out subject to availability (50 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 50 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 50 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      },
      "petFee": {
-      "es": "USD 45",
-      "en": "USD 45"
+      "es": "45 USD",
+      "en": "45 USD"
      }
     },
     {
@@ -10115,8 +10115,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -10126,8 +10126,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 35 · sujeto a disponibilidad",
-        "en": "USD 35 · subject to availability"
+        "es": "35 USD · sujeto a disponibilidad",
+        "en": "35 USD · subject to availability"
        }
       },
       {
@@ -10137,8 +10137,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 25 por servicio",
-        "en": "USD 25 per service"
+        "es": "25 USD por servicio",
+        "en": "25 USD per service"
        }
       },
       {
@@ -10170,30 +10170,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 30 por estancia · máx. 2",
-        "en": "USD 30 per stay · max 2"
+        "es": "30 USD por estancia · máx. 2",
+        "en": "30 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 35).",
-      "en": "Early check-in subject to availability (USD 35)."
+      "es": "Early check-in sujeto a disponibilidad (35 USD).",
+      "en": "Early check-in subject to availability (35 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 35).",
-      "en": "Late check-out subject to availability (USD 35)."
+      "es": "Late check-out sujeto a disponibilidad (35 USD).",
+      "en": "Late check-out subject to availability (35 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 25 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. Este departamento no tiene lavadora.",
-      "en": "Extra cleaning: USD 25 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. This apartment has no washer."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. Este departamento no tiene lavadora.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. This apartment has no washer."
      },
      "cleaningFee": {
-      "es": "USD 25",
-      "en": "USD 25"
+      "es": "25 USD",
+      "en": "25 USD"
      },
      "petFee": {
-      "es": "USD 30",
-      "en": "USD 30"
+      "es": "30 USD",
+      "en": "30 USD"
      }
     }
    ],
@@ -10329,8 +10329,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 35).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 35)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
      }
     }
    ],
@@ -10606,8 +10606,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -10617,8 +10617,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "USD 60 · sujeto a disponibilidad",
-        "en": "USD 60 · subject to availability"
+        "es": "60 USD · sujeto a disponibilidad",
+        "en": "60 USD · subject to availability"
        }
       },
       {
@@ -10628,8 +10628,8 @@
         "en": "Extra cleaning"
        },
        "value": {
-        "es": "USD 100 por servicio",
-        "en": "USD 100 per service"
+        "es": "100 USD por servicio",
+        "en": "100 USD per service"
        }
       },
       {
@@ -10661,30 +10661,30 @@
         "en": "Pets"
        },
        "value": {
-        "es": "USD 50 por estancia · máx. 2",
-        "en": "USD 50 per stay · max 2"
+        "es": "50 USD por estancia · máx. 2",
+        "en": "50 USD per stay · max 2"
        }
       }
      ],
      "earlyCheckIn": {
-      "es": "Early check-in sujeto a disponibilidad (USD 60).",
-      "en": "Early check-in subject to availability (USD 60)."
+      "es": "Early check-in sujeto a disponibilidad (60 USD).",
+      "en": "Early check-in subject to availability (60 USD)."
      },
      "lateCheckOut": {
-      "es": "Late check-out sujeto a disponibilidad (USD 60).",
-      "en": "Late check-out subject to availability (USD 60)."
+      "es": "Late check-out sujeto a disponibilidad (60 USD).",
+      "en": "Late check-out subject to availability (60 USD)."
      },
      "cleaning": {
-      "es": "Limpieza extra: USD 100 por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La casa tiene lavadora y secadora.",
-      "en": "Extra cleaning: USD 100 per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The house has a washer and dryer."
+      "es": "Limpieza extra: 100 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La casa tiene lavadora y secadora.",
+      "en": "Extra cleaning: 100 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The house has a washer and dryer."
      },
      "cleaningFee": {
-      "es": "USD 100",
-      "en": "USD 100"
+      "es": "100 USD",
+      "en": "100 USD"
      },
      "petFee": {
-      "es": "USD 50",
-      "en": "USD 50"
+      "es": "50 USD",
+      "en": "50 USD"
      }
     }
    ],
@@ -10810,8 +10810,8 @@
       "en": "I'm arriving before 3:30 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde USD 60).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from USD 60)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 60 USD).",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 60 USD)."
      }
     }
    ],
