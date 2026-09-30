@@ -41,7 +41,7 @@ const T = {
     stuckBtn: "Estoy afuera y no puedo entrar · WhatsApp",
     protoBanner: "Prototipo interno — no enviar a huéspedes.", protoHint: "Lo marcado con ✎ lo debe completar el equipo.",
     whichUnit: "¿Cuál departamento reservaste?", whichUnitHint: "Elígelo para ver tu puerta, horarios flexibles y costos.",
-    yourUnit: "Tu departamento",
+    yourUnit: "Tu departamento", changeUnit: "Cambiar", closePicker: "Cerrar", pickUnit: "Elige tu departamento",
     variesByUnit: "Varía por departamento: elige el tuyo en «¿Cuál departamento reservaste?», al inicio de la guía.",
   },
   en: {
@@ -74,7 +74,7 @@ const T = {
     stuckBtn: "I'm outside and can't get in · WhatsApp",
     protoBanner: "Internal prototype — do not send to guests.", protoHint: "Items marked ✎ must be completed by the team.",
     whichUnit: "Which apartment did you book?", whichUnitHint: "Pick it to see your door, flexible hours and fees.",
-    yourUnit: "Your apartment",
+    yourUnit: "Your apartment", changeUnit: "Change", closePicker: "Close", pickUnit: "Choose your apartment",
     variesByUnit: "Varies by apartment: pick yours under “Which apartment did you book?” at the top of the guide.",
   },
 };
@@ -104,7 +104,13 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
     const chosen = [fromUrl, saved].find((x) => x && list.some((u) => u.id === x));
     if (chosen) setUnitId(chosen);
   }, [guide.slug, guide.arrivalPlus]);
+  // Con muchas publicaciones (Coco 12, Luz María 12) la reja ocupaba media
+  // pantalla. Si ya sabemos cuál es, se muestra plegada; y de 7 en adelante
+  // la lista es una caja de selección, no tarjetas.
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const manyUnits = units.length > 6;
   const chooseUnit = (id: string) => {
+    setPickerOpen(false);
     setUnitId(id);
     try { localStorage.setItem(`maia-guide-unit:${guide.slug}`, id); } catch {}
   };
@@ -226,25 +232,53 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         )}
         {unitAware ? (
           <div className="mt-4 rounded-2xl border-2 border-maia-yellow p-4">
-            <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="door" className="h-4 w-4 text-maia-strong" />{singleUnit ? t.yourUnit : t.whichUnit}</p>
-            {!singleUnit && <p className="mt-0.5 text-xs text-neutral-500">{t.whichUnitHint}</p>}
-            {!singleUnit && (
-            <div className={`mt-3 grid gap-2 sm:grid-cols-3 ${units.length > 4 ? "grid-cols-2" : ""}`} role="radiogroup" aria-label={t.whichUnit}>
-              {units.map((u) => {
-                const on = u.id === unitId;
-                return (
-                  <button key={u.id} type="button" role="radio" aria-checked={on} onClick={() => chooseUnit(u.id)}
-                    className={`rounded-xl border-2 px-3 py-2.5 text-left transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-maia-strong ${on ? "border-maia-strong bg-[#FBF7EC]" : "border-neutral-200 bg-white hover:border-neutral-400"}`}>
-                    <span className="flex items-center justify-between text-xs text-neutral-500">{u.name}{on && <span className="font-semibold text-maia-strong">✓</span>}</span>
-                    <span className="block font-serif text-2xl font-semibold leading-tight text-neutral-900">{u.door}</span>
-                    {pick(lang, u.note) && <span className="block text-xs text-neutral-600">{pick(lang, u.note)}</span>}
-                  </button>
-                );
-              })}
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900">
+                <Icon name="door" className="h-4 w-4 text-maia-strong" />
+                {singleUnit || (unit && !pickerOpen) ? t.yourUnit : t.whichUnit}
+                {unit && !pickerOpen && !singleUnit && (
+                  <span className="font-serif text-base font-normal text-neutral-700">· {unit.name}</span>
+                )}
+              </p>
+              {!singleUnit && unit && (
+                <button type="button" onClick={() => setPickerOpen((v) => !v)}
+                  className="rounded-full border border-neutral-300 px-3 py-1 text-xs font-semibold text-neutral-600 transition hover:border-neutral-500 hover:text-neutral-900">
+                  {pickerOpen ? t.closePicker : t.changeUnit}
+                </button>
+              )}
             </div>
+            {!singleUnit && (!unit || pickerOpen) && (
+              <>
+                <p className="mt-0.5 text-xs text-neutral-500">{t.whichUnitHint}</p>
+                {manyUnits ? (
+                  <select aria-label={t.whichUnit} value={unitId ?? ""} onChange={(e) => chooseUnit(e.target.value)}
+                    className="mt-3 w-full rounded-xl border-2 border-neutral-300 bg-white px-3 py-2.5 text-base text-neutral-900 focus:border-maia-strong focus:outline-none">
+                    <option value="" disabled>{t.pickUnit}</option>
+                    {units.map((u) => (
+                      <option key={u.id} value={u.id}>
+                        {u.name} — {u.door}{pick(lang, u.note) ? ` · ${pick(lang, u.note)}` : ""}
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <div className={`mt-3 grid gap-2 sm:grid-cols-3 ${units.length > 4 ? "grid-cols-2" : ""}`} role="radiogroup" aria-label={t.whichUnit}>
+                    {units.map((u) => {
+                      const on = u.id === unitId;
+                      return (
+                        <button key={u.id} type="button" role="radio" aria-checked={on} onClick={() => chooseUnit(u.id)}
+                          className={`rounded-xl border-2 px-3 py-2.5 text-left transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-maia-strong ${on ? "border-maia-strong bg-[#FBF7EC]" : "border-neutral-200 bg-white hover:border-neutral-400"}`}>
+                          <span className="flex items-center justify-between text-xs text-neutral-500">{u.name}{on && <span className="font-semibold text-maia-strong">✓</span>}</span>
+                          <span className="block font-serif text-2xl font-semibold leading-tight text-neutral-900">{u.door}</span>
+                          {pick(lang, u.note) && <span className="block text-xs text-neutral-600">{pick(lang, u.note)}</span>}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </>
             )}
             {unit?.details?.length ? (
-              <dl className={`grid gap-x-4 gap-y-2.5 text-sm sm:grid-cols-2 ${singleUnit ? "mt-3" : "mt-3 border-t border-neutral-200 pt-3"}`}>
+              <dl className={`grid gap-x-4 gap-y-2.5 text-sm sm:grid-cols-2 ${singleUnit || (unit && !pickerOpen) ? "mt-3" : "mt-3 border-t border-neutral-200 pt-3"}`}>
                 {unit.details.map((d, i) => (
                   <div key={i} className="flex items-start gap-2">
                     <span className="mt-0.5 text-maia-strong"><Icon name={d.icon || "info"} className="h-4 w-4" /></span>
