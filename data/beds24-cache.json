@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T17:50:47.170Z",
+  "generatedAt": "2026-10-01T23:37:21.268Z",
   "complete": true,
   "incompleteRooms": [],
   "rooms": {
@@ -10,26 +10,26 @@
       "currency": "USD",
       "calendar": {
         "2026-10-01": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 99
         },
         "2026-10-02": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 99
         },
         "2026-10-03": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
-          "price": 107
+          "price": 99
         },
         "2026-10-04": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 99
         },
@@ -55,25 +55,25 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 108
+          "price": 99
         },
         "2026-10-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 127
+          "price": 115
         },
         "2026-10-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 129
+          "price": 117
         },
         "2026-10-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 124
+          "price": 112
         },
         "2026-10-12": {
           "available": true,
@@ -85,37 +85,37 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 111
+          "price": 101
         },
         "2026-10-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 106
+          "price": 99
         },
         "2026-10-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 114
         },
         "2026-10-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2026-10-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 136
         },
         "2026-10-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 122
+          "price": 110
         },
         "2026-10-19": {
           "available": true,
@@ -127,55 +127,55 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 112
+          "price": 102
         },
         "2026-10-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 114
+          "price": 103
         },
         "2026-10-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 138
         },
         "2026-10-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 222
+          "price": 201
         },
         "2026-10-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 233
+          "price": 212
         },
         "2026-10-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 227
+          "price": 206
         },
         "2026-10-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 189
+          "price": 172
         },
         "2026-10-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 113
         },
         "2026-10-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 239
+          "price": 217
         },
         "2026-10-29": {
           "available": false,
@@ -211,1723 +211,1723 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 262
+          "price": 238
         },
         "2026-11-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 223
+          "price": 202
         },
         "2026-11-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 166
+          "price": 151
         },
         "2026-11-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 185
+          "price": 168
         },
         "2026-11-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 186
+          "price": 169
         },
         "2026-11-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 141
         },
         "2026-11-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 123
         },
         "2026-11-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 127
+          "price": 116
         },
         "2026-11-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 122
         },
         "2026-11-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 143
         },
         "2026-11-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 192
+          "price": 174
         },
         "2026-11-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 196
+          "price": 178
         },
         "2026-11-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 195
+          "price": 177
         },
         "2026-11-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 122
         },
         "2026-11-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 122
+          "price": 111
         },
         "2026-11-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 123
         },
         "2026-11-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 194
+          "price": 176
         },
         "2026-11-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 207
+          "price": 188
         },
         "2026-11-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 211
+          "price": 192
         },
         "2026-11-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 206
+          "price": 187
         },
         "2026-11-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 153
         },
         "2026-11-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 152
         },
         "2026-11-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 152
         },
         "2026-11-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 146
         },
         "2026-11-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 173
+          "price": 157
         },
         "2026-11-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 168
+          "price": 152
         },
         "2026-11-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 125
         },
         "2026-11-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 116
         },
         "2026-12-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 120
         },
         "2026-12-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 130
         },
         "2026-12-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 138
         },
         "2026-12-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 171
+          "price": 156
         },
         "2026-12-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 176
+          "price": 160
         },
         "2026-12-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 142
         },
         "2026-12-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 140
         },
         "2026-12-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 121
         },
         "2026-12-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 120
         },
         "2026-12-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 121
         },
         "2026-12-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 196
+          "price": 178
         },
         "2026-12-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 197
+          "price": 179
         },
         "2026-12-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 138
         },
         "2026-12-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 126
         },
         "2026-12-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 122
         },
         "2026-12-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 128
         },
         "2026-12-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 142
         },
         "2026-12-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 182
+          "price": 165
         },
         "2026-12-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 194
+          "price": 176
         },
         "2026-12-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 155
         },
         "2026-12-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 143
         },
         "2026-12-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 211
+          "price": 191
         },
         "2026-12-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 210
+          "price": 191
         },
         "2026-12-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 191
+          "price": 173
         },
         "2026-12-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 196
+          "price": 178
         },
         "2026-12-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 209
+          "price": 190
         },
         "2026-12-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 237
+          "price": 216
         },
         "2026-12-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 251
+          "price": 228
         },
         "2026-12-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 252
+          "price": 229
         },
         "2026-12-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 241
+          "price": 219
         },
         "2026-12-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 241
+          "price": 218
         },
         "2027-01-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 231
+          "price": 209
         },
         "2027-01-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 220
+          "price": 200
         },
         "2027-01-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-01-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 130
         },
         "2027-01-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 130
         },
         "2027-01-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 131
         },
         "2027-01-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 131
         },
         "2027-01-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 159
+          "price": 144
         },
         "2027-01-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 159
+          "price": 145
         },
         "2027-01-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-01-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 129
+          "price": 117
         },
         "2027-01-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-01-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-01-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 142
         },
         "2027-01-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 165
+          "price": 150
         },
         "2027-01-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 174
+          "price": 158
         },
         "2027-01-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 137
         },
         "2027-01-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 130
+          "price": 118
         },
         "2027-01-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 133
+          "price": 120
         },
         "2027-01-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 134
+          "price": 121
         },
         "2027-01-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 132
         },
         "2027-01-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 174
+          "price": 158
         },
         "2027-01-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 180
+          "price": 163
         },
         "2027-01-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 145
         },
         "2027-01-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2027-01-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-01-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-01-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-01-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 215
+          "price": 195
         },
         "2027-01-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 213
+          "price": 194
         },
         "2027-01-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 215
+          "price": 195
         },
         "2027-02-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 176
+          "price": 160
         },
         "2027-02-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 177
+          "price": 161
         },
         "2027-02-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 177
+          "price": 161
         },
         "2027-02-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 222
+          "price": 202
         },
         "2027-02-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 233
+          "price": 211
         },
         "2027-02-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 241
+          "price": 219
         },
         "2027-02-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 204
+          "price": 186
         },
         "2027-02-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 201
+          "price": 182
         },
         "2027-02-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 216
+          "price": 197
         },
         "2027-02-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 217
+          "price": 198
         },
         "2027-02-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 216
+          "price": 196
         },
         "2027-02-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 239
+          "price": 217
         },
         "2027-02-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 245
+          "price": 222
         },
         "2027-02-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 197
+          "price": 179
         },
         "2027-02-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 159
+          "price": 144
         },
         "2027-02-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 134
         },
         "2027-02-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 182
+          "price": 166
         },
         "2027-02-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 266
+          "price": 242
         },
         "2027-02-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 277
+          "price": 252
         },
         "2027-02-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 272
+          "price": 247
         },
         "2027-02-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 276
+          "price": 250
         },
         "2027-02-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 265
+          "price": 240
         },
         "2027-02-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 172
+          "price": 156
         },
         "2027-02-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-02-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 168
+          "price": 153
         },
         "2027-02-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 181
+          "price": 164
         },
         "2027-02-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 185
+          "price": 168
         },
         "2027-02-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 158
+          "price": 143
         },
         "2027-03-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 132
         },
         "2027-03-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 131
         },
         "2027-03-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 133
         },
         "2027-03-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 143
         },
         "2027-03-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 172
+          "price": 156
         },
         "2027-03-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 189
+          "price": 172
         },
         "2027-03-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 154
         },
         "2027-03-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 178
+          "price": 161
         },
         "2027-03-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 179
+          "price": 163
         },
         "2027-03-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 177
+          "price": 161
         },
         "2027-03-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 182
+          "price": 165
         },
         "2027-03-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 239
+          "price": 217
         },
         "2027-03-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 242
+          "price": 220
         },
         "2027-03-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 242
+          "price": 220
         },
         "2027-03-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 174
+          "price": 158
         },
         "2027-03-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 174
+          "price": 158
         },
         "2027-03-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 177
+          "price": 160
         },
         "2027-03-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 188
+          "price": 170
         },
         "2027-03-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 218
+          "price": 198
         },
         "2027-03-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 221
+          "price": 201
         },
         "2027-03-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 179
+          "price": 163
         },
         "2027-03-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 167
+          "price": 152
         },
         "2027-03-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 158
+          "price": 144
         },
         "2027-03-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 211
+          "price": 192
         },
         "2027-03-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 202
+          "price": 184
         },
         "2027-03-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 216
+          "price": 196
         },
         "2027-03-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 208
+          "price": 189
         },
         "2027-03-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 174
+          "price": 158
         },
         "2027-03-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 140
         },
         "2027-03-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 140
         },
         "2027-03-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-04-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 175
+          "price": 159
         },
         "2027-04-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 194
+          "price": 176
         },
         "2027-04-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 195
+          "price": 177
         },
         "2027-04-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 153
         },
         "2027-04-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 137
         },
         "2027-04-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 135
         },
         "2027-04-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 136
         },
         "2027-04-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 153
         },
         "2027-04-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 192
+          "price": 174
         },
         "2027-04-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 195
+          "price": 177
         },
         "2027-04-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 172
+          "price": 156
         },
         "2027-04-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 140
         },
         "2027-04-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 167
+          "price": 152
         },
         "2027-04-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 168
+          "price": 152
         },
         "2027-04-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 175
+          "price": 159
         },
         "2027-04-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 193
+          "price": 175
         },
         "2027-04-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 194
+          "price": 176
         },
         "2027-04-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 168
+          "price": 153
         },
         "2027-04-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 135
         },
         "2027-04-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-04-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-04-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 170
+          "price": 154
         },
         "2027-04-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 197
+          "price": 179
         },
         "2027-04-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 196
+          "price": 178
         },
         "2027-04-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 151
         },
         "2027-04-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 148
         },
         "2027-04-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 142
         },
         "2027-04-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 142
         },
         "2027-04-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 149
         },
         "2027-04-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 185
+          "price": 168
         },
         "2027-05-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 187
+          "price": 170
         },
         "2027-05-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 142
         },
         "2027-05-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 130
+          "price": 118
         },
         "2027-05-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 125
+          "price": 113
         },
         "2027-05-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 132
+          "price": 128
         },
         "2027-05-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 131
         },
         "2027-05-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 163
+          "price": 148
         },
         "2027-05-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 169
+          "price": 153
         },
         "2027-05-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 136
         },
         "2027-05-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 152
+          "price": 138
         },
         "2027-05-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 135
         },
         "2027-05-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 137
         },
         "2027-05-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 162
+          "price": 147
         },
         "2027-05-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 179
+          "price": 163
         },
         "2027-05-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 185
+          "price": 168
         },
         "2027-05-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 146
         },
         "2027-05-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-05-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 138
+          "price": 126
         },
         "2027-05-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 135
         },
         "2027-05-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 142
         },
         "2027-05-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 171
+          "price": 156
         },
         "2027-05-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 175
+          "price": 159
         },
         "2027-05-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 134
         },
         "2027-05-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 135
         },
         "2027-05-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 133
         },
         "2027-05-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2027-05-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 161
+          "price": 146
         },
         "2027-05-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 172
+          "price": 156
         },
         "2027-05-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 175
+          "price": 159
         },
         "2027-05-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 142
         },
         "2027-05-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-06-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 135
+          "price": 122
         },
         "2027-06-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 133
         },
         "2027-06-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 133
         },
         "2027-06-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 151
+          "price": 137
         },
         "2027-06-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 157
+          "price": 143
         },
         "2027-06-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 133
         },
         "2027-06-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 136
         },
         "2027-06-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 136
         },
         "2027-06-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 145
         },
         "2027-06-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 159
+          "price": 145
         },
         "2027-06-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 163
+          "price": 148
         },
         "2027-06-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 175
+          "price": 159
         },
         "2027-06-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 141
         },
         "2027-06-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 135
+          "price": 122
         },
         "2027-06-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-06-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 130
         },
         "2027-06-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 152
+          "price": 138
         },
         "2027-06-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 167
+          "price": 152
         },
         "2027-06-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 183
+          "price": 166
         },
         "2027-06-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 142
         },
         "2027-06-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 138
+          "price": 125
         },
         "2027-06-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 129
         },
         "2027-06-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 131
         },
         "2027-06-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 142
         },
         "2027-06-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 173
+          "price": 157
         },
         "2027-06-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 188
+          "price": 171
         },
         "2027-06-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 161
+          "price": 146
         },
         "2027-06-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 155
         },
         "2027-06-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 148
         },
         "2027-06-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 148
         },
         "2027-07-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 149
         },
         "2027-07-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 180
+          "price": 163
         },
         "2027-07-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 193
+          "price": 175
         },
         "2027-07-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 151
         },
         "2027-07-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 159
+          "price": 155
         },
         "2027-07-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2027-07-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 130
         },
         "2027-07-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 149
         },
         "2027-07-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 174
+          "price": 158
         },
         "2027-07-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 182
+          "price": 165
         },
         "2027-07-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 148
         },
         "2027-07-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 130
         },
         "2027-07-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 126
         },
         "2027-07-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-07-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-07-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 155
+          "price": 141
         },
         "2027-07-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 159
+          "price": 144
         },
         "2027-07-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 132
         },
         "2027-07-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-07-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-07-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-07-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 137
         },
         "2027-07-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 169
+          "price": 154
         },
         "2027-07-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 171
+          "price": 156
         },
         "2027-07-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 136
         },
         "2027-07-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 131
         },
         "2027-07-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 129
         },
         "2027-07-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 130
         },
         "2027-07-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 165
+          "price": 150
         },
         "2027-07-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 192
+          "price": 175
         },
         "2027-07-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 194
+          "price": 177
         },
         "2027-08-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 142
         },
         "2027-08-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 133
         },
         "2027-08-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 129
         },
         "2027-08-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2027-08-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 161
+          "price": 146
         },
         "2027-08-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 188
+          "price": 171
         },
         "2027-08-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 191
+          "price": 173
         },
         "2027-08-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 141
         },
         "2027-08-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 133
         },
         "2027-08-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 133
         },
         "2027-08-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 137
         },
         "2027-08-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 143
         },
         "2027-08-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 178
+          "price": 162
         },
         "2027-08-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 180
+          "price": 164
         },
         "2027-08-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 138
         },
         "2027-08-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 137
         },
         "2027-08-17": {
           "available": true,
@@ -1939,276 +1939,276 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-08-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-08-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 163
+          "price": 148
         },
         "2027-08-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 167
+          "price": 152
         },
         "2027-08-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 132
         },
         "2027-08-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 135
+          "price": 122
         },
         "2027-08-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-08-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 126
         },
         "2027-08-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 137
         },
         "2027-08-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 166
+          "price": 151
         },
         "2027-08-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 170
+          "price": 154
         },
         "2027-08-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 133
         },
         "2027-08-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 133
+          "price": 121
         },
         "2027-08-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 135
+          "price": 122
         },
         "2027-09-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-09-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 140
         },
         "2027-09-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 177
+          "price": 160
         },
         "2027-09-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 185
+          "price": 168
         },
         "2027-09-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 139
         },
         "2027-09-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-09-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-09-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 129
         },
         "2027-09-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 140
         },
         "2027-09-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 173
+          "price": 157
         },
         "2027-09-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 178
+          "price": 161
         },
         "2027-09-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 136
         },
         "2027-09-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-09-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-09-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 190
+          "price": 173
         },
         "2027-09-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 190
+          "price": 173
         },
         "2027-09-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 188
+          "price": 171
         },
         "2027-09-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 188
+          "price": 171
         },
         "2027-09-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 135
         },
         "2027-09-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 124
         },
         "2027-09-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 133
+          "price": 121
         },
         "2027-09-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 127
         },
         "2027-09-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-09-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 156
+          "price": 142
         },
         "2027-09-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 161
+          "price": 146
         },
         "2027-09-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 128
         },
         "2027-09-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 133
+          "price": 121
         },
         "2027-09-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 132
+          "price": 120
         },
         "2027-09-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 125
         },
         "2027-09-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 134
         },
         "2027-10-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 3,
-          "price": 162
+          "price": 148
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "395664": {
       "beds24PropertyId": 182463,
@@ -4415,7 +4415,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "395667": {
       "beds24PropertyId": 182466,
@@ -6622,7 +6622,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "395668": {
       "beds24PropertyId": 182467,
@@ -8829,7 +8829,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "418925": {
       "beds24PropertyId": 194738,
@@ -11036,7 +11036,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "418926": {
       "beds24PropertyId": 194739,
@@ -11054,163 +11054,163 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 104
+          "price": 99
         },
         "2026-10-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 119
+          "price": 112
         },
         "2026-10-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 104
+          "price": 98
         },
         "2026-10-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 92
+          "price": 87
         },
         "2026-10-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 118
         },
         "2026-10-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 126
         },
         "2026-10-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 121
         },
         "2026-10-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 124
+          "price": 117
         },
         "2026-10-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 126
+          "price": 119
         },
         "2026-10-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 124
         },
         "2026-10-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 99
+          "price": 94
         },
         "2026-10-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 129
         },
         "2026-10-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 132
         },
         "2026-10-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 126
         },
         "2026-10-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 128
+          "price": 121
         },
         "2026-10-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 130
+          "price": 123
         },
         "2026-10-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 118
+          "price": 112
         },
         "2026-10-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 89
+          "price": 84
         },
         "2026-10-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 129
         },
         "2026-10-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 130
         },
         "2026-10-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 134
         },
         "2026-10-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 139
         },
         "2026-10-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 138
         },
         "2026-10-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 137
         },
         "2026-10-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 132
         },
         "2026-10-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 102
+          "price": 97
         },
         "2026-10-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 206
+          "price": 193
         },
         "2026-10-29": {
           "available": false,
@@ -11240,1843 +11240,1843 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 198
+          "price": 186
         },
         "2026-11-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 131
         },
         "2026-11-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 127
         },
         "2026-11-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 132
         },
         "2026-11-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 134
         },
         "2026-11-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 152
+          "price": 144
         },
         "2026-11-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 123
         },
         "2026-11-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 121
         },
         "2026-11-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 130
         },
         "2026-11-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 137
         },
         "2026-11-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 137
         },
         "2026-11-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 138
         },
         "2026-11-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 140
         },
         "2026-11-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 132
         },
         "2026-11-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 121
+          "price": 114
         },
         "2026-11-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 125
         },
         "2026-11-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 126
         },
         "2026-11-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 130
         },
         "2026-11-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 132
         },
         "2026-11-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 131
         },
         "2026-11-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 135
         },
         "2026-11-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 121
         },
         "2026-11-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 131
         },
         "2026-11-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 132
         },
         "2026-11-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 134
         },
         "2026-11-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 138
+          "price": 130
         },
         "2026-11-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 134
+          "price": 125
         },
         "2026-11-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 124
+          "price": 117
         },
         "2026-11-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 122
         },
         "2026-12-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 134
         },
         "2026-12-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 136
         },
         "2026-12-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 129
         },
         "2026-12-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 130
         },
         "2026-12-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 133
+          "price": 123
         },
         "2026-12-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 130
         },
         "2026-12-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 127
+          "price": 118
         },
         "2026-12-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 125
         },
         "2026-12-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 128
         },
         "2026-12-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 126
         },
         "2026-12-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 145
         },
         "2026-12-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 143
         },
         "2026-12-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 121
+          "price": 110
         },
         "2026-12-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 120
+          "price": 109
         },
         "2026-12-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 122
+          "price": 112
         },
         "2026-12-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 122
         },
         "2026-12-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 122
         },
         "2026-12-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 127
         },
         "2026-12-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 133
         },
         "2026-12-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 122
+          "price": 115
         },
         "2026-12-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 119
+          "price": 116
         },
         "2026-12-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 117
+          "price": 109
         },
         "2026-12-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 123
+          "price": 116
         },
         "2026-12-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 124
+          "price": 117
         },
         "2026-12-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 128
+          "price": 121
         },
         "2026-12-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 129
         },
         "2026-12-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 120
         },
         "2026-12-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 126
+          "price": 120
         },
         "2026-12-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 126
+          "price": 120
         },
         "2026-12-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 126
+          "price": 120
         },
         "2026-12-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 127
+          "price": 121
         },
         "2027-01-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 123
+          "price": 115
         },
         "2027-01-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 120
+          "price": 112
         },
         "2027-01-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 111
+          "price": 112
         },
         "2027-01-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 113
+          "price": 111
         },
         "2027-01-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 117
+          "price": 109
         },
         "2027-01-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 110
+          "price": 104
         },
         "2027-01-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 107
+          "price": 101
         },
         "2027-01-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 103
+          "price": 97
         },
         "2027-01-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 104
+          "price": 99
         },
         "2027-01-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 102
+          "price": 96
         },
         "2027-01-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 108
+          "price": 102
         },
         "2027-01-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 116
+          "price": 110
         },
         "2027-01-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 120
+          "price": 114
         },
         "2027-01-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 119
+          "price": 112
         },
         "2027-01-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 113
+          "price": 107
         },
         "2027-01-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 111
+          "price": 103
         },
         "2027-01-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 106
+          "price": 100
         },
         "2027-01-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 111
+          "price": 105
         },
         "2027-01-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 119
+          "price": 112
         },
         "2027-01-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 121
+          "price": 113
         },
         "2027-01-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 118
         },
         "2027-01-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 110
+          "price": 104
         },
         "2027-01-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 112
+          "price": 105
         },
         "2027-01-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 105
+          "price": 99
         },
         "2027-01-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 113
+          "price": 106
         },
         "2027-01-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 122
+          "price": 115
         },
         "2027-01-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 121
+          "price": 114
         },
         "2027-01-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 125
         },
         "2027-01-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 133
         },
         "2027-01-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 176
+          "price": 166
         },
         "2027-01-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 180
+          "price": 170
         },
         "2027-02-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 155
         },
         "2027-02-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 156
         },
         "2027-02-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 158
         },
         "2027-02-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 167
         },
         "2027-02-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 181
+          "price": 171
         },
         "2027-02-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 186
+          "price": 174
         },
         "2027-02-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 167
         },
         "2027-02-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 167
         },
         "2027-02-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 191
+          "price": 180
         },
         "2027-02-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 193
+          "price": 180
         },
         "2027-02-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 198
+          "price": 187
         },
         "2027-02-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 181
+          "price": 171
         },
         "2027-02-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 196
+          "price": 185
         },
         "2027-02-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 176
+          "price": 166
         },
         "2027-02-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 154
         },
         "2027-02-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 171
+          "price": 161
         },
         "2027-02-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 166
         },
         "2027-02-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 182
+          "price": 172
         },
         "2027-02-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 177
+          "price": 167
         },
         "2027-02-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 194
+          "price": 181
         },
         "2027-02-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 153
         },
         "2027-02-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 151
         },
         "2027-02-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 158
         },
         "2027-02-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 175
+          "price": 166
         },
         "2027-02-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 175
+          "price": 166
         },
         "2027-02-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 159
         },
         "2027-02-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 172
+          "price": 161
         },
         "2027-02-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 148
         },
         "2027-03-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 148
         },
         "2027-03-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 158
         },
         "2027-03-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 175
+          "price": 164
         },
         "2027-03-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 161
         },
         "2027-03-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 143
         },
         "2027-03-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 148
         },
         "2027-03-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 135
         },
         "2027-03-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 140
         },
         "2027-03-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 153
         },
         "2027-03-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 175
+          "price": 166
         },
         "2027-03-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 169
+          "price": 159
         },
         "2027-03-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 167
+          "price": 157
         },
         "2027-03-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 167
+          "price": 157
         },
         "2027-03-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 157
         },
         "2027-03-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 146
         },
         "2027-03-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 157
         },
         "2027-03-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 167
         },
         "2027-03-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 175
+          "price": 165
         },
         "2027-03-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 146
         },
         "2027-03-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 151
         },
         "2027-03-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 137
         },
         "2027-03-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 141
         },
         "2027-03-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 172
+          "price": 162
         },
         "2027-03-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 167
         },
         "2027-03-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 177
+          "price": 165
         },
         "2027-03-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 156
         },
         "2027-03-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 165
+          "price": 156
         },
         "2027-03-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 155
         },
         "2027-03-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 154
         },
         "2027-03-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 153
         },
         "2027-03-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 156
         },
         "2027-04-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 157
         },
         "2027-04-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 146
         },
         "2027-04-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 151
         },
         "2027-04-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 136
         },
         "2027-04-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 138
         },
         "2027-04-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 149
         },
         "2027-04-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 159
         },
         "2027-04-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 157
         },
         "2027-04-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 183
+          "price": 173
         },
         "2027-04-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 183
+          "price": 173
         },
         "2027-04-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 155
         },
         "2027-04-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 148
         },
         "2027-04-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 156
         },
         "2027-04-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 173
+          "price": 162
         },
         "2027-04-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 172
+          "price": 162
         },
         "2027-04-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 158
+          "price": 149
         },
         "2027-04-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 151
         },
         "2027-04-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 148
         },
         "2027-04-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-04-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 154
         },
         "2027-04-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 159
         },
         "2027-04-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 157
         },
         "2027-04-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 172
+          "price": 160
         },
         "2027-04-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 157
         },
         "2027-04-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-04-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 141
         },
         "2027-04-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 151
         },
         "2027-04-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 152
         },
         "2027-04-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 156
         },
         "2027-04-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 170
+          "price": 160
         },
         "2027-05-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 151
         },
         "2027-05-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-05-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-05-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 145
         },
         "2027-05-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 153
         },
         "2027-05-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 151
         },
         "2027-05-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 143
         },
         "2027-05-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 139
         },
         "2027-05-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 131
         },
         "2027-05-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 139
         },
         "2027-05-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 149
         },
         "2027-05-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 166
+          "price": 155
         },
         "2027-05-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 154
         },
         "2027-05-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 138
         },
         "2027-05-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 135
         },
         "2027-05-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 133
         },
         "2027-05-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 144
         },
         "2027-05-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-05-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 166
+          "price": 157
         },
         "2027-05-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 154
         },
         "2027-05-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 141
         },
         "2027-05-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 138
         },
         "2027-05-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 136
         },
         "2027-05-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 139
         },
         "2027-05-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 149
         },
         "2027-05-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-05-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 149
         },
         "2027-05-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 141
         },
         "2027-05-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 139
         },
         "2027-05-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 133
         },
         "2027-05-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 144
         },
         "2027-06-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 149
         },
         "2027-06-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 154
         },
         "2027-06-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-06-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 146
         },
         "2027-06-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 143
         },
         "2027-06-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 133
         },
         "2027-06-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 136
         },
         "2027-06-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-06-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 150
         },
         "2027-06-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 147
         },
         "2027-06-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 138
         },
         "2027-06-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 136
         },
         "2027-06-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 130
         },
         "2027-06-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-06-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 149
         },
         "2027-06-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 156
         },
         "2027-06-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 151
         },
         "2027-06-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 140
         },
         "2027-06-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 143
         },
         "2027-06-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 133
         },
         "2027-06-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-06-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 147
         },
         "2027-06-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 155
         },
         "2027-06-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 153
         },
         "2027-06-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 141
         },
         "2027-06-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 146
         },
         "2027-06-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 134
         },
         "2027-06-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-06-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 146
         },
         "2027-06-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-07-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 149
         },
         "2027-07-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 140
         },
         "2027-07-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 144
         },
         "2027-07-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 133
         },
         "2027-07-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-07-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-07-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 147
         },
         "2027-07-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 146
         },
         "2027-07-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 135
         },
         "2027-07-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 136
         },
         "2027-07-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 131
         },
         "2027-07-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 136
         },
         "2027-07-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 139
         },
         "2027-07-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 142
         },
         "2027-07-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 141
         },
         "2027-07-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 142
         },
         "2027-07-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 141
         },
         "2027-07-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-07-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 141
         },
         "2027-07-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 139
         },
         "2027-07-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 144
         },
         "2027-07-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 148
         },
         "2027-07-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 135
         },
         "2027-07-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 136
         },
         "2027-07-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 131
         },
         "2027-07-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 137
         },
         "2027-07-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 142
         },
         "2027-07-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 146
         },
         "2027-07-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 151
         },
         "2027-07-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 143
         },
         "2027-07-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 144
         },
         "2027-08-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 134
         },
         "2027-08-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-08-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 144
         },
         "2027-08-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 146
         },
         "2027-08-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 153
         },
         "2027-08-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 145
         },
         "2027-08-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 144
         },
         "2027-08-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 134
         },
         "2027-08-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-08-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 146
         },
         "2027-08-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-08-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 146
         },
         "2027-08-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 140
         },
         "2027-08-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 140
         },
         "2027-08-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 133
         },
         "2027-08-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 136
         },
         "2027-08-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-08-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 155
         },
         "2027-08-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 148
         },
         "2027-08-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 137
         },
         "2027-08-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 136
         },
         "2027-08-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 131
         },
         "2027-08-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 136
         },
         "2027-08-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 147
         },
         "2027-08-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 158
         },
         "2027-08-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 151
         },
         "2027-08-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 138
         },
         "2027-08-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 135
         },
         "2027-08-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 131
         },
         "2027-08-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 136
         },
         "2027-08-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 145
         },
         "2027-09-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 158
         },
         "2027-09-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-09-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 141
         },
         "2027-09-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 141
         },
         "2027-09-05": {
           "available": true,
@@ -13088,37 +13088,37 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 133
         },
         "2027-09-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-09-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 146
         },
         "2027-09-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 145
         },
         "2027-09-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 141
         },
         "2027-09-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 141
         },
         "2027-09-12": {
           "available": true,
@@ -13130,120 +13130,120 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 133
         },
         "2027-09-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 136
         },
         "2027-09-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 146
         },
         "2027-09-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 144
         },
         "2027-09-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 142
         },
         "2027-09-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 142
         },
         "2027-09-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 141
         },
         "2027-09-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 134
         },
         "2027-09-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 142
         },
         "2027-09-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 146
         },
         "2027-09-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 142
         },
         "2027-09-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 133
         },
         "2027-09-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 133
         },
         "2027-09-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 133
         },
         "2027-09-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 138
         },
         "2027-09-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 152
         },
         "2027-09-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 158
         },
         "2027-09-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 148
         },
         "2027-10-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 138
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "418927": {
       "beds24PropertyId": 194740,
@@ -15450,7 +15450,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "418928": {
       "beds24PropertyId": 194741,
@@ -17657,7 +17657,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "429088": {
       "beds24PropertyId": 200307,
@@ -19864,7 +19864,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "429313": {
       "beds24PropertyId": 200452,
@@ -22071,7 +22071,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "429314": {
       "beds24PropertyId": 200453,
@@ -24278,7 +24278,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "461199": {
       "beds24PropertyId": 216896,
@@ -26485,7 +26485,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "462994": {
       "beds24PropertyId": 217773,
@@ -28692,7 +28692,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "466958": {
       "beds24PropertyId": 220105,
@@ -30899,7 +30899,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "469041": {
       "beds24PropertyId": 221189,
@@ -33106,7 +33106,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "472123": {
       "beds24PropertyId": 222112,
@@ -33154,139 +33154,139 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 114
+          "price": 112
         },
         "2026-10-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 116
+          "price": 115
         },
         "2026-10-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 122
         },
         "2026-10-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 126
+          "price": 123
         },
         "2026-10-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 123
+          "price": 120
         },
         "2026-10-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 93
+          "price": 91
         },
         "2026-10-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 121
+          "price": 119
         },
         "2026-10-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 124
+          "price": 122
         },
         "2026-10-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 126
         },
         "2026-10-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 128
+          "price": 126
         },
         "2026-10-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 124
+          "price": 121
         },
         "2026-10-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 115
+          "price": 113
         },
         "2026-10-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 86
+          "price": 83
         },
         "2026-10-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 119
+          "price": 116
         },
         "2026-10-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 123
         },
         "2026-10-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 125
         },
         "2026-10-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 134
         },
         "2026-10-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 150
         },
         "2026-10-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 151
         },
         "2026-10-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 153
         },
         "2026-10-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 125
+          "price": 121
         },
         "2026-10-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 187
+          "price": 182
         },
         "2026-10-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 219
+          "price": 213
         },
         "2026-10-30": {
           "available": false,
@@ -33316,1789 +33316,1789 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 176
+          "price": 171
         },
         "2026-11-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 161
         },
         "2026-11-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 166
         },
         "2026-11-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 170
+          "price": 166
         },
         "2026-11-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 182
+          "price": 179
         },
         "2026-11-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 183
+          "price": 179
         },
         "2026-11-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 179
+          "price": 175
         },
         "2026-11-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 182
+          "price": 178
         },
         "2026-11-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 176
+          "price": 171
         },
         "2026-11-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 163
         },
         "2026-11-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 167
+          "price": 163
         },
         "2026-11-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 160
         },
         "2026-11-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 152
         },
         "2026-11-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 135
         },
         "2026-11-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 134
         },
         "2026-11-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 139
         },
         "2026-11-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 150
         },
         "2026-11-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 163
+          "price": 159
         },
         "2026-11-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 160
         },
         "2026-11-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 160
         },
         "2026-11-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 152
         },
         "2026-11-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 156
         },
         "2026-11-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 158
         },
         "2026-11-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 169
+          "price": 164
         },
         "2026-11-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 154
         },
         "2026-11-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 151
         },
         "2026-11-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 134
         },
         "2026-11-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 131
         },
         "2026-12-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 135
         },
         "2026-12-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 140
         },
         "2026-12-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 148
         },
         "2026-12-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 152
         },
         "2026-12-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 153
+          "price": 150
         },
         "2026-12-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2026-12-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 142
         },
         "2026-12-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 137
         },
         "2026-12-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 141
         },
         "2026-12-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 147
         },
         "2026-12-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 165
         },
         "2026-12-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 172
+          "price": 168
         },
         "2026-12-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 139
         },
         "2026-12-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 131
         },
         "2026-12-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 131
         },
         "2026-12-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 141
         },
         "2026-12-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2026-12-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 148
         },
         "2026-12-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 147
         },
         "2026-12-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 137
         },
         "2026-12-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 145
+          "price": 141
         },
         "2026-12-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2026-12-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 141
         },
         "2026-12-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 132
         },
         "2026-12-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 135
         },
         "2026-12-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 141
         },
         "2026-12-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 141
         },
         "2026-12-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 150
         },
         "2026-12-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 154
         },
         "2026-12-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2026-12-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-01-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 143
         },
         "2027-01-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 141
         },
         "2027-01-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 132
         },
         "2027-01-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 129
+          "price": 126
         },
         "2027-01-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 129
         },
         "2027-01-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 131
         },
         "2027-01-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 134
         },
         "2027-01-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 134
         },
         "2027-01-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 138
+          "price": 135
         },
         "2027-01-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 128
         },
         "2027-01-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 129
+          "price": 126
         },
         "2027-01-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 131
         },
         "2027-01-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 136
         },
         "2027-01-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-01-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 146
         },
         "2027-01-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 146
         },
         "2027-01-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-01-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 147
         },
         "2027-01-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 150
         },
         "2027-01-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 152
         },
         "2027-01-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 153
         },
         "2027-01-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 153
         },
         "2027-01-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 153
         },
         "2027-01-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 148
         },
         "2027-01-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 158
         },
         "2027-01-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 160
         },
         "2027-01-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 169
+          "price": 165
         },
         "2027-01-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 171
+          "price": 167
         },
         "2027-01-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 179
+          "price": 175
         },
         "2027-01-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 180
+          "price": 175
         },
         "2027-01-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 182
+          "price": 178
         },
         "2027-02-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 156
         },
         "2027-02-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 169
+          "price": 165
         },
         "2027-02-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 166
         },
         "2027-02-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 180
+          "price": 176
         },
         "2027-02-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 184
+          "price": 180
         },
         "2027-02-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 191
+          "price": 186
         },
         "2027-02-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 171
+          "price": 167
         },
         "2027-02-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 160
         },
         "2027-02-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 185
+          "price": 181
         },
         "2027-02-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 182
+          "price": 178
         },
         "2027-02-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 182
+          "price": 178
         },
         "2027-02-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 180
+          "price": 177
         },
         "2027-02-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 182
+          "price": 178
         },
         "2027-02-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 163
         },
         "2027-02-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 157
         },
         "2027-02-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 169
+          "price": 165
         },
         "2027-02-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 171
+          "price": 167
         },
         "2027-02-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 174
+          "price": 170
         },
         "2027-02-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 178
+          "price": 175
         },
         "2027-02-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 181
+          "price": 177
         },
         "2027-02-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 162
+          "price": 158
         },
         "2027-02-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 155
         },
         "2027-02-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 158
         },
         "2027-02-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 164
+          "price": 160
         },
         "2027-02-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 170
+          "price": 166
         },
         "2027-02-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 171
+          "price": 166
         },
         "2027-02-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 161
         },
         "2027-02-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 158
         },
         "2027-03-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 153
         },
         "2027-03-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 158
         },
         "2027-03-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 158
         },
         "2027-03-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 159
+          "price": 155
         },
         "2027-03-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 158
+          "price": 155
         },
         "2027-03-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 146
         },
         "2027-03-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 147
         },
         "2027-03-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 153
         },
         "2027-03-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 157
         },
         "2027-03-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 160
+          "price": 156
         },
         "2027-03-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 160
         },
         "2027-03-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 170
+          "price": 166
         },
         "2027-03-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 173
+          "price": 167
         },
         "2027-03-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 157
         },
         "2027-03-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 167
+          "price": 163
         },
         "2027-03-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 160
         },
         "2027-03-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 173
+          "price": 168
         },
         "2027-03-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 163
+          "price": 159
         },
         "2027-03-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 161
         },
         "2027-03-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 165
+          "price": 161
         },
         "2027-03-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 160
         },
         "2027-03-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 169
+          "price": 165
         },
         "2027-03-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 151
         },
         "2027-03-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 146
         },
         "2027-03-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 150
         },
         "2027-03-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 150
         },
         "2027-04-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 152
         },
         "2027-04-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 156
+          "price": 152
         },
         "2027-04-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 161
+          "price": 157
         },
         "2027-04-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2027-04-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 153
         },
         "2027-04-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 153
         },
         "2027-04-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 157
+          "price": 154
         },
         "2027-04-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 161
+          "price": 157
         },
         "2027-04-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 162
         },
         "2027-04-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 166
+          "price": 162
         },
         "2027-04-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 152
         },
         "2027-04-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 144
         },
         "2027-04-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 148
         },
         "2027-04-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 153
         },
         "2027-04-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 158
+          "price": 154
         },
         "2027-04-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 155
+          "price": 152
         },
         "2027-04-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 154
+          "price": 150
         },
         "2027-04-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-04-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 147
         },
         "2027-04-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 150
         },
         "2027-04-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 155
+          "price": 151
         },
         "2027-04-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 159
+          "price": 156
         },
         "2027-04-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 164
+          "price": 161
         },
         "2027-04-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 156
         },
         "2027-04-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 148
         },
         "2027-04-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 146
         },
         "2027-04-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 148
         },
         "2027-04-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 151
+          "price": 148
         },
         "2027-04-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 151
         },
         "2027-04-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 160
+          "price": 156
         },
         "2027-05-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 157
+          "price": 153
         },
         "2027-05-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2027-05-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-05-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2027-05-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2027-05-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2027-05-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 146
         },
         "2027-05-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 146
         },
         "2027-05-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 140
         },
         "2027-05-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 138
         },
         "2027-05-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-05-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 144
         },
         "2027-05-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 150
         },
         "2027-05-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 147
         },
         "2027-05-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 150
+          "price": 147
         },
         "2027-05-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 138
         },
         "2027-05-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-05-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-05-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-05-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 148
         },
         "2027-05-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 145
         },
         "2027-05-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 145
         },
         "2027-05-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-05-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-05-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-05-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 146
         },
         "2027-05-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 154
+          "price": 150
         },
         "2027-05-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 144
         },
         "2027-05-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 144
         },
         "2027-05-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-05-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-06-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-06-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-06-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 150
         },
         "2027-06-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 143
         },
         "2027-06-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 146
+          "price": 142
         },
         "2027-06-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 138
         },
         "2027-06-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-06-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-06-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 146
         },
         "2027-06-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 156
+          "price": 153
         },
         "2027-06-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 151
+          "price": 147
         },
         "2027-06-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 152
+          "price": 148
         },
         "2027-06-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2027-06-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 141
         },
         "2027-06-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 142
         },
         "2027-06-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 149
+          "price": 145
         },
         "2027-06-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 153
+          "price": 150
         },
         "2027-06-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 145
         },
         "2027-06-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 152
+          "price": 147
         },
         "2027-06-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-06-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-06-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 142
         },
         "2027-06-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 150
+          "price": 146
         },
         "2027-06-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 152
+          "price": 148
         },
         "2027-06-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 143
         },
         "2027-06-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 149
+          "price": 146
         },
         "2027-06-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-06-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-06-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-06-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 146
+          "price": 143
         },
         "2027-07-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2027-07-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 139
         },
         "2027-07-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 145
+          "price": 141
         },
         "2027-07-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 133
         },
         "2027-07-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 133
         },
         "2027-07-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 134
         },
         "2027-07-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 135
         },
         "2027-07-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 137
         },
         "2027-07-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 132
         },
         "2027-07-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 137
+          "price": 134
         },
         "2027-07-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 129
+          "price": 126
         },
         "2027-07-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 128
         },
         "2027-07-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 129
         },
         "2027-07-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 130
         },
         "2027-07-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 132
         },
         "2027-07-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 132
+          "price": 129
         },
         "2027-07-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 134
+          "price": 130
         },
         "2027-07-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 128
+          "price": 125
         },
         "2027-07-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 129
+          "price": 126
         },
         "2027-07-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 128
         },
         "2027-07-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 132
         },
         "2027-07-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 133
         },
         "2027-07-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 136
+          "price": 133
         },
         "2027-07-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 135
+          "price": 132
         },
         "2027-07-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 130
+          "price": 127
         },
         "2027-07-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-07-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 130
         },
         "2027-07-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 133
         },
         "2027-07-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 138
         },
         "2027-07-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 143
+          "price": 139
         },
         "2027-07-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 138
         },
         "2027-08-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 130
         },
         "2027-08-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 132
         },
         "2027-08-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 131
         },
         "2027-08-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 135
         },
         "2027-08-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 137
         },
         "2027-08-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 138
         },
         "2027-08-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 137
         },
         "2027-08-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-08-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 133
         },
         "2027-08-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 134
         },
         "2027-08-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 136
         },
         "2027-08-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 139
         },
         "2027-08-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 138
         },
         "2027-08-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 137
         },
         "2027-08-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 131
+          "price": 130
         },
         "2027-08-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-08-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 133
         },
         "2027-08-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 140
+          "price": 137
         },
         "2027-08-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 139
         },
         "2027-08-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 136
         },
         "2027-08-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 138
+          "price": 134
         },
         "2027-08-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-08-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-08-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 134
         },
         "2027-08-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 140
         },
         "2027-08-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 143
         },
         "2027-08-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 140
         },
         "2027-08-28": {
           "available": true,
@@ -35110,210 +35110,210 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 131
         },
         "2027-08-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-08-31": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 134
         },
         "2027-09-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-09-02": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 147
+          "price": 143
         },
         "2027-09-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 147
+          "price": 143
         },
         "2027-09-04": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 144
+          "price": 139
         },
         "2027-09-05": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 130
         },
         "2027-09-06": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 134
+          "price": 130
         },
         "2027-09-07": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 135
+          "price": 132
         },
         "2027-09-08": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 139
+          "price": 136
         },
         "2027-09-09": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 142
+          "price": 139
         },
         "2027-09-10": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 142
+          "price": 139
         },
         "2027-09-11": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 141
+          "price": 137
         },
         "2027-09-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 132
+          "price": 129
         },
         "2027-09-13": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-09-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 132
         },
         "2027-09-15": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2027-09-16": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 145
         },
         "2027-09-17": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 145
         },
         "2027-09-18": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 148
+          "price": 144
         },
         "2027-09-19": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-09-20": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 133
+          "price": 130
         },
         "2027-09-21": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 133
         },
         "2027-09-22": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 138
+          "price": 134
         },
         "2027-09-23": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 141
+          "price": 138
         },
         "2027-09-24": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 136
         },
         "2027-09-25": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 139
+          "price": 136
         },
         "2027-09-26": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 136
+          "price": 133
         },
         "2027-09-27": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 137
+          "price": 134
         },
         "2027-09-28": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 144
+          "price": 140
         },
         "2027-09-29": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 148
+          "price": 144
         },
         "2027-09-30": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 143
+          "price": 139
         },
         "2027-10-01": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 140
+          "price": 137
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "489020": {
       "beds24PropertyId": 230828,
@@ -37520,7 +37520,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "489635": {
       "beds24PropertyId": 231191,
@@ -39727,7 +39727,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "489637": {
       "beds24PropertyId": 231193,
@@ -41934,7 +41934,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "489638": {
       "beds24PropertyId": 231194,
@@ -44141,7 +44141,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "494785": {
       "beds24PropertyId": 233801,
@@ -46348,7 +46348,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506100": {
       "beds24PropertyId": 239803,
@@ -48555,7 +48555,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506106": {
       "beds24PropertyId": 239805,
@@ -50762,7 +50762,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506118": {
       "beds24PropertyId": 239813,
@@ -52969,7 +52969,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506119": {
       "beds24PropertyId": 239814,
@@ -55176,7 +55176,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506193": {
       "beds24PropertyId": 239877,
@@ -57383,7 +57383,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "506198": {
       "beds24PropertyId": 239880,
@@ -59590,7 +59590,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "625019": {
       "beds24PropertyId": 299461,
@@ -59707,62 +59707,62 @@
           "price": 101
         },
         "2026-10-19": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 68
         },
         "2026-10-20": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 93
         },
         "2026-10-21": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 99
         },
         "2026-10-22": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 101
         },
         "2026-10-23": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 115
         },
         "2026-10-24": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 117
         },
         "2026-10-25": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 117
         },
         "2026-10-26": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 119
         },
         "2026-10-27": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 86
         },
         "2026-10-28": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 158
         },
@@ -61797,7 +61797,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "625022": {
       "beds24PropertyId": 299463,
@@ -64004,7 +64004,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "625023": {
       "beds24PropertyId": 299464,
@@ -66211,7 +66211,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "625024": {
       "beds24PropertyId": 299465,
@@ -68418,7 +68418,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "626201": {
       "beds24PropertyId": 300033,
@@ -70625,7 +70625,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "626202": {
       "beds24PropertyId": 300034,
@@ -70640,14 +70640,14 @@
           "price": 63
         },
         "2026-10-02": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 70
         },
         "2026-10-03": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 70
         },
@@ -72832,7 +72832,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "626203": {
       "beds24PropertyId": 300035,
@@ -75039,7 +75039,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "626206": {
       "beds24PropertyId": 300038,
@@ -77246,7 +77246,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "639778": {
       "beds24PropertyId": 306961,
@@ -77267,8 +77267,8 @@
           "price": 227
         },
         "2026-10-03": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 246
         },
@@ -79453,7 +79453,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "669908": {
       "beds24PropertyId": 322312,
@@ -79480,14 +79480,14 @@
           "price": 304
         },
         "2026-10-04": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 208
         },
         "2026-10-05": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 169
         },
@@ -81660,7 +81660,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "704198": {
       "beds24PropertyId": 340718,
@@ -81777,62 +81777,62 @@
           "price": 180
         },
         "2026-10-19": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 108
         },
         "2026-10-20": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 129
         },
         "2026-10-21": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 145
         },
         "2026-10-22": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 199
         },
         "2026-10-23": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 329
         },
         "2026-10-24": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 317
         },
         "2026-10-25": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 284
         },
         "2026-10-26": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 280
         },
         "2026-10-27": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 160
         },
         "2026-10-28": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 342
         },
@@ -83867,7 +83867,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "704200": {
       "beds24PropertyId": 340720,
@@ -83883,13 +83883,13 @@
         },
         "2026-10-02": {
           "available": false,
-          "numAvail": 0,
+          "numAvail": -1,
           "minStay": 1,
           "price": 139
         },
         "2026-10-03": {
           "available": false,
-          "numAvail": 0,
+          "numAvail": -1,
           "minStay": 1,
           "price": 144
         },
@@ -86074,7 +86074,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "704201": {
       "beds24PropertyId": 340721,
@@ -88281,7 +88281,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     },
     "715030": {
       "beds24PropertyId": 346349,
@@ -88297,13 +88297,13 @@
         },
         "2026-10-02": {
           "available": false,
-          "numAvail": -3,
+          "numAvail": -4,
           "minStay": 2,
           "price": 805
         },
         "2026-10-03": {
           "available": false,
-          "numAvail": -4,
+          "numAvail": -5,
           "minStay": 2,
           "price": 890
         },
@@ -88399,61 +88399,61 @@
         },
         "2026-10-19": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 680
         },
         "2026-10-20": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 680
         },
         "2026-10-21": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 797
         },
         "2026-10-22": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 1206
         },
         "2026-10-23": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1625
         },
         "2026-10-24": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1615
         },
         "2026-10-25": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 1369
         },
         "2026-10-26": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 1483
         },
         "2026-10-27": {
           "available": false,
-          "numAvail": -1,
+          "numAvail": -2,
           "minStay": 2,
           "price": 1401
         },
         "2026-10-28": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1690
         },
@@ -90488,12 +90488,12 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-01T17:50:47.170Z"
+      "updatedAt": "2026-10-01T23:37:21.268Z"
     }
   },
   "bookingsOverlay": {
-    "appliedAt": "2026-10-01T18:02:24.561Z",
-    "bookings": 94,
+    "appliedAt": "2026-10-01T23:43:26.480Z",
+    "bookings": 99,
     "reconstructed": 0
   }
 }
