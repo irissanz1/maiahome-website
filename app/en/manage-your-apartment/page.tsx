@@ -192,7 +192,7 @@ export default function ManageYourApartment() {
 
       <section id="start" className="bg-maia-dark text-white">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 py-16 lg:grid-cols-[1fr_460px]">
-          <div>
+          <div className="lg:sticky lg:top-24 lg:self-start">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-yellow">Let's start</p>
             <h2 className="mt-3 font-serif text-3xl md:text-4xl">Earn more, work less</h2>
             <p className="mt-4 max-w-md text-neutral-300">Tell us about your apartment and we'll get in touch with a free assessment of its rental potential. No commitment.</p>
@@ -200,6 +200,21 @@ export default function ManageYourApartment() {
               Prefer WhatsApp?{" "}
               <a href={whatsappUrl("Hi Maia Home, I'd like information about managing my apartment.")} target="_blank" rel="noopener noreferrer" className="font-semibold text-maia-yellow underline">Message us directly</a>
             </p>
+            <ul className="mt-8 space-y-4 border-t border-white/10 pt-8">
+              {[
+                ["We look at your apartment", "Its area, its size and how demand behaves around it."],
+                ["You get numbers, not promises", "An income estimate based on what apartments like yours earn in the area."],
+                ["You decide", "If it makes sense for both of us, we schedule a visit. If not, the information is yours to keep."],
+              ].map(([t, d], i) => (
+                <li key={t} className="flex gap-4">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-maia-yellow text-xs font-bold text-black">{i + 1}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-white">{t}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-neutral-400">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="rounded-2xl bg-white p-6 text-neutral-900 shadow-sm">
             <OwnerLeadForm />

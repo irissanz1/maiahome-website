@@ -226,7 +226,7 @@ export default function AdministramosTuDepto() {
       {/* Empecemos — formulario */}
       <section id="empecemos" className="bg-maia-dark text-white">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 py-16 lg:grid-cols-[1fr_460px]">
-          <div>
+          <div className="lg:sticky lg:top-24 lg:self-start">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-yellow">Empecemos</p>
             <h2 className="mt-3 font-serif text-3xl md:text-4xl">Gana más, trabaja menos</h2>
             <p className="mt-4 max-w-md text-neutral-300">
@@ -239,6 +239,21 @@ export default function AdministramosTuDepto() {
                 Escríbenos directo
               </a>
             </p>
+            <ul className="mt-8 space-y-4 border-t border-white/10 pt-8">
+              {[
+                ["Revisamos tu departamento", "Su zona, su tamaño y cómo se comporta la demanda a su alrededor."],
+                ["Te damos números, no promesas", "Una estimación de ingresos a partir de lo que generan departamentos como el tuyo en la zona."],
+                ["Decides tú", "Si tiene sentido para los dos, agendamos una visita. Si no, te quedas con la información."],
+              ].map(([t, d], i) => (
+                <li key={t} className="flex gap-4">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-maia-yellow text-xs font-bold text-black">{i + 1}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-white">{t}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-neutral-400">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="rounded-2xl bg-white p-6 text-neutral-900 shadow-sm">
             <OwnerLeadForm />
