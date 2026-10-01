@@ -17,7 +17,13 @@ const BENEFICIOS = [
   ["Transparencia total", "Estado de cuenta mensual, histórico y forecast de ingresos en tiempo real, y acceso de solo lectura al calendario de tu propiedad."],
   ["Estándar hotelero", "Limpieza y mantenimiento profesional en cada estancia, check-in autónomo y atención al huésped 24/7."],
   ["Corta y mediana estancia", "Rentas por noche y estancias ejecutivas: combinamos ambas modalidades para sostener la rentabilidad todo el año."],
-  ["Esquemas claros", "Comisión del 25% mes a mes sin permanencia, o 20% con contrato anual. Sin letras chiquitas."],
+  ["Condiciones claras", "Cuota de implementación por única vez, comisión sobre utilidades y un mínimo mensual por propiedad. Los montos salen de la evaluación y te los damos por escrito antes de firmar."],
+];
+
+const CONDICIONES = [
+  ["Por única vez", "Cuota de implementación", "Cubre el montaje: fotografía profesional, construcción del anuncio en Airbnb, Booking.com, VRBO y nuestra web, cerradura y check-in autónomo, inventario pieza por pieza y alta en nuestro motor de precios. Con contrato anual se puede diferir durante el contrato."],
+  ["Mensual", "Comisión sobre utilidades", "Un porcentaje de lo que genera tu departamento, calculado después de gastos y servicios, no sobre el ingreso bruto. El porcentaje es menor con contrato anual."],
+  ["Por propiedad", "Mínimo mensual", "Mantener tu departamento publicado, con precios actualizados y atención al huésped disponible, cuesta lo mismo en un mes flojo que en uno lleno. Si la comisión del mes queda por debajo del mínimo, se cobra la diferencia."],
 ];
 
 const PILARES = [
@@ -55,7 +61,8 @@ const CONFIANZA = [
 ];
 
 const FAQ = [
-  ["¿Cuánto cobra Maia Home por la administración?", "25% mes a mes sin permanencia, o 20% con contrato anual. La comisión es sobre las utilidades, después de gastos y servicios. Sin letras chiquitas."],
+  ["¿Cuánto cobra Maia Home por la administración?", "El esquema tiene tres partes: una cuota de implementación por única vez, una comisión sobre las utilidades —después de gastos y servicios, no sobre el ingreso bruto— y un mínimo mensual por propiedad. Los montos dependen de la zona, el tamaño y el estado del departamento, así que los definimos en la propuesta después de evaluarlo y te los entregamos por escrito antes de firmar."],
+  ["¿Por qué hay un mínimo mensual?", "Porque mantener tu departamento publicado en cuatro plataformas, con precios actualizados, limpieza coordinada y atención al huésped las 24 horas, cuesta lo mismo en un mes flojo que en uno lleno. El mínimo cubre esa operación. Si la comisión del mes lo supera, no se cobra nada adicional."],
   ["¿Mi departamento debe estar amueblado?", "Sí. La renta de corta y mediana estancia requiere un espacio amueblado y listo. Si aún no lo está, te acompañamos en el diseño, montaje e inventario."],
   ["¿En qué plataformas se publica mi propiedad?", "Airbnb, Booking.com, VRBO y nuestro motor de reserva directa, además de difusión en las redes de Maia Home."],
   ["¿Cómo sé cuánto está generando mi departamento?", "Con estado de cuenta mensual, histórico y forecast de ingresos en tiempo real, y acceso de solo lectura al calendario de tu propiedad. Reportamos el 100% de las reservas."],
@@ -131,32 +138,31 @@ export default function AdministramosTuDepto() {
         <div className="mx-auto max-w-6xl px-5 py-14">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Modelo de gestión</p>
           <h2 className="mt-3 font-serif text-2xl text-neutral-900 md:text-3xl">
-            Dos esquemas, cuatro pilares, un solo estándar
+            Condiciones claras antes de firmar
           </h2>
 
-          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:max-w-3xl">
-            <div className="rounded-2xl border border-neutral-200 bg-white p-6">
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Sin permanencia · Esquema libre mensual</p>
-              <p className="mt-2 text-4xl font-bold text-neutral-900">25%</p>
-              <ul className="mt-4 space-y-1.5 text-sm text-neutral-600">
-                <li>Comisión sobre utilidades después de gastos y servicios</li>
-                <li>Cancela cuando quieras</li>
-                <li>Mismos servicios operativos incluidos</li>
-                <li>Ideal para probar el modelo</li>
-              </ul>
-            </div>
-            <div className="relative rounded-2xl border-2 border-maia-strong bg-white p-6">
-              <span className="absolute -top-3 left-6 rounded-full bg-maia-strong px-3 py-0.5 text-[11px] font-bold uppercase tracking-wide text-black">Recomendado</span>
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Contrato anual</p>
-              <p className="mt-2 text-4xl font-bold text-neutral-900">20%</p>
-              <ul className="mt-4 space-y-1.5 text-sm text-neutral-600">
-                <li>Comisión preferencial sobre utilidades</li>
-                <li>Gastos de montaje diferidos durante el contrato</li>
-                <li>Prioridad en calendario y revenue management</li>
-                <li>Mayor estabilidad de ingresos</li>
-              </ul>
-            </div>
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {CONDICIONES.map(([cuando, titulo, texto]) => (
+              <div key={titulo} className="rounded-2xl border border-neutral-200 bg-white p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">{cuando}</p>
+                <h3 className="mt-2 font-serif text-xl text-neutral-900">{titulo}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{texto}</p>
+              </div>
+            ))}
           </div>
+
+          <div className="mt-6 rounded-2xl border border-maia-strong bg-white p-6 lg:max-w-3xl">
+            <p className="text-sm leading-relaxed text-neutral-700">
+              Los tres montos dependen de tu departamento —zona, tamaño, estado y temporada— y salen de la
+              evaluación. Te los entregamos por escrito, completos, antes de firmar. Nada aparece después.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Trabajamos con contratos de seis meses o de un año. El de seis existe para que los dos midamos
+              resultados reales antes de comprometernos a más; al término revisamos condiciones.
+            </p>
+          </div>
+
+          <h3 className="mt-12 font-serif text-xl text-neutral-900">Cuatro pilares, un solo estándar</h3>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PILARES.map(([n, t, d]) => (

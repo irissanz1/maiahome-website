@@ -17,8 +17,14 @@ const BENEFITS: [string, string][] = [
   ["Full transparency", "Monthly statement, real-time income history and forecast, and read-only access to your property's calendar."],
   ["Hotel standard", "Professional cleaning and maintenance every stay, self check-in and 24/7 guest support."],
   ["Short & mid-term", "Nightly rentals and executive stays: we combine both to sustain profitability year-round."],
-  ["Clear terms", "25% commission month to month with no lock-in, or 20% with an annual contract. No fine print."],
+  ["Clear terms", "A one-time setup fee, a commission on profits and a monthly minimum per property. The amounts come out of the assessment and you get them in writing before signing."],
 ];
+const TERMS = [
+  ["One-time", "Setup fee", "Covers the setup: professional photography, building the listing on Airbnb, Booking.com, VRBO and our own site, smart lock and self check-in, piece-by-piece inventory and onboarding into our pricing engine. With an annual contract it can be spread over the term."],
+  ["Monthly", "Commission on profits", "A percentage of what your apartment earns, calculated after expenses and services, not on gross income. The percentage is lower with an annual contract."],
+  ["Per property", "Monthly minimum", "Keeping your apartment listed, priced and with guest support available costs the same in a slow month as in a full one. If a month's commission falls below the minimum, the difference is charged."],
+];
+
 const PILLARS: [string, string, string][] = [
   ["01", "Marketing", "Multi-platform listing (Airbnb, Booking.com, VRBO, own website), custom-designed listings, rate and revenue tools, and promotion across Maia Home's channels."],
   ["02", "Administration", "Real-time income history and forecast, monthly statement and management of the property's services (amenities, cleaning and maintenance)."],
@@ -50,7 +56,8 @@ const TRUST: [string, string][] = [
   ["Clear rules", "Damages covered per each platform's policies; that income goes entirely to repairs."],
 ];
 const FAQ: [string, string][] = [
-  ["How much does Maia Home charge for management?", "25% month to month with no lock-in, or 20% with an annual contract. The commission is on profits, after expenses and services. No fine print."],
+  ["How much does Maia Home charge for management?", "There are three parts: a one-time setup fee, a commission on profits —after expenses and services, not on gross income— and a monthly minimum per property. The amounts depend on the area, size and condition of the apartment, so we set them in the proposal after the assessment and give them to you in writing before signing."],
+  ["Why is there a monthly minimum?", "Because keeping your apartment listed on four platforms, with updated pricing, coordinated cleaning and 24/7 guest support, costs the same in a slow month as in a full one. The minimum covers that operation. If the month's commission exceeds it, nothing extra is charged."],
   ["Does my apartment need to be furnished?", "Yes. Short and mid-term rentals require a furnished, move-in-ready space. If it isn't yet, we help with design, setup and inventory."],
   ["Which platforms is my property listed on?", "Airbnb, Booking.com, VRBO and our direct-booking engine, plus promotion across Maia Home's channels."],
   ["How do I know how much my apartment is earning?", "With a monthly statement, real-time income history and forecast, and read-only access to your property's calendar. We report 100% of bookings."],
@@ -112,30 +119,30 @@ export default function ManageYourApartment() {
       <section className="bg-neutral-50">
         <div className="mx-auto max-w-6xl px-5 py-14">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-maia-strong">Management model</p>
-          <h2 className="mt-3 font-serif text-2xl text-neutral-900 md:text-3xl">Two plans, four pillars, one standard</h2>
-          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:max-w-3xl">
-            <div className="rounded-2xl border border-neutral-200 bg-white p-6">
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">No lock-in · Monthly plan</p>
-              <p className="mt-2 text-4xl font-bold text-neutral-900">25%</p>
-              <ul className="mt-4 space-y-1.5 text-sm text-neutral-600">
-                <li>Commission on profits after expenses and services</li>
-                <li>Cancel anytime</li>
-                <li>Same operational services included</li>
-                <li>Ideal to try the model</li>
-              </ul>
-            </div>
-            <div className="relative rounded-2xl border-2 border-maia-strong bg-white p-6">
-              <span className="absolute -top-3 left-6 rounded-full bg-maia-strong px-3 py-0.5 text-[11px] font-bold uppercase tracking-wide text-black">Recommended</span>
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Annual contract</p>
-              <p className="mt-2 text-4xl font-bold text-neutral-900">20%</p>
-              <ul className="mt-4 space-y-1.5 text-sm text-neutral-600">
-                <li>Preferential commission on profits</li>
-                <li>Setup costs deferred over the contract</li>
-                <li>Priority in calendar and revenue management</li>
-                <li>Greater income stability</li>
-              </ul>
-            </div>
+          <h2 className="mt-3 font-serif text-2xl text-neutral-900 md:text-3xl">Clear terms before you sign</h2>
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {TERMS.map(([when, title, text]) => (
+              <div key={title} className="rounded-2xl border border-neutral-200 bg-white p-6">
+                <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">{when}</p>
+                <h3 className="mt-2 font-serif text-xl text-neutral-900">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{text}</p>
+              </div>
+            ))}
           </div>
+
+          <div className="mt-6 rounded-2xl border border-maia-strong bg-white p-6 lg:max-w-3xl">
+            <p className="text-sm leading-relaxed text-neutral-700">
+              All three amounts depend on your apartment —area, size, condition and season— and come out of the
+              assessment. You get them in writing, in full, before signing. Nothing shows up later.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We work with six-month or one-year contracts. The six-month option exists so both of us can measure
+              real results before committing to more; at the end we review terms.
+            </p>
+          </div>
+
+          <h3 className="mt-12 font-serif text-xl text-neutral-900">Four pillars, one standard</h3>
+
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PILLARS.map(([n, t, d]) => (
               <div key={n} className="rounded-2xl border border-neutral-200 bg-white p-6">
