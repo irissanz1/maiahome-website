@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Property } from "@/lib/types";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
-import { formatMoney, img, imageAlt } from "@/lib/format";
+import { formatMoney, img, imageAlt, tipoLabel } from "@/lib/format";
 import { type Lang, withLang, pick } from "@/lib/i18n";
 import Placeholder from "./Placeholder";
 
@@ -50,7 +50,7 @@ export default function PropertyCard({
   const href = withLang(lang, `/depto/${property.slug}`) + (q.toString() ? `?${q.toString()}` : "");
   const hero = img(property.images[0], 800);
   const specs = [
-    property.tipo,
+    tipoLabel(property, lang),
     property.camas ? `${property.camas} ${property.camas !== 1 ? t.beds : t.bed}` : null,
     property.capacidad ? `${property.capacidad} ${t.guests}` : null,
     property.banos ? `${property.banos} ${property.banos !== 1 ? t.baths : t.bath}` : null,

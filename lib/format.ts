@@ -45,6 +45,19 @@ export function plainDescription(headline: string, descripcion: string): string 
 // Desglose de camas para la página de detalle. Devuelve p.ej.:
 // ES: "5 camas · 1 king, 4 individuales · 1 sofá cama" | EN: "5 beds · 1 king, 4 singles · 1 sofa bed"
 // Regresa null si no hay dato de camas.
+// El campo `tipo` del catálogo viene siempre en español ("2 recámaras"), así que
+// en inglés se arma desde `recamaras`. Los estudios no traen número de recámaras:
+// ahí se usa `tipo` tal cual, que ya dice "Studio".
+export function tipoLabel(p: Pick<Property, "tipo" | "recamaras">, lang: "es" | "en"): string | undefined {
+  if (p.recamaras != null && p.recamaras > 0) {
+    const n = p.recamaras;
+    return lang === "en"
+      ? `${n} bedroom${n !== 1 ? "s" : ""}`
+      : `${n} recámara${n !== 1 ? "s" : ""}`;
+  }
+  return p.tipo;
+}
+
 export function bedBreakdown(p: Property, lang: "es" | "en"): string | null {
   if (p.camas == null) return null;
   const es = lang === "es";

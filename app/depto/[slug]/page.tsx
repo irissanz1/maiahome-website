@@ -13,7 +13,7 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
-import { formatMoney, img, bedBreakdown, imageAlt, plainDescription, ratingJsonLd } from "@/lib/format";
+import { formatMoney, img, bedBreakdown, imageAlt, plainDescription, ratingJsonLd, tipoLabel } from "@/lib/format";
 
 type SP = Record<string, string | string[] | undefined>;
 const str = (v: string | string[] | undefined) => (typeof v === "string" ? v : undefined);
@@ -133,7 +133,7 @@ export default async function StayDetail({
           </p>
           <h1 className="mt-2 font-serif text-4xl text-neutral-900">{p.nombre}</h1>
           <p className="mt-1 text-neutral-500">
-            {[p.tipo, p.recamaras != null ? `${p.recamaras} rec` : null, p.banos ? `${p.banos} baño${p.banos !== 1 ? "s" : ""}` : null].filter(Boolean).join(" · ")}
+            {[tipoLabel(p, "es"), p.banos ? `${p.banos} baño${p.banos !== 1 ? "s" : ""}` : null].filter(Boolean).join(" · ")}
           </p>
           {p.capacidad != null && (
             <p className="mt-3 inline-flex flex-wrap items-center gap-x-2 rounded-lg bg-neutral-50 px-3 py-2 text-sm text-neutral-700">
