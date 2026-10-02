@@ -19,6 +19,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/formas-de-pago",
     "/facturacion",
     "/preguntas-frecuentes",
+    "/zh", // landing de prueba en chino
+
     // /check-in y /check-out: páginas operativas post-reserva → noindex, fuera del sitemap.
   ].map((path) => ({
     url: `${BASE}${path}`,
