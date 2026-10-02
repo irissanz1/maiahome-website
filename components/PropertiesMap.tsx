@@ -96,16 +96,18 @@ export default function PropertiesMap({
   showPois = false,
   poiGroupKeys,
   poiControl = true,
+  lang: langProp,
 }: {
   markers: MapMarker[];
   heightClass?: string;
   showPois?: boolean;
   poiGroupKeys?: string[]; // limita a estos grupos (por key). Si se omite, todos.
   poiControl?: boolean; // false = marcadores fijos sin panel de toggles
+  lang?: "es" | "en"; // forzar idioma (la landing /zh lo pone en inglés)
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
-  const lang = langFromPath(usePathname());
+  const lang = langProp ?? langFromPath(usePathname());
 
   useEffect(() => {
     let cancelled = false;

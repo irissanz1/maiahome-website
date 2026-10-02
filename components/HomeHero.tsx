@@ -23,11 +23,16 @@ const HT = {
     sub: "Premium stays in Polanco, Condesa and Houston. Book directly with Maia Home.",
     location: "Location", allAreas: "All areas", checkin: "Check-in", checkout: "Check-out",
     guests: "Guests", guest1: "guest", guestN: "guests", search: "Search", less: "Less", more: "More", photo: "Photo" },
+  // Landing de prueba en chino (/zh): mismo hero, idioma distinto.
+  zh: { eyebrow: "墨西哥城 · 休斯敦", title1: "精装公寓，住得", title2: "与众不同",
+    sub: "波朗科、孔德萨与休斯敦的优质公寓。直接向 Maia Home 预订。",
+    location: "地点", allAreas: "全部区域", checkin: "入住", checkout: "退房",
+    guests: "人数", guest1: "人", guestN: "人", search: "搜索", less: "减少", more: "增加", photo: "照片" },
 } as const;
 
-export default function HomeHero() {
+export default function HomeHero({ lang: langProp }: { lang?: "es" | "en" | "zh" } = {}) {
   const router = useRouter();
-  const lang = langFromPath(usePathname());
+  const lang = langProp ?? langFromPath(usePathname());
   const h = HT[lang];
   const [i, setI] = useState(0);
   const [loc, setLoc] = useState("");
@@ -50,7 +55,7 @@ export default function HomeHero() {
     if (checkin) p.set("checkin", checkin);
     if (checkout) p.set("checkout", checkout);
     if (guests) p.set("guests", String(guests));
-    router.push(withLang(lang, "/departamentos") + `?${p.toString()}`);
+    router.push(withLang(lang === "zh" ? "en" : lang, "/departamentos") + `?${p.toString()}`);
   }
 
   const field =
