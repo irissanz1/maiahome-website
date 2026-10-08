@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 // Ligas de pago reales (tomadas de la página de pago de Maia Home).
 const LIGA_WHATSAPP = whatsappUrl("Hola MaiaHome, ¿me pueden enviar una liga para pago, por favor?");
-const STRIPE_TARJETA = "https://buy.stripe.com/28o4gicWt1yMbpSaEH"; // liga de pago confirmada por Iris (2026-09-03)
+const STRIPE_TARJETA = "https://buy.stripe.com/28E5kDcA53NIcTjaiwaVa0g"; // liga nueva con Alipay y WeChat Pay (2026-10-08)
 
 const CONFIANZA = [
   ["Pago 100% seguro", "Los cobros con tarjeta se procesan con Stripe en un entorno cifrado (SSL). Tus datos de tarjeta nunca se almacenan en nuestros servidores."],

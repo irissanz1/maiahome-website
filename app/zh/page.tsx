@@ -139,7 +139,7 @@ export default async function ZhLanding() {
             <b>服务语言：</b>我们的团队以英文和西班牙文服务，目前没有中文客服。网站其余页面也是西班牙文与英文。
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            <b>付款方式：</b>接受国际信用卡（Visa、Mastercard、American Express）。支付宝与微信支付正在开通中。
+            <b>付款方式：</b>接受国际信用卡（Visa、Mastercard、American Express），也支持支付宝与微信支付（以美元支付时）。
           </p>
         </div>
       </section>

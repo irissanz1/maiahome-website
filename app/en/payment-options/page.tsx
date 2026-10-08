@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/en/payment-options", languages: { es: "/formas-de-pago", en: "/en/payment-options" } },
 };
 
-const STRIPE_TARJETA = "https://buy.stripe.com/28o4gicWt1yMbpSaEH";
+const STRIPE_TARJETA = "https://buy.stripe.com/28E5kDcA53NIcTjaiwaVa0g";
 const CONFIANZA = [
   ["100% secure payment", "Card charges are processed by Stripe in an encrypted environment (SSL). Your card details are never stored on our servers."],
   ["No platform fees", "Booking directly with Maia Home gets you the best rate, with no middleman charges."],
