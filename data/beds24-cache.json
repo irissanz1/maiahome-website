@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:11:13.220Z",
+  "generatedAt": "2026-10-16T22:23:42.415Z",
   "complete": true,
   "incompleteRooms": [],
   "rooms": {
@@ -2208,7 +2208,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "395664": {
       "beds24PropertyId": 182463,
@@ -4415,7 +4415,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "395667": {
       "beds24PropertyId": 182466,
@@ -6622,7 +6622,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "395668": {
       "beds24PropertyId": 182467,
@@ -6652,7 +6652,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 168
+          "price": 158
         },
         "2026-10-20": {
           "available": true,
@@ -6712,7 +6712,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 413
+          "price": 412
         },
         "2026-10-30": {
           "available": false,
@@ -6742,7 +6742,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 349
+          "price": 350
         },
         "2026-11-04": {
           "available": true,
@@ -6760,7 +6760,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 319
+          "price": 320
         },
         "2026-11-07": {
           "available": false,
@@ -6970,13 +6970,13 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 327
+          "price": 328
         },
         "2026-12-12": {
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 326
+          "price": 327
         },
         "2026-12-13": {
           "available": true,
@@ -6994,7 +6994,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 220
+          "price": 219
         },
         "2026-12-16": {
           "available": true,
@@ -7036,7 +7036,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 367
+          "price": 368
         },
         "2026-12-23": {
           "available": true,
@@ -7072,7 +7072,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 495
+          "price": 496
         },
         "2026-12-29": {
           "available": true,
@@ -7102,13 +7102,13 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 334
+          "price": 333
         },
         "2027-01-03": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 246
+          "price": 245
         },
         "2027-01-04": {
           "available": true,
@@ -7474,7 +7474,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 337
+          "price": 336
         },
         "2027-03-06": {
           "available": true,
@@ -7522,13 +7522,13 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 429
+          "price": 430
         },
         "2027-03-14": {
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 440
+          "price": 441
         },
         "2027-03-15": {
           "available": true,
@@ -7558,7 +7558,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 2,
-          "price": 431
+          "price": 432
         },
         "2027-03-20": {
           "available": true,
@@ -7570,7 +7570,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 376
+          "price": 377
         },
         "2027-03-22": {
           "available": true,
@@ -7876,7 +7876,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 259
+          "price": 258
         },
         "2027-05-12": {
           "available": true,
@@ -8422,7 +8422,7 @@
           "available": true,
           "numAvail": 1,
           "minStay": 1,
-          "price": 290
+          "price": 289
         },
         "2027-08-11": {
           "available": true,
@@ -8829,7 +8829,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "418925": {
       "beds24PropertyId": 194738,
@@ -11036,7 +11036,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "418926": {
       "beds24PropertyId": 194739,
@@ -13243,7 +13243,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "418927": {
       "beds24PropertyId": 194740,
@@ -15450,7 +15450,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "418928": {
       "beds24PropertyId": 194741,
@@ -17657,7 +17657,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "429088": {
       "beds24PropertyId": 200307,
@@ -19864,7 +19864,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "429313": {
       "beds24PropertyId": 200452,
@@ -22071,7 +22071,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "429314": {
       "beds24PropertyId": 200453,
@@ -24278,7 +24278,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "461199": {
       "beds24PropertyId": 216896,
@@ -26485,7 +26485,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "462994": {
       "beds24PropertyId": 217773,
@@ -28692,7 +28692,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "466958": {
       "beds24PropertyId": 220105,
@@ -30899,7 +30899,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "469041": {
       "beds24PropertyId": 221189,
@@ -33106,7 +33106,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "472123": {
       "beds24PropertyId": 222112,
@@ -35313,7 +35313,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "489020": {
       "beds24PropertyId": 230828,
@@ -37520,7 +37520,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "489635": {
       "beds24PropertyId": 231191,
@@ -39727,7 +39727,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "489637": {
       "beds24PropertyId": 231193,
@@ -41934,7 +41934,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "489638": {
       "beds24PropertyId": 231194,
@@ -44141,7 +44141,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "494785": {
       "beds24PropertyId": 233801,
@@ -46348,7 +46348,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506100": {
       "beds24PropertyId": 239803,
@@ -48555,7 +48555,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506106": {
       "beds24PropertyId": 239805,
@@ -50762,7 +50762,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506118": {
       "beds24PropertyId": 239813,
@@ -52969,7 +52969,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506119": {
       "beds24PropertyId": 239814,
@@ -55176,7 +55176,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506193": {
       "beds24PropertyId": 239877,
@@ -57383,7 +57383,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "506198": {
       "beds24PropertyId": 239880,
@@ -59590,7 +59590,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "625019": {
       "beds24PropertyId": 299461,
@@ -59695,26 +59695,26 @@
           "price": 283
         },
         "2026-11-01": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 181
         },
         "2026-11-02": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 119
         },
         "2026-11-03": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 139
         },
         "2026-11-04": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 115
         },
@@ -61797,7 +61797,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "625022": {
       "beds24PropertyId": 299463,
@@ -64004,7 +64004,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "625023": {
       "beds24PropertyId": 299464,
@@ -66211,7 +66211,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "625024": {
       "beds24PropertyId": 299465,
@@ -68418,7 +68418,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "626201": {
       "beds24PropertyId": 300033,
@@ -70625,7 +70625,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "626202": {
       "beds24PropertyId": 300034,
@@ -72832,7 +72832,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "626203": {
       "beds24PropertyId": 300035,
@@ -75039,7 +75039,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "626206": {
       "beds24PropertyId": 300038,
@@ -77246,7 +77246,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "639778": {
       "beds24PropertyId": 306961,
@@ -79453,7 +79453,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "669908": {
       "beds24PropertyId": 322312,
@@ -81660,7 +81660,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "704198": {
       "beds24PropertyId": 340718,
@@ -81766,25 +81766,25 @@
         },
         "2026-11-01": {
           "available": false,
-          "numAvail": 0,
+          "numAvail": -1,
           "minStay": 1,
           "price": 458
         },
         "2026-11-02": {
           "available": false,
-          "numAvail": 0,
+          "numAvail": -1,
           "minStay": 1,
           "price": 337
         },
         "2026-11-03": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 258
         },
         "2026-11-04": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 220
         },
@@ -83867,7 +83867,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "704200": {
       "beds24PropertyId": 340720,
@@ -86074,7 +86074,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "704201": {
       "beds24PropertyId": 340721,
@@ -88281,7 +88281,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "715030": {
       "beds24PropertyId": 346349,
@@ -88297,55 +88297,55 @@
         },
         "2026-10-17": {
           "available": false,
-          "numAvail": -4,
+          "numAvail": -5,
           "minStay": 2,
           "price": 874
         },
         "2026-10-18": {
           "available": false,
-          "numAvail": -3,
+          "numAvail": -4,
           "minStay": 2,
           "price": 708
         },
         "2026-10-19": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 680
         },
         "2026-10-20": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 680
         },
         "2026-10-21": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 725
         },
         "2026-10-22": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1068
         },
         "2026-10-23": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1484
         },
         "2026-10-24": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1399
         },
         "2026-10-25": {
           "available": false,
-          "numAvail": -2,
+          "numAvail": -3,
           "minStay": 2,
           "price": 1211
         },
@@ -88387,25 +88387,25 @@
         },
         "2026-11-01": {
           "available": false,
-          "numAvail": -4,
+          "numAvail": -5,
           "minStay": 2,
           "price": 1992
         },
         "2026-11-02": {
           "available": false,
-          "numAvail": -3,
+          "numAvail": -4,
           "minStay": 2,
           "price": 1280
         },
         "2026-11-03": {
           "available": false,
-          "numAvail": -3,
+          "numAvail": -4,
           "minStay": 2,
           "price": 1361
         },
         "2026-11-04": {
           "available": false,
-          "numAvail": -3,
+          "numAvail": -4,
           "minStay": 2,
           "price": 800
         },
@@ -90488,7 +90488,7 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     },
     "740707": {
       "beds24PropertyId": 359294,
@@ -92695,12 +92695,12 @@
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-10-16T19:11:13.220Z"
+      "updatedAt": "2026-10-16T22:23:42.415Z"
     }
   },
   "bookingsOverlay": {
-    "appliedAt": "2026-10-16T19:21:06.488Z",
-    "bookings": 97,
+    "appliedAt": "2026-10-16T22:32:32.365Z",
+    "bookings": 99,
     "reconstructed": 0
   }
 }
