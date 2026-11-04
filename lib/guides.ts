@@ -76,6 +76,9 @@ export interface Guide {
   checkout?: { time: string; note: BL; items: { title: BL; desc: BL }[] };
   // Enriquecido del FAQ v56 (nivel edificio): WiFi, clima, reglas/seguridad, horarios.
   wifi?: BL;
+  tv?: BL;
+  youtube?: BL;
+  netflix?: BL;
   climate?: BL;
   amenityRules?: BL;
   schedule?: { checkOut: string; checkIn: string; earlyCheckIn: BL; lateCheckOut: BL; luggage: BL };

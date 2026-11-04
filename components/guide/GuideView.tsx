@@ -46,7 +46,7 @@ const T = {
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
-    wifiLabel: "Wi-Fi", climateLabel: "Clima", rulesLabel: "Reglas y seguridad", flexLabel: "Horarios flexibles",
+    wifiLabel: "Wi-Fi", tvLabel: "TV y streaming", youtubeLabel: "YouTube en la TV", netflixLabel: "Netflix", climateLabel: "Clima", rulesLabel: "Reglas y seguridad", flexLabel: "Horarios flexibles",
     exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
     exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir", checkoutTimeLabel: "Hora de salida",
     checkoutTime: "Si necesitas salir más tarde, avísanos con anticipación y con gusto lo revisamos.",
@@ -94,7 +94,7 @@ const T = {
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
-    wifiLabel: "Wi-Fi", climateLabel: "Climate", rulesLabel: "Rules & security", flexLabel: "Flexible hours",
+    wifiLabel: "Wi-Fi", tvLabel: "TV & streaming", youtubeLabel: "YouTube on the TV", netflixLabel: "Netflix", climateLabel: "Climate", rulesLabel: "Rules & security", flexLabel: "Flexible hours",
     exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
     exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave", checkoutTimeLabel: "Check-out time",
     checkoutTime: "If you need to leave later, let us know in advance and we'll gladly try to help.",
@@ -464,12 +464,15 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
       </section>
 
       {/* Manual de la casa */}
-      {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.climate || guide.amenityRules) && (
+      {(guide.amenities.length > 0 || pick(lang, guide.kit) || pick(lang, guide.cleaning) || guide.wifi || guide.tv || guide.youtube || guide.netflix || guide.climate || guide.amenityRules) && (
         <section id="house" className="scroll-mt-32 pt-10">
           <SectionTitle icon="home">{t.house}</SectionTitle>
-          {(guide.wifi || guide.climate || guide.amenityRules) && (
+          {(guide.wifi || guide.tv || guide.youtube || guide.netflix || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
+              {guide.tv && <ManualCard title={t.tvLabel} icon="tv">{rich(pick(lang, guide.tv))}</ManualCard>}
+              {guide.youtube && <ManualCard title={t.youtubeLabel} icon="play">{rich(pick(lang, guide.youtube))}</ManualCard>}
+              {guide.netflix && <ManualCard title={t.netflixLabel} icon="play">{rich(pick(lang, guide.netflix))}</ManualCard>}
               {guide.climate && <ManualCard title={t.climateLabel} icon="temp">{pick(lang, guide.climate)}</ManualCard>}
               {unitAware && (
                 <ManualCard title={t.petsLabel} icon="paw">
@@ -634,6 +637,7 @@ const ICONS: Record<string, React.ReactNode> = {
   paw: <><circle cx="8" cy="9" r="1.4" /><circle cx="16" cy="9" r="1.4" /><circle cx="5.5" cy="13" r="1.4" /><circle cx="18.5" cy="13" r="1.4" /><path d="M12 13.5c-2.2 0-3.8 1.6-3.8 3.4 0 1.2 1 2 2.2 2 .7 0 1.1-.4 1.6-.4s.9.4 1.6.4c1.2 0 2.2-.8 2.2-2 0-1.8-1.6-3.4-3.8-3.4Z" /></>,
   bed: <path d="M2 5v15M2 10h18a2 2 0 0 1 2 2v8M2 16h20M6 10V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />,
   tv: <><rect x="3" y="6.5" width="18" height="12" rx="2" /><path d="m8 3 4 3 4-3" /></>,
+  play: <><circle cx="12" cy="12" r="9" /><path d="M10.5 9.2v5.6l4.4-2.8-4.4-2.8Z" /></>,
   info: <><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8v.2" /></>,
   // Puntos de check-out:
   trash: <path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M6 7l1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13M10 11v6M14 11v6" />,

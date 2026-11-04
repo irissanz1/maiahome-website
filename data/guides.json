@@ -92,18 +92,6 @@
    },
    {
     "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
-   },
-   {
-    "title": {
      "es": "En caso de que falte luz en alguna zona",
      "en": "In case there is a lack of light in any area"
     },
@@ -944,6 +932,18 @@
     "es": "Hola, estoy en Bg Polanco (Lago Alberto 300) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Bg Polanco (Lago Alberto 300) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -1036,18 +1036,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -1619,6 +1607,18 @@
     "es": "Hola, estoy en Tamayo (Tennyson 312) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Tamayo (Tennyson 312) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -1711,18 +1711,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -2007,6 +1995,18 @@
   "wifi": {
    "es": "La red Wi-Fi aparece como **MaiaHome Aurora**; al conectarte te lleva al portal de registro. Internet Totalplay, hasta 300 Mbps. La contraseña te la enviamos por correo con tus datos de acceso.",
    "en": "The Wi-Fi network shows up as **MaiaHome Aurora**; connecting takes you to the registration portal. Totalplay internet, up to 300 Mbps. We email you the password with your access details."
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   },
   "schedule": {
    "checkOut": "12:00",
@@ -2398,18 +2398,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -3238,6 +3226,18 @@
     "es": "Hola, estoy en Leonora (Jorge Bernard Shaw 34) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Leonora (Jorge Bernard Shaw 34) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -3318,18 +3318,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -5204,6 +5192,18 @@
     "es": "Hola, estoy en Coco (Av. Baja California 301) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Coco (Av. Baja California 301) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "Las pantallas son inteligentes y están conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The screens are smart TVs connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -5296,18 +5296,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -5890,6 +5878,18 @@
     "es": "Hola, estoy en Kahlo (Prosperidad 17) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Kahlo (Prosperidad 17) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -5970,18 +5970,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -7971,6 +7959,18 @@
     "es": "Hola, estoy en Luz María (Lamartine 115) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Luz María (Lamartine 115) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "Las pantallas son inteligentes y están conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas; algunos departamentos además tienen TV de cable. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The screens are smart TVs connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps; some apartments also have cable TV. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -8051,18 +8051,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -8752,6 +8740,18 @@
     "es": "Hola, estoy en Laila Casa (Lamartine 115) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Laila Casa (Lamartine 115) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -8844,18 +8844,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -9415,6 +9403,18 @@
     "es": "Hola, estoy en Cordelia (Solón 210) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Cordelia (Solón 210) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -9495,18 +9495,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Televisión y Sistema de Cable",
-     "en": "Television and Cable System"
-    },
-    "description": {
-     "es": "El departamento tiene un servicio de TV de cable y una Televisión inteligente que se conecta al Internet y te permite conectarte a tu cuenta de Netflix.",
-     "en": "The apartment has a cable TV service and a Smart TV that connects to the Internet and allows you to connect to your Netflix account."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_610ba0b266c143b1be0702de5b41fe24~mv2.jpg",
-    "order": 40.0
    },
    {
     "title": {
@@ -10338,6 +10326,18 @@
     "es": "Hola, estoy en Horacio (Privada de Horacio 13) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Horacio (Privada de Horacio 13) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "El departamento tiene TV de cable y pantallas inteligentes conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The apartment has cable TV and smart screens connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  },
  {
@@ -10819,6 +10819,18 @@
     "es": "Hola, estoy en Augustine (6626 St Augustine St) y no puedo entrar. Mi reserva es: ",
     "en": "Hi, I'm at Augustine (6626 St Augustine St) and can't get in. My booking is: "
    }
+  },
+  "tv": {
+   "es": "Las pantallas son inteligentes y están conectadas a internet, así que puedes entrar con tu propia cuenta a Netflix, YouTube y las demás apps instaladas. Abajo te dejamos cómo conectarte rápido a las dos más usadas. **Al salir, cierra sesión en las apps donde hayas entrado.**",
+   "en": "The screens are smart TVs connected to the internet, so you can use your own account on Netflix, YouTube and the other installed apps. Below you'll find how to connect quickly to the two most used ones. **Before you leave, sign out of any app you signed in to.**"
+  },
+  "youtube": {
+   "es": "Las pantallas son smart. Para ver YouTube con tu cuenta, si el botón de transmitir no encuentra la TV, usa el código: va por internet y tarda segundos. **En la TV:** abre YouTube y entra a Configuración → **Vincular con código de TV**. **En tu celular:** escribe ese código en [youtube.com/pair](https://www.youtube.com/pair), o en la app de YouTube en tu foto → Configuración → Ver en TV. Eliges desde el celular y se reproduce en la pantalla, con tu cuenta y tu historial, y tu sesión no queda abierta en la TV. Si prefieres navegar en la pantalla grande, inicia sesión con el código de [youtube.com/activate](https://www.youtube.com/activate) y **cierra sesión antes de irte**.",
+   "en": "The TVs are smart TVs. To watch YouTube with your own account, if the cast button can't find the TV, use the code instead: it works over the internet and takes seconds. **On the TV:** open YouTube and go to Settings → **Link with TV code**. **On your phone:** enter that code at [youtube.com/pair](https://www.youtube.com/pair), or in the YouTube app under your photo → Settings → Watch on TV. You pick what to watch from your phone and it plays on the screen, with your account and your history, and your session is not left open on the TV. If you'd rather browse on the big screen, sign in with the code at [youtube.com/activate](https://www.youtube.com/activate) and **sign out before you leave**."
+  },
+  "netflix": {
+   "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
+   "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
   }
  }
 ]
