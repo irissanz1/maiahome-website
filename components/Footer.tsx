@@ -15,6 +15,7 @@ const COLS = [
       { p: "/recorridos-departamentos", es: "Tours virtuales", en: "Virtual tours" },
       { p: "/tours-mexico-city", es: "Tours y experiencias", en: "Tours & experiences" },
       { p: "/blog", es: "Guía de la ciudad", en: "City guide" },
+      { p: "https://explore.maiahome.mx", es: "Guía de barrios — EXPLORE", en: "Neighborhood guide — EXPLORE" },
     ],
   },
   {
@@ -105,13 +106,28 @@ export default function Footer() {
               <div key={col.title.es}>
                 <h3 className="mb-3 font-semibold text-maia-yellow">{lang === "en" ? col.title.en : col.title.es}</h3>
                 <ul className="space-y-2 text-neutral-400">
-                  {col.items.map((it) => (
-                    <li key={it.p}>
-                      <Link href={withLang(lang, it.p)} className="hover:text-maia-yellow">
-                        {lang === "en" ? it.en : it.es}
-                      </Link>
-                    </li>
-                  ))}
+                  {col.items.map((it) => {
+                    const label = lang === "en" ? it.en : it.es;
+                    const external = it.p.startsWith("http");
+                    return (
+                      <li key={it.p}>
+                        {external ? (
+                          <a
+                            href={lang === "en" ? `${it.p}/en/` : `${it.p}/`}
+                            target="_blank"
+                            rel="noopener"
+                            className="hover:text-maia-yellow"
+                          >
+                            {label}
+                          </a>
+                        ) : (
+                          <Link href={withLang(lang, it.p)} className="hover:text-maia-yellow">
+                            {label}
+                          </Link>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
