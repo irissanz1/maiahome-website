@@ -497,7 +497,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                     <span className="text-maia-strong">{<Icon name={amenityIcon(a.title.es)} />}</span>
                     {pick(lang, a.title)}
                   </p>
-                  <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">{pick(lang, a.description)}</p>
+                  <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">{rich(pick(lang, a.description))}</p>
                 </div>
               ))}
             </div>
@@ -666,7 +666,7 @@ function amenityIcon(titleEs: string): string {
   const s = (titleEs || "").toLowerCase();
   if (s.includes("agua")) return "droplet";
   if (s.includes("aire aconds") || s.includes("aire acond")) return "snow";
-  if (s.includes("alberca") || s.includes("gimnasio") || s.includes("gym")) return "waves";
+  if (s.includes("alberca") || s.includes("gimnasio") || s.includes("gym") || s.includes("jacuzzi")) return "waves";
   if (s.includes("cocina") || s.includes("lavander")) return "utensils";
   if (s.includes("emergencia")) return "alert";
   if (s.includes("luz")) return "bolt";
