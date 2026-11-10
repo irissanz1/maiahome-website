@@ -376,10 +376,14 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           }
           return <div className="mt-1">{renderMode(nc ? "noCar" : "byCar")}</div>;
         })()}
-        {guide.schedule && ((!unitAware && pick(lang, guide.schedule.earlyCheckIn)) || pick(lang, guide.schedule.luggage)) && (
+        {guide.schedule && (unitAware || pick(lang, guide.schedule.earlyCheckIn) || pick(lang, guide.schedule.luggage)) && (
           <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
             <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
-            {!unitAware && pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{pick(lang, guide.schedule.earlyCheckIn)}</p>}
+            {unitAware ? (
+              <p className="mt-1">{unit ? bold(pick(lang, unit.earlyCheckIn) || pick(lang, guide.schedule.earlyCheckIn)) : t.variesByUnit}</p>
+            ) : (
+              pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{bold(pick(lang, guide.schedule.earlyCheckIn))}</p>
+            )}
             {pick(lang, guide.schedule.luggage) && <p className="mt-1">{pick(lang, guide.schedule.luggage)}</p>}
           </div>
         )}
@@ -601,10 +605,10 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         </div>
         <p className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">{t.checkoutCare}</p>
         {unitAware ? (
-          <p className="mt-3 text-sm text-neutral-500">{unit ? pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut) : t.variesByUnit}</p>
+          <p className="mt-3 text-sm text-neutral-500">{unit ? bold(pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut)) : t.variesByUnit}</p>
         ) : (
           guide.schedule && pick(lang, guide.schedule.lateCheckOut) && (
-            <p className="mt-3 text-sm text-neutral-500">{pick(lang, guide.schedule.lateCheckOut)}</p>
+            <p className="mt-3 text-sm text-neutral-500">{bold(pick(lang, guide.schedule.lateCheckOut))}</p>
           )
         )}
       </section>

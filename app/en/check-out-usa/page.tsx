@@ -36,10 +36,16 @@ export default function CheckOutUsa() {
         </div>
         <div className="rounded-2xl border border-neutral-200 p-5">
           <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Late check-out</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Ask us</p>
-          <p className="mt-1 text-xs text-neutral-500">Subject to availability.</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Until 3:00 PM</p>
+          <p className="mt-1 text-xs text-neutral-500">Charged by the hour, subject to availability.</p>
         </div>
       </div>
+      <p className="mt-4 max-w-3xl rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
+        Late check-out is charged <strong>by the hour</strong> and the rate depends on your apartment: you&apos;ll find
+        it in your apartment&apos;s guide. Letting us know <strong>two hours or more ahead</strong> costs less, and the
+        total never exceeds the price of an extra night. If you need to stay past 3:00 PM, booking the extra night is
+        the better option. You can also leave your luggage with us at no cost until around 2:30 PM.
+      </p>
 
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-neutral-900">Before you leave, please check:</h2>

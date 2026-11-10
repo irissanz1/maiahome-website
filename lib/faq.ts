@@ -12,8 +12,8 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: { es: "¿A qué hora es el check-in y el check-out?", en: "What are the check-in and check-out times?" },
         a: {
-          es: "En CDMX el check-in es a partir de las 15:00 y el check-out a las 12:00. En Houston el check-in es a partir de las 15:30 y el check-out a las 10:00. Si necesitas un horario flexible, avísanos con anticipación y con gusto lo revisamos según disponibilidad.",
-          en: "In Mexico City check-in is from 3:00 PM and check-out is at 12:00 PM. In Houston check-in is from 3:30 PM and check-out is at 10:00 AM. If you need flexible timing, let us know in advance and we'll gladly check availability.",
+          es: "En CDMX el check-in es a partir de las 15:00 y el check-out a las 12:00. En Houston el check-in es a partir de las 15:30 y el check-out a las 10:00. La entrada anticipada y la salida tardía están sujetas a disponibilidad y tienen costo: se cobran por hora y la tarifa depende del departamento, así que la ves en la guía del tuyo. La salida tardía llega hasta las 15:00 como máximo, y avisarnos con dos horas o más de anticipación sale más barato. Si necesitas entrar antes de las 9:00 o quedarte más allá de las 15:00, se reserva una noche adicional. Como alternativa sin costo, siempre puedes dejarnos el equipaje.",
+          en: "In Mexico City check-in is from 3:00 PM and check-out is at 12:00 PM. In Houston check-in is from 3:30 PM and check-out is at 10:00 AM. Early check-in and late check-out are subject to availability and carry a fee: they are charged by the hour and the rate depends on the apartment, so you will find it in your apartment's guide. Late check-out runs until 3:00 PM at the latest, and letting us know two hours or more ahead costs less. If you need to come in before 9:00 AM or stay past 3:00 PM, an extra night is booked instead. As a free alternative, you can always leave your luggage with us.",
         },
       },
       {

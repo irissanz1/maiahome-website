@@ -37,10 +37,16 @@ export default function CheckOutUsa() {
         </div>
         <div className="rounded-2xl border border-neutral-200 p-5">
           <p className="text-xs font-medium uppercase tracking-wide text-neutral-500">Late check-out</p>
-          <p className="mt-1 text-2xl font-bold text-neutral-900">Consúltanos</p>
-          <p className="mt-1 text-xs text-neutral-500">Sujeto a disponibilidad.</p>
+          <p className="mt-1 text-2xl font-bold text-neutral-900">Hasta 15:00 h</p>
+          <p className="mt-1 text-xs text-neutral-500">Se cobra por hora, sujeto a disponibilidad.</p>
         </div>
       </div>
+      <p className="mt-4 max-w-3xl rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
+        La salida tardía se cobra <strong>por hora</strong> y la tarifa depende de tu departamento: la ves en la guía
+        de tu departamento. Avisarnos con <strong>dos horas o más de anticipación</strong> sale más barato, y el total
+        nunca pasa del precio de una noche extra. Si necesitas quedarte más allá de las 15:00, lo que conviene es
+        reservar la noche adicional. También puedes dejarnos tu equipaje sin costo hasta cerca de las 14:30.
+      </p>
 
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-neutral-900">Antes de salir, por favor revisa:</h2>
