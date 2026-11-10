@@ -48,7 +48,8 @@ export default function CheckOut() {
         La salida tardía se cobra <strong>por hora</strong> y la tarifa depende de tu departamento: la ves en la guía
         de tu departamento. Avisarnos con <strong>dos horas o más de anticipación</strong> sale más barato, y el total
         nunca pasa del precio de una noche extra. Si necesitas quedarte más allá de las 15:00, lo que conviene es
-        reservar la noche adicional. También puedes dejarnos tu equipaje sin costo hasta cerca de las 14:30.
+        reservar la noche adicional. También puedes dejarnos tu equipaje sin costo mientras el equipo de limpieza hace el
+        departamento, hasta cerca de las 14:30.
       </p>
 
       <section className="mt-10">

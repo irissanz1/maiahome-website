@@ -47,7 +47,8 @@ export default function CheckOut() {
         Late check-out is charged <strong>by the hour</strong> and the rate depends on your apartment: you&apos;ll find
         it in your apartment&apos;s guide. Letting us know <strong>two hours or more ahead</strong> costs less, and the
         total never exceeds the price of an extra night. If you need to stay past 3:00 PM, booking the extra night is
-        the better option. You can also leave your luggage with us at no cost until around 2:30 PM.
+        the better option. You can also leave your luggage with us at no cost while the cleaning team gets the
+        apartment ready, until around 2:30 PM.
       </p>
 
       <section className="mt-10">

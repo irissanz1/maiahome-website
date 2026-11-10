@@ -26,8 +26,8 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: { es: "¿Puedo guardar el equipaje antes del check-in o después del check-out?", en: "Can I store luggage before check-in or after check-out?" },
         a: {
-          es: "Sí, sin costo: antes del check-in generalmente desde las 12:00 si el departamento ya está listo, y después del check-out hasta cerca de las 14:00–14:30. No ofrecemos resguardo de equipaje por varios días; para eso te sugerimos lockers externos.",
-          en: "Yes, free of charge: before check-in usually from 12:00 PM if the apartment is ready, and after check-out until around 2:00–2:30 PM. We don't offer multi-day luggage storage; for that we suggest external lockers.",
+          es: "Sí, sin costo: antes del check-in generalmente desde las 12:00 si el departamento ya está listo, y después del check-out puedes dejarlo mientras el equipo de limpieza hace el departamento, hasta cerca de las 14:00–14:30. No ofrecemos resguardo de equipaje por varios días; para eso te sugerimos lockers externos.",
+          en: "Yes, free of charge: before check-in usually from 12:00 PM if the apartment is ready, and after check-out you can leave it while the cleaning team gets the apartment ready, until around 2:00–2:30 PM. We don't offer multi-day luggage storage; for that we suggest external lockers.",
         },
       },
       {
