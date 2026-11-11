@@ -380,7 +380,14 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           <div className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">
             <p className="flex items-center gap-1.5 font-semibold text-neutral-900"><Icon name="luggage" className="h-4 w-4 text-maia-strong" />{t.flexLabel}</p>
             {unitAware ? (
-              <p className="mt-1">{unit ? bold(pick(lang, unit.earlyCheckIn) || pick(lang, guide.schedule.earlyCheckIn)) : t.variesByUnit}</p>
+              unit ? (
+                <p className="mt-1">{bold(pick(lang, unit.earlyCheckIn) || pick(lang, guide.schedule.earlyCheckIn))}</p>
+              ) : (
+                <>
+                  <p className="mt-1">{bold(pick(lang, guide.schedule.earlyCheckIn))}</p>
+                  <p className="mt-1 text-neutral-500">{t.variesByUnit}</p>
+                </>
+              )
             ) : (
               pick(lang, guide.schedule.earlyCheckIn) && <p className="mt-1">{bold(pick(lang, guide.schedule.earlyCheckIn))}</p>
             )}
@@ -605,7 +612,14 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
         </div>
         <p className="mt-4 rounded-2xl bg-neutral-50 p-4 text-sm text-neutral-600">{t.checkoutCare}</p>
         {unitAware ? (
-          <p className="mt-3 text-sm text-neutral-500">{unit ? bold(pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut)) : t.variesByUnit}</p>
+          unit ? (
+            <p className="mt-3 text-sm text-neutral-500">{bold(pick(lang, unit.lateCheckOut) || pick(lang, guide.schedule?.lateCheckOut))}</p>
+          ) : (
+            <div className="mt-3 text-sm text-neutral-500">
+              <p>{bold(pick(lang, guide.schedule?.lateCheckOut))}</p>
+              <p className="mt-1">{t.variesByUnit}</p>
+            </div>
+          )
         ) : (
           guide.schedule && pick(lang, guide.schedule.lateCheckOut) && (
             <p className="mt-3 text-sm text-neutral-500">{bold(pick(lang, guide.schedule.lateCheckOut))}</p>

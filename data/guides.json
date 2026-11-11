@@ -449,8 +449,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -460,8 +460,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -579,8 +579,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora · sujeto a disponibilidad",
+        "en": "30 USD per hour · subject to availability"
        }
       },
       {
@@ -590,8 +590,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
+        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
        }
       },
       {
@@ -709,8 +709,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -720,8 +720,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -923,8 +923,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -1396,8 +1396,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -1407,8 +1407,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -1610,8 +1610,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -2095,8 +2095,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -2106,8 +2106,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -2309,8 +2309,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -2758,8 +2758,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -2769,8 +2769,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -2888,8 +2888,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -2899,8 +2899,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -3015,8 +3015,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -3026,8 +3026,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -3229,8 +3229,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 60 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 60 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -3318,18 +3318,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
     "order": 10.0
-   },
-   {
-    "title": {
-     "es": "Elevador",
-     "en": "Elevator"
-    },
-    "description": {
-     "es": "El edificio no cuenta con elevador.",
-     "en": "The building does not have an elevator."
-    },
-    "imageUrl": null,
-    "order": 15
    },
    {
     "title": {
@@ -3449,8 +3437,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -3460,8 +3448,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -3590,8 +3578,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -3601,8 +3589,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -3731,8 +3719,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "30 USD por hora · sujeto a disponibilidad",
+        "en": "30 USD per hour · subject to availability"
        }
       },
       {
@@ -3742,8 +3730,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
+        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
        }
       },
       {
@@ -3872,8 +3860,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -3883,8 +3871,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4013,8 +4001,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -4024,8 +4012,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4154,8 +4142,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -4165,8 +4153,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4295,8 +4283,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -4306,8 +4294,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -4436,8 +4424,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -4447,8 +4435,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4577,8 +4565,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -4588,8 +4576,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4718,8 +4706,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -4729,8 +4717,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -4859,8 +4847,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -4870,8 +4858,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -5000,8 +4988,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -5011,8 +4999,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -5219,8 +5207,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -5308,18 +5296,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
     "order": 10.0
-   },
-   {
-    "title": {
-     "es": "Elevador",
-     "en": "Elevator"
-    },
-    "description": {
-     "es": "El edificio no cuenta con elevador.",
-     "en": "The building does not have an elevator."
-    },
-    "imageUrl": null,
-    "order": 15
    },
    {
     "title": {
@@ -5692,8 +5668,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -5703,8 +5679,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -5917,8 +5893,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 40 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 40 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -6378,8 +6354,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora · sujeto a disponibilidad",
+        "en": "30 USD per hour · subject to availability"
        }
       },
       {
@@ -6389,8 +6365,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
+        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
        }
       },
       {
@@ -6508,8 +6484,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "80 USD · sujeto a disponibilidad",
-        "en": "80 USD · subject to availability"
+        "es": "30 USD por hora · sujeto a disponibilidad",
+        "en": "30 USD per hour · subject to availability"
        }
       },
       {
@@ -6519,8 +6495,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "80 USD · sujeto a disponibilidad",
-        "en": "80 USD · subject to availability"
+        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
+        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
        }
       },
       {
@@ -6638,8 +6614,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora · sujeto a disponibilidad",
+        "en": "30 USD per hour · subject to availability"
        }
       },
       {
@@ -6649,8 +6625,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "70 USD · sujeto a disponibilidad",
-        "en": "70 USD · subject to availability"
+        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
+        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
        }
       },
       {
@@ -6768,8 +6744,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -6779,8 +6755,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -6898,8 +6874,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -6909,8 +6885,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7028,8 +7004,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -7039,8 +7015,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7158,8 +7134,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -7169,8 +7145,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7288,8 +7264,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -7299,8 +7275,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7418,8 +7394,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -7429,8 +7405,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7548,8 +7524,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -7559,8 +7535,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -7678,8 +7654,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -7689,8 +7665,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -7808,8 +7784,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -7819,8 +7795,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -8022,8 +7998,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -8483,8 +8459,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -8494,8 +8470,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -8613,8 +8589,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -8624,8 +8600,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -8827,8 +8803,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -9276,8 +9252,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -9287,8 +9263,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -9490,8 +9466,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 50 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 50 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -9951,8 +9927,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora · sujeto a disponibilidad",
+        "en": "20 USD per hour · subject to availability"
        }
       },
       {
@@ -9962,8 +9938,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "40 USD · sujeto a disponibilidad",
-        "en": "40 USD · subject to availability"
+        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
+        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
        }
       },
       {
@@ -10081,8 +10057,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -10092,8 +10068,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "50 USD · sujeto a disponibilidad",
-        "en": "50 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -10211,8 +10187,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora · sujeto a disponibilidad",
+        "en": "15 USD per hour · subject to availability"
        }
       },
       {
@@ -10222,8 +10198,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "35 USD · sujeto a disponibilidad",
-        "en": "35 USD · subject to availability"
+        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
+        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
        }
       },
       {
@@ -10425,8 +10401,8 @@
       "en": "I'm arriving before 3:00 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 35 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 35 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
@@ -10714,8 +10690,8 @@
         "en": "Early check-in"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora · sujeto a disponibilidad",
+        "en": "25 USD per hour · subject to availability"
        }
       },
       {
@@ -10725,8 +10701,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "60 USD · sujeto a disponibilidad",
-        "en": "60 USD · subject to availability"
+        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
+        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
        }
       },
       {
@@ -10918,8 +10894,8 @@
       "en": "I'm arriving before 3:30 PM"
      },
      "a": {
-      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y tiene costo (desde 60 USD).",
-      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and has a fee (from 60 USD)."
+      "es": "Escríbenos y vemos si podemos adelantar tu entrada: el early check-in está sujeto a disponibilidad y se cobra por hora, según el departamento. Si quieres entrar antes de las 9:00, se reserva la noche anterior. Y sin costo, puedes dejarnos el equipaje desde las 12:00 y entrar en cuanto el departamento esté listo.",
+      "en": "Message us and we'll see if we can move your check-in up: early check-in is subject to availability and is charged by the hour, depending on the apartment. If you want to get in before 9:00 AM, the previous night is booked instead. And at no cost, you can drop off your luggage from 12:00 PM and come in as soon as the apartment is ready."
      }
     }
    ],
