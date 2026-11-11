@@ -3309,18 +3309,6 @@
   "amenities": [
    {
     "title": {
-     "es": "Estacionamiento",
-     "en": "Parking lot"
-    },
-    "description": {
-     "es": "El edificio no cuenta con estacionamiento. Puedes estacionarte en la zona de parquímetro sobre la calle Altata (se paga de lunes a viernes, de 8:00 a 20:00) o en un estacionamiento público a unas calles: BNI Estacionamientos, Tlaxcala 186, Hipódromo. [Ver en el mapa](https://maps.app.goo.gl/uJapzbkcpgbNQj639)",
-     "en": "The building does not have parking. You can park in the metered zone on Altata street (payable Monday to Friday, 8:00 to 20:00) or at a public garage a few blocks away: BNI Estacionamientos, Tlaxcala 186, Hipódromo. [See it on the map](https://maps.app.goo.gl/uJapzbkcpgbNQj639)"
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
-    "order": 10.0
-   },
-   {
-    "title": {
      "es": "Agua para Beber",
      "en": "Drinking Water"
     },
@@ -3330,18 +3318,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Lavandería",
-     "en": "Laundry"
-    },
-    "description": {
-     "es": "La lavadora está en un área común del edificio, no dentro del departamento.",
-     "en": "The washing machine is in a shared area of the building, not inside the apartment."
-    },
-    "imageUrl": null,
-    "order": 55
    },
    {
     "title": {
@@ -5973,18 +5949,6 @@
   "amenities": [
    {
     "title": {
-     "es": "Estacionamiento",
-     "en": "Parking lot"
-    },
-    "description": {
-     "es": "Algunos departamentos de este edificio incluyen un lugar de estacionamiento y otros no. Si el tuyo lo incluye, la entrada al garaje está del lado izquierdo y tú estacionas el auto. Si no lo incluye, hay estacionamiento en la calle, cerca del edificio. Si no estás seguro, escríbenos antes de llegar.",
-     "en": "Some apartments in this building include a parking space and others do not. If yours does, the garage entrance is on the left-hand side and you park the car yourself. If it does not, there is street parking near the building. If you are not sure, message us before you arrive."
-    },
-    "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
-    "order": 10.0
-   },
-   {
-    "title": {
      "es": "Agua para Beber",
      "en": "Drinking Water"
     },
@@ -5994,18 +5958,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/b02660_3ddec918188b46a5833d8fad05bf1e6d~mv2.jpg",
     "order": 30.0
-   },
-   {
-    "title": {
-     "es": "Lavandería",
-     "en": "Laundry"
-    },
-    "description": {
-     "es": "En la mayoría de los departamentos de este edificio la lavadora está en un área común del edificio, no dentro del departamento.",
-     "en": "In most apartments in this building the washing machine is in a shared area of the building, not inside the apartment."
-    },
-    "imageUrl": null,
-    "order": 55
    },
    {
     "title": {
@@ -8090,18 +8042,6 @@
    },
    {
     "title": {
-     "es": "Lavandería",
-     "en": "Laundry"
-    },
-    "description": {
-     "es": "La lavadora está en un área común del edificio, no dentro del departamento.",
-     "en": "The washing machine is in a shared area of the building, not inside the apartment."
-    },
-    "imageUrl": null,
-    "order": 55
-   },
-   {
-    "title": {
      "es": "Ropa de cama y Toallas",
      "en": "Linens and towels"
     },
@@ -9520,18 +9460,6 @@
    "en": ""
   },
   "amenities": [
-   {
-    "title": {
-     "es": "Estacionamiento",
-     "en": "Parking"
-    },
-    "description": {
-     "es": "Algunos departamentos de este edificio incluyen un lugar de estacionamiento en planta baja, en el carril central; se deja la llave en vigilancia. Otros no lo incluyen y hay estacionamiento en la calle, cerca del edificio. Si no estás seguro, escríbenos antes de llegar.",
-     "en": "Some apartments in this building include a parking space on the ground floor, in the central lane; you leave the key with security. Others do not, and there is street parking near the building. If you are not sure, message us before you arrive."
-    },
-    "imageUrl": null,
-    "order": 10
-   },
    {
     "title": {
      "es": "En caso de emergencia",
