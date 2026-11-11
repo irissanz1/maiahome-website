@@ -5985,18 +5985,6 @@
    },
    {
     "title": {
-     "es": "Elevador",
-     "en": "Elevator"
-    },
-    "description": {
-     "es": "El edificio no cuenta con elevador.",
-     "en": "The building does not have an elevator."
-    },
-    "imageUrl": null,
-    "order": 15
-   },
-   {
-    "title": {
      "es": "Agua para Beber",
      "en": "Drinking Water"
     },
@@ -8087,18 +8075,6 @@
     },
     "imageUrl": "https://static.wixstatic.com/media/nsplsh_d292c11d23944a4ba51bc42c4a8620d4~mv2.jpg",
     "order": 10.0
-   },
-   {
-    "title": {
-     "es": "Elevador",
-     "en": "Elevator"
-    },
-    "description": {
-     "es": "El edificio no cuenta con elevador.",
-     "en": "The building does not have an elevator."
-    },
-    "imageUrl": null,
-    "order": 15
    },
    {
     "title": {
