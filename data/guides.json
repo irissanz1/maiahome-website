@@ -460,8 +460,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -590,8 +590,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
-        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
+        "es": "30 USD por hora avisando con 2 h o más\n45 USD por hora con menos margen\nHasta las 15:00",
+        "en": "30 USD per hour with 2+ hours' notice\n45 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -720,8 +720,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -1407,8 +1407,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -2106,8 +2106,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -2769,8 +2769,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -2899,8 +2899,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3026,8 +3026,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3424,8 +3424,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3565,8 +3565,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3706,8 +3706,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
-        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
+        "es": "30 USD por hora avisando con 2 h o más\n45 USD por hora con menos margen\nHasta las 15:00",
+        "en": "30 USD per hour with 2+ hours' notice\n45 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3847,8 +3847,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -3988,8 +3988,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4129,8 +4129,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4270,8 +4270,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4411,8 +4411,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4552,8 +4552,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4693,8 +4693,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4834,8 +4834,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -4975,8 +4975,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -5655,8 +5655,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6305,8 +6305,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
-        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
+        "es": "30 USD por hora avisando con 2 h o más\n45 USD por hora con menos margen\nHasta las 15:00",
+        "en": "30 USD per hour with 2+ hours' notice\n45 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6435,8 +6435,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
-        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
+        "es": "30 USD por hora avisando con 2 h o más\n45 USD por hora con menos margen\nHasta las 15:00",
+        "en": "30 USD per hour with 2+ hours' notice\n45 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6565,8 +6565,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "30 USD por hora avisando con 2 h · 45 con menos margen · hasta las 15:00",
-        "en": "30 USD per hour with 2 h notice · 45 with less · until 3:00 PM"
+        "es": "30 USD por hora avisando con 2 h o más\n45 USD por hora con menos margen\nHasta las 15:00",
+        "en": "30 USD per hour with 2+ hours' notice\n45 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6695,8 +6695,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6825,8 +6825,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -6955,8 +6955,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7085,8 +7085,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7215,8 +7215,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7345,8 +7345,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7475,8 +7475,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7605,8 +7605,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -7735,8 +7735,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -8386,8 +8386,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -8516,8 +8516,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -9179,8 +9179,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -9842,8 +9842,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "20 USD por hora avisando con 2 h · 30 con menos margen · hasta las 15:00",
-        "en": "20 USD per hour with 2 h notice · 30 with less · until 3:00 PM"
+        "es": "20 USD por hora avisando con 2 h o más\n30 USD por hora con menos margen\nHasta las 15:00",
+        "en": "20 USD per hour with 2+ hours' notice\n30 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -9972,8 +9972,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -10102,8 +10102,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "15 USD por hora avisando con 2 h · 25 con menos margen · hasta las 15:00",
-        "en": "15 USD per hour with 2 h notice · 25 with less · until 3:00 PM"
+        "es": "15 USD por hora avisando con 2 h o más\n25 USD por hora con menos margen\nHasta las 15:00",
+        "en": "15 USD per hour with 2+ hours' notice\n25 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {
@@ -10605,8 +10605,8 @@
         "en": "Late check-out"
        },
        "value": {
-        "es": "25 USD por hora avisando con 2 h · 35 con menos margen · hasta las 15:00",
-        "en": "25 USD per hour with 2 h notice · 35 with less · until 3:00 PM"
+        "es": "25 USD por hora avisando con 2 h o más\n35 USD por hora con menos margen\nHasta las 15:00",
+        "en": "25 USD per hour with 2+ hours' notice\n35 USD per hour with less notice\nUntil 3:00 PM"
        }
       },
       {

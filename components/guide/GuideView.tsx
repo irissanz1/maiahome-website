@@ -314,7 +314,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                     <span className="mt-0.5 text-maia-strong"><Icon name={d.icon || "info"} className="h-4 w-4" /></span>
                     <div>
                       <dt className="text-xs text-neutral-500">{pick(lang, d.label)}</dt>
-                      <dd className="text-neutral-800">{rich(pick(lang, d.value))}</dd>
+                      <dd className="whitespace-pre-line text-neutral-800">{rich(pick(lang, d.value))}</dd>
                     </div>
                   </div>
                 ))}
