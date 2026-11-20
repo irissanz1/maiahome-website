@@ -10651,8 +10651,8 @@
   },
   "code": "Augustine",
   "wifi": {
-   "es": "Los datos de acceso al Wi-Fi están en el marco junto a la puerta de entrada. Internet AT&T, hasta 1 Gbps. La contraseña te la enviamos por correo con tus datos de acceso.",
-   "en": "The Wi-Fi access details are on the frame next to the entrance door. AT&T internet, up to 1 Gbps. We email you the password with your access details."
+   "es": "Internet AT&T, hasta 1 Gbps. Los datos también están en el marco junto a la puerta de entrada.",
+   "en": "AT&T internet, up to 1 Gbps. The details are also on the frame next to the entrance door."
   },
   "schedule": {
    "checkOut": "10:00",
@@ -10808,7 +10808,10 @@
      "petFee": {
       "es": "50 USD",
       "en": "50 USD"
-     }
+     },
+     "wifi": [
+      "MaiaHome Augustine"
+     ]
     }
    ],
    "beforeArrival": [
@@ -10954,6 +10957,7 @@
   "netflix": {
    "es": "A diferencia de YouTube, Netflix no se puede vincular desde el celular: hay que iniciar sesión en la pantalla. En la TV abre Netflix → **Iniciar sesión** y, si te lo ofrece, elige iniciar sesión **con código**: te da un código que escribes en tu celular en [netflix.com/tv8](https://www.netflix.com/tv8). Si no aparece esa opción, escribe tu correo y contraseña con el control. **Antes de irte, cierra sesión:** en Netflix, tu perfil → Configuración → Cerrar sesión. Si se te olvidó, desde [netflix.com](https://www.netflix.com) en Cuenta puedes usar **Cerrar sesión en todos los dispositivos**.",
    "en": "Unlike YouTube, Netflix can't be paired from your phone: you have to sign in on the screen. On the TV open Netflix → **Sign in** and, if it's offered, choose to sign in **with a code**: you'll get a code to enter on your phone at [netflix.com/tv8](https://www.netflix.com/tv8). If that option doesn't appear, type your email and password with the remote. **Before you leave, sign out:** in Netflix, your profile → Settings → Sign out. If you forgot, from [netflix.com](https://www.netflix.com) under Account you can use **Sign out of all devices**."
-  }
+  },
+  "wifiPassword": "maiahome"
  }
 ]
