@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import type { Guide } from "@/lib/guides";
 import { whatsappUrl } from "@/lib/contact";
 import LockSummary from "./LockSummary";
@@ -205,13 +205,23 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           {navItems.map((s) => {
             const on = activeSection === s;
             return (
-              <a key={s} href={`#${s}`} aria-current={on ? "true" : undefined}
-                className={`flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition ${
-                  on ? "border-maia-strong bg-maia-yellow font-semibold text-black" : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-500 hover:text-neutral-900"
-                }`}>
-                <Icon name={SECTION_ICON[s]} className="h-3.5 w-3.5" />
-                {s === "access" ? t.accessSection : t[s]}
-              </a>
+              <Fragment key={s}>
+                <a href={`#${s}`} aria-current={on ? "true" : undefined}
+                  className={`flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition ${
+                    on ? "border-maia-strong bg-maia-yellow font-semibold text-black" : "border-neutral-300 bg-white text-neutral-600 hover:border-neutral-500 hover:text-neutral-900"
+                  }`}>
+                  <Icon name={SECTION_ICON[s]} className="h-3.5 w-3.5" />
+                  {s === "access" ? t.accessSection : t[s]}
+                </a>
+                {/* Atajo al Wi-Fi (pregunta frecuente): vive en el Manual de la casa; /g/<slug>#wifi abre la guía ahí */}
+                {s === "access" && guide.wifi && (
+                  <a href="#wifi"
+                    className="flex shrink-0 items-center gap-1.5 rounded-full border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-600 transition hover:border-neutral-500 hover:text-neutral-900">
+                    <Icon name="wifi" className="h-3.5 w-3.5" />
+                    {t.wifiLabel}
+                  </a>
+                )}
+              </Fragment>
             );
           })}
         </nav>
@@ -482,7 +492,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           {(guide.wifi || guide.tv || guide.youtube || guide.netflix || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guide.wifi && (
-                <ManualCard title={t.wifiLabel} icon="wifi">
+                <ManualCard id="wifi" title={t.wifiLabel} icon="wifi">
                   {guide.wifiPassword ? (
                     <>
                       <ol className="list-decimal space-y-1 pl-4">
@@ -795,9 +805,9 @@ function TimeCallout({ icon, label, time }: { icon: string; label: string; time:
   );
 }
 
-function ManualCard({ title, icon, children }: { title: string; icon?: string; children: React.ReactNode }) {
+function ManualCard({ id, title, icon, children }: { id?: string; title: string; icon?: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl border border-neutral-200 p-4">
+    <div id={id} className="scroll-mt-32 rounded-2xl border border-neutral-200 p-4">
       <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
         {icon && <span className="text-maia-strong">{<Icon name={icon} />}</span>}
         {title}
