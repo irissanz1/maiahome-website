@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Guide } from "@/lib/guides";
 import { whatsappUrl } from "@/lib/contact";
+import LockSummary from "./LockSummary";
 
 // Barrio de la guía → zona en explore.maiahome.mx (fuente única de recomendaciones).
 const EXPLORE_ZONE: Record<string, string> = { Polanco: "zone-polanco", Condesa: "zone-condesa", Houston: "zone-houston" };
@@ -427,12 +428,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                 </li>
               ))}
             </ol>
-            {guide.access.video && (
-              <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200 bg-black">
-                <video controls preload="metadata" className="aspect-video w-full" src={guide.access.video} />
-                <figcaption className="bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{t.accessVideo}</figcaption>
-              </figure>
-            )}
+            <LockSummary lang={lang} />
           </div>
         ) : (
           (pick(lang, guide.access.toApt) || pick(lang, guide.access.instructions)) && (
@@ -440,12 +436,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
             <p className="flex items-center gap-1.5 text-sm font-semibold text-neutral-900"><Icon name="key" className="h-4 w-4 text-maia-strong" />{t.access}</p>
             {pick(lang, guide.access.toApt) && <p className="mt-1 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.toApt)}</p>}
             {pick(lang, guide.access.instructions) && <p className="mt-2 whitespace-pre-line text-sm text-neutral-700">{pick(lang, guide.access.instructions)}</p>}
-            {guide.access.video && (
-              <figure className="mt-3 overflow-hidden rounded-xl border border-neutral-200 bg-black">
-                <video controls preload="metadata" className="aspect-video w-full" src={guide.access.video} />
-                <figcaption className="bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{t.accessVideo}</figcaption>
-              </figure>
-            )}
+            <LockSummary lang={lang} />
           </div>
         )
         )}
