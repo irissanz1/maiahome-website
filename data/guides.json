@@ -10454,16 +10454,6 @@
    "items": [
     {
      "title": {
-      "es": "Lavavajillas",
-      "en": "Dishwasher"
-     },
-     "desc": {
-      "es": "Coloca los platos dentro y ponlo a andar antes de salir.",
-      "en": "Place the dishes inside and start it before you leave."
-     }
-    },
-    {
-     "title": {
       "es": "Basura y comida",
       "en": "Trash & food"
      },
