@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 };
 
 const POINTS = [
-  ["Load the dishwasher", "Place the dishes inside and start it before you leave."],
   ["Trash and food", "Throw away perishable food from the fridge and kitchen, and leave the bags in the bins outside."],
   ["Gather used towels", "Leave them together in the bathroom."],
   ["Close all windows properly", "For security and to keep rain out."],

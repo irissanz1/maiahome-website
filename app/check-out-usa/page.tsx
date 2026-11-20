@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 };
 
 const PUNTOS = [
-  ["Deja los platos en el lavavajillas", "Colócalos dentro y ponlo a andar antes de salir."],
   ["Tira la comida y saca la basura", "Desecha lo perecedero del refri y la cocina, y deja las bolsas en los botes de afuera."],
   ["Junta las toallas usadas", "Déjalas juntas en el baño."],
   ["Cierra bien todas las ventanas", "Por seguridad y para evitar que entre agua."],
