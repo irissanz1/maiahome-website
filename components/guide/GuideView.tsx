@@ -47,6 +47,11 @@ const T = {
     noCar: "Sin auto", byCar: "En auto", access: "Instrucciones de acceso", accessVideo: "Ver video de acceso",
     entrance: "Vista de la entrada",
     security: "Seguridad", cleaning: "Limpieza", kitchen: "Amenidades y equipamiento", trash: "Basura",
+    wifiNet1: (n: string) => `Conéctate a la red **${n}**.`,
+    wifiNetMany: (ns: string[]) => `Cada departamento tiene su propia red: ${ns.slice(0, -1).map((n) => `**${n}**`).join(", ")} y **${ns.at(-1)}**. Conéctate a la del departamento donde estés.`,
+    wifiNetAny: (ex: string) => `Conéctate a la red **MaiaHome** + el nombre de tu departamento (por ejemplo, **${ex}**).`,
+    wifiPass: (pw: string) => `Contraseña: **${pw}**`,
+    wifiPortal: "Se abre una página de registro: llena tus datos y listo, ya puedes navegar. Si no se abre sola, entra a cualquier página web desde tu navegador.",
     wifiLabel: "Wi-Fi", tvLabel: "TV y streaming", youtubeLabel: "YouTube en la TV", netflixLabel: "Netflix", climateLabel: "Clima", rulesLabel: "Reglas y seguridad", flexLabel: "Horarios flexibles",
     exploreDesc: "Descubre los mejores lugares cerca —restaurantes, cafés, museos, parques y más— en nuestra guía del barrio.",
     exploreBtn: "Ver la guía del barrio →", checkoutTitle: "Antes de salir", checkoutTimeLabel: "Hora de salida",
@@ -95,6 +100,11 @@ const T = {
     noCar: "Without a car", byCar: "By car", access: "Access instructions", accessVideo: "Watch access video",
     entrance: "Entrance view",
     security: "Security", cleaning: "Cleaning", kitchen: "Amenities & equipment", trash: "Trash",
+    wifiNet1: (n: string) => `Connect to the **${n}** network.`,
+    wifiNetMany: (ns: string[]) => `Each apartment has its own network: ${ns.slice(0, -1).map((n) => `**${n}**`).join(", ")} and **${ns.at(-1)}**. Connect to the one in the apartment you're in.`,
+    wifiNetAny: (ex: string) => `Connect to the **MaiaHome** network followed by your apartment's name (e.g., **${ex}**).`,
+    wifiPass: (pw: string) => `Password: **${pw}**`,
+    wifiPortal: "A sign-in page opens: fill in your details and you're online. If it doesn't open on its own, visit any website in your browser.",
     wifiLabel: "Wi-Fi", tvLabel: "TV & streaming", youtubeLabel: "YouTube on the TV", netflixLabel: "Netflix", climateLabel: "Climate", rulesLabel: "Rules & security", flexLabel: "Flexible hours",
     exploreDesc: "Discover the best spots nearby —restaurants, cafés, museums, parks and more— in our neighborhood guide.",
     exploreBtn: "Open the neighborhood guide →", checkoutTitle: "Before you leave", checkoutTimeLabel: "Check-out time",
@@ -471,7 +481,28 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           <SectionTitle icon="home">{t.house}</SectionTitle>
           {(guide.wifi || guide.tv || guide.youtube || guide.netflix || guide.climate || guide.amenityRules) && (
             <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {guide.wifi && <ManualCard title={t.wifiLabel} icon="wifi">{bold(pick(lang, guide.wifi))}</ManualCard>}
+              {guide.wifi && (
+                <ManualCard title={t.wifiLabel} icon="wifi">
+                  {guide.wifiPassword ? (
+                    <>
+                      <ol className="list-decimal space-y-1 pl-4">
+                        <li>
+                          {bold(
+                            unit?.wifi?.length
+                              ? unit.wifi.length === 1 ? t.wifiNet1(unit.wifi[0]) : t.wifiNetMany(unit.wifi)
+                              : t.wifiNetAny(units.find((u) => u.wifi?.length === 1)?.wifi?.[0] ?? "MaiaHome"),
+                          )}
+                        </li>
+                        <li>{bold(t.wifiPass(guide.wifiPassword))}</li>
+                        <li>{t.wifiPortal}</li>
+                      </ol>
+                      <span className="mt-2 block text-neutral-500">{pick(lang, guide.wifi)}</span>
+                    </>
+                  ) : (
+                    bold(pick(lang, guide.wifi))
+                  )}
+                </ManualCard>
+              )}
               {guide.tv && <ManualCard title={t.tvLabel} icon="tv">{rich(pick(lang, guide.tv))}</ManualCard>}
               {guide.youtube && <ManualCard title={t.youtubeLabel} icon="play">{rich(pick(lang, guide.youtube))}</ManualCard>}
               {guide.netflix && <ManualCard title={t.netflixLabel} icon="play">{rich(pick(lang, guide.netflix))}</ManualCard>}
@@ -771,7 +802,7 @@ function ManualCard({ title, icon, children }: { title: string; icon?: string; c
         {icon && <span className="text-maia-strong">{<Icon name={icon} />}</span>}
         {title}
       </p>
-      <p className="mt-1 text-sm text-neutral-600">{children}</p>
+      <div className="mt-1 text-sm text-neutral-600">{children}</div>
     </div>
   );
 }

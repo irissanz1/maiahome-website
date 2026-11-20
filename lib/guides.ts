@@ -41,6 +41,8 @@ export interface GuideUnit {
   // null en petFee = este departamento no admite mascotas.
   cleaningFee?: BL;
   petFee?: BL | null;
+  // Nombres de red Wi-Fi: una por departamento físico (los combinados traen varias).
+  wifi?: string[];
 }
 
 export interface GuideArrivalPlus {
@@ -75,7 +77,8 @@ export interface Guide {
   // Check-out específico por unidad (opcional; si falta se usa el genérico).
   checkout?: { time: string; note: BL; items: { title: BL; desc: BL }[] };
   // Enriquecido del FAQ v56 (nivel edificio): WiFi, clima, reglas/seguridad, horarios.
-  wifi?: BL;
+  wifi?: BL; // con wifiPassword: solo la línea de proveedor/velocidad
+  wifiPassword?: string; // si existe, la tarjeta Wi-Fi se pinta en pasos con la red del depto elegido
   tv?: BL;
   youtube?: BL;
   netflix?: BL;
