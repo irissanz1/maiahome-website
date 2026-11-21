@@ -35,7 +35,9 @@ const T = {
     quietBand: "Silencio de 21:00 a 09:00",
     neighborsEd: "Son departamentos en edificios donde vive gente todo el año. No es silencio absoluto: puedes platicar, ver una película o poner música de fondo; lo que no cabe es música con bajos ni reuniones ruidosas. Si se escucha desde el pasillo con la puerta cerrada, ya está alto —el límite formal son 70 decibeles—. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
     neighborsCasa: "Es una casa en una zona residencial, con vecinos que viven ahí todo el año. No es silencio absoluto: puedes platicar, ver una película o poner música de fondo; lo que no cabe es música con bajos ni reuniones ruidosas. Si se escucha desde la banqueta, ya está alto —el límite formal son 70 decibeles—. Si esperas visitas o una reunión, escríbenos y vemos cómo acomodarlo.",
-    neighborsFee: "No se puede fumar dentro ni hacer fiestas. Si alguna de las dos se rompe, aplica un cargo de 400 USD, como indica el [acuerdo de estancia](https://maiahome.mx/stay-agreement).",
+    noSmoke: "No se fuma dentro",
+    noParty: "Sin fiestas",
+    neighborsFee: "Si alguna de las dos se rompe, aplica un cargo de **400 USD**, como indica el [acuerdo de estancia](https://maiahome.mx/stay-agreement).",
     coCleanFee: (f: string) => [
       "No hace falta que dejes nada impecable.",
       "Solo te pedimos cuidar los blancos: el maquillaje, el autobronceador, el vino o el tinte casi nunca salen del lavado.",
@@ -88,7 +90,9 @@ const T = {
     quietBand: "Quiet hours 21:00 – 09:00",
     neighborsEd: "These are apartments in buildings where people live year-round. It's not total silence: you can talk, watch a film or play background music; what doesn't fit is bass-heavy music or a loud gathering. If it can be heard from the hallway with the door closed, it's too loud —the formal limit is 70 dB—. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
     neighborsCasa: "This is a house in a residential neighborhood, with neighbors who live there year-round. It's not total silence: you can talk, watch a film or play background music; what doesn't fit is bass-heavy music or a loud gathering. If it can be heard from the sidewalk, it's too loud —the formal limit is 70 dB—. If you're expecting visitors or planning a get-together, message us and we'll work it out.",
-    neighborsFee: "Smoking indoors and parties are not allowed. If either happens, a 400 USD charge applies, as stated in the [stay agreement](https://maiahome.mx/en/stay-agreement).",
+    noSmoke: "No smoking indoors",
+    noParty: "No parties",
+    neighborsFee: "If either happens, a **400 USD** charge applies, as stated in the [stay agreement](https://maiahome.mx/en/stay-agreement).",
     coCleanFee: (f: string) => [
       "There's no need to leave anything spotless.",
       "We only ask that you look after the linens: makeup, self-tanner, wine and hair dye rarely wash out.",
@@ -568,7 +572,19 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
                   <b className="font-semibold text-neutral-900">{t.quietBand}</b>
                 </span>
                 <span className="mt-2 block">{guide.slug === "augustine" ? t.neighborsCasa : t.neighborsEd}</span>
-                <span className="mt-2 block">{rich(t.neighborsFee)}</span>
+                <span className="mt-3 block rounded-xl bg-[#FBF7EC] px-3 py-2.5">
+                  <span className="flex flex-wrap gap-x-5 gap-y-1.5">
+                    <span className="flex items-center gap-2">
+                      <Icon name="nosmoke" className="h-5 w-5 shrink-0 text-neutral-800" />
+                      <b className="font-semibold text-neutral-900">{t.noSmoke}</b>
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Icon name="noparty" className="h-5 w-5 shrink-0 text-neutral-800" />
+                      <b className="font-semibold text-neutral-900">{t.noParty}</b>
+                    </span>
+                  </span>
+                  <span className="mt-1.5 block">{rich(t.neighborsFee)}</span>
+                </span>
               </ManualCard>
             </div>
           )}
@@ -668,6 +684,8 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
 const ICONS: Record<string, React.ReactNode> = {
   pin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="2.6" /></>,
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7.5V12l3 1.8" /></>,
+  nosmoke: <><path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13M7 12v4M18 8c0-2.5-2-2.5-2-5M22 8c0-2.5-2-2.5-2-5M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.87M2 2l20 20" /></>,
+  noparty: <><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /><path d="M2 2l20 20" /></>,
   key: <><circle cx="7.5" cy="15.5" r="3.5" /><path d="m10 13 8-8M16.5 4.5l2 2M14.5 6.5l2 2" /></>,
   shield: <><path d="M12 3 5 6v5.5c0 4.3 3 7.7 7 9.5 4-1.8 7-5.2 7-9.5V6l-7-3Z" /></>,
   wifi: <><path d="M4.5 12.5a10.5 10.5 0 0 1 15 0M8 16a6 6 0 0 1 8 0" /><circle cx="12" cy="19.5" r="1" /></>,
