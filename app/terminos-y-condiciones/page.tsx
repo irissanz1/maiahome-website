@@ -409,9 +409,10 @@ export default function TerminosCondiciones() {
       </p>
       <p>
         <strong>b) Penalidad por ruido superior a 70 decibeles entre 9:00 pm y 9:00 am.</strong>{" "}
-        Ambas partes convienen en que queda PROHIBIDO hacer fiestas o ruido, en el horario mencionado,
-        en caso de que se supere este umbral se aplicará una multa de 400 USD por cada día que se
-        supere este umbral y es causa de terminación de contrato. Aceptando que no aplica devolución
+        Ambas partes convienen en que queda PROHIBIDO hacer fiestas o ruido, en el horario mencionado;
+        en caso de que se supere este umbral se aplicará una multa de 400 USD por cada notificación
+        que la administración del edificio haga llegar a “EL HOSPEDANTE”, pudiendo existir más de una
+        notificación en la misma noche, y es causa de terminación de contrato. Aceptando que no aplica devolución
         alguna, por lo que, “EL HOSPEDANTE” NO está obligado a hacer algún tipo de devolución respecto
         a la cantidad pactada por la estancia.
       </p>
