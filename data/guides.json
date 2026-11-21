@@ -465,7 +465,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -476,7 +476,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -602,7 +602,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -613,7 +613,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -740,7 +740,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -751,7 +751,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -1435,7 +1435,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -1446,7 +1446,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -2142,7 +2142,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -2153,7 +2153,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -2813,7 +2813,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -2824,7 +2824,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -2950,7 +2950,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -2961,7 +2961,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -3084,7 +3084,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -3095,7 +3095,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -3490,7 +3490,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -3501,7 +3501,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -3638,7 +3638,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -3649,7 +3649,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -3787,7 +3787,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -3798,7 +3798,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -3942,7 +3942,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -3953,7 +3953,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4090,7 +4090,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4101,7 +4101,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4238,7 +4238,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4249,7 +4249,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4386,7 +4386,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4397,7 +4397,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4535,7 +4535,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4546,7 +4546,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4683,7 +4683,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4694,7 +4694,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4831,7 +4831,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4842,7 +4842,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -4979,7 +4979,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -4990,7 +4990,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -5128,7 +5128,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -5139,7 +5139,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -5816,7 +5816,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -5827,7 +5827,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -6474,7 +6474,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -6485,7 +6485,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -6612,7 +6612,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -6623,7 +6623,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -6751,7 +6751,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -6762,7 +6762,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -6889,7 +6889,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -6900,7 +6900,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7026,7 +7026,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7037,7 +7037,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7163,7 +7163,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7174,7 +7174,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7300,7 +7300,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7311,7 +7311,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7437,7 +7437,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7448,7 +7448,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7574,7 +7574,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7585,7 +7585,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7711,7 +7711,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7722,7 +7722,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7848,7 +7848,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7859,7 +7859,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -7986,7 +7986,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -7997,7 +7997,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -8646,7 +8646,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -8657,7 +8657,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -8783,7 +8783,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -8794,7 +8794,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -9454,7 +9454,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -9465,7 +9465,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -10125,7 +10125,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -10136,7 +10136,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -10262,7 +10262,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -10273,7 +10273,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -10400,7 +10400,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -10411,7 +10411,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"
@@ -10897,7 +10897,7 @@
        }
       },
       {
-       "icon": "home",
+       "icon": "sparkles",
        "label": {
         "es": "Limpieza extra",
         "en": "Extra cleaning"
@@ -10908,7 +10908,7 @@
        }
       },
       {
-       "icon": "droplet",
+       "icon": "washer",
        "label": {
         "es": "Lavadora y secadora",
         "en": "Washer & dryer"

@@ -552,20 +552,22 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           {(pick(lang, guide.cleaning) || unitAware) && (
             <div className="mt-4 rounded-2xl bg-neutral-50 p-4">
               <p className="flex items-center gap-2 text-sm font-semibold text-neutral-900">
-                <span className="text-maia-strong"><Icon name="droplet" className="h-4 w-4" /></span>
+                <span className="text-maia-strong"><Icon name="sparkles" className="h-4 w-4" /></span>
                 {t.cleaning}
               </p>
-              <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
-                {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
-              </p>
-              {unit?.laundry && (
-                <p className="mt-3 flex items-center gap-2 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-neutral-900">
-                  <Icon name="washer" className="h-5 w-5 shrink-0 text-neutral-800" />
-                  {pick(lang, unit.laundry)}
-                </p>
-              )}
-              <div className="mt-3 border-t border-neutral-200 pt-3">
+              <div className="mt-2">
                 <CleanPolicy lead={t.coCleanD} items={unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny} />
+              </div>
+              <div className="mt-3 border-t border-neutral-200 pt-3">
+                <p className="whitespace-pre-line text-sm text-neutral-600">
+                  {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
+                </p>
+                {unit?.laundry && (
+                  <p className="mt-3 flex items-center gap-2 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-neutral-900">
+                    <Icon name="washer" className="h-5 w-5 shrink-0 text-neutral-800" />
+                    {pick(lang, unit.laundry)}
+                  </p>
+                )}
               </div>
             </div>
           )}
@@ -654,7 +656,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           ))}
           <div className="rounded-2xl border-2 border-maia-yellow bg-[#FBF7EC] p-4 sm:col-span-2">
             <p className="flex items-center gap-2 text-base font-semibold text-neutral-900">
-              <span className="text-maia-strong"><Icon name="droplet" /></span>
+              <span className="text-maia-strong"><Icon name="sparkles" /></span>
               {t.coClean}
             </p>
             <div className="mt-1">
@@ -695,6 +697,7 @@ const ICONS: Record<string, React.ReactNode> = {
   moon: <><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z" /></>,
   sleep: <><path d="M14.5 16.5A6.5 6.5 0 1 1 7.5 9.5a5 5 0 0 0 7 7Z" /><path d="M13 2.5h6.5l-6.5 6.5h6.5M18.5 11.5h3.5l-3.5 4h3.5" /></>,
   washer: <><rect x="4" y="2.5" width="16" height="19" rx="2" /><path d="M4 7h16" /><circle cx="12" cy="14" r="4.5" /><path d="M7 4.8h.01M10 4.8h.01" /></>,
+  sparkles: <><path d="M10 3.5l1.8 4.7 4.7 1.8-4.7 1.8L10 16.5l-1.8-4.7L3.5 10l4.7-1.8Z" /><path d="M18 14l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9Z" /></>,
   nosmoke: <><path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13M7 12v4M18 8c0-2.5-2-2.5-2-5M22 8c0-2.5-2-2.5-2-5M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.87M2 2l20 20" /></>,
   noparty: <><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /><path d="M2 2l20 20" /></>,
   key: <><circle cx="7.5" cy="15.5" r="3.5" /><path d="m10 13 8-8M16.5 4.5l2 2M14.5 6.5l2 2" /></>,
