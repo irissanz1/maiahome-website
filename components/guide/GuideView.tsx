@@ -568,7 +568,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <ManualCard title={t.rulesLabel} icon="shield">
                 {pick(lang, guide.amenityRules)}
                 <span className="mt-3 flex items-center gap-2 rounded-xl bg-[#FBF7EC] px-3 py-2">
-                  <Icon name="clock" className="h-4 w-4 shrink-0 text-maia-strong" />
+                  <Icon name="moon" className="h-5 w-5 shrink-0 text-neutral-800" />
                   <b className="font-semibold text-neutral-900">{t.quietBand}</b>
                 </span>
                 <span className="mt-2 block">{guide.slug === "augustine" ? t.neighborsCasa : t.neighborsEd}</span>
@@ -684,6 +684,7 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
 const ICONS: Record<string, React.ReactNode> = {
   pin: <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="2.6" /></>,
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7.5V12l3 1.8" /></>,
+  moon: <><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z" /></>,
   nosmoke: <><path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13M7 12v4M18 8c0-2.5-2-2.5-2-5M22 8c0-2.5-2-2.5-2-5M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.87M2 2l20 20" /></>,
   noparty: <><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /><path d="M2 2l20 20" /></>,
   key: <><circle cx="7.5" cy="15.5" r="3.5" /><path d="m10 13 8-8M16.5 4.5l2 2M14.5 6.5l2 2" /></>,
