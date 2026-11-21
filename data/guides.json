@@ -391,8 +391,8 @@
    }
   },
   "amenityRules": {
-   "es": "Alberca: reservas por hora, gorro obligatorio. Seguridad: portero 24/7.",
-   "en": "Pool: by-the-hour reservations, swim cap required. Security: 24/7 doorman."
+   "es": "Alberca: reservas por hora, gorro obligatorio.\nSeguridad: portero 24/7.",
+   "en": "Pool: by-the-hour reservations, swim cap required.\nSecurity: 24/7 doorman."
   },
   "climate": {
    "es": "Aire acondicionado portátil (2). Cuenta con 5 ventiladores de techo, 4 ventiladores portátiles.",
@@ -2052,8 +2052,8 @@
    }
   },
   "amenityRules": {
-   "es": "Alberca: reservas por hora, gorro obligatorio. Seguridad: portero 24/7.",
-   "en": "Pool: by-the-hour reservations, swim cap required. Security: 24/7 doorman."
+   "es": "Alberca: reservas por hora, gorro obligatorio.\nSeguridad: portero 24/7.",
+   "en": "Pool: by-the-hour reservations, swim cap required.\nSecurity: 24/7 doorman."
   },
   "climate": {
    "es": "Sin aire acondicionado. Cuenta con 3 ventiladores portátiles, 2 calentadores portátiles.",

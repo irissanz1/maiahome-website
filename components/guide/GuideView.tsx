@@ -566,7 +566,9 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
           {guide.amenityRules && (
             <div className="mt-4">
               <ManualCard title={t.rulesLabel} icon="shield">
-                {pick(lang, guide.amenityRules)}
+                {pick(lang, guide.amenityRules).split("\n").map((line, i) => (
+                  <span key={i} className="block">{line}</span>
+                ))}
                 <span className="mt-3 flex items-center gap-2 rounded-xl bg-[#FBF7EC] px-3 py-2">
                   <Icon name="sleep" className="h-5 w-5 shrink-0 text-neutral-800" />
                   <b className="font-semibold text-neutral-900">{t.quietBand}</b>
