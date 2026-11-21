@@ -408,7 +408,7 @@ export default function TerminosCondiciones() {
         del mercado del día del pago.
       </p>
       <p>
-        <strong>b) Penalidad por ruido superior a 70 decibeles entre 10:00 pm y 8:00 am.</strong>{" "}
+        <strong>b) Penalidad por ruido superior a 70 decibeles entre 9:00 pm y 9:00 am.</strong>{" "}
         Ambas partes convienen en que queda PROHIBIDO hacer fiestas o ruido, en el horario mencionado,
         en caso de que se supere este umbral se aplicará una multa de 400 USD por cada día que se
         supere este umbral y es causa de terminación de contrato. Aceptando que no aplica devolución
