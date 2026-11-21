@@ -403,18 +403,14 @@ export default function TerminosCondiciones() {
         <strong>a) Cargos por fumar en las habitaciones.</strong> Siendo consecuentes con el cuidado
         del medio ambiente y la salud, todos los departamentos son libres de humo. Fumar en el
         departamento o en cualquier otro espacio del edificio constituye un incumplimiento grave del
-        contrato de hospedaje que da lugar a su terminación. Si el HUESPED fuma en el departamento,
-        por cada día que lo haga deberá pagar (i) el costo en el que debe incurrir el HOSPEDANTE para
-        desodorizar y limpiar el departamento, que se estima en una suma equivalente a 100 USD,
-        liquidados a la tasa representativa del mercado del día del pago, y (ii) el valor de (2) noches
-        a la tarifa correspondiente a su alojamiento, como quiera que el proceso de limpieza y
-        desodorización implica que el HOSPEDANTE no pueda utilizar la habitación durante las
-        siguientes dos (2) noches.
+        contrato de hospedaje que da lugar a su terminación. Si el HUESPED fuma en el departamento, deberá pagar un cargo de 400 USD por la
+        desodorización y limpieza especializada del departamento, liquidados a la tasa representativa
+        del mercado del día del pago.
       </p>
       <p>
         <strong>b) Penalidad por ruido superior a 70 decibeles entre 10:00 pm y 8:00 am.</strong>{" "}
         Ambas partes convienen en que queda PROHIBIDO hacer fiestas o ruido, en el horario mencionado,
-        en caso de que se supere este umbral se aplicará una multa de 250 USD por cada día que se
+        en caso de que se supere este umbral se aplicará una multa de 400 USD por cada día que se
         supere este umbral y es causa de terminación de contrato. Aceptando que no aplica devolución
         alguna, por lo que, “EL HOSPEDANTE” NO está obligado a hacer algún tipo de devolución respecto
         a la cantidad pactada por la estancia.
