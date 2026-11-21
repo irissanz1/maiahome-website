@@ -37,6 +37,7 @@ export interface GuideUnit {
   earlyCheckIn?: BL;
   lateCheckOut?: BL;
   cleaning?: BL;
+  laundry?: BL; // lavadora: en el depto o en el área común; va en su propio renglón con ícono
   // Importes sueltos para las políticas (limpieza estándar y mascotas declaradas).
   // null en petFee = este departamento no admite mascotas.
   cleaningFee?: BL;

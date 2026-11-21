@@ -518,8 +518,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -531,7 +531,11 @@
      },
      "wifi": [
       "MaiaHome Emilia"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "macotela",
@@ -651,8 +655,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$30 USD** if you let us know two hours or more ahead, **$45 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -665,7 +669,11 @@
      "wifi": [
       "MaiaHome Emilia",
       "MaiaHome Velasco"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "velasco",
@@ -785,8 +793,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -798,7 +806,11 @@
      },
      "wifi": [
       "MaiaHome Velasco"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -1476,8 +1488,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "50 USD",
@@ -1489,7 +1501,11 @@
      },
      "wifi": [
       "MaiaHome Tamayo"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -2179,8 +2195,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -2192,7 +2208,11 @@
      },
      "wifi": [
       "MaiaHome Aurora"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -2846,8 +2866,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "50 USD",
@@ -2859,7 +2879,11 @@
      },
      "wifi": [
       "MaiaHome Leonora 1"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "leonora-2",
@@ -2979,8 +3003,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -2989,7 +3013,11 @@
      "petFee": null,
      "wifi": [
       "MaiaHome Leonora 2"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "leonora-3",
@@ -3109,8 +3137,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -3122,7 +3150,11 @@
      },
      "wifi": [
       "MaiaHome Leonora 3"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -3522,8 +3554,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -3535,7 +3567,11 @@
      },
      "wifi": [
       "MaiaHome Coco 1"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-1-2",
@@ -3666,8 +3702,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -3680,7 +3716,11 @@
      "wifi": [
       "MaiaHome Coco 1",
       "MaiaHome Coco 2"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-1-8",
@@ -3811,8 +3851,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$30 USD** if you let us know two hours or more ahead, **$45 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD por unidad",
@@ -3831,7 +3871,11 @@
       "MaiaHome Coco 6",
       "MaiaHome Coco 7",
       "MaiaHome Coco 8"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-2",
@@ -3962,8 +4006,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -3975,7 +4019,11 @@
      },
      "wifi": [
       "MaiaHome Coco 2"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-3",
@@ -4106,8 +4154,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4119,7 +4167,11 @@
      },
      "wifi": [
       "MaiaHome Coco 3"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-4",
@@ -4250,8 +4302,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4263,7 +4315,11 @@
      },
      "wifi": [
       "MaiaHome Coco 4"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-4-5",
@@ -4394,8 +4450,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4408,7 +4464,11 @@
      "wifi": [
       "MaiaHome Coco 4",
       "MaiaHome Coco 5"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-5",
@@ -4539,8 +4599,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4552,7 +4612,11 @@
      },
      "wifi": [
       "MaiaHome Coco 5"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-6",
@@ -4683,8 +4747,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4696,7 +4760,11 @@
      },
      "wifi": [
       "MaiaHome Coco 6"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-7",
@@ -4827,8 +4895,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4840,7 +4908,11 @@
      },
      "wifi": [
       "MaiaHome Coco 7"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-7-8",
@@ -4971,8 +5043,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -4985,7 +5057,11 @@
      "wifi": [
       "MaiaHome Coco 7",
       "MaiaHome Coco 8"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "coco-8",
@@ -5116,8 +5192,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -5129,7 +5205,11 @@
      },
      "wifi": [
       "MaiaHome Coco 8"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     }
    ],
    "beforeArrival": [
@@ -5800,8 +5880,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -5813,7 +5893,11 @@
      },
      "wifi": [
       "MaiaHome Kahlo"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -6443,8 +6527,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$30 USD** if you let us know two hours or more ahead, **$45 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -6457,7 +6541,11 @@
      "wifi": [
       "MaiaHome Laila C4",
       "MaiaHome Luz Maria 5"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "laila-c4-l5-l6",
@@ -6577,8 +6665,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$30 USD** if you let us know two hours or more ahead, **$45 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -6592,7 +6680,11 @@
       "MaiaHome Laila C4",
       "MaiaHome Luz Maria 5",
       "MaiaHome Luz Maria 6"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "laila-c4-l6",
@@ -6712,8 +6804,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$30 USD** if you let us know two hours or more ahead, **$45 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -6726,7 +6818,11 @@
      "wifi": [
       "MaiaHome Laila C4",
       "MaiaHome Luz Maria 6"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-4",
@@ -6846,8 +6942,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -6859,7 +6955,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 4"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-5",
@@ -6979,8 +7079,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -6992,7 +7092,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 5"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-6",
@@ -7112,8 +7216,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -7125,7 +7229,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 6"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "luz-maria-7",
@@ -7245,8 +7353,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -7258,7 +7366,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 7"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-8",
@@ -7378,8 +7490,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -7391,7 +7503,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 8"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-9",
@@ -7511,8 +7627,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -7524,7 +7640,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 9"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-10",
@@ -7644,8 +7764,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$15 USD** if you let us know two hours or more ahead, **$25 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 25 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 25 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "25 USD",
@@ -7657,7 +7777,11 @@
      },
      "wifi": [
       "MaiaHome Luz Maria 10"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-l7-l8",
@@ -7777,8 +7901,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -7791,7 +7915,11 @@
      "wifi": [
       "MaiaHome Luz Maria 7",
       "MaiaHome Luz Maria 8"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "luz-maria-l9-l10",
@@ -7911,8 +8039,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 40 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 40 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "40 USD",
@@ -7925,7 +8053,11 @@
      "wifi": [
       "MaiaHome Luz Maria 9",
       "MaiaHome Luz Maria 10"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     }
    ],
    "beforeArrival": [
@@ -8567,8 +8699,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "50 USD",
@@ -8580,7 +8712,11 @@
      },
      "wifi": [
       "MaiaHome Laila C3"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     },
     {
      "id": "laila-c4",
@@ -8700,8 +8836,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La lavadora está en el área común del edificio.",
-      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The washer is in the building's shared area."
+      "es": "Limpieza extra: 60 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 60 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "60 USD",
@@ -8713,7 +8849,11 @@
      },
      "wifi": [
       "MaiaHome Laila C4"
-     ]
+     ],
+     "laundry": {
+      "es": "La lavadora está en el área común del edificio.",
+      "en": "The washer is in the building's shared area."
+     }
     }
    ],
    "beforeArrival": [
@@ -9367,8 +9507,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "50 USD",
@@ -9380,7 +9520,11 @@
      },
      "wifi": [
       "MaiaHome Cordelia"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [
@@ -10034,8 +10178,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$20 USD** if you let us know two hours or more ahead, **$30 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 30 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 30 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 30 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 30 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "30 USD",
@@ -10047,7 +10191,11 @@
      },
      "wifi": [
       "MaiaHome Horacio 1"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "horacio-1-2",
@@ -10167,8 +10315,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. El departamento tiene lavadora y secadora.",
-      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The apartment has a washer and dryer."
+      "es": "Limpieza extra: 50 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 50 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "50 USD",
@@ -10181,7 +10329,11 @@
      "wifi": [
       "MaiaHome Horacio 1",
       "MaiaHome Horacio 2"
-     ]
+     ],
+     "laundry": {
+      "es": "El departamento tiene lavadora y secadora.",
+      "en": "The apartment has a washer and dryer."
+     }
     },
     {
      "id": "horacio-2",
@@ -10798,8 +10950,8 @@
       "en": "Late check-out subject to availability, **until 3:00 PM at the latest**. It is charged by the hour: **$25 USD** if you let us know two hours or more ahead, **$35 USD** if you ask with less notice. The total never exceeds the price of an extra night. If you need to stay past 3:00 PM, we can book you the extra night. And if you would rather not pay, you can leave your luggage with us while the cleaning team gets the apartment ready, until around 2:30 PM."
      },
      "cleaning": {
-      "es": "Limpieza extra: 100 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar. La casa tiene lavadora y secadora.",
-      "en": "Extra cleaning: 100 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking. The house has a washer and dryer."
+      "es": "Limpieza extra: 100 USD por servicio. Se agenda con 24 horas de anticipación, entre las 9:00 y las 12:00. Incluye cambio de blancos y limpieza de todas las áreas, y dura de 2 a 4 horas; no incluye lavado ni planchado de ropa ni cocinar.",
+      "en": "Extra cleaning: 100 USD per service. Book it 24 hours ahead, between 9 AM and 12 PM. It covers fresh linens and a full clean of every area and takes 2 to 4 hours; it doesn't include laundry, ironing or cooking."
      },
      "cleaningFee": {
       "es": "100 USD",
@@ -10811,7 +10963,11 @@
      },
      "wifi": [
       "MaiaHome Augustine"
-     ]
+     ],
+     "laundry": {
+      "es": "La casa tiene lavadora y secadora.",
+      "en": "The house has a washer and dryer."
+     }
     }
    ],
    "beforeArrival": [

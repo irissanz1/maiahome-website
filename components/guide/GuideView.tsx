@@ -558,6 +558,12 @@ export default function GuideView({ guide, lang }: { guide: Guide; lang: Lang })
               <p className="mt-1 whitespace-pre-line text-sm text-neutral-600">
                 {unitAware ? (unit ? pick(lang, unit.cleaning) || pick(lang, guide.cleaning) : t.variesByUnit) : pick(lang, guide.cleaning)}
               </p>
+              {unit?.laundry && (
+                <p className="mt-3 flex items-center gap-2 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-neutral-900">
+                  <Icon name="washer" className="h-5 w-5 shrink-0 text-neutral-800" />
+                  {pick(lang, unit.laundry)}
+                </p>
+              )}
               <div className="mt-3 border-t border-neutral-200 pt-3">
                 <CleanPolicy lead={t.coCleanD} items={unit?.cleaningFee ? t.coCleanFee(pick(lang, unit.cleaningFee)) : t.coCleanFeeAny} />
               </div>
@@ -688,6 +694,7 @@ const ICONS: Record<string, React.ReactNode> = {
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7.5V12l3 1.8" /></>,
   moon: <><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z" /></>,
   sleep: <><path d="M14.5 16.5A6.5 6.5 0 1 1 7.5 9.5a5 5 0 0 0 7 7Z" /><path d="M13 2.5h6.5l-6.5 6.5h6.5M18.5 11.5h3.5l-3.5 4h3.5" /></>,
+  washer: <><rect x="4" y="2.5" width="16" height="19" rx="2" /><path d="M4 7h16" /><circle cx="12" cy="14" r="4.5" /><path d="M7 4.8h.01M10 4.8h.01" /></>,
   nosmoke: <><path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13M7 12v4M18 8c0-2.5-2-2.5-2-5M22 8c0-2.5-2-2.5-2-5M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.87M2 2l20 20" /></>,
   noparty: <><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /><path d="M2 2l20 20" /></>,
   key: <><circle cx="7.5" cy="15.5" r="3.5" /><path d="m10 13 8-8M16.5 4.5l2 2M14.5 6.5l2 2" /></>,
