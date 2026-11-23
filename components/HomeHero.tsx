@@ -101,7 +101,7 @@ export default function HomeHero({ lang: langProp }: { lang?: "es" | "en" | "zh"
             </div>
             <div className="flex items-center gap-2">
               <button type="button" aria-label={h.less} onClick={() => setGuests((g) => Math.max(1, g - 1))} className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-lg text-neutral-700 hover:bg-neutral-50">−</button>
-              <button type="button" aria-label={h.more} onClick={() => setGuests((g) => Math.min(16, g + 1))} className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-lg text-neutral-700 hover:bg-neutral-50">+</button>
+              <button type="button" aria-label={h.more} onClick={() => setGuests((g) => Math.min(26, g + 1))} className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-lg text-neutral-700 hover:bg-neutral-50">+</button>
             </div>
           </div>
 

@@ -67,12 +67,12 @@ export default function SearchStrip({
           <span className="mb-1 block text-xs font-medium text-neutral-500">{st.guests}</span>
           <select value={guests} onChange={(e) => setGuests(e.target.value)} className={field}>
             <option value="">{st.add}</option>
-            {[1, 2, 3, 4, 5].map((n) => (
+            {Array.from({ length: 20 }, (_, i) => i + 1).map((n) => (
               <option key={n} value={n}>
                 {n}
               </option>
             ))}
-            <option value="6">6+</option>
+            <option value="21">21+</option>
           </select>
         </label>
         {!fixedZona && (

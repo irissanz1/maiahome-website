@@ -31,6 +31,7 @@ export default function StayDateForm({
   checkoutUrl,
   roomId,
   nombre,
+  capacidad,
 }: {
   slug: string;
   checkin?: string;
@@ -41,6 +42,7 @@ export default function StayDateForm({
   checkoutUrl: string;
   roomId: string;
   nombre: string;
+  capacidad?: number | null;
 }) {
   const router = useRouter();
   const lang = langFromPath(usePathname());
@@ -116,10 +118,9 @@ export default function StayDateForm({
       <label className="block">
         <span className="mb-1 block text-xs font-medium text-neutral-500">{sd.guests}</span>
         <select value={guests} onChange={(e) => setGuests(e.target.value)} className={field}>
-          {[1, 2, 3, 4, 5].map((n) => (
+          {guestOptions(capacidad, dg).map((n) => (
             <option key={n} value={n}>{n}</option>
           ))}
-          <option value="6">6+</option>
         </select>
       </label>
       <button
@@ -136,4 +137,14 @@ export default function StayDateForm({
       </button>
     </div>
   );
+}
+
+// Huéspedes: del 1 a la capacidad del depto (20 si no la conocemos). Si la búsqueda
+// trae más personas que la capacidad, se agrega ese número para que el selector lo muestre
+// (la página ya avisa "Excede capacidad").
+function guestOptions(capacidad?: number | null, dg?: number): number[] {
+  const max = capacidad && capacidad > 0 ? capacidad : 20;
+  const opts = Array.from({ length: max }, (_, i) => i + 1);
+  if (dg && dg > max) opts.push(dg);
+  return opts;
 }

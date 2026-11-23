@@ -254,6 +254,7 @@ export default async function StayDetail({
               checkoutUrl={checkoutUrl}
               roomId={p.beds24RoomId}
               nombre={p.nombre}
+              capacidad={p.capacidad}
             />
           </div>
 
