@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:56:31.345Z",
+  "generatedAt": "2026-11-26T06:47:15.429Z",
   "complete": true,
   "incompleteRooms": [],
   "rooms": {
@@ -9,12 +9,6 @@
       "roomName": "Prospe",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 122
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -2204,11 +2198,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 159
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 192
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "395664": {
       "beds24PropertyId": 182463,
@@ -2216,12 +2216,6 @@
       "roomName": "BGC2829",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": -1,
-          "minStay": 1,
-          "price": 636
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -1,
@@ -4411,11 +4405,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 628
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 756
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "395667": {
       "beds24PropertyId": 182466,
@@ -4423,12 +4423,6 @@
       "roomName": "BG2909",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 173
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -6618,11 +6612,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 216
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 231
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "395668": {
       "beds24PropertyId": 182467,
@@ -6630,12 +6630,6 @@
       "roomName": "BG2801",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 251
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -8825,11 +8819,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 303
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 343
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "418925": {
       "beds24PropertyId": 194738,
@@ -8837,12 +8837,6 @@
       "roomName": "Solon",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 7,
-          "price": 272
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -11032,11 +11026,17 @@
           "numAvail": 1,
           "minStay": 28,
           "price": 311
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 28,
+          "price": 309
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "418926": {
       "beds24PropertyId": 194739,
@@ -11044,12 +11044,6 @@
       "roomName": "H2.Horacio",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 124
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -13239,11 +13233,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 151
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 149
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "418927": {
       "beds24PropertyId": 194740,
@@ -13251,12 +13251,6 @@
       "roomName": "H1.Horacio",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 218
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -15446,11 +15440,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 254
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 261
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "418928": {
       "beds24PropertyId": 194741,
@@ -15458,12 +15458,6 @@
       "roomName": "H3.Horacio",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 296
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -17653,11 +17647,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 336
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 339
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "429088": {
       "beds24PropertyId": 200307,
@@ -17665,21 +17665,15 @@
       "roomName": "Hares",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
+        "2026-11-26": {
           "available": false,
           "numAvail": 0,
-          "minStay": 1,
-          "price": 186
-        },
-        "2026-11-26": {
-          "available": true,
-          "numAvail": 1,
           "minStay": 1,
           "price": 169
         },
         "2026-11-27": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 172
         },
@@ -19860,11 +19854,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 213
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 231
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "429313": {
       "beds24PropertyId": 200452,
@@ -19872,12 +19872,6 @@
       "roomName": "Tennyson",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 276
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -22067,11 +22061,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 352
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 412
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "429314": {
       "beds24PropertyId": 200453,
@@ -22079,12 +22079,6 @@
       "roomName": "Bernard1",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 314
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -24274,11 +24268,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 403
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 452
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "461199": {
       "beds24PropertyId": 216896,
@@ -24286,12 +24286,6 @@
       "roomName": "LamCas4",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": true,
-          "numAvail": 1,
-          "minStay": 1,
-          "price": 279
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -24353,38 +24347,38 @@
           "price": 352
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 318
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 316
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 317
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 274
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 298
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 398
         },
@@ -26481,11 +26475,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 581
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 581
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "462994": {
       "beds24PropertyId": 217773,
@@ -26493,12 +26493,6 @@
       "roomName": "LamL04",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": true,
-          "numAvail": 1,
-          "minStay": 1,
-          "price": 131
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -26560,38 +26554,38 @@
           "price": 134
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 134
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 133
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 130
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 131
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 135
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 15,
           "price": 150
         },
@@ -28688,11 +28682,17 @@
           "numAvail": 1,
           "minStay": 45,
           "price": 174
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 45,
+          "price": 171
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "466958": {
       "beds24PropertyId": 220105,
@@ -28700,12 +28700,6 @@
       "roomName": "LamCas3",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": true,
-          "numAvail": 1,
-          "minStay": 1,
-          "price": 275
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -28767,38 +28761,38 @@
           "price": 297
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 286
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 260
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 263
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 277
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 283
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 363
         },
@@ -30895,11 +30889,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 401
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 457
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "469041": {
       "beds24PropertyId": 221189,
@@ -30907,12 +30907,6 @@
       "roomName": "LamL05",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 121
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -30974,38 +30968,38 @@
           "price": 116
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 117
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 116
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 114
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 114
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 118
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 131
         },
@@ -33102,11 +33096,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 152
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 149
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "472123": {
       "beds24PropertyId": 222112,
@@ -33114,12 +33114,6 @@
       "roomName": "LamL06",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 156
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -33181,38 +33175,38 @@
           "price": 116
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 116
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 116
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 115
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 114
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 116
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 129
         },
@@ -35309,11 +35303,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 151
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 149
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "489020": {
       "beds24PropertyId": 230828,
@@ -35321,12 +35321,6 @@
       "roomName": "LamTot",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": -5,
-          "minStay": 1,
-          "price": 814
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -4,
@@ -37516,11 +37510,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 1373
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 1596
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "489635": {
       "beds24PropertyId": 231191,
@@ -37528,12 +37528,6 @@
       "roomName": "LamC456",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": -1,
-          "minStay": 1,
-          "price": 989
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -1,
@@ -37595,38 +37589,38 @@
           "price": 594
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 555
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 560
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 427
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 461
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 549
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 725
         },
@@ -39723,11 +39717,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 926
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 1054
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "489637": {
       "beds24PropertyId": 231193,
@@ -39735,12 +39735,6 @@
       "roomName": "LamC45",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 559
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -39802,38 +39796,38 @@
           "price": 513
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 454
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 460
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 382
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 413
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 460
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 611
         },
@@ -41930,11 +41924,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 749
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 818
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "489638": {
       "beds24PropertyId": 231194,
@@ -41942,12 +41942,6 @@
       "roomName": "LamC46",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 818
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -1,
@@ -42009,38 +42003,38 @@
           "price": 534
         },
         "2026-12-06": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 482
         },
         "2026-12-07": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 481
         },
         "2026-12-08": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 392
         },
         "2026-12-09": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 424
         },
         "2026-12-10": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 476
         },
         "2026-12-11": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 2,
           "price": 574
         },
@@ -44137,11 +44131,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 778
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 850
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "494785": {
       "beds24PropertyId": 233801,
@@ -44149,12 +44149,6 @@
       "roomName": "Bernard2",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 393
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -44168,8 +44162,8 @@
           "price": 382
         },
         "2026-11-28": {
-          "available": true,
-          "numAvail": 1,
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": 277
         },
@@ -46344,11 +46338,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 407
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 455
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506100": {
       "beds24PropertyId": 239803,
@@ -46356,12 +46356,6 @@
       "roomName": "LamL10",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 110
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -48551,11 +48545,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 127
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 125
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506106": {
       "beds24PropertyId": 239805,
@@ -48563,12 +48563,6 @@
       "roomName": "LamL09",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 125
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -50758,11 +50752,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 149
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 146
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506118": {
       "beds24PropertyId": 239813,
@@ -50770,12 +50770,6 @@
       "roomName": "LamL07",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 160
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -52965,11 +52959,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 146
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 144
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506119": {
       "beds24PropertyId": 239814,
@@ -52977,12 +52977,6 @@
       "roomName": "LamL08",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 106
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -55172,11 +55166,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 128
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 126
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506193": {
       "beds24PropertyId": 239877,
@@ -55184,12 +55184,6 @@
       "roomName": "Lam910",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": -1,
-          "minStay": 1,
-          "price": 194
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -1,
@@ -57379,11 +57373,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 183
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 191
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "506198": {
       "beds24PropertyId": 239880,
@@ -57391,12 +57391,6 @@
       "roomName": "Lam78",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": -1,
-          "minStay": 1,
-          "price": 220
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": -1,
@@ -59586,11 +59580,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 192
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 3,
+          "price": 200
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "625019": {
       "beds24PropertyId": 299461,
@@ -59598,12 +59598,6 @@
       "roomName": "Cond2",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 108
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -61793,11 +61787,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 120
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 133
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "625022": {
       "beds24PropertyId": 299463,
@@ -61805,12 +61805,6 @@
       "roomName": "Cond5",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 83
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -64000,11 +63994,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 111
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 124
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "625023": {
       "beds24PropertyId": 299464,
@@ -64012,12 +64012,6 @@
       "roomName": "Cond8",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 90
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -66207,11 +66201,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 119
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 132
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "625024": {
       "beds24PropertyId": 299465,
@@ -66219,12 +66219,6 @@
       "roomName": "Cond7",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 90
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -68414,11 +68408,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 109
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 121
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "626201": {
       "beds24PropertyId": 300033,
@@ -68426,12 +68426,6 @@
       "roomName": "Cond1",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 97
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -70621,11 +70615,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 108
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 120
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "626202": {
       "beds24PropertyId": 300034,
@@ -70633,12 +70633,6 @@
       "roomName": "Cond4",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 87
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -72828,11 +72822,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 105
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 117
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "626203": {
       "beds24PropertyId": 300035,
@@ -72840,12 +72840,6 @@
       "roomName": "Cond3",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 101
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -75035,11 +75029,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 122
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 134
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "626206": {
       "beds24PropertyId": 300038,
@@ -75047,12 +75047,6 @@
       "roomName": "Cond6",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": true,
-          "numAvail": 1,
-          "minStay": 1,
-          "price": 96
-        },
         "2026-11-26": {
           "available": true,
           "numAvail": 1,
@@ -77242,11 +77236,17 @@
           "numAvail": 1,
           "minStay": 1,
           "price": 127
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 141
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "639778": {
       "beds24PropertyId": 306961,
@@ -77254,12 +77254,6 @@
       "roomName": "Augustine",
       "currency": "USD",
       "calendar": {
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": 254
-        },
         "2026-11-26": {
           "available": false,
           "numAvail": 0,
@@ -79449,11 +79443,17 @@
           "numAvail": 1,
           "minStay": 2,
           "price": 426
+        },
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 482
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "669908": {
       "beds24PropertyId": 322312,
@@ -81651,16 +81651,16 @@
           "minStay": 1,
           "price": 405
         },
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": null
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 453
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "704198": {
       "beds24PropertyId": 340718,
@@ -83858,16 +83858,16 @@
           "minStay": 1,
           "price": 231
         },
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": null
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 284
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "704200": {
       "beds24PropertyId": 340720,
@@ -86065,16 +86065,16 @@
           "minStay": 1,
           "price": 231
         },
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": null
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 284
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "704201": {
       "beds24PropertyId": 340721,
@@ -88272,16 +88272,16 @@
           "minStay": 1,
           "price": 238
         },
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": null
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 284
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "715030": {
       "beds24PropertyId": 346349,
@@ -90479,16 +90479,16 @@
           "minStay": 2,
           "price": 932
         },
-        "2026-11-25": {
-          "available": false,
-          "numAvail": 0,
-          "minStay": 1,
-          "price": null
+        "2027-11-26": {
+          "available": true,
+          "numAvail": 1,
+          "minStay": 2,
+          "price": 1043
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     },
     "740707": {
       "beds24PropertyId": 359294,
@@ -92686,21 +92686,21 @@
           "minStay": 1,
           "price": null
         },
-        "2026-11-25": {
-          "available": true,
-          "numAvail": 1,
+        "2027-11-26": {
+          "available": false,
+          "numAvail": 0,
           "minStay": 1,
           "price": null
         }
       },
       "complete": true,
       "days": 366,
-      "updatedAt": "2026-11-25T23:56:31.345Z"
+      "updatedAt": "2026-11-26T06:47:15.429Z"
     }
   },
   "bookingsOverlay": {
-    "appliedAt": "2026-11-26T00:03:50.286Z",
+    "appliedAt": "2026-11-26T06:56:46.400Z",
     "bookings": 98,
-    "reconstructed": 6
+    "reconstructed": 0
   }
 }
