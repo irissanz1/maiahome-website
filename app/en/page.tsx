@@ -7,9 +7,10 @@ import StatsBar from "@/components/StatsBar";
 import TrustBar from "@/components/TrustBar";
 import FeaturedReviews from "@/components/FeaturedReviews";
 import HomeFaq from "@/components/HomeFaq";
-import PropertiesMap, { type MapMarker } from "@/components/PropertiesMap";
+import { type MapMarker } from "@/components/PropertiesMap";
+import CityMapSwitch from "@/components/CityMapSwitch";
 import { getByMarket } from "@/lib/data";
-import { resolveMarket } from "@/lib/market";
+import { resolveMarket, MARKETS } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
 
 export const metadata: Metadata = {
@@ -35,15 +36,23 @@ export default async function HomeEn({ searchParams }: { searchParams: Promise<R
   const pinned = FEATURED_SLUGS.map((s) => bySlug.get(s)).filter((p): p is NonNullable<typeof p> => Boolean(p));
   const featured = pinned.length >= 3 ? pinned.slice(0, 3) : [...pinned, ...marketProps.filter((p) => !FEATURED_SLUGS.includes(p.slug)).slice(0, 3 - pinned.length)];
 
-  const mapMarkers: MapMarker[] = marketProps
-    .filter((p) => typeof p.lat === "number" && typeof p.lng === "number")
-    .map((p) => ({
-      slug: p.slug, nombre: p.nombre, zonaNombre: p.zonaNombre, lat: p.lat as number, lng: p.lng as number,
-      priceLabel: p.precioDesde != null ? `${formatMoney(p.precioDesde, p.currency)} / night` : null,
-      image: img(p.images[0], 400), rating: p.rating, href: `/en/stay/${p.slug}`,
-    }));
+  const toMarkers = (props: Awaited<ReturnType<typeof getByMarket>>): MapMarker[] =>
+    props
+      .filter((p) => typeof p.lat === "number" && typeof p.lng === "number")
+      .map((p) => ({
+        slug: p.slug, nombre: p.nombre, zonaNombre: p.zonaNombre, lat: p.lat as number, lng: p.lng as number,
+        priceLabel: p.precioDesde != null ? `${formatMoney(p.precioDesde, p.currency)} / night` : null,
+        image: img(p.images[0], 400), rating: p.rating, href: `/en/stay/${p.slug}`,
+      }));
+  const mxProps = market.id === "mx" ? marketProps : await getByMarket("mx");
+  const usProps = market.id === "us" ? marketProps : await getByMarket("us");
+  const cityMaps = [
+    { id: "mx", label: MARKETS.mx.geoEn, count: mxProps.length, markers: toMarkers(mxProps) },
+    { id: "us", label: MARKETS.us.geoEn, count: usProps.length, markers: toMarkers(usProps) },
+  ];
+  const mapMarkers = cityMaps.find((c) => c.id === market.id)?.markers ?? [];
   const zoneMap = new Map<string, { slug: string; count: number }>();
-  for (const p of marketProps) {
+  for (const p of [...mxProps, ...usProps]) {
     const cur = zoneMap.get(p.zonaNombre);
     if (cur) cur.count += 1; else zoneMap.set(p.zonaNombre, { slug: p.zona, count: 1 });
   }
@@ -97,7 +106,7 @@ export default async function HomeEn({ searchParams }: { searchParams: Promise<R
               </div>
               <Link href={`/en/apartments?market=${market.id}`} className="mt-6 inline-block rounded-full bg-maia-dark px-6 py-3 text-sm font-semibold text-white transition hover:bg-black">View all on the map →</Link>
             </div>
-            <PropertiesMap markers={mapMarkers} heightClass="h-[420px] md:h-[460px]" showPois poiGroupKeys={["cultura", "compras", "parques"]} poiControl={false} />
+            <CityMapSwitch cities={cityMaps} initial={market.id} lang="en" heightClass="h-[420px] md:h-[460px]" />
           </div>
         </section>
       )}

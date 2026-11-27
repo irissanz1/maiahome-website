@@ -7,9 +7,10 @@ import StatsBar from "@/components/StatsBar";
 import TrustBar from "@/components/TrustBar";
 import FeaturedReviews from "@/components/FeaturedReviews";
 import HomeFaq from "@/components/HomeFaq";
-import PropertiesMap, { type MapMarker } from "@/components/PropertiesMap";
+import { type MapMarker } from "@/components/PropertiesMap";
+import CityMapSwitch from "@/components/CityMapSwitch";
 import { getByMarket } from "@/lib/data";
-import { resolveMarket } from "@/lib/market";
+import { resolveMarket, MARKETS } from "@/lib/market";
 import { formatMoney, img } from "@/lib/format";
 
 export const metadata: Metadata = {
@@ -42,25 +43,36 @@ export default async function Home({
       ? pinned.slice(0, 3)
       : [...pinned, ...marketProps.filter((p) => !FEATURED_SLUGS.includes(p.slug)).slice(0, 3 - pinned.length)];
 
-  // Mapa "Dónde estamos": pines del mercado actual + chips por zona con conteo.
-  const mapMarkers: MapMarker[] = marketProps
-    .filter((p) => typeof p.lat === "number" && typeof p.lng === "number")
-    .map((p) => ({
-      slug: p.slug,
-      nombre: p.nombre,
-      zonaNombre: p.zonaNombre,
-      lat: p.lat as number,
-      lng: p.lng as number,
-      priceLabel: p.precioDesde != null ? `${formatMoney(p.precioDesde, p.currency)} / noche` : null,
-      image: img(p.images[0], 400),
-      rating: p.rating,
-      href: `/depto/${p.slug}`,
-    }));
-  const zoneMap = new Map<string, { slug: string; count: number }>();
-  for (const p of marketProps) {
-    const cur = zoneMap.get(p.zonaNombre);
-    if (cur) cur.count += 1;
-    else zoneMap.set(p.zonaNombre, { slug: p.zona, count: 1 });
+  // Mapa "Dónde estamos": selector CDMX | Houston (abre en el mercado actual)
+  // + chips por zona con conteo de ambos mercados.
+  const toMarkers = (props: Awaited<ReturnType<typeof getByMarket>>): MapMarker[] =>
+    props
+      .filter((p) => typeof p.lat === "number" && typeof p.lng === "number")
+      .map((p) => ({
+        slug: p.slug,
+        nombre: p.nombre,
+        zonaNombre: p.zonaNombre,
+        lat: p.lat as number,
+        lng: p.lng as number,
+        priceLabel: p.precioDesde != null ? `${formatMoney(p.precioDesde, p.currency)} / noche` : null,
+        image: img(p.images[0], 400),
+        rating: p.rating,
+        href: `/depto/${p.slug}`,
+      }));
+  const mxProps = market.id === "mx" ? marketProps : await getByMarket("mx");
+  const usProps = market.id === "us" ? marketProps : await getByMarket("us");
+  const cityMaps = [
+    { id: "mx", label: MARKETS.mx.geo, count: mxProps.length, markers: toMarkers(mxProps) },
+    { id: "us", label: MARKETS.us.geo, count: usProps.length, markers: toMarkers(usProps) },
+  ];
+  const mapMarkers = cityMaps.find((c) => c.id === market.id)?.markers ?? [];
+  const zoneMap = new Map<string, { slug: string; count: number; market: string }>();
+  for (const [mk, list] of [["mx", mxProps], ["us", usProps]] as const) {
+    for (const p of list) {
+      const cur = zoneMap.get(p.zonaNombre);
+      if (cur) cur.count += 1;
+      else zoneMap.set(p.zonaNombre, { slug: p.zona, count: 1, market: mk });
+    }
   }
   const zones = [...zoneMap.entries()].sort((a, b) => b[1].count - a[1].count);
 
@@ -127,10 +139,10 @@ export default async function Home({
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {zones.map(([nombre, { slug, count }]) => (
+                {zones.map(([nombre, { slug, count, market: mk }]) => (
                   <Link
                     key={slug}
-                    href={`/departamentos?market=${market.id}&zona=${slug}`}
+                    href={`/departamentos?market=${mk}&zona=${slug}`}
                     className="inline-flex items-center gap-1.5 rounded-full border border-neutral-300 px-3.5 py-1.5 text-sm text-neutral-700 transition hover:border-maia-strong hover:bg-neutral-50"
                   >
                     {nombre}
@@ -147,13 +159,7 @@ export default async function Home({
               </Link>
             </div>
 
-            <PropertiesMap
-              markers={mapMarkers}
-              heightClass="h-[420px] md:h-[460px]"
-              showPois
-              poiGroupKeys={["cultura", "compras", "parques"]}
-              poiControl={false}
-            />
+            <CityMapSwitch cities={cityMaps} initial={market.id} lang="es" heightClass="h-[420px] md:h-[460px]" />
           </div>
         </section>
       )}

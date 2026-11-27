@@ -169,10 +169,28 @@ export default function PropertiesMap({
           }
         }
 
+        // Un solo edificio (p. ej. Houston): abrir lo suficiente para que se vean
+        // los lugares visibles más cercanos (≤ 6 km), sin acercar más de 14.
+        let framePts = pts;
+        if (groups.length === 1 && showPois) {
+          const visibleCats = POI_GROUPS.filter((g) =>
+            poiGroupKeys ? poiGroupKeys.includes(g.key) : !poiControl || g.onByDefault
+          ).flatMap((g) => g.cats);
+          const here = { lat: groups[0].lat, lng: groups[0].lng };
+          const closest = POIS.filter((poi) => visibleCats.includes(poi.cat))
+            .map((poi) => ({ poi, d: distM(here, poi) }))
+            .filter((x) => x.d < 6000)
+            .sort((a, b) => a.d - b.d)
+            .slice(0, 4)
+            .map((x) => [x.poi.lat, x.poi.lng] as [number, number]);
+          if (closest.length) framePts = [...pts, ...closest];
+        }
+
         // El contenedor puede medir 0 al montar (toggle). Recalcular y encuadrar.
         const fit = () => {
           map.invalidateSize();
-          if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
+          if (framePts.length > 1) map.fitBounds(framePts, { padding: [50, 50], maxZoom: framePts === pts ? 15 : 14 });
+          else if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 15 });
           else map.setView([19.42, -99.19], 12);
         };
         fit();
