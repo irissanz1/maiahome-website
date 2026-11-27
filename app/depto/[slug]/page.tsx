@@ -145,7 +145,7 @@ export default async function StayDetail({
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_360px]">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-maia-strong">
-            {p.zonaNombre} · {p.pais === "MX" ? "Ciudad de México" : "Houston, TX"}
+            {p.pais !== "MX" && p.zonaNombre === "Houston" ? "Houston, TX" : `${p.zonaNombre} · ${p.pais === "MX" ? "Ciudad de México" : "Houston, TX"}`}
           </p>
           <h1 className="mt-2 font-serif text-4xl text-neutral-900">{p.nombre}</h1>
           <p className="mt-1 text-neutral-500">
@@ -203,8 +203,9 @@ export default async function StayDetail({
             <section className="mt-10">
               <h2 className="font-serif text-2xl text-neutral-900">Ubicación</h2>
               <p className="mt-1 text-sm text-neutral-500">
-                {p.zonaNombre}
-                {p.pais === "MX" ? ", Ciudad de México" : ", Houston, TX"}
+                {p.pais !== "MX" && p.zonaNombre === "Houston"
+                  ? "Houston, TX"
+                  : `${p.zonaNombre}${p.pais === "MX" ? ", Ciudad de México" : ", Houston, TX"}`}
               </p>
               {zonaDesc && <p className="mt-3 leading-relaxed text-neutral-600">{zonaDesc}</p>}
               <div className="mt-4">

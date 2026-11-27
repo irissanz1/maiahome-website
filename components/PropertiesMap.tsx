@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { langFromPath } from "@/lib/i18n";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
-import { POIS, POI_GROUPS, CAT_EMOJI } from "@/lib/pois";
+import { POIS, POI_GROUPS, CAT_EMOJI, POI_RADIUS_M } from "@/lib/pois";
 
 export type MapMarker = {
   slug: string;
@@ -140,7 +140,7 @@ export default function PropertiesMap({
         // Puntos de interés cercanos (contexto), agrupados por tipo con toggle.
         // Solo los que están a < 8 km de alguna propiedad → Houston no muestra CDMX.
         if (showPois && pts.length) {
-          const near = POIS.filter((poi) => markers.some((m) => distM(m, poi) < 8000));
+          const near = POIS.filter((poi) => markers.some((m) => distM(m, poi) < POI_RADIUS_M));
           const groups = poiGroupKeys
             ? POI_GROUPS.filter((g) => poiGroupKeys.includes(g.key))
             : POI_GROUPS;
@@ -157,7 +157,7 @@ export default function PropertiesMap({
                 iconAnchor: [12, 12],
               });
               L.marker([poi.lat, poi.lng], { icon })
-                .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
+                .bindTooltip(lang === "en" && poi.nameEn ? poi.nameEn : poi.name, { direction: "top", offset: [0, -10] })
                 .addTo(layer);
             });
             overlays[`${g.emoji} ${lang === "en" ? g.labelEn : g.label}`] = layer;

@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { langFromPath } from "@/lib/i18n";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
-import { POIS, POI_GROUPS, CAT_EMOJI } from "@/lib/pois";
+import { POIS, POI_GROUPS, CAT_EMOJI, POI_RADIUS_M } from "@/lib/pois";
 import { pinHtml, distM } from "./PropertiesMap";
 
 // Mapa de la ficha: mismo estilo que el mapa del home (pin dorado en la
@@ -46,7 +46,7 @@ export default function LocationMap({
 
         // Puntos de interés cercanos, agrupados por tipo con toggle (como en el home).
         const here = { lat, lng };
-        const near = POIS.filter((poi) => distM(here, poi) < 8000);
+        const near = POIS.filter((poi) => distM(here, poi) < POI_RADIUS_M);
         const overlays: Record<string, any> = {};
         POI_GROUPS.forEach((g) => {
           const items = near.filter((poi) => g.cats.includes(poi.cat));
@@ -60,7 +60,7 @@ export default function LocationMap({
               iconAnchor: [12, 12],
             });
             L.marker([poi.lat, poi.lng], { icon: pIcon })
-              .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
+              .bindTooltip(lang === "en" && poi.nameEn ? poi.nameEn : poi.name, { direction: "top", offset: [0, -10] })
               .addTo(layer);
           });
           overlays[`${g.emoji} ${lang === "en" ? g.labelEn : g.label}`] = layer;
@@ -70,9 +70,21 @@ export default function LocationMap({
           L.control.layers(null, overlays, { collapsed: window.innerWidth < 640, position: "topright" }).addTo(map);
         }
 
+        // Encuadre: el edificio + los 4 lugares visibles más cercanos (≤ 6 km),
+        // sin acercar más de 14. En Polanco/Condesa queda igual (hay lugares a
+        // pocas cuadras); en Houston abre lo suficiente para que se vean.
+        const onCats = POI_GROUPS.filter((g) => g.onByDefault).flatMap((g) => g.cats);
+        const closest = near
+          .filter((poi) => onCats.includes(poi.cat))
+          .map((poi) => ({ poi, d: distM(here, poi) }))
+          .filter((x) => x.d < 6000)
+          .sort((a, b) => a.d - b.d)
+          .slice(0, 4)
+          .map((x) => [x.poi.lat, x.poi.lng] as [number, number]);
         const fit = () => {
           map.invalidateSize();
-          map.setView([lat, lng], 14);
+          if (closest.length) map.fitBounds([[lat, lng], ...closest], { padding: [40, 40], maxZoom: 14 });
+          else map.setView([lat, lng], 14);
         };
         setTimeout(fit, 250);
       })
