@@ -13,6 +13,8 @@ import { ZONAS } from "@/lib/market";
 import { getBySlug, getProperties } from "@/lib/data";
 import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { evaluateLive } from "@/lib/beds24-live";
+import { liveQuote } from "@/lib/quote";
+import PriceBreakdown from "@/components/PriceBreakdown";
 import { formatMoney, img, bedBreakdown, imageAlt, plainDescription, ratingJsonLd, tipoLabel } from "@/lib/format";
 
 type SP = Record<string, string | string[] | undefined>;
@@ -58,6 +60,20 @@ export default async function StayDetail({
   // fresco (refleja reservas de hace minutos). Si falla, cae a la caché.
   const r = (await evaluateLive(p, search)) ?? evaluate(p, search);
   const available = r.status === "disponible";
+  // Cotización real de Beds24 (descuento directo + limpieza + impuestos) para que
+  // el total coincida al centavo con el checkout. null → vista sin desglose.
+  const quote =
+    available && r.total != null && r.nights && search.checkin && search.checkout
+      ? await liveQuote({
+          roomId: p.beds24RoomId,
+          propertyId: p.beds24PropertyId,
+          checkin: search.checkin,
+          checkout: search.checkout,
+          guests: search.guests,
+          nights: r.nights,
+          listRoom: r.total,
+        })
+      : null;
   const needsDates = r.status === "sin-fechas";
   const reserveActionable = available || needsDates; // se ve activo (amarillo)
   const reserveLabel = needsDates
@@ -234,8 +250,19 @@ export default async function StayDetail({
         </div>
 
         <aside className="h-fit rounded-2xl border border-neutral-200 p-5 shadow-sm lg:sticky lg:top-24">
-          {p.precioDesde != null ? (
+          {quote ? (
+            <>
+              <p className="text-2xl font-semibold text-neutral-900">
+                {formatMoney(quote.preTax, cur)}
+                <span className="text-base font-normal text-neutral-500"> total</span>
+              </p>
+              <p className="text-xs text-neutral-500">
+                {quote.nights} noches · {quote.fees.length ? "incluye limpieza, antes de impuestos" : "antes de impuestos"}
+              </p>
+            </>
+          ) : p.precioDesde != null ? (
             <p className="text-2xl font-semibold text-neutral-900">
+              <span className="text-base font-normal text-neutral-500">Desde </span>
               {formatMoney(p.precioDesde, cur)}
               <span className="text-base font-normal text-neutral-500"> / noche</span>
             </p>
@@ -263,8 +290,12 @@ export default async function StayDetail({
               {statusLabel(r.status)}
               {r.status === "estancia-minima" && r.minStayRequerido ? ` · mínimo ${r.minStayRequerido} noches` : ""}
             </p>
-            {r.status === "disponible" && r.total != null && (
-              <p className="mt-1 text-neutral-600">{formatMoney(r.total, cur)} por {r.nights} noches</p>
+            {quote ? (
+              <PriceBreakdown q={quote} cur={cur} lang="es" />
+            ) : (
+              r.status === "disponible" && r.total != null && (
+                <p className="mt-1 text-neutral-600">{formatMoney(r.total, cur)} por {r.nights} noches · más impuestos y limpieza</p>
+              )
             )}
             {r.status === "sin-fechas" && <p className="mt-1 text-neutral-500">Elige fechas para ver el total.</p>}
           </div>
@@ -288,13 +319,20 @@ export default async function StayDetail({
       {/* Barra fija de reserva (móvil) */}
       <div className="fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-neutral-200 bg-white/95 py-3 pl-4 pr-24 backdrop-blur md:hidden">
         <div className="text-sm leading-tight">
-          {r.status === "disponible" && r.total != null ? (
+          {quote ? (
+            <>
+              <span className="font-semibold text-neutral-900">{formatMoney(quote.preTax, cur)}</span>
+              <span className="text-neutral-500"> · {quote.nights} noches</span>
+              <span className="block text-xs text-neutral-500">{quote.fees.length ? "Incluye limpieza, antes de impuestos" : "Antes de impuestos"}</span>
+            </>
+          ) : r.status === "disponible" && r.total != null ? (
             <>
               <span className="font-semibold text-neutral-900">{formatMoney(r.total, cur)}</span>
               <span className="text-neutral-500"> · {r.nights} noches</span>
             </>
           ) : p.precioDesde != null ? (
             <>
+              <span className="text-neutral-500">Desde </span>
               <span className="font-semibold text-neutral-900">{formatMoney(p.precioDesde, cur)}</span>
               <span className="text-neutral-500"> / noche</span>
             </>

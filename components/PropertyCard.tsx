@@ -4,6 +4,7 @@ import { evaluate, statusLabel, type SearchInput } from "@/lib/availability";
 import { formatMoney, img, imageAlt, tipoLabel } from "@/lib/format";
 import { type Lang, withLang, pick } from "@/lib/i18n";
 import Placeholder from "./Placeholder";
+import CardQuote from "./CardQuote";
 
 const T = {
   es: { guests: "huéspedes", bath: "baño", baths: "baños", bed: "cama", beds: "camas", min: "min", nights: "noches", reviews: "reseñas",
@@ -41,6 +42,8 @@ export default function PropertyCard({
   const showMonth = priceMode === "month" && property.precioMes != null;
   const price = showMonth ? property.precioMes : property.precioDesde;
   const unit = showMonth ? t.month : t.night;
+  // Con fechas y disponible: total real (como Airbnb) en lugar del "desde".
+  const showQuote = r.status === "disponible" && Boolean(r.nights && search.checkin && search.checkout);
 
   // Pasa las fechas/huéspedes de la búsqueda a la ficha (para que herede disponibilidad y total).
   const q = new URLSearchParams();
@@ -101,8 +104,8 @@ export default function PropertyCard({
         )}
         {pick(lang, property.headline) && <p className="mt-2 line-clamp-2 text-sm text-neutral-600">{pick(lang, property.headline)}</p>}
 
-        <div className="mt-3 flex items-baseline justify-between">
-          {price != null ? (
+        <div className="mt-3 flex items-end justify-between gap-2">
+          {showQuote && !showMonth ? null : price != null ? (
             <p className="text-sm text-neutral-500">
               <span className="text-xs">{t.from} </span>
               <span className="text-lg font-semibold text-neutral-900">{formatMoney(price, cur)}</span> {unit}
@@ -110,10 +113,25 @@ export default function PropertyCard({
           ) : (
             <span className="text-sm text-neutral-400">{t.ask}</span>
           )}
-          {r.status === "disponible" && r.total != null && (
-            <p className="text-sm font-medium text-emerald-700">
-              {formatMoney(r.total, cur)} · {r.nights} {t.nights}
-            </p>
+          {showQuote && search.checkin && search.checkout && r.nights && (
+            <CardQuote
+              roomId={property.beds24RoomId}
+              checkin={search.checkin}
+              checkout={search.checkout}
+              guests={search.guests}
+              nights={r.nights}
+              cur={cur}
+              lang={lang}
+              align={showMonth ? "right" : "left"}
+              fallback={
+                showMonth || price == null ? undefined : (
+                  <p className="text-sm text-neutral-500">
+                    <span className="text-xs">{t.from} </span>
+                    <span className="text-lg font-semibold text-neutral-900">{formatMoney(price, cur)}</span> {unit}
+                  </p>
+                )
+              }
+            />
           )}
         </div>
       </div>

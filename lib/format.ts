@@ -108,6 +108,18 @@ export function formatMoney(amount: number, currency: Currency): string {
   }).format(amount);
 }
 
+// Igual que formatMoney pero con centavos: para el desglose de impuestos y el
+// total, que deben coincidir al centavo con el checkout de Beds24.
+export function formatMoneyCents(amount: number, currency: Currency): string {
+  const locale = currency === "USD" ? "en-US" : "es-MX";
+  return new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(amount);
+}
+
 // Placeholder de foto determinista por id (mientras llegan las fotos reales)
 export function placeholderColors(seed: string): { c1: string; c2: string } {
   let h = 0;
