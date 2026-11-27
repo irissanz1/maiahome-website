@@ -1,11 +1,29 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
+import { langFromPath } from "@/lib/i18n";
 import { loadLeaflet, addBaseLayer } from "@/lib/leaflet";
+import { POIS, POI_GROUPS, CAT_EMOJI } from "@/lib/pois";
+import { pinHtml, distM } from "./PropertiesMap";
 
-export default function LocationMap({ lat, lng, label }: { lat: number; lng: number; label?: string }) {
+// Mapa de la ficha: mismo estilo que el mapa del home (pin dorado en la
+// ubicación del edificio + puntos de interés de explore con sus toggles), pero
+// centrado en esta propiedad.
+export default function LocationMap({
+  lat,
+  lng,
+  label,
+  name,
+}: {
+  lat: number;
+  lng: number;
+  label?: string;
+  name?: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
+  const lang = langFromPath(usePathname());
 
   useEffect(() => {
     let cancelled = false;
@@ -15,8 +33,48 @@ export default function LocationMap({ lat, lng, label }: { lat: number; lng: num
         const map = L.map(ref.current, { scrollWheelZoom: false }).setView([lat, lng], 14);
         mapRef.current = map;
         addBaseLayer(L, map);
-        // Área aproximada (privacidad): no se muestra el punto exacto.
-        L.circle([lat, lng], { radius: 450, color: "#F9D316", weight: 2, fillColor: "#FDDB51", fillOpacity: 0.25 }).addTo(map);
+
+        const icon = L.divIcon({
+          html: pinHtml(1),
+          className: "maia-pin",
+          iconSize: [30, 40],
+          iconAnchor: [15, 40],
+          popupAnchor: [0, -36],
+        });
+        const pin = L.marker([lat, lng], { icon, title: name || label || "", zIndexOffset: 1000 }).addTo(map);
+        if (name) pin.bindTooltip(name, { direction: "top", offset: [0, -38], permanent: true, className: "maia-pin-label" });
+
+        // Puntos de interés cercanos, agrupados por tipo con toggle (como en el home).
+        const here = { lat, lng };
+        const near = POIS.filter((poi) => distM(here, poi) < 8000);
+        const overlays: Record<string, any> = {};
+        POI_GROUPS.forEach((g) => {
+          const items = near.filter((poi) => g.cats.includes(poi.cat));
+          if (!items.length) return;
+          const layer = L.layerGroup();
+          items.forEach((poi) => {
+            const pIcon = L.divIcon({
+              html: `<div class="maia-poi">${CAT_EMOJI[poi.cat]}</div>`,
+              className: "maia-poi-wrap",
+              iconSize: [24, 24],
+              iconAnchor: [12, 12],
+            });
+            L.marker([poi.lat, poi.lng], { icon: pIcon })
+              .bindTooltip(poi.name, { direction: "top", offset: [0, -10] })
+              .addTo(layer);
+          });
+          overlays[`${g.emoji} ${lang === "en" ? g.labelEn : g.label}`] = layer;
+          if (g.onByDefault) layer.addTo(map);
+        });
+        if (Object.keys(overlays).length) {
+          L.control.layers(null, overlays, { collapsed: window.innerWidth < 640, position: "topright" }).addTo(map);
+        }
+
+        const fit = () => {
+          map.invalidateSize();
+          map.setView([lat, lng], 14);
+        };
+        setTimeout(fit, 250);
       })
       .catch(() => {});
     return () => {
@@ -26,13 +84,17 @@ export default function LocationMap({ lat, lng, label }: { lat: number; lng: num
         mapRef.current = null;
       }
     };
-  }, [lat, lng]);
+  }, [lat, lng, name, label, lang]);
 
   return (
     <div
       ref={ref}
-      className="h-72 w-full overflow-hidden rounded-2xl border border-neutral-200 md:h-80"
-      aria-label={label ? `Mapa aproximado de ${label}` : "Mapa de ubicación aproximada"}
+      className="h-80 w-full overflow-hidden rounded-2xl border border-neutral-200 md:h-96"
+      aria-label={
+        lang === "en"
+          ? `Map of ${name || label || "the apartment"} and nearby places`
+          : `Mapa de ${name || label || "el departamento"} y lugares cercanos`
+      }
     />
   );
 }

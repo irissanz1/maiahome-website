@@ -22,7 +22,7 @@ const esc = (s: string) =>
   s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c] || c));
 
 // Distancia aproximada en metros (equirectangular, suficiente a esta escala).
-function distM(a: { lat: number; lng: number }, b: { lat: number; lng: number }) {
+export function distM(a: { lat: number; lng: number }, b: { lat: number; lng: number }) {
   const R = 6371000;
   const toRad = Math.PI / 180;
   const lat = ((a.lat + b.lat) / 2) * toRad;
@@ -49,7 +49,7 @@ const teardrop = (dot: boolean) =>
   (dot ? '<circle cx="15" cy="15" r="5.2" fill="#171717"/>' : "") +
   "</svg>";
 
-function pinHtml(count: number) {
+export function pinHtml(count: number) {
   if (count <= 1) return teardrop(true);
   return (
     '<div style="position:relative;width:30px;height:40px">' +

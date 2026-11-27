@@ -204,11 +204,11 @@ export default async function StayDetail({
               <h2 className="font-serif text-2xl text-neutral-900">Ubicación</h2>
               <p className="mt-1 text-sm text-neutral-500">
                 {p.zonaNombre}
-                {p.pais === "MX" ? ", Ciudad de México" : ", Houston, TX"} · zona aproximada
+                {p.pais === "MX" ? ", Ciudad de México" : ", Houston, TX"}
               </p>
               {zonaDesc && <p className="mt-3 leading-relaxed text-neutral-600">{zonaDesc}</p>}
               <div className="mt-4">
-                <LocationMap lat={p.lat} lng={p.lng} label={p.zonaNombre} />
+                <LocationMap lat={p.lat} lng={p.lng} label={p.zonaNombre} name={p.nombre} />
               </div>
             </section>
           )}

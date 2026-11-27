@@ -186,10 +186,10 @@ export default async function StayDetailEn({ params, searchParams }: { params: P
             <section className="mt-10">
               <h2 className="font-serif text-2xl text-neutral-900">Location</h2>
               <p className="mt-1 text-sm text-neutral-500">
-                {p.zonaNombre}{p.pais === "MX" ? ", Mexico City" : ", Houston, TX"} · approximate area
+                {p.zonaNombre}{p.pais === "MX" ? ", Mexico City" : ", Houston, TX"}
               </p>
               {zonaDesc && <p className="mt-3 leading-relaxed text-neutral-600">{zonaDesc}</p>}
-              <div className="mt-4"><LocationMap lat={p.lat} lng={p.lng} label={p.zonaNombre} /></div>
+              <div className="mt-4"><LocationMap lat={p.lat} lng={p.lng} label={p.zonaNombre} name={p.nombre} /></div>
             </section>
           )}
 
